@@ -141,7 +141,7 @@ p {
 }
 
 a {
-     color: #222222;
+     color: #ffffff;
      text-decoration: none;
      outline: none !important;
 }
@@ -375,7 +375,6 @@ button {
     width: 100%;
     float: left;
     font-size: 36px;
-    color: #191919;
     font-weight: bold;
     text-align: center;
 }
@@ -389,7 +388,6 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #646262;
     margin-left: 0px;
     text-align: center;
     padding-top: 30px;
@@ -444,7 +442,7 @@ button {
     width: 100%;
     float: left;
     font-size: 18px;
-    color: #000;
+    color: #ffffff;
     text-align: center;
     padding-top: 20px;
     text-transform: uppercase;
