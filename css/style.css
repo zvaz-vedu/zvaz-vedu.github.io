@@ -319,7 +319,6 @@ button {
     position: absolute;
     left: 490px;
     top: 100%;
-    background-color: #2a41c2;
 }
 #my_slider .carousel-control-prev, #my_slider .carousel-control-next {
     width: 40px;
