@@ -564,7 +564,7 @@
     var TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
 
     var Default = {
-      interval: 5000,
+      interval: 2000,
       keyboard: true,
       slide: false,
       pause: 'hover',

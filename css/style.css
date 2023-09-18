@@ -288,7 +288,8 @@ button {
     font-weight: bold;
 }
 .image_1{
-    width: 100%;
+    height: 22rem;
+    width: auto;
     float: left;
 }
 .contact_bt {
