@@ -11,7 +11,7 @@
     --dark: #201f1f;
     --light: #f3f0e4;
 
-    
+
     --yellow: #d8b00f;
     --text-color: #ffffff;
   } 
@@ -332,9 +332,9 @@ header {
      border: solid #eaeaea 1px;
 }
  .button_user a:hover, .button_user a:focus, .button_user a.active {
-     background: #e3d105;
+     background: var(--yellow);
      color: #fff;
-     border-color: #e3d105;
+     border-color: var(--yellow);
      color: #222;
 }
  #sidebarCollapse {
@@ -418,8 +418,8 @@ header {
      margin-top: 20px;
 }
  .main_bt_border:hover, .main_bt_border:focus {
-     background: #e3d105;
-     border-color: #e3d105;
+     background: var(--yellow);
+     border-color: var(--yellow);
      color: #222;
 }
  .theme_color {
@@ -457,7 +457,7 @@ header {
     font-size: 33px !important;
 }
  .carousel-control-prev:focus, .carousel-control-prev:hover {
-    background: #e3d105;
+    background: var(--yellow);
      color: #000;
 }
  .carousel-control-prev {
@@ -470,7 +470,7 @@ header {
      top: 35%;
 }
  .carousel-control-next:focus, .carousel-control-next:hover {
-    background: #e3d105;
+    background: var(--yellow);
      color: #000;
 }
  .carousel-control-next {
@@ -502,7 +502,7 @@ header {
      color: #000;
 }
  .owl-next:hover{
-    background: #e3d105;
+    background: var(--yellow);
      color: #000;
 }
  .owl-dots {
@@ -932,7 +932,7 @@ header {
      font-weight: 500;
 }
  .yellow_bg {
-     background-color: #e3d105;
+     background-color: var(--yellow);
      padding: 40px 0px;
      margin-top: 90px;
 }
