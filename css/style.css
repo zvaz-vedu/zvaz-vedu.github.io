@@ -7,12 +7,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Inter: 300,400,500,600,700');
 /*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
- body {
+:root {
+    --dark: #201f1f;
+    --light: #f3f0e4;
+
+    
+    --yellow: #d8b00f;
+    --text-color: #ffffff;
+  } 
+
+body {
      color: #7a3939;
      font-size: 16px;
      font-family: 'Inter';
      line-height: 1.9;
      margin: 0;
+     background-color: var(--light);
 }
  a {
      color: #1f1f1f;
@@ -263,7 +273,7 @@ header {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     background-color: #212020;
+     background-color: var(--dark);
      padding: 15px 20px;
      min-height: 90px;
      position: fixed;
@@ -331,13 +341,13 @@ header {
      background: transparent;
 }
  .slider_section {
-     background: #212020;
+     background: var(--dark);
      min-height: 100vh;
      padding-top: 93px;
 }
 /** slider section **/
  #main_slider {
-     padding: 90px 0 30px;
+     padding: 0 0 30px;
 }
  .slider_section .container {
      width: 100%;
@@ -382,7 +392,7 @@ header {
      background: #e1e0e0;
      opacity: 1;
      font-size: 30px;
-     color: #212020;
+     color: var(--dark);
      border-radius: 100%;
 }
  #main_slider a.carousel-control-prev {
@@ -416,7 +426,7 @@ header {
      color: #f8c90d !important;
 }
 .resip_section {
-    background: #212020;
+    background: var(--dark);
     margin-top: 0;
     padding: 60px 0px 50px 0px;
     border-top: solid rgba(255,255,255,.1) 1px;
@@ -507,7 +517,7 @@ header {
     padding-bottom: 75px;
 }
  .about .about_box {
-    background: #191918;
+    background: var(--dark);
      padding: 55px 40px;
 }
  .about .about_box h3 {
@@ -534,7 +544,7 @@ header {
 }
  .about .about_img {
      height: 100%;
-     background: #d8b00f;
+     background: var(--yellow);
      margin-top: 90px;
 }
  .about .about_img figure {
@@ -556,11 +566,11 @@ header {
     font-size: 45px;
      font-weight: 500;
      line-height: 40px;
-     color: #191918;
+     color: var(--dark);
      padding: 20px 0px;
 }
  .title span {
-    color: #191918;
+    color: var(--dark);
      font-size: 17px;
      line-height: 20px;
      display: block;
@@ -617,12 +627,12 @@ header {
      font-size: 45px;
      font-weight: 500;
      line-height: 40px;
-     color: #191918;
+     color: var(--dark);
      padding: 20px 0px;
      padding-bottom: 0px;
 }
  .Client .Client_box {
-     background: #212020;
+     background: var(--dark);
      border-radius: 20px;
      text-align: center;
      padding: 65px 50px;
@@ -647,7 +657,7 @@ header {
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     background: #d8b00f;
+     background: var(--yellow);
      padding-top:0px;
      margin-top: 90px;
 }
@@ -789,7 +799,7 @@ header {
      font-size: 17px;
 }
  .copyright a:hover {
-    color: #d8b00f;
+    color: var(--yellow);
 }
  .owl-dot {
      background: #15cfe5 !important;
@@ -873,11 +883,11 @@ header {
 }
  #sidebar ul li a:hover {
      color: #fff;
-     background: #d8b00f;
+     background: var(--yellow);
 }
  #sidebar ul li.active > a, a[aria-expanded="true"] {
      color: #fff;
-     background: #d8b00f;
+     background: var(--yellow);
 }
  a[data-toggle="collapse"] {
      position: relative;
@@ -905,20 +915,20 @@ header {
      margin-bottom: 5px;
 }
  a.download {
-     background: #fff;
+     background: var(--text-color);
      color: #7386D5;
 }
  a.article, a.article:hover {
      background: #6d7fcc !important;
-     color: #fff !important;
+     color: var(--text-color) !important;
 }
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
  .bg_bg {
-    background: #f3f0e4;
+    background: var(--light);
 }
  .yellow_bg .title h2 {
      font-weight: bold;
-     color: #fff;
+     color: var(--text-color);
      font-weight: 500;
 }
  .yellow_bg {
@@ -944,7 +954,7 @@ header {
 }
  .yellow_bg .title h2 {
      font-weight: bold;
-     color: #fff;
+     color: var(--text-color);
      font-weight: 500;
 }
  
@@ -984,14 +994,14 @@ header {
  
  /* Style for Sample Text */
  .header-text p {
-     color: #fff;
+     color: var(--text-color);
      font-size: 20px;
      margin-right: 20px; /* Adjust the spacing between Sample Text and Sample Text 2 */
  }
  
 /* Style for Sample Text 2 */
 .sample-text-2 {
-    color: #fff;
+    color: var(--text-color);
     font-size: 20px;
     white-space: nowrap;
  }
@@ -1002,7 +1012,7 @@ header {
 }
   
 .footer {
-    background-color: #d8b00f;
+    background-color: var(--yellow);
     padding: 1px; /* Adjust padding as needed */
     position: fixed;
     left: 0;
@@ -1010,4 +1020,12 @@ header {
     width: 100%;
     padding-top: 5px;
     margin-top: 10px;
+}
+
+.when-wide{
+    background-color: var(--light);
+}
+
+.img-responsive{
+    scale: 70%;
 }
