@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inter: 300,400,500,600,700');
 /*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
  body {
-     color: #666666;
+     color: #7a3939;
      font-size: 16px;
      font-family: 'Inter';
      line-height: 1.9;
@@ -914,7 +914,7 @@ header {
 }
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
  .bg_bg {
-    background: url(../images/bg.jpg);
+    background: #f3f0e4;
 }
  .yellow_bg .title h2 {
      font-weight: bold;
