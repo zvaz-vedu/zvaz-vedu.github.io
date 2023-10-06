@@ -1,7 +1,12 @@
+@media (min-width: 1501px) {
+    .when-wide {
+        margin: 7em;
+    }
+}
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
  @media (min-width: 1200px) and (max-width: 1500px) {
     .when-wide {
-        margin: 15em;
+        margin: 7em;
     }
     .logo img {
         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
