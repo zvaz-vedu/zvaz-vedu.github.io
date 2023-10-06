@@ -1,5 +1,8 @@
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
  @media (min-width: 1200px) and (max-width: 1500px) {
+    .when-wide {
+        margin: 15em;
+    }
     .logo img {
         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
         min-width: 30%; /* Set a minimum width for the logo */
@@ -45,6 +48,9 @@
     }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
+    .when-wide {
+        margin: 15em;
+    }
     .menu {
         max-width: unset;
         min-width: 30%;
@@ -106,6 +112,9 @@
     }
 }
  @media (min-width: 768px) and (max-width: 991px) {
+    .when-wide {
+        margin: 5em;
+    }
     .menu {
         max-width: unset;
         min-width: 30%;
@@ -182,7 +191,7 @@
 }
  @media (min-width: 576px) and (max-width: 767px) {
     .when-wide {
-        margin-top: 15em;
+        margin: 10em;
     }
     .menu {
         max-width: unset;
