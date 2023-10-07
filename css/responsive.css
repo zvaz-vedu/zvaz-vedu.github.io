@@ -353,6 +353,9 @@
          justify-content: center;
          width: 100%;
     }
+    .footer {
+        display: none;
+    }
      .right_header_info ul li {
         padding-top: 10px;
          margin-left: 10px;
