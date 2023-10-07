@@ -335,7 +335,7 @@
     }
     .logo img {
         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-        min-width: 80%; /* Set a minimum width for the logo */
+        min-width: 99%; /* Set a minimum width for the logo */
         height: auto; /* Maintain the aspect ratio */
     }
      .logo {
