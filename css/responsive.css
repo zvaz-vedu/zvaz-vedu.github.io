@@ -139,8 +139,17 @@
     .dinone {
         display: none !important;
     }
-     .slider_cont {
-        display: none;
+    .slider_cont {
+        padding-left: 128px;
+         margin: 0;
+    }
+     .slider_cont h3 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+     .slider_cont p {
+        margin-top: 10px;
+        margin-bottom: 5px
     }
      .slider_section {
         min-height: auto;
@@ -249,6 +258,7 @@
     }
      .slider_section {
         min-height: auto;
+        display: none;
     }
      .slider_image img {
         height: 250px;
@@ -380,6 +390,7 @@
     }
      .slider_section {
         min-height: auto;
+        display: none;
     }
      .slider_image img {
         height: 250px;
