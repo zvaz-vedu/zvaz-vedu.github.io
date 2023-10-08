@@ -333,6 +333,10 @@
     }
 }
  @media (max-width: 575px) {
+    .custom-about {
+        margin-top: 20px; /* Adjust the value as needed to move it down further */
+        /* Add other custom styles here */
+    }
     .when-wide {
         margin-top: 0em;
     }
