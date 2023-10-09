@@ -29,7 +29,7 @@
          margin-left: 12px;
     }
      .slider_cont h3 {
-        font-size: 36px;
+        font-size: 48px;
          line-height: 45px;
     }
      .slider_cont p {
@@ -77,10 +77,6 @@
     }
      .slider_section {
         min-height: auto;
-    }
-     .slider_cont {
-        padding-left: 128px;
-         margin: 0;
     }
      .slider_cont h3 {
         font-size: 36px;
