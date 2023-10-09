@@ -1029,3 +1029,9 @@ header {
 .img-responsive{
     scale: 70%;
 }
+
+.footer_mobile{
+    background: #d8b00f;
+    padding-top:0px;
+    margin-top: 90px;
+}
