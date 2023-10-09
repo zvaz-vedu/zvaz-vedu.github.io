@@ -1031,7 +1031,8 @@ header {
 }
 
 .footer_mobile{
-    background: #d8b00f;
+    background-color: var(--yellow);
     padding-top:0px;
     margin-top: 90px;
+    display: none;
 }

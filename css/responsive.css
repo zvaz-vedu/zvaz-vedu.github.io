@@ -369,6 +369,9 @@
     .footer {
         display: none;
     }
+    .footer_mobile{
+        display: block;
+    }
      .right_header_info ul li {
         padding-top: 10px;
          margin-left: 10px;
