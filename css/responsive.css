@@ -200,6 +200,10 @@
     }
 }
  @media (min-width: 576px) and (max-width: 767px) {
+    .yellow_bg {
+        background-color: var(--yellow);
+        padding: 15px 0px;
+   }
     .when-wide {
         margin: 10em;
     }
@@ -211,7 +215,7 @@
         display: none; /* Hide Sample Text 2 on mobile devices */
     }
     .logo img {
-        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        max-width: 70%; /* Adjust the percentage as needed to make the logo bigger */
         min-width: 60%; /* Set a minimum width for the logo */
         height: auto; /* Maintain the aspect ratio */
     }
@@ -329,6 +333,10 @@
     }
 }
  @media (max-width: 575px) {
+    .yellow_bg {
+        background-color: var(--yellow);
+        padding: 10px 0px;
+   }
     .custom-about {
         margin-top: 20px; /* Adjust the value as needed to move it down further */
     }
