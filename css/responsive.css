@@ -2,6 +2,18 @@
     .when-wide {
         margin: 7em;
     }
+    .logo img {
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
+    }
+     .logo {
+        text-align: left;
+         display: block;
+         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+         min-width: 30%; /* Set a minimum width for the logo */
+         height: auto; /* Maintain the aspect ratio */
+     }
 }
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
  @media (min-width: 1200px) and (max-width: 1500px) {
