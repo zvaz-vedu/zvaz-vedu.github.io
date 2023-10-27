@@ -172,6 +172,22 @@
 								</ul>
 							</div>
 						</div>
+							<div class="row">
+								<div class="col-md-12" id="sponsors" class="transition-element" style="visibility: hidden; display: none">
+									<ul class="lik">
+									<li class="hover_invert">
+										<img src="images/kraj_mono.png" style="width: 15em;">
+									</li>
+									<li class="hover_invert">
+										<img src="images/fav_black.png" style="width: 15em;">
+									</li>
+									<li class="hover_invert">
+										<img src="images/zdroguj_se_mono.png" style="width: 15em;">
+									</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end footer -->
@@ -191,6 +207,21 @@
 									<ul class="lik">
 									<li class="dinone"><a href="kontakt.html"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#">organizatori@zvazvedu.cz</a></li>
 									<li class="dinone"><a href="https://instagram.com/zvaz.vedu?igshid=MzRlODBiNWFlZA=="><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/instagram_logo.png" alt="#">zvaz.vedu</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" class="transition-element" style="visibility: visible; display: block">
+									<ul class="lik">
+									<li class="hover_invert">
+										<img src="images/kraj_mono.png" style="width: 10em;">
+									</li>
+									<li class="hover_invert">
+										<img src="images/fav_black.png" style="width: 10em;">
+									</li>
+									<li class="hover_invert">
+										<img src="images/zdroguj_se_mono.png" style="width: 10em;">
+									</li>
 									</ul>
 								</div>
 							</div>
@@ -264,8 +295,40 @@
 				    })
 				    })
 				</script> 
+				
 			</div>
 		</div>
 	</div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var sponsors = document.getElementById("sponsors");
+		var footer = document.querySelector(".footer");
+		if (window.innerHeight >= document.body.offsetHeight) {
+				sponsors.style.visibility = "visible";
+				sponsors.style.display = "block"
+            } else {
+                sponsors.style.visibility = "hidden";
+				sponsors.style.display = "none"
+		}
+        window.addEventListener("scroll", function() {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                sponsors.style.visibility = "visible";
+				sponsors.style.display = "block"
+            } else {
+                sponsors.style.visibility = "hidden";
+				sponsors.style.display = "none"
+            }
+
+			if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+				footer.classList.add("expanded");
+				footer.classList.remove("collapsed");
+			} else {
+				footer.classList.add("collapsed");
+				footer.classList.remove("expanded");
+			}
+        });
+    });
+</script>
+
 </html>
