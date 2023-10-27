@@ -1,4 +1,5 @@
-@media (min-width: 1501px) {
+@media (min-width: 1301px) {
+
     .when-wide {
         margin: 7em;
     }
@@ -16,7 +17,7 @@
      }
 }
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
- @media (min-width: 1200px) and (max-width: 1500px) {
+ @media (min-width: 1200px) and (max-width: 1300px) {
     .when-wide {
         margin: 7em;
     }
@@ -65,6 +66,9 @@
     }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
+    .about-image {
+        display: none;
+    }
     .when-wide {
         margin: 15em;
     }
@@ -125,6 +129,12 @@
     }
 }
  @media (min-width: 768px) and (max-width: 991px) {
+    .about-image {
+        display: none;
+    }
+    .about-button {
+        padding-bottom: 0.6em;
+    }
     .when-wide {
         margin: 5em;
     }
@@ -343,8 +353,30 @@
     header {
         margin-bottom: 100%;
     }
+    .about-image {
+        display: none;
+    }
+    .about {
+        margin-top: 7em;
+        margin-left: 0.5em;
+        margin-right: 0.5em
+    }
+    .about-button {
+        margin-bottom: 1.5em;
+    }
 }
  @media (max-width: 575px) {
+    .about {
+        margin-top: 7em;
+        margin-left: 0.5em;
+        margin-right: 0.5em
+    }
+    .about-button {
+        margin-bottom: 1.5em;
+    }
+    .about-image {
+        display: none;
+    }
     .yellow_bg {
         background-color: var(--yellow);
         padding: 10px 0px;

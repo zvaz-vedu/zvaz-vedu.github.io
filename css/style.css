@@ -513,12 +513,12 @@ header {
 }
 /** about **/
  .about {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
  .about .about_box {
     background: var(--dark);
-     padding: 55px 40px;
+    padding: 60px 40px;
 }
  .about .about_box h3 {
      font-size: 30px;
@@ -542,16 +542,8 @@ header {
  .about .about_box a:hover {
      color: #e7bb0b;
 }
- .about .about_img {
-     height: 100%;
-     background: var(--yellow);
-     margin-top: 90px;
-}
  .about .about_img figure {
-     margin: 0;
-     margin-right: 0px;
-     padding: 92px 0px 0px 60px;
-     margin-right: -64px;
+    margin: auto;
 }
 /** end about **/
 /** blog **/
@@ -1066,3 +1058,62 @@ opacity: 0;
 .footer.expanded {
 height: 200px;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .about-text,
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-text {
+    background-color: var(--dark);
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 0px;
+    font-size: 20px;
+  }
+
+  
+  .about-text p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-right: 30px;
+  }
+  
+  .about-text a {
+    color: var(--yellow);
+    font-weight: 500;
+  }
+  
+  .about-text h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .about-button {
+    padding-top: 4.5em;
+    background: rgba(0, 0, 0, 0);
+    color: white!important;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .about-button a:hover {
+    color: var(--yellow);
+  }
+  
+  .about-button a {
+    color:white;
+    font-size: 22px;
+  }
+
+  .about-button i {
+    margin-left: 10px;
+  }
