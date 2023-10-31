@@ -77,8 +77,8 @@
         min-width: 30%;
     } 
     .logo img {
-        max-width: 35%; /* Adjust the percentage as needed to make the logo bigger */
-        min-width: 35%; /* Set a minimum width for the logo */
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
         height: auto; /* Maintain the aspect ratio */
     }
      .logo {
@@ -143,8 +143,8 @@
         min-width: 30%;
     }
     .logo img {
-        max-width: 45%; /* Adjust the percentage as needed to make the logo bigger */
-        min-width: 45%; /* Set a minimum width for the logo */
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
         height: auto; /* Maintain the aspect ratio */
     }
      .logo {
@@ -356,8 +356,13 @@
     .about-image {
         display: none;
     }
-    .about {
+    .about-first {
         margin-top: 7em;
+        margin-left: 0.5em;
+        margin-right: 0.5em
+    }
+    .about {
+        margin-top: 1em;
         margin-left: 0.5em;
         margin-right: 0.5em
     }
@@ -367,7 +372,7 @@
 }
  @media (max-width: 575px) {
     .about {
-        margin-top: 7em;
+        margin-top: 1em;
         margin-left: 0.5em;
         margin-right: 0.5em
     }
