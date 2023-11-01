@@ -369,8 +369,15 @@
     .about-button {
         margin-bottom: 1.5em;
     }
+    #first-about {
+        margin-top: 5.5em;
+    }
 }
  @media (max-width: 575px) {
+    #first-about {
+        margin-top: 5.5em;
+      }
+
     .about {
         margin-top: 1em;
         margin-left: 0.5em;
