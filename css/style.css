@@ -343,7 +343,7 @@ header {
  .slider_section {
      background: var(--dark);
      min-height: 100vh;
-     padding-top: 93px;
+     padding-top: 80px;
 }
 /** slider section **/
  #main_slider {
