@@ -542,8 +542,16 @@ header {
  .about .about_box a:hover {
      color: #e7bb0b;
 }
+.about .about_img {
+    height: 83%;
+    background: #d8b00f;
+    margin-top: 90px;
+}
  .about .about_img figure {
-    margin: auto;
+    margin: 0;
+    margin-right: 0px;
+    padding: 50px 0px 0px 50px;
+    margin-right: -64px;
 }
 /** end about **/
 /** blog **/
