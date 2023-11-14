@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- for Facebook sharing-->
+    <meta property="og:image" content="https://zvazvedu.cz/images/full_rect_txt_right_stamp.png" />
+    <meta property="og:description" content="Akce cílená na středoškoláky s cílem zpropagovat řešení odborných olympiád a následné studium technických oborů." />
+    <meta property="og:url"content="https://zvazvedu.cz" />
+    <meta property="og:title" content="Zvážíš vědu?" />
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Work in progress</title>
+    <title>Program akce</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -97,6 +102,9 @@
                 <div class="title">
                     <h2>Program akce</h2> 
                 </div>
+                <div class="callout">
+                    <p>Veškeré informace jsou pouze orientační</p>
+                </div>
             </div>
             </div>
         </div>
@@ -104,9 +112,6 @@
 
 <!-- blog -->
 <div class="blog">
-    <div class="callout">
-        <p>Veškeré informace jsou pouze orientační</p>
-    </div>
     <div class="container">
         <h1><b><a href="#" class="copy-link" data-link="https://zvazvedu.cz/program#seznam-prednasek:~:text=jsou%20pouze%20orienta%C4%8Dn%C3%AD..-,Seznam%20p%C5%99edn%C3%A1%C5%A1ek,-P%C5%99edn%C3%A1%C5%A1ka" style="color: black;">Seznam přednášek</a></b></h1>
         <!-- Styled table -->
@@ -407,17 +412,17 @@
   
 <!-- Add this style for the markdown-style links -->
 <style>
-    a {
+    .copy-link a {
       color: black;
       text-decoration: none;
       position: relative;
     }
   
-    a:hover {
+    .copy-link a:hover {
       color: #555; /* Change to the desired hover color */
     }
   
-    a::before {
+    .copy-link a::before {
       content: '\25B6\00a0'; /* Unicode for right arrow and space */
       position: absolute;
       left: -1em;
@@ -426,7 +431,7 @@
       transition: opacity 0.3s ease;
     }
   
-    a:hover::before {
+    .copy-link a:hover::before {
       opacity: 1;
     }
   </style>
