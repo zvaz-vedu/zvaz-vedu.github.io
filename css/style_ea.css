@@ -1185,3 +1185,19 @@ height: 200px;
 .light-row {
     background-color: #f9f9f9;
 }
+
+.mobile-text {
+    display: none; /* Show the text on small screens */
+}
+
+/* Responsive styles for smaller screens */
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+    .nice-table {
+        display: none; /* Hide the table on small screens */
+    }
+
+    .mobile-text {
+        display: block; /* Show the text on small screens */
+    }
+}
