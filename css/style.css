@@ -1125,3 +1125,41 @@ height: 200px;
   .about-button i {
     margin-left: 10px;
   }
+
+  .callout {
+    background-color: #ff8c00; /* Orange background color */
+    border: 1px solid #e07e00; /* Border color */
+    padding: 15px; /* Padding around the content */
+    margin: 20px 0; /* Margin to separate from other elements */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: #fff; /* Text color (white) */
+    max-width: 30em; /* Maximum width in em */
+    margin-left: auto; /* Center the callout horizontally */
+    margin-right: auto;
+}
+/* Table styling */
+.nice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.nice-table th, .nice-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.nice-table th {
+    background-color: var(--yellow);
+    color: #fff;
+}
+
+/* Alternate row background color for better readability */
+.nice-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* End table styling */
