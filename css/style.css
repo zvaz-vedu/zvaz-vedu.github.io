@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?xfamily=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
@@ -1163,3 +1163,14 @@ height: 200px;
     background-color: #f9f9f9;
 }
 /* End table styling */
+
+.hover-link {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s;
+    cursor: pointer;
+  }
+
+  .hover-link:hover {
+    opacity: 0.5;
+  }
