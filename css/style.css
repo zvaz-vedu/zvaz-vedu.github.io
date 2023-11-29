@@ -1208,3 +1208,27 @@ height: 200px;
 .more-info-button-container {
     margin-top: 15px;
 }
+
+.download-callout {
+    background-color: #585858;
+    border: 1px solid #585858;
+    margin: 20px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    max-width: 70%;
+    display: block; /* Make the link a block element to take full width */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-callout:hover {
+    background-color: #e07e00; /* Change color on hover */
+}
