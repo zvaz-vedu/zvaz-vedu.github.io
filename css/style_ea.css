@@ -1186,6 +1186,10 @@ height: 200px;
     background-color: #f9f9f9;
 }
 
+.grey-row {
+    background-color: #f4ecec;
+}
+
 .mobile-text {
     display: none; /* Show the text on small screens */
 }
