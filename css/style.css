@@ -1159,9 +1159,6 @@ height: 200px;
 }
 
 /* Alternate row background color for better readability */
-.nice-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
 /* End table styling */
 
 .hover-link {
@@ -1181,6 +1178,10 @@ height: 200px;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nice-table.flip tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
 }
 
 .explanation-text {

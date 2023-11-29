@@ -18,7 +18,7 @@
     <!-- owl css -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- style css -->
-    <link rel="stylesheet" href="css/style_ea.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- awesome fontfamily -->
@@ -132,7 +132,7 @@
                     <!--Velký sál-->
                     <td>9:00</td>
                     <td>9:30</td>
-                    <td>Slavností zahájení</td>
+                    <td>Slavnostní zahájení</td>
                     <td>Matyáš Matta <br> Jan Herzig</td>
                     <!--Malý sál-->
                     <td colspan="4" class="grey-row"></td>
@@ -245,13 +245,18 @@
     
     <!-- Text for mobile -->
     <div class="mobile-text">
-        <p>...je k dispozici na počítači, protože nemám čas předělat tu tabulku (stačí dát možnost stránek pro počítač)...</p>
+        <div class="container" style="padding-top: 0em;">
+            <div class="callout">
+                <p>Zatím k dispozici jen v Desktop verzi webu.</p>
+            </div>
+        </div>
     </div>
 
     <div class="container" style="padding-top: 2em;">
-        <h1><b><a href="#" class="copy-link" data-link="https://zvazvedu.cz/program.html#seznam:~:text=Michal%20Helm-,Seznam%20exkurz%C3%AD,-Obor" style="color: black;">Seznam exkurzí</a></b></h1>
+        <section id="exkurze"></section>
+        <h1><b><a href="https://zvazvedu.cz/program.html#vysvetlivky">Seznam&nbsp;<div class="hover-link">exkurzí</div></a></b></h1>
         <!-- Table for Information -->
-        <table class="nice-table" style="border-top:0">
+        <table class="nice-table flip" style="border-top:0">
             <thead>
                 <tr>
                     <th>Obor</th>
@@ -322,19 +327,14 @@
             </tbody>
         </table>
         <!-- End table for Information -->
-
-    <!-- Text for mobile -->
-    <div class="mobile-text">
-        <p>...stejně tak tam nejdete nabídku exkurzí, tu najdete také v registračním formuláři...</p>
-    </div>
-
-
+        </section>
     </div>
     <!-- End styled table -->
     <div class="container" style="padding-top: 2em;">
-        <h1><b><a href="#" class="copy-link" data-link="https://zvazvedu.cz/program#seznam-prednasek:~:text=jsou%20pouze%20orienta%C4%8Dn%C3%AD..-,Seznam%20p%C5%99edn%C3%A1%C5%A1ek,-P%C5%99edn%C3%A1%C5%A1ka" style="color: black;">Seznam stánků</a></b></h1>
+        <section id="stanky">
+        <h1><b>Seznam&nbsp;<div class="hover-link"><a href="https://zvazvedu.cz/program.html#stanky">stánků</a></div></b></h1>
         <!-- Styled table -->
-        <table class="nice-table" style="border-top:0">
+        <table class="nice-table flip" style="border-top:0">
             <thead>
                 <tr>
                     <th>Název stanoviště</th>
@@ -355,18 +355,36 @@
                     <td>Libor Váša</td>
                 </tr>
                 <tr>
-                    <td>SIT Port města Plzně</td>
-                    <td>David Rajchman</td>
+                    <td>Vodíková autíčka</td>
+                    <td>Hydra Racing Team</td>
                 </tr>
             </tbody>
         </table>
     </div>
-
-    <!-- Text for mobile -->
-    <div class="mobile-text">
-        <p>...a tyhle odsazení mě mrzí :\</p>
+    </section>
+    <div class="container" style="padding-top: 2em;">
+        <section id="vysvetlivky">
+            <h1><b>Vysvětlivky</b></h1>
+            <div class="explanation-container">
+                <h2>Přednášky</h2>
+                <div class="explanation-text">
+                  <p>Přednesy o délkách mezi 15 a 45 minutami, kdy přednášející představí nějakou příležitost a osobně zodopoví na dotazy a připomínky.<p>
+                </div>
+              </div>
+              <div class="explanation-container">
+                <h2>Exkurze</h2>
+                <div class="explanation-text">
+                  <p>V rámci Zvaž vědu! se Fakulta aplikovaných věd rozhodla nabídnout zájemcům prohlídky fakultní budovy. Registrace k exkurzím je otevřená a otevírat se budou dle poptávky.<p>
+                </div>
+              </div>
+              <div class="explanation-container">
+                <h2>Stánky</h2>
+                <div class="explanation-text">
+                  <p>Malá stanoviště, kde představitelé jednotlivých akcí či oborů, budou mít vědecké exponáty a propagační materiály. Příležitost k diskusi mezi čtyřma očima.<p>
+                </div>
+              </div>
+        </section>
     </div>
-    
 </div>
 <!-- end blog -->
 
@@ -458,6 +476,77 @@
             });
         });
     </script>
+    <style>
+        /* Table styling */
+        .nice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        .nice-table th, .nice-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .nice-table th {
+            background-color: var(--yellow);
+            color: #fff;
+        }
+
+        /* Set the width of the second column to 20% of the table width */
+        .nice-table td:nth-child(1),
+        .nice-table th:nth-child(1) {
+            width: 7.5%;
+        }
+        .nice-table td:nth-child(2),
+        .nice-table th:nth-child(2) {
+            width: 7.5%;
+        }
+        .nice-table td:nth-child(3),
+        .nice-table th:nth-child(3) {
+            width: 19%;
+        }
+        .nice-table td:nth-child(4),
+        .nice-table th:nth-child(4) {
+            width: 16%;
+        }
+
+        /* Alternate row background color for better readability */
+
+        .dark-row {
+            background-color: #f3f0e4;
+        }
+
+        .light-row {
+            background-color: #f9f9f9;
+        }
+
+        .grey-row {
+            background-color: #f4ecec;
+        }
+
+        .mobile-text {
+            display: none; /* Show the text on small screens */
+        }
+
+        /* Responsive styles for smaller screens */
+        /* Responsive styles for smaller screens */
+        @media (max-width: 767px) {
+            .nice-table {
+                display: none; /* Hide the table on small screens */
+            }
+
+            .nice-table.flip {
+                display: block; /* Hide the table on small screens */
+            }
+
+            .mobile-text {
+                display: block; /* Show the text on small screens */
+            }
+        }
+    </style>
 
 </body>
 <!--div class="table">
