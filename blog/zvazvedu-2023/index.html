@@ -32,8 +32,11 @@
 					<i class="fa fa-arrow-left"></i>
 				</div>
 				<ul class="list-unstyled components">
+					<li class="active">
+						<a href="./blog/zvazvedu-2023/index.html">Zvaž vědu! 2023</a>
+					</li>
 					<li>
-						<a href="index.html">Domů</a>
+						<a href="home.html">Domů</a>
 					</li>
 					<li>
 						<a href="o_akci.html">O akci</a>
@@ -41,7 +44,7 @@
 					<li>
 						<a href="o_nas.html">O nás</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="program.html">Program</a>
 					</li>
 					<li>
@@ -55,7 +58,7 @@
 			<!-- header -->
 			<header>
 				<div class="logo">
-					<a href="/index.html"><img alt="Logo" src="images/atom4.png"></a>
+					<a href="/home.html"><img alt="Logo" src="images/atom4.png"></a>
 				</div>
 				<div class="header-text">
 					<p class="sample-text-2"><img alt="#" src="images/mail_icon.png" style="margin-right: 5px;"> <a href="kontakt.html" style="color: white;">organizatori@zvazvedu.cz</a></p>
@@ -143,8 +146,11 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ul class="lik">
+								<li class="active">
+									<a href="./blog/zvazvedu-2023/index.html">Zvaž vědu! 2023</a>
+								</li>
 								<li>
-									<a href="index.html">Domů</a>
+									<a href="home.html">Domů</a>
 								</li>
 								<li>
 									<a href="o_akci.html">O akci</a>
@@ -152,7 +158,7 @@
 								<li>
 									<a href="o_nas.html">O nás</a>
 								</li>
-								<li class="active">
+								<li>
 									<a href="program.html">Program</a>
 								</li>
 								<li>
@@ -174,8 +180,11 @@
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="lik">
+									<li class="active">
+										<a href="./blog/zvazvedu-2023/index.html">Zvaž vědu! 2023</a>
+									</li>
 									<li>
-										<a href="index.html">Domů</a>
+										<a href="home.html">Domů</a>
 									</li>
 									<li>
 										<a href="o_akci.html">O akci</a>
@@ -183,7 +192,7 @@
 									<li>
 										<a href="o_nas.html">O nás</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="program.html">Program</a>
 									</li>
 									<li>
@@ -205,6 +214,7 @@
 			</footer><!-- end mobilefooter -->
 		</div>
 	</div><!-- JavaScript Files -->
+	<div class="overlay"></div><!-- Javascript files-->
 	<script src="js/jquery.min.js">
 	</script> 
 	<script src="js/popper.min.js">
@@ -220,8 +230,55 @@
 	<script src="js/jquery-3.0.0.min.js">
 	</script> 
 	<script type="text/javascript">
-	       // JavaScript for Sidebar Functionality Goes Here
+	$(document).ready(function() {
+		$("#sidebar").mCustomScrollbar({
+			theme: "minimal"
+		});
+
+		$('#dismiss, .overlay').on('click', function() {
+			$('#sidebar').removeClass('active');
+			$('.overlay').removeClass('active');
+		});
+
+		$('#sidebarCollapse').on('click', function() {
+			$('#sidebar').addClass('active');
+			$('.overlay').addClass('active');
+			$('.collapse.in').toggleClass('in');
+			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+		});
+	});
 	</script>
+	<style>
+	#owl-demo .item{
+	margin: 3px;
+	}
+	#owl-demo .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+	}
+	</style>
+	<script>
+		$(document).ready(function() {
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			margin: 10,
+			nav: true,
+			loop: true,
+			responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 5
+			}
+			}
+		})
+		})
+	</script> 
     <!-- Script to populate the gallery -->
     <script>
         $(document).ready(function(){
