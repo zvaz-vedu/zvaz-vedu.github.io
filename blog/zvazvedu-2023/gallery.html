@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Gallery</title>
+    <meta charset="utf-8">
+	<base href="../../">
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="initial-scale=1, maximum-scale=1" name="viewport">
+	<title>Zvážíš vědu?</title>
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Include jQuery library from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include Fotorama library from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Your custom styles (if needed) -->
+    <style>
+        /* Add your custom styles here */
+        .fotorama {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="main-layout about_page">
+<!-- Loader -->
+<div class="wrapper">
+    <div class="sidebar">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">Domů</a>
+                </li>
+                <li>
+                    <a href="o_akci.html">O akci</a>
+                </li>
+                <li>
+                    <a href="o_nas.html">O nás</a>
+                </li>
+                <li class="active">
+                    <a href="program.html">Program</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <!-- Header -->
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <a href="/index.html"><img alt="Logo" src="images/atom4.png"></a>
+            </div>
+            <div class="header-text">
+                <p class="sample-text-2"><img alt="#" src="images/mail_icon.png" style="margin-right: 5px;"> <a href="kontakt.html" style="color: white;">organizatori@zvazvedu.cz</a></p>
+                <p></p>
+                <div class="menu">
+                    <button id="sidebarCollapse" type="button"><img alt="#" src="images/menu_icon.png" style="margin-right: 15px; max-width: unset"> <!-- Add width and height attributes here --></button>
+                </div>
+                <p></p>
+            </div>
+        </header><!-- Yellow Background Section -->
+        <div class="yellow_bg" style="margin-bottom: 15px; padding-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>Galerie akce</h2>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Improved Metadata Table Section -->
+        </div>
+    <!-- Fotorama Gallery container -->
+    <div class="fotorama" data-nav="thumbs">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+
+    <!-- Script to populate the gallery -->
+    <script>
+        $(document).ready(function(){
+            // Load images from the ./images folder
+            $.ajax({
+                url: "./blog/zvazvedu-2023/images/", // Adjust the path as per your directory structure
+                success: function (data) {
+                    // Filter only image files (you might need to adjust this based on your file types)
+                    var images = $(data).find("a:contains('.jpg'), a:contains('.jpeg'), a:contains('.png'), a:contains('.gif'), a:contains('.JPG')");
+                    
+                    // Iterate through images and add them to the Fotorama gallery
+                    images.each(function () {
+                        var imageSrc = $(this).attr("href");
+                        $(".fotorama").append('<img src="' + imageSrc + '" data-thumb="' + imageSrc + '" alt="">');
+                    });
+
+                    // Initialize Fotorama
+                    $('.fotorama').fotorama();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
