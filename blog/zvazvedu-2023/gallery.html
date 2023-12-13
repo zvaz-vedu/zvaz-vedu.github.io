@@ -101,24 +101,22 @@
     <!-- Script to populate the gallery -->
     <script>
         $(document).ready(function(){
-            // Load images from the ./images folder
-            $.ajax({
-                url: "./blog/zvazvedu-2023/images/", // Adjust the path as per your directory structure
-                success: function (data) {
-                    // Filter only image files (you might need to adjust this based on your file types)
-                    var images = $(data).find("a:contains('.jpg'), a:contains('.jpeg'), a:contains('.png'), a:contains('.gif'), a:contains('.JPG')");
-                    
-                    // Iterate through images and add them to the Fotorama gallery
-                    images.each(function () {
-                        var imageSrc = $(this).attr("href");
-                        $(".fotorama").append('<img src="' + imageSrc + '" data-thumb="' + imageSrc + '" alt="">');
-                    });
-
-                    // Initialize Fotorama
-                    $('.fotorama').fotorama();
-                }
+            // List of Google Drive file IDs
+            var driveFileIDs = ['1v0KqDNY_1-6K4aCQmRdb2yPD2HMaKfhk', '1OZyVpzpaJtbDEvafNP6S3p68-tYNSGbO', '1_ezUi_zns748R8Yp6Y0pxmeDc5Laukqu','1TUGagGwy4UeCHtXW7ZUEJ3Le2eFQkZ_D']; // Replace with your actual file IDs
+    
+            // Iterate through file IDs and generate image elements
+            driveFileIDs.forEach(function(fileID) {
+                // Generate the Google Drive file URL
+                var fileURL = 'https://drive.google.com/uc?id=' + fileID;
+    
+                // Add the image element to the Fotorama gallery
+                $(".fotorama").append('<img src="' + fileURL + '" data-thumb="' + fileURL + '" alt="">');
             });
+    
+            // Initialize Fotorama
+            $('.fotorama').fotorama();
         });
     </script>
+    
 </body>
 </html>
