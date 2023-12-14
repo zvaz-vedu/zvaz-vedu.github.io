@@ -103,7 +103,12 @@
         $(document).ready(function(){
             // List of Google Drive file IDs
             var driveFileIDs = ['1v0KqDNY_1-6K4aCQmRdb2yPD2HMaKfhk', '1OZyVpzpaJtbDEvafNP6S3p68-tYNSGbO', '1_ezUi_zns748R8Yp6Y0pxmeDc5Laukqu','1TUGagGwy4UeCHtXW7ZUEJ3Le2eFQkZ_D', '1_f3WGJAF40ZC_aVST0INES8qc0ZEXuvt', '1T8Z_t7OTlv9e0jiMsRppIuSPfJQO5xb1', '1zm4g9NzX8aa_k7l47-wGJC-MGet39esO', '15iYCOpdb3vFkdQ-DUjfuX9sc3THCikHf', '1AsNozCjPwfYk7gFEp1Buwz3o1mv29rvQ', '1er91wieQJPeH3utKLezlyEyGunzHUIUS']; // Replace with your actual file IDs
-    
+            var localFilesIDs = ['DSC_0164', 'DSC_0159', 'DSC_0092 - Copy (4)']
+
+            localFilesIDs.forEach(function(fileID) {
+                var filePath = './blog/zvazvedu-2023/images/' + fileID + '.JPG';
+                $(".fotorama").append('<img alt="403: Chyba načítání, zkuste znovu později." src="' + filePath + '" data-thumb="' + filePath + '" alt="" referrerPolicy="no-referrer">');
+            });
             // Iterate through file IDs and generate image elements
             driveFileIDs.forEach(function(fileID) {
                 // Generate the Google Drive file URL
