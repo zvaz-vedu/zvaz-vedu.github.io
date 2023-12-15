@@ -559,10 +559,17 @@ header {
 
   .about_img_blog {
     background: #d8b00f;
-    margin: 10;
+    padding: 0px 0px 3em 50px;
+    margin-right: -64px;
+    margin-bottom: -10px;
+    position: relative;
+}
+ .about_img_blog figure {
+    margin: 0;
     margin-right: 0px;
-    padding: 50px 0px 10px 50px;
-    margin-right: -600px;
+    padding-top: 3em;
+    margin-right: -40px;
+
 }
 .blog {
     padding-top: 30px;
