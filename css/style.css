@@ -555,7 +555,16 @@ header {
 }
 /** end about **/
 /** blog **/
- .blog {
+
+
+  .about_img_blog {
+    background: #d8b00f;
+    margin: 10;
+    margin-right: 0px;
+    padding: 50px 0px 10px 50px;
+    margin-right: -600px;
+}
+.blog {
     padding-top: 30px;
 }
  .title {
