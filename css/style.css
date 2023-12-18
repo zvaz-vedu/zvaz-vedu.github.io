@@ -388,8 +388,8 @@ header {
 }
  #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
      width: 65px;
-     height: 65px;
-     background: #e1e0e0;
+     height: 30px;
+     background: transparent;
      opacity: 1;
      font-size: 30px;
      color: var(--dark);
