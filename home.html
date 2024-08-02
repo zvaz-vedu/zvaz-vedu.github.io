@@ -64,35 +64,6 @@
 							<div class="full">
 								<div class="carousel vert slide" data-interval="5000" data-ride="carousel" id="main_slider">
 									<div class="carousel-inner">
-										<!--<div class="carousel-item">
-											<div class="row">
-												<div class="col-md-5">
-													<div class="slider_cont">
-														<h3 style="line-height: 1.1em;">Už 8. prosince<br>
-														na FAV ZČU!</h3>
-														<a class="main_bt_border" href="o_akci.html">Více informací</a>
-													</div>
-												</div>
-												<div class="col-md-7">
-													<div class="slider_image full text_align_center"><img alt="#" class="img-responsive" src="images/index_fav.webp"></div>
-												</div>
-											</div>
-										</div>-->
-										<!--<div class="carousel-item">
-											<div class="row">
-												<div class="col-md-5">
-													<div class="slider_cont">
-														<h3 style="line-height: 1.1em;">Co Tě na<br>
-														přednášce<br>
-														čeká?</h3>
-														<a class="main_bt_border" href="program.html">Více informací</a>
-													</div>
-												</div>
-												<div class="col-md-7">
-													<div class="slider_image full text_align_center"><img alt="#" class="img-responsive" src="images/NTIS_sal-US-01.webp"></div>
-												</div>
-											</div>
-										</div>-->
 										<div class="carousel-item">
 											<div class="row">
 												<div class="col-md-5">
@@ -144,31 +115,6 @@
 			</div>
 			<!-- end slider section -->
 			<div class="bg_bg">
-				<!-- about -->
-				<div class="about" id="first-about">
-					<div class="container">
-						<!--
-						<div class="progress-container explanation-container">
-							<h1>Podaných registrací</h1>
-							<div class="progress-bg">
-								<div class="progress-bar" id="myProgressBar"></div>
-							</div>
-							<div class="progress-label explanation-text">
-								<button class="registration-button">
-									<a href="https://docs.google.com/forms/d/e/1FAIpQLSfmbZxUPAX29GIYnSUo62ylC1KL6op1q611p2jCTMhH3P4v2g/viewform?vc=0&c=0&w=1&flr=0">Zaregistrovat se hned <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
-								</button>
-								<div class="reservation-status">
-									<span id="reservedPlaces">0</span>/200
-								</div>
-							</div>
-						</div>
-						-->
-						<!--<div class="callout">
-							<p>Akce je za námi a sklidila obrovský úspěch, děkujeme za zájem!</p>
-						</div>-->
-					</div>
-				</div>
-				</div>
 				<div class="about">
 					<div class="container">
 					  <div class="row justify-content-center">
@@ -240,31 +186,6 @@
 				  </div>
 				</div>
 				<!-- about -->
-				<!--
-				<div class="about">
-					<div class="container">
-						<div class="row justify-content-center">
-						<div class="about-text">
-							<h2>Omluvení školní absence</h2>
-							<p>Vzhledem k zásadní problematice absence ve škole je její omluvení či nezapočtení jednou z priorit našich ambasadorů.</p><p>Na některých školách je absence prominutá jako školní akce;</p>
-							<ul style="font-size: 18px; padding-left: 30px; padding-top: 10px; padding-bottom: 10px;">
-								<li>• Masarykovo gymnázium v Plzni</li>
-								<li>• Gymnázium J. Š. Baara</li>
-							</ul>
-							<p>V ostatních školách je tato otázka zatím nedořešená. V případě, že by se na Vaší škole nevydařilo absenci vyjednat, budeme vystavovat oficiální prezenční certifikáty, viz vzor brzy ke stažení níže. V případě otázek nás kontaktujte.</p>
-							<button class="about-button" style="padding-top: 5px;">
-								!!!tady to zakomentovat!!! <a href="#">Vzorový certifikát <i aria-hidden="true" class="fa fa-long-arrow-right"></i> !!!tady to zakomentovat!!!
-							</a>
-							</button>
-						</div>
-						<div class="about-image">
-							<img src="images/mg.webp">
-						</div>
-						</div>
-					</div>
-					</div>
-				</div> -->
-				<!-- about -->
 				<div class="about">
 				  <div class="container">
 					<div class="row justify-content-center">
@@ -307,11 +228,8 @@
 				
 				<!-- footer -->    
 				<div id="pcFooterContainer"></div>
-				<!-- end footer -->
-				<!-- start mobile footer -->
 				<div id="mobileFooterContainer"></div>
-				<!-- end mobilefooter -->
-
+				
 				<div class="overlay"></div><!-- Javascript files-->
 				<script src="js/jquery.min.js">
 				</script> 
@@ -381,124 +299,7 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="js/footer.js"></script>
-
 	<script src="js/sidebar.js"></script>
-
-
 </body>
-<script>
-    // Function to update the progress bar based on the number of reserved places
-    function updateProgressBar(reservedPlaces) {
-        const progressBar = document.getElementById('myProgressBar');
-        const progressLabel = document.getElementById('reservedPlaces');
-        const totalPlaces = 200;
-
-        const percentage = (reservedPlaces / totalPlaces) * 100;
-        progressBar.style.width = percentage + '%';
-        progressLabel.textContent = reservedPlaces;
-    }
-
-    // Call the function with the initial number of reserved places
-    updateProgressBar(/* Initial number of reserved places */);
-
-    // Example: Update the progress bar with a new number of reserved places (e.g., 50)
-    // Uncomment the line below and replace 50 with the actual number of reserved places.
-    updateProgressBar(69);
-</script>
-<style>
-.explanation-container {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin-bottom: 20px;
-}
-
-.progress-bg {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 20px;
-    background-color: #e0e0e0; /* Light gray background for the progress bar */
-    border-radius: 8px; /* Match the container's border-radius */
-    position: relative;
-}
-
-.progress-bar {
-    width: 0%;
-    height: 100%;
-    background-color: #ff8c00; /* Green color */
-    border-radius: 8px; /* Match the container's border-radius */
-}
-
-.progress-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    text-align: right; /* Align the label text to the right */
-}
-
-.registration-button {
-    text-align: left; /* Align the button text to the left */
-	background-color: white;
-}
-
-.registration-button a:hover {
-	color: var(--orange);
-}
-
-.reservation-status {
-    text-align: right; /* Align the reservation status to the right */
-}
-
-
-
-
-</style>
-<!-- Add this script tag to include the Google API client library -->
-<script src="https://apis.google.com/js/api.js"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Your Google Sheets API key and sheet ID
-        var apiKey = 'AIzaSyAPK9bYzeceE7QflZHiO2dcOUOa210Orqs';
-        var sheetId = '1INCa6wYjTpA0Rm89R7VPDTRK8zYxK0-Sn8D_j10Ne50';
-        var sheetName = 'Odpovědi formuláře 1';
-
-        // URL to fetch data from the Google Sheet
-        var apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}?key=${apiKey}`;
-
-        // Function to update the registration count
-        function updateRegistrationCount(count) {
-            var reservedPlaces = document.getElementById("reservedPlaces");
-            reservedPlaces.textContent = count;
-        }
-
-        // Function to fetch data from the Google Sheet
-        function fetchData() {
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    // Assuming your registration count is the number of rows (excluding the header)
-                    var registrationCount = data.values.length - 1;
-                    updateProgressBar(registrationCount);
-                })
-                .catch(error => console.error('Error fetching data:', error));
-        }
-
-        // Call fetchData when the DOM is loaded
-        fetchData();
-	})
-</script>
-
-
-
 </html>
