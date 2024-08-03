@@ -366,7 +366,7 @@ header {
      transform: translate3d(0,-100%, 0);
 }
  .slider_cont {
-     padding-left: 190px;
+     padding-left: 12vw;
      float: left;
      margin: 100px 0 0;
 }
