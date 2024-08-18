@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
         var documentHeight = document.body.clientHeight;
         var scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
 
-        if (documentHeight - windowHeight <= scrollPosition) {
+        var sponsorsElement = document.getElementById('sponsors');
+
+        if (documentHeight - windowHeight <= scrollPosition + 10) {  // Adding some margin for smoother transition
             // User has scrolled to the bottom
-            document.getElementById('sponsors').style.visibility = 'visible';
-            document.getElementById('sponsors').style.display = 'block';
+            sponsorsElement.classList.add('visible');
         } else {
             // User hasn't scrolled to the bottom
-            document.getElementById('sponsors').style.visibility = 'hidden';
-            document.getElementById('sponsors').style.display = 'none';
+            sponsorsElement.classList.remove('visible');
         }
     }
 

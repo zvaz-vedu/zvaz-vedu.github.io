@@ -41,31 +41,15 @@
 <body class="main-layout about_page">
 <!-- Loader -->
 <div class="wrapper">
+    <!-- Sidebar  -->
+    <script src="js/sidebar.js"></script>
     <div class="sidebar">
-        <!-- Sidebar  -->
         <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fa fa-arrow-left"></i>
-            </div>
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="index.html">Domů</a>
-                </li>
-                <li>
-                    <a href="o_akci.html">O akci</a>
-                </li>
-                <li>
-                    <a href="o_nas.html">O nás</a>
-                </li>
-                <li class="active">
-                    <a href="program.html">Program</a>
-                </li>
-                <li>
-                    <a href="kontakt.html">Kontakt</a>
-                </li>
-            </ul>
+            <div id="dismiss"><i class="fa fa-arrow-left"></i></div>
+            <div id="custom-sidebar"></div>
         </nav>
     </div>
+    <!-- End sidebar  -->
     <div id="content">
         <!-- Header -->
         <!-- header -->
@@ -75,13 +59,9 @@
             </div>
             <div class="header-text">
                 <p class="sample-text-2"><img alt="#" src="images/mail_icon.png" style="margin-right: 5px;"> <a href="kontakt.html" style="color: white;">organizatori@zvazvedu.cz</a></p>
-                <p></p>
-                <div class="menu">
-                    <button id="sidebarCollapse" type="button"><img alt="#" src="images/menu_icon.png" style="margin-right: 15px; max-width: unset"> <!-- Add width and height attributes here --></button>
-                </div>
-                <p></p>
             </div>
-        </header><!-- Yellow Background Section -->
+        </header>
+        <!-- Yellow Background Section -->
         <div class="yellow_bg" style="margin-bottom: 15px; padding-top: 30px;">
             <div class="container">
                 <div class="row">
@@ -113,6 +93,5 @@
             $('.fotorama').fotorama();
         });
     </script>
-    
 </body>
 </html>

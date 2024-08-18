@@ -306,9 +306,36 @@ $(function () {
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
-		$('#sidebarCollapse').on('click', function () {
+		$('#sidebarCollapse').on('click', function (event) {
 			$('#sidebar').toggleClass('active');
+			$('#overlay').toggleClass('active');
 			$(this).toggleClass('active');
+			event.stopPropagation();
+		});
+	
+		$('#dismiss').on('click', function () {
+			$('#sidebar').removeClass('active');
+			$('#overlay').addClass('deactivating');
+			$('#sidebarCollapse').removeClass('active');
+		});
+	
+		$('#overlay').on('click', function () {
+			$('#sidebar').removeClass('active');
+			$(this).addClass('deactivating');
+			$('#sidebarCollapse').removeClass('active');
+		});
+	
+		$(document).on('click', function (event) {
+			var $target = $(event.target);
+			if (!$target.closest('#sidebar').length && !$target.closest('#sidebarCollapse').length) {
+				$('#sidebar').removeClass('active');
+				$('#overlay').addClass('deactivating');
+				$('#sidebarCollapse').removeClass('active');
+			}
+		});
+	
+		$('#sidebar').on('click', function (event) {
+			event.stopPropagation();
 		});
 	});
 

@@ -23,6 +23,7 @@ body {
      line-height: 1.9;
      margin: 0;
      background-color: var(--light);
+     padding-bottom: 70px;
 }
  a {
      color: #1f1f1f;
@@ -270,18 +271,19 @@ body {
 }
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
 header {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     background-color: var(--dark);
-     padding: 15px 20px;
-     min-height: 90px;
-     position: fixed;
-     width: 100%;
-     top: 0;
-     left: 0;
-     z-index: 998;
- }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    padding: 15px 20px;
+    min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
  header .container-fluid {
      max-width: 1850px;
 }
@@ -672,159 +674,114 @@ header {
 }
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
- .footer {
-     background: var(--yellow);
-     padding-top:0px;
-     margin-top: 90px;
+.footer {
+    background: var(--yellow);
+    padding-top: 0;
+    margin-top: 90px;
 }
 
- .footer1 {
-     background: #FFFFFF;
-     padding-top:90px;
-     margin-top: 90px;
+#sponsors {
+    max-height: 0; /* Start with height collapsed */
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    visibility: hidden; /* Hide initially */
 }
- .footer h2 {
-     color: #000;
-     font-size: 40px;
-     font-weight: 500;
-     padding-left: 223px;
-     padding-bottom: 0px;
+
+#sponsors.visible {
+    max-height: 500px; /* Adjust to the max height of the content */
+    opacity: 1;
+    visibility: visible;
 }
- .white {
-     color: #fff;
-     font-weight: 500;
-}
- .main_form {
-     padding-top: 30px;
-     padding-left: 223px;
-}
- .form-control {
-     border: #fff solid 2px;
-     border-radius: inherit;
-     margin-bottom: 25px;
-     padding: 15px 20px;
-     font-family: poppins;
-}
- .form-control:focus {
-     box-shadow: inherit;
-     border: #fff solid 2px !important;
-}
- .textarea {
-     font-family: poppins;
-     border: #fff solid 2px;
-     margin-bottom: 25px;
-     padding: 15px 20px;
-     width: 100%;
-     padding-top: 40px;
-}
- .send {
-     font-family: poppins;
-     float: left;
-     margin: 0 auto;
-     display: block;
-     background: #fff;
-     color: #000;
-     max-width: 165px;
-     padding: 13px 0px;
-     width: 100%;
-     font-size: 18px;
-}
- .send:hover {
-     background: #000;
-     color: #fff;
-}
- .footer .img-box {
-     padding-right: 25px;
-}
- .footer_logo {
-     margin-top: 40px;
-     text-align: center;
-     border-bottom: #ddd solid 1px;
-     padding-bottom: 15px;
-     margin-bottom: 15px;
-}
- ul.lik {
+
+ul.lik {
     text-align: center;
-     margin-top: 10px;
-     margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
- ul.lik li {
+
+ul.lik li {
     display: inline-block;
 }
- ul.lik li a {
-     color: #292323;
-     font-size: 17px;
-     line-height: 27px;
-     padding: 0px 25px;
-     font-weight: 500;
+
+ul.lik li a {
+    color: #292323;
+    font-size: 17px;
+    line-height: 27px;
+    padding: 0px 25px;
+    font-weight: 500;
 }
- ul.lik li a:hover {
-     color: #fff;
-}
- ul.lik li.active a {
+
+ul.lik li a:hover {
     color: #fff;
 }
- .new {
-    text-align: center;
-     margin-top: 40px;
-}
- .new h3 {
+
+ul.lik li.active a {
     color: #fff;
-     font-size:22px;
-     font-weight: 500;
-     display:inline-block;
-     padding-right: 15px;
 }
- .newtt p {
-    color: #fff;
-     text-align: center;
-     margin-top: 35px;
-}
- .newtetter {
-    display: inline-block;
-}
- .newtetter .tetter {
-     padding: 9px 20px;
-     border-radius: inherit;
-     border: indianred
-}
- .submit {
-     background: #070100;
-     margin-left: -3px;
-     padding: 9px 50px;
-     color: #fff;
-}
- .submit:hover {
-    background: #ddd;
-     color: #000;
-}
- .footer .img-box figure {
-    margin: 0px;
-}
- .footer .img-box figure img {
-    width: 100%;
-}
- .copyright {
+
+.copyright {
     background: #fff;
-     margin-top: 0px;
+    margin-top: 0;
 }
- .copyright p {
+
+.copyright p {
     color: #000;
-     text-align: center;
-     padding: 25px 0px;
-     font-size: 17px;
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 17px;
 }
- .copyright a:hover {
+
+.copyright a:hover {
     color: var(--yellow);
 }
- .owl-dot {
-     background: #15cfe5 !important;
-     width: 25px;
-     height: 25px;
-     margin-bottom: 25px !important;
-     border-radius: 25px;
-     margin: 0px 5px;
-     margin-bottom: 0px;
+
+
+/* --------------------------------------------------- OVERLAY STYLE ----------------------------------------------------- */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; /* Lower than the sidebar */
+    background: rgba(0, 0, 0, 0.2); /* Slight background tint */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Initial blur state */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px); /* Safari support */
+}
+
+.overlay.active {
+    display: block;
+    animation: blurIn 0.3s forwards;
+}
+
+.overlay.deactivating {
+    animation: blurOut 0.3s forwards;
+}
+@keyframes blurIn {
+    from {
+        backdrop-filter: blur(0px);
+        opacity: 0;
+    }
+    to {
+        backdrop-filter: blur(4px);
+        opacity: 1;
+    }
+}
+
+@keyframes blurOut {
+    from {
+        backdrop-filter: blur(4px);
+        opacity: 1;
+    }
+    to {
+        backdrop-filter: blur(0px);
+        opacity: 0;
+    }
 }
 /* --------------------------------------------------- SIDEBAR STYLE ----------------------------------------------------- */
  #sidebar {
@@ -833,7 +790,7 @@ header {
      top: 0;
      left: -280px;
      height: 100vh;
-     z-index: 999;
+     z-index: 1001;
      background: #fff;
      color: #fff;
      transition: all 0.3s;
@@ -861,20 +818,7 @@ header {
      background: #111;
      color: #fff;
 }
- .overlay {
-     display: none;
-     position: fixed;
-     width: 100vw;
-     height: 100vh;
-     background: rgba(0, 0, 0, 0.7);
-     z-index: 998;
-     opacity: 0;
-     transition: all 0.5s ease-in-out;
-}
- .overlay.active {
-     display: none;
-     opacity: 1;
-}
+
  #sidebarCollapse {
      background: transparent;
      padding: 0;
