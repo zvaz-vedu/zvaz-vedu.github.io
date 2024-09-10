@@ -50,7 +50,7 @@
          margin-bottom: 5px
     }
      .slider_section {
-        min-height: 50vh;
+        min-height: 100vh;
     }
      .carousel-control-prev {
          width: 50px;
@@ -92,7 +92,7 @@
         display: none !important;
     }
      .slider_section {
-        min-height: 50vh;
+        min-height: 100vh;
     }
      .slider_cont h3 {
         font-size: 36px;
@@ -173,7 +173,7 @@
         margin-bottom: 5px
     }
      .slider_section {
-        min-height: 50vh;
+        min-height: 100vh;
     }
      .slider_image img {
         height: 250px;
@@ -282,7 +282,7 @@
          height: 50px;
     }
      .slider_section {
-        min-height: 50vh;
+        min-height: 100vh;
     }
      .slider_image img {
         height: 250px;
@@ -457,7 +457,7 @@
          height: 50px;
     }
      .slider_section {
-        min-height: 50vh;
+        min-height: 100vh;
     }
      .slider_image img {
         height: 250px;
