@@ -142,10 +142,6 @@ body {
      padding: 0;
      cursor: pointer;
 }
- .full {
-     float: center;
-     width: 100%;
-}
  .layout_padding {
      padding-top: 90px;
      padding-bottom: 90px;
@@ -165,7 +161,7 @@ body {
 }
  .full {
      width: 100%;
-     float: left;
+     float: center;
      margin: 0;
      padding: 0;
 }
@@ -344,7 +340,7 @@ header {
 }
  .slider_section {
      background: var(--dark);
-     min-height: 100vh;
+     min-height: 100vh; /* minimální velikost CELÉHO SLIDERU */
      padding-top: 80px;
 }
 /** slider section **/
@@ -355,6 +351,7 @@ header {
      width: 100%;
      max-width: 1920px;
 }
+/* START prostě tohle dělá animaci že to jezdí za sebou a zleva doprava */
  .vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
      -webkit-transform: translate3d(0, 0, 0);
      transform: translate3d(0, 0, 0);
@@ -367,16 +364,18 @@ header {
      -webkit-transform: translate3d(0,-100%, 0);
      transform: translate3d(0,-100%, 0);
 }
+/* END prostě tohle dělá animaci že to jezdí za sebou a zleva doprava */
  .slider_cont {
-     padding-left: 12vw;
+     /* tohle upravuje text vedle obrázku*/
+     /* padding-left: 12vw; /*osazení zleva, ale podle mě je to lepší řešit pomocí margin*/
      float: left;
-     margin: 100px 0 0;
+     margin: 14vh 0 0 12vw;
 }
  .slider_cont h3 {
      font-size: 70px;
      font-weight: 600;
      color: #fff;
-     line-height: 70px;
+     line-height: 1.2;
      letter-spacing: -2px;
 }
  .slider_cont p {
@@ -388,26 +387,30 @@ header {
      margin-bottom: 10px;
      padding-right: 30px;
 }
- #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+#main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+    /* šipky */
      width: 65px;
-     height: 30px;
-     background: transparent;
-     opacity: 1;
+     height: 65px;
+     background: transparent; /*jedná se o barvu pozadí šipky, teď žádná není, tj. bez pozadí*/
+     opacity: 1; /* mezi 0 a 1*/
      font-size: 30px;
-     color: var(--dark);
-     border-radius: 100%;
+     color: var(--light);
+     /* border-radius: 100%; dělá tvar kolem šipky kulatější (100%) nebo čtvercový (0%)*/
 }
  #main_slider a.carousel-control-prev {
+    /* šipka hore */
      position: absolute;
      left: 50px;
-     top: 42%;
+     top: 25%;
 }
  #main_slider a.carousel-control-next {
-     position: absolute;
+    /* šipka dole (asi) */
+    position: absolute;
      left: 50px;
-     top: 52%;
+     top: 40%;
 }
  .main_bt_border {
+    /* tlačítko */
      color: #fff;
      font-size: 18px;
      font-weight: 300;
