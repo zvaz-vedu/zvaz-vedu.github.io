@@ -95,7 +95,7 @@
         min-height: 100vh;
     }
      .slider_cont h3 {
-        font-size: 36px;
+        font-size: 40px;
          line-height: 45px;
     }
      .slider_cont p {
@@ -374,11 +374,6 @@
     #first-about {
         margin-top: 5.5em;
     }
-    /* přidal Eda */
-    .slider_cont h3 {
-        font-size: 30px;
-        line-height: 45px;
-    }
 }
  @media (max-width: 575px) {
     .right-elements {
@@ -535,9 +530,3 @@
     header {
         margin-bottom: 100%;
     }
-    /* přidal Eda */
-    .slider_cont h3 {
-        font-size: 22px;
-        line-height: 45px;
-    }
-}
