@@ -15,6 +15,10 @@
          min-width: 30%; /* Set a minimum width for the logo */
          height: auto; /* Maintain the aspect ratio */
      }
+     .slider_cont h3 {
+        font-size: 5vw;
+    }
+
 }
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
  @media (min-width: 1200px) and (max-width: 1300px) {
@@ -42,8 +46,7 @@
          margin-left: 12px;
     }
      .slider_cont h3 {
-        font-size: 48px;
-         line-height: 45px;
+        font-size: 5vw;
     }
      .slider_cont p {
         margin-top: 10px;
@@ -95,8 +98,7 @@
         min-height: 100vh;
     }
      .slider_cont h3 {
-        font-size: 40px;
-         line-height: 45px;
+        font-size: 5vw;
     }
      .slider_cont p {
         margin-top: 10px;
@@ -165,8 +167,7 @@
          margin: 0;
     }
      .slider_cont h3 {
-        font-size: 36px;
-        line-height: 45px;
+        font-size: 5vw;
     }
      .slider_cont p {
         margin-top: 10px;
@@ -176,10 +177,10 @@
         min-height: 100vh;
     }
      .slider_image img {
-        height: 250px;
+        /* height: 250px; /* stejne se to bere z ".slider_image.full.text_align_center img" */
     }
      .slider_image.full.text_align_center img {
-        height: 250px;
+        width: 50vw;
     }
      #main_slider a.carousel-control-prev {
         top: 31%;
@@ -284,11 +285,11 @@
      .slider_section {
         min-height: 100vh;
     }
-     .slider_image img {
-        height: 250px;
+    .slider_image img {
+        /* height: 250px; /* stejne se to bere z ".slider_image.full.text_align_center img" */
     }
-     .slider_image.full.text_align_center img {
-        height: 250px;
+    .slider_image.full.text_align_center img {
+        width: 80vw;
     }
      .product_blog_img {
         text-align: center;
@@ -459,11 +460,11 @@
      .slider_section {
         min-height: 100vh;
     }
-     .slider_image img {
-        height: 250px;
+    .slider_image img {
+        /* height: 250px; /* stejne se to bere z ".slider_image.full.text_align_center img" */
     }
-     .slider_image.full.text_align_center img {
-        height: 250px;
+    .slider_image.full.text_align_center img {
+        width: 80vw;
     }
      .product_blog_img {
         text-align: center;
