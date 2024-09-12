@@ -392,25 +392,25 @@ header {
 }
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
     /* šipky */
-     width: 65px;
-     height: 65px;
+     width: 2px; /* pouze okraj, ne šipka */
+     height: 2px; /* pouze okraj, ne šipka */
      background: transparent; /*jedná se o barvu pozadí šipky, teď žádná není, tj. bez pozadí*/
      opacity: 1; /* mezi 0 a 1*/
-     font-size: 30px;
+     font-size: 45px; /* velikost šipky*/
      color: var(--light);
-     /* border-radius: 100%; dělá tvar kolem šipky kulatější (100%) nebo čtvercový (0%)*/
+     /* border-radius: 100%; /* dělá tvar kolem šipky kulatější (100%) nebo čtvercový (0%)*/
 }
  #main_slider a.carousel-control-prev {
     /* šipka hore */
      position: absolute;
-     left: 50px;
-     top: 25%;
+     left: 4vw;
+     top: 30vh;
 }
  #main_slider a.carousel-control-next {
     /* šipka dole (asi) */
     position: absolute;
-     left: 50px;
-     top: 40%;
+     left: 4vw; 
+     top: 45vh; /* je to lepší než v %, myslím */ 
 }
  .main_bt_border {
     /* tlačítko */

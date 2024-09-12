@@ -57,18 +57,6 @@
      .slider_section {
         min-height: 100vh;
     }
-     .carousel-control-prev {
-         width: 50px;
-         height:50px;
-         left: -20px;
-         top: 95%;
-    }
-     .carousel-control-next {
-         width: 50px;
-         height:50px;
-         right: -20px;
-         top: 95%;
-    }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
     .about-image {
@@ -106,22 +94,6 @@
      .slider_cont p {
         margin-top: 10px;
          margin-bottom: 5px
-    }
-     #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
-        width: 54px;
-         height: 54px;
-    }
-     .carousel-control-prev {
-         width: 50px;
-         height:50px;
-         left: -20px;
-         top: 95%;
-    }
-     .carousel-control-next {
-         width: 50px;
-         height:50px;
-         right: -20px;
-         top: 95%;
     }
      .about .about_img figure {
         padding: 155px 0px 0px 60px;
@@ -165,10 +137,6 @@
     .dinone {
         display: none !important;
     }
-    .slider_cont {
-        padding-left: 128px;
-         margin: 0;
-    }
      .slider_cont h3 {
         font-size: 5vw;
         text-align: left;
@@ -185,21 +153,6 @@
     }
      .slider_image.full.text_align_center img {
         width: 50vw;
-    }
-     #main_slider a.carousel-control-prev {
-        top: 31%;
-    }
-     .carousel-control-prev {
-         left: -2px;
-         width: 50px;
-         height:50px;
-         top: 95%;
-    }
-     .carousel-control-next {
-         right: -2px;
-         width: 50px;
-         height:50px;
-         top: 95%;
     }
      .blog {
          padding-top: 120px;
@@ -274,17 +227,17 @@
      .dinone {
         display: none !important;
     }
+    #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+        /* šipky */
+         font-size: 50px; /* velikost šipek*/
+    }
      #main_slider a.carousel-control-prev {
-        top: 40%;
-         left: 0px;
-         width: 50px;
-         height: 50px;
+        left: 10vw;
+        top: 30vh;
     }
      #main_slider a.carousel-control-next {
-        top: 60%;
-         left: 0px;
-         width: 50px;
-         height: 50px;
+        left: 10vw;
+        top: 50vh;
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
@@ -309,18 +262,6 @@
     }
      .product_blog_img {
         text-align: center;
-    }
-     .carousel-control-prev {
-         left: -2px;
-         width: 50px;
-         height:50px;
-         top: 95%;
-    }
-     .carousel-control-next {
-         right: -2px;
-         width: 50px;
-         height:50px;
-         top: 95%;
     }
      .title h2 {
         font-size: 36px;
@@ -467,17 +408,17 @@
      .dinone {
         display: none !important;
     }
+    #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+        /* šipky */
+         font-size: 55px; /* velikost šipek*/
+    }
      #main_slider a.carousel-control-prev {
-        top: 40%;
-         left: 0px;
-         width: 50px;
-         height: 50px;
+        left: 6vw;
+        top: 30vh;
     }
      #main_slider a.carousel-control-next {
-        top: 60%;
-         left: 0px;
-         width: 50px;
-         height: 50px;
+        left: 6vw;
+        top: 50vh;
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
@@ -502,18 +443,6 @@
     }
      .product_blog_img {
         text-align: center;
-    }
-     .carousel-control-prev {
-         left: -2px;
-         width: 50px;
-         height:50px;
-         top: 95%;
-    }
-     .carousel-control-next {
-         right: -2px;
-         width: 50px;
-         height:50px;
-         top: 95%;
     }
      .title h2 {
         font-size: 36px;
