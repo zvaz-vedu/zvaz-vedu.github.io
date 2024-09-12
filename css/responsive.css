@@ -241,7 +241,7 @@
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
-        margin: 0
+        /* margin: 0 */
     }
     .main_bt_border {
         float: none; /* Remove float so the button can center */
@@ -423,7 +423,7 @@
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
-        margin: 0
+        /* margin: 0 */
     }
     .main_bt_border {
         float: none; /* Remove float so the button can center */
