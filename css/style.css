@@ -368,8 +368,9 @@ header {
  .slider_cont {
      /* tohle upravuje text vedle obrázku*/
      /* padding-left: 12vw; /*osazení zleva, ale podle mě je to lepší řešit pomocí margin*/
-     float: left;
      margin: 14vh 0 0 12vw;
+     text-align: center;
+     
 }
  .slider_cont h3 {
      font-size: inherit; /* z responsive (velká 5vw, malá 10vw) */
