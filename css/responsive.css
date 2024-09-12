@@ -260,6 +260,7 @@
     }
     .slider_image.full.text_align_center img {
         width: 80vw;
+        margin-left: 12vw;
     }
      .product_blog_img {
         text-align: center;
@@ -336,9 +337,6 @@
     .about_img_blog {
         max-width: 75vw; /* přidal Eda */
     }
-    .custom-margin-small-screens {
-        margin: 0 0 0 12vw;
-    }
 }
  @media (max-width: 575px) {
     .right-elements {
@@ -414,16 +412,16 @@
          font-size: 55px; /* velikost šipek*/
     }
      #main_slider a.carousel-control-prev {
-        left: 6vw;
-        top: 30vh;
+        left: 25%;
+        top: 95%;
     }
      #main_slider a.carousel-control-next {
-        left: 6vw;
-        top: 50vh;
+        left: 75%;
+        top: 95%;
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
-        /* margin: 0 */
+        margin-left: 0;
     }
     .main_bt_border {
         float: none; /* Remove float so the button can center */
@@ -431,7 +429,7 @@
         margin-top: 20px;
     }
     .slider_cont h3 {
-        font-size: 10vw;
+        font-size: 15vw;
         text-align: center; /* asi zbytečné, mělo by se brát z "slider_cont" */
     }
      .slider_section {
@@ -498,8 +496,5 @@
     }
     .about_img_blog {
         max-width: 75vw; /* přidal Eda */
-    }
-    .custom-margin-small-screens {
-        margin: 0 0 0 12vw;
     }
 }
