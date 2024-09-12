@@ -241,7 +241,6 @@
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
-        display: none
         /* margin: 0 */
     }
     .main_bt_border {
@@ -424,7 +423,6 @@
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
-        display: none
         /* margin: 0 */
     }
     .main_bt_border {
