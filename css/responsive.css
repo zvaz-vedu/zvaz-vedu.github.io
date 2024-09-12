@@ -375,6 +375,10 @@
     #first-about {
         margin-top: 5.5em;
     }
+    .about_img_blog {
+        max-width: 75vw; /* přidal Eda */
+    }
+
 }
  @media (max-width: 575px) {
     .right-elements {
@@ -531,3 +535,7 @@
     header {
         margin-bottom: 100%;
     }
+    .about_img_blog {
+        max-width: 75vw; /* přidal Eda */
+    }
+}
