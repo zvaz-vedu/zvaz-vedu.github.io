@@ -372,11 +372,13 @@ header {
      margin: 14vh 0 0 12vw;
 }
  .slider_cont h3 {
-     font-size: 10vw; /* pro větší obrazovky se upravuje v responsive.ccs */
+     font-size: inherit; /* z responsive (velká 5vw, malá 10vw) */
      font-weight: 600;
      color: #fff;
-     line-height: 1.2; /* pro větší obrazovky se upravuje v responsive.ccs */
+     line-height: 1.2;
      letter-spacing: -2px;
+     text-align: inherit; /* z responsive (velká left, malá center)*/
+
 }
  .slider_cont p {
      font-size: 18px;
