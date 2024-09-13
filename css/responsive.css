@@ -412,12 +412,12 @@
          font-size: 55px; /* velikost šipek*/
     }
      #main_slider a.carousel-control-prev {
-        left: 25%;
-        top: 95%;
+        left: calc(30% - 30px); /*aby byl prostředek šipky uprostřed*/
+        top: 90%;
     }
      #main_slider a.carousel-control-next {
-        left: 75%;
-        top: 95%;
+        left: calc(70% - 30px); /*aby byl prostředek šipky uprostřed*/
+        top: 90%;
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */

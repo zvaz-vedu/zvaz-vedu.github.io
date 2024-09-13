@@ -373,12 +373,12 @@ header {
      
 }
  .slider_cont h3 {
-     font-size: inherit; /* z responsive (velká 5vw, malá 10vw) */
+     font-size: unset; /* z responsive (velká 5vw, malá 10vw) */
      font-weight: 600;
      color: #fff;
      line-height: 1.2;
      letter-spacing: -2px;
-     text-align: inherit; /* z responsive (velká left, malá center)*/
+     text-align: unset; /* z responsive (velká left, malá center)*/
 
 }
  .slider_cont p {
@@ -392,8 +392,8 @@ header {
 }
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
     /* šipky */
-     width: 2px; /* pouze okraj, ne šipka */
-     height: 2px; /* pouze okraj, ne šipka */
+     width: 60px; /* pouze okraj, ne šipka, ale upravuje jak moc se dá na šipku kliknout */
+     height: 60px; /* -||- stejně */
      background: transparent; /*jedná se o barvu pozadí šipky, teď žádná není, tj. bez pozadí*/
      opacity: 1; /* mezi 0 a 1*/
      font-size: 45px; /* velikost šipky*/
