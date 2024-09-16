@@ -483,3 +483,10 @@
         max-width: 75vw; /* přidal Eda */
     }
 }
+@media (max-width: 409px) {
+    .slider_section {
+        background: var(--dark);
+        min-height: calc(100vh - 141.56px); /* minimální velikost CELÉHO SLIDERU je celá strana minus (minimální) velikost footeru, protože neumím zjistit aktuální velikost footeru */
+        padding-top: 80px;
+   } 
+}
