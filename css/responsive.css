@@ -1,3 +1,12 @@
+:root {
+    --dark: #201f1f;
+    --light: #f3f0e4;
+
+
+    --yellow: #d8b00f;
+    --text-color: #ffffff;
+  } 
+
 @media (min-width: 1301px) {
 
     .when-wide {
@@ -54,9 +63,6 @@
         margin-top: 10px;
          margin-bottom: 5px
     }
-     .slider_section {
-        min-height: 100vh;
-    }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
     .about-image {
@@ -83,9 +89,6 @@
      }
     .dinone {
         display: none !important;
-    }
-     .slider_section {
-        min-height: 100vh;
     }
      .slider_cont h3 {
         font-size: 5vw;
@@ -144,12 +147,6 @@
      .slider_cont p {
         margin-top: 10px;
         margin-bottom: 5px
-    }
-     .slider_section {
-        min-height: 100vh;
-    }
-     .slider_image img {
-        /* height: 250px; /* stejne se to bere z ".slider_image.full.text_align_center img" */
     }
      .slider_image.full.text_align_center img {
         width: 50vw;
@@ -230,13 +227,12 @@
     #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
         /* šipky */
          font-size: 50px; /* velikost šipek*/
+         left: 10vw;     
     }
      #main_slider a.carousel-control-prev {
-        left: 10vw;
         top: 30vh;
     }
      #main_slider a.carousel-control-next {
-        left: 10vw;
         top: 50vh;
     }
     .slider_cont {
@@ -251,12 +247,6 @@
     .slider_cont h3 {
         font-size: 10vw;
         text-align: center; /* asi zbytečné, mělo by se brát z "slider_cont" */
-    }
-     .slider_section {
-        min-height: 100vh;
-    }
-    .slider_image img {
-        /* height: 250px; /* stejne se to bere z ".slider_image.full.text_align_center img" */
     }
     .slider_image.full.text_align_center img {
         width: 80vw;
@@ -410,14 +400,15 @@
     #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
         /* šipky */
          font-size: 55px; /* velikost šipek*/
+         background: var(--dark);
     }
      #main_slider a.carousel-control-prev {
         left: calc(30% - 30px); /*aby byl prostředek šipky uprostřed*/
-        top: 90%;
+        top: calc(100% - 30px);
     }
      #main_slider a.carousel-control-next {
         left: calc(70% - 30px); /*aby byl prostředek šipky uprostřed*/
-        top: 90%;
+        top: calc(100% - 30px);
     }
     .slider_cont {
         text-align: center; /* Center the text and button for small screens */
@@ -431,12 +422,6 @@
     .slider_cont h3 {
         font-size: 15vw;
         text-align: center; /* asi zbytečné, mělo by se brát z "slider_cont" */
-    }
-     .slider_section {
-        min-height: 100vh;
-    }
-    .slider_image img {
-        /* height: 250px; /* stejne se to bere z ".slider_image.full.text_align_center img" */
     }
     .slider_image.full.text_align_center img {
         width: 80vw;

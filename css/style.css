@@ -340,7 +340,7 @@ header {
 }
  .slider_section {
      background: var(--dark);
-     min-height: 100vh; /* minimální velikost CELÉHO SLIDERU */
+     min-height: calc(100vh - 51.39px); /* minimální velikost CELÉHO SLIDERU je celá strana minus (minimální) velikost footeru, protože neumím zjistit aktuální velikost footeru */
      padding-top: 80px;
 }
 /** slider section **/
@@ -398,7 +398,7 @@ header {
      opacity: 1; /* mezi 0 a 1*/
      font-size: 45px; /* velikost šipky*/
      color: var(--light);
-     /* border-radius: 100%; /* dělá tvar kolem šipky kulatější (100%) nebo čtvercový (0%)*/
+     border-radius: 50%; /* dělá tvar kolem šipky kulatější (100%) nebo čtvercový (0%)*/
 }
  #main_slider a.carousel-control-prev {
     /* šipka hore */
