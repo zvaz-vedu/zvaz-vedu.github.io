@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?xfamily=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
@@ -142,10 +142,6 @@ body {
      padding: 0;
      cursor: pointer;
 }
- .full {
-     float: center;
-     width: 100%;
-}
  .layout_padding {
      padding-top: 90px;
      padding-bottom: 90px;
@@ -165,7 +161,7 @@ body {
 }
  .full {
      width: 100%;
-     float: left;
+     float: center;
      margin: 0;
      padding: 0;
 }
@@ -344,7 +340,7 @@ header {
 }
  .slider_section {
      background: var(--dark);
-     min-height: 100vh;
+     min-height: calc(100vh - 51.39px); /* minimální velikost CELÉHO SLIDERU je celá strana minus (minimální) velikost footeru, protože neumím zjistit aktuální velikost footeru */
      padding-top: 80px;
 }
 /** slider section **/
@@ -355,6 +351,7 @@ header {
      width: 100%;
      max-width: 1920px;
 }
+/* START prostě tohle dělá animaci že to jezdí za sebou a zleva doprava */
  .vert .carousel-item-next.carousel-item-left, .vert .carousel-item-prev.carousel-item-right {
      -webkit-transform: translate3d(0, 0, 0);
      transform: translate3d(0, 0, 0);
@@ -367,17 +364,22 @@ header {
      -webkit-transform: translate3d(0,-100%, 0);
      transform: translate3d(0,-100%, 0);
 }
+/* END prostě tohle dělá animaci že to jezdí za sebou a zleva doprava */
  .slider_cont {
-     padding-left: 12vw;
-     float: left;
-     margin: 100px 0 0;
+     /* tohle upravuje text vedle obrázku*/
+     /* padding-left: 12vw; /*osazení zleva, ale podle mě je to lepší řešit pomocí margin*/
+     margin: 14vh 0 0 12vw;
+     text-align: center;
+     
 }
  .slider_cont h3 {
-     font-size: 70px;
+     font-size: unset; /* z responsive (velká 5vw, malá 10vw) */
      font-weight: 600;
      color: #fff;
-     line-height: 70px;
+     line-height: 1.2;
      letter-spacing: -2px;
+     text-align: unset; /* z responsive (velká left, malá center)*/
+
 }
  .slider_cont p {
      font-size: 18px;
@@ -388,26 +390,30 @@ header {
      margin-bottom: 10px;
      padding-right: 30px;
 }
- #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
-     width: 65px;
-     height: 30px;
-     background: transparent;
-     opacity: 1;
-     font-size: 30px;
-     color: var(--dark);
-     border-radius: 100%;
+#main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+    /* šipky */
+     width: 60px; /* pouze okraj, ne šipka, ale upravuje jak moc se dá na šipku kliknout */
+     height: 60px; /* -||- stejně */
+     background: transparent; /*jedná se o barvu pozadí šipky, teď žádná není, tj. bez pozadí*/
+     opacity: 1; /* mezi 0 a 1*/
+     font-size: 45px; /* velikost šipky*/
+     color: var(--light);
+     border-radius: 50%; /* dělá tvar kolem šipky kulatější (100%) nebo čtvercový (0%)*/
 }
  #main_slider a.carousel-control-prev {
+    /* šipka hore */
      position: absolute;
-     left: 50px;
-     top: 42%;
+     left: 4vw;
+     top: 30vh;
 }
  #main_slider a.carousel-control-next {
-     position: absolute;
-     left: 50px;
-     top: 52%;
+    /* šipka dole (asi) */
+    position: absolute;
+     left: 4vw; 
+     top: 45vh; /* je to lepší než v %, myslím */ 
 }
  .main_bt_border {
+    /* tlačítko */
      color: #fff;
      font-size: 18px;
      font-weight: 300;
@@ -1099,7 +1105,8 @@ height: 200px;
 .nice-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 80px;
+    margin-bottom: 250px;
 }
 
 .nice-table th, .nice-table td {
