@@ -125,9 +125,7 @@
 												<div class="col-md-5">
 													<div class="slider_cont">
 														<h3>Chceš si <br> zajistit <br> místo?</h3>
-														<a class="main_bt_border" style="color: var(--light);"> &nbsp; Registrace v průběhu října &nbsp;</a> <!-- nonbreakable space, pardon za to -->
-														<!-- <a class="main_bt_border" href="/404.html">&nbsp;&nbsp;Nezávazná přihláška&nbsp;&nbsp;</a> -->
-													</div>
+														<a class="main_bt_border" href="https://forms.gle/1y8cCQBr4G6iwGSx8" style="color: var(--light);"> &nbsp; Registrace jsou otevřené &nbsp;</a> <!-- nonbreakable space, pardon za to -->													</div>
 												</div>
 												<div class="col-md-7 ">
 													<div class="slider_image full text_align_center"><img alt="#" class="img-responsive" src="images/o_akci_1.webp"></div>
@@ -149,23 +147,23 @@
 				<!-- about -->
 				<div class="about" id="first-about">
 					<div class="container">
-						<!--<div class="progress-container explanation-container">
+						<div class="progress-container explanation-container">
 							<h1>Podaných registrací</h1>
 							<div class="progress-bg">
 								<div class="progress-bar" id="myProgressBar"></div>
 							</div>
 							<div class="progress-label explanation-text">
 								<button class="registration-button">
-									<a href="/404.HTML">Registrace budou spuštěny v říjnu <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
+									<a href="https://forms.gle/1y8cCQBr4G6iwGSx8">Registrace jsou otevřeny! <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
 								</button>
 								<div class="reservation-status">
 									<span id="reservedPlaces">0</span>/250
 								</div>
 							</div>
-						</div> -->
-						<div class="callout">
+						</div> 
+						<!---div class="callout">
 							<p>Registrace k akci budou spuštěny v průběhu října!</p>
-						</div>
+						</div> -->
 					</div>
 					</div>
 				</div>
@@ -320,7 +318,7 @@
 
     // Example: Update the progress bar with a new number of reserved places (e.g., 50)
     // Uncomment the line below and replace 50 with the actual number of reserved places.
-    updateProgressBar(0);
+    // updateProgressBar(0);
 </script>
 <style>
 .explanation-container {
@@ -385,7 +383,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         // Your Google Sheets API key and sheet ID
         var apiKey = 'AIzaSyAPK9bYzeceE7QflZHiO2dcOUOa210Orqs';
-        var sheetId = '1INCa6wYjTpA0Rm89R7VPDTRK8zYxK0-Sn8D_j10Ne50';
+        var sheetId = '1EwTNfmME3KmhXxiIExc_kNmybOG4sJUhSKmSVZDZK00';
         var sheetName = 'Odpovědi formuláře 1';
 
         // URL to fetch data from the Google Sheet
@@ -404,7 +402,7 @@
                 .then(data => {
                     // Assuming your registration count is the number of rows (excluding the header)
                     var registrationCount = data.values.length - 1;
-                    updateProgressBar(0); //replace with registrationcount
+                    updateProgressBar(registrationCount); //replace with registrationcount
                 })
                 .catch(error => console.error('Error fetching data:', error));
         }
