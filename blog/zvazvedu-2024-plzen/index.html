@@ -157,7 +157,7 @@
 									<a href="https://forms.gle/1y8cCQBr4G6iwGSx8">Registrace jsou otevřeny! <i aria-hidden="true" class="fa fa-long-arrow-right"></i></a>
 								</button>
 								<div class="reservation-status">
-									<span id="reservedPlaces">0</span>/250
+									<span id="reservedPlaces">0</span>/300
 								</div>
 							</div>
 						</div> 
@@ -309,7 +309,7 @@
     function updateProgressBar(reservedPlaces) {
         const progressBar = document.getElementById('myProgressBar');
         const progressLabel = document.getElementById('reservedPlaces');
-        const totalPlaces = 250;
+        const totalPlaces = 300;
 
         const percentage = (reservedPlaces / totalPlaces) * 100;
         progressBar.style.width = percentage + '%';
