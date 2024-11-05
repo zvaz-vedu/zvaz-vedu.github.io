@@ -233,6 +233,14 @@
     </table>
 </div>
 
+<div class="lecture-abstracts">
+    <div class="abstract-box">
+        <h3>LASAR: Ze střední školy až na oběžnou dráhu Země</h3>
+        <p class="authors">Autoři: Anna Krebsová, Richard Nikel, Boris Brovkin, Viktor Adámek</p>
+        <p>Abstrakt: Tato přednáška se zaměří na projekt LASAR, který umožňuje studentům středních škol pracovat na pokročilých výzkumech v oblasti kosmických technologií. Účastníci se seznámí s cestou od návrhu po realizaci projektu, který má potenciál dosáhnout oběžné dráhy Země.</p>
+    </div>
+</div>
+
 
 
 </div>
@@ -262,12 +270,49 @@
 </script> 
 
 <style>
+/* Kontejner pro abstrakty přednášek */
+.lecture-abstracts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Styl pro každý box s abstraktem */
+.abstract-box {
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-width: 800px; /* Nastavuje maximální šířku boxu */
+    width: 100%; /* Box se přizpůsobí šířce obrazovky do 800px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Nadpis uvnitř boxu */
+.abstract-box h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-top: 0;
+}
+
+/* Styl pro seznam autorů */
+.abstract-box .authors {
+    font-weight: bold;
+    color: #dddddd;
+    margin-bottom: 10px;
+}
+
+
+
+
 /* Table styling */
 .nice-table {
     width: 84%;
     border-collapse: collapse;
     border: none;
-    margin: 10% 8% 15% 8%;
+    margin: 10% 8% 2% 8%;
 }
 
 /* Header styling */
