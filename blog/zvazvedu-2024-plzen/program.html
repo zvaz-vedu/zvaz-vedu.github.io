@@ -58,7 +58,19 @@
 <!-- blog -->
         <!-- Styled table -->
 <!-- Styled table -->
-<table class="nice-table">
+<div class="yellow_bg", style="margin-top: 70px; padding-bottom: 20px">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="title">
+                <h2>Program</h2> 
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<table class="nice-table", style="margin-top: 2em; padding-top: 2em">
     <thead>
         <tr>
             <th colspan="2"></th>
@@ -356,6 +368,25 @@
 </script> 
 <script src="js/jquery-3.0.0.min.js">
 </script> 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#sidebar").mCustomScrollbar({
+			theme: "minimal"
+		});
+
+		$('#dismiss, .overlay').on('click', function() {
+			$('#sidebar').removeClass('active');
+			$('.overlay').removeClass('active');
+		});
+
+		$('#sidebarCollapse').on('click', function() {
+			$('#sidebar').addClass('active');
+			$('.overlay').addClass('active');
+			$('.collapse.in').toggleClass('in');
+			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+		});
+	});
+</script>
 
 <style>
 /* Kontejner pro abstrakty přednášek */
