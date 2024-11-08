@@ -247,6 +247,7 @@
     </table>
 </div>
 
+
 <div class="lecture-abstracts">
     <div class="abstract-box">
         <h3>LASAR: Ze střední školy až na oběžnou dráhu Země</h3>
@@ -498,3 +499,59 @@
 
 
 </html>
+
+
+<!--skripty na stahnutí programu-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+    async function exportTableToPDF() {
+        const { jsPDF } = window.jspdf;
+        const pdf = new jsPDF({ orientation: 'landscape' }); // PDF na šířku
+
+        const table = document.querySelector('.nice-table');
+        
+        // Použij html2canvas a nastav vyšší rozlišení
+        const canvas = await html2canvas(table, {
+            scale: 4, // Vyšší kvalita obrázku
+            useCORS: true, // Pro externí styly a obrázky
+            logging: true // Pomáhá ladit problémy při renderování
+        });
+        
+        const imgData = canvas.toDataURL('image/png'); // Uloží jako PNG pro lepší kvalitu
+        
+        // Nastavení šířky obrázku, aby se vešel na šířku formátu A4 (297 mm)
+        const imgWidth = 257; // 297 mm je šířka A4, 277 je šířka pro PDF s okraji
+        const imgHeight = (canvas.height * imgWidth) / canvas.width; // Dynamická výška pro zachování poměru
+
+        // Přidání obrázku do PDF (na šířku)
+        pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+        pdf.save("timetable.pdf");
+    }
+</script>
+<script>
+    async function exportTableToPNG() {
+        const table = document.querySelector('.nice-table');
+        
+        // Použij html2canvas pro vytvoření PNG obrázku
+        const canvas = await html2canvas(table, {
+            scale: 8, // Vyšší kvalita obrázku
+            useCORS: true, // Pro externí styly a obrázky
+            logging: true // Pro ladění
+        });
+        
+        // Konvertuje canvas na PNG obrázek a stáhne ho
+        const imgData = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = imgData;
+        link.download = 'timetable.png'; // Nastavení názvu souboru
+        link.click();
+    }
+</script>
+
+<!-- Tlačítko pro export tabulky jako PNG a PDF,  skripty uplně dole, delalo CGPT -->
+<button onclick="exportTableToPNG()">Stáhnout tabulku jako PNG</button>
+
+
+<button onclick="exportTableToPDF()">Exportovat tabulku do PDF</button>
+
