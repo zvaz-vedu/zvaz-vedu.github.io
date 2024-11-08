@@ -1,8 +1,6 @@
 :root {
     --dark: #201f1f;
     --light: #f3f0e4;
-
-
     --yellow: #d8b00f;
     --text-color: #ffffff;
   } 
@@ -19,7 +17,7 @@
     }
      .logo {
         text-align: left;
-         display: block;
+        display: block;
          max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
          min-width: 30%; /* Set a minimum width for the logo */
          height: auto; /* Maintain the aspect ratio */
@@ -42,10 +40,10 @@
     }
      .logo {
         text-align: left;
-         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 30%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
      }
      .menu {
         max-width: unset;
@@ -53,7 +51,7 @@
     }    
     .right_header_info ul li {
         font-size: 14px;
-         margin-left: 12px;
+        margin-left: 12px;
     }
      .slider_cont h3 {
         font-size: 5vw;
@@ -61,7 +59,7 @@
     }
      .slider_cont p {
         margin-top: 10px;
-         margin-bottom: 5px
+        margin-bottom: 5px
     }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
@@ -82,10 +80,10 @@
     }
      .logo {
         text-align: left;
-         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 30%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
      }
     .dinone {
         display: none !important;
@@ -96,7 +94,7 @@
     }
      .slider_cont p {
         margin-top: 10px;
-         margin-bottom: 5px
+        margin-bottom: 5px
     }
      .about .about_img figure {
         padding: 155px 0px 0px 60px;
@@ -132,10 +130,10 @@
     }
      .logo {
         text-align: left;
-         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 30%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
      }
     .dinone {
         display: none !important;
@@ -152,7 +150,7 @@
         width: 50vw;
     }
      .blog {
-         padding-top: 120px;
+        padding-top: 120px;
     }
      .about_page .footer {
         margin-top: 120px;
@@ -162,12 +160,12 @@
     }
      .about .about_img figure {
         padding: 28px 0px 0px 60px;
-         margin-right: -64px;
+        margin-right: -64px;
     }
      .blog .blog_box p {
-         font-size: 15px;
-         line-height: 22px;
-         padding: 0px 10px;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0px 10px;
     }
      .footer h2 {
         padding-left: 17px;
@@ -177,6 +175,9 @@
     }
      .Client .Client_box {
         padding: 55px 30px;
+    }
+    .right-elements {
+        display: none;
     }
 }
  @media (min-width: 576px) and (max-width: 767px) {
@@ -204,30 +205,30 @@
     }
      .logo {
         text-align: center;
-         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 60%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 60%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
     }
      .right_header_info ul {
-         float: inherit;
-         float: inherit;
-         text-align: center;
-         display: flex;
-         justify-content: center;
-         width: 100%;
+        float: inherit;
+        float: inherit;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
      .right_header_info ul li {
         padding-top: 10px;
-         margin-left: 10px;
+        margin-left: 10px;
     }
      .dinone {
         display: none !important;
     }
     #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
         /* šipky */
-         font-size: 50px; /* velikost šipek*/
-         left: 10vw;     
+        font-size: 50px; /* velikost šipek*/
+        left: 10vw;     
     }
      #main_slider a.carousel-control-prev {
         top: 30vh;
@@ -245,7 +246,7 @@
         margin-top: 20px;
     }
     .slider_cont h3 {
-        font-size: 10vw;
+        font-size: 8vw;
         text-align: center; /* asi zbytečné, mělo by se brát z "slider_cont" */
     }
     .slider_image.full.text_align_center img {
@@ -257,7 +258,7 @@
     }
      .title h2 {
         font-size: 36px;
-         line-height: 38px;
+        line-height: 38px;
     }
      .blog {
         padding-top: 120px;
@@ -284,7 +285,7 @@
     }
      .footer h2 {
         padding-left: 0px;
-         font-size: 28px;
+        font-size: 28px;
     }
      .main_form {
         padding-left: 0px;
@@ -300,7 +301,7 @@
     }
      .submit {
         width: 102px;
-         padding: 9px 18px;
+        padding: 9px 18px;
     }
     header {
         margin-bottom: 100%;
@@ -371,18 +372,18 @@
     }
      .logo {
         text-align: center;
-         display: block;
+        display: block;
          max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
          min-width: 60%; /* Set a minimum width for the logo */
          height: auto; /* Maintain the aspect ratio */
     }
      .right_header_info ul {
-         float: inherit;
-         float: inherit;
-         text-align: center;
-         display: flex;
-         justify-content: center;
-         width: 100%;
+        float: inherit;
+        float: inherit;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     .footer {
         display: none;
@@ -392,15 +393,15 @@
     }
      .right_header_info ul li {
         padding-top: 10px;
-         margin-left: 10px;
+        margin-left: 10px;
     }
      .dinone {
         display: none !important;
     }
     #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
         /* šipky */
-         font-size: 55px; /* velikost šipek*/
-         background: var(--dark);
+        font-size: 55px; /* velikost šipek*/
+        background: var(--dark);
     }
      #main_slider a.carousel-control-prev {
         left: calc(30% - 30px); /*aby byl prostředek šipky uprostřed*/
@@ -431,9 +432,8 @@
     }
      .title h2 {
         font-size: 36px;
-         line-height: 38px;
-    }
-     .blog {
+        line-height: 38px;
+    }     .blog {
         padding-top: 120px;
     }
      .about_page .footer {
@@ -458,9 +458,8 @@
     }
      .footer h2 {
         padding-left: 0px;
-         font-size: 28px;
-    }
-     .main_form {
+        font-size: 28px;
+    }     .main_form {
         padding-left: 0px;
     }
      .send {
@@ -474,9 +473,8 @@
     }
      .submit {
         width: 102px;
-         padding: 9px 18px;
-    }
-    header {
+        padding: 9px 18px;
+    }    header {
         margin-bottom: 100%;
     }
     .about_img_blog {
@@ -526,18 +524,18 @@
     }
      .logo {
         text-align: center;
-         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 60%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 60%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
     }
      .right_header_info ul {
-         float: inherit;
-         float: inherit;
-         text-align: center;
-         display: flex;
-         justify-content: center;
-         width: 100%;
+        float: inherit;
+        float: inherit;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     .footer {
         display: none;
@@ -547,15 +545,15 @@
     }
      .right_header_info ul li {
         padding-top: 10px;
-         margin-left: 10px;
+        margin-left: 10px;
     }
      .dinone {
         display: none !important;
     }
     #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
         /* šipky */
-         font-size: 55px; /* velikost šipek*/
-         background: var(--dark);
+        font-size: 55px; /* velikost šipek*/
+        background: var(--dark);
     }
      #main_slider a.carousel-control-prev {
         left: calc(30% - 30px); /*aby byl prostředek šipky uprostřed*/
@@ -586,7 +584,7 @@
     }
      .title h2 {
         font-size: 36px;
-         line-height: 38px;
+        line-height: 38px;
     }
      .blog {
         padding-top: 120px;
@@ -613,7 +611,7 @@
     }
      .footer h2 {
         padding-left: 0px;
-         font-size: 28px;
+        font-size: 28px;
     }
      .main_form {
         padding-left: 0px;
@@ -629,7 +627,7 @@
     }
      .submit {
         width: 102px;
-         padding: 9px 18px;
+        padding: 9px 18px;
     }
     header {
         margin-bottom: 100%;

@@ -12,7 +12,7 @@
 	--pink: #e83e8c;
 	--red: #dc3545;
 	--orange: #fd7e14;
-	--yellow: #ffc107;
+	--yellow: #d8b00f;
 	--green: #28a745;
 	--teal: #20c997;
 	--cyan: #17a2b8;
@@ -25,8 +25,8 @@
 	--info: #17a2b8;
 	--warning: #ffc107;
 	--danger: #dc3545;
-	--light: #f8f9fa;
-	--dark: #343a40;
+	--light: #f3f0e4;
+	--dark: #201f1f;
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
