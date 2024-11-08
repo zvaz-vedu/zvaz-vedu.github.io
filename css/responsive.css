@@ -1,8 +1,6 @@
 :root {
     --dark: #201f1f;
     --light: #f3f0e4;
-
-
     --yellow: #d8b00f;
     --text-color: #ffffff;
   } 
@@ -19,7 +17,7 @@
     }
      .logo {
         text-align: left;
-         display: block;
+        display: block;
          max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
          min-width: 30%; /* Set a minimum width for the logo */
          height: auto; /* Maintain the aspect ratio */
@@ -42,10 +40,10 @@
     }
      .logo {
         text-align: left;
-         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 30%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
      }
      .menu {
         max-width: unset;
@@ -53,7 +51,7 @@
     }    
     .right_header_info ul li {
         font-size: 14px;
-         margin-left: 12px;
+        margin-left: 12px;
     }
      .slider_cont h3 {
         font-size: 5vw;
@@ -61,16 +59,12 @@
     }
      .slider_cont p {
         margin-top: 10px;
-         margin-bottom: 5px
+        margin-bottom: 5px
     }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
     .about-image {
         display: none;
-    }
-    .slider_cont { /* ten text u mapy nebo slideru */
-        text-align: center; /* Center the text and button for small screens */
-        /* margin: 0 */
     }
     .when-wide {
         margin: 15em;
@@ -87,9 +81,9 @@
      .logo {
         text-align: left;
         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 30%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
      }
     .dinone {
         display: none !important;
@@ -137,9 +131,9 @@
      .logo {
         text-align: left;
         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 30%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 30%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
      }
     .dinone {
         display: none !important;
@@ -182,6 +176,9 @@
      .Client .Client_box {
         padding: 55px 30px;
     }
+    .right-elements {
+        display: none;
+    }
 }
  @media (min-width: 576px) and (max-width: 767px) {
     .right-elements {
@@ -209,9 +206,9 @@
      .logo {
         text-align: center;
         display: block;
-         max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
-         min-width: 60%; /* Set a minimum width for the logo */
-         height: auto; /* Maintain the aspect ratio */
+        max-width: 100%; /* Adjust the percentage as needed to make the logo bigger */
+        min-width: 60%; /* Set a minimum width for the logo */
+        height: auto; /* Maintain the aspect ratio */
     }
      .right_header_info ul {
         float: inherit;
@@ -249,7 +246,7 @@
         margin-top: 20px;
     }
     .slider_cont h3 {
-        font-size: 10vw;
+        font-size: 8vw;
         text-align: center; /* asi zbytečné, mělo by se brát z "slider_cont" */
     }
     .slider_image.full.text_align_center img {

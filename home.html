@@ -142,83 +142,83 @@
 	<script src="js/jquery-3.0.0.min.js">
 	</script> 
 	<script type="text/javascript">
-	               $(document).ready(function() {
-	                   $("#sidebar").mCustomScrollbar({
-	                       theme: "minimal"
-	                   });
+	$(document).ready(function() {
+		$("#sidebar").mCustomScrollbar({
+			theme: "minimal"
+		});
 
-	                   $('#dismiss, .overlay').on('click', function() {
-	                       $('#sidebar').removeClass('active');
-	                       $('.overlay').removeClass('active');
-	                   });
+		$('#dismiss, .overlay').on('click', function() {
+			$('#sidebar').removeClass('active');
+			$('.overlay').removeClass('active');
+		});
 
-	                   $('#sidebarCollapse').on('click', function() {
-	                       $('#sidebar').addClass('active');
-	                       $('.overlay').addClass('active');
-	                       $('.collapse.in').toggleClass('in');
-	                       $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-	                   });
-	               });
+		$('#sidebarCollapse').on('click', function() {
+			$('#sidebar').addClass('active');
+			$('.overlay').addClass('active');
+			$('.collapse.in').toggleClass('in');
+			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+		});
+	});
 	</script>
 	<style>
-	               #owl-demo .item{
-	               margin: 3px;
-	               }
-	               #owl-demo .item img{
-	               display: block;
-	               width: 100%;
-	               height: auto;
-	               }
+	#owl-demo .item{
+	margin: 3px;
+	}
+	#owl-demo .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+	}
 	</style>
 	<script>
-	                   $(document).ready(function() {
-	                   var owl = $('.owl-carousel');
-	                   owl.owlCarousel({
-	                       margin: 10,
-	                       nav: true,
-	                       loop: true,
-	                       responsive: {
-	                       0: {
-	                           items: 1
-	                       },
-	                       600: {
-	                           items: 2
-	                       },
-	                       1000: {
-	                           items: 5
-	                       }
-	                       }
-	                   })
-	                   })
+	$(document).ready(function() {
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		margin: 10,
+		nav: true,
+		loop: true,
+		responsive: {
+		0: {
+			items: 1
+		},
+		600: {
+			items: 2
+		},
+		1000: {
+			items: 5
+		}
+		}
+	})
+	})
 	</script> 
 	<script src="js/footer.js"></script> 
 	<script src="js/sidebar.js"></script>
 	<style>
-	       /* Default styling for the regions */
-	       .region {
-	           fill: #ff8c00; /* Default color */
-	           transition: fill 0.3s ease; /* Smooth transition effect */
-	       }
+	/* Default styling for the regions */
+	.region {
+		fill: #ff8c00; /* Default color */
+		transition: fill 0.3s ease; /* Smooth transition effect */
+	}
 
-	       /* Hover effect for the regions */
-	       .region:hover {
-	           fill: #ffffff; /* Color when hovered */
-			   cursor: pointer;
-	       }
-		   #map-popup {
-				position: absolute; /* Ensure it is positioned relative to the page */
-				padding: 5px 10px;
-   				background: rgba(0, 0, 0, 0.7);
-				z-index: 1000; /* Ensure it is on top of other elements */
-				pointer-events: none;
-				border-radius: 5px;
-				color:white;
-				display: none;
-			}
+	/* Hover effect for the regions */
+	.region:hover {
+		fill: #ffffff; /* Color when hovered */
+		cursor: pointer;
+	}
+	#map-popup {
+		position: absolute; /* Ensure it is positioned relative to the page */
+		padding: 5px 10px;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 1000; /* Ensure it is on top of other elements */
+		pointer-events: none;
+		border-radius: 5px;
+		color:white;
+		display: none;
+	}
 
-			#map-popup.visible {
-				display: block; /* Show when visible class is added */
-			}
+	#map-popup.visible {
+		display: block; /* Show when visible class is added */
+	}
 
 	</style>
 	<script>
