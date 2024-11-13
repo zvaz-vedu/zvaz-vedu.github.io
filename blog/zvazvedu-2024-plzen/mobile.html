@@ -85,8 +85,8 @@
 				<!-- end header -->
 
                 <!-- Top Section: Current Information -->
-                <div class="top-section">
-                    <p>Current Information</p>
+                <div class="top-section" id="current-info"">
+                    <p>Akce brzy začíná!</p>
                 </div>
 
                 <!-- Bottom Section: Four Links in a 2x2 Grid -->
@@ -158,6 +158,48 @@
 	</body>
 	<!-- Add this script tag to include the Google API client library -->
 	<script src="https://apis.google.com/js/api.js"></script>
+    
+    <script>
+        // Function to update the content dynamically
+        function updateEventInfo() {
+            // Get current date and time
+            const now = new Date();
+
+            // Set the starting point of time to be the midnight of the day prior (2024-11-13T00:00:00+01:00)
+            const startOfDay = new Date("2024-11-13T00:00:00+01:00");
+
+            // Calculate current time in minutes from midnight the day before
+            const currentTime = Math.floor((now - startOfDay) / (1000 * 60)); // Time in minutes since 2024-11-13T00:00:00+01:00
+
+            // Event start time: 2024-11-14T08:30:00+01:00
+            const eventStart = new Date("2024-11-14T08:30:00+01:00");
+            const eventStartTime = Math.floor((eventStart - startOfDay) / (1000 * 60)); // Event start time in minutes from 2024-11-13T00:00:00+01:00
+
+            // Check if the current time is before the event start time
+            if (currentTime < eventStartTime) {
+                document.getElementById("current-info").innerText = "Akce brzy začíná";
+            } else {
+                // Event periods and their corresponding messages
+                if (currentTime >= eventStartTime && currentTime < eventStartTime + 30) {
+                    document.getElementById("current-info").innerText = "Registrace";
+                } else if (currentTime >= eventStartTime + 30 && currentTime < eventStartTime + 60) {
+                    document.getElementById("current-info").innerText = "Zahájení";
+                } else if (currentTime >= eventStartTime + 60 && currentTime < eventStartTime + 240) {
+                    document.getElementById("current-info").innerText = "Přednášky";
+                } else if (currentTime >= eventStartTime + 240 && currentTime < eventStartTime + 360) {
+                    document.getElementById("current-info").innerText = "Exkurze";
+                } else {
+                    document.getElementById("current-info").innerText = "Akce skončila";
+                }
+            }
+        }
+
+        // Update the content as soon as the page loads
+        window.onload = updateEventInfo;
+
+        // Optionally, you can also update it every minute to keep the content current
+        setInterval(updateEventInfo, 60000);
+    </script>
     <style>
         /* Dark background for the body */
         body {
