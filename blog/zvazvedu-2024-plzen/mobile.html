@@ -85,8 +85,9 @@
 				<!-- end header -->
 
                 <!-- Top Section: Current Information -->
-                <div class="top-section" id="current-info"">
-                    Akce brzy začíná!
+                <div class="top-section">
+                    <div style="padding-top: 2.5em" id="current-info">Akce brzy začíná!</div>
+                    <div style="margin-top: -0.7em; font-size: 0.8em;" id="countdown">Loading countdown...</div>
                 </div>
 
                 <!-- Bottom Section: Four Links in a 2x2 Grid -->
@@ -111,10 +112,10 @@
 
 
 
-				<!-- end about -->
+				<!-- end about-->
 				<div id="pcFooterContainer"></div>
 				<div id="mobileFooterContainer"></div>
-				<!-- Javascript files-->
+				<!--Javascript files-->
 				<script src="js/footer.js"></script>
 				<script src="js/sidebar.js"></script>
 				<script src="js/jquery.min.js"></script>
@@ -160,26 +161,46 @@
 	<script src="https://apis.google.com/js/api.js"></script>
     
     <script>
-        // Function to update the content dynamically
-        function updateEventInfo() {
-            // Get current date and time
+        // Function to update the countdown to 9 AM tomorrow
+        function updateCountdown() {
             const now = new Date();
+            
+            // Set the target time to tomorrow at 9 AM
+            const targetTime = new Date("2024-11-15T09:00:00+01:00");
 
-            // Set the starting point of time to be the midnight of the day prior (2024-11-13T00:00:00+01:00)
+            // Calculate the difference in milliseconds
+            const timeDiff = targetTime - now;
+
+            // If the time difference is negative, we're past the target time (just in case)
+            if (timeDiff <= 0) {
+                document.getElementById("countdown").innerText = "It's 9 AM now!";
+                return;
+            }
+
+            // Calculate hours, minutes, and seconds
+            const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            // Format the countdown display
+            document.getElementById("countdown").innerText = `${hours}h ${minutes}m ${seconds}s`;
+
+            // Update the countdown every second
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // Function to update the event info dynamically based on time
+        function updateEventInfo() {
+            const now = new Date();
             const startOfDay = new Date("2024-11-13T00:00:00+01:00");
-
-            // Calculate current time in minutes from midnight the day before
             const currentTime = Math.floor((now - startOfDay) / (1000 * 60)); // Time in minutes since 2024-11-13T00:00:00+01:00
 
-            // Event start time: 2024-11-14T08:30:00+01:00
-            const eventStart = new Date("2024-11-14T08:30:00+01:00");
-            const eventStartTime = Math.floor((eventStart - startOfDay) / (1000 * 60)); // Event start time in minutes from 2024-11-13T00:00:00+01:00
+            const eventStart = new Date("2024-11-15T08:30:00+01:00");
+            const eventStartTime = Math.floor((eventStart - startOfDay) / (1000 * 60));
 
-            // Check if the current time is before the event start time
             if (currentTime < eventStartTime) {
-                document.getElementById("current-info").innerText = "Akce brzy začíná";
+                document.getElementById("current-info").innerText = "Akce brzy začíná!";
             } else {
-                // Event periods and their corresponding messages
                 if (currentTime >= eventStartTime && currentTime < eventStartTime + 30) {
                     document.getElementById("current-info").innerText = "Registrace";
                 } else if (currentTime >= eventStartTime + 30 && currentTime < eventStartTime + 60) {
@@ -194,11 +215,12 @@
             }
         }
 
-        // Update the content as soon as the page loads
-        window.onload = updateEventInfo;
+        // Update the content when the page loads
+        window.onload = function() {
+            updateEventInfo();
+            updateCountdown();
+        };
 
-        // Optionally, you can also update it every minute to keep the content current
-        setInterval(updateEventInfo, 60000);
     </script>
     <style>
         /* Dark background for the body */
@@ -210,10 +232,8 @@
         /* Top Section */
         .top-section {
             height: 25vh; /* Occupy the top third of the viewport height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 2em;
+            display: block;
+            text-align: center;
             font-size: 2em;
             border-bottom: 2px solid #333; /* Separation line */
         }
@@ -254,6 +274,15 @@
         /* Hover effect for link boxes */
         .link-box:hover {
             background-color: #444;
+        }
+        #pcFooterContainer,
+        #mobileFooterContainer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+        @media (max-height: 600px) {
+            .bottom-section {
+                margin-bottom: 2em; /* Space at the bottom to prevent overlap with footer */
+            }
         }
     </style>
 </html>
