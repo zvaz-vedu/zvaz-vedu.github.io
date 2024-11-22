@@ -248,25 +248,24 @@
 	</script> 
     <!-- Script to populate the gallery -->
     <script>
-        $(document).ready(function(){
-            // Load images from the ./images folder
-            $.ajax({
-                url: "./images/", // Adjust the path as per your directory structure
-                success: function (data) {
-                    // Filter only image files (you might need to adjust this based on your file types)
-                    var images = $(data).find("a:contains('.jpg'), a:contains('.jpeg'), a:contains('.png'), a:contains('.gif'), a:contains('.JPG')");
-                    
-                    // Iterate through images and add them to the Fotorama gallery
-                    images.each(function () {
-                        var imageSrc = $(this).attr("href");
-                        $(".fotorama").append('<img src="' + imageSrc + '" data-thumb="' + imageSrc + '" alt="">');
-                    });
+		document.addEventListener("DOMContentLoaded", () => {
+			fetch('./blog/zvazvedu-2024-plzen/gallery/images.json') // Path to your JSON file
+				.then(response => response.json())
+				.then(data => {
+					// Shuffle and pick 8 random image file names
+					const randomPhotos = data.sort(() => 0.5 - Math.random()).slice(0, 8);
 
-                    // Initialize Fotorama
-                    $('.fotorama').fotorama();
-                }
-            });
-        });
+					// Select all the existing <img> tags inside the about_img_blog container
+					const images = document.querySelectorAll('.about_img_blog figure img');
+
+					// Replace the src of each image
+					images.forEach((img, index) => {
+						img.src = `./blog/zvazvedu-2024-plzen/gallery/${randomPhotos[index]}`;
+						img.alt = `Image ${index + 1}`; // Optional: Update alt text
+					});
+				})
+				.catch(error => console.error("Error fetching JSON:", error));
+		});
     </script>
 </body>
 </html>
