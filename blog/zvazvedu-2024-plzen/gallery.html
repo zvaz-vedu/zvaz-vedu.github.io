@@ -78,7 +78,7 @@
 
     <!-- Script to populate the gallery -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Fetch the list of images from the server
             fetch('./blog/zvazvedu-2024-plzen/gallery/images.json') // Replace with your server's endpoint
                 .then(response => response.json())
@@ -91,12 +91,17 @@
                         );
                     });
     
-                    // Initialize Fotorama
-                    $('.fotorama').fotorama();
+                    // Initialize Fotorama with explicit keyboard navigation enabled
+                    $('.fotorama').fotorama({
+                        keyboard: true, // Ensures arrow key support
+                        nav: 'thumbs', // Thumbnail navigation
+                        arrows: true,  // Explicitly enable navigation arrows
+                    });
                 })
                 .catch(error => console.error('Error fetching image list:', error));
         });
     </script>
+    
     
 </body>
 </html>
