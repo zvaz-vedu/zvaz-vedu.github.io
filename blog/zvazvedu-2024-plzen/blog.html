@@ -169,6 +169,15 @@
 								<figure>
 									<img alt="" src="./blog/zvazvedu-2023/images/DSC_0258.webp">
 								</figure>
+								<figure>
+									<img alt="" src="./blog/zvazvedu-2023/images/DSC_0258.webp">
+								</figure>
+								<figure>
+									<img alt="" src="./blog/zvazvedu-2023/images/DSC_0258.webp">
+								</figure>
+								<figure>
+									<img alt="" src="./blog/zvazvedu-2023/images/DSC_0258.webp">
+								</figure>
 							</div>
 						</div>
 					</div>
@@ -256,7 +265,7 @@
 				.then(response => response.json())
 				.then(data => {
 					// Shuffle and pick 8 random image file names
-					const randomPhotos = data.sort(() => 0.5 - Math.random()).slice(0, 8);
+					const randomPhotos = data.sort(() => 0.5 - Math.random()).slice(0, 11);
 
 					// Select all the existing <img> tags inside the about_img_blog container
 					const images = document.querySelectorAll('.about_img_blog figure img');
