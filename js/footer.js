@@ -14,10 +14,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to highlight the current page link
     function highlightCurrentPageLink() {
-        var currentPage = window.location.href;
+        var currentPage = window.location.pathname; // Get current page path (e.g., /home or /home.html)
+
+        // Remove trailing slash if it exists
+        if (currentPage.endsWith('/')) {
+            currentPage = currentPage.slice(0, -1);
+        }
+
+        // Remove .html extension if present
+        if (currentPage.endsWith('.html')) {
+            currentPage = currentPage.replace('.html', '');
+        }
+
         var links = document.querySelectorAll(".lik a");
         links.forEach(function (link) {
-            if (link.href === currentPage) {
+            var linkPath = new URL(link.href).pathname; // Get path part of link href
+
+            // Remove trailing slash from link path
+            if (linkPath.endsWith('/')) {
+                linkPath = linkPath.slice(0, -1);
+            }
+
+            // Remove .html extension from link path
+            if (linkPath.endsWith('.html')) {
+                linkPath = linkPath.replace('.html', '');
+            }
+
+            // Highlight the link if paths match (ignores domain, query params, etc.)
+            if (currentPage === linkPath) {
                 link.parentElement.classList.add("active");
             }
         });

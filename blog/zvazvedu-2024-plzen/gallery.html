@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie akce</title>
+    <meta charset="utf-8">
+	<base href="../../">
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="initial-scale=1, maximum-scale=1" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Your custom styles (if needed) -->
+    <style>
+        /* Add your custom styles here */
+        .fotorama {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+        }
+    </style>
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Default spacing */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow wrapping for small screens */
+        }
+
+        @media (max-width: 768px) { /* For screens smaller than 768px (e.g., mobile devices) */
+            .button-container {
+                flex-direction: column; /* Stack buttons vertically */
+                align-items: center; /* Center the buttons */
+                gap: 1px; /* Reduce the gap between buttons */
+            }
+
+            .main_bt_border {
+                width: 70%; /* Ensure buttons don't take up too much horizontal space */
+                max-width: 300px; /* Optional: limit max width for better aesthetics */
+                padding: 0 10px;
+            }
+        }
+
+        .main_bt_border {
+            color: #333; /* Dark text for readability on light backgrounds */
+            font-size: 18px;
+            font-weight: 300;
+            padding: 0 20px; /* Add padding left and right */
+            border: solid #333 1px; /* Dark border */
+            text-align: center;
+            min-height: 50px;
+            line-height: 50px;
+            text-decoration: none; /* Remove underline for anchor button */
+            background-color: transparent; /* Ensure no background */
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px; /* Optional: Rounded corners for a modern look */
+        }
+
+        .main_bt_border:hover {
+            background-color: #d8b00f; /* Dark background on hover */
+            color: #fff; /* White text on hover for contrast */
+        }
+
+        /* Loader styling */
+        .button-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none; /* Hidden by default */
+            border: 3px solid #f3f3f3; /* Light gray */
+            border-top: 3px solid #333; /* Dark gray */
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .main_bt_border.loading .button-loader {
+            display: block; /* Show loader when loading */
+        }
+
+        .main_bt_border.loading {
+            pointer-events: none; /* Disable clicks while loading */
+            color: transparent; /* Hide text */
+        }
+    </style>
+    
+</head>
+<body class="main-layout about_page">
+<!-- Loader -->
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <script src="js/sidebar.js"></script>
+    <div class="sidebar">
+        <nav id="sidebar">
+            <div id="dismiss"><i class="fa fa-arrow-left"></i></div>
+            <div id="custom-sidebar"></div>
+        </nav>
+    </div>
+    <!-- End sidebar  -->
+    <div id="content">
+			<!-- header -->
+			<header>
+				<div class="logo"><a href="/index.html"><img alt="Logo" style="width:18em" src="images/atom4.png"></a></div>
+				<div class="header-text">
+					<p class="sample-text-2"><b><a href="https://instagram.com/zvaz.vedu?igshid=MzRlODBiNWFlZA==" style="color: white; margin-right: 1em; font-weight: 800"><img alt="#" src="images/instagram_logo.png" style="margin-right: 5px;">zvaz.vedu</a></b></p>
+				</div>
+			</header>
+			<!-- end header -->
+        <!-- Yellow Background Section -->
+        <div class="yellow_bg" style="margin-bottom: 15px; padding-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>Galerie akce</h2>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Improved Metadata Table Section -->
+        </div>
+    <!-- Fotorama Gallery container -->
+    <div class="fotorama" id="image-container" data-nav="thumbs">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+        <div class="button-container">
+            <button id="download-button" class="main_bt_border"><span class="button-text">Stáhnout jako archiv</span>
+                <div class="button-loader"></div></button>
+            <a href="https://photos.app.goo.gl/wsgtMashk33tSj3y6" target="_blank" class="main_bt_border">
+                Zobrazit na Fotkách Google
+            </a>
+        </div>
+    
+
+    <!-- Script to populate the gallery -->
+    <script>
+        $(document).ready(function () {
+            // Fetch the list of images from the server
+            fetch('./blog/zvazvedu-2024-plzen/gallery/images.json') // Replace with your server's endpoint
+                .then(response => response.json())
+                .then(images => {
+                    // Loop through the list of image paths and add them to the gallery
+                    images.forEach(image => {
+                        const filePath = `./blog/zvazvedu-2024-plzen/gallery/${image}`;
+                        $(".fotorama").append(
+                            `<img src="${filePath}" alt="Image" data-thumb="${filePath}">`
+                        );
+                    });
+    
+                    // Initialize Fotorama with explicit keyboard navigation enabled
+                    $('.fotorama').fotorama({
+                        keyboard: true, // Ensures arrow key support
+                        nav: 'thumbs', // Thumbnail navigation
+                        arrows: true,  // Explicitly enable navigation arrows
+                    });
+                })
+                .catch(error => console.error('Error fetching image list:', error));
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script>
+        const downloadButton = document.getElementById('download-button');
+        const buttonText = downloadButton.querySelector('.button-text');
+        const loader = downloadButton.querySelector('.button-loader');
+    
+        downloadButton.addEventListener('click', async () => {
+            // Show the loader and change text visibility
+            downloadButton.classList.add('loading');
+            buttonText.textContent = ''; // Remove text, loader only visible
+    
+            const zip = new JSZip();
+            const images = await fetch('./blog/zvazvedu-2024-plzen/gallery/images.json') // Replace with your endpoint
+                .then(response => response.json())
+                .catch(err => {
+                    console.error('Error fetching image list:', err);
+                    downloadButton.classList.remove('loading');
+                    buttonText.textContent = 'Download Images';
+                    return [];
+                });
+    
+            // Add images to the ZIP archive
+            for (let i = 0; i < images.length; i++) {
+                const image = images[i];
+                const filePath = `./blog/zvazvedu-2024-plzen/gallery/${image}`;
+                const blob = await fetch(filePath)
+                    .then(response => response.blob())
+                    .catch(err => console.error(`Error fetching image: ${filePath}`, err));
+    
+                if (blob) zip.file(image, blob);
+            }
+    
+            // Generate ZIP file and initiate download
+            zip.generateAsync({ type: 'blob' }).then(blob => {
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'images.zip';
+                link.click();
+    
+                // Reset button state
+                downloadButton.classList.remove('loading');
+                buttonText.textContent = 'Staženo jako archiv!'; // Optional success text
+            });
+        });
+    </script>
+    
+
+    
+</body>
+</html>
