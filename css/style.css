@@ -710,6 +710,10 @@ ul.lik li {
     display: inline-block;
 }
 
+ul.lik li.hover_invert{
+    width: 19%;
+}
+
 ul.lik li a {
     color: #292323;
     font-size: 17px;
