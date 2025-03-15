@@ -14,6 +14,7 @@ body {
     font-family: 'Inter';
     font-weight: 400;
     background-color: var(--background);
+    color: var(--text);
 }
   
 h1, h2, h3, h4, h5 {
