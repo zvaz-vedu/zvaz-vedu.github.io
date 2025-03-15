@@ -14,6 +14,7 @@
         {{block "styles" .}}{{end}}
 
         <script src="https://kit.fontawesome.com/9ab7bfa7fc.js" crossorigin="anonymous"></script>
+        <script src="/js/darkmode.js"></script>
         {{block "scripts" .}}{{end}}
 
         <title>{{.Title}}</title>
@@ -80,33 +81,5 @@
             </div>
         </footer>
     </body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            function updateLogo() {
-                // Check if the user prefers dark mode
-                const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                // Choose the appropriate logo image source
-                const logoSrc = darkMode 
-                    ? '/media/imgs/base/logo_transparent.png' 
-                    : '/media/imgs/base/logo_dark.png';
-        
-                // Update the nav logo
-                document.querySelectorAll('.nav-logo img').forEach(function(img) {
-                    img.src = logoSrc;
-                });
-        
-                // Update the footer logo
-                document.querySelectorAll('.footer-logo').forEach(function(img) {
-                    img.src = logoSrc;
-                });
-            }
-        
-            // Initial logo update on page load
-            updateLogo();
-        
-            // Listen for changes in the dark mode preference
-            window.matchMedia('(prefers-color-scheme: dark)')
-                  .addEventListener('change', updateLogo);
-        });
-    </script>        
+    
 </html>
