@@ -16,7 +16,10 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
-  
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Inter';
     font-weight: 700;
@@ -156,18 +159,10 @@ footer .layout-content {
     text-decoration: none;
     font-size: 2.4rem;
     transition: var(--transition);
-}
-#ig-icon {
-    background: linear-gradient(to bottom left,#833ab4,#fd1d1d,#fcb045 );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#discord-icon {
-    background: #404EED;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text);
 }
 .footer-socials a:hover {
+    color: var(--primary);
     background: var(--primary) !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -262,6 +257,7 @@ footer .layout-content {
     height: 20px;
     content: "";
     bottom: -5px;
+    right: 0;
     z-index: -1;
     transform: rotate(-5deg);
     border-radius: 5000px;
