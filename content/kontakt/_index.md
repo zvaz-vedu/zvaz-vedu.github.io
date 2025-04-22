@@ -6,20 +6,20 @@ layout: contact
 ### Plzeň 
 
 {{< member
-name="Matyáš Matta"
-team="plzen"
-photo="maty.jpg"
-position="zakladatel, organizátor"
-school="Masarykovo gymnázium, Plzeň"
-mail="matyasmatta@zvazvedu.cz" >}}
-
-{{< member
 name="Jan Herzig"
 team="plzen"
 photo="honza.jpg"
 position="hlavní organizátor"
 school="Gymnázium J. Š. Baara, Domažlice"
 mail="janherzig@zvazvedu.cz" >}}
+
+{{< member
+name="Matyáš Matta"
+team="plzen"
+photo="maty.jpg"
+position="zakladatel, organizátor"
+school="Masarykovo gymnázium, Plzeň"
+mail="matyasmatta@zvazvedu.cz" >}}
 
 {{< member
 name="Eduard Plic"
@@ -30,20 +30,20 @@ school="Masarykovo gymnázium, Plzeň"
 mail="eduardplic@zvazvedu.cz" >}}
 
 {{< member
-name="David Němec"
-team="plzen"
-photo="david.jpg"
-position="koordinátor vize projektu"
-school="Masarykovo gymnázium, Plzeň"
-mail="davidnemec@zvazvedu.cz" >}}
-
-{{< member
 name="Tomáš Rajchman"
 team="plzen"
 photo="tomas.jpg"
 position="koordinátor pro ICT"
 school="Masarykovo gymnázium, Plzeň"
 mail="tomasrajchman@zvazvedu.cz" >}}
+
+{{< member
+name="David Němec"
+team="plzen"
+photo="david.jpg"
+position="koordinátor vize projektu"
+school="Masarykovo gymnázium, Plzeň"
+mail="davidnemec@zvazvedu.cz" >}}
 
 {{< member
 name="Lucie Kaiserová"
