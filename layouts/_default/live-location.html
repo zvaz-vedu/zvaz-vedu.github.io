@@ -1,0 +1,263 @@
+{{define "styles"}}
+    <link rel="stylesheet" href="/css/location.css">
+    <link rel="stylesheet" href="/css/report.css">
+    <link rel="stylesheet" href="/css/location-live.css">
+{{end}}
+
+{{define "main"}}
+    <header class="layout-container">
+        <div class="layout-content">
+            <div class="header-body">
+                <h1>Zvaž vědu!<br><span>{{.Params.headerTitle}}</span></h1>
+                <p class="header-text">{{.Params.headerText}}</p>
+                {{with .Params.registration}}<a href="{{.}}" class="primary-button">Registrace brzy</a>{{end}}
+                {{with .Params.joinUs}}<a href="{{.}}" class="primary-button">Zapoj se</a>{{end}}
+            </div>
+            <div class="header-graphics">
+                <img class="header-graphics-photo" src="{{.Params.headerPhoto}}">
+                <img class="header-graphics-logo" src="/favicon/icon.png">
+                <div class="header-graphics-circle"></div>
+            </div>
+        </div>
+    </header>
+    <section class="layout-container" id="cta">
+        <div class="layout-content" style="padding-top: 26px; padding-bottom: 26px; display: block; background-color:var(--secondary)">              
+            <h3>Na co se můžete těšit...</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Velit porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est, qui dolorem. Sed ut perspiciatis unde omnis iste natus error sit. Tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <h4>Nezapomeňte</h4>
+            <p> Nebrat zbraně přijít včas</p>
+            <h4>Zapomeňte</h4>
+            <p> Zapomeňte brát jídlo</p>
+           
+        </div>
+    </section>
+    </section>
+    <section class="layout-container" id="accomplishments">
+        <div class="layout-content bento-board">
+            <div class="bento-board-item">
+                <strong class="bento-title">1</strong>
+                <p class="bento-text">akce</p>
+            </div>
+            <div class="bento-board-item" style="background-color:var(--accent80)">
+                <strong class="bento-title">120</strong>
+                <p class="bento-text">účastníků</p>
+            </div>
+            <div class="bento-board-item">
+                <strong class="bento-title">10</strong>
+                <p class="bento-text">přednášejících</p>
+            </div>
+        </div>
+    </section>
+    <section class="layout-container" id="program-table">
+        <div class="layout-content" style="display: block">
+
+            <h3>Program</h3>
+
+            <div class="program-table-container">
+                <table class="program-table two-rooms">
+                    <thead class="primary-head">
+                        <tr>
+                            <th colspan="3">Velký sál</th>
+                            <th colspan="3">Malý sál</th>
+                        </tr>
+                    </thead>
+                    <thead class="secondary-head">
+                        <tr>
+                            <th>Čas</th>
+                            <th>Přednáška</th>
+                            <th>Přednášející</th>
+                            <th>Čas</th>
+                            <th>Přednáška</th>
+                            <th>Přednášející</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 – 9:40</td>
+                            <td>Slavnostní zahájení</td>
+                            <td>Matyáš Matta, Jan Herzig</td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td>9:50 – 10:20</td>
+                            <td>LASAR: Ze střední školy až na oběžnou dráhu Země</td>
+                            <td>Anna Krebsová, Richard Nikel, Boris Brovkin, Viktor Adámek</td>
+                            <td>9:50 – 10:20</td>
+                            <td>Přenosná vodní elektrárna: Naše cesta k čisté energii</td>
+                            <td>Pavel Chaloupka, Miroslav Chaloupka</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 – 11:00</td>
+                            <td>Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva</td>
+                            <td>Jan Herzig</td>
+                            <td>10:30 – 11:00</td>
+                            <td>Budoucnost strojařiny</td>
+                            <td>Jiří Lüftner</td>
+                        </tr>
+                        <tr class="program-table-breaker">
+                            <td colspan="6">Svačinová pauza, stánky</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 – 12:00</td>
+                            <td>Programování pro vesmír: Měření mraků z paluby ISS</td>
+                            <td>Jan Spratek, David Němec, Eduard Plic, Tomáš Rajchman</td>
+                            <td>11:30 – 12:00</td>
+                            <td>Superhrdinové biochemie: CRISPR/Cas9 a AI</td>
+                            <td>Pavel Jan Linka</td>
+                        </tr>
+                        <tr>
+                            <td>12:10 – 12:40</td>
+                            <td>Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti</td>
+                            <td>Matyáš Matta</td>
+                            <td>12:10 – 12:40</td>
+                            <td>Otevřená věda: Nastartuj svoji vědeckou kariéru už na střední!</td>
+                            <td>Tereza Jelínková</td>
+                        </tr>
+                        <tr>
+                            <td>12:50 – 13:20</td>
+                            <td>Síla a moc aplikované matematiky</td>
+                            <td>Nikolas Pippal</td>
+                            <td>12:50 – 13:20</td>
+                            <td>Život mezi DNA a gymplem: Jak na kariéru vědce už na střední</td>
+                            <td>Soňa Kleinerová</td>
+                        </tr>
+                        <tr>
+                            <td>13:30 – 14:00</td>
+                            <td>Kvantové technologie - dveře do světa nevídaných možností</td>
+                            <td>Matěj Šicner</td>
+                            <td>13:30 – 14:00</td>
+                            <td>Matematika v reálném životě</td>
+                            <td>Kristýna Mičková</td>
+                        </tr>
+                        <tr class="program-table-breaker">
+                            <td colspan="6">Obědová pauza, exkurze</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="layout-container" id="who">
+        <div class="layout-content grid-board">
+            <div class="grid-board-item grid-full">
+                <h4>Chceš se dozvědět o přednáškách víc?</h4>
+                <a href="/zapojte-se/recnici" class="secondary-button" style="background-color: var(--primary);">Přečti si abstrakt a zhlédni medailonek &rarr;</a>
+            </div>
+        </div>
+    </div>
+    {{with .Params.registration}}
+        <!--
+        <section class="layout-container" id="join-us">
+            <div class="layout-content">
+                <span><strong>Máš co říct?</strong></span>
+                <a href="/zapojte-se/recnici" class="secondary-button">Přednášej u nás &rarr;</a>
+            </div>
+        </section>
+        -->
+        <section class="layout-container" id="cta">
+            <div class="layout-content">
+                <div class="cta-body">
+                    <h2>Na co čekáš?</h2>
+                    <p>Nikdy není příliš brzy na to začít. Přijď na Zvaž vědu! a inspiruj se do vlastních začátků!</p>
+                    <a href="{{.}}" class="primary-button">Registrace</a>
+                </div>  
+                <img src="/media/imgs/base/mark-blk.png">
+            </div>
+        </section>
+    {{end}}
+    {{ if not .Params.noPastActions }}
+    <section class="layout-container" id="history">
+            <div class="layout-content">
+                <h2>Ohlédnutí</h2>
+                <div class="history-content">
+                    {{range .Pages}}
+                        <a href="{{.RelPermalink}}" class="history-item">
+                            {{$name := .File.BaseFileName }}
+                            {{$dir := printf "/media/imgs/gallery/%s" $name}}
+                            {{$img := printf "%s/main.webp" $dir}}
+                            <img src="{{$img}}">
+                            <div class="history-item-body">
+                                <strong>{{.Title}}</strong>
+                                <em>{{.Date.Format "2. 1. 2006"}}</em>
+                            </div>
+                        </a>
+                    {{end}}
+                </div>
+            </div>
+    {{end}}
+    </section>
+    <section class="layout-container" id="team">
+        <div class="layout-content">
+            <h2>Za {{.Title}} stojí...</h2>
+            <div class="team-body">
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/honza.jpg">
+                        </div>
+                        <p class="team-member-name">Honza</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/eda.jpg">
+                        </div>
+                        <p class="team-member-name">Eda</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/tomas.jpg">
+                        </div>
+                        <p class="team-member-name">Tomáš</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/lucka.jpg">
+                        </div>
+                        <p class="team-member-name">Lucka</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/maty.jpg">
+                        </div>
+                        <p class="team-member-name">Maty</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/lucka-vu.jpg">
+                        </div>
+                        <p class="team-member-name">Lucka</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/stepan.jpg">
+                        </div>
+                        <p class="team-member-name">Štěpán</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo-container">
+                            <img class="team-member-photo" src="/media/imgs/team/david.jpg">
+                        </div>
+                        <p class="team-member-name">David</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <div class="layout-container" id="parnters">
+        <div class="layout-content">
+            <h2>Partneři</h2>
+            <div class="partner-body">
+                {{if eq .Title "Zvaž vědu! Brno"}}
+
+                {{end}}
+                {{if eq .Title "Zvaž vědu! Plzeň"}}
+
+                {{end}}
+                {{if eq .Title "Zvaž vědu! Praha"}}
+
+                {{end}}
+            </div>
+        </div>
+    </div>
+{{end}}

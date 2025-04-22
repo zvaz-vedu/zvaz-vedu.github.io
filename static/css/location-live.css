@@ -1,0 +1,104 @@
+/* BASED ON HOME */
+
+/* WHO */
+
+#pro-stredoskolaky::after {
+    background-color: var(--secondary40);
+}
+
+#who .layout-content {
+    padding: 0;
+}
+
+.grid-board {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.grid-board-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 1rem;
+    padding: var(--inspacer);
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--secondary30);
+}
+.grid-board-item-content {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 100%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.grid-board-item-content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    max-width: 500px;
+}
+.grid-board-item-content img {
+    width: 50%;
+    min-width: 300px;
+}
+.grid-board-item.active .grid-board-item-content {
+    display: flex;
+    opacity: 1;
+    max-height: 100%;
+}
+.grid-board-item h4 {
+    margin-bottom: .5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.grid-board-item h4:hover {
+    cursor: pointer;
+}
+.reveal-button {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: var(--text);
+    background-color: var(--secondary);
+    border: none;
+    padding: .5rem;
+    border-radius: 100%;
+    transition: var(--transition);
+}
+.reveal-button:hover {
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.grid-board-item.active .reveal-button-icon {
+    transform: rotate(180deg);
+}
+.grid-board .secondary-button {
+    background-color: var(--secondary);
+    margin: auto 0 0 auto;
+}
+.grid-full {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+.grid-full p {
+    display: block;
+    width: fit-content;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.grid-full .secondary-button {
+    margin: 0;
+}
