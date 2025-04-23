@@ -1,0 +1,94 @@
+#cta .layout-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 1rem;
+    padding-block: 10rem;
+    background-color: var(--primary40);
+}
+.cta-body {
+    max-width: 500px;
+}
+.cta-body h2 {
+    position: relative; /* Key fix */
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+.cta-body h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 14px;
+    bottom: -5px; /* You can tweak this */
+    transform: rotate(-4deg);
+    border-radius: 5000px;
+    background-color: var(--accent80);
+    z-index: 1;
+}
+.cta-body h3 {
+    position: relative; /* Key fix */
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.cta-body p {
+    font-size: 1.15rem;
+}
+#cta video {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+  }
+
+
+@media (max-width:1000px) {
+    .header-graphics-photo {
+        right: 0;
+        top: -120px;
+    }
+    .header-graphics-logo {
+        display: none;
+    }
+    .header-graphics-circle {
+        right: 120px;
+        top: -170px;
+}
+}
+
+@media (max-width:880px) {
+    .header-graphics {
+        display: none;
+}
+}
+
+@media (max-width:570px) {
+    .header-body {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+}
+    header h1 span::after {
+        height: 14px;
+        bottom: 0;
+    }
+    .header-text {
+        font-size: 1.2rem;
+}
+    header .primary-button {
+        font-size: 1.2rem;
+    }
+    .bento-board {
+        grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 450px) {
+    header .layout-content {
+        padding-inline: 0;
+    }
+}

@@ -38,12 +38,12 @@ school="Masarykovo gymnázium, Plzeň"
 mail="tomasrajchman@zvazvedu.cz" >}}
 
 {{< member
-name="David Němec"
-team="plzen"
-photo="david.jpg"
-position="koordinátor vize projektu"
+name="Štěpán Kropáček"
+team="brno"
+photo="stepan.jpg"
+position="koordinátor grafiky"
 school="Masarykovo gymnázium, Plzeň"
-mail="davidnemec@zvazvedu.cz" >}}
+mail="stepankropacek@zvazvedu.cz" >}}
 
 {{< member
 name="Lucie Kaiserová"
@@ -62,12 +62,12 @@ school="Masarykovo gymnázium, Plzeň"
 mail="lucievu@zvazvedu.cz" >}}
 
 {{< member
-name="Štěpán Kropáček"
-team="brno"
-photo="stepan.jpg"
-position="organizátor"
+name="David Němec"
+team="plzen"
+photo="david.jpg"
+position="koordinátor vize projektu"
 school="Masarykovo gymnázium, Plzeň"
-mail="stepankropacek@zvazvedu.cz" >}}
+mail="davidnemec@zvazvedu.cz" >}}
 
 ### Brno
 

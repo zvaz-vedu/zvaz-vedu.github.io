@@ -1,0 +1,15 @@
+<!-- bohužel mi nefunguje width u h2::after, nutno upravit jinak ok-->
+<link rel="stylesheet" href="/css/abstract.css">
+<section class="layout-container" id="cta">
+    <div class="layout-content" style="padding: 26px">
+        <div class="cta-body">
+                <h2>{{.Get "name"}}</h2>
+                <h3>{{.Get "speaker"}}</h3>
+                <p style="overflow-wrap: break-word">{{.Get "abstract"}}</p>
+        </div>
+        <video id="cta-video" controls poster="/media/imgs/abstracts/{{.Get "name"}}.jpg">
+            <source src="/media/videos/abstracts/{{.Get "name"}}.mp4" type="video/mp4">
+            Váš prohlížeč nepodporuje přehrávání videa.
+        </video>
+    </div>
+</section>
