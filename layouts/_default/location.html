@@ -240,8 +240,8 @@
         <div class="layout-content">
             <h2>Za {{.Title}} stojí...</h2>
             <div class="team-body">
-                {{if eq .Title "Zvaž vědu! Plzeň" or "Zvaž vědu! Praha"}}
-                    <!-- team members for Plzeň -->
+                {{ if or (eq .Title "Zvaž vědu! Plzeň") (eq .Title "Zvaž vědu! Praha") }}
+                <!-- team members for Plzeň -->
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/maty.jpg"></div><p class="team-member-name">Maty</p></div>
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/honza.jpg"></div><p class="team-member-name">Honza</p></div>
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/eda.jpg"></div><p class="team-member-name">Eda</p></div>
@@ -250,7 +250,7 @@
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka.jpg"></div><p class="team-member-name">Lucka</p></div>
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka-vu.jpg"></div><p class="team-member-name">Lucka</p></div>
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/stepan.jpg"></div><p class="team-member-name">Štěpán</p></div>
-                {{elif eq .Title "Zvaž vědu! Brno"}}
+                {{else if eq .Title "Zvaž vědu! Brno"}}
                     <!-- team members for Brno -->
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/matej.jpg"></div><p class="team-member-name">Matěj</p></div>
                     <div class="team-member"><div class="team-member-photo-container"><img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/petr.jpg"></div><p class="team-member-name">Petr</p></div>
