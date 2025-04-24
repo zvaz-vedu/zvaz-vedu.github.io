@@ -12,4 +12,7 @@ pastActions: True
 events: "2"
 participants: "150+"
 speakers: "9"
+
+liveAction: false
+pastActions: true
 ---
