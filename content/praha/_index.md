@@ -19,7 +19,7 @@ newSpeakers: "10"
 
 abstracts: true
 abstractHeader: "Chceš se dozvědět o přednáškách víc?"
-abstractUrl: "/praha/program"
+abstractUrl: "/praha/program/program"
 abstractButton: "Přečti si abstrakt a zhlédni medailonek"
 
 importantInfo: true
