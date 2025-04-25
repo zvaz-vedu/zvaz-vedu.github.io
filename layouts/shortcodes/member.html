@@ -1,4 +1,7 @@
-<div class="team-member team-{{.Get "team"}}">
+{{ $memberId := .Get "name"}}
+{{ $memberId := replace $memberId " " "-" | lower }}
+
+<div class="team-member team-{{.Get "team"}}" id="{{$memberId}}">
     <div class="team-member-photo">
         <img src="{{ .Site.BaseURL }}media/imgs/team/{{.Get "photo"}}">
     </div>
