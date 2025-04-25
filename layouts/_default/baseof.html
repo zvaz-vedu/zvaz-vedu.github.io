@@ -20,11 +20,11 @@
         <title>{{.Title}}</title>
     </head>
     <body>
-        <nav>
+        <nav class="desktop-navbar"> {{/* Changed class to "desktop-navbar" */}}
             <div class="layout-content">
                 <div class="nav-logo">
-                    <a href="/" class="nav-link"><img src="/media/imgs/base/full-logo-blk.png" alt="logo"></a>
-                    <a href="/" class="nav-link"><img src="/media/imgs/base/mark-blk.png" alt="logo"></a>
+                    <a href="/" class="nav-link"><img class="nav-logo" src="/media/imgs/base/full-logo-blk.png" alt="logo"></a> {{/* Added nav-logo class back to img */}}
+                    <a href="/" class="nav-link"><img class="mark-img" src="/media/imgs/base/mark-blk.png" alt="logo"></a> {{/* Added mark-img class back to img */}}
                 </div>
                 <div class="nav-links">
                     <div>
@@ -40,10 +40,15 @@
                 </div>
             </div>
         </nav>
+        <div class="mobile-top-logo-bar">
+            <a href="/">
+                <img class="nav-logo" src="/media/imgs/base/logo_transparent.png" alt="logo">
+            </a>
+        </div>
         <main>
             {{block "main" .}}{{end}}
         </main>
-        <footer class="layout-container">
+        <footer> {{/* Changed class="layout-container" to just <footer> as it's a semantic element */}}
             <div class="layout-content">
                 <div class="footer-container">
                     <div class="footer-body">
@@ -82,10 +87,13 @@
                     </div>
                 </div>
                 <div class="subfooter">
-                    <p>&copy; {{now.Year}} Zvaž vědu!</p>
+                    <p>© {{now.Year}} Zvaž vědu!</p>
                     <p>Designed by <a class="footer-link" href="https://pgersl.xyz/" target="_blank">Petr Geršl</a></p>
                 </div>
             </div>
         </footer>
+
+        {{ partial "mobile-navbar.html" . }} {{/* Include the mobile navbar partial here */}}
+
     </body>
 </html>
