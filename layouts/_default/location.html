@@ -159,12 +159,14 @@
             <div class="team-body">
                 {{range .Params.team}}
                     <div class="team-member">
-                        <div class="team-member-photo-container">
-                            <img class="team-member-photo" src="/media/imgs/team/{{.}}.jpg">
-                        </div>
-                        {{$teamName := split . "-"}}
-                        {{$teamName = index $teamName 0}}
-                        <p class="team-member-name">{{$teamName}}</p>
+                        <a href="/kontakt/#{{.}}" class="team-member-link">
+                            <div class="team-member-photo-container">
+                                <img class="team-member-photo" src="/media/imgs/team/{{.}}.jpg">
+                            </div>
+                            {{$teamName := split . "-"}}
+                            {{$teamName = index $teamName 0}}
+                            <p class="team-member-name">{{$teamName}}</p>
+                        </a>
                     </div>
                 {{end}}
             </div>
