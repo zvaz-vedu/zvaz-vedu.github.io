@@ -1,5 +1,42 @@
 [
     {
+        "name": "Jan Herzig",
+        "photo": "/media/imgs/team/honza.jpg",
+        "locations": ["Plzeň","Praha"],
+        "lectures": [{
+            "title": "Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva",
+            "youtube": "https://www.youtube.com/watch?v=UTJvGERkmi8"
+        },{
+            "title": "Astronomie",
+            "youtube": "https://www.youtube.com/watch?v=XoXId4AJF8w"
+        },{
+            "title": "Novinky z vesmíru #1",
+            "youtube": "https://www.youtube.com/watch?v=crEpDhHacX4&t=1s"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/jan.herzig//",
+            "linkedin": "https://www.linkedin.com/in/jan-herzig-372a46316/"
+        },
+        "bio": "Honza je student Gymnázia Jindřicha Šimona Baara v Domažlicích. Jeho vášní je astronomie a astrofyzika. Věnuje se popularizaci vědy a techniky, zejména v oblasti vesmíru. Je členem České astronomické společnosti a spolupracuje s různými organizacemi na popularizaci vědy."
+    },
+    {
+        "name": "Matyáš Matta",
+        "photo": "/media/imgs/team/maty.jpg",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti",
+            "youtube": "https://www.youtube.com/watch?v=T0K4nrybX1w"
+        },{
+            "title": "Fyzikální soutěže",
+            "youtube": "https://www.youtube.com/watch?v=adZuvRsPNSI"
+        }],
+        "contact": {
+            "website": "https://matyasmatta.github.io/id_en",
+            "linkedin": "https://www.linkedin.com/in/matyasmatta/"
+        },
+        "bio": "Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni. "
+    },
+    {
         "name": "Simon Klinga",
         "photo": "/media/imgs/speakers/simon-klinga.png",
         "locations": ["Brno"],
