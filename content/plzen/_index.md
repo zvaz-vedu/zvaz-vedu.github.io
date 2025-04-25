@@ -15,4 +15,7 @@ speakers: "31"
 
 liveAction: false
 pastActions: true
+
+team: [maty, honza, eda, david, tomáš, lucka, lucka-vu, štěpán]
+partners: [plzensky--kraj-cz, podporatalentu-cz, fav-zcu-cz, radovanek-cz]
 ---

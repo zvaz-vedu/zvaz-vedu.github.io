@@ -15,4 +15,7 @@ speakers: "9"
 
 liveAction: false
 pastActions: true
+
+team: [petr, matěj, oliver, anička, monča]
+partners: [hvezdarna-cz, eserocz-cz]
 ---

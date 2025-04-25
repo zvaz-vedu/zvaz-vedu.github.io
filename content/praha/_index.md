@@ -13,6 +13,10 @@ speakers: "10"
 
 liveAction: true
 pastActions: false
+
+team: [maty, honza, eda, david, tomáš, lucka, lucka-vu, štěpán]
+partners: [senat-cz, hvezdarna-cz, eserocz-cz]
+
 registration: .
 newParticipants: "120"
 newSpeakers: "10"

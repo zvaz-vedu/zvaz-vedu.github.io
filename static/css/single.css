@@ -87,27 +87,6 @@ section .layout-content {
     opacity: 70%;
 }
 
-.partner-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-    max-width: 450px;
-    border-radius: 1rem;
-    padding: var(--inspacer);
-    margin-top: 1rem;
-    background-color: var(--primary20);
-}
-.partner-link img {
-    height: 30px;
-    width: auto;
-}
-.partner-link:hover img {
-    filter:brightness(0);
-}
-
 .team-body {
     max-width: 90%;
     border-radius: 1rem;

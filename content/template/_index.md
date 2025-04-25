@@ -12,6 +12,10 @@ speakers: "25"
 
 liveAction: true
 pastActions: true
+
+team: [eda]
+partners: [fav-zcu-cz]
+
 registration: .
 newParticipants: "120"
 newSpeakers: "10"
