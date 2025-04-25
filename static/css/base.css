@@ -215,9 +215,8 @@ footer .layout-content {
     border-radius: .4rem;
     display: block;
     width: fit-content;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
+    /* TADY BYLO SMAZÁNO OPROTI PETROVI PROTOŽE TO ZPŮSOBOVALO MALÁ TLAČÍTKA*/
+
 }
 .primary-button:hover {
     box-shadow: var(--shadow);
