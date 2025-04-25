@@ -430,7 +430,10 @@
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:500px) {
+    #hero {
+        padding: 8.5rem 0 0 0;
+    }
     .nav-links {
         flex-wrap: wrap;
         justify-content: flex-end;
@@ -438,9 +441,8 @@
     #hero .layout-content {
         padding: 0;
     }
-    #hero-row, #hero-text {
-        font-size: 1rem;
-        line-height: 1.2rem;
+    #hero-row {
+        display: none
     }
     #hero-row {
         gap: 1rem;
