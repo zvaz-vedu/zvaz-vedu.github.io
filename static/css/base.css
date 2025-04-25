@@ -474,7 +474,7 @@ header img {
 
     .mobile-top-logo-bar img.nav-logo {
         /* Style the logo image inside the top bar */
-        height: 45px; /* Adjust logo height as needed */
+        height: 48px; /* Adjust logo height as needed */
         width: auto; /* Maintain aspect ratio */
     }
 }
