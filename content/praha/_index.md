@@ -14,7 +14,7 @@ speakers: "10"
 liveAction: true
 pastActions: false
 
-team: [maty, honza, eda, david, tomáš, lucka, lucka-vu, štěpán]
+team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
 partners: [senat-cz, hvezdarna-cz, eserocz-cz]
 
 registration: .

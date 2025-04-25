@@ -5,7 +5,10 @@
             {{range .Params.partners}}
                 {{$partnerLink := replace . "-" "."}}
                 {{$partnerLink := replace $partnerLink ".." "-"}}
-                <a href="https://www.{{$partnerLink}}/" target="blank"><img src="/media/imgs/partners/{{.}}.png"></a>
+                <a href="https://www.{{$partnerLink}}/" target="_blank">
+                    <!-- úprava aby malá loga vypadala stejně veliká jako ta velká -->
+                    <img src="/media/imgs/partners/{{.}}.png" style="{{if or (eq . "senat-cz") (eq . "hvezdarna-cz") (eq . "eserocz-cz")}}height: 60px;{{end}} width: auto;">
+                </a>     
             {{end}}
         </div>
     </div>

@@ -282,7 +282,7 @@ footer .layout-content {
     width: 100%;
 }
 .partner-body img {
-    height: 75px;
+    height: 40px;
     width: auto;
     transition: var(--transition);
 }
