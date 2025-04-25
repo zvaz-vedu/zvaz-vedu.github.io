@@ -164,7 +164,7 @@
 
         /* Secondary opacity variations (reversed for dark mode) */
         --secondary5: hsla(37, 33%, 64%, 0.95); /* 95% opacity */
-        --secondary10: hsla(37, 33%, 64%, 0.9);  /* 90% opacity */
+        --secondary10: hsla(37, 33%, 64%, 0.5);  /* 90% opacity SPECIFICALLY EDITED FOR ELEMENT*/
         --secondary15: hsla(37, 33%, 64%, 0.85); /* 85% opacity */
         --secondary20: hsla(37, 33%, 64%, 0.8);  /* 80% opacity */
         --secondary25: hsla(37, 33%, 64%, 0.75); /* 75% opacity */
