@@ -459,4 +459,14 @@
     #cta .layout-content {
         padding: 0;
     }
+
+    footer {
+        padding-bottom: 6em;
+    }
+
+    #what img {
+        width: 45px;
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
 }

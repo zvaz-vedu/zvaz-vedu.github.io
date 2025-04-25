@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
             img.src = logoSrc;
         });
 
+        // Update the what logo
+        document.querySelectorAll('.what-section img').forEach(function(img) {
+            img.src = markSrc;
+        });
+
         // Update the footer logo
         document.querySelectorAll('.footer-logo').forEach(function(img) {
              if (img.tagName === 'IMG') {
