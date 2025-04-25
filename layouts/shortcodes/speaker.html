@@ -1,4 +1,7 @@
-<div class="speaker-container {{with .Get "class"}}{{.}}{{end}}">
+{{ $speakerId := .Get "name"}}
+{{ $speakerId := replace $speakerId " " "-" | lower }}
+
+<div id="{{$speakerId}}" class="speaker-container {{with .Get "class"}}{{.}}{{end}}">
     <div class="speaker-photo-container">
         <img class="speaker-photo" src="{{ .Site.BaseURL }}media/imgs/speakers/{{.Get "photo"}}">
     </div>
