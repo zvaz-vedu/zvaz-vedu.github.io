@@ -5,7 +5,18 @@ header .layout-content {
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-    padding-block: 7rem;
+    padding-block: 5rem;
+}
+
+@media (max-width:500px) { 
+    header .layout-content {
+        padding-block: 0;
+        padding-top: 7rem
+    }
+    .layout-container {
+        padding-inline: 1rem;
+    }
+    
 }
 .header-body {
     width: min(100%, 500px);
@@ -268,25 +279,6 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     flex-direction: column;
 }
 .history-item-body strong {
-    font-size: 1.2rem;
-    margin-bottom: .3rem;
-}
-
-.team-member-link {
-    text-decoration: none;
-    color: var(--text);
-    transition: var(--transition);
-}
-.team-member-link:hover {
-    color: var(--secondary);
-}
-
-.team-member-link-body {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-.team-member-link-item-body strong {
     font-size: 1.2rem;
     margin-bottom: .3rem;
 }

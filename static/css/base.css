@@ -317,6 +317,26 @@ header img {
     color: var(--primary);
 }
 
+.team-member-link {
+    text-decoration: none;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.team-member-link:hover {
+    color: var(--secondary);
+}
+
+.team-member-link-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.team-member-link-item-body strong {
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+}
+
 /* MEDIA */
 
 @media (max-width:760px) {
@@ -389,92 +409,176 @@ header img {
     }
 }
 
-/* MOBILE NAVBAR UX */
-
-/* Default: Hide the mobile navbar on larger screens */
-.mobile-navbar {
+/* --- Base Mobile Elements (Hidden by Default) --- */
+/* Hide all main mobile nav elements on larger screens */
+.mobile-top-bar,
+.mobile-off-canvas-menu,
+.mobile-menu-overlay {
     display: none;
 }
 
-.mobile-top-logo-bar {
-    display: none;
+main,
+footer,
+.mobile-top-bar {
+    filter: blur(0);
+    pointer-events: auto; /* Re-enable interaction */
+    transition: filter 0.3s ease-in-out;
 }
 
-/* Media query for mobile screens (adjust max-width as needed) */
-@media (max-width: 500px) { /* Example breakpoint for tablets/mobiles */
+/* --- Media Query for Mobile Screens --- */
+@media (max-width: 500px) { /* Adjust breakpoint to match your design */
+
+    /* Hide the desktop navbar on mobile */
     .desktop-navbar {
-        display: none; /* Hide the desktop navbar on mobile */
-    }
-    .mobile-navbar {
-        display: flex; /* THIS makes the items line up horizontally */
-        position: fixed; /* Fix the position */
-        bottom: 0; /* Stick to the bottom */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        /* Use your primary color variable or hex code */
-        background-color: var(--primary, #007bff); /* Example fallback color */
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-        box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
-        justify-content: space-around; /* Distribute space evenly */
-        align-items: center; /* Center items vertically */
-        height: 55px; /* Set a fixed height - adjust padding-bottom on body accordingly */
-        padding: 0; /* Remove default padding */
-        margin: 0; /* Remove default margin */
-        z-index: 1000; /* Ensure it's above other content */
+        display: none;
     }
 
-    /* Styles for the individual links */
-    .mobile-navbar-item {
-        flex-grow: 1; /* Allow links to grow and fill space */
-        text-align: center; /* Center text/icon */
-        /* Set link color for contrast against primary background */
-        color: var(--dark); /* White text */
-        text-decoration: none; /* Remove underline */
-        font-size: 1.6em; /* Smaller font size for labels */
-        display: flex; /* Use flex for vertical alignment of icon and text */
-        flex-direction: column; /* Stack icon and text */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
-        padding: 5px 0; /* Add some padding inside links */
-        transition: color 0.3s ease; /* Smooth color transition on hover/active */
-        font-weight: 500; /* Medium weight for text */
-    }
-
-    .mobile-navbar-item:hover,
-    .mobile-navbar-item:focus {
-         color: rgba(255, 255, 255, 0.8); /* Slightly less opaque white on hover */
-    }
-
-    .mobile-navbar-item i {
-        font-size: 1.2em; /* Icon size */
-        margin-bottom: 3px; /* Space between icon and text */
-    }
-
-    /* Optional: Style for the active link */
-    .mobile-navbar-item.active {
-        color: yellow; /* Example highlight color on primary background */
-        font-weight: bold;
-    }
-
-    .mobile-top-logo-bar {
+    /* Show and style the Mobile Top Bar (Logo + Hamburger) */
+    .mobile-top-bar {
         display: flex; /* Show and use flexbox */
         position: fixed; /* Fix to the top */
-        top: 0; /* Stick to the top */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        /* Use your primary color variable or hex code */
-        background-color: var(--background, #007bff); /* Example fallback color */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
-        align-items: center; /* Vertically center content (the logo) */
-        justify-content: left; /* Horizontally center content (the logo) */
-        height: 70px; /* Set a fixed height - adjust padding-top on body accordingly */
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* Use your theme colors */
+        background-color: var(--background, #fbfbfe); /* Background color for top bar */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+        align-items: center; /* Vertically center content */
+        justify-content: space-between; /* Space out logo and button */
+        height: 55px; /* Set a fixed height */
         padding: 0 15px; /* Add some horizontal padding */
-        z-index: 1000; /* Ensure it's above other content */
+        z-index: 1000; /* Ensure it's above content */
     }
 
-    .mobile-top-logo-bar img.nav-logo {
+     .mobile-top-bar .mobile-logo-link img.nav-logo {
         /* Style the logo image inside the top bar */
-        height: 43px; /* Adjust logo height as needed */
-        width: auto; /* Maintain aspect ratio */
+        height: 40px; /* Adjust logo height */
+        width: auto;
+     }
+
+    .hamburger-button {
+        background: none;
+        border: none;
+        font-size: 1.8rem; /* Size of the hamburger icon */
+        color: var(--text, #000); /* Color of the icon */
+        cursor: pointer;
+        padding: 5px;
+        z-index: 1001; /* Ensure button is above other elements in the bar */
     }
+
+
+    /* Initial state of the Mobile Off-Canvas Menu (off-screen) */
+    .mobile-off-canvas-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%; /* Set the width of the menu */
+        height: 100%;
+        background-color: var(--background, #fbfbfe); /* Menu background color */
+        box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+        transform: translateX(100%); /* Slide it completely off-screen */
+        transition: transform 0.3s ease-in-out; /* Slide animation */
+        z-index: 1010; /* Above overlay and content */
+        display: flex; /* Use flexbox for internal layout */
+        flex-direction: column; /* Stack header, links, footer */
+        overflow-y: auto; /* Scrolling if content overflows */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Styles for the menu header (optional, adapt as needed) */
+    .mobile-off-canvas-menu .menu-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 15px;
+         border-bottom: 1px solid var(--secondary-background, #f0f0f0);
+    }
+
+    .mobile-off-canvas-menu .mobile-menu-logo-link img.nav-logo {
+         height: 40px; /* Match top bar logo height */
+         width: auto;
+    }
+
+    .close-menu-button {
+         background: none;
+         border: none;
+         font-size: 1.8rem;
+         color: var(--text, #000);
+         cursor: pointer;
+         padding: 5px;
+    }
+
+    /* Styles for the menu links container */
+    .mobile-off-canvas-menu .menu-links {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        flex-grow: 1; /* Allow links section to take up space */
+    }
+
+    /* Styles for individual menu links */
+    .mobile-off-canvas-menu .mobile-menu-link {
+        text-decoration: none;
+        color: var(--text, #000);
+        font-size: 1.2rem;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--secondary-background, #f0f0f0); /* Separator */
+        transition: color 0.2s ease;
+    }
+
+    .mobile-off-canvas-menu .mobile-menu-link:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-off-canvas-menu .mobile-menu-link:hover {
+        color: var(--primary, #ffc300); /* Highlight on hover */
+    }
+
+    /* Styles for the menu footer (optional) */
+    .mobile-off-canvas-menu .menu-footer {
+         padding: 15px;
+         border-top: 1px solid var(--secondary-background, #f0f0f0);
+    }
+
+    .mobile-off-canvas-menu .menu-footer .footer-socials {
+         justify-content: center;
+    }
+
+
+    /* Initial state of the Overlay/Backdrop (hidden) */
+    .mobile-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        z-index: 1005; /* Between content and menu */
+        /* display: none; /* Already set above, but explicitly hidden by default */
+    }
+
+
+    /* --- State Class (Added to body by JS when menu is open) --- */
+    body.menu-open {
+        overflow: hidden; /* Prevent scrolling main content */
+    }
+
+    /* When menu-open class is on body, slide the menu into view */
+    body.menu-open .mobile-off-canvas-menu {
+        transform: translateX(0);
+    }
+
+    /* When menu-open class is on body, show the overlay */
+    body.menu-open .mobile-menu-overlay {
+        display: block;
+    }
+
+    body.menu-open main,
+    body.menu-open footer,
+    body.menu-open .mobile-top-bar{
+        filter: blur(5px); /* Applies a 5px blur */
+        pointer-events: none; /* Prevents clicks/interactions on the blurred content */
+        transition: filter 0.3s ease-in-out; /* Smooth animation for the blur */
+}
+    
 }
