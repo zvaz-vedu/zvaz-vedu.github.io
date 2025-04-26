@@ -5,7 +5,18 @@ header .layout-content {
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-    padding-block: 7rem;
+    padding-block: 5rem;
+}
+
+@media (max-width:500px) { 
+    header .layout-content {
+        padding-block: 0;
+        padding-top: 7rem
+    }
+    .layout-container {
+        padding-inline: 1rem;
+    }
+    
 }
 .header-body {
     width: min(100%, 500px);
