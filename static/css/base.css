@@ -397,6 +397,13 @@ header img {
     display: none;
 }
 
+main,
+footer,
+.mobile-top-bar {
+    filter: blur(0);
+    pointer-events: auto; /* Re-enable interaction */
+    transition: filter 0.3s ease-in-out;
+}
 
 /* --- Media Query for Mobile Screens --- */
 @media (max-width: 500px) { /* Adjust breakpoint to match your design */
@@ -445,7 +452,7 @@ header img {
         position: fixed;
         top: 0;
         right: 0;
-        width: 280px; /* Set the width of the menu */
+        width: 60%; /* Set the width of the menu */
         height: 100%;
         background-color: var(--background, #fbfbfe); /* Menu background color */
         box-shadow: -2px 0 5px rgba(0,0,0,0.2);
@@ -545,4 +552,13 @@ header img {
     body.menu-open .mobile-menu-overlay {
         display: block;
     }
+
+    body.menu-open main,
+    body.menu-open footer,
+    body.menu-open .mobile-top-bar{
+        filter: blur(5px); /* Applies a 5px blur */
+        pointer-events: none; /* Prevents clicks/interactions on the blurred content */
+        transition: filter 0.3s ease-in-out; /* Smooth animation for the blur */
+}
+    
 }
