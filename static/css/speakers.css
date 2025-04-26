@@ -110,7 +110,7 @@ header .primary-button:hover {
 }
 #speaker-search {
     font-size: 1rem;
-    color: var(--light);
+    color: var(--text);
     padding: .5rem .8rem;
     border-radius: .5rem;
     background-color: var(--accent5);

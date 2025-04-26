@@ -317,6 +317,26 @@ header img {
     color: var(--primary);
 }
 
+.team-member-link {
+    text-decoration: none;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.team-member-link:hover {
+    color: var(--secondary);
+}
+
+.team-member-link-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.team-member-link-item-body strong {
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+}
+
 /* MEDIA */
 
 @media (max-width:760px) {
