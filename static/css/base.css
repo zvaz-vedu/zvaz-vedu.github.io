@@ -400,81 +400,161 @@ header img {
     display: none;
 }
 
-/* Media query for mobile screens (adjust max-width as needed) */
-@media (max-width: 500px) { /* Example breakpoint for tablets/mobiles */
-    .desktop-navbar {
-        display: none; /* Hide the desktop navbar on mobile */
-    }
-    .mobile-navbar {
-        display: flex; /* THIS makes the items line up horizontally */
-        position: fixed; /* Fix the position */
-        bottom: 0; /* Stick to the bottom */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        /* Use your primary color variable or hex code */
-        background-color: var(--primary, #007bff); /* Example fallback color */
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-        box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
-        justify-content: space-around; /* Distribute space evenly */
-        align-items: center; /* Center items vertically */
-        height: 55px; /* Set a fixed height - adjust padding-bottom on body accordingly */
-        padding: 0; /* Remove default padding */
-        margin: 0; /* Remove default margin */
-        z-index: 1000; /* Ensure it's above other content */
-    }
-
-    /* Styles for the individual links */
-    .mobile-navbar-item {
-        flex-grow: 1; /* Allow links to grow and fill space */
-        text-align: center; /* Center text/icon */
-        /* Set link color for contrast against primary background */
-        color: var(--dark); /* White text */
-        text-decoration: none; /* Remove underline */
-        font-size: 1.6em; /* Smaller font size for labels */
-        display: flex; /* Use flex for vertical alignment of icon and text */
-        flex-direction: column; /* Stack icon and text */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
-        padding: 5px 0; /* Add some padding inside links */
-        transition: color 0.3s ease; /* Smooth color transition on hover/active */
-        font-weight: 500; /* Medium weight for text */
-    }
-
-    .mobile-navbar-item:hover,
-    .mobile-navbar-item:focus {
-         color: rgba(255, 255, 255, 0.8); /* Slightly less opaque white on hover */
-    }
-
-    .mobile-navbar-item i {
-        font-size: 1.2em; /* Icon size */
-        margin-bottom: 3px; /* Space between icon and text */
-    }
-
-    /* Optional: Style for the active link */
-    .mobile-navbar-item.active {
-        color: yellow; /* Example highlight color on primary background */
-        font-weight: bold;
-    }
-
-    .mobile-top-logo-bar {
+/* Media query for mobile screens */
+@media (max-width: 768px) { /* Match your mobile breakpoint */
+    .mobile-top-bar {
         display: flex; /* Show and use flexbox */
         position: fixed; /* Fix to the top */
         top: 0; /* Stick to the top */
         left: 0; /* Align to the left */
         width: 100%; /* Full width */
         /* Use your primary color variable or hex code */
-        background-color: var(--background, #007bff); /* Example fallback color */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
-        align-items: center; /* Vertically center content (the logo) */
-        justify-content: left; /* Horizontally center content (the logo) */
-        height: 70px; /* Set a fixed height - adjust padding-top on body accordingly */
+        background-color: var(--background, #fbfbfe); /* Use background color for top bar */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+        align-items: center; /* Vertically center content */
+        justify-content: space-between; /* Space out logo and button */
+        height: 55px; /* Set a fixed height - adjust padding-top on body accordingly */
         padding: 0 15px; /* Add some horizontal padding */
         z-index: 1000; /* Ensure it's above other content */
     }
 
-    .mobile-top-logo-bar img.nav-logo {
+     .mobile-top-bar .mobile-logo-link img.nav-logo {
         /* Style the logo image inside the top bar */
-        height: 43px; /* Adjust logo height as needed */
+        height: 40px; /* Adjust logo height as needed */
         width: auto; /* Maintain aspect ratio */
+     }
+
+    .hamburger-button {
+        background: none;
+        border: none;
+        font-size: 1.8rem; /* Size of the hamburger icon */
+        color: var(--text); /* Color of the icon */
+        cursor: pointer;
+        padding: 5px; /* Add some padding for easier clicking */
+        z-index: 1001; /* Ensure button is above other elements in the bar */
+    }
+
+    .desktop-navbar {
+        display: none; /* Hide the desktop navbar on mobile */
+    }
+}
+
+
+/* --- Styles for the Mobile Off-Canvas Menu --- */
+
+/* Default: Hide the menu and position it off-screen to the right */
+.mobile-off-canvas-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Position off-screen to the right */
+    width: 280px; /* Set the width of the menu */
+    height: 100%; /* Full height */
+    background-color: var(--background); /* Menu background color */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2); /* Shadow on the left edge */
+    transform: translateX(100%); /* Initially slide it completely off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth slide animation */
+    z-index: 1010; /* Ensure it's above the overlay and other content */
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column; /* Stack header, links, footer vertically */
+    overflow-y: auto; /* Add scrolling if content overflows */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Styles for the menu header (optional, adapt as needed) */
+.mobile-off-canvas-menu .menu-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px;
+     border-bottom: 1px solid var(--secondary-background);
+}
+
+.mobile-off-canvas-menu .mobile-menu-logo-link img.nav-logo {
+     height: 40px; /* Match top bar logo height */
+     width: auto;
+}
+
+.close-menu-button {
+     background: none;
+     border: none;
+     font-size: 1.8rem;
+     color: var(--text);
+     cursor: pointer;
+     padding: 5px;
+}
+
+
+/* Styles for the menu links container */
+.mobile-off-canvas-menu .menu-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    padding: 15px;
+    flex-grow: 1; /* Allow links section to take up available space */
+}
+
+/* Styles for individual menu links */
+.mobile-off-canvas-menu .mobile-menu-link {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--secondary-background); /* Separator between links */
+    transition: color 0.2s ease;
+}
+
+.mobile-off-canvas-menu .mobile-menu-link:last-child {
+    border-bottom: none; /* No border on the last link */
+}
+
+.mobile-off-canvas-menu .mobile-menu-link:hover {
+    color: var(--primary); /* Highlight on hover */
+}
+
+/* Styles for the menu footer (optional) */
+.mobile-off-canvas-menu .menu-footer {
+     padding: 15px;
+     border-top: 1px solid var(--secondary-background);
+}
+
+.mobile-off-canvas-menu .menu-footer .footer-socials {
+     justify-content: center; /* Center social icons */
+}
+
+
+/* --- Styles for the Overlay/Backdrop --- */
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1005; /* Between content and menu */
+    display: none; /* Hidden by default */
+}
+
+
+/* --- State Class for Open Menu --- */
+/* This class will be added to the body or a main container by JavaScript */
+
+body.menu-open {
+    overflow: hidden; /* Prevent scrolling the main content when menu is open */
+}
+
+body.menu-open .mobile-off-canvas-menu {
+    transform: translateX(0); /* Slide the menu into view */
+}
+
+body.menu-open .mobile-menu-overlay {
+    display: block; /* Show the overlay */
+}
+
+/* Hide mobile elements on desktop */
+@media (min-width: 769px) { /* Match your mobile breakpoint + 1px */
+    .mobile-top-bar,
+    .mobile-off-canvas-menu,
+    .mobile-menu-overlay {
+        display: none !important; /* Use !important to ensure they are hidden */
     }
 }

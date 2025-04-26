@@ -15,6 +15,7 @@
 
         <script src="https://kit.fontawesome.com/9ab7bfa7fc.js" crossorigin="anonymous"></script>
         <script src="/js/darkmode.js"></script>
+        <script src="/js/mobile-hamburger-menu.js"></script>
         {{block "scripts" .}}{{end}}
 
         <title>{{.Title}}</title>
@@ -40,9 +41,8 @@
                 </div>
             </div>
         </nav>
-        <div class="mobile-top-logo-bar">
-            <a href="/" class="nav-link"><img class="nav-logo" src="" alt="logo"></a>
-        </div>
+        {{ partial "mobile-top-bar.html" . }}
+        {{ partial "mobile-off-canvas-menu.html" . }}
         <main>
             {{block "main" .}}{{end}}
         </main>
@@ -90,8 +90,5 @@
                 </div>
             </div>
         </footer>
-
-        {{ partial "mobile-navbar.html" . }} {{/* Include the mobile navbar partial here */}}
-
     </body>
 </html>

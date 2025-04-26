@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
              }
         }
 
-        const mobileTopLogo = document.querySelector('.mobile-top-logo-bar .nav-logo');
+        const mobileTopLogo = document.querySelector('.mobile-top-bar .mobile-logo-link .nav-logo');
         if (mobileTopLogo) {
              const currentRelativeSrc = new URL(mobileTopLogo.src).pathname;
              if (currentRelativeSrc !== mainLogoSrc) {
