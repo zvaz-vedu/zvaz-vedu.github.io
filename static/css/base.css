@@ -401,7 +401,7 @@ header img {
 }
 
 /* Media query for mobile screens */
-@media (max-width: 768px) { /* Match your mobile breakpoint */
+@media (max-width: 500px) { /* Match your mobile breakpoint */
     .mobile-top-bar {
         display: flex; /* Show and use flexbox */
         position: fixed; /* Fix to the top */
@@ -551,7 +551,7 @@ body.menu-open .mobile-menu-overlay {
 }
 
 /* Hide mobile elements on desktop */
-@media (min-width: 769px) { /* Match your mobile breakpoint + 1px */
+@media (min-width: 500px) { /* Match your mobile breakpoint + 1px */
     .mobile-top-bar,
     .mobile-off-canvas-menu,
     .mobile-menu-overlay {
