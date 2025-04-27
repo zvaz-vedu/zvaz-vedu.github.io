@@ -289,8 +289,7 @@ footer .layout-content {
     width: 100%;
 }
 .partner-body img {
-    height: 50px;
-    width: auto;
+    width: 100%;
     transition: var(--transition);
 }
 .partner-body img:hover {
