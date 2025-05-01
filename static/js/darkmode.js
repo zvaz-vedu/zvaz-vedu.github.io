@@ -11,15 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
             ? '/media/imgs/base/mark.png'
             : '/media/imgs/base/mark-blk.png';
 
-         const micSrc = darkMode
-            ? '/media/imgs/base/mic-light.png'
-            : '/media/imgs/base/mic.png'; // Note: This path looks incomplete
-
-         const goalSrc = darkMode
-            ? '/media/imgs/base/goal-light.png'
-            : '/media/imgs/base/goal.png';
-
-
         const desktopMainLogo = document.querySelector('.desktop-navbar .nav-logo img');
         if (desktopMainLogo) {
             const currentRelativeSrc = new URL(desktopMainLogo.src).pathname;
@@ -62,23 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
              }
          });
 
-
-         document.querySelectorAll('.mic-img').forEach(function(img) {
-             const currentRelativeSrc = new URL(img.src).pathname;
-             if (currentRelativeSrc !== micSrc) {
-                  img.src = micSrc;
-             }
-         });
-
-         document.querySelectorAll('.goal-img').forEach(function(img) {
-             const currentRelativeSrc = new URL(img.src).pathname;
-             if (currentRelativeSrc !== goalSrc) {
-                  img.src = goalSrc;
-             }
-         });
-
         // Update .mark-img elements within .what-section
-         document.querySelectorAll('.what-section img.mark-img').forEach(function(img) {
+         document.querySelectorAll('.what-section img').forEach(function(img) {
              const currentRelativeSrc = new URL(img.src).pathname;
              if (currentRelativeSrc !== markSrc) {
                   img.src = markSrc;

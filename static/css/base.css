@@ -435,7 +435,7 @@ footer,
     /* Show and style the Mobile Top Bar (Logo + Hamburger) */
     .mobile-top-bar {
         display: flex; /* Show and use flexbox */
-        position: fixed; /* Fix to the top */
+        position: sticky; /* Fix to the top */
         top: 0;
         left: 0;
         width: 100%;
@@ -490,7 +490,6 @@ footer,
          justify-content: space-between;
          align-items: center;
          padding: 15px;
-         border-bottom: 1px solid var(--secondary-background, #f0f0f0);
     }
 
     .mobile-off-canvas-menu .mobile-menu-logo-link img.nav-logo {
@@ -513,24 +512,8 @@ footer,
         flex-direction: column;
         padding: 15px;
         flex-grow: 1; /* Allow links section to take up space */
+        gap: 1rem;
     }
-
-    /* Styles for individual menu links */
-    .mobile-off-canvas-menu .mobile-menu-link {
-        text-decoration: none;
-        color: var(--text, #000);
-        font-size: 1.2rem;
-        padding: 10px 0;
-        border-bottom: 1px solid var(--secondary-background, #f0f0f0); /* Separator */
-        transition: color 0.2s ease;
-    }
-
-    .mobile-off-canvas-menu .mobile-menu-link:last-child {
-        border-bottom: none;
-    }
-
-    .mobile-off-canvas-menu .mobile-menu-link:hover {
-        color: var(--primary, #ffc300); /* Highlight on hover */
     }
 
     /* Styles for the menu footer (optional) */

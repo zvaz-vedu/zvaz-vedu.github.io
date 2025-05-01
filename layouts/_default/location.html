@@ -43,9 +43,9 @@
     {{ if .Params.liveAction }}
         <!-- Tady je obsah, který se zobrazí, pokud se právě blíží další akce (liveAction je true) -->
         {{if .Params.importantInfo}}
-            <section class="layout-container" id="cta">
-                <div class="layout-content" style="padding-top: 26px; padding-bottom: 26px;">
-                    <div class="cta-body" style="max-width: 750px">
+            <section class="layout-container" id="important-info">
+                <div class="layout-content">
+                    <div class="important-info-body">
                         <h3>{{.Params.importantInfoHeader}}</h3>
                         <p>
                             {{.Params.importantInfoText}}
@@ -63,7 +63,7 @@
                         <strong class="bento-title">1</strong>
                         <p class="bento-text">skvělá akce</p>
                     </div>
-                    <div class="bento-board-item" style="background-color:var(--accent80)">
+                    <div class="bento-board-item">
                         <strong class="bento-title">{{.Params.newParticipants}}</strong>
                         <p class="bento-text">účastníků</p>
                     </div>

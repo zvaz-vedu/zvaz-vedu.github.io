@@ -189,6 +189,30 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     background-color: var(--secondary);
 }
 
+#cta .layout-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    border-radius: 1rem;
+    padding-block: 10rem;
+    background-color: var(--primary40);
+}
+.cta-body {
+    max-width: 500px;
+}
+.cta-body h2 {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+#cta .primary-button {
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+}
+#cta img {
+    max-width: 300px;
+}
+
 /* CONTENT*/
 
 #content .layout-content {
@@ -199,6 +223,18 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
 #content h2 {
     text-wrap: nowrap;
     margin-bottom: 3rem;
+}
+
+#important-info .layout-content {
+    background-color: var(--primary60);
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+#important-info h3::after {
+    display: none;
 }
 
 .bento-board {
@@ -370,30 +406,6 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     margin-bottom: 1rem;
 }
 
-#cta .layout-content {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    border-radius: 1rem;
-    padding-block: 10rem;
-    background-color: var(--primary40);
-}
-.cta-body {
-    max-width: 500px;
-}
-.cta-body h2 {
-    margin-bottom: 1rem;
-    font-size: 5rem;
-}
-#cta .primary-button {
-    font-size: 1.7rem;
-    margin-top: 1.4rem;
-}
-#cta img {
-    max-width: 300px;
-}
-
 /* link-button je pro abstract*/
 .link-button {
     display: grid;
@@ -449,6 +461,17 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     }
 }
 
+@media (max-width:740px) {
+    /* poloha obrázků pod*/
+    #cta .layout-content {
+        flex-direction: column;
+        padding-block: 4rem;
+    }
+    #cta img {
+        max-height: 250px;
+    }
+}
+
 @media (max-width:650px) {
     /* na link-button, aby na telefonu bylo tlačítko dole*/
     .link-button-item {
@@ -459,13 +482,6 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     }
     .link-button h4{
         font-size: 1.777rem; 
-    }
-    /* poloha obrázků pod*/
-    #cta .layout-content {
-        flex-direction: column;
-    }
-    #cta img {
-        max-height: 200px;
     }
 }
 

@@ -382,6 +382,9 @@
     .what-section > img {
         display: block;
     }
+    #what img {
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width:650px) {
@@ -465,6 +468,5 @@
     #what img {
         width: 45px;
         padding-right: 0;
-        padding-bottom: 1rem;
     }
 }

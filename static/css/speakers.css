@@ -216,3 +216,15 @@ header .primary-button:hover {
         width: 100%;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    #speaker-search {
+        background-color: var(--accent90);
+    }
+    #location-brno, #location-praha, #location-plzeň {
+        background-color: var(--accent90);
+    }
+    #location-brno:checked, #location-praha:checked, #location-plzeň:checked {
+        box-shadow: inset 1em 1em var(--accent60);
+    }
+}
