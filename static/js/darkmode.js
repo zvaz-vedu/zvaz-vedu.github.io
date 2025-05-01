@@ -101,6 +101,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        document.querySelectorAll('.layout-container .layout-content .team-section .full-logo').forEach(function(img) {
+            img.src = mainLogoSrc;
+        });
+
 
          document.querySelectorAll('.partner-logo-img').forEach(function(img) {
              const baseName = img.dataset.partnerName;
