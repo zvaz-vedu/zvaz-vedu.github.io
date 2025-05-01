@@ -149,7 +149,7 @@
         --primary25: hsla(46, 90%, 45%, 0.75); /* 75% opacity */
         --primary30: hsla(46, 90%, 45%, 0.7);  /* 70% opacity */
         --primary35: hsla(46, 90%, 45%, 0.65); /* 65% opacity */
-        --primary40: hsla(46, 90%, 45%, 0.6);  /* 60% opacity */
+        --primary40: hsla(46, 90%, 45%, 0.3);  /* 60% opacity SPECIFICALLY EDITED FOR ELEMENT*/
         --primary45: hsla(46, 90%, 45%, 0.55); /* 55% opacity */
         --primary50: hsla(46, 90%, 45%, 0.5);  /* 50% opacity */
         --primary55: hsla(46, 90%, 45%, 0.45); /* 45% opacity */
