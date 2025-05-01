@@ -1,0 +1,213 @@
+[
+    {
+        "name": "Jan Herzig",
+        "photo": "/media/imgs/team/honza.jpg",
+        "locations": ["Plzeň","Praha"],
+        "lectures": [{
+            "title": "Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva",
+            "youtube": "https://www.youtube.com/watch?v=UTJvGERkmi8"
+        },{
+            "title": "Astronomie",
+            "youtube": "https://www.youtube.com/watch?v=XoXId4AJF8w"
+        },{
+            "title": "Novinky z vesmíru #1",
+            "youtube": "https://www.youtube.com/watch?v=crEpDhHacX4&t=1s"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/jan.herzig//",
+            "linkedin": "https://www.linkedin.com/in/jan-herzig-372a46316/"
+        },
+        "bio": "Honza je student Gymnázia Jindřicha Šimona Baara v Domažlicích. Jeho vášní je astronomie a astrofyzika. Věnuje se popularizaci vědy a techniky, zejména v oblasti vesmíru. Je členem České astronomické společnosti a spolupracuje s různými organizacemi na popularizaci vědy."
+    },
+    {
+        "name": "Matyáš Matta",
+        "photo": "/media/imgs/team/maty.jpg",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti",
+            "youtube": "https://www.youtube.com/watch?v=T0K4nrybX1w"
+        },{
+            "title": "Fyzikální soutěže",
+            "youtube": "https://www.youtube.com/watch?v=adZuvRsPNSI"
+        }],
+        "contact": {
+            "website": "https://matyasmatta.github.io/id_en",
+            "linkedin": "https://www.linkedin.com/in/matyasmatta/"
+        },
+        "bio": "Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni. "
+    },
+    {
+        "name": "Tereza Jelínková",
+        "photo": null,
+        "locations": ["Prachatice"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/terezajelin?igsh=ZThubXcxbWtnZXEx&utm_source=qr",
+            "linkedin": "https://www.linkedin.com/in/tereza-jel%C3%ADnkov%C3%A1-18936b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        },
+        "bio": "Tereza je studentkou Gymnázia v Prachaticích a věnuje se vědě a výzkumu v oblasti biologie a chemie. V rámci programu Otevřená věda působila v Biologickém centru AV ČR a nyní pracuje na středoškolské odborné činnosti (SOČ) na Jihočeské univerzitě. Zúčastnila se odborných kurzů a letních škol. Je součástí organizačního týmu STEM_HUB a v rámci Expedice Mars absolvovala přípravnou simulaci i misi v Hydronautu."
+    },
+    {
+        "name": "Richard Nikel",
+        "photo": null,
+        "locations": ["Blansko"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/_richnik_/",
+            "linkedin": "https://www.linkedin.com/in/richard-nikel/",
+            "youtube": "https://www.youtube.com/@Vedecky"
+        },
+        "bio": "Richard je studentem všeobecného Gymnázia Blansko. Je členem týmu LASAR, který v roce 2024 vyhrál mezinárodní Conrad Challenge a následně vypustil na oběžnou dráhu vlastní satelit. V týmu se věnuje PR a inženýrské větvi. Svoje nadšení do vesmíru se snaží předat i prostřednictvím popularizačních videí na YouTube kanále Vědecký Ferin. Po střední míří do oboru v oblasti astronomie nebo kosmických technologií."
+    },
+    {
+        "name": "Monika Dlouhá",
+        "photo": null,
+        "locations": ["Brno"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/dlouhamoni/",
+            "email": "xdlouha@gml.cz"
+        },
+        "bio": "Monika je studentka Gymnázia Matyáše Lercha v Brně. Zajímá se především o biologii, chemii a vesmír. Účastnila se projektů Expedice Mars a Talentové akademie, pracuje na SOČce, dělá DofE a díky letu Zero-G se stala ambasadorkou České cesty do vesmíru. Ve svém volném čase hraje na saxofon, ráda čte a plave."
+    },
+    {
+        "name": "Lukáš Hrdý",
+        "photo": null,
+        "locations": [],
+        "lectures": [],
+        "contact": {
+            "youtube": "https://www.youtube.com/@kosmickeokenko"
+        },
+        "bio": "Astronomie, fyzika a popularizace vědy – to je svět Lukáše Hrdého. Od vývoje numerických metod pro kvantovou mechaniku po analýzu dat v gama astronomii mění svou vášeň v reálné projekty. Na konferenci Otevřené vědy 2024 získal jeho tým 2. místo za výzkum kvantových systémů. Na hvězdárně odemyká dveře veřejnosti do tajů astronomie a fyziky a na svém YouTube kanálu Kosmické okénko symbolicky otevírá okénko do vesmíru pro každého. Jeho cílem je posouvat hranice poznání a sdílet je s ostatními."
+    },
+    {
+        "name": "Ondra Pham",
+        "photo": null,
+        "locations": [],
+        "lectures": [],
+        "contact": {
+            "linkedin": "www.linkedin.com/in/bangpham1"
+        },
+        "bio": "Ondra je studentem SŠTE Olomoucká, který věří, že technologie mají sílu měnit svět k lepšímu. Od raketových soutěží jako Czech Rocket Challenge, přes stavbu RC modelů na stlačený vzduch až po stáž v Irsku nebo mezinárodní projekt zaměřený na Smart cities Portugalsku – všude hledá cesty, jak své nápady proměnit v reálná řešení. Své nadšení pro vědu a techniku se snaží šířit dál jako lektor kroužku Lego robotiky pro děti. Jeho snem je nejen pomoct světu, ale také inspirovat další generaci, aby se nebála tvořit, přemýšlet a měnit svět kolem sebe. Volný čas věnuje karate, které ho učí trpělivosti a vytrvalosti."
+    },
+    {
+        "name": "Kristýna Mičková",
+        "photo": null,
+        "locations": ["Plasy"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/kristyn.mickova/"
+        },
+        "bio": "Kristýna je studentkou Gymnázia v Plasích a také velkou milovnicí matematiky. Zabývá se především didaktikou matematiky. Již od základní školy se věnuje doučování. Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz.“"
+    },
+    {
+        "name": "Pavel Jan Linka",
+        "photo": null,
+        "locations": [],
+        "lectures": [],
+        "contact": {},
+        "bio": null
+    },
+    {
+        "name": "Štěpánka Keprtová",
+        "photo": null,
+        "locations": [],
+        "lectures": [],
+        "contact": {},
+        "bio": "Štěpánka je vášnivou nadšenkyní do biologie a její přirozený habitat je histologická laboratoř, ve které se uhnízdila v rámci psaní práce SOČ. Od té doby se neustále zabývá myším řezákem a způsoby, jakými je regulován jeho takřka neomezený růst. Protože, kdo by nechtěl cíleně ovlivňovat dělení buněk a předejít tak i fenoménu, který je znám jako rakovina? Nicméně se ale neštítí ani terénní biologie, kterou si zakusila ve švýcarských Alpách na International Wildlife Research Week. Ani popularizace vědy jí není cizí, podílí se na projektech LASAR a CZECHOPES."
+    },
+    {
+        "name": "Simon Klinga",
+        "photo": "/media/imgs/speakers/simon-klinga.png",
+        "locations": ["Brno"],
+        "lectures": [{
+            "title": "Ze školní lavice před porotce z NASA (a vlastní družici na raketě SpaceX)",
+            "youtube": "https://www.youtube.com/watch?v=iWbyGRPEGa0&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=3"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/simon_klinga/",
+            "website": "https://klinga.cz/",
+            "linkedin": "https://www.linkedin.com/in/simon-klinga-199a62269/",
+            "facebook": "https://www.facebook.com/SimonKlinga"
+        },
+        "bio": "Simon je student Gymnázia Brno - Bystrc a jeho hlavní vášní je vesmírný průmysl. Jeho cesta začala Expedicí Mars, pokračovala výhrou mezinárodní soutěže Conrad Challenge a vysláním satelitu do vesmíru. Umístil se v TOP2 v soutěži Středoškolák roku 2024 a Forbes ho zahrnul do 30 pod 30 pro rok 2024."
+    },
+    {
+        "name": "Anna Černá",
+        "photo": "/media/imgs/speakers/anna-cerna.png",
+        "locations": ["Brno"],
+        "lectures": [{
+            "title": "Výroba proteinů: mission (im)possible?",
+            "youtube": "https://www.youtube.com/watch?v=4w4Kbed35vw&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=8"
+        }],
+        "contact": {
+            "instagram": "",
+            "website": "",
+            "linkedin": "",
+            "facebook": ""
+        }
+    },
+    {
+        "name": "Tomáš Datinský",
+        "photo": "/media/imgs/speakers/tomas-datinsky.png",
+        "locations": ["Brno"],
+        "lectures": [{
+            "title": "Jak se zapojit do vědy už na střední?",
+            "youtube": "https://www.youtube.com/watch?v=Wvk_oMwS36o&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=4"
+        }],
+        "contact": {
+            "instagram": "",
+            "website": "",
+            "linkedin": "",
+            "facebook": ""
+        }
+    },
+    {
+        "name": "Michal Křipač",
+        "photo": "/media/imgs/speakers/michal-kripac.png",
+        "locations": ["Brno"],
+        "lectures": [{
+            "title": "Jak souvisí informatika s hudbou?",
+            "youtube": "https://www.youtube.com/watch?v=BTZLgmGh3qY&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=2"
+        }],
+        "contact": {
+            "instagram": "",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/michal-k%C5%99ipa%C4%8D-75177b269/",
+            "facebook": ""
+        }
+    },
+    {
+        "name": "Sebastian Matoušek",
+        "photo": "/media/imgs/speakers/sebastian-matousek.png",
+        "locations": ["Brno"],
+        "lectures": [{
+            "title": "Jak mě robotika dostala do světa?",
+            "youtube": "https://www.youtube.com/watch?v=oxU6NfcEoG8&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=1"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/sebmatousek/",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/sebastian-matou%C5%A1ek-825ba128a/",
+            "facebook": ""
+        }
+    },
+    {
+        "name": "Matěj Šicner",
+        "photo": "/media/imgs/speakers/matej-sicner.jpg",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "AstroPi",
+            "youtube": "https://www.youtube.com/watch?v=Smb-Vig1Dv8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=6"
+            },{
+            "title": "Kvantové technologie - dveře do světa nevídaných možností",
+            "youtube": "https://www.youtube.com/watch?v=BQUfMCNOnbQ&list=PL1NMrPWjk08TqugSEkfgSzry_AjJ-T_cN&index=2"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/msicner/",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1icner-4680ba241/",
+            "facebook": "https://www.facebook.com/matej.sicner.7"
+        }
+    }
+]
