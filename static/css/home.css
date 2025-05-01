@@ -434,9 +434,6 @@
 }
 
 @media (max-width:500px) {
-    #hero {
-        padding: 8.5rem 0 0 0;
-    }
     .nav-links {
         flex-wrap: wrap;
         justify-content: flex-end;
