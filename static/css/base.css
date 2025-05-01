@@ -435,7 +435,10 @@ footer,
     /* Show and style the Mobile Top Bar (Logo + Hamburger) */
     .mobile-top-bar {
         display: flex; /* Show and use flexbox */
-        position: sticky; /* Fix to the top */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
         top: 0;
         left: 0;
         width: 100%;
@@ -443,10 +446,15 @@ footer,
         background-color: var(--background, #fbfbfe); /* Background color for top bar */
         box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
         align-items: center; /* Vertically center content */
-        justify-content: space-between; /* Space out logo and button */
-        height: 55px; /* Set a fixed height */
-        padding: 0 15px; /* Add some horizontal padding */
+        padding-block: 1rem;
         z-index: 1000; /* Ensure it's above content */
+    }
+    .mobile-top-bar-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: min(90%, 1200px);
     }
 
      .mobile-top-bar .mobile-logo-link img.nav-logo {
