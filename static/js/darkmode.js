@@ -93,6 +93,14 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        // ADDED: Update .mark-img elements within .layout-container .layout-content
+        document.querySelectorAll('.layout-container .layout-content .mark-img').forEach(function(img) {
+            const currentRelativeSrc = new URL(img.src).pathname;
+            if (currentRelativeSrc !== markSrc) {
+                img.src = markSrc;
+            }
+        });
+
 
          document.querySelectorAll('.partner-logo-img').forEach(function(img) {
              const baseName = img.dataset.partnerName;
