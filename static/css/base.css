@@ -527,7 +527,6 @@ footer,
     /* Styles for the menu footer (optional) */
     .mobile-off-canvas-menu .menu-footer {
          padding: 15px;
-         border-top: 1px solid var(--secondary-background, #f0f0f0);
     }
 
     .mobile-off-canvas-menu .menu-footer .footer-socials {
