@@ -4,6 +4,7 @@ layout: single
 
 headerTitle: "Abstrakty a medailonky"
 headerText: "Přečti abstrakty, zhlédni medailonky a vyber ty pravé přednášky pro Zvaž vědu! Praha 2025."
+#úvodní fotky se berou v lecture.html jako name.jpg
 ---
 {{< lecture 
 name="AstroPI"

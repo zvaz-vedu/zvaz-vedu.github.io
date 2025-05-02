@@ -229,10 +229,11 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     display: none;
 }
 .important-info-body {
-    max-width: 500px;
+    max-width: 850px;
 }
 .important-info-body p {
     margin-top: 1rem;
+    text-align: justify;
 }
 .important-info-body p:first-of-type {
     margin-top: 0;
