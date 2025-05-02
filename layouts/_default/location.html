@@ -47,9 +47,10 @@
                 <div class="layout-content">
                     <div class="important-info-body">
                         <h3>{{.Params.importantInfoHeader}}</h3>
-                        <p>
-                            {{.Params.importantInfoText}}
-                        </p>
+                        {{$infoText := split .Params.importantInfoText "|"}}
+                        {{range $infoText}}
+                            <p>{{.}}</p>
+                        {{end}}
                     </div>  
                     <img class="mark-img" src={{.Params.importantInfoImage}} style="max-width: none; max-height: 200px;">
                 </div>
