@@ -37,6 +37,58 @@
         "bio": "Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni. "
     },
     {
+        "name": "Tereza Jelínková",
+        "photo": "/media/imgs/speakers/tereza-jelinkova.jpeg",
+        "locations": ["Prachatice"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/terezajelin?igsh=ZThubXcxbWtnZXEx&utm_source=qr",
+            "linkedin": "https://www.linkedin.com/in/tereza-jel%C3%ADnkov%C3%A1-18936b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        },
+        "bio": "Tereza je studentkou Gymnázia v Prachaticích a věnuje se vědě a výzkumu v oblasti biologie a chemie. V rámci programu Otevřená věda působila v Biologickém centru AV ČR a nyní pracuje na středoškolské odborné činnosti (SOČ) na Jihočeské univerzitě. Zúčastnila se odborných kurzů a letních škol. Je součástí organizačního týmu STEM_HUB a v rámci Expedice Mars absolvovala přípravnou simulaci i misi v Hydronautu."
+    },
+    {
+        "name": "Monika Dlouhá",
+        "photo": "/media/imgs/speakers/monika-dlouha.jpg",
+        "locations": ["Brno"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/dlouhamoni/",
+            "email": "xdlouha@gml.cz"
+        },
+        "bio": "Monika je studentka Gymnázia Matyáše Lercha v Brně. Zajímá se především o biologii, chemii a vesmír. Účastnila se projektů Expedice Mars a Talentové akademie, pracuje na SOČce, dělá DofE a díky letu Zero-G se stala ambasadorkou České cesty do vesmíru. Ve svém volném čase hraje na saxofon, ráda čte a plave."
+    },
+    {
+        "name": "Lukáš Hrdý",
+        "photo": "/media/imgs/speakers/lukas-hrdy.jpeg",
+        "locations": [],
+        "lectures": [],
+        "contact": {
+            "youtube": "https://www.youtube.com/@kosmickeokenko"
+        },
+        "bio": "Astronomie, fyzika a popularizace vědy – to je svět Lukáše Hrdého. Od vývoje numerických metod pro kvantovou mechaniku po analýzu dat v gama astronomii mění svou vášeň v reálné projekty. Na konferenci Otevřené vědy 2024 získal jeho tým 2. místo za výzkum kvantových systémů. Na hvězdárně odemyká dveře veřejnosti do tajů astronomie a fyziky a na svém YouTube kanálu Kosmické okénko symbolicky otevírá okénko do vesmíru pro každého. Jeho cílem je posouvat hranice poznání a sdílet je s ostatními."
+    },
+    {
+        "name": "Ondra Pham",
+        "photo": "/media/imgs/speakers/ondra-pham.jpg",
+        "locations": [],
+        "lectures": [],
+        "contact": {
+            "linkedin": "www.linkedin.com/in/bangpham1"
+        },
+        "bio": "Ondra je studentem SŠTE Olomoucká, který věří, že technologie mají sílu měnit svět k lepšímu. Od raketových soutěží jako Czech Rocket Challenge, přes stavbu RC modelů na stlačený vzduch až po stáž v Irsku nebo mezinárodní projekt zaměřený na Smart cities Portugalsku – všude hledá cesty, jak své nápady proměnit v reálná řešení. Své nadšení pro vědu a techniku se snaží šířit dál jako lektor kroužku Lego robotiky pro děti. Jeho snem je nejen pomoct světu, ale také inspirovat další generaci, aby se nebála tvořit, přemýšlet a měnit svět kolem sebe. Volný čas věnuje karate, které ho učí trpělivosti a vytrvalosti."
+    },
+    {
+        "name": "Štěpánka Keprtová",
+        "photo": "/media/imgs/speakers/stepanka-keprtova.JPG",
+        "locations": [],
+        "lectures": [],
+        "contact": {
+            "linkedin": "https://www.linkedin.com/in/štěpánka-keprtová-648079247"
+        },
+        "bio": "Štěpánka je vášnivou nadšenkyní do biologie a její přirozený habitat je histologická laboratoř, ve které se uhnízdila v rámci psaní práce SOČ. Od té doby se neustále zabývá myším řezákem a způsoby, jakými je regulován jeho takřka neomezený růst. Protože, kdo by nechtěl cíleně ovlivňovat dělení buněk a předejít tak i fenoménu, který je znám jako rakovina? Nicméně se ale neštítí ani terénní biologie, kterou si zakusila ve švýcarských Alpách na International Wildlife Research Week. Ani popularizace vědy jí není cizí, podílí se na projektech LASAR a CZECHOPES."
+    },
+    {
         "name": "Simon Klinga",
         "photo": "/media/imgs/speakers/simon-klinga.png",
         "locations": ["Brno"],

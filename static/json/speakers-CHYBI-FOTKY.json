@@ -38,7 +38,7 @@
     },
     {
         "name": "Tereza Jelínková",
-        "photo": null,
+        "photo": "/media/imgs/speakers/tereza-jelinkova.jpeg",
         "locations": ["Prachatice"],
         "lectures": [],
         "contact": {
@@ -61,7 +61,7 @@
     },
     {
         "name": "Monika Dlouhá",
-        "photo": null,
+        "photo": "/media/imgs/speakers/monika-dlouha.jpg",
         "locations": ["Brno"],
         "lectures": [],
         "contact": {
@@ -72,7 +72,7 @@
     },
     {
         "name": "Lukáš Hrdý",
-        "photo": null,
+        "photo": "/media/imgs/speakers/lukas-hrdy.jpeg",
         "locations": [],
         "lectures": [],
         "contact": {
@@ -82,7 +82,7 @@
     },
     {
         "name": "Ondra Pham",
-        "photo": null,
+        "photo": "/media/imgs/speakers/ondra-pham.jpg",
         "locations": [],
         "lectures": [],
         "contact": {
@@ -110,10 +110,12 @@
     },
     {
         "name": "Štěpánka Keprtová",
-        "photo": null,
+        "photo": "/media/imgs/speakers/stepanka-keprtova.JPG",
         "locations": [],
         "lectures": [],
-        "contact": {},
+        "contact": {
+            "linkedin": "https://www.linkedin.com/in/štěpánka-keprtová-648079247"
+        },
         "bio": "Štěpánka je vášnivou nadšenkyní do biologie a její přirozený habitat je histologická laboratoř, ve které se uhnízdila v rámci psaní práce SOČ. Od té doby se neustále zabývá myším řezákem a způsoby, jakými je regulován jeho takřka neomezený růst. Protože, kdo by nechtěl cíleně ovlivňovat dělení buněk a předejít tak i fenoménu, který je znám jako rakovina? Nicméně se ale neštítí ani terénní biologie, kterou si zakusila ve švýcarských Alpách na International Wildlife Research Week. Ani popularizace vědy jí není cizí, podílí se na projektech LASAR a CZECHOPES."
     },
     {
