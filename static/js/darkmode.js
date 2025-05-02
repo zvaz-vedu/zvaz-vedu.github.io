@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    function updateLogos() {
+    function updateSrcs() {
         const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         const mainLogoSrc = darkMode
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
              }
 
              const newSrc = darkMode
-                 ? `/media/imgs/partners/${baseName}-monochrom.png`
+                 ? `/media/imgs/partners//monochrom/${baseName}-monochrom.png`
                  : `/media/imgs/partners/${baseName}.png`;
 
              const currentRelativeSrc = new URL(img.src).pathname;
@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
          });
     }
 
-    updateLogos();
+     updateSrcs();
 
      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
-          updateLogos();
+          updateSrcs();
      });
 });

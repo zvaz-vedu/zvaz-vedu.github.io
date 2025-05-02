@@ -96,6 +96,7 @@ section .layout-content {
     gap: 3rem;
     justify-content: center;
     padding: var(--inspacer);
+    margin-bottom: 2rem;
 }
 
 .team-member-photo-container {
@@ -126,10 +127,20 @@ section .layout-content {
     width: fit-content;
     display: block;
 }
+.partner-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding: var(--inspacer);
+    border-radius: 2rem;
+    background-color: var(--secondary10);
+}
 
 /* MEDIA */
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     section .layout-content {
         flex-direction: column-reverse !important;
     }

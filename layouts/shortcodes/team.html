@@ -87,10 +87,20 @@
             <h3>Za Zvaž vědu! stojí...</h3>
             <p>Zvaž vědu! organizuje tým mladých nadšenců. Potkali jsme se už na střední, ale tím to minimálně pro některé z nás určitě nekončí. Začali jsme v Plzni a na soutěžích se potkali s týmem v Brně a dali se do užší spolupráce. Zorganizovat Zvaž vědu by ale nebylo možné bez našich partnerů, kteří nás podpořili silou svých sítí kontaktů, finančně nebo skvělými prostory.</p>
         </div>
-        <!-- jsem to úplně nechtěl mazat ale asi by to chtělo 
-        <div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:2rem;max-width:450px;border-radius:1rem;padding:1rem;margin-top:1rem;background-color:rgba(0,0,0,0.05);">
-            <a href="https://www.zvazvedu.cz" style="display:inline-block;">
-              <img class="full-logo" src="/media/imgs/base/full-logo-blk.png" alt="Zvaž vědu" style="margin: 1rem; height:75px;width:auto;transition:filter 0.3s ease;" onmouseover="this.style.filter='brightness(0)'" onmouseout="this.style.filter='none'">-->
+        <div class="partner-body">
+            {{$partnersDir := printf "static/media/imgs/partners"}}
+            {{range readDir $partnersDir}}
+                {{if not (eq .Name ".DS_Store")}}
+                {{if not (eq .Name "monochrom")}}
+                    {{$partnerData := replace .Name ".png" ""}}
+                    {{$partnerLink := replace $partnerData "-" "."}}
+                    {{$partnerLink := replace $partnerLink ".." "-"}}
+                    <a href="https://www.{{$partnerLink}}/" target="_blank">
+                        <img class="partner-logo-img" data-partner-name="{{$partnerData}}" src="/media/imgs/partners/{{.}}.png" style="{{if eq $partnerData "senat-cz"}}width: 280px;{{else}}width: 130px;{{end}}">
+                    </a>
+                {{end}}
+                {{end}}
+            {{end}}
         </div>
     </div>
 </section>
