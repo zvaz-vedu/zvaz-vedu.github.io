@@ -40,7 +40,10 @@
         "name": "Tereza Jelínková",
         "photo": "/media/imgs/speakers/tereza-jelinkova.jpeg",
         "locations": ["Prachatice"],
-        "lectures": [],
+        "lectures": [{
+            "title": "Otevřená věda: Nastartuj svoji vědeckou kariéru už na střední!",
+            "youtube": "https://www.youtube.com/watch?v=lFz-R1Uz7C0"
+        }],
         "contact": {
             "instagram": "https://www.instagram.com/terezajelin?igsh=ZThubXcxbWtnZXEx&utm_source=qr",
             "linkedin": "https://www.linkedin.com/in/tereza-jel%C3%ADnkov%C3%A1-18936b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
@@ -51,7 +54,10 @@
         "name": "Monika Dlouhá",
         "photo": "/media/imgs/speakers/monika-dlouha.jpg",
         "locations": ["Brno"],
-        "lectures": [],
+        "lectures": [{
+            "title": "Expedice Mars, DofE",
+            "youtube": "https://www.youtube.com/watch?v=pmJK9aulwvs"
+        }],
         "contact": {
             "instagram": "https://www.instagram.com/dlouhamoni/",
             "email": "xdlouha@gml.cz"
@@ -62,7 +68,10 @@
         "name": "Lukáš Hrdý",
         "photo": "/media/imgs/speakers/lukas-hrdy.jpeg",
         "locations": [],
-        "lectures": [],
+        "lectures": [{
+            "title": "Stáž Akademie věd, SOČ, Astronomická olympiáda",
+            "youtube": "https://www.youtube.com/watch?v=C8lJ0lj4i14"
+        }],
         "contact": {
             "youtube": "https://www.youtube.com/@kosmickeokenko"
         },
@@ -72,7 +81,10 @@
         "name": "Ondra Pham",
         "photo": "/media/imgs/speakers/ondra-pham.jpg",
         "locations": [],
-        "lectures": [],
+        "lectures": [{
+            "title": "Czech Rocket Challenge",
+            "youtube": "https://www.youtube.com/watch?v=nDCbyKw7g8Y"
+        }],
         "contact": {
             "linkedin": "www.linkedin.com/in/bangpham1"
         },
@@ -82,7 +94,10 @@
         "name": "Štěpánka Keprtová",
         "photo": "/media/imgs/speakers/stepanka-keprtova.JPG",
         "locations": [],
-        "lectures": [],
+        "lectures": [{
+            "title": "Věda jako jazyk",
+            "youtube": "https://www.youtube.com/watch?v=eyOzLe_WfFM"
+        }],
         "contact": {
             "linkedin": "https://www.linkedin.com/in/štěpánka-keprtová-648079247"
         },
