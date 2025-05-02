@@ -500,7 +500,7 @@ footer,
          display: flex;
          justify-content: space-between;
          align-items: center;
-         padding: 15px;
+         padding: 1rem 2rem 0 0;
     }
 
     .mobile-off-canvas-menu .mobile-menu-logo-link img.nav-logo {
@@ -515,15 +515,17 @@ footer,
          color: var(--text, #000);
          cursor: pointer;
          padding: 5px;
+         margin-left: auto;
     }
 
     /* Styles for the menu links container */
     .mobile-off-canvas-menu .menu-links {
         display: flex;
+        align-items: flex-end;
         flex-direction: column;
-        padding: 15px;
+        padding: 1rem 2rem 0 0;
         flex-grow: 1; /* Allow links section to take up space */
-        gap: 1rem;
+        gap: 1.2rem;
     }
     }
 
