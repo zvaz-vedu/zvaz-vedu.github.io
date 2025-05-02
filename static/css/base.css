@@ -316,7 +316,7 @@ header img {
 .header-text {
     font-size: 1.8rem;
     margin-top: 2rem;
-    color: var(--primary);
+    color: var(--primary );
 }
 
 .team-member-link {
