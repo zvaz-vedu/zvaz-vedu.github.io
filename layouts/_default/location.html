@@ -41,7 +41,61 @@
     {{ end}}
 
     {{ if .Params.liveAction }}
-        <!-- Tady je obsah, který se zobrazí, pokud se právě blíží další akce (liveAction je true) -->
+    <!-- Tady je obsah, který se zobrazí, pokud se právě blíží další akce (liveAction je true) -->
+
+        {{ if .Params.eventTime }}
+        <section class="layout-container" id="countdown">
+            <div class="layout-content" style=" justify-content: center;">
+              <div class="countdown-body" style="max-width: 100%;" id="countdown-timer">Načítám čas…</div>
+            </div>
+          </section>
+          
+          <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            // Načteme datum z Hugo templating
+            const eventTimeStr = "{{ .Params.eventTime }}";  // Tento řetězec získáme z parametru .Params.eventTime
+            const eventTime = new Date(eventTimeStr).getTime();
+            const countdownEl = document.getElementById("countdown-timer");
+          
+            function updateCountdown() {
+              const now = new Date().getTime();
+              const diff = eventTime - now;         
+              const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+              const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+              const s = Math.floor((diff % (1000 * 60)) / 1000);
+          
+              countdownEl.innerHTML = `
+                <div class="countdown-row">
+                    <div class="countdown-block">
+                    <span class="count-number">${d}</span>
+                    <span class="count-label">dnů</span>
+                    </div>
+                    <span class="count-separator">:</span>
+                    <div class="countdown-block">
+                    <span class="count-number">${h}</span>
+                    <span class="count-label">hodin</span>
+                    </div>
+                    <span class="count-separator">:</span>
+                    <div class="countdown-block">
+                    <span class="count-number">${m}</span>
+                    <span class="count-label">minut</span>
+                    </div>
+                    <span class="count-separator">:</span>
+                    <div class="countdown-block">
+                    <span class="count-number">${s}</span>
+                    <span class="count-label">vteřin</span>
+                    </div>
+                </div>
+                `;
+            }
+          
+            setInterval(updateCountdown, 1000);  // Aktualizace každou sekundu
+          });
+          </script>
+          
+        {{ end }}
+    
         {{if .Params.importantInfo}}
             <section class="layout-container" id="important-info">
                 <div class="layout-content">
@@ -96,7 +150,6 @@
             </section>
         {{ end }}
 
-        <!-- JAK DOKÁŽU VLOŽIT PROGRAM ZE SHORTCODU? -->
         <section class="layout-container" id="program">
             <div class="layout-content">
                 <h2 style="font-size: 3rem">Program bude k dispozici již brzy!</h2>

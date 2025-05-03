@@ -214,6 +214,49 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     margin-bottom: 3rem;
 }
 
+.countdown-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    background-color: var(--accent);
+    color: var(--secondary-background);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.countdown-row:hover {
+    transform: scale(1.03);
+}
+
+  .countdown-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .count-number {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .count-label {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+  }
+  
+  .count-separator {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    align-self: flex-start; 
+  }
+   
+
 #important-info .layout-content {
     background-color: var(--primary60);
     flex-direction: row;
@@ -484,6 +527,17 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     }
     .link-button h4{
         font-size: 1.777rem; 
+    }
+    .countdown-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .count-number {
+    font-size: 2.2rem;
+    }
+    .count-label {
+    font-size: 0.6rem;
     }
 }
 

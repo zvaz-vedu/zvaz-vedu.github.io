@@ -12,6 +12,7 @@ participants: "120"
 speakers: "10"  
 
 liveAction: true
+eventTime: 2025-06-09T09:00:00
 pastActions: false
 
 team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
