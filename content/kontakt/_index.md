@@ -3,7 +3,7 @@ title: Kontakt
 layout: contact
 ---
 
-### Plzeň 
+### Plzeň & Praha
 
 {{< member
 name="Jan Herzig"
