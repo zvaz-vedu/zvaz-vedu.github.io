@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="refresh" content="0;url={{ .Params.link }}" />
+    <link rel="canonical" href="{{ .Params.link }}" />
     <title>Přesměrování…</title>
-    <script>
-      window.onload = function () {
-        window.open("{{ .Params.link }}", "_blank");
-      };
-    </script>
   </head>
   <body>
-    <p>Otevírám stránku v novém okně… <a href="{{ .Params.link }}" target="_blank">Klikni sem</a>, pokud se nic nestalo.</p>
+    <p>Probíhá přesměrování… Pokud ne, <a href="{{ .Params.link }}">klikněte zde</a>.</p>
   </body>
 </html>
