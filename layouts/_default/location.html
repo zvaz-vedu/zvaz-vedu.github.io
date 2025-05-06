@@ -43,19 +43,30 @@
     {{ if .Params.liveAction }}
     <!-- Tady je obsah, který se zobrazí, pokud se právě blíží další akce (liveAction je true) -->
 
-        {{ if .Params.eventTime }}
-        <section class="layout-container" id="countdown">
-            <div class="layout-content">
-              <div class="countdown-body" id="countdown-timer">Načítám čas…</div>
-            </div>
-          </section>
+            {{ if .Params.eventTime }}
+            <section class="layout-container" id="event-info">
+                <div class="layout-content">
+                    <div id="event-data-box">
+                        <div id="countdown-display" class="info-block">
+                            Načítám čas…
+                        </div>
+                        <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}">
+                             <p class="registration-label" style="color: white">Přijatých registrací</p>
+                             <div class="progress-bar-track-pill">
+                                <div class="progress-bar-fill-pill"></div>
+                                <span class="progress-bar-count-text">0/100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
           
           <script>
           document.addEventListener("DOMContentLoaded", function () {
             // Načteme datum z Hugo templating
             const eventTimeStr = "{{ .Params.eventTime }}";  // Tento řetězec získáme z parametru .Params.eventTime
             const eventTime = new Date(eventTimeStr).getTime();
-            const countdownEl = document.getElementById("countdown-timer");
+            const countdownEl = document.getElementById("countdown-display");
           
             function updateCountdown() {
               const now = new Date().getTime();
@@ -93,7 +104,10 @@
             setInterval(updateCountdown, 1000);  // Aktualizace každou sekundu
           });
           </script>
-          
+        {{ end }}
+        
+        {{ if .Params.registrationSheet}}
+        <script src="/js/sheets-progress-bar.js"></script>
         {{ end }}
     
         {{if .Params.importantInfo}}
