@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Configuration ---
     const registrationInfoDiv = document.getElementById('registration-info');
     const sheetUrl = registrationInfoDiv ? registrationInfoDiv.dataset.sheetUrl : null;
-    const targetCount = 100; // ** Set your target number here **
+    const targetCount = 150; // ** Set your target number here **
   
     // --- Element References ---
     const progressBarTrack = registrationInfoDiv ? registrationInfoDiv.querySelector('.progress-bar-track-pill') : null;
