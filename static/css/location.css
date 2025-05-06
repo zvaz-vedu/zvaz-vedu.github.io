@@ -214,21 +214,24 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     margin-bottom: 3rem;
 }
 
+#countdown .layout-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: none;
+}
+
 .countdown-row {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 1rem;
     background-color: var(--accent);
-    color: var(--secondary-background);
-    padding: 2rem 3rem;
-    border-radius: 2rem;
+    color: var(--background);
+    padding: var(--inspacer);
+    border-radius: 1.2rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.countdown-row:hover {
-    transform: scale(1.03);
+    width: 100%;
 }
 
   .countdown-block {
@@ -246,14 +249,15 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
   .count-label {
     font-size: 1.2rem;
     margin-top: 0.3rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   
   .count-separator {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1;
     align-self: flex-start; 
+    color: var(--background);
   }
    
 
@@ -276,7 +280,6 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
 }
 .important-info-body p {
     margin-top: 1rem;
-    text-align: justify;
 }
 .important-info-body p:first-of-type {
     margin-top: 0;
@@ -527,18 +530,7 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     }
     .link-button h4{
         font-size: 1.777rem; 
-    }
-    .countdown-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .count-number {
-    font-size: 2.2rem;
-    }
-    .count-label {
-    font-size: 0.6rem;
-    }
+    }  
 }
 
 @media (max-width:600px) {
@@ -581,20 +573,34 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     header h1 {
         font-size: 4rem;
         line-height: 4rem;
-}
+    }
     header h1 span::after {
         height: 14px;
         bottom: 0;
     }
     .header-text {
         font-size: 1.2rem;
-}
+    }
     header .primary-button {
         font-size: 1.2rem;
     }
     .bento-board {
         grid-template-columns: 1fr;
-}
+    }
+    .countdown-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .count-number {
+    font-size: 2.2rem;
+    }
+    .count-label {
+    font-size: 0.8rem;
+    }
+    .count-separator {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:520px) {
@@ -611,4 +617,13 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
         padding-inline: 0;
     }
 
+}
+
+@media (prefers-color-scheme: dark) {
+    .countdown-block {
+        color: var(--text);
+    }
+    .count-separator {
+        color: var(--text);
+    }
 }
