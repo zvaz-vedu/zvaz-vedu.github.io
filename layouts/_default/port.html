@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Přesměrování…</title>
+    <script>
+      window.onload = function () {
+        window.open("{{ .Params.link }}", "_blank");
+      };
+    </script>
+  </head>
+  <body>
+    <p>Otevírám stránku v novém okně… <a href="{{ .Params.link }}" target="_blank">Klikni sem</a>, pokud se nic nestalo.</p>
+  </body>
+</html>
