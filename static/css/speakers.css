@@ -11,6 +11,12 @@ header .primary-button:hover {
     color: var(--background);
 }
 
+@media (prefers-color-scheme: dark) {
+    header .primary-button {
+        color: var(--text);
+    }
+}
+
 #map svg {
     max-width: 100%;
 }
@@ -214,17 +220,5 @@ header .primary-button:hover {
     }
     .speaker-search-container {
         width: 100%;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    #speaker-search {
-        background-color: var(--accent90);
-    }
-    #location-brno, #location-praha, #location-plzeň {
-        background-color: var(--accent90);
-    }
-    #location-brno:checked, #location-praha:checked, #location-plzeň:checked {
-        box-shadow: inset 1em 1em var(--accent60);
     }
 }

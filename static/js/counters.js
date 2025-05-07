@@ -102,8 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
       textElement.textContent = `Načítám...`; // Loading text in the count area
       fillElement.style.width = '0%'; // Start with 0% width
       // Reset fill background/color in case of previous errors
-      fillElement.style.backgroundColor = 'var(--primary)'; // Fill color (white)
-      textElement.style.color = '#ffffff'; // Text color on fill (orange)
   
   
       try {
@@ -182,4 +180,42 @@ document.addEventListener('DOMContentLoaded', function() {
               progressBarTrack.style.borderRadius = '0';
          }
     }
+
+    const eventTime = new Date(eventTimeStr).getTime();
+    const countdownEl = document.getElementById("countdown-display");
+    
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = eventTime - now;         
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
+    
+      countdownEl.innerHTML = `
+        <div class="countdown-row">
+            <div class="countdown-block">
+            <span class="count-number">${d}</span>
+            <span class="count-label">dnů</span>
+            </div>
+            <span class="count-separator">:</span>
+            <div class="countdown-block">
+            <span class="count-number">${h}</span>
+            <span class="count-label">hodin</span>
+            </div>
+            <span class="count-separator">:</span>
+            <div class="countdown-block">
+            <span class="count-number">${m}</span>
+            <span class="count-label">minut</span>
+            </div>
+            <span class="count-separator">:</span>
+            <div class="countdown-block">
+            <span class="count-number">${s}</span>
+            <span class="count-label">sekund</span>
+            </div>
+        </div>
+        `;
+    }
+    
+    setInterval(updateCountdown, 1000);  // Aktualizace každou sekundu
   });

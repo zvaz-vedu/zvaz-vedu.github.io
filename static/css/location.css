@@ -223,31 +223,10 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
   }
   
   #event-info .layout-content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
     padding: 20px 0;
-  }
-  
-  #event-data-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      width: 100%;
-      max-width: 600px;
-      background-color: var(--accent);
-      color: var(--background); /* Default text color inside the box (white) */
-      padding: var(--inspacer);
-      border-radius: 1.2rem;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-      box-sizing: border-box;
-  }
-  
-  #event-data-box .info-block {
-      width: 100%;
-      box-sizing: border-box;
   }
   
   #countdown-display .countdown-row {
@@ -288,7 +267,7 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     font-weight: bold;
     line-height: 1;
     align-self: flex-start;
-    color: white;
+    color: var(--text);
   }
   
   #registration-info {
@@ -312,7 +291,7 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     position: relative; /* Needed for absolute positioning of children */
     height: 40px; /* Height of the pill */
     width: 100%; /* Full width within its parent */
-    background-color: var(--track-color, rgba(255, 255, 255, 0.3)); /* Track color */
+    background-color: rgba(255, 255, 255, 0.3); /* Track color */
     border-radius: 999px; /* Pill shape */
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Inner shadow */
     overflow: hidden; /* Hide anything outside the shape */
@@ -326,8 +305,7 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     left: 0;
     height: 100%;
     width: 0; /* Controlled by JS */
-    background-color: var(--background); /* Fill color (white) */
-    /* Text styling removed - text is now in .progress-bar-count-text */
+    background-color: var(--accent); /* Fill color (white) */
     display: block; /* Change from flex as it no longer contains text */
     border-radius: 999px;
     transition: width 0.8s ease-out;
@@ -349,89 +327,8 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     font-weight: bold;
     line-height: 1;
     white-space: nowrap; /* Prevent wrapping */
-    color: var(--accent); /* Text color (orange) - ensure it's readable on both fill and track */
+    color: var(--text); /* Text color (orange) - ensure it's readable on both fill and track */
      /* Add text shadow for better readability on contrasting backgrounds */
-  }
-  
-  
-  @media (min-width: 768px) {
-      #event-data-box {
-          flex-direction: column; /* Always stacked */
-          gap: 2rem; /* Maybe more space on wider screens */
-      }
-  
-      #event-data-box .info-block {
-          width: 100%; /* Full width */
-      }
-  
-      #countdown-display .countdown-row {
-          gap: 0.8rem;
-          justify-content: center;
-          width: auto;
-      }
-  
-      #registration-info {
-         align-items: center; /* Center items vertically */
-         gap: 0.8rem; /* Restore default gap */
-      }
-       .registration-label {
-          width: 100%;
-          text-align: center; /* Center label */
-       }
-       .progress-bar-track-pill {
-          max-width: 400px;
-          width: 100%;
-       }
-        .progress-bar-fill-pill {
-           /* Padding removed - text is separate */
-        }
-        .progress-bar-count-text {
-            right: 20px; /* Adjust position on wider screens */
-        }
-  }
-  
-  @media (max-width: 767px) {
-    #event-info.layout-container {
-      padding: 0 10px;
-    }
-  
-    #event-data-box {
-        padding: 1rem;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-    }
-  
-    #event-data-box .info-block {
-        width: 100%;
-    }
-  
-    #countdown-display .count-number {
-        font-size: 3rem;
-    }
-    #countdown-display .count-label {
-        font-size: 0.9rem;
-    }
-     #countdown-display .count-separator {
-        font-size: 3rem;
-     }
-     #countdown-display .countdown-row {
-         gap: 0.5rem;
-     }
-  
-    .progress-bar-track-pill {
-       height: 35px;
-    }
-     .progress-bar-fill-pill {
-        /* Padding removed */
-     }
-      .progress-bar-count-text {
-          right: 10px; /* Adjust position on smaller screens */
-          font-size: 1.1rem;
-      }
-       .registration-label {
-          text-align: center;
-       }
   }
 
 #important-info .layout-content {
@@ -456,6 +353,10 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
 }
 .important-info-body p:first-of-type {
     margin-top: 0;
+}
+
+#info-vid .layout-content {
+    padding: 0;
 }
 
 .bento-board {
@@ -486,6 +387,10 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
 .bento-title {
     font-size: 3rem;
 }
+.bento-text {
+    text-align: center;
+}
+
 
 #history .layout-content {
     flex-direction: column;
@@ -682,6 +587,61 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     }
 }
 
+@media (min-width: 768px) {
+    #event-data-box {
+        flex-direction: column; /* Always stacked */
+        gap: 2rem; /* Maybe more space on wider screens */
+    }
+
+    #event-data-box .info-block {
+        width: 100%; /* Full width */
+    }
+
+    #countdown-display .countdown-row {
+        gap: 0.8rem;
+        justify-content: center;
+        width: auto;
+    }
+
+    #registration-info {
+       align-items: center; /* Center items vertically */
+       gap: 0.8rem; /* Restore default gap */
+    }
+     .progress-bar-track-pill {
+        max-width: 400px;
+        width: 100%;
+     }
+      .progress-bar-fill-pill {
+         /* Padding removed - text is separate */
+      }
+      .progress-bar-count-text {
+          right: 20px; /* Adjust position on wider screens */
+      }
+      #countdown-display .count-number {
+          font-size: 3rem;
+      }
+      #countdown-display .count-label {
+          font-size: 0.9rem;
+      }
+       #countdown-display .count-separator {
+          font-size: 3rem;
+       }
+       #countdown-display .countdown-row {
+           gap: 0.5rem;
+       }
+    
+      .progress-bar-track-pill {
+         height: 35px;
+      }
+        .progress-bar-count-text {
+            right: 10px; /* Adjust position on smaller screens */
+            font-size: 1.1rem;
+        }
+         .registration-label {
+            text-align: center;
+         }
+}
+
 @media (max-width:740px) {
     /* poloha obrázků pod*/
     #cta .layout-content {
@@ -790,13 +750,4 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
         padding-inline: 0;
     }
 
-}
-
-@media (prefers-color-scheme: dark) {
-    .countdown-block {
-        color: var(--text);
-    }
-    .count-separator {
-        color: var(--text);
-    }
 }
