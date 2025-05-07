@@ -46,13 +46,13 @@
         <section class="layout-container" id="accomplishments">
             <div class="layout-content bento-board">
                 <div class="bento-board-item" style="background-color: var(--accent)">
-                    <div id="countdown-display" class="info-block">
+                    <div id="countdown-display" class="info-block" style="color: white">
                         Načítám čas…
                     </div>
                     <script>
                         const eventTimeStr = {{.Params.eventTime}};
                     </script>
-                    <p class="bento-text">zbývá do začátku</p>
+                    <p class="bento-text" style="color: white">zbývá do začátku</p>
                 </div>
                 <div class="bento-board-item" style="background-color: var(--primary)">
                     <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}">
