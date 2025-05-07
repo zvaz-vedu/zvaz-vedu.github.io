@@ -54,7 +54,7 @@
                     </script>
                     <p class="bento-text" style="color: white">zbývá do začátku</p>
                 </div>
-                <div class="bento-board-item" style="background-color: var(--primary)">
+                <div class="bento-board-item" style="background-color: var(--accent60)">
                     <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}">
                         <div class="progress-bar-track-pill">
                            <div class="progress-bar-fill-pill"></div>
@@ -63,7 +63,7 @@
                    </div>
                     <p class="bento-text">účastníků</p>
                 </div>
-                <div class="bento-board-item" style="background-color: var(-secondary90);">
+                <div class="bento-board-item" style="background-color: var(--accent40);">
                     <strong class="bento-title">10</strong>
                     <p class="bento-text">nových přednášejících</p>
                 </div>
@@ -73,7 +73,9 @@
         {{if .Params.infoVid}}
             <section class="layout-container" id="info-vid">
                 <div class="layout-content">
-                    <iframe src="{{.Params.infoVid}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-wrapper">
+                        <iframe src="{{.Params.infoVid}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
         {{end}}
