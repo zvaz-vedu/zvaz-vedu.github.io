@@ -572,5 +572,3 @@ footer,
         pointer-events: none; /* Prevents clicks/interactions on the blurred content */
         transition: filter 0.3s ease-in-out; /* Smooth animation for the blur */
 }
-    
-}
