@@ -51,18 +51,6 @@
         "bio": "Tereza je studentkou Gymnázia v Prachaticích a věnuje se vědě a výzkumu v oblasti biologie a chemie. V rámci programu Otevřená věda působila v Biologickém centru AV ČR a nyní pracuje na středoškolské odborné činnosti (SOČ) na Jihočeské univerzitě. Zúčastnila se odborných kurzů a letních škol. Je součástí organizačního týmu STEM_HUB a v rámci Expedice Mars absolvovala přípravnou simulaci i misi v Hydronautu."
     },
     {
-        "name": "Richard Nikel",
-        "photo": null,
-        "locations": ["Blansko"],
-        "lectures": [],
-        "contact": {
-            "instagram": "https://www.instagram.com/_richnik_/",
-            "linkedin": "https://www.linkedin.com/in/richard-nikel/",
-            "youtube": "https://www.youtube.com/@Vedecky"
-        },
-        "bio": "Richard je studentem všeobecného Gymnázia Blansko. Je členem týmu LASAR, který v roce 2024 vyhrál mezinárodní Conrad Challenge a následně vypustil na oběžnou dráhu vlastní satelit. V týmu se věnuje PR a inženýrské větvi. Svoje nadšení do vesmíru se snaží předat i prostřednictvím popularizačních videí na YouTube kanále Vědecký Ferin. Po střední míří do oboru v oblasti astronomie nebo kosmických technologií."
-    },
-    {
         "name": "Monika Dlouhá",
         "photo": "/media/imgs/speakers/monika-dlouha.jpg",
         "locations": ["Brno"],
@@ -101,33 +89,6 @@
             "linkedin": "www.linkedin.com/in/bangpham1"
         },
         "bio": "Ondra je studentem SŠTE Olomoucká, který věří, že technologie mají sílu měnit svět k lepšímu. Od raketových soutěží jako Czech Rocket Challenge, přes stavbu RC modelů na stlačený vzduch až po stáž v Irsku nebo mezinárodní projekt zaměřený na Smart cities Portugalsku – všude hledá cesty, jak své nápady proměnit v reálná řešení. Své nadšení pro vědu a techniku se snaží šířit dál jako lektor kroužku Lego robotiky pro děti. Jeho snem je nejen pomoct světu, ale také inspirovat další generaci, aby se nebála tvořit, přemýšlet a měnit svět kolem sebe. Volný čas věnuje karate, které ho učí trpělivosti a vytrvalosti."
-    },
-    {
-        "name": "Kristýna Mičková",
-        "photo": null,
-        "locations": ["Plasy"],
-        "lectures": [{
-            "title": "Matematika v reálném životě",
-            "youtube": "https://www.youtube.com/watch?v=K_tXhBGpxD0"
-        }],
-        "contact": {
-            "instagram": "https://www.instagram.com/kristyn.mickova/"
-        },
-        "bio": "Kristýna je studentkou Gymnázia v Plasích a také velkou milovnicí matematiky. Zabývá se především didaktikou matematiky. Již od základní školy se věnuje doučování. Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz.“"
-    },
-    {
-        "name": "Pavel Jan Linka",
-        "photo": null,
-        "locations": [],
-        "lectures": [{
-            "title": "Talnet",
-            "youtube": "https://www.youtube.com/watch?v=DF24leY7xWY"
-        },{
-            "title": "Superhrdinové biochemie: CRISPR/Cas9 a AI",
-            "youtube": "https://www.youtube.com/watch?v=0BuFHCrvAmY"
-        }],
-        "contact": {},
-        "bio": null
     },
     {
         "name": "Štěpánka Keprtová",

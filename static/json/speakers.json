@@ -15,9 +15,10 @@
         }],
         "contact": {
             "instagram": "https://www.instagram.com/jan.herzig//",
-            "linkedin": "https://www.linkedin.com/in/jan-herzig-372a46316/"
+            "linkedin": "https://www.linkedin.com/in/jan-herzig-372a46316/",
+            "facebook": "https://www.facebook.com/profile.php?id=100084768547795"
         },
-        "bio": "Honza je student Gymnázia Jindřicha Šimona Baara v Domažlicích. Jeho vášní je astronomie a astrofyzika. Věnuje se popularizaci vědy a techniky, zejména v oblasti vesmíru. Je členem České astronomické společnosti a spolupracuje s různými organizacemi na popularizaci vědy."
+        "bio": "Honza je studentem Gymnázia J. Š. Baara v Domažlicích. Už od mala si neustále kladl nějaké otázky. Nejdříve ho zajímala příroda, pak historie, letectví a před šesti lety se dostal k vesmíru. Ten ho naprosto pohltil. Pravidelně se účastní různých olympiád, v astronomické uspěl i v mezinárodních kolech. Ve spolupráci s Astronomickým ústavem AV ČR se věnuje výzkumu exoplanet. Hrozně ho baví i popularizace vědy. Hlavní náplní jeho práce je nyní projekt Zvaž vědu!, u jehož zrodu v roce 2023 stál a který nyní vede. Volný čas tráví nejraději cestováním, procházkami a jízdou na kole, prázdniny si nejvíce užije na chalupě s přáteli."
     },
     {
         "name": "Matyáš Matta",
@@ -32,14 +33,15 @@
         }],
         "contact": {
             "website": "https://matyasmatta.github.io/id_en",
-            "linkedin": "https://www.linkedin.com/in/matyasmatta/"
+            "linkedin": "https://www.linkedin.com/in/matyasmatta/",
+            "email": "matta@zvazvedu.cz"
         },
-        "bio": "Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni. "
+        "bio": "Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni."
     },
     {
         "name": "Tereza Jelínková",
         "photo": "/media/imgs/speakers/tereza-jelinkova.jpeg",
-        "locations": ["Prachatice"],
+        "locations": ["Praha", "Pardubice"],
         "lectures": [{
             "title": "Otevřená věda: Nastartuj svoji vědeckou kariéru už na střední!",
             "youtube": "https://www.youtube.com/watch?v=lFz-R1Uz7C0"
@@ -49,6 +51,18 @@
             "linkedin": "https://www.linkedin.com/in/tereza-jel%C3%ADnkov%C3%A1-18936b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
         },
         "bio": "Tereza je studentkou Gymnázia v Prachaticích a věnuje se vědě a výzkumu v oblasti biologie a chemie. V rámci programu Otevřená věda působila v Biologickém centru AV ČR a nyní pracuje na středoškolské odborné činnosti (SOČ) na Jihočeské univerzitě. Zúčastnila se odborných kurzů a letních škol. Je součástí organizačního týmu STEM_HUB a v rámci Expedice Mars absolvovala přípravnou simulaci i misi v Hydronautu."
+    },
+    {
+        "name": "Richard Nikel",
+        "photo": "/media/imgs/speakers/richard-nikel.jpg",
+        "locations": ["Plzeň", "Brno"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/_richnik_/",
+            "linkedin": "https://www.linkedin.com/in/richard-nikel/",
+            "youtube": "https://www.youtube.com/@Vedecky"
+        },
+        "bio": "Richard je studentem všeobecného Gymnázia Blansko. Je členem týmu LASAR, který v roce 2024 vyhrál mezinárodní Conrad Challenge a následně vypustil na oběžnou dráhu vlastní satelit. V týmu se věnuje PR a inženýrské větvi. Svoje nadšení do vesmíru se snaží předat i prostřednictvím popularizačních videí na YouTube kanále Vědecký Ferin. Po střední míří do oboru v oblasti astronomie nebo kosmických technologií."
     },
     {
         "name": "Monika Dlouhá",
@@ -67,7 +81,7 @@
     {
         "name": "Lukáš Hrdý",
         "photo": "/media/imgs/speakers/lukas-hrdy.jpeg",
-        "locations": [],
+        "locations": ["Brno"],
         "lectures": [{
             "title": "Stáž Akademie věd, SOČ, Astronomická olympiáda",
             "youtube": "https://www.youtube.com/watch?v=C8lJ0lj4i14"
@@ -80,7 +94,7 @@
     {
         "name": "Ondra Pham",
         "photo": "/media/imgs/speakers/ondra-pham.jpg",
-        "locations": [],
+        "locations": ["Praha"],
         "lectures": [{
             "title": "Czech Rocket Challenge",
             "youtube": "https://www.youtube.com/watch?v=nDCbyKw7g8Y"
@@ -91,9 +105,38 @@
         "bio": "Ondra je studentem SŠTE Olomoucká, který věří, že technologie mají sílu měnit svět k lepšímu. Od raketových soutěží jako Czech Rocket Challenge, přes stavbu RC modelů na stlačený vzduch až po stáž v Irsku nebo mezinárodní projekt zaměřený na Smart cities Portugalsku – všude hledá cesty, jak své nápady proměnit v reálná řešení. Své nadšení pro vědu a techniku se snaží šířit dál jako lektor kroužku Lego robotiky pro děti. Jeho snem je nejen pomoct světu, ale také inspirovat další generaci, aby se nebála tvořit, přemýšlet a měnit svět kolem sebe. Volný čas věnuje karate, které ho učí trpělivosti a vytrvalosti."
     },
     {
+        "name": "Kristýna Mičková",
+        "photo": null,
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Matematika v reálném životě",
+            "youtube": "https://www.youtube.com/watch?v=K_tXhBGpxD0"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/kristyn.mickova/"
+        },
+        "bio": "Kristýna je studentkou Gymnázia v Plasích a také velkou milovnicí matematiky. Zabývá se především didaktikou matematiky. Již od základní školy se věnuje doučování. Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz.“"
+    },
+    {
+        "name": "Pavel Jan Linka",
+        "photo": "/media/imgs/speakers/pavel-linka.jpg",
+        "locations": ["Plzeň", "Praha"],
+        "lectures": [{
+            "title": "Talnet",
+            "youtube": "https://www.youtube.com/watch?v=DF24leY7xWY"
+        },{
+            "title": "Superhrdinové biochemie: CRISPR/Cas9 a AI",
+            "youtube": "https://www.youtube.com/watch?v=0BuFHCrvAmY"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/pavellinka/"
+        },
+        "bio": "Pavel je čerstvým studentem Vysoké školy chemicko-technologické v Praze. Již od střední školy se zajímá o nejrůznější vědecká témata z oblasti biochemie. Na střední škole se zúčastnil chemické a biologické olympiády, aktivit ve spolku Talnet a na svém studijním pobytu v Německu soutěže Jugend forscht. Mimo vědu se věnuje hraní v orchestru a cyklistice."
+    },
+    {
         "name": "Štěpánka Keprtová",
         "photo": "/media/imgs/speakers/stepanka-keprtova.JPG",
-        "locations": [],
+        "locations": ["Brno"],
         "lectures": [{
             "title": "Věda jako jazyk",
             "youtube": "https://www.youtube.com/watch?v=eyOzLe_WfFM"
@@ -162,7 +205,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/michal-k%C5%99ipa%C4%8D-75177b269/",
             "facebook": ""
-        }
+        },
+        "bio": "Michal je brněnský student informatiky, které se volnočasově věnuje v různých oblastech od 12 let. Mezi jeho projekty patří webový portál Burza učebnic a s tím související webová technologie Lemon. Vedle informatiky se věnuje také experimentální elektronické hudbě a vyrábění vlastních nástrojů kolem brněnského kolektivu Bastl Instruments."
     },
     {
         "name": "Sebastian Matoušek",
@@ -182,7 +226,7 @@
     {
         "name": "Matěj Šicner",
         "photo": "/media/imgs/speakers/matej-sicner.jpg",
-        "locations": ["Plzeň"],
+        "locations": ["Plzeň", "Brno"],
         "lectures": [{
             "title": "AstroPi",
             "youtube": "https://www.youtube.com/watch?v=Smb-Vig1Dv8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=6"

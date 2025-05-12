@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
 
 :root {
-
-    /* Fundamental colours all modes */
-    --dark: #201f1f;
-    --yellow: #d8b00f;
-    --light-yellow: #ffc300;
-    --light: #ffffff;
-
-    /* Base colours (Light Mode) */
     --text: #000000;
     --background: #fbfbfe;
     --secondary-background: #f0f0f0;
@@ -116,9 +108,6 @@
         --secondary-background: #333333;
         --tertiary-background: #111111;
         --text: #ffffff;
-        --primary: #d8b00f; /* HSL: 46, 90%, 45% (Adjusted for dark mode) */
-        --secondary: #c9a77c; /* HSL: 37, 33%, 64% (Calculated from hex) */
-        --accent: #d96a39; /* HSL: 17, 61%, 54% (Calculated from hex) */
 
         /* Text opacity variations (using white) */
         --text5: hsla(0, 0%, 100%, 0.05);
@@ -140,68 +129,5 @@
         --text85: hsla(0, 0%, 100%, 0.85);
         --text90: hsla(0, 0%, 100%, 0.9);
         --text95: hsla(0, 0%, 100%, 0.95);
-
-        /* Primary opacity variations (reversed for dark mode) */
-        --primary5: hsla(46, 90%, 45%, 0.95); /* 95% opacity */
-        --primary10: hsla(46, 90%, 45%, 0.9);  /* 90% opacity */
-        --primary15: hsla(46, 90%, 45%, 0.85); /* 85% opacity */
-        --primary20: hsla(46, 90%, 45%, 0.322);  /* 80% opacity SPECIFICALLY EDITED FOR ELEMENT*/
-        --primary25: hsla(46, 90%, 45%, 0.75); /* 75% opacity */
-        --primary30: hsla(46, 90%, 45%, 0.7);  /* 70% opacity */
-        --primary35: hsla(46, 90%, 45%, 0.65); /* 65% opacity */
-        --primary40: hsla(46, 90%, 45%, 0.3);  /* 60% opacity SPECIFICALLY EDITED FOR ELEMENT*/
-        --primary45: hsla(46, 90%, 45%, 0.55); /* 55% opacity */
-        --primary50: hsla(46, 90%, 45%, 0.5);  /* 50% opacity */
-        --primary55: hsla(46, 90%, 45%, 0.45); /* 45% opacity */
-        --primary60: hsla(46, 90%, 45%, 0.4);  /* 40% opacity */
-        --primary65: hsla(46, 90%, 45%, 0.35); /* 35% opacity */
-        --primary70: hsla(46, 90%, 45%, 0.3);  /* 30% opacity */
-        --primary75: hsla(46, 90%, 45%, 0.25); /* 25% opacity */
-        --primary80: hsla(46, 90%, 45%, 0.2);  /* 20% opacity */
-        --primary85: hsla(46, 90%, 45%, 0.15); /* 15% opacity */
-        --primary90: hsla(46, 90%, 45%, 0.1);  /* 10% opacity */
-        --primary95: hsla(46, 90%, 45%, 0.05); /* 5% opacity */
-
-        /* Secondary opacity variations (reversed for dark mode) */
-        --secondary5: hsla(37, 33%, 64%, 0.95); /* 95% opacity */
-        --secondary10: hsla(37, 33%, 64%, 0.5);  /* 90% opacity SPECIFICALLY EDITED FOR ELEMENT*/
-        --secondary15: hsla(37, 33%, 64%, 0.85); /* 85% opacity */
-        --secondary20: hsla(37, 33%, 64%, 0.8);  /* 80% opacity */
-        --secondary25: hsla(37, 33%, 64%, 0.75); /* 75% opacity */
-        --secondary30: hsla(37, 33%, 64%, 0.7);  /* 70% opacity */
-        --secondary35: hsla(37, 33%, 64%, 0.65); /* 65% opacity */
-        --secondary40: hsla(37, 33%, 64%, 0.6);  /* 60% opacity */
-        --secondary45: hsla(37, 33%, 64%, 0.55); /* 55% opacity */
-        --secondary50: hsla(37, 33%, 64%, 0.5);  /* 50% opacity */
-        --secondary55: hsla(37, 33%, 64%, 0.45); /* 45% opacity */
-        --secondary60: hsla(37, 33%, 64%, 0.4);  /* 40% opacity */
-        --secondary65: hsla(37, 33%, 64%, 0.35); /* 35% opacity */
-        --secondary70: hsla(37, 33%, 64%, 0.3);  /* 30% opacity */
-        --secondary75: hsla(37, 33%, 64%, 0.25); /* 25% opacity */
-        --secondary80: hsla(37, 33%, 64%, 0.2);  /* 20% opacity */
-        --secondary85: hsla(37, 33%, 64%, 0.15); /* 15% opacity */
-        --secondary90: hsla(37, 33%, 64%, 0.1);  /* 10% opacity */
-        --secondary95: hsla(37, 33%, 64%, 0.05); /* 5% opacity */
-
-        /* Accent opacity variations (reversed for dark mode) */
-        --accent5: hsla(17, 61%, 54%, 0.95); /* 95% opacity */
-        --accent10: hsla(17, 61%, 54%, 0.9);  /* 90% opacity */
-        --accent15: hsla(17, 61%, 54%, 0.85); /* 85% opacity */
-        --accent20: hsla(17, 61%, 54%, 0.8);  /* 80% opacity */
-        --accent25: hsla(17, 61%, 54%, 0.75); /* 75% opacity */
-        --accent30: hsla(17, 61%, 54%, 0.7);  /* 70% opacity */
-        --accent35: hsla(17, 61%, 54%, 0.65); /* 65% opacity */
-        --accent40: hsla(17, 61%, 54%, 0.6);  /* 60% opacity */
-        --accent45: hsla(17, 61%, 54%, 0.55); /* 55% opacity */
-        --accent50: hsla(17, 61%, 54%, 0.5);  /* 50% opacity */
-        --accent55: hsla(17, 61%, 54%, 0.45); /* 45% opacity */
-        --accent60: hsla(17, 61%, 54%, 0.4);  /* 40% opacity */
-        --accent65: hsla(17, 61%, 54%, 0.35); /* 35% opacity */
-        --accent70: hsla(17, 61%, 54%, 0.3);  /* 30% opacity */
-        --accent75: hsla(17, 61%, 54%, 0.25); /* 25% opacity */
-        --accent80: hsla(17, 61%, 54%, 0.2);  /* 20% opacity */
-        --accent85: hsla(17, 61%, 54%, 0.15); /* 15% opacity */
-        --accent90: hsla(17, 61%, 54%, 0.1);  /* 10% opacity */
-        --accent95: hsla(17, 61%, 54%, 0.05); /* 5% opacity */
     }
 }
