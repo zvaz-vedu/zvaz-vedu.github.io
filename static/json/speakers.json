@@ -228,7 +228,8 @@
         "photo": "/media/imgs/speakers/evelina-voleska.png",
         "locations": ["Praha"],
         "lectures": [{
-            "title": "Ujel nám vlak? Když se zájmy (ne)potkávají se školním rozvrhem"
+            "title": "Ujel nám vlak? Když se zájmy (ne)potkávají se školním rozvrhem",
+            "youtube": "https://www.youtube.com"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/evelina.voleska/",
