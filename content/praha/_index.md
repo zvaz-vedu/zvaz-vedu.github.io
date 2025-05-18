@@ -23,10 +23,10 @@ registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vQWAZQB2eOaSSP
 newParticipants: "120"
 newSpeakers: "10"
 
-#abstracts: true
-#abstractHeader: "Chceš se dozvědět o přednáškách víc?"
-#abstractUrl: "/praha/program/program"
-#abstractButton: "Přečti si abstrakt a zhlédni medailonek"
+abstracts: true
+abstractHeader: "Chceš se dozvědět o přednáškách víc?"
+abstractUrl: "/praha/program/program"
+abstractButton: "Přečti si abstrakt a zhlédni medailonek"
 
 importantInfo: true
 importantInfoHeader: "Na co se můžete těšit..."

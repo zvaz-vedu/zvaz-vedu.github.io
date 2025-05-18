@@ -3,13 +3,12 @@
 <section class="layout-container" id="cta">
     <div class="layout-content" style="padding: 26px">
         <div class="cta-body">
-                <h2>{{.Get "name"}}</h2>
-                <h3>{{.Get "speaker"}}</h3>
+                <h2 style="font-size:x-large">{{.Get "name"}}</h2>
+                <h3 style="font-size:medium">{{.Get "speaker"}}</h3>
                 <p style="overflow-wrap: break-word">{{.Get "abstract"}}</p>
         </div>
-        <video id="cta-video" controls poster="/media/imgs/abstracts/{{.Get "name"}}.jpg">
-            <source src="/media/videos/abstracts/{{.Get "name"}}.mp4" type="video/mp4">
-            Váš prohlížeč nepodporuje přehrávání videa.
-        </video>
+        <div class="video-wrapper">
+            <iframe src="{{.Get "video"}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 </section>
