@@ -95,15 +95,7 @@
             </section>
         {{end}} -->
 
-        <section class="layout-container" id="program">
-            <div class="layout-content">
-                <h2 style="font-size: 3rem">Program bude k dispozici již brzy!</h2>
-                <!-- tady to pak vyměnte jen na tohle níž
-                <h2>Program</h2>
-                {{ .Content }}-->
-            </div>
-        </section>
-        
+        <!-- tady byl původně program, pak ho sem vraťte -->
         
         {{ if .Params.abstracts }}
             <div class="layout-container">
@@ -115,6 +107,16 @@
                 </div>
             </div>
         {{ end }}
+
+        <section class="layout-container" id="program">
+            <div class="layout-content">
+                <h2 style="font-size: 3rem">Časový harmonogram bude k dispozici již brzy!</h2>
+                <!-- tady to pak vyměnte jen na tohle níž
+                <h2>Program</h2>
+                {{ .Content }}-->
+            </div>
+        </section>
+        
     
         {{with .Params.registration}}
             <section class="layout-container" id="cta">
