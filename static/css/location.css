@@ -186,6 +186,8 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     border-radius: 1rem;
     padding-block: 10rem;
     background-color: var(--primary40);
+    padding: 5rem;
+
 }
 .cta-body {
     max-width: 500px;
