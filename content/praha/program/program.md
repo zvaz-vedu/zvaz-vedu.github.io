@@ -21,16 +21,19 @@ name="Změna je život: derivace  a integrály v reálném životě"
 speaker="Kristýna Mičková"
 video="https://www.youtube.com/embed/WPQeRI5LzHk?si=ajk8HtEqhF1P-9EL"
 abstract="Pojmy jako limita, derivace či integrál není rozhodně pro matematické znalce cizí. V této přednášce se nejprve na tyto termíny zaměříme zcela intuitivně. Ukážeme si, že cesta k matematické analýze není tak složitá jak se na první pohled může zdát. Někdy nám může připadat, že matematika je věda oproštěná od reality. Společně ale dojdeme k tomu, že matematika je opravdu všude kolem nás a hojně využívá poznatků právě matematické analýzy. Nakonec budou zmíněny i způsoby, jak se matematikou zabývat v rámci studia na střední škole, ale také jak se jí nepřestat věnovat i nadále a využívat ji například ve svém budoucím zaměstnání.">}}
-<!--#zveřejnit 1.6.{{< lecture 
+
+{{< lecture 
+name="Věda je Otevřená a čeká jen na tebe!"
+speaker="Lukáš Hrdý"
+video="https://www.youtube.com/embed/Ft-xf-XTKhA?si=c6CDythg9qSlxS6-"
+abstract="Program Otevřená věda Akademie věd ČR je nejlepší způsob, jak si už na střední škole vyzkoušet skutečnou vědu. Z široké nabídky stáží si vybere každý – ať už tě zajímá astronomie, biologie, fyzika nebo společenské vědy. Po celý rok budeš mít možnost pod vedením odborníků pracovat na projektu, který tě skutečně posune dál. Já sám jsem se Otevřené vědy zúčastnil dvakrát. V první stáži jsem zkoumal vzdálenou proměnnost hvězd, ve druhé jsem studoval kvantové vlastnosti deuteronu. Každá zkušenost pro mě byla obrovským krokem vpřed – nejen odborně, ale i lidsky. Program se jmenuje Otevřená věda právem – je otevřený všem zvídavým středoškolákům bez ohledu na zkušenosti. Stačí chuť objevovat a odvaha pustit se do něčeho nového. Přidej se i ty – věřím, že tě přesvědčím, proč to stojí za to.">}}
+
+<!--
+#zveřejnit 1.6.{{< lecture 
 name="Může být umělá inteligence skutečně kreativní?"
 speaker="Petr Ivan"
 video=""
 abstract="Mohou neuronové sítě tvořit něco skutečně nového, nebo jen opakují to, co už znají? Je možné, aby algoritmus překročil hranice naučeného a přinesl něco, co bychom označili za originální nápad? A co vlastně znamená být kreativní? V této přednášce si objasníme, jak funguje dnešní generativní AI, jak reprezentuje okolní svět a umění, v čem se nám podobá a čím se liší. Ukážeme si nejnadějnější směry současného vývoje, limitace strojového učení a zdali jsou překonatelné. Společně otevřeme otázku, kde končí pouhé kombinování a začíná skutečná invence – a zda má umělá inteligence šanci se k této hranici přiblížit nebo ji dokonce překročit.">}}
-#zveřejnit 21.5. {{< lecture 
-name="Věda je Otevřená a čeká jen na tebe!"
-speaker="Lukáš Hrdý"
-video=""
-abstract="Program Otevřená věda Akademie věd ČR je nejlepší způsob, jak si už na střední škole vyzkoušet skutečnou vědu. Z široké nabídky stáží si vybere každý – ať už tě zajímá astronomie, biologie, fyzika nebo společenské vědy. Po celý rok budeš mít možnost pod vedením odborníků pracovat na projektu, který tě skutečně posune dál. Já sám jsem se Otevřené vědy zúčastnil dvakrát. V první stáži jsem zkoumal vzdálenou proměnnost hvězd, ve druhé jsem studoval kvantové vlastnosti deuteronu. Každá zkušenost pro mě byla obrovským krokem vpřed – nejen odborně, ale i lidsky. Program se jmenuje Otevřená věda právem – je otevřený všem zvídavým středoškolákům bez ohledu na zkušenosti. Stačí chuť objevovat a odvaha pustit se do něčeho nového. Přidej se i ty – věřím, že tě přesvědčím, proč to stojí za to.">}}
 #zveřejnit 28.5.{{< lecture 
 name="Zpívat na světle nebo ve stínu? Aneb jak světlo ovlivňuje ptáky"
 speaker="Filip Vyskočil"
