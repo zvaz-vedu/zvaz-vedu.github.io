@@ -36,6 +36,8 @@ header .primary-button:hover {
 }
 .speaker-photo {
     width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 .speaker-body {
     display: flex;

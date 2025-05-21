@@ -54,9 +54,12 @@
     },
     {
         "name": "Richard Nikel",
-        "photo": "/media/imgs/speakers/richard-nikel.jpg",
+        "photo": "/media/imgs/speakers/richard-nikel.JPG",
         "locations": ["Plzeň", "Praha"],
-        "lectures": [],
+        "lectures": [{
+            "title": "LASAR: Ze střední školy až na oběžnou dráhu Země",
+            "youtube": "hhttps://www.youtube.com/watch?v=s0v4DxPTLH0"
+        }],
         "contact": {
             "instagram": "https://www.instagram.com/_richnik_/",
             "linkedin": "https://www.linkedin.com/in/richard-nikel/",
@@ -106,7 +109,7 @@
     },
     {
         "name": "Kristýna Mičková",
-        "photo": null,
+        "photo": "/media/imgs/speakers/kristyna-mickova.jpg",
         "locations": ["Plzeň", "Praha"],
         "lectures": [{
             "title": "Matematika v reálném životě",
@@ -225,7 +228,7 @@
     },
     {
         "name": "Evelína Voleská",
-        "photo": "/media/imgs/speakers/evelina-voleska.png",
+        "photo": "/media/imgs/speakers/evelina-voleska.jpg",
         "locations": ["Praha"],
         "lectures": [{
             "title": "Ujel nám vlak? Když se zájmy (ne)potkávají se školním rozvrhem",
