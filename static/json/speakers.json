@@ -278,5 +278,21 @@
             "linkedin": "https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1icner-4680ba241/",
             "facebook": "https://www.facebook.com/matej.sicner.7"
         }
+    },
+    {
+        "name": "Nikolas Pippal",
+        "photo": "/media/imgs/speakers/nikolas-pippal.jpg",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Jak souvisí informatika s hudbou?",
+            "youtube": "https://www.youtube.com/watch?v=BTZLgmGh3qY&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=2"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/nik_pippal/",
+            "website": "",
+            "linkedin": "https://www.linkedin.com/in/nikolas-pippal-b2816b307/",
+            "facebook": ""
+        },
+        "bio": "Nik je studentem Gymnázia Olomouc-Hejčín. Jako mladý vědec se zaměřuje na propojení výzkumu s praktickými řešeními pro každodenní život. Vyvinul nástroj pro detekci mozkových nádorů a software pro snižování přehřívání měst. Za své projekty získal ocenění na mezinárodních soutěžích ISEF a EUCYS a díky letu Zero-G se stal ambasadorem České cesty do vesmíru. Kromě vědy se aktivně věnuje roli hokejového rozhodčího a rád tráví čas na kole, kde nachází inspiraci."
     }
 ]
