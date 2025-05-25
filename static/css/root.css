@@ -97,16 +97,10 @@
     --font: 'Inter', sans-serif;
     --spacer: 2rem 0;
     --inspacer: 2rem;
+    --height-spacer: 2rem 0;
+    --width-spacer: 2rem;
     --shadow: 0 0 1rem #00000024;
     --transition: all .1s ease-in-out;
-}
-
-@media (max-width:500px) {
-    :root {
-        --spacer: 1rem 0;
-        --inspacer: 0.5rem;
-    }
-    
 }
 
 @media (prefers-color-scheme: dark) {
