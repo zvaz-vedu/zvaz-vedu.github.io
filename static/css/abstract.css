@@ -54,6 +54,18 @@
     -ms-word-break: break-all; /* For IE */
 }
 
+.cta-body a {
+    color: var(--text); /* Ensure links are visible */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Make links bold */
+}
+
+.cta-body a:hover {
+    color: var(--accent); /* Change color on hover for better visibility */
+    /* You can also add a transition for smoothness */
+    transition: color 0.3s ease
+}
+
 /* --- FIX: Target the video iframe instead of <video> tag --- */
 /* Style for the video wrapper container */
 #cta .video-wrapper {

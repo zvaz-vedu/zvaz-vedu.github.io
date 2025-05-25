@@ -12,6 +12,9 @@ fetch('/json/speakers.json')
                 const locationClasses = speaker.locations.map(location => `location-${location.toLowerCase()}`);
                 speakerElement.classList.add(...locationClasses);
             }
+            
+            const speakerId = speaker.name.toLowerCase().replace(/ /g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            speakerElement.id = speakerId;
 
             clone.querySelector('.speaker-photo').src = speaker.photo;
             clone.querySelector('.speaker-photo').alt = speaker.name;

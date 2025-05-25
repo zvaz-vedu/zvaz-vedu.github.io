@@ -1,11 +1,10 @@
-<!-- bohužel mi nefunguje width u h2::after, nutno upravit jinak ok-->
 <link rel="stylesheet" href="/css/abstract.css">
 <section class="layout-container" id="cta">
     <div class="layout-content" style="padding: 26px">
         <div class="cta-body">
-                <h2 style="font-size:x-large">{{.Get "name"}}</h2>
-                <h3 style="font-size:medium">{{.Get "speaker"}}</h3>
-                <p style="overflow-wrap: break-word">{{.Get "abstract"}}</p>
+            <h2 style="font-size:x-large">{{.Get "name"}}</h2>
+            <h3 style="font-size:medium"><a href="/o-nas/recnici/#{{.Get "speaker"}}">{{.Get "speaker"}}</a></h3>
+            <p style="overflow-wrap: break-word">{{.Get "abstract"}}</p>
         </div>
         <div class="video-wrapper">
             <iframe src="{{.Get "video"}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
