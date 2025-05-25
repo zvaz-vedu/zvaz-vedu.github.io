@@ -101,6 +101,14 @@
     --transition: all .1s ease-in-out;
 }
 
+@media (max-width:900px) {
+    :root {
+        --spacer: 1rem 0;
+        --inspacer: 0.5rem;
+    }
+    
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         /* Base colours (Dark Mode) */

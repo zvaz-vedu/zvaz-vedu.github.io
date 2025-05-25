@@ -144,9 +144,10 @@ section .layout-content {
     section .layout-content {
         flex-direction: column-reverse !important;
     }
+    /*  POZNÁMKA: tohle jsem měnil kvůli pořadí sekcí u abstraktů, ale nemám tušení, jestli to nebude vadit jinde
     section:first-of-type .layout-content {
         flex-direction: column !important;
-    }
+    }*/
     section .layout-content.team-section {
         flex-direction: column !important;
     }

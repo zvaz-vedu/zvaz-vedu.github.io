@@ -1,7 +1,7 @@
 /* --- Inside your /css/abstract.css file --- */
 
 /* Base styles for the main container (mobile-first approach) */
-#cta .layout-content {
+.cta .layout-content {
     display: flex;
     flex-direction: column; /* Stack text and video vertically on small screens */
     gap: 2rem; /* Space between flex items */
@@ -68,14 +68,14 @@
 
 /* --- FIX: Target the video iframe instead of <video> tag --- */
 /* Style for the video wrapper container */
-#cta .video-wrapper {
+.cta .video-wrapper {
     width: 100%; /* Video wrapper takes full width on small screens */
     max-width: 500px; /* Limit its max width on small screens */
     /* You can adjust this max-width for small screens if you want the video larger */
 }
 
 /* Style for the iframe to make it responsive and fill its container */
-#cta .video-wrapper iframe {
+.cta .video-wrapper iframe {
     display: block; /* Remove extra space below the iframe */
     width: 100%;  /* Make the iframe fill the width of its parent (.video-wrapper) */
     height: auto; /* Let the height adjust automatically */
@@ -89,7 +89,7 @@
 /* Media query for larger screens (desktop layout) */
 /* Use a min-width that aligns with or is slightly larger than your max-width breakpoints */
 @media (min-width: 881px) {
-    #cta .layout-content {
+    .cta .layout-content {
         flex-direction: row; /* Arrange text and video side-by-side */
         justify-content: space-between; /* Space them out */
         align-items: center; /* Vertically center items */
@@ -103,7 +103,7 @@
         flex: 1; /* Allow text to take up some space */
     }
 
-    #cta .video-wrapper {
+    .cta .video-wrapper {
         width: auto; /* Let flex determine width */
         /* **Increase max-width for the video on desktop** */
         max-width: 500px; /* Example: Make video up to 700px wide */
@@ -142,7 +142,7 @@
         display: none;
     }
     /* Explicitly ensure column direction below this point if needed */
-     #cta .layout-content {
+     .cta .layout-content {
          flex-direction: column;
     }
 }
@@ -169,7 +169,7 @@
         grid-template-columns: 1fr;
     }
      /* Optional: Further adjust padding and font sizes for very small mobile */
-     #cta .layout-content {
+     .cta .layout-content {
         padding: 1.5rem 0.5rem;
     }
      .cta-body h2 {
