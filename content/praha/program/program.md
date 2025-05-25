@@ -28,6 +28,12 @@ speaker="Lukáš Hrdý"
 video="https://www.youtube.com/embed/Ft-xf-XTKhA?si=c6CDythg9qSlxS6-"
 abstract="Program Otevřená věda Akademie věd ČR je nejlepší způsob, jak si už na střední škole vyzkoušet skutečnou vědu. Z široké nabídky stáží si vybere každý – ať už tě zajímá astronomie, biologie, fyzika nebo společenské vědy. Po celý rok budeš mít možnost pod vedením odborníků pracovat na projektu, který tě skutečně posune dál. Já sám jsem se Otevřené vědy zúčastnil dvakrát. V první stáži jsem zkoumal vzdálenou proměnnost hvězd, ve druhé jsem studoval kvantové vlastnosti deuteronu. Každá zkušenost pro mě byla obrovským krokem vpřed – nejen odborně, ale i lidsky. Program se jmenuje Otevřená věda právem – je otevřený všem zvídavým středoškolákům bez ohledu na zkušenosti. Stačí chuť objevovat a odvaha pustit se do něčeho nového. Přidej se i ty – věřím, že tě přesvědčím, proč to stojí za to.">}}
 
+{{< lecture 
+name="Nová éra astrofyziky: Najdeme druhou Zemi?"
+speaker="Jan Herzig"
+video="https://www.youtube.com/embed/jvXsME6SsKk"
+abstract="Letos jsou tomu již tři dekády od chvíle, kdy se podařilo objevit první exoplanetu - tedy planetu obíhající kolem jiné hvězdy než Slunce. Od té doby se tento obor rozvíjí závratnou rychlostí a dnes už známe tisíce takových světů s různými vlastnostnmi. S objevováním dalších se pojí mnoho otázek. Jak vypadají jiné planetární soustavy v porovnání s tou naší? Jak mohou planety vznikat? Podaří se nám objevit exoplanetu podobnou Zemi? Najdeme snad ve vesmíru konečně známky další formy života? To jsou jen některé z otázek, jejichž zodpovězení se v souvislosti s výzkumem exoplanet můžeme dočkat v blízké době. V přednášce si představíme, jak dokáží vědci exoplanety zkoumat, jaké jsou ty nejzajímavější přístroje pro to určené i co doposud víme o možných odpovědích na předložené otázky. A na závěr to nejlepší - jak může každý středoškolák svým vlastním přispěním posunout vědění o vesmíru dále.">}}
+
 <!--
 #zveřejnit 1.6.{{< lecture 
 name="Může být umělá inteligence skutečně kreativní?"
