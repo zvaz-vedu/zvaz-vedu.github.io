@@ -36,4 +36,4 @@ importantInfoImage: "/media/imgs/base/mark-blk.png"
 infoVid: "https://www.youtube.com/embed/6T7UadVoHUQ?si=HDCikx1VOajz2Ntz"
 ---
 
-<!---{{< program/plzen24 >}}-->
+{{< program/praha25 >}}
