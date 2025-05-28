@@ -761,3 +761,42 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
 
 }
 
+/* Define your color variables. Adjust these to match your site's theme. */
+:root {
+    /* ... existing color variables ... */
+    --accent-full: #FF4500; /* A vibrant red-orange for when registration is full */
+}
+
+/* Update the progress-bar-fill-pill transition to include box-shadow */
+.progress-bar-fill-pill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Controlled by JS */
+    background-color: var(--accent); /* Fill color (white) */
+    display: block;
+    border-radius: 999px;
+    /* ADD box-shadow to the transition property */
+    transition: width 0.8s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+    box-shadow: none;
+}
+
+/* Ensure the full effect styles are correctly placed and defined */
+/* You already have these, just ensuring they are here for context */
+.registration-full-pulse {
+    animation: pulse-effect 1.0s infinite alternate;
+}
+
+@keyframes pulse-effect {
+    from {
+        transform: scaleX(1); /* Original size */
+        box-shadow: 0 0 15px var(--accent-full); /* Start glow */
+        opacity: 1;
+    }
+    to {
+        transform: scaleX(1.01); /* Slightly expand horizontally */
+        box-shadow: 0 0 25px var(--accent-full); /* Intensify glow */
+        opacity: 0.6; /* Slightly fade */
+    }
+}
