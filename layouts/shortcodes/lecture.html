@@ -3,11 +3,13 @@
     <div class="layout-content" style="padding: 26px" id="{{.Get "name"}}">
         <div class="cta-body">
             <h2 style="font-size:x-large">{{.Get "name"}}</h2>
-            <h3 style="font-size:medium"><a href="/o-nas/recnici/#{{.Get "speaker"}}">{{.Get "speaker"}}</a></h3>
+            <h3 style="font-size:medium">
+                <a href="/o-nas/recnici/#{{ .Get "speaker" | urlize }}">{{.Get "speaker"}}</a>
+            </h3>
             <p style="overflow-wrap: break-word">{{.Get "abstract"}}</p>
         </div>
         <div class="video-wrapper">
-            <iframe src="{{.Get "video"}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="{{.Get "video"}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-expanded-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </section>
