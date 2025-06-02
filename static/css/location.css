@@ -156,10 +156,11 @@ h3::after {
 .program-table td {
     border-bottom: var(--secondary20) 2px solid;
 }
-.two-rooms tr td:nth-of-type(3) {
+.two-rooms tr td {
     border-right: var(--secondary20) 2px solid;
 }
-tr td:nth-of-type(1), tr td:nth-of-type(4) {
+
+tr td:nth-of-type(1) {
     text-wrap: nowrap;
 }
 
@@ -761,3 +762,83 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
 
 }
 
+/* Define your color variables. Adjust these to match your site's theme. */
+:root {
+    /* ... existing color variables ... */
+    --accent-full: #FF4500; /* A vibrant red-orange for when registration is full */
+}
+
+/* Update the progress-bar-fill-pill transition to include box-shadow */
+.progress-bar-fill-pill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Controlled by JS */
+    background-color: var(--accent); /* Fill color (white) */
+    display: block;
+    border-radius: 999px;
+    /* ADD box-shadow to the transition property */
+    transition: width 0.8s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+    box-shadow: none;
+}
+
+/* Ensure the full effect styles are correctly placed and defined */
+/* You already have these, just ensuring they are here for context */
+.registration-full-pulse {
+    animation: pulse-effect 1.0s infinite alternate;
+}
+
+@keyframes pulse-effect {
+    from {
+        transform: scaleX(1); /* Original size */
+        box-shadow: 0 0 15px var(--accent-full); /* Start glow */
+        opacity: 1;
+    }
+    to {
+        transform: scaleX(1.01); /* Slightly expand horizontally */
+        box-shadow: 0 0 25px var(--accent-full); /* Intensify glow */
+        opacity: 0.6; /* Slightly fade */
+    }
+}
+
+.quote-title-highlight {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-title-highlight::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px; /* Adjust height as needed for the thickness of the highlight */
+    content: "";
+    bottom: 10px; /* Adjust vertical position */
+    right: 0;
+    z-index: -1;
+    transform: rotate(-5deg); /* Adjust rotation as desired */
+    border-radius: 5000px; /* Creates the pill-like shape */
+    background-color: var(--primary50); /* **Add your desired highlight color here** */
+}
+
+#prezence {
+    color: var(--accent70); /* Assuming --text is a defined CSS variable */
+    font-weight: 600; /* Medium-bold for the link */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#prezence:hover {
+    color: var(--primary); /* Assuming --yellow is a defined CSS variable */
+    text-decoration: underline;
+    cursor: pointer;
+    /* You don't need transition here again if it's already on the base state */
+}
+
+/* Optional: To make the "Prezence:" text appear normal weight */
+.registration-info p b {
+    font-weight: bold; /* Keep "Prezence:" bold */
+}
+.registration-info p span {
+    font-weight: normal; /* Make the rest of the span normal */
+}

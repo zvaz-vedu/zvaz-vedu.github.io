@@ -3,7 +3,7 @@ title: Abstrakty a medailonky
 layout: single
 
 headerTitle: "Abstrakty a medailonky"
-headerText: "Přečti abstrakty, zhlédni medailonky a vyber ty pravé přednášky pro Zvaž vědu! Praha 2025."
+headerText: "Přečti abstrakty, zhlédni medailonky a vyber si ty pravé přednášky pro Zvaž vědu! Praha 2025."
 #úvodní fotky se berou v lecture.html jako name.jpg
 ---
 {{< lecture 
@@ -34,14 +34,17 @@ speaker="Jan Herzig"
 video="https://www.youtube.com/embed/jvXsME6SsKk"
 abstract="Letos jsou tomu již tři dekády od chvíle, kdy se podařilo objevit první exoplanetu - tedy planetu obíhající kolem jiné hvězdy než Slunce. Od té doby se tento obor rozvíjí závratnou rychlostí a dnes už známe tisíce takových světů s různými vlastnostnmi. S objevováním dalších se pojí mnoho otázek. Jak vypadají jiné planetární soustavy v porovnání s tou naší? Jak mohou planety vznikat? Podaří se nám objevit exoplanetu podobnou Zemi? Najdeme snad ve vesmíru konečně známky další formy života? To jsou jen některé z otázek, jejichž zodpovězení se v souvislosti s výzkumem exoplanet můžeme dočkat v blízké době. V přednášce si představíme, jak dokáží vědci exoplanety zkoumat, jaké jsou ty nejzajímavější přístroje pro to určené i co doposud víme o možných odpovědích na předložené otázky. A na závěr to nejlepší - jak může každý středoškolák svým vlastním přispěním posunout vědění o vesmíru dále.">}}
 
+{{< lecture 
+name="Zpívat na světle nebo ve stínu? Aneb jak světlo ovlivňuje ptáky"
+speaker="Filip Vyskočil"
+video="https://www.youtube.com/embed/LlgOCFNaHFo"
+abstract="Napadlo Vás někdy, proč ptáci vůbec zpívají, nebo co jejich zpěv ovlivňuje? Hlasové projevy nám poskytují důležité informace o ptačím životě a umožňují nám studovat celou řadu věcí. Společně se podíváme na to, jakým způsobem je ptačí zpěv ovlivňován jedním z nejdůležitějších faktorů – světlem. V dnešní době se setkáváme s problémem světelného znečištění. To má následně dopad na ptačí aktivitu a jejich biorytmy, které se podle světla řídí. Rozdíly ve světelných podmínkách ale vznikají také přirozeně v krajině, například v členitém pohoří. Co když ptáci berou zvýšené množství umělého osvětlení (třeba pouliční lampy) jen jako zvýšené množství slunečního svitu na více exponovaném místě (například jižní svah nebo hřeben hor)? Studium ptáků je důležité, protože nám poskytuje cenné informace o stavu našich ekosystémů a o vlivu člověka na jeho okolí. Na závěr se můžete těšit na mnoho tipů, jak se do výzkumu (nejen ptáků) zapojit.">}}
+
+
 <!--
 #zveřejnit 1.6.{{< lecture 
 name="Může být umělá inteligence skutečně kreativní?"
 speaker="Petr Ivan"
 video=""
 abstract="Mohou neuronové sítě tvořit něco skutečně nového, nebo jen opakují to, co už znají? Je možné, aby algoritmus překročil hranice naučeného a přinesl něco, co bychom označili za originální nápad? A co vlastně znamená být kreativní? V této přednášce si objasníme, jak funguje dnešní generativní AI, jak reprezentuje okolní svět a umění, v čem se nám podobá a čím se liší. Ukážeme si nejnadějnější směry současného vývoje, limitace strojového učení a zdali jsou překonatelné. Společně otevřeme otázku, kde končí pouhé kombinování a začíná skutečná invence – a zda má umělá inteligence šanci se k této hranici přiblížit nebo ji dokonce překročit.">}}
-#zveřejnit 28.5.{{< lecture 
-name="Zpívat na světle nebo ve stínu? Aneb jak světlo ovlivňuje ptáky"
-speaker="Filip Vyskočil"
-video=""
-abstract="Napadlo Vás někdy, proč ptáci vůbec zpívají, nebo co jejich zpěv ovlivňuje? Hlasové projevy nám poskytují důležité informace o ptačím životě a umožňují nám studovat celou řadu věcí. Společně se podíváme na to, jakým způsobem je ptačí zpěv ovlivňován jedním z nejdůležitějších faktorů – světlem. V dnešní době se setkáváme s problémem světelného znečištění. To má následně dopad na ptačí aktivitu a jejich biorytmy, které se podle světla řídí. Rozdíly ve světelných podmínkách ale vznikají také přirozeně v krajině, například v členitém pohoří. Co když ptáci berou zvýšené množství umělého osvětlení (třeba pouliční lampy) jen jako zvýšené množství slunečního svitu na více exponovaném místě (například jižní svah nebo hřeben hor)? Studium ptáků je důležité, protože nám poskytuje cenné informace o stavu našich ekosystémů a o vlivu člověka na jeho okolí. Na závěr se můžete těšit na mnoho tipů, jak se do výzkumu (nejen ptáků) zapojit.">}}-->
+#zveřejnit 28.5.-->

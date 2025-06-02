@@ -61,7 +61,7 @@
                            <span class="progress-bar-count-text">Chyba, pracujeme na tom!</span>
                        </div>
                    </div>
-                    <p class="bento-text">účastníků</p>
+                    <p class="bento-text" id="bento-registration-text">účastníků</p>
                 </div>
                 <div class="bento-board-item" style="background-color: var(--accent40);">
                     <strong class="bento-title">10</strong>
@@ -96,27 +96,23 @@
         {{end}} -->
 
         <!-- tady byl původně program, pak ho sem vraťte -->
-        
-        {{ if .Params.abstracts }}
-            <div class="layout-container">
-                <div class="layout-content link-button">
-                    <div class="link-button-item">
-                        <h4>{{ .Params.abstractHeader }}</h4>
-                        <a href={{.Params.abstractUrl}} class="secondary-button">{{.Params.abstractButton}} &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        {{ end }}
 
         <section class="layout-container" id="program">
             <div class="layout-content">
-                <h2 style="font-size: 3rem">Časový harmonogram bude k dispozici již brzy!</h2>
-                <!-- tady to pak vyměnte jen na tohle níž
-                <h2>Program</h2>
-                {{ .Content }}-->
+                <span><h2 class="quote-title-highlight" style="padding-bottom: 0.5em;">Program</h2></span>
+                {{ .Content }}
+                {{ if .Params.abstracts }}
+                    <div class="layout-container" style="padding-bottom: 0;">
+                        <div class="layout-content link-button" style="padding-bottom: 0;">
+                            <div class="link-button-item">
+                                <h4>{{ .Params.abstractHeader }}</h4>
+                                <a href={{.Params.abstractUrl}} class="secondary-button">{{.Params.abstractButton}} &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
             </div>
         </section>
-        
     
         {{with .Params.registration}}
             <section class="layout-container" id="cta">
