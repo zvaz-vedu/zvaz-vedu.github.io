@@ -1,0 +1,20 @@
+[1] NSF NCAR (n.d.) What are some historical observations of the Sun? [online]. Available at: https://www2.hao.ucar.edu/education/about-the-sun/what-are-some-historical-observations-sun (Accessed: 14 March 2024).
+[2] Chandra X-ray Observatory (n.d.) The Historical Sunspot Record. In: Ice Core Records – From Volcanoes to Supernovas [online]. Available at: https://chandra.harvard.edu/edu/formal/icecore/The_Historical_Sunspot_Record.pdf (Accessed: 14 March 2024).
+[3] Unknown author (n.d.) Solar cycle [online]. Wikipedia. Available at: https://en.wikipedia.org/wiki/Solar_cycle (Accessed: 2 June 2025).
+[4] Astronomia (2024) Hvězdy – Sluneční skvrny [online]. Available at: https://astronomia.zcu.cz/hvezdy/slunce/744-slunecni-skvrny (Accessed: 14 March 2024).
+[5] Hill, R. and Jenkins, J. (eds.) (2010) Guidelines for the Observation of White Light Solar Phenomena. 3rd ed. [online]. Available at: https://www.alpo-astronomy.org/solarblog/wp-content/uploads/wl_2010.pdf (Accessed: 14 March 2024).
+[6] Astronomický ústav AV ČR (n.d.) Projekce - Zákres sluneční fotosféry [online]. Available at: https://www.asu.cas.cz/~sunwatch/cs/stranka/kresba (Accessed: 14 March 2024).
+[7] Astronomický ústav AV ČR (2024) Ondřejovská hvězdárna [online]. Available at: https://www.asu.cas.cz/cz/verejnost-a-media/prohlidky-pro-verejnost (Accessed: 19 March 2024).
+[8] POZOROVÁNÍ SLUNCE (n.d.) Carringtonova rotace [online]. Available at: https://www.pozorovanislunce.eu/vykladovy-slovnicek/carringtonova-rotace.html (Accessed: 14 March 2024).
+[9] Unknown author (n.d.) Machine learning [online]. Wikipedia. Available at: https://en.wikipedia.org/wiki/Machine_learning (Accessed: 2 June 2025).
+[10] Unknown author (n.d.) Activation function [online]. Wikipedia. Available at: https://en.wikipedia.org/wiki/Activation_function (Accessed: 15 March 2024).
+[11] Lecun, Y., Bottou, L., Bengio, Y. and Haffner, P. (1998) Gradient-Based Learning Applied to Document Recognition [online]. Available at: http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf (Accessed: 17 March 2024).
+[12] Zacha, J. (2019) Konvoluční neuronové sítě pro klasifikaci objektů z LiDARových dat [online]. Bachelor’s thesis, České vysoké učení technické v Praze, Praha. Available at: https://dspace.cvut.cz/bitstream/handle/10467/82351/F3-BP-2019-Zacha-Jiri-Konvolucni_neuronove_site_pro_klasifikaci_objektu_z_LiDARovych_dat.pdf (Accessed: 15 March 2024).
+[13] Dubina, T. (2020) Využití neuronových sítí v BCI systémech založených na evokovaných potenciálech SSVEP [online]. Bachelor’s thesis. Západočeská univerzita v Plzni, Fakulta aplikovaných věd, Plzeň. Available at: https://dspace5.zcu.cz/bitstream/11025/41804/1/Bakalarska_prace.pdf (Accessed: 15 March 2024).
+[14] Unknown author (n.d.) Training, validation, and test data sets [online]. Wikipedia. Available at: https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets (Accessed: 15 March 2024).
+[15] Python Software Foundation (2001–2024) Python [online]. Available at: https://www.python.org/ (Accessed: 15 March 2024).
+[16] TensorFlow (n.d.) TensorFlow [online]. Available at: https://www.tensorflow.org/ (Accessed: 15 March 2024).
+[17] Keras (n.d.) Keras [online]. Available at: https://keras.io/ (Accessed: 15 March 2024).
+[18] Microsoft (2024) Visual Studio Code [online]. Available at: https://code.visualstudio.com/ (Accessed: 15 March 2024).
+[19] GitHub (2024) GitHub [online]. Available at: https://github.com/ (Accessed: 15 March 2024).
+[20] LunarEagle (2024) GitHub [online]. Available at: https://github.com/Plice13/LunarEagle (Accessed: 18 March 2024).
