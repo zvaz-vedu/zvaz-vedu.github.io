@@ -118,7 +118,7 @@
         "contact": {
             "instagram": "https://www.instagram.com/kristyn.mickova/"
         },
-        "bio": "Kristýna je studentkou Gymnázia v Plasích a také velkou milovnicí matematiky. Zabývá se především didaktikou matematiky. Již od základní školy se věnuje doučování. Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz.“"
+        "bio": "Kristýna je studentkou Gymnázia v Plasích a také velkou milovnicí matematiky. Zabývá se především didaktikou matematiky. Již od základní školy se věnuje doučování. Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz."
     },
     {
         "name": "Pavel Jan Linka",
@@ -225,8 +225,8 @@
             "youtube": "https://www.youtube.com/watch?v=BTZLgmGh3qY&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=2"
         }],
         "contact": {
-            "instagram": "",
-            "website": "",
+            "instagram": "https://www.instagram.com/ten.majkl/",
+            "website": "https://github.com/tenmajkl",
             "linkedin": "https://www.linkedin.com/in/michal-k%C5%99ipa%C4%8D-75177b269/",
             "facebook": ""
         },
@@ -298,6 +298,28 @@
             "facebook": ""
         },
         "bio": "Nik je studentem Gymnázia Olomouc-Hejčín. Jako mladý vědec se zaměřuje na propojení výzkumu s praktickými řešeními pro každodenní život. Vyvinul nástroj pro detekci mozkových nádorů a software pro snižování přehřívání měst. Za své projekty získal ocenění na mezinárodních soutěžích ISEF a EUCYS a díky letu Zero-G se stal ambasadorem České cesty do vesmíru. Kromě vědy se aktivně věnuje roli hokejového rozhodčího a rád tráví čas na kole, kde nachází inspiraci."
+    },
+    {
+        "name": "Tereza Przeczková",
+        "photo": "/media/imgs/speakers/tereza-przeczkova.webp",
+        "locations": ["Praha"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/terezaprzeczkova/",
+            "linkedin": "https://www.linkedin.com/in/tereza-przeczkov%C3%A1/"
+        },
+        "bio": "Tereza je studentkou oboru BSc Biomedical Sciences na University College London, která má bohaté zkušenosti z výzkumu díky stážím ve Fyziologickém ústavu AV ČR, na Katedře organické chemie PřF UPOL či v centru BIOCEV. Již na střední vystudovala na olomoucké univerzitě buněčnou biologii a prošla řadou soutěží, včetně SOČ a Českých hlaviček. Je také aktivní dobrovolnicí, působí jako vedoucí v programu DofE a zabývá se prevencí syndromu vyhoření v organizaci Nevyhasni. Mimo to se závodně věnuje olympijskému vzpírání."
+    },
+    {
+        "name": "Boris Brovkin",
+        "photo": "/media/imgs/speakers/boris-brovkin.webp",
+        "locations": ["Praha"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/kinvorb?igsh=cWswaHd1NWJqNGY1",
+            "linkedin": "https://www.linkedin.com/in/boris-brovkin-4b230b305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        },
+        "bio": "Boris je studentem Gymnázia Brno--Bystrc, který má zápal do tvorby webových stránek, grafiky, stavebnictví a vesmíru. S týmem LASAR se podílel na vypuštění vlastního satelitu na oběžnou dráhu. Kromě techniky je i vášnivý sportovec --- 10 let závodně plaval a třetím rokem pravidelně posiluje. Rád se také věnuje dobrovolnictví."
     },
     {
         "name": "Anna Krebsová",
