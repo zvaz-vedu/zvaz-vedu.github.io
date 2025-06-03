@@ -40,6 +40,13 @@ speaker="Filip Vyskočil"
 video="https://www.youtube.com/embed/LlgOCFNaHFo"
 abstract="Napadlo Vás někdy, proč ptáci vůbec zpívají, nebo co jejich zpěv ovlivňuje? Hlasové projevy nám poskytují důležité informace o ptačím životě a umožňují nám studovat celou řadu věcí. Společně se podíváme na to, jakým způsobem je ptačí zpěv ovlivňován jedním z nejdůležitějších faktorů – světlem. V dnešní době se setkáváme s problémem světelného znečištění. To má následně dopad na ptačí aktivitu a jejich biorytmy, které se podle světla řídí. Rozdíly ve světelných podmínkách ale vznikají také přirozeně v krajině, například v členitém pohoří. Co když ptáci berou zvýšené množství umělého osvětlení (třeba pouliční lampy) jen jako zvýšené množství slunečního svitu na více exponovaném místě (například jižní svah nebo hřeben hor)? Studium ptáků je důležité, protože nám poskytuje cenné informace o stavu našich ekosystémů a o vlivu člověka na jeho okolí. Na závěr se můžete těšit na mnoho tipů, jak se do výzkumu (nejen ptáků) zapojit.">}}
 
+{{< lecture 
+name="Vesmír je sexy. Jak se do něj jako student “beztížně” zapojit?"
+speaker="Metoděj Svoboda"
+video="https://www.youtube.com/embed/yN4mJNihZFQ"
+abstract="26 studentů zažilo stav beztíže, ale slyšely o tom statisíce lidí. Jaká byla cesta v rámci mise Zero G, a jak může něco takového ovlivnit víc než jen těchto pár desítek životů. Česká republika má ve vesmírném výzkumu významnou roli a nabízí spoustu příležitostí i pro studenty. Co se v České republice už teď děje a jak se můžeme začít angažovati i my? Mnoho mladých lidí se k podobným šancím nedostane – ne proto, že by na ně neměli, ale protože o nich jednoduše neslyšeli, nebo je systém nikdy nenavedl tím správným směrem. O vesmíru ví všichni, ale o tom, co znamená pro lidi na zemi se už tak moc nemluví – tak co to zkusit napravit?
+">}}
+
 
 <!--
 #zveřejnit 1.6.{{< lecture 
