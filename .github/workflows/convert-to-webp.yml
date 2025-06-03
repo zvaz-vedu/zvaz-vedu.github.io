@@ -9,11 +9,13 @@ on:
       - 'static/**.png'
       - 'content/**.jpg'
       - 'content/**.png'
-  workflow_dispatch: # <--- ADD THIS LINE
+  workflow_dispatch:
 
 jobs:
   convert-images:
     runs-on: ubuntu-latest
+    permissions: # <--- ADD THIS BLOCK HERE
+      contents: write # Grants write access to the repository contents
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
