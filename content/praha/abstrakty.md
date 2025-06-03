@@ -44,8 +44,7 @@ abstract="Napadlo Vás někdy, proč ptáci vůbec zpívají, nebo co jejich zp�
 name="Vesmír je sexy. Jak se do něj jako student “beztížně” zapojit?"
 speaker="Metoděj Svoboda"
 video="https://www.youtube.com/embed/yN4mJNihZFQ"
-abstract="26 studentů zažilo stav beztíže, ale slyšely o tom statisíce lidí. Jaká byla cesta v rámci mise Zero G, a jak může něco takového ovlivnit víc než jen těchto pár desítek životů. Česká republika má ve vesmírném výzkumu významnou roli a nabízí spoustu příležitostí i pro studenty. Co se v České republice už teď děje a jak se můžeme začít angažovati i my? Mnoho mladých lidí se k podobným šancím nedostane – ne proto, že by na ně neměli, ale protože o nich jednoduše neslyšeli, nebo je systém nikdy nenavedl tím správným směrem. O vesmíru ví všichni, ale o tom, co znamená pro lidi na zemi se už tak moc nemluví – tak co to zkusit napravit?
-">}}
+abstract="26 studentů zažilo stav beztíže, ale slyšely o tom statisíce lidí. Jaká byla cesta v rámci mise Zero G, a jak může něco takového ovlivnit víc než jen těchto pár desítek životů. Česká republika má ve vesmírném výzkumu významnou roli a nabízí spoustu příležitostí i pro studenty. Co se v České republice už teď děje a jak se můžeme začít angažovati i my? Mnoho mladých lidí se k podobným šancím nedostane – ne proto, že by na ně neměli, ale protože o nich jednoduše neslyšeli, nebo je systém nikdy nenavedl tím správným směrem. O vesmíru ví všichni, ale o tom, co znamená pro lidi na zemi se už tak moc nemluví – tak co to zkusit napravit?">}}
 
 
 <!--
