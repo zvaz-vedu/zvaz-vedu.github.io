@@ -3,7 +3,7 @@ name: Convert Images to WebP
 on:
   push:
     branches:
-      - main # Or your main content branch
+      - modernizace-2025 # Or your main content branch
     paths:
       - 'static/**.jpg' # Adjust paths to your image directories
       - 'static/**.png'
