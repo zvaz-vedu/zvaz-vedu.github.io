@@ -9,6 +9,7 @@ on:
       - 'static/**.png'
       - 'content/**.jpg'
       - 'content/**.png'
+  workflow_dispatch: # <--- ADD THIS LINE
 
 jobs:
   convert-images:
