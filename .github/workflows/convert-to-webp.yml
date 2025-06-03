@@ -26,7 +26,7 @@ jobs:
 
       - name: Convert images to WebP
         run: |
-          find . -type f \( -iname "*.jpg" -o -iname "*.png" \) -print0 | while IFS= read -r -d $'\0' file; do
+          find . -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | while IFS= read -r -d $'\0' file; do
             webp_file="${file%.*}.webp"
             if [ ! -f "$webp_file" ] || [ "$file" -nt "$webp_file" ]; then
               echo "Converting $file to $webp_file"
