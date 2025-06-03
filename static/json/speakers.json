@@ -2,14 +2,14 @@
     {
         "name": "Jan Herzig",
         "photo": "/media/imgs/team/honza.jpg",
-        "locations": ["Plzeň","Praha"],
+        "locations": ["Plzeň", "Praha"],
         "lectures": [{
             "title": "Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva",
             "youtube": "https://www.youtube.com/watch?v=UTJvGERkmi8"
-        },{
+        }, {
             "title": "Astronomie",
             "youtube": "https://www.youtube.com/watch?v=XoXId4AJF8w"
-        },{
+        }, {
             "title": "Novinky z vesmíru #1",
             "youtube": "https://www.youtube.com/watch?v=crEpDhHacX4&t=1s"
         }],
@@ -27,7 +27,7 @@
         "lectures": [{
             "title": "Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti",
             "youtube": "https://www.youtube.com/watch?v=T0K4nrybX1w"
-        },{
+        }, {
             "title": "Fyzikální soutěže",
             "youtube": "https://www.youtube.com/watch?v=adZuvRsPNSI"
         }],
@@ -127,7 +127,7 @@
         "lectures": [{
             "title": "Talnet",
             "youtube": "https://www.youtube.com/watch?v=DF24leY7xWY"
-        },{
+        }, {
             "title": "Superhrdinové biochemie: CRISPR/Cas9 a AI",
             "youtube": "https://www.youtube.com/watch?v=0BuFHCrvAmY"
         }],
@@ -178,8 +178,9 @@
             "website": "",
             "linkedin": "",
             "facebook": ""
-        }
-    },    
+        },
+        "bio": ""
+    },
     {
         "name": "Eduard Plic",
         "photo": "/media/imgs/team/eda.jpg",
@@ -187,7 +188,7 @@
         "lectures": [{
             "title": "Logická olympiáda",
             "youtube": "https://www.youtube.com/watch?v=eMoqD_RhvM8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=8"
-        },{
+        }, {
             "title": "Programování pro vesmír: Měření mraků z paluby ISS a aktivity ESERO",
             "youtube": "https://www.youtube.com/watch?v=jgRuSHghZN4&list=PL1NMrPWjk08TqugSEkfgSzry_AjJ-T_cN&index=8"
         }],
@@ -198,7 +199,6 @@
             "facebook": ""
         },
         "bio": "Eda je studentem Masarykova gymnázia v Plzni. Zajímá se o matematiku, fyziku, astronomii a programování. V roce 2024 se stal nejúspěšnějším autorem práce SOČ v oboru fyzika, což mu zajistilo postup na mezinárodní olympiádu EUCYS. Ve volném čase rád hraje na trubku a věnuje se fotografování."
-
     },
     {
         "name": "Tomáš Datinský",
@@ -213,7 +213,8 @@
             "website": "",
             "linkedin": "",
             "facebook": ""
-        }
+        },
+        "bio": ""
     },
     {
         "name": "Michal Křipač",
@@ -244,7 +245,8 @@
             "website": "",
             "linkedin": "https://www.linkedin.com/in/sebastian-matou%C5%A1ek-825ba128a/",
             "facebook": ""
-        }
+        },
+        "bio": ""
     },
     {
         "name": "Evelína Voleská",
@@ -269,7 +271,7 @@
         "lectures": [{
             "title": "AstroPi",
             "youtube": "https://www.youtube.com/watch?v=Smb-Vig1Dv8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=6"
-            },{
+        }, {
             "title": "Kvantové technologie - dveře do světa nevídaných možností",
             "youtube": "https://www.youtube.com/watch?v=BQUfMCNOnbQ&list=PL1NMrPWjk08TqugSEkfgSzry_AjJ-T_cN&index=2"
         }],
@@ -296,5 +298,42 @@
             "facebook": ""
         },
         "bio": "Nik je studentem Gymnázia Olomouc-Hejčín. Jako mladý vědec se zaměřuje na propojení výzkumu s praktickými řešeními pro každodenní život. Vyvinul nástroj pro detekci mozkových nádorů a software pro snižování přehřívání měst. Za své projekty získal ocenění na mezinárodních soutěžích ISEF a EUCYS a díky letu Zero-G se stal ambasadorem České cesty do vesmíru. Kromě vědy se aktivně věnuje roli hokejového rozhodčího a rád tráví čas na kole, kde nachází inspiraci."
+    },
+    {
+        "name": "Anna Krebsová",
+        "photo": "/media/imgs/speakers/anna-krebsova.jpg",
+        "locations": ["Plzeň", "Praha"],
+        "lectures": [{
+            "title": "Expedice Mars",
+            "youtube": "https://youtu.be/JxeNnxq4AVg"
+        },{
+            "title": "LASAR: Ze střední školy až na oběžnou dráhu Země",
+            "youtube": "https://youtu.be/s0v4DxPTLH0"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/krebsovaan?igsh=MWRkajRsYz9wcGJrZw%3D%3D&utm_source=qr",
+            "facebook": "https://www.facebook.com/share/1YTyJVMNaE/?mibextid=wwXIfr",
+            "linkedin": "https://www.linkedin.com/in/anna-krebsov%C3%A1-57b211306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            "twitter": "https://x.com/krebsovaan?s=21"
+        },
+        "bio": "Anička je studentka, která se aktivně věnuje robotice a kosmonautice, zejména pak stavu beztíže. Je spoluzakladatelkou středoškolského týmu LASAR, který uspěl ve světové soutěži Conrad Challenge v NASA v Houstonu a vyslal do vesmíru vlastní družici, za což získal i Cenu Učené společnosti ČR. Anička strávila rok na gymnáziu v Německu, letos se zařadila mezi TOP25 nejaktivnějších středoškoláků roku a v nadcházejícím studiu by se ráda věnovala letectví. Popularizuje aerospace a soutěže ESA, kterých se i sama účastní."
+    },
+    {
+        "name": "Pavel Chaloupka",
+        "photo": "/media/imgs/speakers/pavel-chaloupka.jpg",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Přenosná vodní elektrárna: Naše cesta k čisté energii ",
+            "youtube": "https://youtu.be/z3sYe63EMWc"
+        },{
+            "title": "Juniorská vědecká konference",
+            "youtube": "https://youtu.be/5TNafEjMJhM"
+        }],
+        "contact": {
+            "instagram": "https://www.instagram.com/_pajiss_/",
+            "linkedin": "https://www.linkedin.com/in/pavel-chaloupka-0902412b8/",
+            "website": "https://dilna3d.cz"
+        },
+        "bio": "Pavel je studentem Gymnázia Františka Křižíka v Plzni. Zajímá se o vědu, technologie a udržitelnou energetiku. Spolupracoval na vývoji přenosné vodní elektrárny, s níž získal ocenění na vědeckých konferencích JVK a SVK. Pracuje v organizačním týmu Zvaž vědu! v Plzni a věnuje se popularizaci vědy. Ve volném čase se věnuje sportu a cestování."
     }
 ]
