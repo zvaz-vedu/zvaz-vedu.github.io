@@ -1,7 +1,7 @@
 [
     {
         "name": "Jan Herzig",
-        "photo": "/media/imgs/team/honza.jpg",
+        "photo": "/media/imgs/team/honza.webp",
         "locations": ["Plzeň","Praha"],
         "lectures": [{
             "title": "Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Matyáš Matta",
-        "photo": "/media/imgs/team/maty.jpg",
+        "photo": "/media/imgs/team/maty.webp",
         "locations": ["Plzeň"],
         "lectures": [{
             "title": "Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti",
@@ -38,7 +38,7 @@
     },
     {
         "name": "Tereza Jelínková",
-        "photo": "/media/imgs/speakers/tereza-jelinkova.jpeg",
+        "photo": "/media/imgs/speakers/tereza-jelinkova.webp",
         "locations": ["Prachatice"],
         "lectures": [{
             "title": "Otevřená věda: Nastartuj svoji vědeckou kariéru už na střední!",
@@ -52,7 +52,7 @@
     },
     {
         "name": "Monika Dlouhá",
-        "photo": "/media/imgs/speakers/monika-dlouha.jpg",
+        "photo": "/media/imgs/speakers/monika-dlouha.webp",
         "locations": ["Brno"],
         "lectures": [{
             "title": "Expedice Mars, DofE",
@@ -66,7 +66,7 @@
     },
     {
         "name": "Lukáš Hrdý",
-        "photo": "/media/imgs/speakers/lukas-hrdy.jpeg",
+        "photo": "/media/imgs/speakers/lukas-hrdy.webp",
         "locations": [],
         "lectures": [{
             "title": "Stáž Akademie věd, SOČ, Astronomická olympiáda",
@@ -79,7 +79,7 @@
     },
     {
         "name": "Ondra Pham",
-        "photo": "/media/imgs/speakers/ondra-pham.jpg",
+        "photo": "/media/imgs/speakers/ondra-pham.webp",
         "locations": [],
         "lectures": [{
             "title": "Czech Rocket Challenge",
@@ -92,7 +92,7 @@
     },
     {
         "name": "Štěpánka Keprtová",
-        "photo": "/media/imgs/speakers/stepanka-keprtova.JPG",
+        "photo": "/media/imgs/speakers/stepanka-keprtova.webp",
         "locations": [],
         "lectures": [{
             "title": "Věda jako jazyk",
@@ -105,7 +105,7 @@
     },
     {
         "name": "Simon Klinga",
-        "photo": "/media/imgs/speakers/simon-klinga.png",
+        "photo": "/media/imgs/speakers/simon-klinga.webp",
         "locations": ["Brno"],
         "lectures": [{
             "title": "Ze školní lavice před porotce z NASA (a vlastní družici na raketě SpaceX)",
@@ -121,7 +121,7 @@
     },
     {
         "name": "Anna Černá",
-        "photo": "/media/imgs/speakers/anna-cerna.png",
+        "photo": "/media/imgs/speakers/anna-cerna.webp",
         "locations": ["Brno"],
         "lectures": [{
             "title": "Výroba proteinů: mission (im)possible?",
@@ -136,7 +136,7 @@
     },
     {
         "name": "Tomáš Datinský",
-        "photo": "/media/imgs/speakers/tomas-datinsky.png",
+        "photo": "/media/imgs/speakers/tomas-datinsky.webp",
         "locations": ["Brno"],
         "lectures": [{
             "title": "Jak se zapojit do vědy už na střední?",
@@ -151,7 +151,7 @@
     },
     {
         "name": "Michal Křipač",
-        "photo": "/media/imgs/speakers/michal-kripac.png",
+        "photo": "/media/imgs/speakers/michal-kripac.webp",
         "locations": ["Brno"],
         "lectures": [{
             "title": "Jak souvisí informatika s hudbou?",
@@ -166,7 +166,7 @@
     },
     {
         "name": "Sebastian Matoušek",
-        "photo": "/media/imgs/speakers/sebastian-matousek.png",
+        "photo": "/media/imgs/speakers/sebastian-matousek.webp",
         "locations": ["Brno"],
         "lectures": [{
             "title": "Jak mě robotika dostala do světa?",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Matěj Šicner",
-        "photo": "/media/imgs/speakers/matej-sicner.jpg",
+        "photo": "/media/imgs/speakers/matej-sicner.webp",
         "locations": ["Plzeň"],
         "lectures": [{
             "title": "AstroPi",

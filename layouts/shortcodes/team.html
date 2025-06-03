@@ -5,79 +5,79 @@
     <div class="team-body">
         <div class="team-member">
             <a href="/kontakt/#maty" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/maty.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/maty.webp">
             </div>
             <p class="team-member-name">Maty</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#honza" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/honza.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/honza.webp">
             </div>
             <p class="team-member-name">Honza</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#eda" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/eda.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/eda.webp">
             </div>
             <p class="team-member-name">Eda</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#david" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/david.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/david.webp">
             </div>
             <p class="team-member-name">David</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#tomáš" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/tomáš.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/tomáš.webp">
             </div>
             <p class="team-member-name">Tomáš</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#lucka" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka.webp">
             </div>
             <p class="team-member-name">Lucka</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#lucka-vu" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka-vu.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka-vu.webp">
             </div>
             <p class="team-member-name">Lucka</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#štěpán" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/štěpán.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/štěpán.webp">
             </div>
             <p class="team-member-name">Štěpán</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#matěj" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/matěj.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/matěj.webp">
             </div>
             <p class="team-member-name">Matěj</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#petr" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/petr.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/petr.webp">
             </div>
             <p class="team-member-name">Petr</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#oliver" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/oliver.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/oliver.webp">
             </div>
             <p class="team-member-name">Oliver</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#anička" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/anička.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/anička.webp">
             </div>
             <p class="team-member-name">Anička</p></a>
         </div>
         <div class="team-member">
             <a href="/kontakt/#monča" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/monča.jpg">
+                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/monča.webp">
             </div>
             <p class="team-member-name">Monča</p></a>
         </div>
@@ -92,11 +92,11 @@
             {{range readDir $partnersDir}}
                 {{if not (eq .Name ".DS_Store")}}
                 {{if not (eq .Name "monochrom")}}
-                    {{$partnerData := replace .Name ".png" ""}}
+                    {{$partnerData := replace .Name ".webp" ""}}
                     {{$partnerLink := replace $partnerData "-" "."}}
                     {{$partnerLink := replace $partnerLink ".." "-"}}
                     <a href="https://www.{{$partnerLink}}/" target="_blank">
-                        <img class="partner-logo-img" data-partner-name="{{$partnerData}}" src="/media/imgs/partners/{{.}}.png" style="{{if eq $partnerData "senat-cz"}}width: 280px;{{else}}width: 130px;{{end}}">
+                        <img class="partner-logo-img" data-partner-name="{{$partnerData}}" src="/media/imgs/partners/{{.}}.webp" style="{{if eq $partnerData "senat-cz"}}width: 280px;{{else}}width: 130px;{{end}}">
                     </a>
                 {{end}}
                 {{end}}

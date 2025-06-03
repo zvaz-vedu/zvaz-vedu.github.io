@@ -10,5 +10,5 @@ with sync_playwright() as p:
     box = table.bounding_box()
 
     # Save screenshot of just the table
-    table.screenshot(path="table.png", clip=box)
+    table.screenshot(path="table.webp", clip=box)
     browser.close()

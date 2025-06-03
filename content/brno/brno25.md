@@ -5,7 +5,7 @@ layout: report
 
 headerTitle: "Zvaž vědu! podruhé v Brně"
 headerText: "Ohlédnutí za Zvaž vědu! Brno 2025"
-headerImg: "/media/imgs/base/mark-blk.png"
+headerImg: "/media/imgs/base/mark-blk.webp"
 
 yt: "https://www.youtube.com/playlist?list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo"
 ---

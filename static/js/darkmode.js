@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         const mainLogoSrc = darkMode
-            ? '/media/imgs/base/logo_transparent.png'
-            : '/media/imgs/base/logo_dark.png';
+            ? '/media/imgs/base/logo_transparent.webp'
+            : '/media/imgs/base/logo_dark.webp';
 
         const markSrc = darkMode
-            ? '/media/imgs/base/mark.png'
-            : '/media/imgs/base/mark-blk.png';
+            ? '/media/imgs/base/mark.webp'
+            : '/media/imgs/base/mark-blk.webp';
 
         const desktopMainLogo = document.querySelector('.desktop-navbar .nav-logo img');
         if (desktopMainLogo) {
@@ -91,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function() {
              }
 
              const newSrc = darkMode
-                 ? `/media/imgs/partners//monochrom/${baseName}-monochrom.png`
-                 : `/media/imgs/partners/${baseName}.png`;
+                 ? `/media/imgs/partners//monochrom/${baseName}-monochrom.webp`
+                 : `/media/imgs/partners/${baseName}.webp`;
 
              const currentRelativeSrc = new URL(img.src).pathname;
              if (currentRelativeSrc !== newSrc) {

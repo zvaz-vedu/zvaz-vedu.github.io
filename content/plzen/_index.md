@@ -4,7 +4,7 @@ layout: location
 
 headerTitle: "v Plzni"
 headerText: "Zvaž vědu! Plzeň 2025 pro vás právě připravujeme"
-headerPhoto: "/media/imgs/locations/plzen-header.jpg"
+headerPhoto: "/media/imgs/locations/plzen-header.webp"
 
 <!-- joinUs: http --> 
 pastActions: true

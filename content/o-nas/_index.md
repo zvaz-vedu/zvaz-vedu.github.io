@@ -4,7 +4,7 @@ layout: single
 
 headerTitle: "Pomáháme tvořit novou generaci vědců."
 headerText: "Náš cíl, vize a prostředky"
-headerImg: "/media/imgs/base/mark-blk.png"
+headerImg: "/media/imgs/base/mark-blk.webp"
 ---
 
 {{< text-img 
@@ -19,7 +19,7 @@ quoteTitle="Jsme teprve"
 highlight="na začátku."
 title="Minulost Zvaž vědu!"
 text="Ačkoliv už máme v rámci Zvaž vědu! pár akcí za sebou, stále jsme na začátku. Prvotní myšlenka se zrodila v Plzni v roce 2023, kde jsme uspořádali ve spolupráci s několika partnery první ročník. Shromáždilo se na něm takřka 300 účastníků a necelé dvě desítky řečníků.|O konceptu se potom doslechl tým v Brně, který organizoval v minulosti jiné akce a nápad se jim natolik zalíbil, že ho v upravené podobě přivedli tam. Akce si následně všimli zástupci Senátu Parlamentu ČR, kterým se zalíbila natolik, že nám předseda Senátu Miloš Vystrčil nabídl možnost organizace akce přímo v prostorách Senátu. Toho se zhostil původní plzeňský tým. Nyní už netrpělivě vyhlížíme rozšíření do dalších regionů, abychom mohli ze Zvaž vědu! udělat skutečně celostátní iniciativu. Čekají nás zkrátka velmi zajímavé věci a my se už teď nemůžeme dočkat, co budoucnost přinese."
-img="/media/imgs/about/about2.png"
+img="/media/imgs/about/about2.webp"
 color="primary" >}}
 
 {{< title-text
