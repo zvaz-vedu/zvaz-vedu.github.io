@@ -357,5 +357,26 @@
             "website": "https://dilna3d.cz"
         },
         "bio": "Pavel je studentem Gymnázia Františka Křižíka v Plzni. Zajímá se o vědu, technologie a udržitelnou energetiku. Spolupracoval na vývoji přenosné vodní elektrárny, s níž získal ocenění na vědeckých konferencích JVK a SVK. Pracuje v organizačním týmu Zvaž vědu! v Plzni a věnuje se popularizaci vědy. Ve volném čase se věnuje sportu a cestování."
+    },
+    {
+        "name": "David Němec",
+        "photo": "/media/imgs/team/david.webp",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Programování pro vesmír: Měření mraků z paluby ISS a aktivity ESERO",
+            "youtube": "https://youtu.be/jgRuSHghZN4"
+        }],
+        "contact": {},
+        "bio": "David je hrdý Matfyzák, student oboru fyzika. Nadšení pro přírodní vědy získal díky astronomické olympiádě, dnes je i jedním z jejích organizátorů. Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."    },
+    {
+        "name": "Tomáš Rajchman",
+        "photo": "/media/imgs/team/tomáš.webp",
+        "locations": ["Plzeň"],
+        "lectures": [{
+            "title": "Programování pro vesmír: Měření mraků z paluby ISS a aktivity ESERO",
+            "youtube": "https://youtu.be/jgRuSHghZN4"
+        }],
+        "contact": {},
+        "bio": "Tomáš je studentem prvního ročníku na Katedře kybernetiky FAV ZČU. Mezi jeho zájmy patří fyzika, matematika, robotika ale i spousty dalších. Věnuje se také popularizaci vědy a techniky. Miluje koně."}
     }
 ]
