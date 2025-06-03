@@ -169,5 +169,8 @@
             </div>
         </div>
     </section>
+    {{if .Params.liveAction}}
+        {{partial "zastita.html" .}}
+    {{end}}
     {{partial "partners.html" .}}
 {{end}}
