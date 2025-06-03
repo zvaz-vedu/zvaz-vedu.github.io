@@ -314,7 +314,10 @@
         "name": "Boris Brovkin",
         "photo": "/media/imgs/speakers/boris-brovkin.webp",
         "locations": ["Praha"],
-        "lectures": [],
+        "lectures": [{
+            "title": "LASAR: Ze střední školy až na oběžnou dráhu Země",
+            "youtube": "https://youtu.be/s0v4DxPTLH0"
+        }],
         "contact": {
             "instagram": "https://www.instagram.com/kinvorb?igsh=cWswaHd1NWJqNGY1",
             "linkedin": "https://www.linkedin.com/in/boris-brovkin-4b230b305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
