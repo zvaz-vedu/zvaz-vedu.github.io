@@ -16,7 +16,7 @@ eventTime: 2025-06-09T09:00:00
 pastActions: false
 
 team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
-partners: [senat-cz, hvezdarna-cz, eserocz-cz,kudyznudy-cz]
+partners: [senat-cz, hvezdarna-cz, eserocz-cz]
 
 #registration: "https://docs.google.com/forms/d/e/1FAIpQLSfVr3TIOW40EIr17EP6Q3ub3YIK3BBypRx_9HVrNpOWWzJiMA/viewform?usp=header"
 #řádku s registrací pak stačí zakomentovat a tlačíka zmizí
