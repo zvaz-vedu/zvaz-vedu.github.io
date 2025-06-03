@@ -1,0 +1,39 @@
+name: Convert Images to WebP
+
+on:
+  push:
+    branches:
+      - main # Or your main content branch
+    paths:
+      - 'static/**.jpg' # Adjust paths to your image directories
+      - 'static/**.png'
+      - 'content/**.jpg'
+      - 'content/**.png'
+
+jobs:
+  convert-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install cwebp
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Convert images to WebP
+        run: |
+          find . -type f \( -iname "*.jpg" -o -iname "*.png" \) -print0 | while IFS= read -r -d $'\0' file; do
+            webp_file="${file%.*}.webp"
+            if [ ! -f "$webp_file" ] || [ "$file" -nt "$webp_file" ]; then
+              echo "Converting $file to $webp_file"
+              cwebp "$file" -o "$webp_file" -q 80 # -q for quality, adjust as needed
+            fi
+          done
+
+      - name: Commit and Push WebP images
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git diff --staged --quiet || git commit -m "Auto: Convert images to WebP"
+          git push
