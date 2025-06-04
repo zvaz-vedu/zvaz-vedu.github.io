@@ -90,15 +90,17 @@
         <div class="partner-body">
             {{$partnersDir := printf "static/media/imgs/partners"}}
             {{range readDir $partnersDir}}
-                {{if not (eq .Name ".DS_Store")}}
-                {{if not (eq .Name "monochrom")}}
-                    {{$partnerData := replace .Name ".webp" ""}}
-                    {{$partnerLink := replace $partnerData "-" "."}}
-                    {{$partnerLink := replace $partnerLink ".." "-"}}
-                    <a href="https://www.{{$partnerLink}}/" target="_blank">
-                        <img class="partner-logo-img" data-partner-name="{{$partnerData}}" src="/media/imgs/partners/{{.}}.webp" style="{{if eq $partnerData "senat-cz"}}width: 280px;{{else}}width: 130px;{{end}}">
-                    </a>
-                {{end}}
+                {{if and (ne .Name ".DS_Store") (ne .Name "monochrom")}}
+                    {{if hasSuffix .Name ".webp"}}
+                        {{$partnerData := replace .Name ".webp" ""}}
+                        {{$partnerLink := replace $partnerData "-" "."}}
+                        {{$partnerLink := replace $partnerLink ".." "-"}}
+                        <div class="partner-item">
+                            <a style="text-decoration: none;" href="https://www.{{$partnerLink}}/" target="_blank">
+                                <img class="partner-logo-img" data-partner-name="{{$partnerData}}" src="/media/imgs/partners/{{.Name}}" style="{{if eq $partnerData "senat-cz"}}width: 280px;{{else}}width: 130px;{{end}}">
+                            </a>
+                        </div>
+                    {{end}}
                 {{end}}
             {{end}}
         </div>
