@@ -46,6 +46,17 @@ speaker="Metoděj Svoboda"
 video="https://www.youtube.com/embed/yN4mJNihZFQ"
 abstract="26 studentů zažilo stav beztíže, ale slyšely o tom statisíce lidí. Jaká byla cesta v rámci mise Zero G, a jak může něco takového ovlivnit víc než jen těchto pár desítek životů. Česká republika má ve vesmírném výzkumu významnou roli a nabízí spoustu příležitostí i pro studenty. Co se v České republice už teď děje a jak se můžeme začít angažovati i my? Mnoho mladých lidí se k podobným šancím nedostane – ne proto, že by na ně neměli, ale protože o nich jednoduše neslyšeli, nebo je systém nikdy nenavedl tím správným směrem. O vesmíru ví všichni, ale o tom, co znamená pro lidi na zemi se už tak moc nemluví – tak co to zkusit napravit?">}}
 
+{{< lecture 
+name="Kvasinky jako vstupenka do světa: Moje cesta na UCL"
+speaker="Tereza Przeczková"
+video="https://www.youtube.com/embed/WBWjT_5ayVo"
+abstract="Přemýšleli jste někdy nad tím, jak v buňkách probíhá transport iontů na té nejmenší úrovni? Na úrovni molekulární? Pro všechny fyziologické procesy probíhající v buňkách i v lidském organismu je naprosto klíčové aby kationty zůstávaly uvnitř buněk ve stálých koncentracích. Nabité ionty totiž nejsou schopny projít přes membránu jen tak, prostou difuzí, proto se v membránách nacházejí specifické proteiny - transportéry - které přenos iontů zprostředkovávají. Co se stane v případě narušení jejich transportní aktivity? Jaký dopad to má na lidské zdraví? A co s tím mají společného kvasinky? Popovídáme si nejen o membránovém transportu a jeho souvislostí s řadou lidských patologií, ale také o tom, jak mě tato výzkumná stáž dovedla na jednu z nejprestižnějších univerzit na světě. Podělím se s vámi o zážitky z prvního roku studia v Londýně a snad vám dokážu, že vše je možné pokud se člověku chce!">}}
+
+{{< lecture 
+name="LASAR: Ze střední školy na oběžnou dráhu"
+speaker="Simon Klinga, Richard Nikel, Boris Brovkin"
+video="https://www.youtube.com/embed/KhbQXL9N6Rw"
+abstract="Každý den se spoléháme na satelity – od GPS po internet. Jenže co když přestanou fungovat? Náš tým LASAR tvořený středoškoláky přišel s revolučním řešením: pomocí laserů chceme odstranit nefunkční satelity z oběžné dráhy a obnovit spojení s těmi, které „zamrzly“. V přednášce se dozvíš, jak jsme vyvinuli vlastní družici LASARsat, kterou vynesl na oběžnou dráhu Falcon 9, a jak díky ní testujeme technologie budoucnosti – od deorbitace až po měření účinků laserů ve vesmíru. Uvidíš, že i středoškoláci mohou dělat skutečnou vědu a měnit svět. A možná tě inspirují, abys to zkusil taky.">}}
 
 <!--
 #zveřejnit 1.6.{{< lecture 
