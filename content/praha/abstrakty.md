@@ -58,10 +58,8 @@ speaker="Simon Klinga, Richard Nikel, Boris Brovkin"
 video="https://www.youtube.com/embed/KhbQXL9N6Rw"
 abstract="Každý den se spoléháme na satelity – od GPS po internet. Jenže co když přestanou fungovat? Náš tým LASAR tvořený středoškoláky přišel s revolučním řešením: pomocí laserů chceme odstranit nefunkční satelity z oběžné dráhy a obnovit spojení s těmi, které „zamrzly“. V přednášce se dozvíš, jak jsme vyvinuli vlastní družici LASARsat, kterou vynesl na oběžnou dráhu Falcon 9, a jak díky ní testujeme technologie budoucnosti – od deorbitace až po měření účinků laserů ve vesmíru. Uvidíš, že i středoškoláci mohou dělat skutečnou vědu a měnit svět. A možná tě inspirují, abys to zkusil taky.">}}
 
-<!--
-#zveřejnit 1.6.{{< lecture 
+{{< lecture 
 name="Může být umělá inteligence skutečně kreativní?"
 speaker="Petr Ivan"
-video=""
+video="https://www.youtube.com/embed/sEBpqKZKLPU"
 abstract="Mohou neuronové sítě tvořit něco skutečně nového, nebo jen opakují to, co už znají? Je možné, aby algoritmus překročil hranice naučeného a přinesl něco, co bychom označili za originální nápad? A co vlastně znamená být kreativní? V této přednášce si objasníme, jak funguje dnešní generativní AI, jak reprezentuje okolní svět a umění, v čem se nám podobá a čím se liší. Ukážeme si nejnadějnější směry současného vývoje, limitace strojového učení a zdali jsou překonatelné. Společně otevřeme otázku, kde končí pouhé kombinování a začíná skutečná invence – a zda má umělá inteligence šanci se k této hranici přiblížit nebo ji dokonce překročit.">}}
-#zveřejnit 28.5.-->
