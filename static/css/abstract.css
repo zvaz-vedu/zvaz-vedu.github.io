@@ -4,7 +4,7 @@
     gap: 3rem;
     border-radius: 1rem;
     padding: var(--inspacer);
-    background-color: var(--primary40);
+    background-color: var(--secondary40);
     align-items: center;
     justify-content: center;
 }
