@@ -8,6 +8,7 @@
     --primary: #ffc300; /* HSL: 46, 100%, 50% */
     --secondary: #e4cc96; /* HSL: 42, 59%, 74% */
     --accent: #eb6028; /* HSL: 17, 83%, 54% */
+    --accent-full: #FF4500;
 
     /* Text opacity variations (using black) */
     --text5: hsla(0, 0%, 0%, 0.05);
