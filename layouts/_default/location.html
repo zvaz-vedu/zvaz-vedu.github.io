@@ -100,28 +100,30 @@
         {{end}}
     {{end}}
     
-    <!-- zobrazení ohlédnutí pokud je víc víc než 1 event-->
+    <!-- zobrazení ohlédnutí pokud je víc než 1 event -->
     {{ if .Params.pastActions }}
         <section class="layout-container" id="history">
             <div class="layout-content">
                 <h2>Ohlédnutí</h2>
                 <div class="history-content">
-                    {{range .Pages}}
-                        <a href="{{.RelPermalink}}" class="history-item">
-                            {{$name := .File.BaseFileName }}
-                            {{$dir := printf "/media/imgs/gallery/%s" $name}}
-                            {{$img := printf "%s/main.webp" $dir}}
-                            <img src="{{$img}}">
+                    {{ $currentDir := .File.Dir }}
+                    {{ range where .Site.RegularPages ".File.Dir" $currentDir }}
+                        <a href="{{ .RelPermalink }}" class="history-item">
+                            {{ $name := .File.BaseFileName }}
+                            {{ $dir := printf "/media/imgs/gallery/%s" $name }}
+                            {{ $img := printf "%s/main.webp" $dir }}
+                            <img src="{{ $img }}">
                             <div class="history-item-body">
-                                <strong>{{.Title}}</strong>
-                                <em>{{.Date.Format "2. 1. 2006"}}</em>
+                                <strong>{{ .Title }}</strong>
+                                <em>{{ .Date.Format "2. 1. 2006" }}</em>
                             </div>
                         </a>
-                    {{end}}
+                    {{ end }}
                 </div>
             </div>
         </section>
-    {{end}}
+    {{ end }}
+
     <section class="layout-container" id="team">
         <div class="layout-content">
             <h2>Za {{.Title}} stojí...</h2>

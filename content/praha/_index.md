@@ -13,7 +13,7 @@ speakers: "10"
 
 liveAction: true
 eventTime: 2025-06-09T09:00:00
-pastActions: false
+pastActions: true
 
 team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
 partners: [senat-cz, hvezdarna-cz, eserocz-cz]
