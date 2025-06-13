@@ -46,14 +46,15 @@
             <div class="text-body">
                 <h3>Ohlédnutí</h3>
                 {{.Content}}
-           
+            </div>
         </div>
     </section>
+    {{if .Params.yt}}
     <section class="layout-container" id="youtube">
         <div class="layout-content">
             <span>Nestihli jste to? Nevadí!</span>
             <a href="{{.Params.yt}}" class="secondary-button">Podívej se na přednášky na YouTube &rarr;</a>
         </div>
     </section>
-
+    {{end}}
 {{end}}
