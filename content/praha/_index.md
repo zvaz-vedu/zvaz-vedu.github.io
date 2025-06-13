@@ -19,15 +19,12 @@ team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
 partners: [senat-cz, hvezdarna-cz, eserocz-cz]
 
 #registration: "https://docs.google.com/forms/d/e/1FAIpQLSfVr3TIOW40EIr17EP6Q3ub3YIK3BBypRx_9HVrNpOWWzJiMA/viewform?usp=header"
-#řádku s registrací pak stačí zakomentovat a tlačíka zmizí
 registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vQWAZQB2eOaSSPAdQtZ8_GSFxPCKdVQrebNdO_FeiwA371klxwMFOAwLVDxTEM3r0yQszoPJqjUweaJ/pub?gid=1609982898&single=true&output=csv"
 newParticipants: "120"
 newSpeakers: "10"
 
 abstracts: true
-abstractHeader: "Chceš se dozvědět o přednáškách víc?"
-abstractUrl: "/praha/abstrakty"
-abstractButton: "Přečti si abstrakt a zhlédni medailonek"
+abstractUrl: "/praha/info/abstrakty"
 
 importantInfo: true
 importantInfoHeader: "Na co se můžete těšit..."

@@ -45,13 +45,14 @@
     {{if .Params.liveAction}}
         <section class="layout-container" id="accomplishments">
             <div class="layout-content bento-board">
-                <div class="bento-board-item" style="background-color: var(--accent);">
+                <div class="bento-board-item" style="background-color: var(--accent70);">
                     <strong class="bento-title">Je to za námi!</strong>
-                    <a href="https://youtu.be/v9cEiXCztaU" class="nav-link primary-button">Nesestříhaný záznam</a>
+                    <a href="https://youtu.be/v9cEiXCztaU" class="secondary-button">Nesestříhaný záznam &rarr;</a>
                 </div>
                 <div class="bento-board-item" style="background-color: var(--accent60)">
-                    <strong class="bento-title">Zpětná vazba!</strong>Líbilo se vám? Máte nápady na zlepšení?
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSddafuZsfBfNeLTAEmzRyZLWfmN3ACtNxas_jzyXNVKEeV86Q/viewform?usp=header" class="nav-link primary-button">Feedback formulář</a>
+                    <strong class="bento-title">Zpětná vazba!</strong>
+                    <p class="bento-text">Líbilo se vám? Máte nápady na zlepšení?</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSddafuZsfBfNeLTAEmzRyZLWfmN3ACtNxas_jzyXNVKEeV86Q/viewform?usp=header" class="secondary-button">Feedback &rarr;</a>
                 </div>
                 <div class="bento-board-item" style="background-color: var(--accent40);">
                     <strong class="bento-title">10</strong>
@@ -70,38 +71,19 @@
             </section>
         {{end}}
 
-        <!-- {{if .Params.importantInfo}}
-            <section class="layout-container" id="important-info">
-                <div class="layout-content">
-                    <div class="important-info-body">
-                        <h3>{{.Params.importantInfoHeader}}</h3>
-                        {{$infoText := split .Params.importantInfoText "|"}}
-                        {{range $infoText}}
-                            <p>{{.}}</p>
-                        {{end}}
-                    </div>  
-                    <img class="mark-img" src="{{.Params.importantInfoImage}}" style="max-width: none; max-height: 200px;">
-                </div>
-            </section>
-        {{end}} -->
-
-        <!-- tady byl původně program, pak ho sem vraťte -->
-
         <section class="layout-container" id="program">
             <div class="layout-content">
-                <span><h2 class="quote-title-highlight" style="padding-bottom: 0.5em;">Program</h2></span>
-                {{ .Content }}
-                {{ if .Params.abstracts }}
-                    <div class="layout-container" style="padding-bottom: 0;">
-                        <div class="layout-content link-button" style="padding-bottom: 0;">
-                            <div class="link-button-item">
-                                <h4>{{ .Params.abstractHeader }}</h4>
-                                <a href={{.Params.abstractUrl}} class="secondary-button">{{.Params.abstractButton}} &rarr;</a>
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}
+                <h2>Program</h2>
+                {{.Content}}
             </div>
+            {{if .Params.abstracts}}
+                <div class="layout-content link-button">
+                    <div class="link-button-item">
+                        <h4>Chceš se dozvědět o přednáškách víc?</h4>
+                        <a href={{.Params.abstractUrl}} class="secondary-button">Přečti si abstrakt a zhlédni medailonek &rarr;</a>
+                    </div>
+                </div>
+            {{end}} 
         </section>
     
         {{with .Params.registration}}

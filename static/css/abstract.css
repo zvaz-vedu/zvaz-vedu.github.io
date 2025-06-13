@@ -1,81 +1,36 @@
-/* --- Inside your /css/abstract.css file --- */
-
-/* Base styles for the main container (mobile-first approach) */
-.cta .layout-content {
+.abstract .layout-content {
     display: flex;
-    flex-direction: column; /* Stack text and video vertically on small screens */
-    gap: 2rem; /* Space between flex items */
+    flex-direction: row;
+    gap: 3rem;
     border-radius: 1rem;
-    /* Adjust padding for mobile - 10rem block padding was likely too much */
-    padding: 2rem 1rem; /* Reduced vertical and added horizontal padding for mobile */
-    background-color: var(--primary40);
-    align-items: center; /* Center items when stacked */
-    justify-content: center; /* Center content */
+    padding: var(--inspacer);
+    background-color: var(--secondary40);
+    align-items: center;
+    justify-content: center;
 }
 
-.cta-body {
-    width: 100%; /* Text section takes full width on small screens */
-    max-width: 500px; /* Limit max width of text even when full width */
+.abstract-body {
+    width: 100%;
 }
 
-/* Styles for h2 and h3 in the cta-body */
-.cta-body h2 {
-    position: relative; /* Necessary for the ::after pseudo-element positioning */
-    margin-bottom: 1rem;
-    font-size: 5rem; /* Consider adjusting for very small screens if needed */
-    /* If font size is too large for mobile, you might add a media query */
+.abstract-body h3 {
+    position: relative;
+    margin-bottom: 1.2rem;
 }
 
-/* Style for the h2 underline effect */
-.cta-body h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 50%; /* This should work correctly with position: relative on h2 */
-    height: 14px;
-    bottom: -8px; /* Adjust vertical position */
-    transform: rotate(-2deg); /* Angle of the underline */
-    border-radius: 5000px;
-    background-color: var(--accent40);
-    z-index: 1; /* Ensure it's above the text */
+.abstract-body p:first-of-type {
+    margin-bottom: 1.2rem;
+    font-weight: bold;
 }
 
-.cta-body h3 {
-    position: relative; /* Good practice if you ever add ::before/::after here */
-    margin-bottom: 1rem;
-    font-size: 2.5rem; /* Consider adjusting for very small screens if needed */
-}
-
-.cta-body p {
-    font-size: 1.15rem;
-    /* Allow long words to break to prevent overflow */
-    overflow-wrap: break-word;
-    word-wrap: break-word; /* Legacy property for word-break */
-    -ms-word-break: break-all; /* For IE */
-}
-
-.cta-body a {
-    color: var(--text); /* Ensure links are visible */
-    text-decoration: none; /* Remove underline */
-    font-weight: 600; /* Make links bold */
-}
-
-.cta-body a:hover {
-    color: var(--accent); /* Change color on hover for better visibility */
-    /* You can also add a transition for smoothness */
-    transition: color 0.3s ease
-}
-
-/* --- FIX: Target the video iframe instead of <video> tag --- */
-/* Style for the video wrapper container */
-.cta .video-wrapper {
+.abstract .video-wrapper {
     width: 100%; /* Video wrapper takes full width on small screens */
     max-width: 500px; /* Limit its max width on small screens */
     /* You can adjust this max-width for small screens if you want the video larger */
 }
 
 /* Style for the iframe to make it responsive and fill its container */
-.cta .video-wrapper iframe {
+.abstract .video-wrapper iframe {
     display: block; /* Remove extra space below the iframe */
     width: 100%;  /* Make the iframe fill the width of its parent (.video-wrapper) */
     height: auto; /* Let the height adjust automatically */
@@ -83,105 +38,4 @@
     /* This is the recommended modern way. Adjust 16/9 for different aspect ratios. */
     border-radius: 8px; /* Apply border-radius to iframe */
     /* cursor: pointer; removed - cursor handled by iframe content */
-}
-
-
-/* Media query for larger screens (desktop layout) */
-/* Use a min-width that aligns with or is slightly larger than your max-width breakpoints */
-@media (min-width: 881px) {
-    .cta .layout-content {
-        flex-direction: row; /* Arrange text and video side-by-side */
-        justify-content: space-between; /* Space them out */
-        align-items: center; /* Vertically center items */
-        padding: 10rem 2rem; /* Restore larger vertical padding and add horizontal */
-         /* Adjust horizontal padding (2rem) as needed for your design */
-    }
-
-    .cta-body {
-        width: auto; /* Let flex determine width */
-        max-width: 500px; /* Keep max-width for text */
-        flex: 1; /* Allow text to take up some space */
-    }
-
-    .cta .video-wrapper {
-        width: auto; /* Let flex determine width */
-        /* **Increase max-width for the video on desktop** */
-        max-width: 500px; /* Example: Make video up to 700px wide */
-        /* Use flex-basis to control its size relative to cta-body */
-        flex: 0 0 500px; /* Prevent growing/shrinking, set base width to 700px */
-        /* Adjust 700px to your desired video width on desktop */
-    }
-
-    /* Adjust font sizes back if they were reduced for mobile */
-    .cta-body h2 {
-        font-size: 5rem;
-    }
-    .cta-body h3 {
-        font-size: 2.5rem;
-    }
-}
-
-/* Keep your other media queries as they are for header/graphics */
-
-@media (max-width:1000px) {
-    .header-graphics-photo {
-        right: 0;
-        top: -120px;
-    }
-    .header-graphics-logo {
-        display: none;
-    }
-    .header-graphics-circle {
-        right: 120px;
-        top: -170px;
-    }
-}
-
-@media (max-width:880px) {
-    .header-graphics {
-        display: none;
-    }
-    /* Explicitly ensure column direction below this point if needed */
-     .cta .layout-content {
-         flex-direction: column;
-    }
-}
-
-@media (max-width:570px) {
-    .header-body {
-        width: 100%;
-    }
-    header h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-    header h1 span::after {
-        height: 14px;
-        bottom: 0;
-    }
-    .header-text {
-        font-size: 1.2rem;
-    }
-    header .primary-button {
-        font-size: 1.2rem;
-    }
-    .bento-board {
-        grid-template-columns: 1fr;
-    }
-     /* Optional: Further adjust padding and font sizes for very small mobile */
-     .cta .layout-content {
-        padding: 1.5rem 0.5rem;
-    }
-     .cta-body h2 {
-        font-size: 3.5rem;
-    }
-    .cta-body h3 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 450px) {
-    header .layout-content {
-        padding-inline: 0;
-    }
 }

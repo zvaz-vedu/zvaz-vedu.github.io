@@ -78,7 +78,7 @@ header .primary-button {
     border-radius: 100%;
 }
 
-/* nadpisy obecně */
+/* HEADINGS */
 
 h2 {
     display: block;
@@ -117,53 +117,6 @@ h3::after {
     border-radius: 5000px;
     background-color: var(--primary85);
 }
-
-
-/* program table*/
-
-#program .layout-content {
-    flex-direction: column;
-}
-.program-table-container {
-    width: 100%;
-    display: block;
-    overflow-x: scroll;
-    scrollbar-width: 0;
-}
-.program-table-container::-webkit-scrollbar {
-    display: none;
-}
-.program-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: var(--secondary20) 2px solid;
-}
-.program-table-breaker {
-    text-align: center;
-    font-weight: bold;
-    background-color: var(--secondary20);
-}
-.program-table td, .program-table th {
-    padding: .5rem;
-}
-.primary-head {
-    background-color: var(--secondary);
-}
-.secondary-head {
-    background-color: var(--secondary60);
-    text-align: left;
-}
-.program-table td {
-    border-bottom: var(--secondary20) 2px solid;
-}
-.two-rooms tr td {
-    border-right: var(--secondary20) 2px solid;
-}
-
-tr td:nth-of-type(1) {
-    text-wrap: nowrap;
-}
-
 
 /* CTAs */
 
@@ -218,145 +171,20 @@ tr td:nth-of-type(1) {
 }
 
 #event-info.layout-container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-  
-  #event-info .layout-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    padding: 20px 0;
-  }
-  
-  #countdown-display .countdown-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 1rem;
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
-    width: auto;
-    box-sizing: content-box;
-    flex-shrink: 0;
-  }
-  
-  #countdown-display .countdown-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #countdown-display .count-number {
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1;
-    color: inherit;
-  }
-  
-  #countdown-display .count-label {
-    font-size: 1.1rem;
-    margin-top: 0.3rem;
-    text-transform: capitalize;
-    color: inherit;
-  }
-  
-  #countdown-display .count-separator {
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1;
-    align-self: flex-start;
-    color: inherit;
-  }
-  
-  #registration-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.8rem;
-      width: 100%;
-  }
-  
-  .registration-label {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--background); /* Label color contrasts with accent box background */
-      margin: 0;
-      padding: 0;
-      text-align: center;
-  }
-  
-  .progress-bar-track-pill {
-    position: relative; /* Needed for absolute positioning of children */
-    height: 40px; /* Height of the pill */
-    width: 100%; /* Full width within its parent */
-    background-color: rgba(255, 255, 255, 0.3); /* Track color */
-    border-radius: 999px; /* Pill shape */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Inner shadow */
-    overflow: hidden; /* Hide anything outside the shape */
-    box-sizing: border-box;
-    padding: 0;
-  }
-  
-  .progress-bar-fill-pill {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0; /* Controlled by JS */
-    background-color: var(--accent); /* Fill color (white) */
-    display: block; /* Change from flex as it no longer contains text */
-    border-radius: 999px;
-    transition: width 0.8s ease-out;
-    box-shadow: none;
-  }
-  
-  .progress-bar-count-text {
-    position: absolute; /* Position relative to the track */
-    top: 0;
-    bottom: 0; /* Stretch vertically */
-    right: 15px; /* Distance from the right edge of the track */
-    z-index: 1; /* Ensure text is above the fill */
-  
-    display: flex; /* Use flexbox to center text vertically */
-    align-items: center; /* Center vertically */
-    justify-content: flex-end; /* Align text to the right within its small container */
-  
-    font-size: 1.2rem; /* Font size for the count text */
-    font-weight: bold;
-    line-height: 1;
-    white-space: nowrap; /* Prevent wrapping */
-    color: var(--text); /* Text color (orange) - ensure it's readable on both fill and track */
-     /* Add text shadow for better readability on contrasting backgrounds */
-  }
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
 
-#important-info .layout-content {
-    background-color: var(--primary60);
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    border-radius: 1rem;
+#event-info .layout-content {
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 20px 0;
 }
-#important-info h3 {
-    text-wrap: wrap;
-}
-#important-info h3::after {
-    display: none;
-}
-.important-info-body {
-    max-width: 850px;
-}
-.important-info-body p {
-    margin-top: 1rem;
-}
-.important-info-body p:first-of-type {
-    margin-top: 0;
-}
+
 
 #info-vid .layout-content {
     padding: 0;
@@ -376,6 +204,8 @@ tr td:nth-of-type(1) {
   width: 100%;
   height: 100%;
 }
+
+/* STATS */
 
 .bento-board {
     display: grid;
@@ -404,11 +234,133 @@ tr td:nth-of-type(1) {
 }
 .bento-title {
     font-size: 3rem;
+    text-align: center;
 }
 .bento-text {
     text-align: center;
 }
 
+.bento-board .secondary-button {
+    background-color: var(--accent);
+}
+
+#countdown-display .countdown-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: auto;
+    box-sizing: content-box;
+    flex-shrink: 0;
+}
+
+#countdown-display .countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#countdown-display .count-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+}
+
+#countdown-display .count-label {
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+  text-transform: capitalize;
+  color: inherit;
+}
+
+#countdown-display .count-separator {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  align-self: flex-start;
+  color: inherit;
+}
+
+#registration-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.registration-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--background);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.progress-bar-track-pill {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.progress-bar-fill-pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--accent);
+  display: block;
+  border-radius: 999px;
+  transition: width 0.8s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
+  box-shadow: none;
+}
+
+.progress-bar-count-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.registration-full-pulse {
+    animation: pulse-effect 1.0s infinite alternate;
+}
+@keyframes pulse-effect {
+    from {
+        transform: scaleX(1); /* Original size */
+        box-shadow: 0 0 15px var(--accent-full); /* Start glow */
+        opacity: 1;
+    }
+    to {
+        transform: scaleX(1.01); /* Slightly expand horizontally */
+        box-shadow: 0 0 25px var(--accent-full); /* Intensify glow */
+        opacity: 0.6; /* Slightly fade */
+    }
+}
+
+/* OHLEDNUTÍ */
 
 #history .layout-content {
     flex-direction: column;
@@ -463,6 +415,93 @@ tr td:nth-of-type(1) {
     margin-bottom: .3rem;
 }
 
+/* PROGRAM */
+
+#program .layout-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+}
+#program h2::after {
+    background-color: var(--secondary70);
+}
+.program-table-container {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+}
+.program-table-container::-webkit-scrollbar {
+    display: none;
+}
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: var(--secondary20) 2px solid;
+}
+.program-table-breaker {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--secondary20);
+}
+.program-table td, .program-table th {
+    padding: .5rem;
+}
+.primary-head {
+    background-color: var(--secondary);
+}
+.secondary-head {
+    background-color: var(--secondary60);
+    text-align: left;
+}
+.program-table td {
+    border-bottom: var(--secondary20) 2px solid;
+}
+.two-rooms tr td {
+    border-right: var(--secondary20) 2px solid;
+}
+
+tr td:nth-of-type(1) {
+    text-wrap: nowrap;
+}
+
+#prezence {
+    color: var(--accent70);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#prezence:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.link-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.link-button-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: var(--inspacer);
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--secondary60);
+    flex-direction: row;
+    gap: 2rem;
+}
+.link-button .secondary-button {
+    background-color: var(--secondary);
+}
+
+/* TEAM, PARTNERS */
+
 #team .layout-content {
     flex-direction: column;
     align-items: center;
@@ -509,78 +548,33 @@ tr td:nth-of-type(1) {
     text-transform: capitalize;
 }
 
-/* SPEAKERS */
-
-.speaker-container {
-    width: 100%;
-    display: flex;
+#zastita .layout-content {
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 4rem;
-    margin-top: 4rem;
+    padding: var(--inspacer);
+    background-color: var(--primary10);
+    border-radius: 1.5rem;
+    gap: 3rem;
 }
-.speaker-photo-container {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    z-index: 2;
-}
-.speaker-photo-container::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: var(--accent);
-    top: 10px;
-    left: 12px;
-    z-index: -1;
-    content: "";
-}
-.speaker-photo {
-    width: 200px;
+#zastita img {
+    max-width: 200px;
     height: auto;
 }
-.speaker-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.speaker-name {
-    margin-bottom: 1rem;
-}
-
-/* link-button je pro abstract*/
-.link-button {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.link-button-item {
+.zastita-content {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border-radius: 1rem;
-    padding: var(--inspacer);
-    gap: 1rem;
-    width: 100%;
-    background-color: var(--accent95);
-    flex-direction: row;
     gap: 2rem;
-    align-items: center;
 }
-.link-button .secondary-button {
-    background-color: var(--primary);
-    font-size: 1.5rem;
-    margin: auto 0 0 auto;
-    overflow-wrap: break-word;
-    white-space: normal;          /* <-- umožní zalomení */
-    word-break: break-word;       /* <-- zalamuje dlouhá slova */
-    display: inline-block;        /* nebo block, pokud chceš, aby se roztáhl celý řádek */
-    max-width: 100%;              /* zajistí, že se text nebude roztahovat mimo */
-    color: black;               /* barva textu */
+.zastita-content p:nth-of-type(1) {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.zastita-content p:nth-of-type(2) {
+    margin-top: 0;
+    font-size: 1rem;
 }
 
 
@@ -750,6 +744,12 @@ tr td:nth-of-type(1) {
     #youtube .layout-content {
         flex-direction: column;
     }
+    #zastita .layout-content {
+        flex-direction: column-reverse;
+    }
+    #zastita .zastita-content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -760,85 +760,4 @@ tr td:nth-of-type(1) {
         padding-inline: 0;
     }
 
-}
-
-/* Define your color variables. Adjust these to match your site's theme. */
-:root {
-    /* ... existing color variables ... */
-    --accent-full: #FF4500; /* A vibrant red-orange for when registration is full */
-}
-
-/* Update the progress-bar-fill-pill transition to include box-shadow */
-.progress-bar-fill-pill {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0; /* Controlled by JS */
-    background-color: var(--accent); /* Fill color (white) */
-    display: block;
-    border-radius: 999px;
-    /* ADD box-shadow to the transition property */
-    transition: width 0.8s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
-    box-shadow: none;
-}
-
-/* Ensure the full effect styles are correctly placed and defined */
-/* You already have these, just ensuring they are here for context */
-.registration-full-pulse {
-    animation: pulse-effect 1.0s infinite alternate;
-}
-
-@keyframes pulse-effect {
-    from {
-        transform: scaleX(1); /* Original size */
-        box-shadow: 0 0 15px var(--accent-full); /* Start glow */
-        opacity: 1;
-    }
-    to {
-        transform: scaleX(1.01); /* Slightly expand horizontally */
-        box-shadow: 0 0 25px var(--accent-full); /* Intensify glow */
-        opacity: 0.6; /* Slightly fade */
-    }
-}
-
-.quote-title-highlight {
-    position: relative;
-    z-index: 1;
-}
-
-.quote-title-highlight::after {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 20px; /* Adjust height as needed for the thickness of the highlight */
-    content: "";
-    bottom: 10px; /* Adjust vertical position */
-    right: 0;
-    z-index: -1;
-    transform: rotate(-5deg); /* Adjust rotation as desired */
-    border-radius: 5000px; /* Creates the pill-like shape */
-    background-color: var(--primary50); /* **Add your desired highlight color here** */
-}
-
-#prezence {
-    color: var(--accent70); /* Assuming --text is a defined CSS variable */
-    font-weight: 600; /* Medium-bold for the link */
-    text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-#prezence:hover {
-    color: var(--primary); /* Assuming --yellow is a defined CSS variable */
-    text-decoration: underline;
-    cursor: pointer;
-    /* You don't need transition here again if it's already on the base state */
-}
-
-/* Optional: To make the "Prezence:" text appear normal weight */
-.registration-info p b {
-    font-weight: bold; /* Keep "Prezence:" bold */
-}
-.registration-info p span {
-    font-weight: normal; /* Make the rest of the span normal */
 }
