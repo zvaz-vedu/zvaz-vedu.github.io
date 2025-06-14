@@ -110,7 +110,7 @@
                     {{ range where .Site.RegularPages ".File.Dir" $currentDir }}
                         <a href="{{ .RelPermalink }}" class="history-item">
                             {{ $name := .File.BaseFileName }}
-                            {{ $dir := printf "/media/imgs/gallery/%s" $name }}
+                            {{ $dir := printf "/media/imgs/gallery/%s" $name }}  <!-- aby to nezobrazovalo to v složce info -->
                             {{ $img := printf "%s/main.webp" $dir }}
                             <img src="{{ $img }}">
                             <div class="history-item-body">
