@@ -12,6 +12,9 @@
         }, {
             "title": "Novinky z vesmíru #1",
             "youtube": "https://www.youtube.com/watch?v=crEpDhHacX4&t=1s"
+        }, {
+            "title": "Nová éra astrofyziky: Najdeme druhou Zemi?",
+            "youtube": "https://youtu.be/Da3-AOuQbGM?si=BsgRsVGzuyVRaKyt"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/jan.herzig//",
@@ -58,7 +61,10 @@
         "locations": ["Plzeň", "Praha"],
         "lectures": [{
             "title": "LASAR: Ze střední školy až na oběžnou dráhu Země",
-            "youtube": "hhttps://www.youtube.com/watch?v=s0v4DxPTLH0"
+            "youtube": "https://www.youtube.com/watch?v=s0v4DxPTLH0"
+        }, {
+            "title": "LASAR: Ze střední školy až na oběžnou dráhu",
+            "youtube": "https://youtu.be/50XSqE1CCqw?si=uIP9IhuJaZfUJoNl"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/_richnik_/",
@@ -88,6 +94,9 @@
         "lectures": [{
             "title": "Stáž Akademie věd, SOČ, Astronomická olympiáda",
             "youtube": "https://www.youtube.com/watch?v=C8lJ0lj4i14"
+        }, {
+            "title": "Věda je Otevřená a čeká jen na tebe!",
+            "youtube": "https://youtu.be/rlMISEk1SSo?si=eGUwRwNLYnZGpNwC"
         }],
         "contact": {
             "youtube": "https://www.youtube.com/@kosmickeokenko"
@@ -114,6 +123,9 @@
         "lectures": [{
             "title": "Matematika v reálném životě",
             "youtube": "https://www.youtube.com/watch?v=K_tXhBGpxD0"
+        }, {
+            "title": "Změna je život: derivace a integrály v reálném životě",
+            "youtube": "https://youtu.be/DbOPaim_n2A?si=6b3OSDipzeLfGEqk"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/kristyn.mickova/"
@@ -130,6 +142,9 @@
         }, {
             "title": "Superhrdinové biochemie: CRISPR/Cas9 a AI",
             "youtube": "https://www.youtube.com/watch?v=0BuFHCrvAmY"
+        }, {
+            "title": "Když antibiotika přestávají fungovat: Tichá hrozba 21. století",
+            "youtube": "https://youtu.be/6s_ycF2Zs-o?si=BuYgIZWGG96fC89M"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/pavellinka/"
@@ -156,6 +171,9 @@
         "lectures": [{
             "title": "Ze školní lavice před porotce z NASA (a vlastní družici na raketě SpaceX)",
             "youtube": "https://www.youtube.com/watch?v=iWbyGRPEGa0&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=3"
+        }, {
+            "title": "LASAR: Ze střední školy až na oběžnou dráhu",
+            "youtube": "https://youtu.be/50XSqE1CCqw?si=uIP9IhuJaZfUJoNl"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/simon_klinga/",
@@ -254,7 +272,7 @@
         "locations": ["Praha"],
         "lectures": [{
             "title": "Ujel nám vlak? Když se zájmy (ne)potkávají se školním rozvrhem",
-            "youtube": "https://www.youtube.com"
+            "youtube": "https://youtu.be/4MTVJBiC5ks?si=KZIpczq27BRFSR0z"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/evelina.voleska/",
@@ -303,7 +321,10 @@
         "name": "Tereza Przeczková",
         "photo": "/media/imgs/speakers/tereza-przeczkova.webp",
         "locations": ["Praha"],
-        "lectures": [],
+        "lectures": [{
+            "title": "Kvasinky jako vstupenka do světa: Moje cesta na UCL",
+            "youtube": "https://youtu.be/_hN5lfFp3tw?si=xHM9tJVl4NjM9fpx"
+        }],
         "contact": {
             "instagram": "https://www.instagram.com/terezaprzeczkova/",
             "linkedin": "https://www.linkedin.com/in/tereza-przeczkov%C3%A1/"
@@ -315,8 +336,8 @@
         "photo": "/media/imgs/speakers/boris-brovkin.webp",
         "locations": ["Praha"],
         "lectures": [{
-            "title": "LASAR: Ze střední školy až na oběžnou dráhu Země",
-            "youtube": "https://youtu.be/s0v4DxPTLH0"
+            "title": "LASAR: Ze střední školy až na oběžnou dráhu",
+            "youtube": "https://youtu.be/50XSqE1CCqw?si=uIP9IhuJaZfUJoNl"
         }],
         "contact": {
             "instagram": "https://www.instagram.com/kinvorb?igsh=cWswaHd1NWJqNGY1",
@@ -327,7 +348,7 @@
     {
         "name": "Anna Krebsová",
         "photo": "/media/imgs/speakers/anna-krebsova.webp",
-        "locations": ["Plzeň", "Praha"],
+        "locations": ["Plzeň"],
         "lectures": [{
             "title": "Expedice Mars",
             "youtube": "https://youtu.be/JxeNnxq4AVg"
