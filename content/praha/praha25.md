@@ -5,6 +5,8 @@ layout: report
 
 headerTitle: "První Zvaž vědu! v Praze"
 headerText: "Ohlédnutí za Zvaž vědu! Praha 2025"
+
+yt: "https://www.youtube.com/playlist?list=PL1NMrPWjk08QP6uhihPKJG3X3rgfydf6l"
 ---
 
 Projekt, který <b>nemá obdoby</b>. Nemají za sebou ještě ani maturitu, ale uskutečnili akci, kterou český Senát <b>nepamatuje</b>. V Praze se v pondělí 9. června poprvé uskutečnila akce Zvaž vědu! a horní komoru parlamentu zaplnily davy <b>nadšených studentů</b>. 150 středoškoláků z 58 škol ve 12 krajích si přišlo poslechnout <b>10 jedinečných přednášek</b> od svých vrstevníků, kteří neváhali a už na střední se s úspěchem pustili do <b>posouvání hranic</b> lidského poznání.
