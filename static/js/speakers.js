@@ -33,7 +33,7 @@ fetch('/json/speakers.json')
             });
 
             const contacts = clone.querySelector('.speaker-contacts');
-            ['website', 'instagram', 'linkedin', 'facebook'].forEach(key => {
+            ['website', 'instagram', 'linkedin', 'facebook', 'youtube'].forEach(key => {
                 const link = clone.querySelector(`.${key}`);
                 if (speaker.contact && speaker.contact[key]) {
                     link.href = speaker.contact[key];
