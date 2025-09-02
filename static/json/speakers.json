@@ -391,7 +391,8 @@
             "youtube": "https://youtu.be/jgRuSHghZN4"
         }],
         "contact": {},
-        "bio": "David je hrdý Matfyzák, student oboru fyzika. Nadšení pro přírodní vědy získal díky astronomické olympiádě, dnes je i jedním z jejích organizátorů. Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."    },
+        "bio": "David je hrdý Matfyzák, student oboru fyzika. Nadšení pro přírodní vědy získal díky astronomické olympiádě, dnes je i jedním z jejích organizátorů. Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."
+    },
     {
         "name": "Tomáš Rajchman",
         "photo": "/media/imgs/team/tomáš.webp",
@@ -402,5 +403,41 @@
         }],
         "contact": {},
         "bio": "Tomáš je studentem prvního ročníku na Katedře kybernetiky FAV ZČU. Mezi jeho zájmy patří fyzika, matematika, robotika ale i spousty dalších. Věnuje se také popularizaci vědy a techniky. Miluje koně."
+    },
+    {
+        "name": "Metoděj Svoboda",
+        "photo": "/media/imgs/speakers/metodej-svoboda.webp",
+        "locations": ["Praha"],
+        "lectures": [{
+            "title": "Vesmír je sexy. Jak se do něj jako student “beztížně” zapojit?",
+            "youtube": "https://youtu.be/vHkV8bx4xdU?si=-T_YSuuFmVn_xw7W"
+        }],
+        "contact": {
+            "instagram": "httpshttps://www.instagram.com/metodej_svoboda/",
+            "linkedin": "https://www.linkedin.com/in/metodej-svoboda/"
+        },
+        "bio": "Metoděj je studentem druhého ročníku, který se dva roky po sobě stal vítězem nadnárodního kola Prezentiády. Absolvuje stáž na Ústavu Organické Chemie a Biochemie. Díky letu Zero-G je oficiálním ambasadorem České cesty do vesmíru. Mimo vědu se angažuje ve studentských spolcích jako ProStředoškoláky nebo Student Cyber Games. Spolu s bráchou přednáší na konferencích, akademiích atd... Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."    
+    },
+    {
+        "name": "Filip Vyskočil",
+        "photo": "/media/imgs/speakers/filip-vyskocil.webp",
+        "locations": ["Praha"],
+        "lectures": [{
+            "title": "Zpívat na světle nebo ve stínu? Aneb jak světlo ovlivňuje ptáky",
+            "youtube": "https://youtu.be/9LQGKO0k-zU?si=goKGYQSMJungHk0v"
+        }],
+        "contact": {},
+        "bio": "Filip se už od mala se zajímá o přírodu, zejména o ptáky. Proto začal psát SOČku, ve které se věnuje ptačí bioakustice. Pravidelně se také účastní různých přírodovědných soutěží. V rámci Biologické olympiády se mu podařilo zúčastnit se mezinárodní soutěže EOES. Mezi jeho další záliby patří hra na klavír, focení a orientační běh."
+    },
+    {
+        "name": "Petr Ivan",
+        "photo": "/media/imgs/speakers/petr-ivan.webp",
+        "locations": ["Praha"],
+        "lectures": [{
+            "title": "Může být umělá inteligence skutečně kreativní?",
+            "youtube": "https://youtu.be/OaSZEUQJsjQ?si=xjiv3P5Lyd5M__jR"
+        }],
+        "contact": {},
+        "bio": "Petr Ivan, absolvent Arcibiskupského gymnázia v Kroměříži, se věnuje programování již od 12 let, kdy začal vytvářet své první projekty v oblasti vývoje her. Postupně se zaměřil na umělou inteligenci, což se promítlo i do projektu ChordSeqAI, v němž vyvíjí modely založené na strojovém učení a uplatňuje je v aplikaci pro hudební skladatele. S touto prací získal 1. místo v celostátní přehlídce Středoškolské odborné činnosti v oboru informatika a následně obdržel Second Award na Taiwan International Science Fair. Kromě informatiky se také věnuje hudbě, zejména hře na klavír."
     }
 ]
