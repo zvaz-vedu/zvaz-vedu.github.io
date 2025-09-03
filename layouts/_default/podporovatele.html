@@ -1,0 +1,91 @@
+{{- define "styles" -}}
+    <link rel="stylesheet" href="/css/podporovatele.css">
+{{- end -}}
+{{- define "scripts" -}}
+    {{/* Add any scripts specific to this page here */}}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const supporterItems = document.querySelectorAll('.supporter-item');
+
+            supporterItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.querySelector('.monochrom').classList.add('hidden');
+                    item.querySelector('.color').classList.remove('hidden');
+                });
+                item.addEventListener('mouseleave', () => {
+                    item.querySelector('.monochrom').classList.remove('hidden');
+                    item.querySelector('.color').classList.add('hidden');
+                });
+            });
+        });
+    </script>
+{{- end -}}
+{{- define "main" -}}
+<header class="layout-container">
+    <div class="layout-content">
+        <div class="header-body">
+            <h1>{{ .Params.headerTitle }}</h1>
+            <p class="header-text">{{ .Params.headerText }}</p>
+        </div>
+        <img class="mark-img" src="/media/imgs/base/mark.webp">
+    </div>
+</header>
+<div class="layout-container" id="content">
+    <div class="layout-content" style="padding:0">
+        {{- $partners := slice -}}
+        {{- $sponsors := slice -}}
+        
+        {{- range $key, $value := .Site.Data.podporovatele -}}
+            {{- if eq $value.type "sponzor" -}}
+                {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
+            {{- else if eq $value.type "partner" -}}
+                {{- $partners = $partners | append (dict "key" $key "data" $value) -}}
+            {{- end -}}
+        {{- end -}}
+
+        {{- if gt (len $sponsors) 0 -}}
+        <section class="layout-container section-sponsors">
+            <div class="layout-content supporter-section">
+                <h2><span>Sponzoři</span></h2>
+                <div class="supporters-grid">
+                    {{- range $sponsors -}}
+                        <div class="supporter-item sponsor">
+                            <div class="supporter-img-wrapper">
+                                <img class="monochrom" src="/media/imgs/partners/monochrom/{{ .key }}-monochrom.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                <img class="color hidden" src="/media/imgs/partners/{{ .key }}.webp" alt="Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                            </div>
+                            <div class="supporter-info">
+                                <h3 class="supporter-name">{{ .data.name }}</h3>
+                                <p class="supporter-city">{{ .data.city }}</p>
+                            </div>
+                        </div>
+                    {{- end -}}
+                </div>
+            </div>
+        </section>
+        {{- end -}}
+        
+        {{- if gt (len $partners) 0 -}}
+        <section class="layout-container section-partners">
+            <div class="layout-content supporter-section">
+                <h2><span>Partneři</span></h2>
+                <div class="supporters-grid">
+                    {{- range $partners -}}
+                        <div class="supporter-item partner">
+                            <div class="supporter-img-wrapper">
+                                <img class="monochrom" src="/media/imgs/monochrom/{{ .key }}-monochrom.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                <img class="color hidden" src="/media/imgs/partners/{{ .key }}.webp" alt="Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                            </div>
+                            <div class="supporter-info">
+                                <h3 class="supporter-name">{{ .data.name }}</h3>
+                                <p class="supporter-city">{{ .data.city }}</p>
+                            </div>
+                        </div>
+                    {{- end -}}
+                </div>
+            </div>
+        </section>
+        {{- end -}}
+    </div>
+</div>
+{{- end -}}

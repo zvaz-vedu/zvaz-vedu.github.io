@@ -1,7 +1,7 @@
 ---
 title: Podpořte nás
-layout: single
+layout: podporovatele
 
-headerTitle: "Podpořte nás!"
-headerText: "Pomozte nám dostávat zájem o STEM do nové generace!"
+headerTitle: "Podpořili nás"
+headerText: "Pro hladký běh Zvaž vědu! potřebujeme finanční i materiálové prostředky."
 ---

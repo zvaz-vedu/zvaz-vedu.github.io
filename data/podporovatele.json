@@ -1,0 +1,37 @@
+{
+  "eserocz-cz": {
+    "name": "esero.cz",
+    "type": "sponzor",
+    "city": "Praha, Brno"
+  },
+  "fav-zcu-cz": {
+    "name": "Fakulta aplikovaných věd ZČU",
+    "type": "sponzor",
+    "city": "Plzeň"
+  },
+  "kudyznudy-cz": {
+    "name": "Kudy z nudy",
+    "type": "partner",
+    "city": "Brno"
+  },
+  "hvezdarna-cz": {
+    "name": "Hvězdárna a planetárium Brno",
+    "type": "sponzor",
+    "city": "Praha, Brno"
+  },
+  "podporatalentu-cz": {
+    "name": "GoHigher - podpora talentů",
+    "type": "sponzor",
+    "city": "Plzeň"
+  },
+  "radovanek-cz": {
+    "name": "Radovánek",
+    "type": "sponzor",
+    "city": "Plzeň"
+  },
+  "senat-cz": {
+    "name": "Senát Parlamentu ČR",
+    "type": "sponzor",
+    "city": "Praha"
+  }
+}
