@@ -33,5 +33,20 @@
     "name": "Senát Parlamentu ČR",
     "type": "sponzor",
     "city": "Praha"
+  },
+  "famelab": {
+    "name": "FameLab - Talking Science",
+    "type": "partner",
+    "city": "Praha"
+  },
+  "plnoc": {
+    "name": "Plzeňská přednášková noc",
+    "type": "partner",
+    "city": "Plzeň"
+  },
+  "stemhub": {
+    "name": "STEM_HUB",
+    "type": "partner",
+    "city": "Praha"
   }
 }
