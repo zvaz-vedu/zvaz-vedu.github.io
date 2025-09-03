@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/podporovatele.css">
 {{- end -}}
 {{- define "scripts" -}}
-    {{/* Add any scripts specific to this page here */}}
+    <link rel="script" href="/js/darkmode.js" defer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const supporterItems = document.querySelectorAll('.supporter-item');
@@ -62,6 +62,10 @@
                             </a>
                         </div>
                     {{- end -}}
+                    <a href="#" class="supporter-item ghost-card" style="text-decoration: none; color: inherit">
+                        <div class="plus-btn">&plus;</div>
+                        <p class="ghost-card-text">Chcete tu také být?</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -86,6 +90,10 @@
                             </a>
                         </div>
                     {{- end -}}
+                    <a href="#" class="supporter-item ghost-card" style="text-decoration: none; color: inherit">
+                        <div class="plus-btn">&plus;</div>
+                        <p class="ghost-card-text">Chcete tu také být?</p>
+                    </a>
                 </div>
             </div>
         </section>
