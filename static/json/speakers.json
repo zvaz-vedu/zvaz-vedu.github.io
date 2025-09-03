@@ -415,7 +415,11 @@
             "title": "Může být umělá inteligence skutečně kreativní?",
             "youtube": "https://youtu.be/OaSZEUQJsjQ?si=xjiv3P5Lyd5M__jR"
         }],
-        "contact": {},
+        "contact": {
+            "facebook": "https://www.facebook.com/petrivan.m",
+            "linkedin": "https://www.linkedin.com/in/petr-ivan",
+            "website": "https://github.com/PetrIvan"
+        },
         "bio": "Petr Ivan, absolvent Arcibiskupského gymnázia v Kroměříži, se věnuje programování již od 12 let, kdy začal vytvářet své první projekty v oblasti vývoje her. Postupně se zaměřil na umělou inteligenci, což se promítlo i do projektu ChordSeqAI, v němž vyvíjí modely založené na strojovém učení a uplatňuje je v aplikaci pro hudební skladatele. S touto prací získal 1. místo v celostátní přehlídce Středoškolské odborné činnosti v oboru informatika a následně obdržel Second Award na Taiwan International Science Fair. Kromě informatiky se také věnuje hudbě, zejména hře na klavír."
     },
     {
