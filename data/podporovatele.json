@@ -1,62 +1,80 @@
 {
-	"eserocz-cz": {
-		"name": "ESERO Česká republika",
-		"type": "sponzor",
-		"city": "Praha, Brno",
-		"link": "https://www.eserocz.cz"
-	},
-	"fav-zcu-cz": {
-		"name": "Fakulta aplikovaných věd ZČU",
-		"type": "sponzor",
-		"city": "Plzeň",
-		"link": "https://fav.zcu.cz"
-	},
-	"kudyznudy-cz": {
-		"name": "Kudy z nudy",
-		"type": "partner",
-		"city": "Brno",
-		"link": "https://www.kudyznudy.cz"
-	},
-	"hvezdarna-cz": {
-		"name": "Hvězdárna a planetárium Brno",
-		"type": "sponzor",
-		"city": "Praha, Brno",
-		"link": "https://www.hvezdarna.cz"
-	},
-	"podporatalentu-cz": {
-		"name": "GoHigher - podpora talentů",
-		"type": "sponzor",
-		"city": "Plzeň",
-		"link": "https://www.podporatalentu.cz"
-	},
-	"radovanek-cz": {
-		"name": "Radovánek",
-		"type": "sponzor",
-		"city": "Plzeň",
-		"link": "https://www.radovanek.cz"
-	},
-	"senat-cz": {
-		"name": "Senát Parlamentu ČR",
-		"type": "sponzor",
-		"city": "Praha",
-		"link": "https://www.senat.cz"
-	},
-	"famelab": {
-		"name": "FameLab - Talking Science",
-		"type": "partner",
-		"city": "Praha",
-		"link": "https://famelab.cuni.cz/FL-1.html"
-	},
-	"plnoc": {
-		"name": "Plzeňská přednášková noc",
-		"type": "partner",
-		"city": "Plzeň",
-		"link": "https://www.plnoc.cz/"
-	},
-	"stemhub": {
-		"name": "STEM_Hub",
-		"type": "partner",
-		"city": "Praha",
-		"link": "https://www.stemhub.cz/"
-	}
+  "eserocz-cz": {
+    "name": "ESERO Česká republika",
+    "type": "sponzor",
+    "city": "Praha, Brno",
+    "link": "https://www.eserocz.cz"
+  },
+  "fav-zcu-cz": {
+    "name": "Fakulta aplikovaných věd ZČU",
+    "type": "sponzor",
+    "city": "Plzeň",
+    "link": "https://fav.zcu.cz"
+  },
+  "kudyznudy-cz": {
+    "name": "Kudy z nudy",
+    "type": "partner",
+    "city": "Brno",
+    "link": "https://www.kudyznudy.cz"
+  },
+  "hvezdarna-cz": {
+    "name": "Hvězdárna a planetárium Brno",
+    "type": "sponzor",
+    "city": "Praha, Brno",
+    "link": "https://www.hvezdarna.cz"
+  },
+  "podporatalentu-cz": {
+    "name": "GoHigher - podpora talentů",
+    "type": "sponzor",
+    "city": "Plzeň",
+    "link": "https://www.podporatalentu.cz"
+  },
+  "radovanek-cz": {
+    "name": "Radovánek",
+    "type": "sponzor",
+    "city": "Plzeň",
+    "link": "https://www.radovanek.cz"
+  },
+  "senat-cz": {
+    "name": "Senát Parlamentu ČR",
+    "type": "sponzor",
+    "city": "Praha",
+    "link": "https://www.senat.cz"
+  },
+  "famelab": {
+    "name": "FameLab - Talking Science",
+    "type": "partner",
+    "city": "Praha",
+    "link": "https://famelab.cuni.cz/FL-1.html"
+  },
+  "plnoc": {
+    "name": "Plzeňská přednášková noc",
+    "type": "partner",
+    "city": "Plzeň",
+    "link": "https://www.plnoc.cz/"
+  },
+  "stemhub": {
+    "name": "STEM_Hub",
+    "type": "partner",
+    "city": "Praha",
+    "link": "https://www.stemhub.cz/"
+  },
+  "nextgenz": {
+    "name": "NextGenZ",
+    "type": "partner",
+    "city": "Praha",
+    "link": "https://nextgenz.cz/"
+  },
+  "zarovky": {
+    "name": "ŽÁROVKY",
+    "type": "partner",
+    "city": "Praha",
+    "link": "https://www.zarovky.org/"
+  },
+  "edufestival": {
+    "name": "EduFestival",
+    "type": "partner",
+    "city": "Praha",
+    "link": "https://edufestival.cz/"
+  }
 }
