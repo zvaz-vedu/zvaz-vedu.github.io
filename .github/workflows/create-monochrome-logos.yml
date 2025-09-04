@@ -3,8 +3,8 @@ name: Generate Monochrome Images
 on:
   push:
     paths:
-      - 'media/orgs/**'
-      - 'media/partners/**'
+      - 'static/media/orgs/**'
+      - 'static/media/partners/**'
   workflow_dispatch:
 permissions:
   contents: write
