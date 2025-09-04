@@ -32,6 +32,15 @@ section .layout-content {
 	width: 100%;
 	padding: 0;
 }
+
+@media (max-width: 1400px) {
+	section .layout-content {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	
+}
+
 .row-reverse {
 	flex-direction: row-reverse !important;
 }
@@ -414,4 +423,14 @@ section .layout-content {
     .ghost-card .plus-btn {
         color: hsl(0, 0%, 50%);
     }
+}
+
+/* Pravidlo pro zobrazení dvou sloupců na mobilu */
+@media (min-width:350px) and (max-width: 600px) {
+    .supporters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+	.supporter-item.sponsor h3 {
+		font-size: 1.2rem;
+	}
 }

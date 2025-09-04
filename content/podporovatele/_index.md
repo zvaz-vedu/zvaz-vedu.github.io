@@ -1,5 +1,5 @@
 ---
-title: Podpořte nás
+title: Podpořili nás
 layout: podporovatele
 
 headerTitle: "Podpořili nás"
