@@ -1,0 +1,51 @@
+participants:
+  - key: janherzig
+    name: "Jan Herzig"
+    role: "Hlavní organizátor a spoluzakladatel"
+    text: "Všichni přednášející předvedli opravdu perfektní výkon v tom, jak srozumitelnou formou dokázali publiku předat informace o ne úplně jednoduchých tématech."
+  
+  - key: matyasmatta
+    name: "Matyáš Matta"
+    role: "Spoluzakladatel"
+    text: "Zorganizované je to pěkně, to nám říkali asi všichni. Nikdy se nám nic významného nepokazilo asi i proto, že jsme neměli milion dalších věcí na práci. Byl to pro nás hlavní projekt na čtyři měsíce a mohli jsme tomu dát všechno. Podle toho to vždycky dopadlo."
+    
+  - key: annakrebsova
+    name: "Anna Krebsová"
+    role: "Studentka a přednášející"
+    text: "To hlavní, co jsme chtěli při naší prezentaci říci, bylo zejména motivovat k mimoškolním aktivitám. Sami jsme důkazem toho, že se to vyplácí."
+
+orgs:
+  - key: novinkycz
+    name: "Novinky.cz"
+    text: "Akce Zvaž vědu!, kterou organizují studenti pro studenty, se uskuteční v pondělí 9. června v Senátu Parlamentu České republiky na Valdštejnském náměstí v Praze 1. Účastníci se mohou těšit na přednášky dvanácti inspirativních studentů z celého Česka. Nabídnou příběhy plné informací o vědě, technice a o zajímavých příležitostech. "
+    link: "https://www.novinky.cz/clanek/veda-skoly-budoucnost-zajistena-mladi-vedci-dokazuji-ze-cesko-ma-dobre-naslapnuto-40523184"
+    date: 2025-06-08
+    
+  - key: zcuinfo
+    name: "Západočeská univerzita v Plzni"
+    text: "Naše očekávání byla rozhodně překonána. A to jak počtem účastníků, tak zájmem, se kterým se přednáškového dne zúčastnili."
+    link: "https://info.zcu.cz/Stredoskolaci-sobe--Na-FAV-se-konal-maraton-prednasek-Zvaz-vedu!/clanek.jsp?id=5942"
+    
+  - key: ministerstvovyzkumu
+    name: "Marek Ženíšek, ministr pro vědu, výzkum a inovace"
+    text: "Aby tu bylo propojování vědy a výzkumu s mladými lidmi, zvlášť pokud si o to sami říkají."
+    
+  - key: plzenskykraj
+    name: "Plzeňský kraj"
+    text: "„Krásné na celé akci a také důvod, proč ji jako Plzeňský kraj podporujeme, že věda je tu prezentovaná jazykem, kterému mladí studenti rozumí. U nás má věda, výzkum a inovace jednoduše zelenou a tohle je jen jedna z mála skvělých akcí, které to potvrzují,“ podotkl náměstek hejtmana pro oblast školství a sportu Vladimír Kroc."
+    link: "https://www.businessinfo.cz/clanky/studenti-plzenskeho-kraje-motivovali-akci-zvaz-vedu/"
+    
+  - key: domazlice
+    name: "Město Domažlice"
+    text: "O významu této akce svědčí skutečnost, že ji přišlo podpořit několik významných osobností, především ministr pro vědu, výzkum a inovace PhDr. Marek Ženíšek PhD., jenž ocenil, že je zaměřena na propojování vědy a výzkumu s mladými lidmi."
+    link: "https://www.domazlice.eu/zpravodajstvi/zvaz-vedu-pod-taktovkou-domazlickeho-gymnazisty-7762cs.html"
+    
+  - key: gymnaziumrok
+    name: "Gymnázium a SOŠ Rokycany"
+    text: "Ohlasy ze strany učitelů i žáků jsou jednoznačně pozitivní."
+    link: "https://www.gasos-ro.cz/images/skola/urednideska/VZP_2024.pdf"
+
+  - key: prahatv
+    name: "Praha TV"
+    text: "Zvaž vědu je studentská iniciativa, která chce přiblížit vědu široké veřejnosti i svým vrstevníkům. Na letošní pátý ročník, poprvé pořádaný v Praze, dorazilo 150 zájemců a zaplnili sál Senátu Parlamentu ČR. Akce tak ukázala, že věda nemusí být nedostupná – důkazem je i gymnazista Pavel Hoda, člen Mensy a nadšený programátor, který společně s ostatními dokazuje, že věda je skutečně pro každého."
+    link: "https://prahatv.eu/zprava/budouci-vedci-ovladli-senat-akce-zvaz-vedu-motivuje-studenty-rozvijet-se-i-mimo-skolni-lavice/"
