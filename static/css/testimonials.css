@@ -195,16 +195,15 @@
 }
 
 .org-meta {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo auto width, name/date takes remaining space */
   align-items: center;
   gap: 1rem;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .org-logo-wrapper {
-  flex: 0 0 auto;
+  flex: none; /* logo stays its natural width */
 }
 
 .org-logo {
@@ -219,13 +218,13 @@
   filter: grayscale(0%) brightness(100%);
 }
 
+
 .org-bydate {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start; /* align left so text doesn’t overflow */
   gap: 0.25rem;
-  flex: 1 1 auto;
-  min-width: 120px;
+  min-width: 0; /* allows text to shrink instead of forcing overflow */
 }
 
 .org-name {
