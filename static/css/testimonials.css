@@ -1,7 +1,7 @@
 /* =========================
    TESTIMONIALS (full file)
    - participants: square 1/1
-   - orgs: wide 3/1
+   - orgs: wide, scalable
    - spacing between sections + columns
    - uses site variables: --text, --primaryXX, --secondaryXX, --accentXX, --inspacer, --transition, --shadow
    ========================= */
@@ -9,10 +9,10 @@
 /* --- Base / layout --- */
 
 .layout-content {
-    gap: 3rem
+    gap: 3rem;
 }
 .testimonial-section {
-  margin: 4rem 0 6rem; /* breathing room between sections */
+  margin: 4rem 0 6rem;
   color: var(--text);
 }
 
@@ -47,21 +47,21 @@
 .participants-section .section-title span::after { background-color: var(--accent70); }
 .orgs-section .section-title span::after        { background-color: var(--primary70); }
 
-/* grid wrapper for both sections; specific behaviour configured per section below */
+/* grid wrapper */
 .split-grid {
   display: grid;
-  gap: 2rem; /* space between columns and rows */
+  gap: 2rem;
   margin-top: 1.5rem;
   align-items: start;
   box-sizing: border-box;
 }
 
-/* participants: try to pack squares responsively */
+/* participants grid */
 .participants-section .split-grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-/* orgs: allow wider min width so 3:1 looks natural */
+/* orgs grid */
 .orgs-section .split-grid {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
@@ -79,7 +79,6 @@
   flex-direction: column;
 }
 
-/* subtle border-top accent (optional visual anchor) */
 .testimonial-card::before {
   content: "";
   display: block;
@@ -90,28 +89,25 @@
   opacity: 0.95;
 }
 
-/* --- Participants (square 1:1) --- */
+/* --- Participants --- */
 
 .testimonial-card.participant {
   background-color: var(--secondary30);
-  justify-content: space-between; /* keep author at bottom */
+  justify-content: space-between;
   padding: calc(var(--inspacer) / 1.25);
   position: relative;
 }
 
-/* top accent for participants */
 .testimonial-card.participant::before {
   background: linear-gradient(90deg, var(--accent70), color-mix(in srgb, var(--accent70) 60%, transparent));
 }
 
-/* hover */
 .testimonial-card.participant:hover {
   background-color: var(--secondary40);
   box-shadow: var(--shadow);
   transform: translateY(-4px);
 }
 
-/* content layout: quote grows, author anchored to bottom */
 .testimonial-text {
   font-style: italic;
   line-height: 1.6rem;
@@ -119,11 +115,9 @@
   color: var(--text);
   flex: 1 1 auto;
   overflow: auto;
-  /* ensure long quotes scroll inside the square if necessary */
   -webkit-overflow-scrolling: touch;
 }
 
-/* author row anchored at the bottom */
 .testimonial-author {
   display: flex;
   align-items: center;
@@ -132,32 +126,23 @@
   margin-top: 0.5rem;
 }
 
-/* avatar / initials style */
-.author-img {
+.author-img, .author-initials {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--secondary);
   flex-shrink: 0;
+  border: 3px solid var(--secondary);
   background-color: var(--background);
-}
-
-.author-initials {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  background-color: var(--accent40);
   font-weight: 700;
   font-size: 1.1rem;
-  border: 3px solid var(--secondary);
   color: var(--text);
-  flex-shrink: 0;
 }
 
-/* name + role (use accent for name) */
+.author-img { object-fit: cover; }
+.author-initials { background-color: var(--accent40); }
+
 .author-info {
   display: flex;
   flex-direction: column;
@@ -175,31 +160,17 @@
   color: var(--text);
 }
 
-/* --- Orgs (wide 2:1) --- */
+/* --- Orgs --- */
 
 .testimonial-card.org {
   background-color: var(--primary20);
   padding: calc(var(--inspacer) / 1.1);
   display: flex;
-  flex-direction: column;   /* top = quote, bottom = meta */
+  flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
 }
-.org-meta {
-  display: flex;
-  justify-content: space-between; /* logo left, name/date right */
-  align-items: center;
-  gap: 1rem;
-}
-.org-bydate {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.25rem;
-}
 
-
-/* top accent for orgs */
 .testimonial-card.org::before {
   background: linear-gradient(90deg, var(--primary70), color-mix(in srgb, var(--primary70) 60%, transparent));
 }
@@ -210,28 +181,30 @@
   transform: translateY(-3px);
 }
 
-/* left: quote expands, clamp to avoid overflow breaking shallow aspect */
 .testimonial-card.org blockquote {
   margin: 0;
   font-style: italic;
   line-height: 1.5rem;
   color: var(--text);
-  flex: 1 1 auto;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* show up to 3 lines */
+  -webkit-line-clamp: 3;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
-/* right: logo + org name */
-.org-source {
+.org-meta {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: .75rem;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.org-logo-wrapper {
   flex: 0 0 auto;
-  margin-left: 0.5rem;
-  white-space: nowrap;
 }
 
 .org-logo {
@@ -246,11 +219,24 @@
   filter: grayscale(0%) brightness(100%);
 }
 
+.org-bydate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  flex: 1 1 auto;
+  min-width: 120px;
+}
+
 .org-name {
   font-weight: 700;
   color: var(--primary90);
   margin: 0;
   font-size: 0.95rem;
+}
+.org-date {
+  font-size: 0.85rem;
+  opacity: 0.8;
 }
 
 /* --- Accessibility / small text fallback --- */
@@ -259,14 +245,6 @@
   color: var(--text);
   font-size: 1rem;
 }
-
-/* --- Divider option if you want visible separator between sections (comment out if not wanted) --- */
-/*
-.testimonial-section + .testimonial-section {
-  border-top: 1px solid color-mix(in srgb, var(--text) 6%, transparent);
-  padding-top: 3rem;
-}
-*/
 
 /* --- Responsive --- */
 
@@ -277,33 +255,39 @@
 }
 
 @media (max-width: 900px) {
-  /* stack into single column on smaller screens */
   .split-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* stack columns */
   }
 
-  /* keep participants tall square even on mobile */
   .testimonial-card.participant {
-    aspect-ratio: 1 / 1;
+    /* remains square, optional */
   }
 
-  /* for orgs, switch to column layout so content reads naturally on narrow screens */
   .testimonial-card.org {
-    aspect-ratio: 3 / 1; /* still keeps a wide feel but will use full width */
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
   }
-  .testimonial-card.org blockquote {
-    -webkit-line-clamp: 4; /* allow one extra line when stacked */
+
+  .org-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
-  .org-source {
-    margin-left: 0;
+
+  .org-bydate {
+    align-items: flex-start;
+  }
+
+  .testimonial-card.org blockquote {
+    -webkit-line-clamp: 4; /* extra line when stacked */
+  }
+  .layout-content {
+    display: block
   }
 }
 
 @media (max-width: 550px) {
   .section-title { font-size: 1.6rem; }
   .author-img, .author-initials { width: 56px; height: 56px; }
-  .testimonial-card.org { aspect-ratio: 2.6/1; }
 }

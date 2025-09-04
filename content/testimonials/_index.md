@@ -1,7 +1,5 @@
 ---
 title: "Ohlasy"
-headerTitle: "Ohlasy"
-headerText: "Co o nás říkají účastníci a média."
 
 participants:
   - text: "Kvalita služby je naprosto výjimečná..."
@@ -36,3 +34,4 @@ orgs:
     name: "Forbes"
     logo: "/media/logos/forbes.png"
 ---
+<!-- header jsem ODSTRANIL protože byl ošklivý!! -->

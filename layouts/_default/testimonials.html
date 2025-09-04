@@ -3,52 +3,9 @@
 {{- end -}}
 
 {{- define "main" -}}
-<header class="layout-container">
-  <div class="layout-content">
-    <div class="header-body">
-      <h1>{{ .Params.headerTitle }}</h1>
-      <p class="header-text">{{ .Params.headerText }}</p>
-    </div>
-    <img class="mark-img" src="/media/imgs/base/mark.webp" alt="Logo">
-  </div>
-</header>
 
 <div class="layout-container" id="content">
   <div class="layout-content">
-
-    <!-- Participants -->
-    {{- if .Site.Data.testimonials.participants }}
-    <section class="testimonial-section participants-section">
-      <h2 class="section-title"><span>Ohlasy od účastníků</span></h2>
-      <div class="split-grid">
-        {{- range .Site.Data.testimonials.participants }}
-        <div class="testimonial-card participant">
-          <p class="testimonial-text">"{{ .text }}"</p>
-          <div class="testimonial-author">
-            {{- $img := .img -}}
-            {{- if $img }}
-              <img class="author-img" src="{{ $img }}" alt="{{ .name }}" loading="lazy"
-                   onerror="this.src='https://placehold.co/96x96/cccccc/333333?text=👤'">
-            {{- else }}
-              {{- $parts := split .name " " -}}
-              {{- $first := "" -}}
-              {{- if ge (len $parts) 1 }}{{ $first = upper (substr (index $parts 0) 0 1) }}{{ end -}}
-              {{- $last := "" -}}
-              {{- if ge (len $parts) 2 }}{{ $last = upper (substr (index $parts (sub (len $parts) 1)) 0 1) }}{{ end -}}
-              {{- $initials := (print $first $last) -}}
-              <div class="author-initials" aria-hidden="true">{{ $initials }}</div>
-            {{- end }}
-
-            <div class="author-info">
-              <p class="author-name">{{ .name }}</p>
-              <p class="author-role">{{ .role }}</p>
-            </div>
-          </div>
-        </div>
-        {{- end }}
-      </div>
-    </section>
-    {{- end }}
 
     <!-- Orgs / Media -->
     {{- if .Site.Data.testimonials.orgs }}
@@ -82,6 +39,40 @@
                 </div>
             </div>
             {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    <!-- Participants -->
+    {{- if .Site.Data.testimonials.participants }}
+    <section class="testimonial-section participants-section">
+      <h2 class="section-title"><span>Ohlasy od účastníků</span></h2>
+      <div class="split-grid">
+        {{- range .Site.Data.testimonials.participants }}
+        <div class="testimonial-card participant">
+          <p class="testimonial-text">"{{ .text }}"</p>
+          <div class="testimonial-author">
+            {{- $img := .img -}}
+            {{- if $img }}
+              <img class="author-img" src="{{ $img }}" alt="{{ .name }}" loading="lazy"
+                   onerror="this.src='https://placehold.co/96x96/cccccc/333333?text=👤'">
+            {{- else }}
+              {{- $parts := split .name " " -}}
+              {{- $first := "" -}}
+              {{- if ge (len $parts) 1 }}{{ $first = upper (substr (index $parts 0) 0 1) }}{{ end -}}
+              {{- $last := "" -}}
+              {{- if ge (len $parts) 2 }}{{ $last = upper (substr (index $parts (sub (len $parts) 1)) 0 1) }}{{ end -}}
+              {{- $initials := (print $first $last) -}}
+              <div class="author-initials" aria-hidden="true">{{ $initials }}</div>
+            {{- end }}
+
+            <div class="author-info">
+              <p class="author-name">{{ .name }}</p>
+              <p class="author-role">{{ .role }}</p>
+            </div>
+          </div>
+        </div>
+        {{- end }}
       </div>
     </section>
     {{- end }}
