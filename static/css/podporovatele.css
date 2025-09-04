@@ -285,9 +285,6 @@ section .layout-content {
 	opacity: 1;
 }
 @media (max-width: 900px) {
-	section .layout-content {
-		flex-direction: column-reverse !important;
-	}
 	section .layout-content.team-section {
 		flex-direction: column !important;
 	}
@@ -432,5 +429,11 @@ section .layout-content {
     }
 	.supporter-item.sponsor h3 {
 		font-size: 1.2rem;
+	}
+	.ghost-card-text {
+		padding: 2rem;
+	}
+	.ghost-card {
+		min-height: 160px;
 	}
 }
