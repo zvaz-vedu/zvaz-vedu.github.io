@@ -52,6 +52,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add media/orgs/monochrom media/partners/monochrom
+          git add static/media/imgs/orgs/monochrom static/media/imgs/partners/monochrom
           git commit -m "Add monochrome images" || echo "No changes to commit"
           git push
