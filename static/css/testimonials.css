@@ -290,3 +290,9 @@
   .section-title { font-size: 1.6rem; }
   .author-img, .author-initials { width: 56px; height: 56px; }
 }
+
+@media (prefers-color-scheme: light) {
+	.org-logo {
+		filter: invert(1);
+	}
+}
