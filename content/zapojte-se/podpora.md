@@ -7,4 +7,13 @@ headerText: "Pro hladký běh Zvaž vědu! potřebujeme finanční i materiáln�
 ---
 <!---
 Data o podporovatelích se bere z 'podporovatele.json' v root/data/!
+
+odstraněny žárovky
+,
+  "zarovky": {
+    "name": "ŽÁROVKY",
+    "type": "partner",
+    "city": "Praha",
+    "link": "https://www.zarovky.org/"
+  }
 -->
