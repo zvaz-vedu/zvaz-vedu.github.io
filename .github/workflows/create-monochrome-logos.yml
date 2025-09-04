@@ -6,6 +6,8 @@ on:
       - 'media/orgs/**'
       - 'media/partners/**'
   workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   monochrome:
