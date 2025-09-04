@@ -58,3 +58,8 @@ edufestival:
   type: partner
   city: Praha
   link: 'https://edufestival.cz/'
+galaktickavyzva:
+  name: Galaktická Vědomostní Výzva
+  type: partner
+  city: Praha
+  link: 'https://www.galaktickavyzva.cz/'
