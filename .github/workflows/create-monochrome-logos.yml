@@ -44,8 +44,8 @@ jobs:
                       new_name = img_path.stem + '-monochrom' + img_path.suffix
                       im.save(Path(output_folder) / new_name)
 
-          process_folder('media/orgs', 'media/orgs/monochrom')
-          process_folder('media/partners', 'media/partners/monochrom')
+          process_folder('static/media/imgs/orgs', 'static/media/imgs/orgs/monochrom')
+          process_folder('static/media/imgs/partners', 'static/media/imgs/partners/monochrom')
           EOF
 
       - name: Commit changes
