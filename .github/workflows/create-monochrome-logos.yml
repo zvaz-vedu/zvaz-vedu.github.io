@@ -59,7 +59,7 @@ jobs:
                               for x in range(im.width):
                                   r, g, b, a = pixels[x, y]
                                   if a != 0:
-                                      if (r+g+b > 750) and (img_path = 'static/media/imgs/partners/galakticka-vyzva.webp'):     # if almost white on weird galaktikcá výzva -> generate transparent instead 
+                                      if (r+g+b > 750) and (img_path == 'static/media/imgs/partners/galakticka-vyzva.webp'):     # if almost white on weird galaktikcá výzva -> generate transparent instead 
                                           pixels[x, y] = (255, 255, 255, 0)
                                           print(f"Eda se omlouvá s {img_path} :(")
                                       else:
