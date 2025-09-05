@@ -215,7 +215,7 @@
   background-color: transparent;
 }
 .testimonial-card.org:hover .org-logo {
-  filter: grayscale(0%) brightness(100%);
+  filter: grayscale(0%) brightness(70%);
 }
 
 
