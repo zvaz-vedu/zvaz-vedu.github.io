@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: write
-
 jobs:
   monochrome:
     runs-on: ubuntu-latest
@@ -18,7 +17,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           lfs: true  # fetch actual LFS files if you use Git LFS
-
+          
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -33,7 +32,7 @@ jobs:
           ls -l static/media/imgs/orgs || echo "Folder missing"
           echo "Partner images:"
           ls -l static/media/imgs/partners || echo "Folder missing"
-
+          
       - name: Generate monochrome images
         run: |
           python - <<'EOF'
