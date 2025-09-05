@@ -3,12 +3,14 @@ participants:
     name: "Marek Ženíšek"
     role: "ministr pro vědu, výzkum a inovace"
     text: "Aby tu bylo propojování vědy a výzkumu s mladými lidmi, zvlášť pokud si o to sami říkají."
+    img: true
   
   - key: simon-klinga
     name: "Simon Klinga"
     role: "Forbes 30 pod 30 2025"
-    text: "Je potřeba studentům ukázat, že vědci mohou být ty rockstars. ke kterým lidé mohou vlastně vzhlížet, že to mohou být i oni, a proto podle mě akce jako Zvaž vědu! jsou super."
-    
+    text: "Je potřeba studentům ukázat, že vědci mohou být ty rockstars. ke kterým lidé mohou vlastně vzhlížet, že to mohou být i oni, a proto podle mě akce jako Zvaž vědu! jsou hrozně super."
+    img: true
+
   - key: annakrebsova
     name: "Anna Krebsová"
     role: "Studentka a přednášející"
