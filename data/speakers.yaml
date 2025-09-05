@@ -1,0 +1,464 @@
+---
+- name: Jan Herzig
+  photo: "/media/imgs/team/honza.webp"
+  locations:
+  - Plzeň
+  - Praha
+  lectures:
+  - title: 'Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva'
+    youtube: https://www.youtube.com/watch?v=UTJvGERkmi8
+  - title: Astronomie
+    youtube: https://www.youtube.com/watch?v=XoXId4AJF8w
+  - title: 'Novinky z vesmíru #1'
+    youtube: https://www.youtube.com/watch?v=crEpDhHacX4&t=1s
+  - title: 'Nová éra astrofyziky: Najdeme druhou Zemi?'
+    youtube: https://youtu.be/Da3-AOuQbGM?si=BsgRsVGzuyVRaKyt
+  contact:
+    instagram: https://www.instagram.com/jan.herzig//
+    linkedin: https://www.linkedin.com/in/jan-herzig-372a46316/
+    facebook: https://www.facebook.com/profile.php?id=100084768547795
+  bio: Honza je studentem Gymnázia J. Š. Baara v Domažlicích. Už od mala si neustále
+    kladl nějaké otázky. Nejdříve ho zajímala příroda, pak historie, letectví a před
+    šesti lety se dostal k vesmíru. Ten ho naprosto pohltil. Pravidelně se účastní
+    různých olympiád, v astronomické uspěl i v mezinárodních kolech. Ve spolupráci
+    s Astronomickým ústavem AV ČR se věnuje výzkumu exoplanet. Hrozně ho baví i popularizace
+    vědy. Hlavní náplní jeho práce je nyní projekt Zvaž vědu!, u jehož zrodu v roce
+    2023 stál a který nyní vede. Volný čas tráví nejraději cestováním, procházkami
+    a jízdou na kole, prázdniny si nejvíce užije na chalupě s přáteli.
+- name: Matyáš Matta
+  photo: "/media/imgs/team/maty.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: 'Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti'
+    youtube: https://www.youtube.com/watch?v=T0K4nrybX1w
+  - title: Fyzikální soutěže
+    youtube: https://www.youtube.com/watch?v=adZuvRsPNSI
+  contact:
+    website: https://matyasmatta.github.io/id_en
+    linkedin: https://www.linkedin.com/in/matyasmatta/
+    email: matta@zvazvedu.cz
+  bio: Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho
+    zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci
+    vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni.
+- name: Tereza Jelínková
+  photo: "/media/imgs/speakers/tereza-jelinkova.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: 'Otevřená věda: Nastartuj svoji vědeckou kariéru už na střední!'
+    youtube: https://www.youtube.com/watch?v=lFz-R1Uz7C0
+  contact:
+    instagram: https://www.instagram.com/terezajelin?igsh=ZThubXcxbWtnZXEx&utm_source=qr
+    linkedin: https://www.linkedin.com/in/tereza-jel%C3%ADnkov%C3%A1-18936b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+  bio: Tereza je studentkou Gymnázia v Prachaticích a věnuje se vědě a výzkumu v oblasti
+    biologie a chemie. V rámci programu Otevřená věda působila v Biologickém centru
+    AV ČR a nyní pracuje na středoškolské odborné činnosti (SOČ) na Jihočeské univerzitě.
+    Zúčastnila se odborných kurzů a letních škol. Je součástí organizačního týmu STEM_HUB
+    a v rámci Expedice Mars absolvovala přípravnou simulaci i misi v Hydronautu.
+- name: Richard Nikel
+  photo: "/media/imgs/speakers/richard-nikel.webp"
+  locations:
+  - Plzeň
+  - Praha
+  lectures:
+  - title: 'LASAR: Ze střední školy až na oběžnou dráhu Země'
+    youtube: https://www.youtube.com/watch?v=s0v4DxPTLH0
+  - title: 'LASAR: Ze střední školy až na oběžnou dráhu'
+    youtube: https://youtu.be/50XSqE1CCqw?si=uIP9IhuJaZfUJoNl
+  contact:
+    instagram: https://www.instagram.com/_richnik_/
+    linkedin: https://www.linkedin.com/in/richard-nikel/
+    youtube: https://www.youtube.com/@Vedecky
+  bio: Richard je studentem všeobecného Gymnázia Blansko. Je členem týmu LASAR, který
+    v roce 2024 vyhrál mezinárodní Conrad Challenge a následně vypustil na oběžnou
+    dráhu vlastní satelit. V týmu se věnuje PR a inženýrské větvi. Svoje nadšení do
+    vesmíru se snaží předat i prostřednictvím popularizačních videí na YouTube kanále
+    Vědecký Ferin. Po střední míří do oboru v oblasti astronomie nebo kosmických technologií.
+- name: Monika Dlouhá
+  photo: "/media/imgs/speakers/monika-dlouha.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: Expedice Mars, DofE
+    youtube: https://www.youtube.com/watch?v=pmJK9aulwvs
+  contact:
+    instagram: https://www.instagram.com/dlouhamoni/
+    email: xdlouha@gml.cz
+  bio: Monika je studentka Gymnázia Matyáše Lercha v Brně. Zajímá se především o biologii,
+    chemii a vesmír. Účastnila se projektů Expedice Mars a Talentové akademie, pracuje
+    na SOČce, dělá DofE a díky letu Zero-G se stala ambasadorkou České cesty do vesmíru.
+    Ve svém volném čase hraje na saxofon, ráda čte a plave.
+- name: Lukáš Hrdý
+  photo: "/media/imgs/speakers/lukas-hrdy.webp"
+  locations:
+  - Brno
+  - Praha
+  lectures:
+  - title: Stáž Akademie věd, SOČ, Astronomická olympiáda
+    youtube: https://www.youtube.com/watch?v=C8lJ0lj4i14
+  - title: Věda je Otevřená a čeká jen na tebe!
+    youtube: https://youtu.be/rlMISEk1SSo?si=eGUwRwNLYnZGpNwC
+  contact:
+    youtube: https://www.youtube.com/@kosmickeokenko
+  bio: Astronomie, fyzika a popularizace vědy – to je svět Lukáše Hrdého. Od vývoje
+    numerických metod pro kvantovou mechaniku po analýzu dat v gama astronomii mění
+    svou vášeň v reálné projekty. Na konferenci Otevřené vědy 2024 získal jeho tým
+    2. místo za výzkum kvantových systémů. Na hvězdárně odemyká dveře veřejnosti do
+    tajů astronomie a fyziky a na svém YouTube kanálu Kosmické okénko symbolicky otevírá
+    okénko do vesmíru pro každého. Jeho cílem je posouvat hranice poznání a sdílet
+    je s ostatními.
+- name: Ondra Pham
+  photo: "/media/imgs/speakers/ondra-pham.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: Czech Rocket Challenge
+    youtube: https://www.youtube.com/watch?v=nDCbyKw7g8Y
+  contact:
+    linkedin: www.linkedin.com/in/bangpham1
+  bio: Ondra je studentem SŠTE Olomoucká, který věří, že technologie mají sílu měnit
+    svět k lepšímu. Od raketových soutěží jako Czech Rocket Challenge, přes stavbu
+    RC modelů na stlačený vzduch až po stáž v Irsku nebo mezinárodní projekt zaměřený
+    na Smart cities Portugalsku – všude hledá cesty, jak své nápady proměnit v reálná
+    řešení. Své nadšení pro vědu a techniku se snaží šířit dál jako lektor kroužku
+    Lego robotiky pro děti. Jeho snem je nejen pomoct světu, ale také inspirovat další
+    generaci, aby se nebála tvořit, přemýšlet a měnit svět kolem sebe. Volný čas věnuje
+    karate, které ho učí trpělivosti a vytrvalosti.
+- name: Kristýna Mičková
+  photo: "/media/imgs/speakers/kristyna-mickova.webp"
+  locations:
+  - Plzeň
+  - Praha
+  lectures:
+  - title: Matematika v reálném životě
+    youtube: https://www.youtube.com/watch?v=K_tXhBGpxD0
+  - title: 'Změna je život: derivace a integrály v reálném životě'
+    youtube: https://youtu.be/DbOPaim_n2A?si=6b3OSDipzeLfGEqk
+  contact:
+    instagram: https://www.instagram.com/kristyn.mickova/
+  bio: Kristýna je studentkou Gymnázia v Plasích a také velkou milovnicí matematiky.
+    Zabývá se především didaktikou matematiky. Již od základní školy se věnuje doučování.
+    Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde
+    se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech
+    jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz.
+- name: Pavel Jan Linka
+  photo: "/media/imgs/speakers/pavel-linka.webp"
+  locations:
+  - Plzeň
+  - Praha
+  lectures:
+  - title: Talnet
+    youtube: https://www.youtube.com/watch?v=DF24leY7xWY
+  - title: 'Superhrdinové biochemie: CRISPR/Cas9 a AI'
+    youtube: https://www.youtube.com/watch?v=0BuFHCrvAmY
+  - title: 'Když antibiotika přestávají fungovat: Tichá hrozba 21. století'
+    youtube: https://youtu.be/6s_ycF2Zs-o?si=BuYgIZWGG96fC89M
+  contact:
+    instagram: https://www.instagram.com/pavellinka/
+  bio: Pavel je čerstvým studentem Vysoké školy chemicko-technologické v Praze. Již
+    od střední školy se zajímá o nejrůznější vědecká témata z oblasti biochemie. Na
+    střední škole se zúčastnil chemické a biologické olympiády, aktivit ve spolku
+    Talnet a na svém studijním pobytu v Německu soutěže Jugend forscht. Mimo vědu
+    se věnuje hraní v orchestru a cyklistice.
+- name: Štěpánka Keprtová
+  photo: "/media/imgs/speakers/stepanka-keprtova.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: Věda jako jazyk
+    youtube: https://www.youtube.com/watch?v=eyOzLe_WfFM
+  contact:
+    linkedin: https://www.linkedin.com/in/štěpánka-keprtová-648079247
+  bio: Štěpánka je vášnivou nadšenkyní do biologie a její přirozený habitat je histologická
+    laboratoř, ve které se uhnízdila v rámci psaní práce SOČ. Od té doby se neustále
+    zabývá myším řezákem a způsoby, jakými je regulován jeho takřka neomezený růst.
+    Protože, kdo by nechtěl cíleně ovlivňovat dělení buněk a předejít tak i fenoménu,
+    který je znám jako rakovina? Nicméně se ale neštítí ani terénní biologie, kterou
+    si zakusila ve švýcarských Alpách na International Wildlife Research Week. Ani
+    popularizace vědy jí není cizí, podílí se na projektech LASAR a CZECHOPES.
+- name: Simon Klinga
+  photo: "/media/imgs/speakers/simon-klinga.webp"
+  locations:
+  - Brno
+  - Praha
+  lectures:
+  - title: Ze školní lavice před porotce z NASA (a vlastní družici na raketě SpaceX)
+    youtube: https://www.youtube.com/watch?v=iWbyGRPEGa0&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=3
+  - title: 'LASAR: Ze střední školy až na oběžnou dráhu'
+    youtube: https://youtu.be/50XSqE1CCqw?si=uIP9IhuJaZfUJoNl
+  contact:
+    instagram: https://www.instagram.com/simon_klinga/
+    website: https://klinga.cz/
+    linkedin: https://www.linkedin.com/in/simon-klinga-199a62269/
+    facebook: https://www.facebook.com/SimonKlinga
+  bio: Simon je student Gymnázia Brno - Bystrc a jeho hlavní vášní je vesmírný průmysl.
+    Jeho cesta začala Expedicí Mars, pokračovala výhrou mezinárodní soutěže Conrad
+    Challenge a vysláním satelitu do vesmíru. Umístil se v TOP2 v soutěži Středoškolák
+    roku 2024 a Forbes ho zahrnul do 30 pod 30 pro rok 2024.
+- name: Anna Černá
+  photo: "/media/imgs/speakers/anna-cerna.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: 'Výroba proteinů: mission (im)possible?'
+    youtube: https://www.youtube.com/watch?v=4w4Kbed35vw&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=8
+  contact:
+    instagram: ''
+    website: ''
+    linkedin: ''
+    facebook: ''
+  bio: ''
+- name: Eduard Plic
+  photo: "/media/imgs/team/eda.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: Logická olympiáda
+    youtube: https://www.youtube.com/watch?v=eMoqD_RhvM8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=8
+  - title: 'Programování pro vesmír: Měření mraků z paluby ISS a aktivity ESERO'
+    youtube: https://www.youtube.com/watch?v=jgRuSHghZN4&list=PL1NMrPWjk08TqugSEkfgSzry_AjJ-T_cN&index=8
+  contact: {}
+  bio: Eda je studentem Masarykova gymnázia v Plzni. Zajímá se o matematiku, fyziku,
+    astronomii a programování. V roce 2024 se stal nejúspěšnějším autorem práce SOČ
+    v oboru fyzika, což mu zajistilo postup na mezinárodní olympiádu EUCYS. Ve volném
+    čase rád hraje na trubku a věnuje se fotografování.
+- name: Tomáš Datinský
+  photo: "/media/imgs/speakers/tomas-datinsky.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: Jak se zapojit do vědy už na střední?
+    youtube: https://www.youtube.com/watch?v=Wvk_oMwS36o&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=4
+  contact:
+    instagram: ''
+    website: ''
+    linkedin: ''
+    facebook: ''
+  bio: ''
+- name: Michal Křipač
+  photo: "/media/imgs/speakers/michal-kripac.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: Jak souvisí informatika s hudbou?
+    youtube: https://www.youtube.com/watch?v=BTZLgmGh3qY&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=2
+  contact:
+    instagram: https://www.instagram.com/ten.majkl/
+    website: https://github.com/tenmajkl
+    linkedin: https://www.linkedin.com/in/michal-k%C5%99ipa%C4%8D-75177b269/
+    facebook: ''
+  bio: Michal je brněnský student informatiky, které se volnočasově věnuje v různých
+    oblastech od 12 let. Mezi jeho projekty patří webový portál Burza učebnic a s
+    tím související webová technologie Lemon. Vedle informatiky se věnuje také experimentální
+    elektronické hudbě a vyrábění vlastních nástrojů kolem brněnského kolektivu Bastl
+    Instruments.
+- name: Sebastian Matoušek
+  photo: "/media/imgs/speakers/sebastian-matousek.webp"
+  locations:
+  - Brno
+  lectures:
+  - title: Jak mě robotika dostala do světa?
+    youtube: https://www.youtube.com/watch?v=oxU6NfcEoG8&list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo&index=1
+  contact:
+    instagram: https://www.instagram.com/sebmatousek/
+    website: ''
+    linkedin: https://www.linkedin.com/in/sebastian-matou%C5%A1ek-825ba128a/
+    facebook: ''
+  bio: ''
+- name: Evelína Voleská
+  photo: "/media/imgs/speakers/evelina-voleska.webp"
+  locations:
+  - Praha
+  lectures:
+  - title: Ujel nám vlak? Když se zájmy (ne)potkávají se školním rozvrhem
+    youtube: https://youtu.be/4MTVJBiC5ks?si=KZIpczq27BRFSR0z
+  contact:
+    instagram: https://www.instagram.com/evelina.voleska/
+    website: ''
+    linkedin: https://www.linkedin.com/in/evelína-voleská-79a201341/
+    facebook: ''
+  bio: Evelína je studentkou 8. ročníku Gymnázia Česká Třebová. Od svých 16 let se
+    věnuje výzkumu v oblasti neurověd. Zúčastnila se několika soutěží, jako jsou SOČ
+    a České hlavičky, a dokonce se jí podařilo vycestovat na letní školu do Oxfordu.
+    Své aktivity v akademickém prostředí vyvažuje dobrovolnickou činností a zajímá
+    se také o divadelní tvorbu.
+- name: Matěj Šicner
+  photo: "/media/imgs/speakers/matej-sicner.webp"
+  locations:
+  - Plzeň
+  - Brno
+  lectures:
+  - title: AstroPi
+    youtube: https://www.youtube.com/watch?v=Smb-Vig1Dv8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=6
+  - title: Kvantové technologie - dveře do světa nevídaných možností
+    youtube: https://www.youtube.com/watch?v=BQUfMCNOnbQ&list=PL1NMrPWjk08TqugSEkfgSzry_AjJ-T_cN&index=2
+  contact:
+    instagram: https://www.instagram.com/msicner/
+    website: ''
+    linkedin: https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1icner-4680ba241/
+    facebook: https://www.facebook.com/matej.sicner.7
+  bio: Matěj je studentem Cyrilometodějského gymnázia v Brně a zkoumá využití kvantových
+    počítačů, jež prezentoval na světovém veletrhu ISEF a získal 2. místo v národním
+    kole EXPO Science AMAVET. Je členem týmu LASAR, který vypustil družici do vesmíru.
+    Absolvoval semestrální studium a stáž ve Vídni a popularizuje vědu – pořádá AstroPi
+    hackathony, Zvaž vědu! Brno a vede vědecký kroužek na škole.
+- name: Nikolas Pippal
+  photo: "/media/imgs/speakers/nikolas-pippal.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: Síla a moc aplikované matematiky
+    youtube: https://www.youtube.com/watch?v=ioyomuRd9TE
+  contact:
+    instagram: https://www.instagram.com/nik_pippal/
+    website: ''
+    linkedin: https://www.linkedin.com/in/nikolas-pippal-b2816b307/
+    facebook: ''
+  bio: Nik je studentem Gymnázia Olomouc-Hejčín. Jako mladý vědec se zaměřuje na propojení
+    výzkumu s praktickými řešeními pro každodenní život. Vyvinul nástroj pro detekci
+    mozkových nádorů a software pro snižování přehřívání měst. Za své projekty získal
+    ocenění na mezinárodních soutěžích ISEF a EUCYS a díky letu Zero-G se stal ambasadorem
+    České cesty do vesmíru. Kromě vědy se aktivně věnuje roli hokejového rozhodčího
+    a rád tráví čas na kole, kde nachází inspiraci.
+- name: Tereza Przeczková
+  photo: "/media/imgs/speakers/tereza-przeczkova.webp"
+  locations:
+  - Praha
+  lectures:
+  - title: 'Kvasinky jako vstupenka do světa: Moje cesta na UCL'
+    youtube: https://youtu.be/_hN5lfFp3tw?si=xHM9tJVl4NjM9fpx
+  contact:
+    instagram: https://www.instagram.com/terezaprzeczkova/
+    linkedin: https://www.linkedin.com/in/tereza-przeczkov%C3%A1/
+  bio: Tereza je studentkou oboru BSc Biomedical Sciences na University College London,
+    která má bohaté zkušenosti z výzkumu díky stážím ve Fyziologickém ústavu AV ČR,
+    na Katedře organické chemie PřF UPOL či v centru BIOCEV. Již na střední vystudovala
+    na olomoucké univerzitě buněčnou biologii a prošla řadou soutěží, včetně SOČ a
+    Českých hlaviček. Je také aktivní dobrovolnicí, působí jako vedoucí v programu
+    DofE a zabývá se prevencí syndromu vyhoření v organizaci Nevyhasni. Mimo to se
+    závodně věnuje olympijskému vzpírání.
+- name: Boris Brovkin
+  photo: "/media/imgs/speakers/boris-brovkin.webp"
+  locations:
+  - Praha
+  lectures:
+  - title: 'LASAR: Ze střední školy až na oběžnou dráhu'
+    youtube: https://youtu.be/50XSqE1CCqw?si=uIP9IhuJaZfUJoNl
+  contact:
+    instagram: https://www.instagram.com/kinvorb?igsh=cWswaHd1NWJqNGY1
+    linkedin: https://www.linkedin.com/in/boris-brovkin-4b230b305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+  bio: Boris je studentem Gymnázia Brno--Bystrc, který má zápal do tvorby webových
+    stránek, grafiky, stavebnictví a vesmíru. S týmem LASAR se podílel na vypuštění
+    vlastního satelitu na oběžnou dráhu. Kromě techniky je i vášnivý sportovec ---
+    10 let závodně plaval a třetím rokem pravidelně posiluje. Rád se také věnuje dobrovolnictví.
+- name: Anna Krebsová
+  photo: "/media/imgs/speakers/anna-krebsova.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: Expedice Mars
+    youtube: https://youtu.be/JxeNnxq4AVg
+  - title: 'LASAR: Ze střední školy až na oběžnou dráhu Země'
+    youtube: https://youtu.be/s0v4DxPTLH0
+  contact:
+    instagram: https://www.instagram.com/krebsovaan?igsh=MWRkajRsYz9wcGJrZw%3D%3D&utm_source=qr
+    facebook: https://www.facebook.com/share/1YTyJVMNaE/?mibextid=wwXIfr
+    linkedin: https://www.linkedin.com/in/anna-krebsov%C3%A1-57b211306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+    twitter: https://x.com/krebsovaan?s=21
+  bio: Anička je studentka, která se aktivně věnuje robotice a kosmonautice, zejména
+    pak stavu beztíže. Je spoluzakladatelkou středoškolského týmu LASAR, který uspěl
+    ve světové soutěži Conrad Challenge v NASA v Houstonu a vyslal do vesmíru vlastní
+    družici, za což získal i Cenu Učené společnosti ČR. Anička strávila rok na gymnáziu
+    v Německu, letos se zařadila mezi TOP25 nejaktivnějších středoškoláků roku a v
+    nadcházejícím studiu by se ráda věnovala letectví. Popularizuje aerospace a soutěže
+    ESA, kterých se i sama účastní.
+- name: Pavel Chaloupka
+  photo: "/media/imgs/speakers/pavel-chaloupka.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: 'Přenosná vodní elektrárna: Naše cesta k čisté energii '
+    youtube: https://youtu.be/z3sYe63EMWc
+  - title: Juniorská vědecká konference
+    youtube: https://youtu.be/5TNafEjMJhM
+  contact:
+    instagram: https://www.instagram.com/_pajiss_/
+    linkedin: https://www.linkedin.com/in/pavel-chaloupka-0902412b8/
+    website: https://dilna3d.cz
+  bio: Pavel je studentem Gymnázia Františka Křižíka v Plzni. Zajímá se o vědu, technologie
+    a udržitelnou energetiku. Spolupracoval na vývoji přenosné vodní elektrárny, s
+    níž získal ocenění na vědeckých konferencích JVK a SVK. Pracuje v organizačním
+    týmu Zvaž vědu! v Plzni a věnuje se popularizaci vědy. Ve volném čase se věnuje
+    sportu a cestování.
+- name: Metoděj Svoboda
+  photo: "/media/imgs/speakers/metodej-svoboda.webp"
+  locations:
+  - Praha
+  lectures:
+  - title: Vesmír je sexy. Jak se do něj jako student “beztížně” zapojit?
+    youtube: https://youtu.be/vHkV8bx4xdU?si=-T_YSuuFmVn_xw7W
+  contact:
+    instagram: httpshttps://www.instagram.com/metodej_svoboda/
+    linkedin: https://www.linkedin.com/in/metodej-svoboda/
+  bio: Metoděj je studentem druhého ročníku, který se dva roky po sobě stal vítězem
+    nadnárodního kola Prezentiády. Absolvuje stáž na Ústavu Organické Chemie a Biochemie.
+    Díky letu Zero-G je oficiálním ambasadorem České cesty do vesmíru. Mimo vědu se
+    angažuje ve studentských spolcích jako ProStředoškoláky nebo Student Cyber Games.
+    Spolu s bráchou přednáší na konferencích, akademiích atd... Ve volném čase kouká
+    na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím.
+- name: Filip Vyskočil
+  photo: "/media/imgs/speakers/filip-vyskocil.webp"
+  locations:
+  - Praha
+  lectures:
+  - title: Zpívat na světle nebo ve stínu? Aneb jak světlo ovlivňuje ptáky
+    youtube: https://youtu.be/9LQGKO0k-zU?si=goKGYQSMJungHk0v
+  contact: {}
+  bio: Filip se už od mala se zajímá o přírodu, zejména o ptáky. Proto začal psát
+    SOČku, ve které se věnuje ptačí bioakustice. Pravidelně se také účastní různých
+    přírodovědných soutěží. V rámci Biologické olympiády se mu podařilo zúčastnit
+    se mezinárodní soutěže EOES. Mezi jeho další záliby patří hra na klavír, focení
+    a orientační běh.
+- name: Petr Ivan
+  photo: "/media/imgs/speakers/petr-ivan.webp"
+  locations:
+  - Praha
+  lectures:
+  - title: Může být umělá inteligence skutečně kreativní?
+    youtube: https://youtu.be/OaSZEUQJsjQ?si=xjiv3P5Lyd5M__jR
+  contact:
+    facebook: https://www.facebook.com/petrivan.m
+    linkedin: https://www.linkedin.com/in/petr-ivan
+    website: https://github.com/PetrIvan
+  bio: Petr Ivan, absolvent Arcibiskupského gymnázia v Kroměříži, se věnuje programování
+    již od 12 let, kdy začal vytvářet své první projekty v oblasti vývoje her. Postupně
+    se zaměřil na umělou inteligenci, což se promítlo i do projektu ChordSeqAI, v
+    němž vyvíjí modely založené na strojovém učení a uplatňuje je v aplikaci pro hudební
+    skladatele. S touto prací získal 1. místo v celostátní přehlídce Středoškolské
+    odborné činnosti v oboru informatika a následně obdržel Second Award na Taiwan
+    International Science Fair. Kromě informatiky se také věnuje hudbě, zejména hře
+    na klavír.
+- name: David Němec
+  photo: "/media/imgs/team/david.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: 'Programování pro vesmír: Měření mraků z paluby ISS a aktivity ESERO'
+    youtube: https://youtu.be/jgRuSHghZN4
+  contact: {}
+  bio: David je hrdý Matfyzák, student oboru fyzika. Nadšení pro přírodní vědy získal
+    díky astronomické olympiádě, dnes je i jedním z jejích organizátorů. Ve volném
+    čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá
+    křovím.
+- name: Tomáš Rajchman
+  photo: "/media/imgs/team/tomáš.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: 'Programování pro vesmír: Měření mraků z paluby ISS a aktivity ESERO'
+    youtube: https://youtu.be/jgRuSHghZN4
+  contact: {}
+  bio: Tomáš je studentem prvního ročníku na Katedře kybernetiky FAV ZČU. Mezi jeho
+    zájmy patří fyzika, matematika, robotika ale i spousty dalších. Věnuje se také
+    popularizaci vědy a techniky. Miluje koně.

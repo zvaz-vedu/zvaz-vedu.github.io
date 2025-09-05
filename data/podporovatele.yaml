@@ -58,3 +58,8 @@ galakticka-vyzva:
   type: partner
   city: Praha
   link: 'https://www.galaktickavyzva.cz/'
+plzensky-kraj-cz:
+  name: Plzeňský kraj
+  type: sponzor
+  city: Plzeň
+  link: https://plzensky-kraj.cz
