@@ -3,17 +3,21 @@ name: Generate Monochrome Images
 on:
   push:
     paths:
-      - 'media/orgs/**'
-      - 'media/partners/**'
+      - 'static/media/imgs/orgs/**'
+      - 'static/media/imgs/partners/**'
   workflow_dispatch:
 
+permissions:
+  contents: write
 jobs:
   monochrome:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-
+        with:
+          lfs: true  # fetch actual LFS files if you use Git LFS
+          
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -22,6 +26,13 @@ jobs:
       - name: Install dependencies
         run: pip install pillow
 
+      - name: List image folders
+        run: |
+          echo "Org images:"
+          ls -l static/media/imgs/orgs || echo "Folder missing"
+          echo "Partner images:"
+          ls -l static/media/imgs/partners || echo "Folder missing"
+          
       - name: Generate monochrome images
         run: |
           python - <<'EOF'
@@ -29,27 +40,50 @@ jobs:
           from PIL import Image
 
           def process_folder(folder, output_folder):
-              Path(output_folder).mkdir(parents=True, exist_ok=True)
-              for img_path in Path(folder).glob('*.*'):
-                  with Image.open(img_path) as im:
-                      im = im.convert("RGBA")
-                      pixels = im.load()
-                      for y in range(im.height):
-                          for x in range(im.width):
-                              r, g, b, a = pixels[x, y]
-                              if a != 0:
-                                  pixels[x, y] = (255, 255, 255, a)
-                      new_name = img_path.stem + '-monochrom' + img_path.suffix
-                      im.save(Path(output_folder) / new_name)
+              folder_path = Path(folder)
+              if not folder_path.exists():
+                  print(f"Folder {folder} does not exist, skipping")
+                  return False
 
-          process_folder('media/orgs', 'media/orgs/monochrom')
-          process_folder('media/partners', 'media/partners/monochrom')
+              Path(output_folder).mkdir(parents=True, exist_ok=True)
+              created_any = False
+
+              for ext in ('*.png', '*.jpg', '*.jpeg', '*.webp'):
+                  for img_path in folder_path.glob(ext):
+                      print(f"Processing {img_path}")
+                      with Image.open(img_path) as im:
+                          im = im.convert("RGBA")
+                          pixels = im.load()
+                          for y in range(im.height):
+                              for x in range(im.width):
+                                  r, g, b, a = pixels[x, y]
+                                  if a != 0:
+                                      if (r + g + b > 750) and ('galakticka' in str(img_path)):  # if almost white on weird galaktická výzva -> generate transparent instead 
+                                          pixels[x, y] = (255, 255, 255, 0)
+                                          print(f"Eda se omlouvá s {img_path} :(")
+                                      else:
+                                          pixels[x, y] = (255, 255, 255, a)
+                          new_name = img_path.stem + '-monochrom' + img_path.suffix
+                          im.save(Path(output_folder) / new_name)
+                          print(f"Saved {new_name}")
+                          created_any = True
+
+              return created_any
+
+          any_created = False
+          if process_folder('static/media/imgs/orgs', 'static/media/imgs/orgs/monochrom'):
+              any_created = True
+          if process_folder('static/media/imgs/partners', 'static/media/imgs/partners/monochrom'):
+              any_created = True
+
+          if not any_created:
+              print("No images were processed.")
+
           EOF
 
-      - name: Commit changes
+      - name: Commit changes if any
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add media/orgs/monochrom media/partners/monochrom
-          git commit -m "Add monochrome images" || echo "No changes to commit"
-          git push
+          git add static/media/imgs/orgs/monochrom static/media/imgs/partners/monochrom
+          git diff --cached --quiet || (git commit -m "Add monochrome images" && git push)

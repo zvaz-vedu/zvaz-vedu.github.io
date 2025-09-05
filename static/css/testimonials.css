@@ -1,0 +1,298 @@
+/* =========================
+   TESTIMONIALS (full file)
+   - participants: square 1/1
+   - orgs: wide, scalable
+   - spacing between sections + columns
+   - uses site variables: --text, --primaryXX, --secondaryXX, --accentXX, --inspacer, --transition, --shadow
+   ========================= */
+
+/* --- Base / layout --- */
+
+.layout-content {
+    gap: 3rem;
+}
+.testimonial-section {
+  margin: 4rem 0 6rem;
+  color: var(--text);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title span {
+  position: relative;
+  z-index: 1;
+}
+
+/* highlight pill under title (participants = accent, orgs = primary) */
+.participants-section .section-title span::after,
+.orgs-section .section-title span::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 14px;
+  bottom: 2px;
+  left: 0;
+  border-radius: 9999px;
+  transform: rotate(-3deg);
+  z-index: -1;
+}
+.participants-section .section-title span::after { background-color: var(--accent70); }
+.orgs-section .section-title span::after        { background-color: var(--primary70); }
+
+/* grid wrapper */
+.split-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+/* participants grid */
+.participants-section .split-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* orgs grid */
+.orgs-section .split-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* --- Card base --- */
+
+.testimonial-card {
+  border-radius: 1rem;
+  padding: var(--inspacer);
+  transition: var(--transition);
+  color: var(--text);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 9999px;
+  margin: -1rem 0 1rem 0;
+  opacity: 0.95;
+}
+
+/* --- Participants --- */
+
+.testimonial-card.participant {
+  background-color: var(--secondary30);
+  justify-content: space-between;
+  padding: calc(var(--inspacer) / 1.25);
+  position: relative;
+}
+
+.testimonial-card.participant::before {
+  background: linear-gradient(90deg, var(--accent70), color-mix(in srgb, var(--accent70) 60%, transparent));
+}
+
+.testimonial-card.participant:hover {
+  background-color: var(--secondary40);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.testimonial-text {
+  font-style: italic;
+  line-height: 1.6rem;
+  margin: 0 0 1rem 0;
+  color: var(--text);
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 auto;
+  margin-top: 0.5rem;
+}
+
+.author-img, .author-initials {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 3px solid var(--secondary);
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.author-img { object-fit: cover; }
+.author-initials { background-color: var(--accent40); }
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.author-name {
+  margin: 0;
+  font-weight: 700;
+  color: var(--accent80);
+}
+.author-role {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  color: var(--text);
+}
+
+/* --- Orgs --- */
+
+.testimonial-card.org {
+  background-color: var(--primary20);
+  padding: calc(var(--inspacer) / 1.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.testimonial-card.org::before {
+  background: linear-gradient(90deg, var(--primary70), color-mix(in srgb, var(--primary70) 60%, transparent));
+}
+
+.testimonial-card.org:hover {
+  background-color: var(--primary30);
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.testimonial-card.org blockquote {
+  margin: 0;
+  font-style: italic;
+  line-height: 1.5rem;
+  color: var(--text);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.org-meta {
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo auto width, name/date takes remaining space */
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.org-logo-wrapper {
+  flex: none; /* logo stays its natural width */
+}
+
+.org-logo {
+  max-height: 48px;
+  width: auto;
+  filter: grayscale(35%) brightness(95%);
+  transition: var(--transition);
+  border-radius: 6px;
+  background-color: transparent;
+}
+.testimonial-card.org:hover .org-logo {
+  filter: grayscale(0%) brightness(70%);
+}
+
+
+.org-bydate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align left so text doesn’t overflow */
+  gap: 0.25rem;
+  min-width: 0; /* allows text to shrink instead of forcing overflow */
+}
+
+.org-name {
+  font-weight: 700;
+  color: var(--primary90);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.org-date {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* --- Accessibility / small text fallback --- */
+.testimonial-card blockquote,
+.testimonial-card p {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 1080px) {
+  .participants-section .split-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .orgs-section .split-grid         { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .org-logo { max-height: 46px; }
+}
+
+@media (max-width: 900px) {
+  .split-grid {
+    grid-template-columns: 1fr; /* stack columns */
+  }
+
+  .testimonial-card.participant {
+    /* remains square, optional */
+  }
+
+  .testimonial-card.org {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .org-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .org-bydate {
+    align-items: flex-start;
+  }
+
+  .testimonial-card.org blockquote {
+    -webkit-line-clamp: 4; /* extra line when stacked */
+  }
+  .layout-content {
+    display: block
+  }
+}
+
+@media (max-width: 550px) {
+  .section-title { font-size: 1.6rem; }
+  .author-img, .author-initials { width: 56px; height: 56px; }
+}
+
+@media (prefers-color-scheme: light) {
+	.org-logo {
+		filter: invert(1);
+	}
+}
