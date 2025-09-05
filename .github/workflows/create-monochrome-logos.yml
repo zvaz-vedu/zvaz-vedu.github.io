@@ -61,6 +61,7 @@ jobs:
                                   if a != 0:
                                       if (r+g+b > 750) and (img_path == 'static/media/imgs/partners/galakticka-vyzva.webp'):     # if almost white on weird galaktikcá výzva -> generate transparent instead 
                                           pixels[x, y] = (255, 255, 255, 0)
+                                          print(f"Eda se omlouvá s {img_path} :(")
                                       else:
                                           pixels[x, y] = (255, 255, 255, a)
                           new_name = img_path.stem + '-monochrom' + img_path.suffix
