@@ -59,7 +59,10 @@ jobs:
                               for x in range(im.width):
                                   r, g, b, a = pixels[x, y]
                                   if a != 0:
-                                      pixels[x, y] = (255, 255, 255, a)
+                                      if r+b+a > 750:
+                                          pixels[x, y] = (255, 0, 0, 255)
+                                      else:
+                                          pixels[x, y] = (255, 255, 255, a)
                           new_name = img_path.stem + '-monochrom' + img_path.suffix
                           im.save(Path(output_folder) / new_name)
                           print(f"Saved {new_name}")
