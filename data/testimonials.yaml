@@ -1,8 +1,20 @@
 participants:
+  - key: milos-vystrcil
+    name: Miloš Vystrčil
+    role: "předseda Senátu Parlamentu ČR"
+    text: "Těší mě, že na půdě Senátu budou ke stovkám svých vrstevníků hovořit aktivní mladí talentovaní středoškoláci a vysokoškoláci a vyprávět jim o ecstách vědeckého poznání."
+    img: true
+
   - key: marek-zenisek
     name: "Marek Ženíšek"
     role: "ministr pro vědu, výzkum a inovace"
-    text: "Aby tu bylo propojování vědy a výzkumu s mladými lidmi, zvlášť pokud si o to sami říkají."
+    text: "Je to strašně důležitá akce právě z toho ohledu, že je nutno propojovat mladé i s tou vědou. A pro mě je to pozitivní, protože uspěje pouze ten, kdo je připraven"
+    img: true
+
+  - key: martin-kupka
+    name: Martin Kupka
+    role: "ministr dopravy"
+    text: "Zvaž vědu! je parádní aktivita a je jasné, že věda je dobrodružství a že věda se prostě týká mladých lidí."
     img: true
   
   - key: simon-klinga
@@ -11,43 +23,68 @@ participants:
     text: "Je potřeba studentům ukázat, že vědci mohou být ty rockstars. ke kterým lidé mohou vlastně vzhlížet, že to mohou být i oni, a proto podle mě akce jako Zvaž vědu! jsou hrozně super."
     img: true
 
-  - key: annakrebsova
-    name: "Anna Krebsová"
-    role: "Studentka a přednášející"
-    text: "To hlavní, co jsme chtěli při naší prezentaci říci, bylo zejména motivovat k mimoškolním aktivitám. Sami jsme důkazem toho, že se to vyplácí."
+  - key: miroslav-lavicka
+    name: Miroslav Lávička
+    role: "rektor Západočeské univerzity"
+    text: "Tohle je naprosto skvělá záležitost, zejména jsem rád, že si to pořádají sami středoškoláci."
+    img: true
+
+  - key: jiri-dusek
+    name: Jiří Dušek
+    role: "senátor a ředitel Hvězdárny a planetária Brno"
+    text: "Zvaž vědu! je podivuhodné a velmi chvályhodné hnutí středoškoláků, kteří jiným středoškolákům vykládají o tom, jak skvělé je být vědcem nebo špičkovým technikem..."
+    img: true
 
 orgs:
+  - key: vlada-cr
+    name: "Vláda ČR"
+    text: "V pátek 15. listopadu proběhl na Fakultě aplikovaných věd Západočeské univerzity v Plzni druhý ročník unikátní akce Zvaž vědu! Středoškoláci středoškolákům představili ty nejzajímavější oblasti výzkumu, které hýbou současným světem. Na FAV ZČU dorazilo více než 300 středoškoláků ze 17 různých škol napříč celým Plzeňským krajem, od Plas přes Plzeň až po Domažlice."
+    link: https://vlada.gov.cz/cz/vlada/clenove-vlady/pri-uradu-vlady/marek_zenisek/v-mediich/plzenoviny-akce-zvaz-vedu!-prilakala-vice-nez-300-stredoskolaku-217381/
+    date: 2024-11-30
+
   - key: novinkycz
     name: "Novinky.cz"
     text: "Akce Zvaž vědu!, kterou organizují studenti pro studenty, se uskuteční v pondělí 9. června v Senátu Parlamentu České republiky na Valdštejnském náměstí v Praze 1. Účastníci se mohou těšit na přednášky dvanácti inspirativních studentů z celého Česka. Nabídnou příběhy plné informací o vědě, technice a o zajímavých příležitostech. "
     link: "https://www.novinky.cz/clanek/veda-skoly-budoucnost-zajistena-mladi-vedci-dokazuji-ze-cesko-ma-dobre-naslapnuto-40523184"
     date: 2025-06-08
+
+  - key: denik
+    name: "Deník"
+    text: "Jsou ještě náctiletí, přesto již spolupracují s vědeckými špičkami na ambiciózních projektech, případně vytvořili aplikaci, kterou používají tisíce lidí. Středoškolští studenti z hnutí Zvaž vědu! nyní chtějí motivovat další děti a mladistvé k zájmu o vědecké obory. Někteří z nich Deník nechali nahlédnout za oponu, aby ukázali, jaké je se věnovat vědě v mladém věku."
+    link: "https://www.denik.cz/veda-a-technika/stredoskolaci-cesko-zvaz-vedu-projekty.html"
+    date: 2025-06-07
     
   - key: zcuinfo
     name: "Západočeská univerzita v Plzni"
-    text: "Naše očekávání byla rozhodně překonána. A to jak počtem účastníků, tak zájmem, se kterým se přednáškového dne zúčastnili."
+    text: "Téměř tři sta studentů a studentek středních škol z celého Plzeňského kraje si přijelo poslechnout přednášky z technicko-přírodovědných oborů. Organizátoři akce z řad středoškoláků nabídli celkem dvanáct přednášek z oblasti AI, kvantových technologií, astronomie, fyziky nebo třeba matematiky. ."
     link: "https://info.zcu.cz/Stredoskolaci-sobe--Na-FAV-se-konal-maraton-prednasek-Zvaz-vedu!/clanek.jsp?id=5942"
+    date: 2024-11-21
     
-  - key: ministerstvovyzkumu
-    name: "Marek Ženíšek, ministr pro vědu, výzkum a inovace"
-    text: "Aby tu bylo propojování vědy a výzkumu s mladými lidmi, zvlášť pokud si o to sami říkají."
-    
-  - key: plzenskykraj
+  - key: plzensky-kraj
     name: "Plzeňský kraj"
     text: "„Krásné na celé akci a také důvod, proč ji jako Plzeňský kraj podporujeme, že věda je tu prezentovaná jazykem, kterému mladí studenti rozumí. U nás má věda, výzkum a inovace jednoduše zelenou a tohle je jen jedna z mála skvělých akcí, které to potvrzují,“ podotkl náměstek hejtmana pro oblast školství a sportu Vladimír Kroc."
     link: "https://www.businessinfo.cz/clanky/studenti-plzenskeho-kraje-motivovali-akci-zvaz-vedu/"
     
-  - key: domazlice
-    name: "Město Domažlice"
-    text: "O významu této akce svědčí skutečnost, že ji přišlo podpořit několik významných osobností, především ministr pro vědu, výzkum a inovace PhDr. Marek Ženíšek PhD., jenž ocenil, že je zaměřena na propojování vědy a výzkumu s mladými lidmi."
-    link: "https://www.domazlice.eu/zpravodajstvi/zvaz-vedu-pod-taktovkou-domazlickeho-gymnazisty-7762cs.html"
+  - key: astrocz
+    name: "Česká astronomická společnost"
+    text: "10 přednášek od 12 inspirativních studentů z celého Česka. 300 minut jedinečných příběhů plných informací o vědě, technice a zajímavých příležitostech. Více než 100 nadšených středoškoláků v publiku. Nespočet zajímavých setkání. To jsou jen některá z čísel charakterizujících akci Zvaž vědu!"
+    link: "https://www.astro.cz/clanky/ostatni/budoucnost-zajistena-mladi-vedci-dokazuji-ze-cesko-ma-dobre-naslapnuto.html"
+    date: 2025-05-26
     
-  - key: gymnaziumrok
-    name: "Gymnázium a SOŠ Rokycany"
-    text: "Ohlasy ze strany učitelů i žáků jsou jednoznačně pozitivní."
-    link: "https://www.gasos-ro.cz/images/skola/urednideska/VZP_2024.pdf"
+  - key: rozhlas
+    name: "Český rozhlas"
+    text: "„Zajímavý je také projekt Zvaž vědu!, který bude probíhat v Senátu. Má vtáhnout středoškoláky do vědy,“ doplňuje."
+    link: "https://plus.rozhlas.cz/az-na-obeznou-drahu-stredoskolaci-umi-dotahnout-veci-do-konce-ukazou-je-na-9481138"
+    date: 2025-05-26
 
   - key: prahatv
     name: "Praha TV"
     text: "Zvaž vědu je studentská iniciativa, která chce přiblížit vědu široké veřejnosti i svým vrstevníkům. Na letošní pátý ročník, poprvé pořádaný v Praze, dorazilo 150 zájemců a zaplnili sál Senátu Parlamentu ČR. Akce tak ukázala, že věda nemusí být nedostupná – důkazem je i gymnazista Pavel Hoda, člen Mensy a nadšený programátor, který společně s ostatními dokazuje, že věda je skutečně pro každého."
     link: "https://prahatv.eu/zprava/budouci-vedci-ovladli-senat-akce-zvaz-vedu-motivuje-studenty-rozvijet-se-i-mimo-skolni-lavice/"
+    date: 2025-06-10
+
+  - key: za-plzni
+    name: "Za Plzní"
+    text: "Svým úspěchem a dosahem je Zvaž vědu! první akcí svého druhu, která se kdy v Česku uskutečnila. Téměř 300 studentů se zájmem o přírodní vědy se sešlo na jednom místě, aby jim jejich vrstevníci mohli ukázat, kolik úžasných příležitostí nyní mají k rozvíjení svého zájmu. A to vše za podpory těch nejvýznamnějších institucí z celého regionu."
+    link: "https://zaplzni.cz/prvni-akce-sveho-druhu-u-nas-300-studentu-v-plzni-zvazilo-vedu/"
+    date: 2023-12-19
