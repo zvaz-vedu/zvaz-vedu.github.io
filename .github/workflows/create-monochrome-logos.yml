@@ -59,8 +59,8 @@ jobs:
                               for x in range(im.width):
                                   r, g, b, a = pixels[x, y]
                                   if a != 0:
-                                      if r+b+a > 750:
-                                          pixels[x, y] = (255, 0, 0, 255)
+                                      if r+g+b > 750:     # if almost white -> generate transparent instead 
+                                          pixels[x, y] = (255, 255, 255, 0)
                                       else:
                                           pixels[x, y] = (255, 255, 255, a)
                           new_name = img_path.stem + '-monochrom' + img_path.suffix
