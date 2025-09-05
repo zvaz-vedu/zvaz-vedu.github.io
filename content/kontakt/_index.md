@@ -3,25 +3,27 @@ title: Kontakt
 layout: contact
 ---
 
-### Plzeň & Praha
-
 {{< member
 name="Jan Herzig"
 alias="honza"
 team="plzen"
 photo="honza.webp"
-position="hlavní organizátor"
+position="ředitel, zakladatel"
 school="Gymnázium J. Š. Baara, Domažlice"
 mail="janherzig@zvazvedu.cz" >}}
+
 
 {{< member
 name="Matyáš Matta"
 team="plzen"
 alias="maty"
 photo="maty.webp"
-position="zakladatel, organizátor"
+position="zástupce ředitele, zakladatel"
 school="Masarykovo gymnázium, Plzeň"
 mail="matyasmatta@zvazvedu.cz" >}}
+
+
+### Plzeň & Praha
 
 {{< member
 name="Eduard Plic"
