@@ -2,7 +2,7 @@ participants:
   - key: milos-vystrcil
     name: Miloš Vystrčil
     role: "předseda Senátu Parlamentu ČR"
-    text: "Těší mě, že na půdě Senátu budou ke stovkám svých vrstevníků hovořit aktivní mladí talentovaní středoškoláci a vysokoškoláci a vyprávět jim o ecstách vědeckého poznání."
+    text: "Těší mě, že na půdě Senátu budou ke stovkám svých vrstevníků hovořit aktivní mladí talentovaní středoškoláci a vysokoškoláci a vyprávět jim o cestách vědeckého poznání."
     img: true
 
   - key: marek-zenisek
@@ -20,13 +20,13 @@ participants:
   - key: simon-klinga
     name: "Simon Klinga"
     role: "Forbes 30 pod 30 2025"
-    text: "Je potřeba studentům ukázat, že vědci mohou být ty rockstars. ke kterým lidé mohou vlastně vzhlížet, že to mohou být i oni, a proto podle mě akce jako Zvaž vědu! jsou hrozně super."
+    text: "Je potřeba studentům ukázat, že vědci mohou být ty rockstars, ke kterým lidé mohou vlastně vzhlížet. A že to mohou být i oni. A proto podle mě akce jako Zvaž vědu! jsou hrozně super."
     img: true
 
   - key: miroslav-lavicka
     name: Miroslav Lávička
     role: "rektor Západočeské univerzity"
-    text: "Tohle je naprosto skvělá záležitost, zejména jsem rád, že si to pořádají sami středoškoláci."
+    text: "Tohle je naprosto skvělá záležitost. Zejména jsem rád, že si to pořádají sami středoškoláci."
     img: true
 
   - key: jiri-dusek
@@ -62,7 +62,7 @@ orgs:
     
   - key: plzensky-kraj
     name: "Plzeňský kraj"
-    text: "„Krásné na celé akci a také důvod, proč ji jako Plzeňský kraj podporujeme, že věda je tu prezentovaná jazykem, kterému mladí studenti rozumí. U nás má věda, výzkum a inovace jednoduše zelenou a tohle je jen jedna z mála skvělých akcí, které to potvrzují,“ podotkl náměstek hejtmana pro oblast školství a sportu Vladimír Kroc."
+    text: "Studenti se sami snaží nadchnout své vrstevníky a ukázat, že věda umí být krásná, zajímavá a že stojí za to se jí věnovat. Právě proto se v pátek 15. listopadu za podpory Plzeňského kraje konal 2. ročník akce Zvaž vědu."
     link: "https://www.plzensky-kraj.cz/studenti-motivovali-akci-zvaz-vedu"
     date: 2025-11-15
     
@@ -80,7 +80,7 @@ orgs:
 
   - key: prahatv
     name: "Praha TV"
-    text: "Zvaž vědu je studentská iniciativa, která chce přiblížit vědu široké veřejnosti i svým vrstevníkům. Na letošní pátý ročník, poprvé pořádaný v Praze, dorazilo 150 zájemců a zaplnili sál Senátu Parlamentu ČR. Akce tak ukázala, že věda nemusí být nedostupná – důkazem je i gymnazista Pavel Hoda, člen Mensy a nadšený programátor, který společně s ostatními dokazuje, že věda je skutečně pro každého."
+    text: "Zvaž vědu je studentská iniciativa, která chce přiblížit vědu široké veřejnosti i svým vrstevníkům. Na letošní třetí ročník, poprvé pořádaný v Praze, dorazilo 150 zájemců a zaplnili sál Senátu Parlamentu ČR. Akce tak ukázala, že věda nemusí být nedostupná – důkazem je i gymnazista Pavel Hoda, člen Mensy a nadšený programátor, který společně s ostatními dokazuje, že věda je skutečně pro každého."
     link: "https://prahatv.eu/zprava/budouci-vedci-ovladli-senat-akce-zvaz-vedu-motivuje-studenty-rozvijet-se-i-mimo-skolni-lavice/"
     date: 2025-06-10
 
@@ -89,3 +89,9 @@ orgs:
     text: "Svým úspěchem a dosahem je Zvaž vědu! první akcí svého druhu, která se kdy v Česku uskutečnila. Téměř 300 studentů se zájmem o přírodní vědy se sešlo na jednom místě, aby jim jejich vrstevníci mohli ukázat, kolik úžasných příležitostí nyní mají k rozvíjení svého zájmu. A to vše za podpory těch nejvýznamnějších institucí z celého regionu."
     link: "https://zaplzni.cz/prvni-akce-sveho-druhu-u-nas-300-studentu-v-plzni-zvazilo-vedu/"
     date: 2023-12-19
+
+  - key: astrocz
+    name: "Česká astronomická společnost"
+    text: "Projekt, který nemá obdoby. Nemají za sebou ještě ani maturitu, ale uskutečnili akci, kterou český Senát nepamatuje. V Praze se v pondělí 9. června poprvé odehrála akce Zvaž vědu! a horní komoru parlamentu zaplnily davy nadšených studentů. 150 středoškoláků z 58 škol ve 12 krajích si přišlo poslechnout 10 jedinečných přednášek od svých vrstevníků, kteří neváhali a už na střední se s úspěchem pustili do posouvání hranic lidského poznání."
+    link: "https://www.astro.cz/clanky/ostatni/senat-plny-jako-nikdy-predtim-stredoskolaci-ukazali-ze-veda-ma-smysl.html"
+    date: 2025-06-16
