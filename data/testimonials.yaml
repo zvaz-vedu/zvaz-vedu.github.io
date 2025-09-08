@@ -53,6 +53,12 @@ orgs:
     text: "Jsou ještě náctiletí, přesto již spolupracují s vědeckými špičkami na ambiciózních projektech, případně vytvořili aplikaci, kterou používají tisíce lidí. Středoškolští studenti z hnutí Zvaž vědu! nyní chtějí motivovat další děti a mladistvé k zájmu o vědecké obory. Někteří z nich Deník nechali nahlédnout za oponu, aby ukázali, jaké je se věnovat vědě v mladém věku."
     link: "https://www.denik.cz/veda-a-technika/stredoskolaci-cesko-zvaz-vedu-projekty.html"
     date: 2025-06-07
+
+  - key: wired
+    name: "WIRED"
+    text: "Zvaž vědu! je nyní už celostátní iniciativa, respektive hnutí středoškolských studentů, které se snaží ukazovat dalším středoškolákům a středoškolačkám, proč je věda zajímavá a proč by pro ně mohla být dobrým oborem do budoucna. Naše hlavní aktivity jsou v konferencích – za pár dní nás čeká první velká akce v Praze – přímo v Senátu."
+    link: "https://www.wired.cz/clanky/sestnactilety-jan-herzig-miluje-vesmir-a-pro-vedu-motivuje-i-dalsi-stredoskolaky"
+    date: 2025-06-05
     
   - key: zcuinfo
     name: "Západočeská univerzita v Plzni"
