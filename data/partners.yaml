@@ -30,32 +30,32 @@ senat-cz:
   link: 'https://www.senat.cz'
 famelab:
   name: FameLab - Talking Science
-  type: partner
+  type: podporovatel
   city: Praha
   link: 'https://famelab.cuni.cz/FL-1.html'
 plnoc:
   name: Plzeňská přednášková noc
-  type: partner
+  type: podporovatel
   city: Plzeň
   link: 'https://www.plnoc.cz/'
 stemhub:
   name: STEM_Hub
-  type: partner
+  type: podporovatel
   city: Praha
   link: 'https://www.stemhub.cz/'
 nextgenz:
   name: NextGenZ
-  type: partner
+  type: podporovatel
   city: Praha
   link: 'https://nextgenz.cz/'
 edufestival:
   name: EduFestival
-  type: partner
+  type: podporovatel
   city: Praha
   link: 'https://edufestival.cz/'
 galakticka-vyzva:
   name: Galaktická Vědomostní Výzva
-  type: partner
+  type: podporovatel
   city: Praha
   link: 'https://www.galaktickavyzva.cz/'
 plzensky-kraj-cz:
@@ -65,6 +65,6 @@ plzensky-kraj-cz:
   link: https://plzensky-kraj.cz
 ceska-astronomicka-spolecnost:
   name: Česká astronomická společnost
-  type: partner
+  type: podporovatel
   city: Plzeň
   link: https://astro.cz

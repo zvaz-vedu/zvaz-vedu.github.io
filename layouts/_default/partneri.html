@@ -32,14 +32,14 @@
 </header>
 <div class="layout-container" id="content">
     <div class="layout-content" style="padding:0">
-        {{- $partners := slice -}}
+        {{- $supporters := slice -}}
         {{- $sponsors := slice -}}
         
-        {{- range $key, $value := .Site.Data.podporovatele -}}
+        {{- range $key, $value := .Site.Data.partners -}}
             {{- if eq $value.type "sponzor" -}}
                 {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
-            {{- else if eq $value.type "partner" -}}
-                {{- $partners = $partners | append (dict "key" $key "data" $value) -}}
+            {{- else if eq $value.type "podporovatel" -}}
+                {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
             {{- end -}}
         {{- end -}}
 
@@ -70,7 +70,7 @@
                             </a>
                         </div>
                     {{- end -}}
-                    <a href="#" class="supporter-item ghost-card" style="text-decoration: none; color: inherit">
+                    <a href="mailto:organziatori@zvazvedu.cz" class="supporter-item ghost-card" style="text-decoration: none; color: inherit">
                         <div class="plus-btn">&plus;</div>
                         <p class="ghost-card-text">Chcete tu také být?</p>
                     </a>
@@ -79,12 +79,12 @@
         </section>
         {{- end -}}
         
-        {{- if gt (len $partners) 0 -}}
+        {{- if gt (len $supporters) 0 -}}
         <section class="layout-container section-partners">
             <div class="layout-content supporter-section">
-                <h2><span>Partneři</span></h2>
+                <h2><span>Podporovatelé</span></h2>
                 <div class="supporters-grid">
-                    {{- range $partners -}}
+                    {{- range $supporters -}}
                         <div class="supporter-item partner">
                             <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
                                 <div class="supporter-img-wrapper">
