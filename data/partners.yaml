@@ -68,3 +68,13 @@ ceska-astronomicka-spolecnost:
   type: podporovatel
   city: Plzeň
   link: https://astro.cz
+techfair-cz:
+  name: TECHFAIR.cz
+  type: podporovatel
+  city: Plzeň
+  link: https://textfair.cz
+ceskobudoucnosti-cz:
+  name: \#ČESKObudoucnosti
+  type: podporovatel
+  city: Praha
+  link: https://ceskobudoucnosti.cz
