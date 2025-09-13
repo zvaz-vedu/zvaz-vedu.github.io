@@ -1,7 +1,5 @@
 ---
-title: Přednášej u nás!
-layout: single
-
-headerTitle: "Přednášej u nás!"
-headerText: "Sdílej své úspěchy a zkušenosti s vrstevníky a pomáhej tak tvořit komunitu aktivních lidí!"
+title: "Přednášej u nás!"
+layout: redirect
+redirect_url: "https://docs.google.com/forms/d/e/1FAIpQLSdMSOMIXz7kChsWLGJV2vMOnJaSpSXW9fi7ViNKNH4Og5eRvA/viewform?usp=dialog"
 ---
