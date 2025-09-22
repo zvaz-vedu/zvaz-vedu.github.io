@@ -5,7 +5,7 @@ on:
     paths:
       - 'media/orgs/**'
       - 'media/partners/**'
-workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   monochrome:
