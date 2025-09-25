@@ -126,7 +126,6 @@ h3::after {
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-    border-radius: 1rem;
 }
 #join-us .secondary-button {
     background-color: var(--secondary);
@@ -137,7 +136,6 @@ h3::after {
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
-    border-radius: 1rem;
     padding-block: 10rem;
     background-color: var(--primary40);
     padding: 5rem;
@@ -220,7 +218,6 @@ h3::after {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    border-radius: 1rem;
     padding: 3rem;
 }
 .bento-board-item:nth-of-type(1) {
@@ -488,7 +485,6 @@ tr td:nth-of-type(1) {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border-radius: 1rem;
     padding: var(--inspacer);
     gap: 1rem;
     width: 100%;
@@ -510,7 +506,6 @@ tr td:nth-of-type(1) {
 }
 .team-body {
     max-width: 90%;
-    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -553,7 +548,6 @@ tr td:nth-of-type(1) {
     align-items: center;
     padding: var(--inspacer);
     background-color: var(--primary10);
-    border-radius: 1.5rem;
     gap: 3rem;
 }
 #zastita img {

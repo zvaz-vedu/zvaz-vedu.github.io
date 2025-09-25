@@ -13,8 +13,8 @@
     width: min(100%, 400px);
 }
 #hero-call {
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: 10rem;
+    line-height: 10rem;
     padding-bottom: 5rem;
 }
 #hero-call span {
@@ -35,9 +35,10 @@
     border-radius: 5000px;
 }
 #hero-text {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     padding-bottom: 5rem;
+    font-weight: 600;
 }
 #hero-row {
     display: flex;
@@ -305,7 +306,6 @@
 
 #cta-call {
     font-size: 6rem;
-    font-weight: 700;
     position: relative;
     display: block;
     width: fit-content;
