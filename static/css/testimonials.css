@@ -68,7 +68,6 @@
 /* --- Card base --- */
 
 .testimonial-card {
-  border-radius: 1rem;
   padding: var(--inspacer);
   transition: var(--transition);
   color: var(--text);
@@ -210,7 +209,6 @@
   width: auto;
   filter: grayscale(35%) brightness(95%);
   transition: var(--transition);
-  border-radius: 6px;
   background-color: transparent;
 }
 .testimonial-card.org:hover .org-logo {
