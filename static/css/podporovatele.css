@@ -211,7 +211,7 @@ section .layout-content {
 }
 .supporter-item.sponsor h3 {
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: normal;
 	color: var(--text);
 }
 .supporter-item.sponsor p {
