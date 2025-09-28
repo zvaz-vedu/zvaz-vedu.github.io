@@ -91,7 +91,6 @@ section .layout-content {
 }
 .team-body {
 	max-width: 90%;
-	border-radius: 1rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -135,7 +134,6 @@ section .layout-content {
 	gap: 3rem;
 	justify-content: center;
 	padding: var(--inspacer);
-	border-radius: 2rem;
 	background-color: var(--secondary10);
 }
 .section-sponsors .layout-content, .section-partners .layout-content {
@@ -183,7 +181,6 @@ section .layout-content {
 }
 .supporter-item.sponsor {
 	background-color: var(--primary80);
-	border-radius: 1rem;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -233,7 +230,6 @@ section .layout-content {
 	justify-content: center;
 	text-align: center;
 	padding: 2rem;
-	border-radius: 1rem;
 	background-color: var(--accent90);
 	box-shadow: var(--shadow);
 	transition: box-shadow 0.3s ease-in-out;
@@ -365,7 +361,6 @@ section .layout-content {
     min-height: 280px;
     transition: border-color 0.3s ease-in-out;
     border: 4px dashed rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
 }
 
 .supporter-item.ghost-card:hover {
@@ -440,7 +435,6 @@ section .layout-content {
 
 .infobox-container {
     background-color: var(--accent10);
-    border-radius: 1rem;
     padding: 1.5rem;
     display: flex;
     align-items: center;
