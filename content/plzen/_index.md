@@ -17,5 +17,5 @@ liveAction: false
 pastActions: true
 
 team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
-partners: [plzensky--kraj-cz, podporatalentu-cz, fav-zcu-cz, radovanek-cz]
+partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, radovanek-cz]
 ---
