@@ -10,13 +10,13 @@
 
 :root {
     --text: #000000;
-    --background: #fbfbfe;
-    --secondary-background: #f0f0f0;
-    --tertiary-background: #201f1f;
+    --background: #f2f2f2;
+    --secondary-background: #e0e0e0;
+    --tertiary-background: #231f20;
     --primary: #ffc300; /* HSL: 46, 100%, 50% */
-    --secondary: #e4cc96; /* HSL: 42, 59%, 74% */
-    --accent: #eb6028; /* HSL: 17, 83%, 54% */
-    --accent-full: #FF4500;
+    --secondary: #ffd400; /* HSL: 50, 100%, 50% */
+    --accent: #e0ac00; /* HSL: 45, 100%, 44% */
+    --accent-full: #e0ac00;
 
     /* Text opacity variations (using black) */
     --text5: hsla(0, 0%, 0%, 0.05);
@@ -39,7 +39,7 @@
     --text90: hsla(0, 0%, 0%, 0.9);
     --text95: hsla(0, 0%, 0%, 0.95);
 
-    /* Primary opacity variations (using light mode primary's HSL values) */
+    /* Primary opacity variations (using FFC300 - HSL: 46, 100%, 50%) */
     --primary5: hsla(46, 100%, 50%, 0.05);
     --primary10: hsla(46, 100%, 50%, 0.1);
     --primary15: hsla(46, 100%, 50%, 0.15);
@@ -60,48 +60,47 @@
     --primary90: hsla(46, 100%, 50%, 0.9);
     --primary95: hsla(46, 100%, 50%, 0.95);
 
-    /* Secondary opacity variations (using light mode secondary's HSL values) */
-    --secondary5: hsla(42, 59%, 74%, 0.05);
-    --secondary10: hsla(42, 59%, 74%, 0.1);
-    --secondary15: hsla(42, 59%, 74%, 0.15);
-    --secondary20: hsla(42, 59%, 74%, 0.2);
-    --secondary25: hsla(42, 59%, 74%, 0.25);
-    --secondary30: hsla(42, 59%, 74%, 0.3);
-    --secondary35: hsla(42, 59%, 74%, 0.35);
-    --secondary40: hsla(42, 59%, 74%, 0.4);
-    --secondary45: hsla(42, 59%, 74%, 0.45);
-    --secondary50: hsla(42, 59%, 74%, 0.5);
-    --secondary55: hsla(42, 59%, 74%, 0.55);
-    --secondary60: hsla(42, 59%, 74%, 0.6);
-    --secondary65: hsla(42, 59%, 74%, 0.65);
-    --secondary70: hsla(42, 59%, 74%, 0.7);
-    --secondary75: hsla(42, 59%, 74%, 0.75);
-    --secondary80: hsla(42, 59%, 74%, 0.8);
-    --secondary85: hsla(42, 59%, 74%, 0.85);
-    --secondary90: hsla(42, 59%, 74%, 0.9);
-    --secondary95: hsla(42, 59%, 74%, 0.95);
+    /* Secondary opacity variations (using FFD400 - HSL: 50, 100%, 50%) */
+    --secondary5: hsla(50, 100%, 50%, 0.05);
+    --secondary10: hsla(50, 100%, 50%, 0.1);
+    --secondary15: hsla(50, 100%, 50%, 0.15);
+    --secondary20: hsla(50, 100%, 50%, 0.2);
+    --secondary25: hsla(50, 100%, 50%, 0.25);
+    --secondary30: hsla(50, 100%, 50%, 0.3);
+    --secondary35: hsla(50, 100%, 50%, 0.35);
+    --secondary40: hsla(50, 100%, 50%, 0.4);
+    --secondary45: hsla(50, 100%, 50%, 0.45);
+    --secondary50: hsla(50, 100%, 50%, 0.5);
+    --secondary55: hsla(50, 100%, 50%, 0.55);
+    --secondary60: hsla(50, 100%, 50%, 0.6);
+    --secondary65: hsla(50, 100%, 50%, 0.65);
+    --secondary70: hsla(50, 100%, 50%, 0.7);
+    --secondary75: hsla(50, 100%, 50%, 0.75);
+    --secondary80: hsla(50, 100%, 50%, 0.8);
+    --secondary85: hsla(50, 100%, 50%, 0.85);
+    --secondary90: hsla(50, 100%, 50%, 0.9);
+    --secondary95: hsla(50, 100%, 50%, 0.95);
 
-    /* Accent opacity variations (using light mode accent's HSL values) */
-    --accent5: hsla(17, 83%, 54%, 0.05);
-    --accent10: hsla(17, 83%, 54%, 0.1);
-    --accent15: hsla(17, 83%, 54%, 0.15);
-    --accent20: hsla(17, 83%, 54%, 0.2);
-    --accent25: hsla(17, 83%, 54%, 0.25);
-    --accent30: hsla(17, 83%, 54%, 0.3);
-    --accent35: hsla(17, 83%, 54%, 0.35);
-    --accent40: hsla(17, 83%, 54%, 0.4);
-    --accent45: hsla(17, 83%, 54%, 0.45);
-    --accent50: hsla(17, 83%, 54%, 0.5);
-    --accent55: hsla(17, 83%, 54%, 0.55);
-    --accent60: hsla(17, 83%, 54%, 0.6);
-    --accent65: hsla(17, 83%, 54%, 0.65);
-    --accent70: hsla(17, 83%, 54%, 0.7);
-    --accent75: hsla(17, 83%, 54%, 0.75);
-    --accent80: hsla(17, 83%, 54%, 0.8);
-    --accent85: hsla(17, 83%, 54%, 0.85);
-    --accent90: hsla(17, 83%, 54%, 0.9);
-    --accent95: hsla(17, 83%, 54%, 0.95);
-
+    /* Accent opacity variations (using E0AC00 - HSL: 45, 100%, 44%) */
+    --accent5: hsla(45, 100%, 44%, 0.05);
+    --accent10: hsla(45, 100%, 44%, 0.1);
+    --accent15: hsla(45, 100%, 44%, 0.15);
+    --accent20: hsla(45, 100%, 44%, 0.2);
+    --accent25: hsla(45, 100%, 44%, 0.25);
+    --accent30: hsla(45, 100%, 44%, 0.3);
+    --accent35: hsla(45, 100%, 44%, 0.35);
+    --accent40: hsla(45, 100%, 44%, 0.4);
+    --accent45: hsla(45, 100%, 44%, 0.45);
+    --accent50: hsla(45, 100%, 44%, 0.5);
+    --accent55: hsla(45, 100%, 44%, 0.55);
+    --accent60: hsla(45, 100%, 44%, 0.6);
+    --accent65: hsla(45, 100%, 44%, 0.65);
+    --accent70: hsla(45, 100%, 44%, 0.7);
+    --accent75: hsla(45, 100%, 44%, 0.75);
+    --accent80: hsla(45, 100%, 44%, 0.8);
+    --accent85: hsla(45, 100%, 44%, 0.85);
+    --accent90: hsla(45, 100%, 44%, 0.9);
+    --accent95: hsla(45, 100%, 44%, 0.95);
 
     --font: 'Inter', sans-serif;
     --spacer: 2rem 0;
@@ -115,7 +114,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Base colours (Dark Mode) */
-        --background: #201f1f;
+        --background: #231f20;
         --secondary-background: #333333;
         --tertiary-background: #111111;
         --text: #ffffff;
