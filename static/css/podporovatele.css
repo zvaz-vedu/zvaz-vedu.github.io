@@ -163,7 +163,6 @@ section .layout-content {
 	bottom: 5px;
 	right: 0;
 	transform: rotate(-3deg);
-	border-radius: 5000px;
 }
 .section-sponsors h2 span::after {
 	background-color: var(--primary70);

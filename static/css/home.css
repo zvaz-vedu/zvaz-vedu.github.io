@@ -32,7 +32,6 @@
     right: 0;
     background-color: var(--primary70);
     transform: rotate(-5deg);
-    border-radius: 5000px;
 }
 #hero-text {
     font-size: 1.8rem;
