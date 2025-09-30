@@ -17,7 +17,7 @@
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--text);
   margin-bottom: 1.25rem;
   position: relative;
@@ -35,11 +35,10 @@
   position: absolute;
   content: "";
   display: block;
-  width: 100%;
+  width: 110%;
   height: 14px;
   bottom: 2px;
-  left: 0;
-  border-radius: 9999px;
+  left: -5%;
   transform: rotate(-3deg);
   z-index: -1;
 }

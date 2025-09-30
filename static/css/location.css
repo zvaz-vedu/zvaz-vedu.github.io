@@ -22,18 +22,20 @@ header h1 span {
 header h1 span::after {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 110%;
+    right: -5%;
     height: 20px;
     content: "";
     z-index: -1;
     bottom: 10px;
     background-color: var(--primary70);
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
 }
 .header-text {
     font-size: 1.8rem;
     margin: 3rem 0;
     color: var(--primary);
+    font-weight: 700;
 }
 header .primary-button {
     font-size: 1.8rem;
@@ -48,33 +50,19 @@ header .primary-button {
 .header-graphics-photo {
     display: block;
     position: absolute;
-    width: 320px;
+    width: 300px;
     z-index: 5;
-    right: 100px;
-    top: -100px;
-    border: 15px solid var(--background);
-    border-radius: 100%;
+    top: -165px;
+    right: 200px;
+    border: 12px solid var(--primary);
 }
 .header-graphics-logo {
     display: block;
     position: absolute;
-    width: 300px;
-    right: 0;
-    top: -200px;
+    width: 250px;
+    right: -30px;
+    top: -140px;
     z-index: 3;
-    border-radius: 100%;
-}
-.header-graphics-circle {
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: var(--primary);
-    z-index: 10;
-    right: 220px;
-    top: -150px;
-    z-index: 2;
-    border-radius: 100%;
 }
 
 /* HEADINGS */
@@ -88,12 +76,13 @@ h2 {
 h2::after {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 110%;
+    right: -5%;
     height: 14px;
     content: "";
     z-index: -1;
-    bottom: -5px;
-    transform: rotate(-4deg);
+    bottom: 0px;
+    transform: rotate(-3deg);
 
 }
 h3 {
@@ -206,7 +195,7 @@ h3::after {
 .bento-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0;
+    padding: 2rem 0;
     gap: 2rem;
 }
 .bento-board-item {
@@ -219,7 +208,7 @@ h3::after {
     padding: 3rem;
 }
 .bento-board-item:nth-of-type(1) {
-    background-color: var(--primary80);
+    background-color: var(--primary70);
 }
 .bento-board-item:nth-of-type(2) {
     background-color: var(--primary20);
@@ -233,6 +222,7 @@ h3::after {
 }
 .bento-text {
     text-align: center;
+    font-weight: 700;
 }
 
 .bento-board .secondary-button {
@@ -362,6 +352,7 @@ h3::after {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    font-weight: 700;
 }
 #history h2::after {
     background-color: var(--secondary70);

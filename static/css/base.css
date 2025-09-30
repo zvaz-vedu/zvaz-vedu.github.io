@@ -28,7 +28,7 @@ p {
 
 h1, h2, h3, h4, h5 {
     font-family: 'ZV-custom';
-    font-weight: 100;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@ small {
 .layout-content {
     width: min(90%, 1200px);
     display: flex;
-    padding: var(--inspacer);
+    padding: 2.5rem;
 }
 main {
     width: 100%;
@@ -89,7 +89,6 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: var(--background);
-    border-bottom: 1px solid var(--secondary-background);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -99,10 +98,9 @@ nav .layout-content {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding-block: 1rem;
 }
 .nav-logo img {
-    height: 55px;
+    height: 70px;
     width: auto;
 }
 .nav-logo a:nth-of-type(2) {
@@ -122,7 +120,7 @@ nav .layout-content {
     text-transform: uppercase;
     font-family: 'ZV-custom';
     font-size: 1.8em;
-    font-weight: 6200;
+    font-weight: normal;
     transition: var(--transition);
 }
 .nav-link:hover {
@@ -228,6 +226,7 @@ footer .layout-content {
     font-size: 1.8em;
     font-family: ZV-custom;
     text-transform: uppercase;
+    font-weight: normal;
 }
 .primary-button:hover {
     box-shadow: var(--shadow);
@@ -237,7 +236,8 @@ footer .layout-content {
 .secondary-button {
     padding: 1ch 1rem;
     font-size: 1.6rem;
-    color: var(--text);
+    font-weight: 700;
+    color: var(--text0);
     text-decoration: none;
     display: block;
     width: fit-content;
@@ -257,12 +257,13 @@ footer .layout-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-block: 6rem;
+    padding-block: 9rem;
     position: relative;
-    font-size: 3.5rem;
+    font-size: 5rem;
     text-align: center;
     font-family: ZV-custom;
     text-transform: uppercase;
+    font-weight: normal;
 }
 .quote-title-highlight {
     position: relative;
@@ -271,14 +272,13 @@ footer .layout-content {
 .quote-title-highlight::after {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 110%;
     height: 20px;
     content: "";
-    bottom: -5px;
-    right: 0;
+    bottom: 0px;
+    right: -5%;
     z-index: -1;
-    transform: rotate(-5deg);
-    border-radius: 5000px;
+    transform: rotate(-3deg);
 }
 
 #partners .layout-content{
