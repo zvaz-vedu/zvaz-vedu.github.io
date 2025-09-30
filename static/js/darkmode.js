@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
             : '/media/imgs/base/logo_dark.webp';
 
         const markSrc = darkMode
-            ? '/media/imgs/locations/kocka2bila.webp'
-            : '/media/imgs/locations/kocka2cerna.webp';
+            ? '/media/imgs/locations/kocka4bila.webp'
+            : '/media/imgs/locations/kocka4cerna.webp';
 
         const desktopMainLogo = document.querySelector('.desktop-navbar .nav-logo img');
         if (desktopMainLogo) {
