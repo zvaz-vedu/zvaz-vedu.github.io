@@ -7,44 +7,51 @@
 /* FONT */
 
 html {
-    font-size: 13px;
+    font-size: 14px;
     background-color: var(--background);
 }
 body {
-    font-family: 'Inter';
-    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
     background-color: var(--background);
     color: var(--text);
 }
 body::-webkit-scrollbar {
     width: 0;
 }
-  
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    color: var(--text);
+}
+
 h1, h2, h3, h4, h5 {
-    font-family: 'Inter';
-    font-weight: 700;
+    font-family: 'ZV-custom';
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 
 h1 {
-    font-size: 4.210rem;
-    line-height: 4.210rem;
+    font-size: 4.5rem;
+    line-height: 4.7rem;
 }
 
 h2 {
-    font-size: 3.158rem;
+    font-size: 3.5rem;
 }
 
 h3 {
-    font-size: 2.369rem;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 1.777rem;
+    font-size: 2.5rem;
 }
 
 h5 {
-    font-size: 1.333rem;
+    font-size: 2rem;
 }
 
 small {
@@ -64,7 +71,7 @@ small {
 .layout-content {
     width: min(90%, 1200px);
     display: flex;
-    padding: var(--inspacer);
+    padding: 2.5rem;
 }
 main {
     width: 100%;
@@ -82,7 +89,6 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: var(--background);
-    border-bottom: 1px solid var(--secondary-background);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -92,10 +98,9 @@ nav .layout-content {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding-block: 1rem;
 }
 .nav-logo img {
-    height: 45px;
+    height: 70px;
     width: auto;
 }
 .nav-logo a:nth-of-type(2) {
@@ -112,7 +117,10 @@ nav .layout-content {
     text-decoration: none;
     text-wrap: nowrap;
     color: var(--text);
-    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'ZV-custom';
+    font-size: 1.8em;
+    font-weight: normal;
     transition: var(--transition);
 }
 .nav-link:hover {
@@ -136,7 +144,6 @@ footer .layout-content {
     gap: 2rem;
     background-color: var(--secondary-background);
     color: var(--text);
-    border-radius: 1rem;
 }
 .footer-container {
     display: flex;
@@ -209,15 +216,17 @@ footer .layout-content {
 /* BASE ELEMENTS */
 
 .primary-button {
-    padding: .7em 1.5em;
+    padding: .3em 0.7em;
     background-color: var(--primary);
     color: var(--text);
     text-decoration: none;
-    font-weight: 700;
     transition: var(--transition);
-    border-radius: .4rem;
     display: block;
     width: fit-content;
+    font-size: 1.8em;
+    font-family: ZV-custom;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 .primary-button:hover {
     box-shadow: var(--shadow);
@@ -225,15 +234,15 @@ footer .layout-content {
 }
 
 .secondary-button {
-    padding: .7rem 1.5rem;
-    color: var(--text);
+    padding: 1ch 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text0);
     text-decoration: none;
     display: block;
-    border-radius: .4rem;
     width: fit-content;
     text-wrap: nowrap;
     transition: var(--transition);
-    font-size: 1rem;
     border: none;
     cursor: pointer;
 }
@@ -248,11 +257,13 @@ footer .layout-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-block: 6rem;
+    padding-block: 9rem;
     position: relative;
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 5rem;
     text-align: center;
+    font-family: ZV-custom;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 .quote-title-highlight {
     position: relative;
@@ -261,14 +272,13 @@ footer .layout-content {
 .quote-title-highlight::after {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 110%;
     height: 20px;
     content: "";
-    bottom: -5px;
-    right: 0;
+    bottom: 0px;
+    right: -5%;
     z-index: -1;
-    transform: rotate(-5deg);
-    border-radius: 5000px;
+    transform: rotate(-3deg);
 }
 
 #partners .layout-content{
@@ -278,7 +288,6 @@ footer .layout-content {
     gap: 1rem;
     background-color: var(--secondary10);
     padding: var(--inspacer);
-    border-radius: 1.5rem;
 }
 .partner-body {
     display: flex;
@@ -313,6 +322,7 @@ header img {
 }
 .header-text {
     font-size: 1.8rem;
+    line-height: normal;
     margin-top: 2rem;
     color: var(--primary );
 }
@@ -348,6 +358,14 @@ header img {
     }
     .footer-columns {
         flex-wrap: wrap;
+    }
+    
+    /* Allow nav links to wrap into two lines */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        max-width: 100%;
     }
 }
 
@@ -396,19 +414,6 @@ header img {
     }
 }
 
-@media (max-width:500px) {
-    nav .layout-content {
-        padding-inline: 0;
-    }
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    header .layout-content {
-        padding-inline: 0;
-    }
-}
-
 /* --- Base Mobile Elements (Hidden by Default) --- */
 /* Hide all main mobile nav elements on larger screens */
 .mobile-top-bar,
@@ -426,7 +431,7 @@ footer,
 }
 
 /* --- Media Query for Mobile Screens --- */
-@media (max-width: 500px) { /* Adjust breakpoint to match your design */
+@media (max-width: 700px) { /* Changed from 500px to 800px */
 
     /* Hide the desktop navbar on mobile */
     .desktop-navbar {
@@ -525,7 +530,6 @@ footer,
         flex-grow: 1; /* Allow links section to take up space */
         gap: 1.2rem;
     }
-    }
 
     /* Styles for the menu footer (optional) */
     .mobile-off-canvas-menu .menu-footer {
@@ -571,4 +575,20 @@ footer,
         filter: blur(5px); /* Applies a 5px blur */
         pointer-events: none; /* Prevents clicks/interactions on the blurred content */
         transition: filter 0.3s ease-in-out; /* Smooth animation for the blur */
+    }
+}
+
+/* Additional styles for handling nav link wrapping before mobile breakpoint */
+@media (max-width: 950px) and (min-width: 701px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        line-height: 1.2;
+    }
+    
+    /* Reduce padding if needed to give more space */
+    nav .layout-content {
+        padding-inline: 1rem;
+    }
 }

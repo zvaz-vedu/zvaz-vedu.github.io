@@ -77,7 +77,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    border-radius: 1rem;
 }
 #join-us .secondary-button {
     background-color: var(--secondary);
@@ -101,7 +100,6 @@
     font-size: 2.5rem;
     text-decoration: none;
     font-weight: 700;
-    border-radius: 1rem;
     padding: 2rem;
     transition: var(--transition);
 }

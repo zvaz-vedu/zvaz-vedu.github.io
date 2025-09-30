@@ -117,7 +117,6 @@ tr td:nth-of-type(1), tr td:nth-of-type(4) {
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-    border-radius: 1rem;
 }
 #youtube .secondary-button {
     background-color: var(--secondary);

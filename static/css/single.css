@@ -1,5 +1,6 @@
 /* HEADER */
 
+
 header .layout-content {
     flex-direction: row;
     align-items: center;
@@ -89,7 +90,6 @@ section .layout-content {
 
 .team-body {
     max-width: 90%;
-    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,7 +134,6 @@ section .layout-content {
     gap: 3rem;
     justify-content: center;
     padding: var(--inspacer);
-    border-radius: 2rem;
     background-color: var(--secondary10);
 }
 

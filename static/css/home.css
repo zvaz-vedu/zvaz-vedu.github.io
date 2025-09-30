@@ -13,8 +13,8 @@
     width: min(100%, 400px);
 }
 #hero-call {
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: 10rem;
+    line-height: 10rem;
     padding-bottom: 5rem;
 }
 #hero-call span {
@@ -24,20 +24,20 @@
 #hero-call span::after {
     position: absolute;
     display: block;
-    width: 100%;
-    height: 20px;
+    width: 110%;
+    right: -5%;
+    height: 25px;
     content: "";
     z-index: -1;
-    bottom: 10px;
-    right: 0;
+    bottom: 20px;
     background-color: var(--primary70);
-    transform: rotate(-5deg);
-    border-radius: 5000px;
+    transform: rotate(-3deg);
 }
 #hero-text {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     padding-bottom: 5rem;
+    font-weight: 700;
 }
 #hero-row {
     display: flex;
@@ -51,45 +51,27 @@
     position: relative;
 }
 #hero-graphics img, #hero-graphics div {
-    border-radius: 100%;
     display: block;
     position: absolute;
 }
 #hero-graphics-primary {
-    width: 320px;
+    width: 300px;
     z-index: 5;
-    right: 100px;
-    top: 100px;
-    border: 15px solid var(--background);
+    top: -10px;
+    right: 200px;
+    border: 12px solid var(--primary);
 }
 #hero-graphics-secondary {
-    width: 250px;
-    right: 50px;
+    width: 300px;
+    right: -10px;
+    top: 120px;
     z-index: 4;
-    border: 15px solid var(--background);
+    border: 12px solid var(--primary);
 }
 #hero-graphics-icon {
-    width: 300px;
-    right: 180px;
-    top: -30px;
-    z-index: 3;
-}
-#hero-graphics-circle-1 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--primary);
-    z-index: 10;
-    right: 0px;
-    top: 140px;
-    z-index: 3;
-}
-#hero-graphics-circle-2 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--accent);
-    z-index: 10;
-    right: 300px;
-    top: 200px;
+    width: 190px;
+    right: 68px;
+    top: 12px;
     z-index: 3;
 }
 
@@ -100,8 +82,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
-    background-color: var(--primary20);
-    border-radius: 1rem;
+    background-color: var(--primary10);
 }
 #what h3 {
     display: flex;
@@ -123,13 +104,12 @@
 .what-section > i {
     display: block;
     width: fit-content;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     margin-inline: auto;
     font-size: 40px;
 }
 .what-section .secondary-button {
     margin-top: 1rem;
-    margin-left: auto;
     background-color: var(--primary70);
 }
 
@@ -144,7 +124,6 @@
 }
 #stats .secondary-button {
     background-color: var(--accent);
-    color: var(--background);
 }
 
 .bento-board {
@@ -160,31 +139,33 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    border-radius: 1rem;
     height: 100%;
     text-align: center;
     padding: 3rem;
+    font-weight: 700;
 }
 .bento-title {
     font-size: 3rem;
+    font-family: 'ZV-custom';
+    text-transform: uppercase;
 }
 .bento-row1col1 {
-    background-color: var(--accent30);
+    background-color: var(--accent10);
     grid-column-start: 1;
     grid-column-end: 4;
 }
 .bento-row1col2 {
-    background-color: var(--accent10);
+    background-color: var(--accent50);
     grid-column-start: 4;
     grid-column-end: 6;
 }
 .bento-row2col1 {
-    background-color: var(--accent80);
+    background-color: var(--accent50);
     grid-column-start: 1;
     grid-column-end: 3;
 }
 .bento-row2col2 {
-    background-color: var(--accent50);
+    background-color: var(--accent30);
     grid-column-start: 3;
     grid-column-end: 6;
 }
@@ -209,7 +190,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border-radius: 1rem;
     padding: var(--inspacer);
     gap: 1rem;
     width: 100%;
@@ -245,7 +225,6 @@
     max-height: 100%;
 }
 .grid-board-item h4 {
-    margin-bottom: .5rem;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -276,6 +255,7 @@
 .grid-board .secondary-button {
     background-color: var(--secondary);
     margin: auto 0 0 auto;
+    font-weight: normal;
 }
 .grid-full {
     flex-direction: row;
@@ -305,7 +285,6 @@
 
 #cta-call {
     font-size: 6rem;
-    font-weight: 700;
     position: relative;
     display: block;
     width: fit-content;
@@ -323,7 +302,6 @@
 #cta-text {
     margin-top: 4rem;
     font-size: 1.8rem;
-    font-weight: normal;
     text-align: center;
 }
 

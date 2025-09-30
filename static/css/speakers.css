@@ -5,14 +5,14 @@
 header .primary-button {
     background-color: var(--accent);
     color: var(--background);
-    font-size: 1.2rem;
+    font-size: 1.8em;
 }
 header .primary-button:hover {
     color: var(--background);
 }
 
 @media (prefers-color-scheme: dark) {
-    header .primary-button {
+    header .primary-button:hover {
         color: var(--text);
     }
 }
@@ -56,13 +56,13 @@ header .primary-button:hover {
 .speaker-name::after {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 110%;
     height: 7px;
     content: "";
-    bottom: -3px;
+    bottom: 0;
+    right: -5%;
     z-index: -1;
-    transform: rotate(-3deg);
-    border-radius: 5000px;
+    transform: rotate(-2deg);
     background-color: var(--accent50);
 }
 
@@ -98,6 +98,7 @@ header .primary-button:hover {
 }
 .speaker-bio .secondary-button {
     background-color: var(--accent20);
+    font-size: 1em;
 }
 .speaker-bio .secondary-button i {
     margin-left: .5rem;
@@ -107,6 +108,7 @@ header .primary-button:hover {
     display: none;
     margin-top: 1.2rem;
     transition: var(--transition);
+    font-weight: 400;
 }
 
 #speaker-filters {
