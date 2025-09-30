@@ -70,8 +70,8 @@
 }
 #hero-graphics-icon {
     width: 190px;
-    right: 10px;
-    top: -65px;
+    right: 68px;
+    top: 12px;
     z-index: 3;
 }
 
@@ -146,7 +146,7 @@
 }
 .bento-title {
     font-size: 3rem;
-    font-family: 'Zvaz vedu Custom';
+    font-family: 'ZV-custom';
     text-transform: uppercase;
 }
 .bento-row1col1 {

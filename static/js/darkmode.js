@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
             : '/media/imgs/base/logo_dark.webp';
 
         const markSrc = darkMode
-            ? '/media/imgs/base/mark.webp'
-            : '/media/imgs/base/mark-blk.webp';
+            ? '/media/imgs/locations/kocka2bila.webp'
+            : '/media/imgs/locations/kocka2cerna.webp';
 
         const desktopMainLogo = document.querySelector('.desktop-navbar .nav-logo img');
         if (desktopMainLogo) {
@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
              }
          });
 
+
         // ADDED: Update .mark-img elements within .layout-container .layout-content
         document.querySelectorAll('.layout-container .layout-content .mark-img').forEach(function(img) {
             const currentRelativeSrc = new URL(img.src).pathname;
@@ -76,6 +77,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 img.src = markSrc;
             }
         });
+
+         document.querySelectorAll('#hero-graphics-icon').forEach(function(img) {
+             const currentRelativeSrc = new URL(img.src).pathname;
+             if (currentRelativeSrc !== markSrc) {
+                  img.src = markSrc;
+             }
+         });
+
+         document.querySelectorAll('.header-graphics-logo').forEach(function(img) {
+             const currentRelativeSrc = new URL(img.src).pathname;
+             if (currentRelativeSrc !== markSrc) {
+                  img.src = markSrc;
+             }
+         });
 
         document.querySelectorAll('.layout-container .layout-content .team-section .full-logo').forEach(function(img) {
             img.src = mainLogoSrc;

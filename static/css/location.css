@@ -60,7 +60,7 @@ header .primary-button {
     display: block;
     position: absolute;
     width: 250px;
-    right: -30px;
+    right: 60px;
     top: -140px;
     z-index: 3;
 }
