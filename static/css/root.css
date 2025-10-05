@@ -68,58 +68,58 @@
     --primary95: #FFC300;
 
     /* Secondary opacity variations (using FFD400 - HSL: 50, 100%, 50%) */
-    --secondary5: #8F6D00;
-    --secondary10: #8F6D00;
-    --secondary15: #8F6D00;
+        --secondary5: #C79E00;
+        --secondary10: #CBAD00;
+        --secondary15: #CEB200;
 
-    --secondary20: #A37D00;
-    --secondary25: #A37D00;
-    --secondary30: #A37D00;
+        --secondary20: #D1B800;
+        --secondary25: #D4BD00;
+        --secondary30: #D7C200;
 
-    --secondary35: #B88D00;
-    --secondary40: #B88D00;
-    --secondary45: #B88D00;
+        --secondary35: #DAC700;
+        --secondary40: #DDCC00;
+        --secondary45: #E0D100;
 
-    --secondary50: #cc9c00;
-    --secondary55: #cc9c00;
-    --secondary60: #cc9c00;
+        --secondary50: #E3D600;
+        --secondary55: #E6DB00;
+        --secondary60: #E9E000;
 
-    --secondary65: #e0ac00;
-    --secondary70: #e0ac00;
-    --secondary75: #e0ac00;
+        --secondary65: #ECE500;
+        --secondary70: #EFEA00;
+        --secondary75: #F2EF00;
 
-    --secondary80: #f5bc00;
-    --secondary85: #f5bc00;
-    --secondary90: #f5bc00;
+        --secondary80: #F5F400;
+        --secondary85: #F8F900;
+        --secondary90: #FBFE00;
 
-    --secondary95: #ffc300;
+        --secondary95: #FFD400;
 
     /* Accent opacity variations (using E0AC00 - HSL: 45, 100%, 44%) */
-    --accent5: #8F6D00;
-    --accent10: #8F6D00;
-    --accent15: #8F6D00;
+        --accent5: #C79100;
+        --accent10: #CB9600;
+        --accent15: #CD9900;
 
-    --accent20: #A37D00;
-    --accent25: #A37D00;
-    --accent30: #A37D00;
+        --accent20: #CE9C00;
+        --accent25: #D09F00;
+        --accent30: #D2A200;
 
-    --accent35: #B88D00;
-    --accent40: #B88D00;
-    --accent45: #B88D00;
+        --accent35: #D4A500;
+        --accent40: #D6A800;
+        --accent45: #D8AB00;
 
-    --accent50: #cc9c00;
-    --accent55: #cc9c00;
-    --accent60: #cc9c00;
+        --accent50: #D9AE00;
+        --accent55: #DBB100;
+        --accent60: #DDB400;
 
-    --accent65: #e0ac00;
-    --accent70: #e0ac00;
-    --accent75: #e0ac00;
+        --accent65: #DFB700;
+        --accent70: #E1B900;
+        --accent75: #E3BC00;
 
-    --accent80: #f5bc00;
-    --accent85: #f5bc00;
-    --accent90: #f5bc00;
+        --accent80: #E5BF00;
+        --accent85: #E7C200;
+        --accent90: #E8C500;
 
-    --accent95: #ffc300;
+        --accent95: #E0AC00;
 
     --font: 'Inter', sans-serif;
     --spacer: 2rem 0;
