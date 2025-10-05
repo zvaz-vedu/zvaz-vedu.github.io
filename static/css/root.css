@@ -41,31 +41,31 @@
     --text95: hsla(0, 0%, 0%, 0.95);
 
     /* Primary opacity variations (using FFC300 - HSL: 46, 100%, 50%) */
-    --primary5: #8F6D00;
-    --primary10: #8F6D00;
-    --primary15: #8F6D00;
+--primary5: #C79100;
+    --primary10: #CBA600;
+    --primary15: #CDAD00;
 
-    --primary20: #A37D00;
-    --primary25: #A37D00;
-    --primary30: #A37D00;
+    --primary20: #CEA500;
+    --primary25: #D1AA00;
+    --primary30: #D5AF00;
 
-    --primary35: #B88D00;
-    --primary40: #B88D00;
-    --primary45: #B88D00;
+    --primary35: #D7B400;
+    --primary40: #DAB900;
+    --primary45: #DDBD00;
 
-    --primary50: #cc9c00;
-    --primary55: #cc9c00;
-    --primary60: #cc9c00;
+    --primary50: #E0C200;
+    --primary55: #E3C700;
+    --primary60: #E6CB00;
 
-    --primary65: #e0ac00;
-    --primary70: #e0ac00;
-    --primary75: #e0ac00;
+    --primary65: #E8CF00;
+    --primary70: #EBD400;
+    --primary75: #EED800;
 
-    --primary80: #f5bc00;
-    --primary85: #f5bc00;
-    --primary90: #f5bc00;
+    --primary80: #F1DC00;
+    --primary85: #F3E100;
+    --primary90: #F6E500;
 
-    --primary95: #ffc300;
+    --primary95: #FFC300;
 
     /* Secondary opacity variations (using FFD400 - HSL: 50, 100%, 50%) */
     --secondary5: #8F6D00;
