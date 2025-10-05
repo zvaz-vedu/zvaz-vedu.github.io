@@ -19,7 +19,7 @@ team="plzen"
 alias="maty"
 photo="maty.webp"
 position="zástupce ředitele, zakladatel"
-school="Masarykovo gymnázium, Plzeň"
+school="Fakulta jaderná a fyzikálně inženýrská, ČVUT"
 mail="matyasmatta@zvazvedu.cz" >}}
 
 
@@ -31,7 +31,7 @@ team="plzen"
 alias="eda"
 photo="eda.webp"
 position="koordinátor administrativy"
-school="Masarykovo gymnázium, Plzeň"
+school="Fakulta aplikovaných věd, ZČU"
 mail="eduardplic@zvazvedu.cz" >}}
 
 {{< member
@@ -40,7 +40,7 @@ team="plzen"
 photo="tomáš.webp"
 alias="tomáš"
 position="koordinátor pro ICT"
-school="Masarykovo gymnázium, Plzeň"
+school="Fakulta aplikovaných věd, ZČU"
 mail="tomasrajchman@zvazvedu.cz" >}}
 
 {{< member
@@ -76,7 +76,7 @@ team="plzen"
 photo="david.webp"
 alias="david"
 position="koordinátor vize projektu"
-school="Masarykovo gymnázium, Plzeň"
+school="Matematicko-fyzikální fakulta, UK"
 mail="davidnemec@zvazvedu.cz" >}}
 
 ### Brno
@@ -99,7 +99,7 @@ team="brno"
 photo="matěj.webp"
 alias="matěj"
 position="hlavní organizátor pro Brno"
-school="Cyrilometodějské gymnázium, Brno"
+school="Matematicko-fyzikální fakulta, Přírodovědecká fakulta, UK"
 mail="brno@zvazvedu.cz" >}}
 
 {{< member
