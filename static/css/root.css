@@ -3,9 +3,9 @@
 
 @font-face {
   font-family: 'ZV-custom';
-  src: url('/fonts/ZvazVedu_Custom.ttf') format('woff2'),
-       url('/fonts/ZvazVedu-Custom.woff') format('woff'),
-       url('/fonts/ZvazVedu-Custom.ttf') format('truetype');
+  src: url('/fonts/ZvazVedu_V2.ttf') format('woff2'),
+       url('/fonts/ZvazVedu_V2.woff') format('woff'),
+       url('/fonts/ZvazVedu_V2.ttf') format('truetype');
 }
 
 :root {
