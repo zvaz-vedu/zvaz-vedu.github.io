@@ -422,6 +422,7 @@
     #hero-row {
         gap: 1.5rem;
         justify-content: center;
+        font-size: 1rem;
     }
     .bento-board {
         grid-template-columns: 1fr;
