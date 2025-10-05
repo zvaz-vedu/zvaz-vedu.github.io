@@ -347,6 +347,29 @@ header img {
     margin-bottom: .3rem;
 }
 
+.link-button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--inspacer);
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--secondary60);
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.link-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.link-button .secondary-button {
+  background-color: var(--secondary);
+}
+
 /* MEDIA */
 
 @media (max-width:760px) {
