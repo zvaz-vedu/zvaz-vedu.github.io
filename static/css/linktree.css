@@ -44,8 +44,6 @@
     margin: 0;
 }
 
-/* --- Responsive Design --- */
-
 /* For tablets: 2 columns */
 @media (max-width: 768px) {
     .tile-container {
