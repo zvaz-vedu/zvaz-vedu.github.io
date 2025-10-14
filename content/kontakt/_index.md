@@ -79,6 +79,16 @@ position="koordinátor vize projektu"
 school="Matematicko-fyzikální fakulta, UK"
 mail="davidnemec@zvazvedu.cz" >}}
 
+{{< member
+name="Jan Poupa"
+team="plzen"
+photo="poupič.webp"
+alias="poupič"
+position="hlavní grafik"
+school="Fakulta designu a umění Ladislava Sutnara"
+mail="janpoupa@zvazvedu.cz" >}}
+
+
 ### Brno
 
 {{< member
