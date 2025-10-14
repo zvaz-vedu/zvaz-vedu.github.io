@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 textElement.style.width = '100%';
 
                 // New: Change the bento text
-                bentoTextElement.textContent = `Všech 150 míst obsazeno!`; // Or whatever you prefer
+                bentoTextElement.textContent = `Všech ${targetCount} míst obsazeno!`; // Or whatever you prefer
             } else {
                 // Reset styles if the count drops below the target
                 fillElement.style.backgroundColor = '';

@@ -118,7 +118,7 @@ nav .layout-content {
     text-wrap: nowrap;
     color: var(--text);
     text-transform: uppercase;
-    font-family: 'ZV-custom';
+    font-family: 'ZV-Display';
     font-size: 1.8em;
     font-weight: normal;
     transition: var(--transition);
@@ -224,7 +224,7 @@ footer .layout-content {
     display: block;
     width: fit-content;
     font-size: 1.8em;
-    font-family: ZV-custom;
+    font-family: ZV-Display;
     text-transform: uppercase;
     font-weight: normal;
 }
@@ -261,7 +261,7 @@ footer .layout-content {
     position: relative;
     font-size: 5rem;
     text-align: center;
-    font-family: ZV-custom;
+    font-family: ZV-Display;
     text-transform: uppercase;
     font-weight: normal;
 }
