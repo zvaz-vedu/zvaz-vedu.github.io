@@ -1,0 +1,61 @@
+/* --- Tile Layout --- */
+
+/* The main container for the grid */
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 20px; /* Space between tiles */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the container with some margin */
+}
+
+/* Individual tile styling */
+.tile {
+    background-color: var(--primary); /* Or your preferred tile color */
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; /* Makes the tiles square */
+}
+
+.tile:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Add shadow on hover */
+}
+
+/* Icon styling */
+.tile i {
+    font-size: 4rem; /* Large icon size */
+    margin-bottom: 20px; /* Space between icon and text */
+    color: var(--text); /* Example icon color, change as needed */
+}
+
+/* Text styling */
+.tile p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* --- Responsive Design --- */
+
+/* For tablets: 2 columns */
+@media (max-width: 768px) {
+    .tile-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile phones: 1 column */
+@media (max-width: 350px) {
+    .tile-container {
+        grid-template-columns: 1fr;
+    }
+}
