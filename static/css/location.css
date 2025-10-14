@@ -696,18 +696,18 @@ tr td:nth-of-type(1) {
         width: 100%;
     }
     header h1 {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 5rem;
+        line-height: 5rem;
     }
     header h1 span::after {
         height: 14px;
         bottom: 0;
     }
     .header-text {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     header .primary-button {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .countdown-block {
         display: flex;
@@ -739,7 +739,9 @@ tr td:nth-of-type(1) {
 
 @media (max-width: 450px) {
     header .layout-content {
-        padding-inline: 0;
+        padding-inline: 15px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     #content .layout-content, #program .layout-content {
         padding-inline: 0;

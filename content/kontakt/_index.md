@@ -44,31 +44,13 @@ school="Fakulta aplikovaných věd, ZČU"
 mail="tomasrajchman@zvazvedu.cz" >}}
 
 {{< member
-name="Štěpán Kropáček"
-team="brno"
-photo="štěpán.webp"
-alias="štěpán"
-position="koordinátor grafiky"
-school="Masarykovo gymnázium, Plzeň"
-mail="stepankropacek@zvazvedu.cz" >}}
-
-{{< member
 name="Lucie Kaiserová"
 team="plzen"
 photo="lucka.webp"
 alias="lucka"
-position="organizátor"
+position="koordinátor PR"
 school="Gymnázium J. Š. Baara, Domažlice"
 mail="kaiserova@zvazvedu.cz" >}}
-
-{{< member
-name="Lucie Vu"
-team="plzen"
-photo="lucka-vu.webp"
-alias="lucka-vu"
-position="organizátor"
-school="Masarykovo gymnázium, Plzeň"
-mail="lucievu@zvazvedu.cz" >}}
 
 {{< member
 name="David Němec"
@@ -84,7 +66,7 @@ name="Jan Poupa"
 team="plzen"
 photo="poupič.webp"
 alias="poupič"
-position="hlavní grafik"
+position="koordinátor grafiky"
 school="Fakulta designu a umění Ladislava Sutnara"
 mail="janpoupa@zvazvedu.cz" >}}
 
