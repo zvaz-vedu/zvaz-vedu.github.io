@@ -27,7 +27,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'ZV-Bold';
+    font-family: 'ZV-Display';
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -275,10 +275,10 @@ footer .layout-content {
     width: 110%;
     height: 20px;
     content: "";
-    bottom: 0px;
+    bottom: 5px;
     right: -5%;
     z-index: -1;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
 }
 
 #partners .layout-content{

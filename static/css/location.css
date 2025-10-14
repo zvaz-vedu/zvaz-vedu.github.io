@@ -83,8 +83,8 @@ h2::after {
     height: 14px;
     content: "";
     z-index: -1;
-    bottom: 0px;
-    transform: rotate(-3deg);
+    bottom: 5px;
+    transform: rotate(-2deg);
 
 }
 h3 {
@@ -242,6 +242,8 @@ h3::after {
     width: auto;
     box-sizing: content-box;
     flex-shrink: 0;
+    font-family: 'ZV-Display';
+    font-weight: 400;
 }
 
 #countdown-display .countdown-block {
@@ -252,7 +254,6 @@ h3::after {
 
 #countdown-display .count-number {
   font-size: 3.5rem;
-  font-weight: bold;
   line-height: 1;
   color: inherit;
 }
@@ -293,8 +294,7 @@ h3::after {
   position: relative;
   height: 40px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 999px;
+  background-color: var(--background);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   box-sizing: border-box;
@@ -309,7 +309,6 @@ h3::after {
   width: 0;
   background-color: var(--accent);
   display: block;
-  border-radius: 999px;
   transition: width 0.8s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
   box-shadow: none;
 }

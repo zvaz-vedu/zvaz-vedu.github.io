@@ -37,7 +37,6 @@
     font-size: 1.8rem;
     line-height: 2rem;
     padding-bottom: 5rem;
-    font-weight: 700;
 }
 #hero-row {
     display: flex;
@@ -142,7 +141,6 @@
     height: 100%;
     text-align: center;
     padding: 3rem;
-    font-weight: 700;
 }
 .bento-title {
     font-size: 3rem;

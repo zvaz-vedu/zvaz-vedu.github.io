@@ -147,7 +147,7 @@
 }
 .author-name {
   margin: 0;
-  font-weight: 700;
+  font-family: 'ZV-Bold';
   color: var(--accent80);
 }
 .author-role {
@@ -211,7 +211,7 @@
   background-color: transparent;
 }
 .testimonial-card.org:hover .org-logo {
-  filter: grayscale(0%) brightness(70%);
+  filter: grayscale(0%) brightness(0%);
 }
 
 
@@ -224,7 +224,7 @@
 }
 
 .org-name {
-  font-weight: 700;
+  font-family: 'ZV-Bold';
   color: var(--primary90);
   margin: 0;
   font-size: 0.95rem;

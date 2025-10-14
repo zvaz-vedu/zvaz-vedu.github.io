@@ -156,13 +156,13 @@ section .layout-content {
 .section-sponsors h2 span::after, .section-partners h2 span::after {
 	position: absolute;
 	display: block;
-	width: 100%;
+	width: 110%;
 	height: 15px;
 	content: "";
 	z-index: -1;
 	bottom: 5px;
-	right: 0;
-	transform: rotate(-3deg);
+	right: -5%;
+	transform: rotate(-2deg);
 }
 .section-sponsors h2 span::after {
 	background-color: var(--primary70);
@@ -202,7 +202,7 @@ section .layout-content {
 	transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .supporter-item.sponsor:hover img {
-	filter: grayscale(0%);
+  	filter: grayscale(0%) brightness(0%);
 	opacity: 1;
 }
 .supporter-item.sponsor h3 {
@@ -244,7 +244,7 @@ section .layout-content {
 	transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .supporter-item.partner:hover img {
-	filter: grayscale(0%);
+  	filter: grayscale(0%) brightness(0%);
 	opacity: 1;
 }
 .supporter-item.partner h3 {

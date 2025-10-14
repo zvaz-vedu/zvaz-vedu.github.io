@@ -120,15 +120,14 @@ header .primary-button:hover {
 }
 #speaker-search {
     font-size: 1rem;
-    color: var(--text);
+    color: var(--background);
     padding: .5rem .8rem;
-    border-radius: .5rem;
     background-color: var(--accent5);
-    border: 1px solid var(--text50);
+    border: none;
     width: 190px;
 }
 #speaker-search:focus {
-    border-color: var(--accent);
+    border: none;
 }
 .speaker-filters-container {
     display: flex;
@@ -138,7 +137,7 @@ header .primary-button:hover {
 }
 #location-brno, #location-praha, #location-plzeň {
     appearance: none;
-    background-color: var(--accent5);
+    background-color: var(--background);
     margin: 0;
     font: inherit;
     color: var(--text);
@@ -147,7 +146,6 @@ header .primary-button:hover {
     margin-right: .3rem;
     margin-left: 1.2rem;
     border: 0.15em solid var(--text);
-    border-radius: .3rem;
     transform: translateY(-0.075em);
     display: grid;
     place-content: center;
