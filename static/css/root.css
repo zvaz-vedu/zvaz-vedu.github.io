@@ -2,10 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-  font-family: 'ZV-custom';
-  src: url('/fonts/ZvazVedu_V2.ttf') format('woff2'),
-       url('/fonts/ZvazVedu_V2.woff') format('woff'),
-       url('/fonts/ZvazVedu_V2.ttf') format('truetype');
+  font-family: 'ZV-Bold';
+  src: url('/fonts/ZvazVedu_V2_Bold.ttf') format('woff2'),
+       url('/fonts/ZvazVedu_V2_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ZV-Display';
+  src: url('/fonts/ZvazVedu_V2_Display.ttf') format('woff2'),
+       url('/fonts/ZvazVedu_V2_Display.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ZV-Regular';
+  src: url('/fonts/ZvazVedu_V2_Regular.ttf') format('woff2'),
+       url('/fonts/ZvazVedu_V2_Regular.woff2') format('truetype');
 }
 
 :root {
