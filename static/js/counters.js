@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const sheetUrl = registrationInfoDiv ? registrationInfoDiv.dataset.sheetUrl : null;
     const targetCount = 150; // Max registration value
 
+    const myDiv = document.getElementById('my-special-div');
+        if (myDiv) {
+        const hugoVar = myDiv.dataset.myVar; // "Hello from the front matter!"
+        console.log(hugoVar);
+    }
+
     // --- Element References ---
     const progressBarTrack = registrationInfoDiv ? registrationInfoDiv.querySelector('.progress-bar-track-pill') : null;
     const progressBarFill = progressBarTrack ? progressBarTrack.querySelector('.progress-bar-fill-pill') : null;
