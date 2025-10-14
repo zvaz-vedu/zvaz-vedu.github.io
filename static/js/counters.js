@@ -3,13 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Configuration ---
     const registrationInfoDiv = document.getElementById('registration-info');
     const sheetUrl = registrationInfoDiv ? registrationInfoDiv.dataset.sheetUrl : null;
-    const targetCount = 150; // Max registration value
-
-    const myDiv = document.getElementById('my-special-div');
-        if (myDiv) {
-        const hugoVar = myDiv.dataset.myVar; // "Hello from the front matter!"
-        console.log(hugoVar);
-    }
+    const maxParticipantsStr  = registrationInfoDiv ? registrationInfoDiv.dataset.maxParticipants: 100;
+    const targetCount = parseInt(maxParticipantsStr, 10);
 
     // --- Element References ---
     const progressBarTrack = registrationInfoDiv ? registrationInfoDiv.querySelector('.progress-bar-track-pill') : null;
