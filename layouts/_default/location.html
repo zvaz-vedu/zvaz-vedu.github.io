@@ -44,6 +44,7 @@
     {{if .Params.liveAction}}
         <section class="layout-container" id="accomplishments">
             <div class="layout-content bento-board">
+                {{if not .Params.registration}}
                 <div class="bento-board-item" style="background-color: var(--accent10);">
                     <h2 class="bento-title">Je to za námi!</h2>
                     <a href="https://www.youtube.com/playlist?list=PL1NMrPWjk08QP6uhihPKJG3X3rgfydf6l" class="secondary-button">Záznamy přednášek ></a>
@@ -53,6 +54,27 @@
                     <p class="bento-text">Líbilo se vám? Máte nápady na zlepšení?</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSddafuZsfBfNeLTAEmzRyZLWfmN3ACtNxas_jzyXNVKEeV86Q/viewform?usp=header" class="secondary-button">Feedback ></a>
                 </div>
+                {{end}}
+                {{if .Params.registration}}
+                <div class="bento-board-item" style="background-color: var(--accent)">
+                    <div id="countdown-display" class="info-block">
+                        Načítám čas…
+                    </div>
+                    <script>
+                        const eventTimeStr = {{.Params.eventTime}};
+                    </script>
+                    <p class="bento-text">zbývá do začátku</p>
+                </div>
+                <div class="bento-board-item" style="background-color: var(--accent60)">
+                    <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}">
+                        <div class="progress-bar-track-pill">
+                           <div class="progress-bar-fill-pill"></div>
+                           <span class="progress-bar-count-text">Chyba, pracujeme na tom!</span>
+                       </div>
+                   </div>
+                    <p class="bento-text" id="bento-registration-text">účastníků</p>
+                </div>
+                {{end}}
                 <div class="bento-board-item" style="background-color: var(--accent30);">
                     <h2 class="bento-title">10</h2>
                     <p class="bento-text">nových přednášejících</p>
@@ -71,10 +93,12 @@
         {{end}}
 
         <section class="layout-container" id="program">
+            {{if .Params.program}}
             <div class="layout-content">
                 <h2>Program</h2>
                 {{.Content}}
             </div>
+            {{end}}
             {{if .Params.abstracts}}
                 <div class="layout-content link-button">
                     <div class="link-button-item">
