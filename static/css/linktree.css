@@ -3,16 +3,15 @@
 /* The main container for the grid */
 .tile-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-    gap: 20px; /* Space between tiles */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: 20px auto; /* Center the container with some margin */
+    margin: 20px auto;
 }
 
-/* Individual tile styling */
 .tile {
-    background-color: var(--primary); /* Or your preferred tile color */
+    background-color: var(--primary);
     padding: 20px 10px;
     text-align: center;
     text-decoration: none;
@@ -22,19 +21,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1 / 1; /* Makes the tiles square */
+    height: 145px;
+    width: 145px;
+    
+    /* --- Sizing & Overflow Rules --- */
+    aspect-ratio: 1 / 1;    /* ✨ RE-ADDED: This forces a perfect 1:1 square aspect ratio. */
+    overflow: hidden;       /* ✨ ADDED: Crucial for hiding any content that doesn't fit. */
 }
 
 .tile:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Add shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 /* Icon styling */
 .tile i {
-    font-size: 4rem; /* Large icon size */
-    margin-bottom: 20px; /* Space between icon and text */
-    color: var(--text); /* Example icon color, change as needed */
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--text);
 }
 
 /* Text styling */
@@ -42,6 +46,8 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
+    line-height: 1.4;             /* ✨ ADDED: Improves readability for multi-line text. */
+    overflow-wrap: break-word;    /* ✨ ADDED: Forces long words to wrap and prevents overflow. */
 }
 
 /* For tablets: 2 columns */

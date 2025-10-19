@@ -1,4 +1,39 @@
 ---
-title: Odkazy
-layout: linktree
+title: "Odkazy"
+layout: "linktree" # Optional: specifies which layout to use
+# Add all your link data below
+links:
+  - url: "https://www.instagram.com/zvaz.vedu/"
+    icon: "fa-brands fa-instagram"
+    text: "Instagram"
+  - url: "https://discord.gg/XggNwnz5n8"
+    icon: "fa-brands fa-discord"
+    text: "Discord"
+  - url: "https://www.youtube.com/@zvazvedu"
+    icon: "fa-brands fa-youtube"
+    text: "YouTube"
+  - url: "/home"
+    icon: "fa-solid fa-globe"
+    text: "Web"
+  - url: "/o-nas"
+    icon: "fa-solid fa-info-circle"
+    text: "O nás"
+  - url: "/plzen"
+    icon: "fa-solid fa-city"
+    text: "Plzeň"
+  - url: "/brno"
+    icon: "fa-solid fa-city"
+    text: "Brno"
+  - url: "/praha"
+    icon: "fa-solid fa-city"
+    text: "Praha"
+  - url: "https://docs.google.com/forms/d/e/1FAIpQLSee_d5YIpVJExyH-XeNKfZjdl78TP1sEvC1HF3SbCJakfBDbA/viewform?usp=dialog"
+    icon: "fa-solid fa-handshake-angle"
+    text: "Staň se ambasadorem"
+  - url: "https://docs.google.com/forms/d/e/1FAIpQLSdMSOMIXz7kChsWLGJV2vMOnJaSpSXW9fi7ViNKNH4Og5eRvA/viewform?usp=dialog"
+    icon: "fa-solid fa-microphone"
+    text: "Přednášej u nás"
+  - url: "/kontakt"
+    icon: "fa-solid fa-users"
+    text: "Náš tým"
 ---
