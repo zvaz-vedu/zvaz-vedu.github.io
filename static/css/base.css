@@ -301,9 +301,10 @@ footer .layout-content {
 .partner-body img {
     width: 100%;
     transition: var(--transition);
+    filter: brightness(0);
 }
 .partner-body img:hover {
-    filter: brightness(0);
+    filter: brightness(100);
 }
 
 /* HEADER */
