@@ -134,7 +134,7 @@ section .layout-content {
 	gap: 3rem;
 	justify-content: center;
 	padding: var(--inspacer);
-	background-color: var(--secondary10);
+	background-color: var(--secondary);
 }
 .section-sponsors .layout-content, .section-partners .layout-content {
 	flex-direction: column;
@@ -165,10 +165,10 @@ section .layout-content {
 	transform: rotate(-2deg);
 }
 .section-sponsors h2 span::after {
-	background-color: var(--primary70);
+	background-color: var(--primary);
 }
 .section-partners h2 span::after {
-	background-color: var(--accent40);
+	background-color: var(--accent);
 }
 .supporters-grid {
 	display: grid;
@@ -179,7 +179,7 @@ section .layout-content {
 	justify-content: center;
 }
 .supporter-item.sponsor {
-	background-color: var(--primary80);
+	background-color: var(--primary);
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -202,13 +202,13 @@ section .layout-content {
 	transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .supporter-item.sponsor:hover img {
-  	filter: grayscale(0%) brightness(0%);
+  	filter: grayscale(100%) brightness(100%);
 	opacity: 1;
 }
 .supporter-item.sponsor h3 {
 	font-size: 1.5rem;
 	font-weight: normal;
-	color: var(--text);
+	color: var(--text2);
 }
 .supporter-item.sponsor p {
 	font-size: 1rem;
@@ -229,7 +229,7 @@ section .layout-content {
 	justify-content: center;
 	text-align: center;
 	padding: 2rem;
-	background-color: var(--accent90);
+	background-color: var(--accent);
 	box-shadow: var(--shadow);
 	transition: box-shadow 0.3s ease-in-out;
 }
@@ -244,7 +244,7 @@ section .layout-content {
 	transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .supporter-item.partner:hover img {
-  	filter: grayscale(0%) brightness(0%);
+  	filter: grayscale(100%) brightness(100%);
 	opacity: 1;
 }
 .supporter-item.partner h3 {
@@ -273,10 +273,8 @@ section .layout-content {
 .supporter-img-wrapper .color {
 	opacity: 0;
 }
-.supporter-item:hover .supporter-img-wrapper .monochrom {
-	opacity: 0;
-}
-.supporter-item:hover .supporter-img-wrapper .color {
+.supporter-item .supporter-img-wrapper .monochrom {
+  	filter: grayscale(0%) brightness(0%);
 	opacity: 1;
 }
 @media (max-width: 900px) {
@@ -332,16 +330,6 @@ section .layout-content {
 	}
 }
 
-@media (prefers-color-scheme: light) {
-	.supporter-item .monochrom {
-		filter: invert(1);
-	}
-}
-@media (prefers-color-scheme: dark) {
-	.supporter-item .monochrom {
-		filter: none;
-	}
-}
 .supporter-img-wrapper img {
 	transition: filter 0.5s ease-in-out;
 }
@@ -433,7 +421,7 @@ section .layout-content {
 }
 
 .infobox-container {
-    background-color: var(--accent10);
+    background-color: var(--accent);
     padding: 1.5rem;
     display: flex;
     align-items: center;

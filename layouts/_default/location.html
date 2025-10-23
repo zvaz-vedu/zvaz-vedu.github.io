@@ -45,13 +45,12 @@
         <section class="layout-container" id="accomplishments">
             <div class="layout-content bento-board">
                 {{if not .Params.registration}}
-                <div class="bento-board-item" style="background-color: var(--accent10);">
+                <div class="bento-board-item" style="background-color: var(--accent);">
                     <h2 class="bento-title">Je to za námi!</h2>
                     <a href="https://www.youtube.com/playlist?list=PL1NMrPWjk08QP6uhihPKJG3X3rgfydf6l" class="secondary-button">Záznamy přednášek ></a>
                 </div>
-                <div class="bento-board-item" style="background-color: var(--accent50)">
+                <div class="bento-board-item" style="background-color: var(--secondary);">
                     <h2 class="bento-title">Zpětná vazba!</h2>
-                    <p class="bento-text">Líbilo se vám? Máte nápady na zlepšení?</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSddafuZsfBfNeLTAEmzRyZLWfmN3ACtNxas_jzyXNVKEeV86Q/viewform?usp=header" class="secondary-button">Feedback ></a>
                 </div>
                 {{end}}
@@ -65,7 +64,7 @@
                     </script>
                     <p class="bento-text">zbývá do začátku</p>
                 </div>
-                <div class="bento-board-item" style="background-color: var(--accent60)">
+                <div class="bento-board-item" style="background-color: var(--secondary)">
                     <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}" data-max-participants="{{ .Params.maxParticipants }}">
                         <div class="progress-bar-track-pill">
                            <div class="progress-bar-fill-pill"></div>
@@ -75,7 +74,7 @@
                     <p class="bento-text" id="bento-registration-text">účastníků</p>
                 </div>
                 {{end}}
-                <div class="bento-board-item" style="background-color: var(--accent30);">
+                <div class="bento-board-item" style="background-color: var(--tertiary);">
                     <h2 class="bento-title">10</h2>
                     <p class="bento-text">nových přednášejících</p>
                 </div>

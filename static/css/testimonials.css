@@ -1,10 +1,4 @@
-/* =========================
-   TESTIMONIALS (full file)
-   - participants: square 1/1
-   - orgs: wide, scalable
-   - spacing between sections + columns
-   - uses site variables: --text, --primaryXX, --secondaryXX, --accentXX, --inspacer, --transition, --shadow
-   ========================= */
+
 
 /* --- Base / layout --- */
 
@@ -42,8 +36,8 @@
   transform: rotate(-3deg);
   z-index: -1;
 }
-.participants-section .section-title span::after { background-color: var(--accent70); }
-.orgs-section .section-title span::after        { background-color: var(--primary70); }
+.participants-section .section-title span::after { background-color: var(--accent); }
+.orgs-section .section-title span::after        { background-color: var(--primary); }
 
 /* grid wrapper */
 .split-grid {
@@ -69,7 +63,7 @@
 .testimonial-card {
   padding: var(--inspacer);
   transition: var(--transition);
-  color: var(--text);
+  color: var(--text2);
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
@@ -89,18 +83,18 @@
 /* --- Participants --- */
 
 .testimonial-card.participant {
-  background-color: var(--secondary30);
+  background-color: var(--secondary);
   justify-content: space-between;
   padding: calc(var(--inspacer) / 1.25);
   position: relative;
 }
 
 .testimonial-card.participant::before {
-  background: linear-gradient(90deg, var(--accent70), color-mix(in srgb, var(--accent70) 60%, transparent));
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 60%, transparent));
 }
 
 .testimonial-card.participant:hover {
-  background-color: var(--secondary40);
+  background-color: var(--secondary);
   box-shadow: var(--shadow);
   transform: translateY(-4px);
 }
@@ -109,7 +103,7 @@
   font-style: italic;
   line-height: 1.6rem;
   margin: 0 0 1rem 0;
-  color: var(--text);
+  color: var(--text2);
   flex: 1 1 auto;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -134,11 +128,11 @@
   place-items: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--text);
+  color: var(--text2);
 }
 
 .author-img { object-fit: cover; }
-.author-initials { background-color: var(--accent40); }
+.author-initials { background-color: var(--accent); }
 
 .author-info {
   display: flex;
@@ -148,19 +142,19 @@
 .author-name {
   margin: 0;
   font-family: 'ZV-Bold';
-  color: var(--accent80);
+  color: var(--accent);
 }
 .author-role {
   margin: 0;
   font-size: 0.95rem;
   opacity: 0.9;
-  color: var(--text);
+  color: var(--text2);
 }
 
 /* --- Orgs --- */
 
 .testimonial-card.org {
-  background-color: var(--primary20);
+  background-color: var(--primary);
   padding: calc(var(--inspacer) / 1.1);
   display: flex;
   flex-direction: column;
@@ -169,11 +163,11 @@
 }
 
 .testimonial-card.org::before {
-  background: linear-gradient(90deg, var(--primary70), color-mix(in srgb, var(--primary70) 60%, transparent));
+  background: linear-gradient(90deg, var(--primary), color-mix(in srgb, var(--primary) 60%, transparent));
 }
 
 .testimonial-card.org:hover {
-  background-color: var(--primary30);
+  background-color: var(--primary);
   box-shadow: var(--shadow);
   transform: translateY(-3px);
 }
@@ -182,7 +176,7 @@
   margin: 0;
   font-style: italic;
   line-height: 1.5rem;
-  color: var(--text);
+  color: var(--text2);
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -206,12 +200,12 @@
 .org-logo {
   max-height: 48px;
   width: auto;
-  filter: grayscale(35%) brightness(95%);
+  filter: grayscale(0%) brightness(0%);
   transition: var(--transition);
   background-color: transparent;
 }
 .testimonial-card.org:hover .org-logo {
-  filter: grayscale(0%) brightness(0%);
+  filter: grayscale(0%) brightness(100%);
 }
 
 
@@ -225,7 +219,7 @@
 
 .org-name {
   font-family: 'ZV-Bold';
-  color: var(--primary90);
+  color: var(--primary);
   margin: 0;
   font-size: 0.95rem;
 }
@@ -236,8 +230,9 @@
 
 /* --- Accessibility / small text fallback --- */
 .testimonial-card blockquote,
-.testimonial-card p {
-  color: var(--text);
+.testimonial-card p,
+.testimonial-card time {
+  color: var(--text2);
   font-size: 1rem;
 }
 

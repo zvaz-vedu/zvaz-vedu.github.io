@@ -28,14 +28,14 @@ header h1 span::after {
     content: "";
     z-index: -1;
     bottom: 10px;
-    background-color: var(--primary70);
+    background-color: var(--primary);
     transform: rotate(-3deg);
 }
 .header-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 3rem 0;
     color: var(--primary);
-    font-weight: 700;
+    font-family: ZV-Bold;
 }
 header .primary-button {
     font-size: 1.8rem;
@@ -104,13 +104,13 @@ h3::after {
     bottom: -8px;
     z-index: -1;
     transform: rotate(-5deg);
-    background-color: var(--primary85);
+    background-color: var(--primary);
 }
 
 /* CTAs */
 
 #join-us .layout-content {
-    background-color: var(--secondary30);
+    background-color: var(--secondary);
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -126,12 +126,16 @@ h3::after {
     justify-content: space-between;
     gap: 5rem;
     padding-block: 10rem;
-    background-color: var(--primary40);
     padding: 5rem;
 
 }
 .cta-body {
     max-width: 500px;
+}
+.cta-body p {
+    font-family: ZV-Regular;
+    font-size: 2rem;
+    line-height: 2.2rem;
 }
 .cta-body h2 {
     margin-bottom: 1rem;
@@ -208,15 +212,16 @@ h3::after {
     justify-content: center;
     gap: 1rem;
     padding: 3rem;
+    color: var(--text2);
 }
 .bento-board-item:nth-of-type(1) {
-    background-color: var(--primary70);
+    background-color: var(--primary);
 }
 .bento-board-item:nth-of-type(2) {
-    background-color: var(--primary20);
+    background-color: var(--secondary);
 }
 .bento-board-item:nth-of-type(3) {
-    background-color: var(--primary50);
+    background-color: var(--tertiary);
 }
 .bento-title {
     font-size: 3rem;
@@ -224,11 +229,13 @@ h3::after {
 }
 .bento-text {
     text-align: center;
-    font-weight: 700;
+    font-family: ZV-Bold;
+    color: var(--text2);
+    font-size: 2rem;
 }
 
 .bento-board .secondary-button {
-    background-color: var(--accent);
+    background-color: var(--tertiary);
 }
 
 #countdown-display .countdown-row {
@@ -279,6 +286,7 @@ h3::after {
     align-items: center;
     gap: 0.8rem;
     width: 100%;
+        padding: 0 0 1rem 0;
 }
 
 .registration-label {
@@ -286,7 +294,6 @@ h3::after {
     font-weight: bold;
     color: var(--background);
     margin: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -307,7 +314,7 @@ h3::after {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   display: block;
   transition: width 0.8s ease-out, background-color 0.5s ease-out, box-shadow 0.5s ease-out;
   box-shadow: none;
@@ -336,12 +343,12 @@ h3::after {
 @keyframes pulse-effect {
     from {
         transform: scaleX(1); /* Original size */
-        box-shadow: 0 0 15px var(--accent-full); /* Start glow */
+        box-shadow: 0 0 15px var(--accent); /* Start glow */
         opacity: 1;
     }
     to {
         transform: scaleX(1.01); /* Slightly expand horizontally */
-        box-shadow: 0 0 25px var(--accent-full); /* Intensify glow */
+        box-shadow: 0 0 25px var(--accent); /* Intensify glow */
         opacity: 0.6; /* Slightly fade */
     }
 }
@@ -356,7 +363,7 @@ h3::after {
     font-weight: 700;
 }
 #history h2::after {
-    background-color: var(--secondary70);
+    background-color: var(--secondary);
 }
 .history-content {
     display: flex;
@@ -411,7 +418,7 @@ h3::after {
     gap: 3rem;
 }
 #program h2::after {
-    background-color: var(--secondary70);
+    background-color: var(--primary);
 }
 .program-table-container {
     width: 100%;
@@ -425,28 +432,33 @@ h3::after {
 .program-table {
     width: 100%;
     border-collapse: collapse;
-    border: var(--secondary20) 2px solid;
+    border: var(--primary) 2px solid;
 }
 .program-table-breaker {
     text-align: center;
     font-weight: bold;
-    background-color: var(--secondary20);
+    background-color: var(--primary);
+    color: var(--text2);
 }
-.program-table td, .program-table th {
+.program-table td{
     padding: .5rem;
 }
+.program-table th {
+    padding: .5rem;
+    color: var(--text2);
+}
 .primary-head {
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 .secondary-head {
-    background-color: var(--secondary60);
+    background-color: var(--primary);
     text-align: left;
 }
 .program-table td {
-    border-bottom: var(--secondary20) 2px solid;
+    border-bottom: var(--primary) 2px solid;
 }
 .two-rooms tr td {
-    border-right: var(--secondary20) 2px solid;
+    border-right: var(--primary) 2px solid;
 }
 
 tr td:nth-of-type(1) {
@@ -454,7 +466,7 @@ tr td:nth-of-type(1) {
 }
 
 #prezence {
-    color: var(--accent70);
+    color: var(--accent);
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -478,12 +490,13 @@ tr td:nth-of-type(1) {
     padding: var(--inspacer);
     gap: 1rem;
     width: 100%;
-    background-color: var(--secondary60);
+    background-color: var(--secondary);
     flex-direction: row;
     gap: 2rem;
+    color: var(--text2);
 }
 .link-button .secondary-button {
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
 }
 
 /* TEAM, PARTNERS */
@@ -521,6 +534,11 @@ tr td:nth-of-type(1) {
     left: 9px;
     background: var(--accent);
 }
+.team-member-photo-container:hover::after {
+    top: 0px;
+    left: 0px;
+    transition: var(--transition);
+} 
 .team-member-photo {
     width: 150px;
     position: relative;
@@ -537,7 +555,7 @@ tr td:nth-of-type(1) {
     flex-direction: row;
     align-items: center;
     padding: var(--inspacer);
-    background-color: var(--primary10);
+    background-color: var(--primary);
     gap: 3rem;
 }
 #zastita img {

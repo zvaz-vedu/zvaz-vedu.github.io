@@ -72,14 +72,15 @@
 /* CTA */
 
 #join-us .layout-content {
-    background-color: var(--secondary30);
+    background-color: var(--primary);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    color: var(--text2);
 }
 #join-us .secondary-button {
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
 }
 
 #actions .layout-content {
