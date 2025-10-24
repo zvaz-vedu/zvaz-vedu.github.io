@@ -27,4 +27,13 @@ newSpeakers: "10"
 program: false
 zastita: false
 
+importantInfo: true
+importantInfoHeader: "Co tě čeká?"
+importantInfoText: | 
+    Zvaž vědu! je zpátky. Největší vzdělávací akce pro středoškoláky konaná v Plzeňském kraji se vrací již potřetí! Tentokrát se uskuteční v pátek 28. 11. 2025 od 9:00 do 14:00. na Fakultě aplikovaných věd ZČU. Inspirativní středoškoláci z celého Česka Ti v průběhu 12 přednášek ukážou ty nejzajímavější obory současné vědy. A to vše spolu s představením příležitostí, jak se do vědeckého výzkumu zapojit už na střední škole. 
+    
+    Vedle toho budou připraveny i stánky různých institucí s experimenty i informacemi o dalších zajímavých projektech nebo exkurze na vědecká pracoviště po celé Plzni. V průběhu dne se postaráme i o zajištění chutného občerstvení a pitného režimu účastníků. Pro aktuální informace nezapomeň sledovat náš Instagram nebo se podívat na zbrusu nové webové stránky.
+    
+    Každý účastník obdrží po skončení akce personalizované potvrzení o účasti, které může využít při omluvě absence ve škole. Omluvu absence jako nezapočitatelné školám doporučujeme, ale nemůžeme garantovat. Na vybraných školách můžete využít pomoc našich ambasadorů.
+
 ---

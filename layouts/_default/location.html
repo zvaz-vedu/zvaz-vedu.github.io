@@ -107,19 +107,65 @@
                 </div>
             {{end}} 
         </section>
-    
-        {{with .Params.registration}}
-            <section class="layout-container" id="cta">
+
+        {{if .Params.importantInfo}}
+        <section class="layout-container" id="cta">
                 <div class="layout-content">
-                    <div class="cta-body">
-                        <h2>Na co čekáš?</h2>
-                        <p>Nikdy není příliš brzy na to začít. Přijď na Zvaž vědu! a inspiruj se do vlastních začátků!</p>
-                        <a href="{{.}}" class="primary-button">Registruj se</a> <!--změnte pak jen na Registrace-->
+                    <div class="cta-body" >
+                        <h2>{{.Params.importantInfoHeader}}</h2>
+                        <div class="important-info">{{.Params.importantInfoText | markdownify}}</div>
                     </div>  
-                    <img img class="mark-img" src="" alt="logo">
+                    <div class="gallery-container">
+                        <div class="img-body">
+                            {{$dir := printf "static/media/imgs/gallery/plzen24/"}}
+                            {{range readDir $dir}}
+                                {{if not (eq .Name ".DS_Store")}}
+                                    <a href="/media/imgs/gallery/plzen24/{{.Name}}" class="glightbox" data-gallery="gallery1">
+                                        <img src="/media/imgs/gallery/plzen24/{{.Name}}">
+                                    </a>
+                                {{end}}
+                            {{end}}
+                        </div>
+                        <script>
+                            window.addEventListener("DOMContentLoaded", () => {
+                                function syncHeights() {
+                                    const textBody = document.querySelector(".cta-body");
+                                    const galleryContainer = document.querySelector(".gallery-container");
+                                    const desiredHeight = textBody.offsetHeight
+                                    if (textBody && galleryContainer) {
+                                        galleryContainer.style.height = `${desiredHeight}px`;
+                                    }
+                                }
+                                
+                                syncHeights();
+                                
+                                window.addEventListener("resize", syncHeights);
+                                window.addEventListener("scroll", syncHeights);
+                            });
+
+                            // Your GLightbox code is perfect
+                            const lightbox = GLightbox({
+                                touchNavigation: true,
+                                loop: true,
+                            });
+                        </script>
+                    </div>
                 </div>
             </section>
         {{end}}
+    {{end}}
+
+    {{with .Params.registration}}
+        <section class="layout-container" id="cta">
+            <div class="layout-content">
+                <div class="cta-body">
+                    <h2>Na co čekáš?</h2>
+                    <p>Nikdy není příliš brzy na to začít. Přijď na Zvaž vědu! a inspiruj se do vlastních začátků!</p>
+                    <a href="{{.}}" class="primary-button">Registruj se</a> <!--změnte pak jen na Registrace-->
+                </div>  
+                <img img class="mark-img" src="" alt="logo">
+            </div>
+        </section>
     {{end}}
     
     <!-- zobrazení ohlédnutí pokud je víc než 1 event -->
