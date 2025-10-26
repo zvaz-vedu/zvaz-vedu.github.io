@@ -442,10 +442,14 @@ h3::after {
 }
 .program-table td{
     padding: .5rem;
+    border: var(--tertiary) 2px solid;
+
 }
 .program-table th {
     padding: .5rem;
     color: var(--text2);
+    border: var(--tertiary) 2px solid;
+
 }
 .primary-head {
     background-color: var(--primary);
@@ -455,10 +459,10 @@ h3::after {
     text-align: left;
 }
 .program-table td {
-    border-bottom: var(--primary) 2px solid;
+    border-bottom: var(--tertiary) 2px solid;
 }
 .two-rooms tr td {
-    border-right: var(--primary) 2px solid;
+    border-right: var(--tertiary) 2px solid;
 }
 
 tr td:nth-of-type(1) {
