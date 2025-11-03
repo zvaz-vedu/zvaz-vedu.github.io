@@ -283,27 +283,74 @@
     let animating = false;
 
     function parseCSV(text) {
-      const rows = [];
-      text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+      // Google Sheets často používá tabulátory a uvozovky
+      text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
       const lines = text.split('\n').filter(l => l.trim() !== '');
+      const rows = [];
+
       for (let line of lines) {
-        let parts = line.split(/[,;]+/).map(x => x.trim());
-        rows.push(parts);
+        const values = [];
+        let current = '';
+        let inQuotes = false;
+
+        for (let i = 0; i < line.length; i++) {
+          const ch = line[i];
+          if (ch === '"') {
+            if (inQuotes && line[i + 1] === '"') {
+              current += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (!inQuotes && (ch === '\t' || ch === ',' || ch === ';')) {
+            values.push(current.trim());
+            current = '';
+          } else {
+            current += ch;
+          }
+        }
+
+        values.push(current.trim());
+        rows.push(values);
       }
+
       return rows;
     }
 
     function extractNamesFromCSVRows(rows) {
       if (!rows.length) return [];
-      const header = rows[0];
-      const desired = 'Jméno a příjmení (zvláště v případě zájmu o slosování)';
-      let col = header.indexOf(desired);
-      if (col === -1) col = 0;
-      const names = [];
-      for (let i = 1; i < rows.length; i++) {
-        const val = (rows[i][col] || '').trim();
-        if (val) names.push(val);
+
+      const header = rows[0].map(h => h.trim().replace(/^"|"$/g, ''));
+      console.log("Hlavička CSV:", header);
+
+      const nameHeader = 'Jméno a příjmení (zvláště v případě zájmu o slosování)';
+      const interestHeader = 'MÁM zájem se zapojit do závěrečného slosování o ceny.';
+
+      const nameCol = header.findIndex(h => h.toLowerCase() === nameHeader.toLowerCase());
+      const interestCol = header.findIndex(h => h.toLowerCase() === interestHeader.toLowerCase());
+
+      console.log("Index jména:", nameCol, "Index zájmu:", interestCol);
+
+      if (nameCol === -1 || interestCol === -1) {
+        alert("❌ Chybí jeden ze sloupců: jméno nebo zájem o slosování.");
+        return [];
       }
+
+      const names = [];
+
+      for (let i = 1; i < rows.length; i++) {
+        const name = (rows[i][nameCol] || '').replace(/^"|"$/g, '').trim();
+        const interest = (rows[i][interestCol] || '').replace(/^"|"$/g, '').trim();
+
+        console.log(`Řádek ${i}: jméno="${name}", zájem="${interest}"`);
+
+        // jen pokud má zájem = přesně "Ano, mám."
+        if (name && /^Ano,\s*m[aá]m\.?$/i.test(interest)) {
+          names.push(name);
+        }
+      }
+
+      console.log("✅ Načtená jména:", names);
       return names;
     }
 
@@ -410,7 +457,11 @@
     }
 
     function losovat() {
-      if (animating || dostupna_jmena.length === 0) return;
+      if (animating || dostupna_jmena.length === 0) {
+        console.warn("⛔️ Nelze losovat – žádná dostupná jména nebo probíhá animace.");
+        return;
+      }
+
       animating = true;
       const btn = document.getElementById('losovat-btn');
       btn.disabled = true;
@@ -423,12 +474,18 @@
       const winner = dostupna_jmena.splice(idx, 1)[0];
       const animNames = sampleArray(vsechna_jmena, Math.min(15, vsechna_jmena.length));
 
+      console.log(`🏁 LOSOVÁNÍ:`);
+      console.log(`🎉 Vítěz: ${winner}`);
+      console.log(`👥 Zbývá ${dostupna_jmena.length} lidí:`, dostupna_jmena);
+
       animateRoulette(animNames, winner, () => {
         setTimeout(() => {
           container.style.display = 'none';
           winnerDisplay.textContent = '🏆 ' + winner + ' 🏆';
           winnerDisplay.style.display = 'block';
           createConfetti();
+
+          console.log("✅ Losování dokončeno.");
           animating = false;
           btn.disabled = false;
         }, 500);
