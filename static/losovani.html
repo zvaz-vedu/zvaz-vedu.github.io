@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Losování o ceny</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #005A9B 0%, #003d6b 50%, #001a2e 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1000px;
+      width: 94%;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #009D42;
+      text-shadow: 0 0 20px rgba(0, 157, 66, 0.5);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    h2{
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        color: #aaaaaa;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .file-input {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px 35px;
+      border-radius: 15px;
+      border: 2px dashed rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .file-input:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    input[type="file"] {
+      font-size: 1.1em;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .roulette-container {
+      background: rgba(0, 90, 155, 0.2);
+      border-radius: 20px;
+      padding: 40px 20px;
+      margin: 30px 0;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5), inset 0 2px 10px rgba(0, 157, 66, 0.2);
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      border: 4px solid #009D42;
+      backdrop-filter: blur(10px);
+    }
+
+    .roulette-container::before,
+    .roulette-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .roulette-container::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(0, 90, 155, 0.95), transparent);
+    }
+
+    .roulette-container::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(0, 90, 155, 0.95), transparent);
+    }
+
+    .center-indicator {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #ffd700;
+      transform: translateX(-50%);
+      z-index: 3;
+      box-shadow: 0 0 20px #ffd700;
+    }
+
+    .name-strip {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      position: relative;
+      transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+
+    .name-item {
+      flex-shrink: 0;
+      width: 300px;
+      height: 150px;
+      margin: 0 10px;
+      background: linear-gradient(135deg, #009D42 0%, #007a33 100%);
+      border: 3px solid #00cc55;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .name-item.winner {
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      color: #1a1a2e;
+      border-color: #ffd700;
+      box-shadow: 0 0 30px #ffd700;
+      animation: winnerShake 0.5s ease-in-out 3, winnerGlowPulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes winnerShake {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+      25% { transform: translateY(-10px) rotate(-3deg) scale(1.05); }
+      50% { transform: translateY(0) rotate(3deg) scale(1.1); }
+      75% { transform: translateY(-10px) rotate(-3deg) scale(1.05); }
+    }
+
+    @keyframes winnerGlowPulse {
+      0%, 100% { box-shadow: 0 0 30px #ffd700; transform: scale(1); }
+      50% { box-shadow: 0 0 50px #ffd700, 0 0 80px #ffd700; transform: scale(1.02); }
+    }
+
+    .name-display {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .name-display.winner {
+      color: #ffd700;
+      animation: winnerGlow 1s ease-in-out;
+    }
+
+    @keyframes winnerGlow {
+      0%, 100% { text-shadow: 0 0 10px #ffd700; }
+      50% { text-shadow: 0 0 30px #ffd700, 0 0 50px #ffd700; }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    button {
+      font-size: 1.1em;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.25s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      background: #009D42;
+      color: white;
+    }
+
+    button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); }
+    button:active { transform: translateY(0); }
+
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: #ffd700;
+      position: absolute;
+      animation: confetti-fall 3s ease-out;
+      z-index: 9999;
+    }
+
+    @keyframes confetti-fall {
+      to { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* --- Powered by logo --- */
+    .powered-by {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1em;
+      opacity: 0.85;
+      user-select: none;
+      color: #ddd;
+    }
+
+    .powered-by .powered-logo {
+      width: 10vw;
+      max-width: 150px;
+      transition: transform 0.6s ease;
+      filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
+    }
+
+    .powered-by .powered-logo:hover {
+      transform: rotate(8deg) scale(1.05);
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.6));
+    }
+
+    /* Při zobrazení výherce docházelo k ukazování scrollbarů */
+    html, body {
+      overflow: hidden !important;
+      width: 100%;
+      height: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LOSOVÁNÍ VÝHERCŮ</h1>
+    <h2>GoHigher Konference</h2>
+
+    <label class="file-input" id="file-section">
+      <span style="font-size:1.2em;">📁 Nahrajte CSV soubor se jmény</span>
+      <input id="csv-file" type="file" accept=".csv,text/csv" />
+    </label>
+
+    <div id="main-content" style="display:none;">
+      <div class="roulette-container" id="roulette-container">
+        <div class="center-indicator"></div>
+        <div class="name-strip" id="name-strip"></div>
+      </div>
+
+      <div class="name-display" id="winner-display" style="display:none;"></div>
+
+      <div class="buttons">
+        <button id="losovat-btn">🎲 LOSOVAT</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let vsechna_jmena = [];
+    let dostupna_jmena = [];
+    let animating = false;
+
+    function parseCSV(text) {
+      const rows = [];
+      text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+      const lines = text.split('\n').filter(l => l.trim() !== '');
+      for (let line of lines) {
+        let parts = line.split(/[,;]+/).map(x => x.trim());
+        rows.push(parts);
+      }
+      return rows;
+    }
+
+    function extractNamesFromCSVRows(rows) {
+      if (!rows.length) return [];
+      const header = rows[0];
+      const desired = 'Jméno a příjmení (zvláště v případě zájmu o slosování)';
+      let col = header.indexOf(desired);
+      if (col === -1) col = 0;
+      const names = [];
+      for (let i = 1; i < rows.length; i++) {
+        const val = (rows[i][col] || '').trim();
+        if (val) names.push(val);
+      }
+      return names;
+    }
+
+    function sampleArray(arr, n) {
+      const copy = arr.slice();
+      const result = [];
+      while (copy.length && result.length < n) {
+        const i = Math.floor(Math.random() * copy.length);
+        result.push(copy.splice(i, 1)[0]);
+      }
+      return result;
+    }
+
+    function showPreview() {
+      const strip = document.getElementById('name-strip');
+      strip.innerHTML = '';
+      const preview = sampleArray(vsechna_jmena, Math.min(10, vsechna_jmena.length));
+      preview.forEach(n => {
+        const div = document.createElement('div');
+        div.className = 'name-item';
+        div.textContent = n;
+        strip.appendChild(div);
+      });
+    }
+
+    function animateRoulette(names, winner, callback) {
+    const strip = document.getElementById('name-strip');
+    strip.innerHTML = '';
+
+    // 1) Sestavíme základní "proud" jmen (opakování pro efekt)
+    const base = [];
+    for (let i = 0; i < 6; i++) base.push(...names); // šest opakování -> dostatečná délka
+
+    // 2) Rozhodneme, kde vložíme vítěze (nikoli na konec)
+    //    umístíme ho do zhruba 40-60% délky proudu (trochu náhodně)
+    const insertPos = Math.floor(base.length * (0.4 + Math.random() * 0.2));
+
+    // 3) Zkopírujeme pole a vložíme vítěze do středu
+    const all = base.slice();
+    all.splice(insertPos, 0, winner);
+
+    // 4) Přidáme ještě několik položek PO vítězi, aby bylo za ním co animovat
+    //    vezmeme náhodné (možná opakující se) položky z 'names'
+    const afterCount = Math.min(8, names.length * 2); // kolik položek za vítězem (max 8)
+    const afterNames = sampleArray(names.concat(names), afterCount); // zdroj může obsahovat duplikáty
+    all.push(...afterNames);
+
+    // 5) Vytvoříme DOM elementy
+    all.forEach(name => {
+        const div = document.createElement('div');
+        div.className = 'name-item';
+        div.textContent = name;
+        strip.appendChild(div);
+    });
+
+    // 6) Výpočty pro animaci (stejné principy jako dříve)
+    const winnerPos = insertPos; // pozice vítěze v 'all'
+    const itemWidth = 320; // přibližně šířka položky + mezera (uplatni svůj CSS)
+    const containerWidth = document.getElementById('roulette-container').offsetWidth;
+    const start = containerWidth / 2;
+    strip.style.transform = `translateX(${start}px)`;
+    strip.style.transition = 'none';
+
+    // 7) Animace: nejdřív dlouhé přejíždění, potom "bounce" do přesného umístění
+    setTimeout(() => {
+        // náhodný menší offset pro přirozenost
+        const randomOffset = (Math.random() * 200) - 100;
+        const rough = -winnerPos * itemWidth + containerWidth / 2 - itemWidth / 2 + randomOffset;
+        strip.style.transition = 'transform 12s cubic-bezier(0.02, 0.8, 0.1, 0.99)';
+        strip.style.transform = `translateX(${rough}px)`;
+
+        setTimeout(() => {
+        // jemné doladění (bounce) — posun tak, aby byl vítěz přesně uprostřed
+        const center = containerWidth / 2 - (winnerPos * itemWidth + (itemWidth/2));
+        strip.style.transition = 'transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+        strip.style.transform = `translateX(${center}px)`;
+
+        setTimeout(() => {
+            // zvýraznit vítěze
+            if (strip.children[winnerPos]) strip.children[winnerPos].classList.add('winner');
+
+            // počkejme, aby se animace projevila, potom zavolej callback
+            setTimeout(callback, 2500);
+        }, 800);
+        }, 12000);
+    }, 100);
+    }
+
+    function createConfetti() {
+      const colors = ['#ffd700', '#00ff88', '#ff6b6b', '#4ecdc4'];
+      for (let i = 0; i < 50; i++) {
+        setTimeout(() => {
+          const c = document.createElement('div');
+          c.className = 'confetti';
+          c.style.left = Math.random() * window.innerWidth + 'px';
+          c.style.top = '-10px';
+          c.style.background = colors[Math.floor(Math.random() * colors.length)];
+          c.style.width = (6 + Math.random()*10) + 'px';
+          c.style.height = (6 + Math.random()*10) + 'px';
+          document.body.appendChild(c);
+          setTimeout(() => c.remove(), 3000);
+        }, i * 30);
+      }
+    }
+
+    function losovat() {
+      if (animating || dostupna_jmena.length === 0) return;
+      animating = true;
+      const btn = document.getElementById('losovat-btn');
+      btn.disabled = true;
+      const container = document.getElementById('roulette-container');
+      const winnerDisplay = document.getElementById('winner-display');
+      winnerDisplay.style.display = 'none';
+      container.style.display = 'block';
+
+      const idx = Math.floor(Math.random() * dostupna_jmena.length);
+      const winner = dostupna_jmena.splice(idx, 1)[0];
+      const animNames = sampleArray(vsechna_jmena, Math.min(15, vsechna_jmena.length));
+
+      animateRoulette(animNames, winner, () => {
+        setTimeout(() => {
+          container.style.display = 'none';
+          winnerDisplay.textContent = '🏆 ' + winner + ' 🏆';
+          winnerDisplay.style.display = 'block';
+          createConfetti();
+          animating = false;
+          btn.disabled = false;
+        }, 500);
+      });
+    }
+
+    document.getElementById('losovat-btn').addEventListener('click', losovat);
+
+    document.getElementById('csv-file').addEventListener('change', async e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const text = await file.text();
+      const rows = parseCSV(text);
+      vsechna_jmena = extractNamesFromCSVRows(rows);
+      dostupna_jmena = vsechna_jmena.slice();
+      document.getElementById('file-section').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      showPreview();
+    });
+  </script>
+
+<div class="powered-by">
+  <span>Powered by</span>
+  <a href="https://zvazvedu.cz" target="_blank" rel="noopener noreferrer">
+    <img src="https://zvazvedu.cz/media/imgs/base/logo_transparent.webp"
+         alt="Zvaž Vědu logo" class="powered-logo" />
+  </a>
+</div>
+
+
+
+
+</body>
+</html>
