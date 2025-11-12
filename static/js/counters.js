@@ -149,11 +149,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Add the "nice effect" when max registration is reached
             if (lineCount >= target) {
-                fillElement.style.backgroundColor = 'var(--accent-full)';
-                fillElement.style.boxShadow = '0 0 15px var(--accent-full)';
+                fillElement.style.backgroundColor = 'var(--tertiary)';
+                fillElement.style.boxShadow = '0 0 15px var(--accent)';
                 fillElement.classList.add('registration-full-pulse');
 
-                textElement.textContent = `Registrace plná!`;
+                textElement.textContent = `Všech ${targetCount} míst obsazeno!`;
                 textElement.style.fontWeight = 'bold';
                 textElement.style.color = 'white';
                 textElement.style.justifyContent = 'center';
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 textElement.style.width = '100%';
 
                 // New: Change the bento text
-                bentoTextElement.textContent = `Všech ${targetCount} míst obsazeno!`; // Or whatever you prefer
+                bentoTextElement.textContent = `Děkujeme za velký zájem!`; // Or whatever you prefer
             } else {
                 // Reset styles if the count drops below the target
                 fillElement.style.backgroundColor = '';
