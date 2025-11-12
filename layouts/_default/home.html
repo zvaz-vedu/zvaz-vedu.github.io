@@ -3,6 +3,7 @@
 {{end}}
 {{define "scripts"}}
     <script src="/js/reveal-section.js" defer></script>
+    <script src="/js/carousel.js" defer></script>
 {{end}}
 {{define "main"}}
     <div class="layout-container" id="hero">
@@ -20,6 +21,21 @@
                 <img id="hero-graphics-primary" src="/media/imgs/home/0086.JPG">
                 <img id="hero-graphics-secondary" src="/media/imgs/home/0256.JPG">
                 <img id="hero-graphics-icon" src="/media/imgs/home/kockabila.webp">
+            </div>
+        </div>
+    </div>
+    <div class="layout-container" id="aktualne">
+        <div class="layout-content">
+            <h2><span class="recording-dot"></span>&nbsp;Aktuálně</h2>
+            <div class="carousel-container">
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="aktualne-track">
+                        {{.Content}}
+                    </div>
+                </div>
+                <!-- Navigační tlačítka -->
+                <button class="carousel-button prev" id="aktualne-prev" aria-label="Předchozí snímek"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-button next" id="aktualne-next" aria-label="Další snímek"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </div>

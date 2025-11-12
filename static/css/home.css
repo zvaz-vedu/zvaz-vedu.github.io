@@ -499,3 +499,182 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
+/* ... existing code ... */
+.grid-board-item h4 .button-group {
+    display: flex;
+/* ... existing code ... */
+    flex-wrap: wrap;
+}
+
+/* ===== NOVÉ STYLY PRO KARUSEL "AKTUÁLNĚ" ===== */
+
+#aktualne .layout-content {
+    flex-direction: column;
+    align-items: center; /* Centrovaný nadpis a karusel */
+    gap: 2rem;
+    background-color: var(--tertiary);
+    color: var(--text2);
+}
+
+#aktualne h2 {
+    font-size: 3rem;
+    font-family: 'ZV-Display';
+    text-transform: uppercase;
+    color: var(--text2);
+    text-align: center;
+    width: 100%;
+    position: relative; /* Pro umístění tečky */
+    display: flex; /* Aby tečka byla vedle textu */
+    align-items: center;
+    justify-content: center; /* Centrování obsahu */
+}
+
+/* Styl pro pulzující tečku */
+.recording-dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(211, 71, 71); /* Červená barva */
+    border-radius: 50%;
+    animation: pulse 1.5s infinite; /* Animace pulzování */
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(211, 71, 71, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(211, 71, 71, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(211, 71, 71, 0));
+    }
+}
+#aktualne p {
+    color: var(--text2);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 90%; /* Omezí maximální šířku, aby nebyl příliš roztažený */
+    margin: 0 auto;
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem; /* Mezera mezi kartami */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+    /*
+      Karty budou mít šířku 100% na mobilech (w-full).
+      Na větších obrazovkách (sm:) budou mít 300px.
+      `flex-shrink: 0` je klíčové, aby se karty nezmenšovaly.
+    */
+    width: 100%;
+    flex-shrink: 0;
+    background-color: var(--secondary); /* Barva pozadí z .what-section:hover */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-card i {
+    font-size: 40px;
+    padding-bottom: 1.5rem;
+}
+
+.carousel-card h4 {
+    font-size: 1.5rem; /* Větší nadpis karty */
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--text2);
+}
+
+.carousel-card .secondary-button {
+    margin-top: 1rem;
+    background-color: var(--text2);
+    color: var(--accent);
+}
+
+.carousel-card .secondary-button:hover {
+    background-color: var(--background); /* Jiná barva pro hover */
+    color: var(--text);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--secondary); /* Průsvitná bílá */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-button.prev {
+    left: -60px; /* Umístění vlevo */
+}
+
+.carousel-button.next {
+    right: -60px; /* Umístění vpravo */
+}
+
+.carousel-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Úpravy pro responzivitu karuselu */
+@media (min-width: 650px) {
+    .carousel-card {
+        width: 300px; /* Pevná šířka na větších obrazovkách */
+    }
+}
+
+@media (max-width: 650px) {
+    #aktualne h2 {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-container {
+        max-width: 100%; /* Plná šířka na mobilu */
+    }
+
+    .carousel-button.prev {
+        left: 5px; /* Tlačítka dovnitř na mobilu */
+    }
+
+    .carousel-button.next {
+        right: 5px; /* Tlačítka dovnitř na mobilu */
+    }
+
+    .carousel-card {
+        padding: 1.5rem;
+    }
+
+    .carousel-card h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ... existing code ... */
