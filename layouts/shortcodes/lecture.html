@@ -5,8 +5,19 @@
             <p>{{.Get "speaker"}}</p>
             <p>{{.Get "abstract"}}</p>
         </div>
+
+        {{/* Check for video first */}}
+        {{if .Get "video"}}
         <div class="video-wrapper">
             <iframe src="{{.Get "video"}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-expanded-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+
+        {{/* If no video, THEN check for an image */}}
+        {{else if .Get "image"}}
+        <div class="image-wrapper">
+            <img src="/media/imgs/lectures/{{.Get "image"}}" alt="Presentation image for {{.Get "name"}}">
+        </div>
+        {{end}}
+
     </div>
 </section>
