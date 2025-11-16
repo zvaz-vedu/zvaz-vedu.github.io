@@ -18,7 +18,7 @@ eventTime: 2025-11-28T09:00:00
 pastActions: true
 
 team: [honza, maty, eda, tomáš, poupič, lucka, david]
-partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-cesta-do-vesmiru]
+partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-cesta-do-vesmiru, radovanek-cz]
 registration: "https://docs.google.com/forms/d/e/1FAIpQLScAny4B_gs_4cCqYTZL5IIl0QAyJK4CXHjfpT1IyjrJY4sShQ/viewform?usp=dialog"
 registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vR5GopaMtuaD_HImMIxKfjxqWza3v01gVBHCMT2T4GoGAilnGnBVzS9pbBFd_0aXCVyAeR6k_yigAz2/pub?gid=334846388&single=true&output=csv"
 maxParticipants: "300"
