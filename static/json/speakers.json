@@ -362,7 +362,7 @@
             "linkedin": "https://www.linkedin.com/in/anna-krebsov%C3%A1-57b211306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             "twitter": "https://x.com/krebsovaan?s=21"
         },
-        "bio": "Anička je studentka, která se aktivně věnuje robotice a kosmonautice, zejména pak stavu beztíže. Je spoluzakladatelkou středoškolského týmu LASAR, který uspěl ve světové soutěži Conrad Challenge v NASA v Houstonu a vyslal do vesmíru vlastní družici, za což získal i Cenu Učené společnosti ČR. Anička strávila rok na gymnáziu v Německu, letos se zařadila mezi TOP25 nejaktivnějších středoškoláků roku a v nadcházejícím studiu by se ráda věnovala letectví. Popularizuje aerospace a soutěže ESA, kterých se i sama účastní."
+        "bio": "Anička uspěla v soutěži ZeroG a zažila skutečný stav beztíže. Věnuje se managementu a financím středoškolského týmu LASAR, jehož je spoluzakladatelkou. Tým uspěl ve světové soutěži Conrad Challenge v NASA v Houstonu. Vyslal do vesmíru vlastní družici, díky které získal i Cenu Učené společnosti ČR. Anička strávila jeden středoškolský rok na gymnáziu v Německu, letos se zařadila mezi TOP25 nejaktivnějších středoškoláků roku a v nadcházejícím studiu by se ráda věnovala letectví. Popularizuje aerospace a soutěže ESA, které i sama absolvuje."
     },
     {
         "name": "Pavel Chaloupka",
@@ -380,7 +380,7 @@
             "linkedin": "https://www.linkedin.com/in/pavel-chaloupka-0902412b8/",
             "website": "https://dilna3d.cz"
         },
-        "bio": "Pavel je studentem Gymnázia Františka Křižíka v Plzni. Zajímá se o vědu, technologie a udržitelnou energetiku. Spolupracoval na vývoji přenosné vodní elektrárny, s níž získal ocenění na vědeckých konferencích JVK a SVK. Pracuje v organizačním týmu Zvaž vědu! v Plzni a věnuje se popularizaci vědy. Ve volném čase se věnuje sportu a cestování."
+        "bio": "Pavel je studentem Gymnázia Františka Křižíka v Plzni. Zajímá se o vědu, technologie a udržitelnou energetiku. Spolupracoval na vývoji přenosné vodní elektrárny, s níž získal ocenění na vědeckých konferencích JVK a SVK. Pracuje v 3D dílně a zabývá se galvanickým pokovováním 3D tisku. Účastní se chemické olympiády a rád propojuje teorii s praxí. Ve volném čase tvoří, experimentuje a plánuje budoucnost v oblasti výzkumu a chemického inženýrství."
     },
     {
         "name": "Metoděj Svoboda",
@@ -391,10 +391,10 @@
             "youtube": "https://youtu.be/vHkV8bx4xdU?si=-T_YSuuFmVn_xw7W"
         }],
         "contact": {
-            "instagram": "httpshttps://www.instagram.com/metodej_svoboda/",
+            "instagram": "https://www.instagram.com/metodej_svoboda/",
             "linkedin": "https://www.linkedin.com/in/metodej-svoboda/"
         },
-        "bio": "Metoděj je studentem druhého ročníku, který se dva roky po sobě stal vítězem nadnárodního kola Prezentiády. Absolvuje stáž na Ústavu Organické Chemie a Biochemie. Díky letu Zero-G je oficiálním ambasadorem České cesty do vesmíru. Mimo vědu se angažuje ve studentských spolcích jako ProStředoškoláky nebo Student Cyber Games. Spolu s bráchou přednáší na konferencích, akademiích atd... Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."    
+        "bio": "Metoděj je studentem druhého ročníku, který se dva roky po sobě stal vítězem nadnárodního kola Prezentiády. Absolvuje stáž na Ústavu Organické Chemie a Biochemie. Díky letu Zero-G je oficiálním ambasadorem České cesty do vesmíru. Mimo vědu se angažuje ve studentských spolcích jako ProStředoškoláky nebo Student Cyber Games. Spolu s bráchou přednáší na konferencích, akademiích atd."    
     },
     {
         "name": "Filip Vyskočil",
@@ -431,7 +431,7 @@
             "youtube": "https://youtu.be/jgRuSHghZN4"
         }],
         "contact": {},
-        "bio": "David je hrdý Matfyzák, student oboru fyzika. Nadšení pro přírodní vědy získal díky astronomické olympiádě, dnes je i jedním z jejích organizátorů. Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."
+        "bio": "Hrdý Matfyzák, student oboru fyzika. Nadšení pro přírodní vědy získal díky astronomické olympiádě, dnes je i jedním z jejích organizátorů. Ve volném čase kouká na hvězdy, brouky nebo do mapy, když se při orientačním běhu prodírá křovím."
     },
     {
         "name": "Tomáš Rajchman",
@@ -442,6 +442,91 @@
             "youtube": "https://youtu.be/jgRuSHghZN4"
         }],
         "contact": {},
-        "bio": "Tomáš je studentem prvního ročníku na Katedře kybernetiky FAV ZČU. Mezi jeho zájmy patří fyzika, matematika, robotika ale i spousty dalších. Věnuje se také popularizaci vědy a techniky. Miluje koně."
+        "bio": "Tomáš je studentem prvního ročníku na Katedře kybernetiky FAV ZČU. Mezi jeho zájmy patří fyzika, matematika, robotika ale i spousty dalších. Věnuje se také popularizaci vědy a techniky, ve volném čase rád sportuje."
+    },
+    {
+        "name": "Julie Beritová",
+        "photo": "/media/imgs/speakers/julieberitova.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/julie_beritova/",
+            "linkedin": "https://www.linkedin.com/in/julie-beritová-4b332035b/"
+        },
+        "bio": "Julča je studentkou Gymnázia Evolution (GEVO) v Praze. Odmalička jí zajímalo, jak funguje svět, a netrvalo dlouho, než se dostalo na vesmír. Vesmíru se věnuje, protože v tom vidí smysl. Absolvovala stáž v Global Navigation Satellite System centru a zažila stav beztíže v rámci mise ZeroG. Ve škole vede školní parlament a hraje v muzikále. Účastní se astrokurzu v Planetum, biologických nebo logických olympiád a miluje sport. Ve svém volném čase dělá pravidelně freediving, jezdí na koních, zpívá a hraje na klavír."
+    },
+    {
+        "name": "Matěj Dittrich",
+        "photo": "/media/imgs/speakers/matejdittrich.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/dittrich.matej",
+            "facebook": "https://www.facebook.com/profile.php?id=100085663737612",
+            "website": "https://linktr.ee/matej.dittrich",
+            "email": "matej.dittrich@volny.cz"
+        },
+        "bio": "Matěj je studentem čtvrtého ročníku Hořického gymnázia. Nejvíce ho baví fyzika a technika. Dveře do vědy mu otevřela stáž na Fyzikálním ústavu, kde zkoumal data z urychlovače LHC v CERNu. Přes další stáže a soutěže se dostal až k tématu své Středoškolské odborné činnosti (SOČ), v níž se zabýval vyvrácením ploché Země. Ve volném čase se věnuje sportům – především jízdě na divoké vodě – nebo hraje divadlo."
+    },
+    {
+        "name": "Daniel Pojhan",
+        "photo": "/media/imgs/speakers/danielpojhan.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/dan_pojhan/",
+            "linkedin": "https://www.linkedin.com/in/daniel-p-266198247/"
+        },
+        "bio": "Dan je studentem oboru Kybernetika a robotika na Fakultě elektrotechnické ČVUT. Již od nástupu na střední se zajímal o informatiku, robotiku a strojové učení, které se nakonec stalo jeho hlavním zaměřením. Během studia na gymnáziu se zúčastnil nespočtu hackathonů a středoškolských soutěží, byl stážistou na Ústavu teorie informace a automatizace AV ČR a v neposlední řadě vyhrál 1. místo v celostátním kole Středoškolské odborné činnosti se svým projektem zabývajícím se zjednodušením tréninku řídících letového provozu pomocí AI. Aktuálně se zaměřuje především na informatiku/kybernetiku v letectví, zejména pak konstruováním dronů nebo vývojem softwaru v oblasti řízení letového provozu."
+    },
+    {
+        "name": "Michal Forgó",
+        "photo": "/media/imgs/speakers/michalforgo.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "linkedin": "https://www.linkedin.com/in/michal-forgo/",
+            "instagram": "https://www.instagram.com/michal_forgo/"
+        },
+        "bio": "Michal je studentem Střední školy informatiky a finančních služeb v Plzni se zájmem o kvantové algoritmy. V NTC ZČU se v rámci stáže zaměřuje na kvantové strojové učení pro detekci pneumonie. V plzeňském SIT Portu pak pracuje s některými z nejpokročilejších robotů. Vedle odborného zaměření se aktivně věnuje také adrenalinovým a bojovým sportům."
+    },
+    {
+        "name": "Michal Fišer",
+        "photo": "/media/imgs/speakers/michalfiser.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/m1chaleek_/"
+        },
+        "bio": "Michal je studentem maturitního ročníku na VOŠ a SPŠE v Plzni, obor Technické lyceum. Zajímá se o fyziku a věnuje se soutěžím a projektům v této oblasti. Letos reprezentoval Českou republiku na International Young Physicists' Tournament, kde jeho tým získal bronzovou medaili. Ve volném čase sportuje, hraje v divadle a učí se na klavír."
+    },
+    {
+        "name": "Daniel Jedlička",
+        "photo": "/media/imgs/speakers/danieljedlicka.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "instagram": "https://www.instagram.com/jedanicek/"
+        },
+        "bio": "Daniel je studentem 3. ročník na VOŠ a SPŠE Plzeň v oboru Technické lyceum. Dlouhodobě se věnuje studiu fyziky, matematiky a různým soutěžím v těchto oborech. Ve volném čase se zajímá o historii, filosofii a hraje na kytaru. V roce 2025 reprezentoval Českou republiku na International Young Physicists' Tournament ve Švédském Lundu, odkud si přivezl bronzovou medaili."
+    },
+    {
+        "name": "Jakub Kutscherauer",
+        "photo": "/media/imgs/speakers/jakubkutscherauer.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {
+            "linkedin": "https://www.linkedin.com/in/jakub-kutscherauer-04a66a280/",
+            "instagram": "https://www.instagram.com/jakub_kutsch/"
+        },
+        "bio": "Jakub je bakalářským studentem fyziky na Leipzig University v Německu. Zajímá se především o fyzikální chemii, zejména o elektronovou dynamiku a ultrarychlé procesy v molekulách. Výzkumu se věnoval už na střední škole v rámci vědeckých stáží, letních škol v Česku i v zahraničí a soutěže SOČ, v níž se umístil na 3. místě celostátního kola. Dosud také aktivně působí ve spolku Czech Rocket Society, kde nyní zasedá ve správní radě."
+    },
+    {
+        "name": "Ondřej Vaněk",
+        "photo": "/media/imgs/speakers/ondrejvanek.webp",
+        "locations": ["Plzeň"],
+        "lectures": [],
+        "contact": {},
+        "bio": "Ondřej Vaněk je ještě čerstvým studentem Přírodovědecké fakulty UK. Od základní školy se úspěšně věnuje přírodovědným soutěžím teoretického i prakticky výzkumného charakteru (Biologická olympiáda, Ekologická olympiáda, SOČ, Quarry Life Award a další) a v průběhu gymnaziálního studia prezentoval svou práci v odborných časopisech a na konferencích, včetně mezinárodních. Hlavní motivací k práci pro něj však nadále zůstává fascinace vším živým. Kromě studia členovců (zejména pavoukovců a vybraných skupin hmyzu) se podílí na organizaci a odborném programu několika biologických soustředění pro další studenty se stejným nadšením pro obor – a sám při tom získává další inspiraci."
     }
 ]
