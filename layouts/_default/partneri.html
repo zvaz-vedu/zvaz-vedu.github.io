@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/podporovatele.css">
 {{- end -}}
 {{- define "scripts" -}}
-    <link rel="script" href="/js/darkmode.js" defer>
+    <script src="/js/darkmode.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const supporterItems = document.querySelectorAll('.supporter-item');
@@ -27,7 +27,7 @@
             <h1>{{ .Params.headerTitle }}</h1>
             <p class="header-text">{{ .Params.headerText }}</p>
         </div>
-        <img class="mark-img" src="/media/imgs/base/mark.webp">
+        <img class="mark-img" src="/media/imgs/base/mark.webp" alt="">
     </div>
 </header>
 <div class="layout-container" id="content">
