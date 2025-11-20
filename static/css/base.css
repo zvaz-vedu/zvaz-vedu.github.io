@@ -218,7 +218,7 @@ footer .layout-content {
 .primary-button {
     padding: .3em 0.7em;
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--text2);
     text-decoration: none;
     transition: var(--transition);
     display: block;
