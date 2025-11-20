@@ -122,10 +122,8 @@ header .primary-button:hover {
 }
 #speaker-search {
     font-size: 1rem;
-    color: var(--background);
+    color: var(--text);
     padding: .5rem .8rem;
-    background-color: var(--accent);
-    border: none;
     width: 190px;
 }
 #speaker-search:focus {
