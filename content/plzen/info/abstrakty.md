@@ -4,7 +4,6 @@ layout: single
 
 headerTitle: "Abstrakty ZV Plzeň 2025"
 headerText: "Přečti abstrakty a vyber si ty pravé přednášky pro Zvaž vědu! Plzeň 2025."
-#úvodní fotky se berou v lecture.html jako name.webp
 ---
 {{< lecture 
 name="Česká cesta do vesmíru: Od beztížných kadetů po družice"
@@ -17,7 +16,7 @@ abstract="Otázka tvaru Země se v jednadvacátém století může zdát zcela z
 {{< lecture 
 name="Středoškolák informatikem aneb letem světem od AI až po letectví"
 speaker="Daniel Pojhan"
-abstract="Dělání vědeckého projektu už na střední škole zní samo o sobě pro mnoho lidí strašidelně. A ten pocit je naprosto oprávněný. Přeci jen, kde má na to člověk vzít čas, úsilí a nebo třeba znalosti? Kde se má začít? V čem se má pokračovat? Jaké skills zlepšovat, a jaké zase nechat být? Touto cestou jsem si musel projít, když jsem se rozhodl nastartovat můj dlouholetý informatický projekt, který byl dost spontánní, ale zároveň mi asi nejvíce změnil život. Proto jsem se rozhodl, že se s vámi podělím o to, jaké to je dělat informatiku už na střední, a že někdy stojí za to posouvat své hranice dopředu a zkoušet něco nového aniž bych věděl, jak by to mohlo dopadnout. A v případě, že by vás ani toto nezaujalo, tak vám alespoň povím něco o mém projektu, se kterým se mi povedlo vyhrát celostátní kolo SOČky.">}}
+abstract="Umělá inteligence, jedno z nejvíc probíraných témat dnešní doby. Poslední dobou je to také jeden z nejdůležitějších oborů informatiky, zejména díky prudkému vývoji velkých jazykových modelů a text-to-image modelů. Ovšem studium umělé inteligence/strojového učení není pouze o generování obrázku či nějakého textu. Tento obor totiž pokrývá mnohem více oblastí, než si sami dokážeme představit. Na přednášce se pokusím vysvětlit princip strojového učení jako takového a zároveň si ukážeme pár aplikací AI v různorodých směrech, jako třeba robotika, zdravotnictví či popř. v letectví a další. Pokud bude čas, tak se pokusím i nějaké nejdůležitější AI modely popsat, ať na ně nepohlížíme pouze jako nějaké 'magické skříňky', které samy něco dělají. A ke konci si pak povíme něco k tomu, jaké soutěže byste měli jako začínající informatici zkusit a proč se nebát šílených nápadů a projektů :).">}}
 {{< lecture 
 name="Půda jako klimatická banka"
 speaker="Tereza Jelínková"
@@ -29,4 +28,29 @@ abstract="Všichni známe insulin, ale co IGF1 a IGF2, jemu podobné růstové f
 {{< lecture 
 name="Kvantová revoluce: Jak kvantové technologie změní svět"
 speaker="Michal Forgó"
-abstract="">}}
+abstract="Kvantové technologie zásadně mění způsob, jakým rozumíme světu i tomu, jak s ním pracujeme. Od materiálů s unikátními vlastnostmi přes extrémně bezpečnou komunikaci až po výpočetní systémy, které dokážou řešit úlohy mimo možnosti klasických počítačů – kvantová revoluce už začala. V přednášce se podíváme na hlavní oblasti kvantového výzkumu: materiály, komunikaci, počítání, senzory a simulace. Na konkrétních příkladech si ukážeme, jak tyto technologie ovlivní finance, chemii, farmaceutický výzkum, logistiku nebo robotiku. Součástí bude i moje zkušenost se stáží v NTC ZČU, která se věnuje tématu kvantového strojového učení pro detekci pneumonie. Zmíním i svoji práci s nejpokročilejšími roboty v rámci SIT Portu. Nakonec představím možnosti, jak se do světa kvantového výzkumu může zapojit už středoškolák.">}}
+{{< lecture 
+name="Život ve vesmíru? Napříč prázdnotou vstříc zázraku přírody"
+speaker="Jan Herzig"
+abstract="Jsme ve vesmíru sami? Otázka, která zajímá lidstvo už od nepaměti. A v posledních dekádách se díky dramatickému rozvojí kosmického výzkumu možná konečně dostáváme k nalezení odpovědi. Hledání živých organismů za hranicemi Země probíhá hned na několika frontách - ať už díky robotům na Marsu, průzkumným sondám u plynných obrů nebo těch nejlepších dalekohledů světa, které hledí na úplně jiné planetární systémy stovky i tisíce světelných let daleko. Jen v průběhu letošního roku vědeckou scénou rezonovalo několik významných objevů, které si v přednášce představíme spolu s tím, kam se bude celý tento obor ubírat do budoucna. Protože i středoškoláci v Česku mohou se svými nápady a projekty mířit až ke hvězdám, stačí sebrat odvahu a vzhlédnout k obloze!">}}
+{{< lecture 
+name="Experimentální rekonstrukce poranění žlučových cest s využitím decelularizované tkáně"
+speaker="Karolína Stinglová"
+abstract="Co se dá dělat, když dojde k poranění žlučových cest a jak se dá spravit? Dá se jeden postup využít pro všechny pacienty se stejným úspěchem? A co by bylo možné dělat v situacích, kdy současné metody nestačí? V rámci našeho projektu jsme se pokusili na tyto otázky navrhnout možné řešení společně s jeho experimentálním ověřením. Místo nutnosti vytvoření rekonstrukční neanatomické okliky pro obnovení průtoku žluči do zažívacího traktu jsme využili tkáň žlučovodu dárce zbavenou buněk, na kterou imunitní systém pacienta nebude reagovat „odmítnutím“, k zacelení poranění se zachováním původního žlučovodu pacienta. Tento materiál se následně sám osídlí buňkami pacienta, postupně se remodeluje a stane se tak součástí jeho těla. Výhodou této metody by bylo co nejvěrnější zachování přirozené anatomie i funkce žlučových cest. Experimentální ověření bylo provedeno na modelu prasete domácího.">}}
+{{< lecture 
+name="Vidět neviditelné: Jak strukturní biologie odhaluje svět biomolekul"
+speaker="Pavel Jan Linka"
+abstract="Biochemie a molekulární biologie zažila v průběhu 20. století obrovský rozvoj, a to hlavně v oblasti proteinů a nukleových kyselin. Na zobrazování těchto nejmenších molekulárních strojů nám přestaly stačit klasické světelné mikroskopy – potřebovali jsme totiž něco, pomocí čehož zobrazíme doslova atomy. A přesně to nám umožňuje kryogenní elektronová mikroskopie (cryo-EM). Z ní získáváme přesný 3D model biomolekuly. Díky tomu dokážeme lépe pochopit třeba virální replikaci nebo funkci některých bakteriálních proteinů, které by mohly být cílem nových antibiotik. A ta urgentně potřebujeme. V přednášce se dozvíte, jak cryo-EM funguje, jak vlastně propojit znalost struktury molekuly s její funkcí a co konkrétně lze touto technikou zkoumat, projdeme vývoj antibiotik a opravu DNA. Zmíním i to, jak jsem se dostal k vědě na střední škole a co bych dnes (ne)udělal jinak.">}}
+{{< lecture 
+name="Jak zkoumat svět kolem sebe: Fyzika očima studentů"
+speaker="Michal Fišer, Daniel Jedlička"
+abstract="Zajímavé fyzikální jevy jsou všude kolem nás. Mnohdy se nám mohou zdát samozřejmé, ale často v sobě skrývají hlubší principy, které čekají na svá odhalení. Abychom těmto principům porozuměli, musíme je zkoumat - a právě zkoumání je podstatou vědecké práce. Jak ale takový výzkum vlastně probíhá? Od prvního nápadu, přes návrh experimentu až po analýzu dat - každý krok přináší nové otázky i objevy. V naší přednášce vám ukážeme, jak může takový výzkum vypadat, a provedeme vás konkrétními projekty, kterými jsme se zabývali. Dozvíte se o zdánlivě neintuitivních jevech, jako jsou šplhající magnety nebo raketa na vodu. Chceme vám ukázat, že věda se dá dělat už na střední škole – a podělíme se o náš vlastní příběh, jak jsme se k ní dostali my sami.">}}
+{{< lecture 
+name="Chemická laboratoř z pohodlí gauče: simulace vlastností a interakcí molekul"
+speaker="Jakub Kutscherauer"
+abstract="Asi každý nadšenec do vědy ví, že hlavními pilíři výzkumu jsou teorie a experiment. Věděli jste však, že existuje i třetí pilíř, kterému vděčíme za mnoho objevů? Počítačové simulace se s rozvojem digitálních technologií staly nedílnou součástí vědecké práce – pomáhají nám lépe porozumět experimentálním datům, rozvíjet teoretické modely a nabízejí zcela jedinečný pohled na celou škálu přírodních systémů – od živých organismů, vývoje nových materiálů až po průzkum vesmíru. V této přednášce se zaměříme především na obor kvantové chemie: vysvětlíme si, čím přesně se zabývá, jakým způsobem řeší nejrůznější problémy a jaké má uplatnění napříč dalšími přírodními vědami. Na příkladu mé práce SOČ si taktéž ukážeme, jak se lze počítačovým simulacím věnovat už na střední škole jen s minimálními znalostmi Pythonu.">}}
+{{< lecture 
+name="Jde to i bez nich? Aneb pavouk ve službách člověka"
+speaker="Ondřej Vaněk"
+abstract="Pavouci obývají Zemi již 300 milionů let a kolonizovali prakticky všechny terestrické i některé vodní ekosystémy. Tvoří zde často zdaleka nejvýznamnější složku predátorské gildy. Tlaky okolního prostředí, jakožto i evoluční dostihy s jejich kořistí a nepřáteli, u nich vedly k rozvoji nevídaně rozmanitých životních strategií. Některé z těchto projevů, třeba pavučiny, nám překáží a navzdory usilovné snaze například opakovaně zachytávají prach v koutech místností. Přesto se však málokdo z nás blíže zaměřil na další aspekty pavoučího života. Jaký je jejich význam pro naši společnost a přírodu jako celek? Je vůbec možné cítit k pavoukům náklonnost? A co obnáší život profesionálního arachnologa?">}}
+```
