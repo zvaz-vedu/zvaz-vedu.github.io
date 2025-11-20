@@ -1,0 +1,18 @@
+{{define "styles"}}
+    <link rel="stylesheet" href="/css/single.css">
+    <link rel="stylesheet" href="/css/abstract.css">
+    <link rel="stylesheet" href="/css/base.css">
+{{end}}
+{{define "scripts"}}
+    <script src="/js/darkmode.js"></script>
+{{end}}
+
+{{define "main"}}
+    {{partial "header.html" .}}
+    <div class="layout-container" id="content">
+        <div class="layout-content" style="padding:0">
+            {{/* Zde se vloží obsah markdown souboru včetně shortcodů */}}
+            {{.Content}}
+        </div>
+    </div>
+{{end}}

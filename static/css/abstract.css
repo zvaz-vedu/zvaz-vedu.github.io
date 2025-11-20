@@ -1,41 +1,201 @@
-.abstract .layout-content {
+/* --- LECTURE CARD A OBSAH --- */
+
+.lecture-card {
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    border-radius: 1rem;
-    padding: var(--inspacer);
-    background-color: var(--secondary40);
-    align-items: center;
-    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border: 2px solid var(--primary); 
+    background-color: var(--secondary);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
 }
 
-.abstract-body {
+.lecture-content {
+    /* Vráceno na původní poměr */
+    flex: 2;
+    min-width: 0; 
+}
+
+.lecture-title {
+    color: var(--text);
+    font-family: 'ZV-Display', 'ZV-Bold', 'Inter', sans-serif;
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.lecture-abstract-text p {
+    /* Udrženo 1.2 dle požadavku */
+    line-height: 1.2;
+    margin-bottom: 1em;
+    color: var(--text);
+}
+
+
+/* --- SPEAKER SIDEBAR A BIOGRAFIE --- */
+
+.speaker-sidebar {
+    /* Vráceno na původní poměr */
+    flex: 1; 
+    /* Max šířka zůstává pro flexibilitu na velkých obrazovkách */
+    max-width: 400px; 
+    padding-left: 40px;
+    border-left: 2px solid var(--primary); 
+    text-align: center;
+}
+
+.speaker-photo-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    border: 5px solid var(--tertiary); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.speaker-photo {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.abstract-body h3 {
-    position: relative;
-    margin-bottom: 1.2rem;
+.speaker-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    color: var(--text2);
+    font-size: 3em;
+    line-height: 150px;
+    text-align: center;
+    font-family: 'ZV-Display', var(--font);
 }
 
-.abstract-body p:first-of-type {
-    margin-bottom: 1.2rem;
-    font-weight: bold;
+.speaker-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text);
+    font-family: 'ZV-Bold', 'Inter', sans-serif;
 }
 
-.abstract .video-wrapper {
-    width: 100%; /* Video wrapper takes full width on small screens */
-    max-width: 500px; /* Limit its max width on small screens */
-    /* You can adjust this max-width for small screens if you want the video larger */
+.speaker-data-error {
+    color: var(--primary);
+    font-style: italic;
+    font-size: 0.9em;
 }
 
-/* Style for the iframe to make it responsive and fill its container */
-.abstract .video-wrapper iframe {
-    display: block; /* Remove extra space below the iframe */
-    width: 100%;  /* Make the iframe fill the width of its parent (.video-wrapper) */
-    height: auto; /* Let the height adjust automatically */
-    aspect-ratio: 16 / 9; /* **Maintain a 16:9 aspect ratio for the video** */
-    /* This is the recommended modern way. Adjust 16/9 for different aspect ratios. */
-    border-radius: 8px; /* Apply border-radius to iframe */
-    /* cursor: pointer; removed - cursor handled by iframe content */
+/* --- AKČNÍ PRVKY (TLAČÍTKO A LINKY) --- */
+
+.speaker-actions-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Tlačítko pro Bio: Černé pozadí, bílý text (invertováno) */
+.toggle-bio-button.primary-button {
+    background-color: var(--text); /* Černé pozadí */
+    color: var(--primary); /* Bílý text */
+    border-color: var(--text);
+    
+    font-size: 1.5em; /* Zachování velikosti nastavené pro kartu */
+    /* Dědí padding, font, atd. z .primary-button */
+}
+
+.toggle-bio-button.primary-button:hover {
+    background-color: var(--primary); /* Primary pozadí na hover */
+    color: var(--text); /* Černý text na hover */
+    box-shadow: var(--shadow);
+}
+
+/* Styl pro ikony sociálních sítí: Černé ikony */
+.speaker-contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.speaker-contact-links a {
+    color: var(--text); /* Černé ikony */
+    font-size: 1.5em;
+    transition: color 0.2s ease-in-out;
+}
+
+.speaker-contact-links a:hover {
+    color: var(--primary); /* Primary barva na hover */
+}
+
+/* Skrytí/Zobrazení Biem */
+.speaker-bio {
+    font-size: 0.95em;
+    color: var(--text);
+    text-align: left;
+    
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    padding-top: 0;
+}
+
+.speaker-bio.is-visible {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 15px;
+    text-align: left;
+}
+
+
+/* --- RESPONSIVITA (BEZ ZMĚN) --- */
+
+@media (max-width: 850px) {
+    .lecture-card {
+        flex-direction: column; 
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .speaker-sidebar {
+        max-width: 100%;
+        padding-left: 0;
+        border-left: none; 
+        border-top: 2px solid var(--primary); 
+        padding-top: 20px;
+        text-align: center; 
+        
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .speaker-actions-links {
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .speaker-photo-wrapper {
+        flex-shrink: 0;
+    }
+
+    .speaker-bio {
+        flex-grow: 1;
+        text-align: left;
+    }
+    
+    .speaker-name {
+        margin-top: 0;
+    }
+    
+    .lecture-title {
+        font-size: 1.8em;
+    }
 }

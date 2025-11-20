@@ -1,23 +1,107 @@
-<section class="abstract layout-container">
-    <div class="layout-content" id="{{.Get "name"}}">
-        <div class="abstract-body">
-            <h3>{{.Get "name"}}</h3>
-            <p>{{.Get "speaker"}}</p>
+{{ $speakerList := split (.Get "speaker") "," }}
+{{ $speakerNames := slice }}
+{{ range $speakerList }}
+    {{ $trimmed := trim . " " }}
+    {{ if $trimmed }}
+        {{ $speakerNames = $speakerNames | append $trimmed }}
+    {{ end }}
+{{ end }}
+
+{{ $isSingleSpeaker := eq (len $speakerNames) 1 }}
+{{ $uniqueIDBase := delimit (slice "bio-toggle-" (.Get "name" | urlize)) "" }}
+{{ $allSpeakersFound := false }}
+
+<div class="lecture-card">
+    
+    <div class="lecture-content">
+        <h2 class="lecture-title">{{.Get "name"}}</h2>
+        <div class="lecture-abstract-text">
             <p>{{.Get "abstract"}}</p>
         </div>
-
-        {{/* Check for video first */}}
-        {{if .Get "video"}}
-        <div class="video-wrapper">
-            <iframe src="{{.Get "video"}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-expanded-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        {{/* If no video, THEN check for an image */}}
-        {{else if .Get "image"}}
-        <div class="image-wrapper">
-            <img src="/media/imgs/lectures/{{.Get "image"}}" alt="Presentation image for {{.Get "name"}}">
-        </div>
-        {{end}}
-
     </div>
-</section>
+    
+    {{/* Přidání třídy 'single-speaker' pokud je jen jeden řečník */}}
+    <div class="speaker-sidebar {{ if $isSingleSpeaker }}single-speaker{{ end }}">
+        
+        {{/* ITERUJEME PŘES VŠECHNA JMÉNA */}}
+        {{ range $index, $trimmedName := $speakerNames }}
+            {{ $speakerData := index (where $.Site.Data.speakers "name" $trimmedName) 0 }}
+
+            {{/* Pokud najdeme data pro řečníka, zobrazíme kartu */}}
+            {{ if $speakerData }}
+                {{ $allSpeakersFound = true }}
+                {{ $currentUniqueID := printf "%s-%d" $uniqueIDBase $index }}
+                
+                {{/* Kontejner pro jednotlivého řečníka */}}
+                <div class="individual-speaker-entry">
+                    <div class="speaker-photo-wrapper">
+                        <img 
+                            src="{{ $speakerData.photo }}" 
+                            alt="Fotografie přednášejícího: {{ $speakerData.name }}" 
+                            class="speaker-photo"
+                        >
+                    </div>
+                    
+                    <h3 class="speaker-name">{{ $speakerData.name }}</h3>
+
+                    <div class="speaker-actions-links">
+                        
+                        {{/* Sekce pro kontakty */}}
+                        {{ with $speakerData.contact }}
+                            <div class="speaker-contact-links">
+                                {{ if .linkedin }}
+                                    <a href="{{ .linkedin }}" target="_blank" aria-label="LinkedIn profil"><i class="fab fa-linkedin"></i></a>
+                                {{ end }}
+                                {{ if .instagram }}
+                                    <a href="{{ .instagram }}" target="_blank" aria-label="Instagram profil"><i class="fab fa-instagram"></i></a>
+                                {{ end }}
+                                {{ if .facebook }}
+                                    <a href="{{ .facebook }}" target="_blank" aria-label="Facebook profil"><i class="fab fa-facebook"></i></a>
+                                {{ end }}
+                                {{ if .youtube }}
+                                    <a href="{{ .youtube }}" target="_blank" aria-label="YouTube kanál"><i class="fab fa-youtube"></i></a>
+                                {{ end }}
+                                {{ if .website }}
+                                    <a href="{{ .website }}" target="_blank" aria-label="Osobní webová stránka"><i class="fas fa-globe"></i></a>
+                                {{ end }}
+                                {{ if .email }}
+                                    <a href="mailto:{{ .email }}" aria-label="E-mailová adresa"><i class="fas fa-envelope"></i></a>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+
+                        {{/* Tlačítko pro přepnutí bio */}}
+                        <button 
+                            class="primary-button toggle-bio-button" 
+                            aria-expanded="false" 
+                            aria-controls="{{ $currentUniqueID }}"
+                            onclick="document.getElementById('{{ $currentUniqueID }}').classList.toggle('is-visible'); this.setAttribute('aria-expanded', document.getElementById('{{ $currentUniqueID }}').classList.contains('is-visible'));"
+                        >
+                            Zobrazit Bio
+                        </button>
+                    </div>
+
+                    {{/* Bio - ve výchozím nastavení skryté */}}
+                    <div id="{{ $currentUniqueID }}" class="speaker-bio is-hidden">
+                        <p>{{ $speakerData.bio }}</p>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+        
+        {{/* ZÁLOŽNÍ ZOBRAZENÍ, POKUD NEBYLY NALEZENY ŽÁDNÉ DATA */}}
+        {{ if not $allSpeakersFound }}
+            <div class="individual-speaker-entry">
+                <div class="speaker-photo-wrapper">
+                    <div class="speaker-photo-placeholder">?</div> 
+                </div>
+                <h3 class="speaker-name">{{ .Get "speaker" }}</h3>
+                <div class="speaker-bio">
+                    <p class="speaker-data-error">
+                        *Data pro přednášejícího **{{ .Get "speaker" }}** nebyla nalezena.*
+                    </p>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
