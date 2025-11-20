@@ -83,3 +83,13 @@ ceska-cesta-do-vesmiru:
   type: podporovatel
   city: 'Praha, Plzeň'
   link: https://ceskacestadovesmiru.cz/
+kooperativa:
+  name: Pojišťovna Kooperativa
+  type: sponzor
+  city: Plzeň
+  link: https://www.koop.cz/
+sit-port:
+  name: SIT port
+  type: sponzor
+  city: Plzeň
+  link: https://sitport.cz
