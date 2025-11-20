@@ -1,17 +1,21 @@
+/* --- General and Header Improvements --- */
+
 .header-text {
     margin-block: 2rem;
     color: var(--accent);
 }
 header .primary-button {
     background-color: var(--accent);
-    color: var(--background);
-    font-size: 2.25em; /* 1.8em * 1.25 = 2.25em */
+    color: var(--background); /* Use background for text color to ensure contrast */
+    font-size: 2.25em; 
 }
 header .primary-button:hover {
-    color: var(--background);
+    /* Set an explicit hover color for consistency, using 'var(--background)' for light schemes */
+    color: var(--background); 
 }
 
 @media (prefers-color-scheme: dark) {
+    /* In dark mode, text color on hover should switch to the main text color */
     header .primary-button:hover {
         color: var(--text);
     }
@@ -21,18 +25,30 @@ header .primary-button:hover {
     max-width: 100%;
 }
 
+/* Removed !important */
 #speakers-container {
-    flex-direction: column !important;
+    display: flex; /* Ensure it's a flex container */
+    flex-direction: column; 
     gap: 3rem;
 }
 
+/* --- Speaker Card Layout Fixes --- */
+
 .speaker {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row; /* Default layout: Photo | Body */
+    align-items: flex-start; /* Align to the top, not center */
     justify-content: flex-start;
     gap: 3rem;
     width: 100%;
+}
+.speaker-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0; 
+    width: 150px; 
 }
 .speaker-photo {
     width: 150px;
@@ -41,9 +57,12 @@ header .primary-button:hover {
 }
 .speaker-body {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    flex-grow: 1; 
     font-size: 1.2em;
 }
+
+/* --- Speaker Name and Details --- */
 
 .speaker-name {
     position: relative;
@@ -52,7 +71,7 @@ header .primary-button:hover {
     text-wrap: nowrap;
     margin-bottom: 1.2rem;
     z-index: 1;
-    font-size: 1.875rem; /* 1.5rem * 1.25 = 1.875rem */
+    font-size: 1.875rem; 
 }
 .speaker-name::after {
     position: absolute;
@@ -74,6 +93,7 @@ header .primary-button:hover {
 .speaker-lectures {
     list-style-position: outside;
     margin-left: 1rem;
+    padding-left: 0; /* Add padding-left to ensure bullet points are visible */
 }
 .speaker-lectures a {
     color: var(--text);
@@ -84,11 +104,13 @@ header .primary-button:hover {
 
 .speaker-contacts {
     margin-top: 1.2rem;
+    display: flex; /* Make contacts a flex container for better spacing */
+    gap: .7rem;
 }
 .speaker-contacts a {
     color: var(--text);
-    font-size: 1.875rem; /* 1.5rem * 1.25 = 1.875rem */
-    margin-right: .7rem;
+    font-size: 1.875rem; 
+    /* margin-right: .7rem; Removed, using flex gap instead */
 }
 .speaker-contacts a:hover {
     color: var(--accent);
@@ -100,19 +122,26 @@ header .primary-button:hover {
 .speaker-bio .secondary-button {
     background-color: var(--accent);
     font-size: 1.3rem;
-    color: var(--text2);
+    /* Changed color to var(--background) for better contrast on accent color */
+    color: var(--background); 
     font-family: ZV-Regular, sans-serif;
+    border: none; /* Ensure it looks like a button */
+    padding: .5rem 1rem;
+    cursor: pointer;
 }
 .speaker-bio .secondary-button i {
     margin-left: .5rem;
-    font-size: 1rem; /* .8rem * 1.25 = 1rem */
+    font-size: 1rem; 
 }
 .speaker-bio-text {
-    display: none;
+    /* Keep display: none as JS manages visibility */
+    display: none; 
     margin-top: 1.2rem;
     transition: var(--transition);
     font-weight: 400;
 }
+
+/* --- Filters and Search --- */
 
 #speaker-filters {
     display: flex;
@@ -122,13 +151,18 @@ header .primary-button:hover {
     align-items: center;
 }
 #speaker-search {
-    font-size: 1.25rem; /* 1rem * 1.25 = 1.25rem */
+    font-size: 1.25rem;
     color: var(--text);
     padding: .5rem .8rem;
     width: 190px;
+    /* Added border and background color for focus clarity */
+    border: 1px solid var(--text); 
+    background-color: var(--background);
 }
 #speaker-search:focus {
-    border: none;
+    /* Restored a border style to indicate focus */
+    outline: 2px solid var(--accent); 
+    border-color: var(--accent);
 }
 .speaker-filters-container {
     display: flex;
@@ -136,9 +170,13 @@ header .primary-button:hover {
     align-items: center;
     justify-content: flex-end;
 }
-#location-brno, #location-praha, #location-plzeň {
+/* Grouped Checkbox Styles */
+#location-brno, 
+#location-praha, 
+#location-plzeň {
     appearance: none;
-    background-color: var(--background);
+    /* Ensures background is visible against the checkbox border in both color schemes */
+    background-color: var(--background); 
     margin: 0;
     font: inherit;
     color: var(--text);
@@ -155,35 +193,70 @@ header .primary-button:hover {
 #location-brno {
     margin-left: 0;
 }
-#location-brno:checked, #location-praha:checked, #location-plzeň:checked {
+#location-brno:checked, 
+#location-praha:checked, 
+#location-plzeň:checked {
     border-color: var(--accent);
 }
-#location-brno::before, #location-praha::before, #location-plzeň::before {
+#location-brno::before, 
+#location-praha::before, 
+#location-plzeň::before {
     content: "";
-    width: 0.8125em; /* 0.65em * 1.25 = 0.8125em (I adjusted this as it's a relative size based on font, but scaling it up for visual consistency inside the checkbox) */
-    height: 0.8125em; /* 0.65em * 1.25 = 0.8125em */
+    width: 0.8125em; 
+    height: 0.8125em; 
     border-radius: .2rem;
     transform: scale(0);
     transition: 50ms transform ease-in-out;
+    /* Changed box-shadow color to var(--accent) for checked state */
     box-shadow: inset 1em 1em var(--accent);
 }
-#location-brno:checked:before, #location-praha:checked:before, #location-plzeň:checked:before {
+#location-brno:checked::before, 
+#location-praha:checked::before, 
+#location-plzeň:checked::before {
     transform: scale(1);
 }
 
-/* MEDIA */
+/* --- MEDIA QUERIES --- */
 
-@media (max-width:750px) {
+/* Speaker layout changes for smaller screens */
+@media (max-width: 900px) {
+    .speaker {
+        gap: 2rem; /* Reduce gap slightly */
+    }
+}
+@media (max-width: 750px) {
     header .layout-content {
         flex-direction: column;
     }
 }
-@media (max-width:540px) {
+@media (max-width: 600px) {
+    /* Stack the photo/header and the body vertically */
+    .speaker {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .speaker-header {
+        width: 100%;
+        align-items: flex-start; /* Align photo and name to the left */
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .speaker-body {
+        width: 100%;
+    }
+    .speaker-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 540px) {
     .speaker-photo {
         width: 80px;
+        height: 80px;
     }
     .speaker-name {
-        font-size: 1.375rem; /* 1.1rem * 1.25 = 1.375rem */
+        font-size: 1.375rem; 
         color: var(--accent);
         margin-bottom: .6rem;
     }
@@ -194,21 +267,22 @@ header .primary-button:hover {
         margin-top: .6rem;
     }
     .speaker-contacts a {
-        font-size: 1.5rem; /* 1.2rem * 1.25 = 1.5rem */
-        margin-right: .4rem;
+        font-size: 1.5rem; 
+        /* margin-right: .4rem; Removed, relying on flex gap from above */
     }
+    /* Assuming strong:nth-of-type(2) targets some specific text */
     .speaker strong:nth-of-type(2), .speaker-lectures {
-        font-size: 1rem; /* .8rem * 1.25 = 1rem */
+        font-size: 1rem; 
     }
     .speaker .secondary-button {
-        font-size: 1rem; /* .8rem * 1.25 = 1rem */
+        font-size: 1rem; 
         padding: .4rem .6rem;
     }
     .speaker-bio-text {
-        font-size: 1rem; /* .8rem * 1.25 = 1rem */
+        font-size: 1rem; 
     }
 }
-@media (max-width:480px) {
+@media (max-width: 480px) {
     #content .layout-content {
         padding-inline: 0;
     }
@@ -223,5 +297,8 @@ header .primary-button:hover {
     }
     .speaker-search-container {
         width: 100%;
+    }
+    #speaker-search {
+        width: 100%; /* Make search bar full width */
     }
 }

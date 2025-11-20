@@ -1,0 +1,82 @@
+<div id="speakers-container">
+    {{ range $speaker := .Site.Data.speakers }}
+        
+        {{ $speakerName := lower $speaker.name }}
+        {{ $speakerId := $speakerName | urlize }}
+        
+        {{ $locationClasses := "" }}
+        {{ if $speaker.locations }}
+            {{ range $loc := $speaker.locations }}
+                {{ $locationClasses = printf "%s location-%s" $locationClasses ($loc | lower) }}
+            {{ end }}
+        {{ end }}
+
+        {{/* 2. Start Speaker Card - Main Flex Row */}}
+        <div class="speaker {{ trim $locationClasses " " }}" id="{{ $speakerId }}">
+            
+            {{/* COLUMN 1: Speaker Header (Photo and Name) */}}
+            <div class="speaker-header">
+                <img class="speaker-photo" src="{{ $speaker.photo }}" alt="{{ $speaker.name }}">
+            </div>
+            
+            {{/* COLUMN 2: Speaker Body (Lectures, Contacts, Bio) */}}
+            <div class="speaker-body"> 
+                <strong class="speaker-name">{{ $speaker.name }}</strong>
+
+                {{/* 4. Lectures List (Aligned with Bio/Contacts) */}}
+                {{ if $speaker.lectures }}
+                    <b>Přednášky:</b>
+                    <ul class="speaker-lectures">
+                        {{ range $lecture := $speaker.lectures }}
+                            <li>
+                                <a href="{{ $lecture.youtube }}" target="_blank">
+                                    {{ $lecture.title }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+                
+                {{/* 5. Contact Icons (MOVED TO BE INSIDE .speaker-body) */}}
+                {{ $hasContacts := false }}
+                {{ if $speaker.contact }}
+                    <div class="speaker-contacts">
+                        {{ $allowedKeys := slice "website" "instagram" "linkedin" "facebook" "youtube" }}
+                        {{ range $key, $value := $speaker.contact }}
+                            {{ if and (in $allowedKeys $key) $value }}
+                                
+                                {{ $iconClass := $key }}
+                                {{ $iconPrefix := "fab" }}
+                                
+                                {{ if eq $key "website" }}
+                                    {{/* *** FIX: Use a different icon for "website" *** */}}
+                                    {{ $iconClass = "globe" }} 
+                                    {{ $iconPrefix = "fas" }} 
+                                {{ end }}
+
+                                <a href="{{ $value }}" target="_blank" class="{{ $key }}">
+                                    <i class="{{ $iconPrefix }} fa-{{ $iconClass }}"></i> 
+                                </a>
+                                {{ $hasContacts = true }}
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+                
+                {{/* 3. Bio Section and Read-More Toggle */}}
+                {{ if $speaker.bio }}
+                    <div class="speaker-bio">
+                        <p class="speaker-bio-text" style="display: none;"> 
+                            {{ $speaker.bio }}
+                        </p>
+                        <button class="reveal-button secondary-button" style="color: var(--text)">
+                            <span class="reveal-button-label">Více</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                {{ end }}
+
+            </div> {{/* End of speaker-body */}}
+        </div> {{/* End of speaker */}}
+    {{ end }}
+</div>

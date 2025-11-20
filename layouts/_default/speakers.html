@@ -317,30 +317,9 @@
                 <label for="location-brno">Praha</label>
             </div>
         </div>
-        <div class="layout-content" id="speakers-container"></div>
-        <template id="speaker-template">
-            <div class="speaker">
-                <img class="speaker-photo" src="" alt="">
-                <div class="speaker-body">
-                    <strong class="speaker-name"></strong>
-                    <strong>Přednášky:</strong>
-                    <ul class="speaker-lectures"></ul>
-                    <div class="speaker-contacts">
-                        <a class="website" href="" target="_blank"><i class="fa-solid fa-globe"></i></a>
-                        <a class="instagram" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="linkedin" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a class="facebook" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a class="youtube" href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                    <div class="speaker-bio">
-                        <button class="secondary-button reveal-button">
-                            <span class="reveal-button-label">Více</span>
-                            <i class="fa fa-chevron-down"></i>
-                        </i></button>
-                        <p class="speaker-bio-text"></p>
-                    </div>
-                </div>
-            </div>
-        </template>        
+        </div>
+        <div class="layout-content" id="speakers-content">
+            {{ partial "speaker_list.html" . }}
+        </div>
     </div>
 {{end}}

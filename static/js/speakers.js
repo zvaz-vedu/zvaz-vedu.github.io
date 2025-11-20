@@ -1,59 +1,4 @@
-fetch('/json/speakers.json')
-    .then(response => response.json())
-    .then(speakers => {
-        const container = document.getElementById('speakers-container');
-        const template = document.getElementById('speaker-template');
-
-        speakers.forEach(speaker => {
-            const clone = template.content.cloneNode(true);
-
-            const speakerElement = clone.querySelector('.speaker');
-            if (speaker.locations && Array.isArray(speaker.locations)) {
-                const locationClasses = speaker.locations.map(location => `location-${location.toLowerCase()}`);
-                speakerElement.classList.add(...locationClasses);
-            }
-            
-            const speakerId = speaker.name.toLowerCase().replace(/ /g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            speakerElement.id = speakerId;
-
-            clone.querySelector('.speaker-photo').src = speaker.photo;
-            clone.querySelector('.speaker-photo').alt = speaker.name;
-            clone.querySelector('.speaker-name').textContent = speaker.name;
-            clone.querySelector('.speaker-bio-text').textContent = speaker.bio;
-
-            const lectureList = clone.querySelector('.speaker-lectures');
-            speaker.lectures.forEach(lecture => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = lecture.youtube;
-                a.textContent = lecture.title;
-                a.target = "_blank";
-                li.appendChild(a);
-                lectureList.appendChild(li);
-            });
-
-            const contacts = clone.querySelector('.speaker-contacts');
-            ['website', 'instagram', 'linkedin', 'facebook', 'youtube'].forEach(key => {
-                const link = clone.querySelector(`.${key}`);
-                if (speaker.contact && speaker.contact[key]) {
-                    link.href = speaker.contact[key];
-                } else {
-                    link.remove();
-                }
-            });
-            if (contacts.children.length === 0) {
-                contacts.remove();
-            }
-
-            if (!speaker.bio) {
-                const speakerBio = clone.querySelector('.speaker-bio');
-                speakerBio.remove();
-            }
-
-            container.appendChild(clone);
-        });
-    });
-
+// --- JS Block 1: Reveal Button Toggle ---
 document.getElementById('speakers-container').addEventListener('click', event => {
     const revealButton = event.target.closest('.reveal-button');
     if (!revealButton) return;
@@ -67,12 +12,14 @@ document.getElementById('speakers-container').addEventListener('click', event =>
 
     const isHidden = text.style.display === 'none' || text.style.display === '';
 
+    // The logic is unchanged
     text.style.display = isHidden ? 'block' : 'none';
     icon.classList.toggle('fa-chevron-down');
     icon.classList.toggle('fa-chevron-up');
     label.textContent = isHidden ? 'Méně' : 'Více';
 });
 
+// --- JS Block 2: Search and Location Filtering ---
 const speakerSearch = document.getElementById('speaker-search');
 const locationFilters = document.querySelectorAll('.speaker-filters-container input');
 
@@ -80,10 +27,10 @@ function applySpeakerFilters() {
     const searchValue = speakerSearch.value.toLowerCase();
     const activeFilters = Array.from(locationFilters)
         .filter(f => f.checked)
-        .map(f => f.id);
+        .map(f => `location-${f.id}`); // Corrected map to match class names
 
     const speakers = document.querySelectorAll('.speaker');
-    const mapRegions = document.querySelectorAll('.map-region');
+    const mapRegions = document.querySelectorAll('.map-region'); // Assuming mapRegions have classes like 'location-prague'
 
     speakers.forEach(speaker => {
         const speakerName = speaker.querySelector('.speaker-name')?.textContent.toLowerCase() || '';
@@ -105,7 +52,11 @@ function applySpeakerFilters() {
     });
 }
 
-speakerSearch.addEventListener('input', applySpeakerFilters);
+// Attach event listeners
+if (speakerSearch) {
+    speakerSearch.addEventListener('input', applySpeakerFilters);
+}
+
 locationFilters.forEach(filter => {
     filter.addEventListener('change', applySpeakerFilters);
 });
