@@ -17,6 +17,9 @@ liveAction: true
 eventTime: 2025-11-28T09:00:00
 pastActions: true
 
+abstracts: true
+abstractUrl: "/plzen/info/abstrakty"
+
 team: [honza, maty, eda, tomáš, poupič, lucka, david]
 partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-cesta-do-vesmiru, radovanek-cz, kooperativa, sit-port]
 registration: "https://docs.google.com/forms/d/e/1FAIpQLScAny4B_gs_4cCqYTZL5IIl0QAyJK4CXHjfpT1IyjrJY4sShQ/viewform?usp=dialog"
