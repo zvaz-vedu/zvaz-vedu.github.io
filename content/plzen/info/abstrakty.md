@@ -2,7 +2,7 @@
 title: Abstrakty a medailonky
 layout: abstracts
 
-headerTitle: "Abstrakty ZV Plzeň 2025"
+headerTitle: "O čem budou přednášky?"
 headerText: "Přečti abstrakty a vyber si ty pravé přednášky pro Zvaž vědu! Plzeň 2025."
 ---
 {{< lecture 

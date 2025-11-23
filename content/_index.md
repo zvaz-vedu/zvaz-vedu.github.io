@@ -24,6 +24,12 @@ partners: [senat-cz, plzensky--kraj-cz, podporatalentu-cz, fav-zcu-cz, hvezdarna
 </div>
 <div class="carousel-card">
     <i class="fa-solid fa-calendar"></i>
+    <h4>Zvaž vědu! v Plzni je za dveřmi</h4>
+    <p>Zbývá již méně než týden! Rozhodně se máte na co těšit.</p>
+    <a href="/pdf/TZ-ZV-Plzen-2025.pdf" class="secondary-button">Tisková zpráva &gt;</a>
+</div>
+<div class="carousel-card">
+    <i class="fa-solid fa-calendar"></i>
     <h4>Zvaž vědu! Plzeň 2025</h4>
     <p>Již na konci měsíce se bude konat další akce. Těšit se můžete na špičkové přednášky i chutné občerstvení.</p>
     <a href="/plzen" class="secondary-button">Více informací &gt;</a>
