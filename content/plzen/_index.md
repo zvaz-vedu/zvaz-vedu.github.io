@@ -15,7 +15,6 @@ speakers: "31"
 
 liveAction: true
 eventTime: 2025-11-28T09:00:00
-pastActions: true
 
 abstracts: true
 abstractUrl: "/plzen/info/abstrakty"

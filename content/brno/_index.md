@@ -7,7 +7,6 @@ headerText: "Na vědu nikdy není příliš brzy!"
 headerPhoto: "/media/imgs/locations/brno-header.webp"
 
 joinUs: "https://docs.google.com/forms/d/e/1FAIpQLSfcJ-UBJbM2AViK-YROJKVnQNVMPbJa7sXnHQUw05gknWHlQQ/viewform"
-pastActions: True
 
 events: "2"
 participants: "150+"
