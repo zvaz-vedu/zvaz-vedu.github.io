@@ -45,6 +45,7 @@
 .tile p {
     font-size: 1.2rem;
     font-weight: bold;
+    color: var(--text2)
     margin: 0;
     line-height: 1.4;             /* ✨ ADDED: Improves readability for multi-line text. */
     overflow-wrap: break-word;    /* ✨ ADDED: Forces long words to wrap and prevents overflow. */
