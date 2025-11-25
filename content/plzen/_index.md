@@ -99,8 +99,8 @@ importantInfoText: |
                 <td>12:50­­ — 13:20</td>
                 <td>Pavel Jan Linka</td>
                 <td>Vidět neviditelné: Jak strukturní biologie odhaluje svět biomolekul</td>
-                <td>Michal Fišer, Daniel Jedllička</td>
-                <td>Jak zkoumat svět kolem sebe: věda očima studentů</td>
+                <td>Michal Fišer, Daniel Jedlička</td>
+                <td>Jak zkoumat svět kolem sebe: Fyzika očima studentů</td>
             </tr>
             <tr>
                 <td>13:30­­ — 14:00</td>
