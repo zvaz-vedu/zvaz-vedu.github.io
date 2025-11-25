@@ -107,7 +107,7 @@ importantInfoText: |
                 <td>Jakub Kutscherauer</td>
                 <td>Chemická laboratoř z pohodlí gauče: Simulace vlastností a interakcí molekul</td>
                 <td>Ondřej Vaněk</td>
-                <td>Jde to i bez nich? Aneb život s pavoukem</td>
+                <td>Jde to i bez nich? Aneb pavouk ve službách člověka</td>
             </tr>
             <tr>
                 <td>14:00­­ — 14:10</td>
