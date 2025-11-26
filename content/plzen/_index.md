@@ -66,7 +66,7 @@ importantInfoText: |
             <tr>
                 <td>9:50­­ — 10:20</td>
                 <td>Julie Beritová</td>
-                <td>Česká cesta do vesmíru</td>
+                <td>Česká cesta do vesmíru: Od beztížných kadetů po družice</td>
                 <td>Matěj Dittrich</td>
                 <td>Je opravdu kulatá? Vyvrácení teorie ploché Země</td>
             </tr>
