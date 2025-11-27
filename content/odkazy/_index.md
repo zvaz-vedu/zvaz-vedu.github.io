@@ -1,8 +1,15 @@
 ---
 title: "Odkazy"
+live: True
 layout: "linktree" # Optional: specifies which layout to use
 # Add all your link data below
 links:
+  - url: "/feedback"
+    icon: "fa-solid fa-comments"
+    text: "Zpětná vazba"
+  - url: "/plzen/info/abstrakty"
+    icon: "fa-solid fa-book"
+    text: "Abstrakty přednášek"
   - url: "https://www.instagram.com/zvaz.vedu/"
     icon: "fa-brands fa-instagram"
     text: "Instagram"
@@ -15,9 +22,6 @@ links:
   - url: "/home"
     icon: "fa-solid fa-globe"
     text: "Web"
-  - url: "/feedback"
-    icon: "fa-solid fa-comments"
-    text: "Zpětná vazba"
   - url: "/o-nas"
     icon: "fa-solid fa-info-circle"
     text: "O nás"
