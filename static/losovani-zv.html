@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Losování o ceny</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FFF6C9 0%, #FFC300 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+}
+
+/* ---------------------- MAIN LAYOUT ---------------------- */
+
+.container {
+  text-align: center;
+  max-width: 1000px;
+  width: 94%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  text-shadow: 0 0 20px rgba(255, 195, 0, 0.6);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: #4f4f4f;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ---------------------- FILE UPLOADER ---------------------- */
+
+.file-input {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 25px 35px;
+  border-radius: 15px;
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.file-input:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+input[type="file"] {
+  font-size: 1.1em;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+/* ---------------------- ROULETTE CONTAINER ---------------------- */
+
+.roulette-container {
+  background: rgba(255, 214, 98, 0.35);
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin: 30px 0;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid #1a1a1a;
+  backdrop-filter: blur(6px);
+}
+
+.roulette-container::before,
+.roulette-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.roulette-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 195, 0, 0.9), transparent);
+}
+
+.roulette-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 195, 0, 0.9), transparent);
+}
+
+.center-indicator {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: #d81b11;
+  transform: translateX(-50%);
+  z-index: 3;
+  box-shadow: 0 0 20px #d81b11;
+}
+
+/* ---------------------- NAME ITEMS ---------------------- */
+
+.name-strip {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.name-item {
+  flex-shrink: 0;
+  width: 300px;
+  height: 150px;
+  margin: 0 10px;
+  background: linear-gradient(135deg, #FFE066 0%, #FFB000 100%);
+  border: 3px solid #8d7800;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Winner highlight */
+.name-item.winner {
+  background: linear-gradient(135deg, #ffc711 0%, #ffc711 100%);
+  color: #1a1a1a;
+  border-color: #d85a11;
+  box-shadow: 0 0 30px #d85a11;
+  animation: winnerShake 0.5s ease-in-out 3, winnerGlowPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes winnerShake {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  25% { transform: translateY(-10px) rotate(-3deg) scale(1.05); }
+  50% { transform: translateY(0) rotate(3deg) scale(1.1); }
+  75% { transform: translateY(-10px) rotate(-3deg) scale(1.05); }
+}
+
+@keyframes winnerGlowPulse {
+  0%, 100% { box-shadow: 0 0 30px #ffc711; transform: scale(1); }
+  50% { box-shadow: 0 0 50px #ffc711, 0 0 80px #ffc711; transform: scale(1.02); }
+}
+
+/* Winner text */
+.name-display {
+  font-size: 3em;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+}
+
+.name-display.winner {
+  color: #FFD700;
+  animation: winnerGlow 1s ease-in-out;
+}
+
+@keyframes winnerGlow {
+  0%, 100% { text-shadow: 0 0 10px #FFD700; }
+  50% { text-shadow: 0 0 30px #FFD700, 0 0 50px #FFD700; }
+}
+
+/* ---------------------- BUTTON ---------------------- */
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+button {
+  font-size: 1.1em;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.25s ease;
+  background: #FFB000;
+  color: #1a1a1a;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: #E6A100;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ---------------------- CONFETTI ---------------------- */
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #FFD700;
+  position: absolute;
+  animation: confetti-fall 3s ease-out;
+  z-index: 9999;
+}
+
+@keyframes confetti-fall {
+  to { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+
+/* prevent scrollbars during animation */
+html, body {
+  overflow: hidden !important;
+  width: 100%;
+  height: 100%;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LOSOVÁNÍ VÝHERCŮ</h1>
+    <h2>Zvaž vědu! Plzeň 2025</h2>
+
+    <label class="file-input" id="file-section">
+      <span style="font-size:1.2em;">📁 Nahrajte CSV soubor se jmény</span>
+      <input id="csv-file" type="file" accept=".csv,text/csv" />
+    </label>
+
+    <div id="main-content" style="display:none;">
+      <div class="roulette-container" id="roulette-container">
+        <div class="center-indicator"></div>
+        <div class="name-strip" id="name-strip"></div>
+      </div>
+
+      <div class="name-display" id="winner-display" style="display:none;"></div>
+
+      <div class="buttons">
+        <button id="losovat-btn">🎲 LOSOVAT</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let vsechna_jmena = [];
+    let dostupna_jmena = [];
+    let animating = false;
+
+    function parseCSV(text) {
+      // Google Sheets často používá tabulátory a uvozovky
+      text = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+      const lines = text.split('\n').filter(l => l.trim() !== '');
+      const rows = [];
+
+      for (let line of lines) {
+        const values = [];
+        let current = '';
+        let inQuotes = false;
+
+        for (let i = 0; i < line.length; i++) {
+          const ch = line[i];
+          if (ch === '"') {
+            if (inQuotes && line[i + 1] === '"') {
+              current += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (!inQuotes && (ch === '\t' || ch === ',' || ch === ';')) {
+            values.push(current.trim());
+            current = '';
+          } else {
+            current += ch;
+          }
+        }
+
+        values.push(current.trim());
+        rows.push(values);
+      }
+
+      return rows;
+    }
+
+function extractNamesFromCSVRows(rows) {
+  if (!rows.length) return [];
+
+  const header = rows[0].map(h => h.trim().replace(/^"|"$/g, ''));
+  console.log("Hlavička CSV:", header);
+
+  // nový název sloupce
+  const nameHeader = 'Jméno a příjmení (dobrovolně)';
+
+  const nameCol = header.findIndex(h => h.toLowerCase() === nameHeader.toLowerCase());
+
+  console.log("Index jména:", nameCol);
+
+  if (nameCol === -1) {
+    alert("❌ Chybí sloupec se jménem.");
+    return [];
+  }
+
+  const names = [];
+
+  for (let i = 1; i < rows.length; i++) {
+    const name = (rows[i][nameCol] || '').replace(/^"|"$/g, '').trim();
+
+    // logování řádků
+    console.log(`Řádek ${i}: jméno="${name}"`);
+
+    if (name) {
+      names.push(name);
+    }
+  }
+
+  console.log("✅ Načtená jména:", names);
+  return names;
+}
+
+    function sampleArray(arr, n) {
+      const copy = arr.slice();
+      const result = [];
+      while (copy.length && result.length < n) {
+        const i = Math.floor(Math.random() * copy.length);
+        result.push(copy.splice(i, 1)[0]);
+      }
+      return result;
+    }
+
+    function showPreview() {
+      const strip = document.getElementById('name-strip');
+      strip.innerHTML = '';
+      const preview = sampleArray(vsechna_jmena, Math.min(10, vsechna_jmena.length));
+      preview.forEach(n => {
+        const div = document.createElement('div');
+        div.className = 'name-item';
+        div.textContent = n;
+        strip.appendChild(div);
+      });
+    }
+
+    function animateRoulette(names, winner, callback) {
+    const strip = document.getElementById('name-strip');
+    strip.innerHTML = '';
+
+    // 1) Sestavíme základní "proud" jmen (opakování pro efekt)
+    const base = [];
+    for (let i = 0; i < 6; i++) base.push(...names); // šest opakování -> dostatečná délka
+
+    // 2) Rozhodneme, kde vložíme vítěze (nikoli na konec)
+    //    umístíme ho do zhruba 40-60% délky proudu (trochu náhodně)
+    const insertPos = Math.floor(base.length * (0.4 + Math.random() * 0.2));
+
+    // 3) Zkopírujeme pole a vložíme vítěze do středu
+    const all = base.slice();
+    all.splice(insertPos, 0, winner);
+
+    // 4) Přidáme ještě několik položek PO vítězi, aby bylo za ním co animovat
+    //    vezmeme náhodné (možná opakující se) položky z 'names'
+    const afterCount = Math.min(8, names.length * 2); // kolik položek za vítězem (max 8)
+    const afterNames = sampleArray(names.concat(names), afterCount); // zdroj může obsahovat duplikáty
+    all.push(...afterNames);
+
+    // 5) Vytvoříme DOM elementy
+    all.forEach(name => {
+        const div = document.createElement('div');
+        div.className = 'name-item';
+        div.textContent = name;
+        strip.appendChild(div);
+    });
+
+    // 6) Výpočty pro animaci (stejné principy jako dříve)
+    const winnerPos = insertPos; // pozice vítěze v 'all'
+    const itemWidth = 320; // přibližně šířka položky + mezera (uplatni svůj CSS)
+    const containerWidth = document.getElementById('roulette-container').offsetWidth;
+    const start = containerWidth / 2;
+    strip.style.transform = `translateX(${start}px)`;
+    strip.style.transition = 'none';
+
+    // 7) Animace: nejdřív dlouhé přejíždění, potom "bounce" do přesného umístění
+    setTimeout(() => {
+        // náhodný menší offset pro přirozenost
+        const randomOffset = (Math.random() * 200) - 100;
+        const rough = -winnerPos * itemWidth + containerWidth / 2 - itemWidth / 2 + randomOffset;
+        strip.style.transition = 'transform 12s cubic-bezier(0.02, 0.8, 0.1, 0.99)';
+        strip.style.transform = `translateX(${rough}px)`;
+
+        setTimeout(() => {
+        // jemné doladění (bounce) — posun tak, aby byl vítěz přesně uprostřed
+        const center = containerWidth / 2 - (winnerPos * itemWidth + (itemWidth/2));
+        strip.style.transition = 'transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+        strip.style.transform = `translateX(${center}px)`;
+
+        setTimeout(() => {
+            // zvýraznit vítěze
+            if (strip.children[winnerPos]) strip.children[winnerPos].classList.add('winner');
+
+            // počkejme, aby se animace projevila, potom zavolej callback
+            setTimeout(callback, 2500);
+        }, 800);
+        }, 12000);
+    }, 100);
+    }
+
+    function createConfetti() {
+      const colors = ['#ffd700', '#00ff88', '#ff6b6b', '#4ecdc4'];
+      for (let i = 0; i < 50; i++) {
+        setTimeout(() => {
+          const c = document.createElement('div');
+          c.className = 'confetti';
+          c.style.left = Math.random() * window.innerWidth + 'px';
+          c.style.top = '-10px';
+          c.style.background = colors[Math.floor(Math.random() * colors.length)];
+          c.style.width = (6 + Math.random()*10) + 'px';
+          c.style.height = (6 + Math.random()*10) + 'px';
+          document.body.appendChild(c);
+          setTimeout(() => c.remove(), 3000);
+        }, i * 30);
+      }
+    }
+
+    function losovat() {
+      if (animating || dostupna_jmena.length === 0) {
+        console.warn("⛔️ Nelze losovat – žádná dostupná jména nebo probíhá animace.");
+        return;
+      }
+
+      animating = true;
+      const btn = document.getElementById('losovat-btn');
+      btn.disabled = true;
+      const container = document.getElementById('roulette-container');
+      const winnerDisplay = document.getElementById('winner-display');
+      winnerDisplay.style.display = 'none';
+      container.style.display = 'block';
+
+      const idx = Math.floor(Math.random() * dostupna_jmena.length);
+      const winner = dostupna_jmena.splice(idx, 1)[0];
+      const animNames = sampleArray(vsechna_jmena, Math.min(15, vsechna_jmena.length));
+
+      console.log(`🏁 LOSOVÁNÍ:`);
+      console.log(`🎉 Vítěz: ${winner}`);
+      console.log(`👥 Zbývá ${dostupna_jmena.length} lidí:`, dostupna_jmena);
+
+      animateRoulette(animNames, winner, () => {
+        setTimeout(() => {
+          container.style.display = 'none';
+          winnerDisplay.textContent = '🏆 ' + winner + ' 🏆';
+          winnerDisplay.style.display = 'block';
+          createConfetti();
+
+          console.log("✅ Losování dokončeno.");
+          animating = false;
+          btn.disabled = false;
+        }, 500);
+      });
+    }
+
+    document.getElementById('losovat-btn').addEventListener('click', losovat);
+
+    document.getElementById('csv-file').addEventListener('change', async e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const text = await file.text();
+      const rows = parseCSV(text);
+      vsechna_jmena = extractNamesFromCSVRows(rows);
+      dostupna_jmena = vsechna_jmena.slice();
+      document.getElementById('file-section').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      showPreview();
+    });
+  </script>
+
+
+
+</body>
+</html>
