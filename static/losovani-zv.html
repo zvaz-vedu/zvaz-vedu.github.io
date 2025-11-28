@@ -9,9 +9,24 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+@font-face {
+  font-family: ZV-Display; /* set name */
+  src: url(fonts/ZvazVedu_V2_Display.woff);
+}
+
+@font-face {
+  font-family: ZV-Bold; /* set name */
+  src: url(fonts/ZvazVedu_V2_Bold.woff);
+}
+
+@font-face {
+  font-family: ZV-Regular; /* set name */
+  src: url(fonts/ZvazVedu_V2_Regular.woff);
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #FFF6C9 0%, #FFC300 100%);
+  font-family: 'ZV-Regular', sans-serif;
+  background: #FFC300;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,6 +45,7 @@ body {
 }
 
 h1 {
+  font-family: 'ZV-Display', sans-serif;
   font-size: 3em;
   margin-bottom: 10px;
   color: #1a1a1a;
@@ -38,6 +54,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'ZV-Bold', sans-serif;
   font-size: 1.3em;
   margin-bottom: 30px;
   color: #4f4f4f;
@@ -137,7 +154,7 @@ input[type="file"] {
   width: 300px;
   height: 150px;
   margin: 0 10px;
-  background: linear-gradient(135deg, #FFE066 0%, #FFB000 100%);
+  background: #ca9a2c;
   border: 3px solid #8d7800;
   border-radius: 15px;
   display: flex;
