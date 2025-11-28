@@ -226,7 +226,7 @@ button {
   cursor: pointer;
   font-weight: bold;
   transition: all 0.25s ease;
-  background: #FFB000;
+  background: #f2f2f2;
   color: #1a1a1a;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
@@ -339,7 +339,7 @@ function extractNamesFromCSVRows(rows) {
   console.log("Hlavička CSV:", header);
 
   // nový název sloupce
-  const nameHeader = 'Jméno a příjmení (dobrovolně)';
+  const nameHeader = 'Jméno a příjmení (dobrovolné, ale pro slosování naprosto nutné)';
 
   const nameCol = header.findIndex(h => h.toLowerCase() === nameHeader.toLowerCase());
 
