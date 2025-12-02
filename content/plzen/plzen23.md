@@ -1,5 +1,5 @@
 ---
-title: Zvaž vědu Plzeň 2023
+title: Zvaž vědu! Plzeň 2023
 date: 2023-12-08
 layout: report
 

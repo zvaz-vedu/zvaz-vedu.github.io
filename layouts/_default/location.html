@@ -48,7 +48,11 @@
                 {{if not .Params.registration}}
                 <div class="bento-board-item" style="background-color: var(--accent);">
                     <h2 class="bento-title">Je to za námi!</h2>
-                    <!--<a href="https://www.youtube.com/playlist?list=PL1NMrPWjk08QP6uhihPKJG3X3rgfydf6l" class="secondary-button">Záznamy přednášek ></a>-->
+                    {{ if .Params.linkToLecturesYouTube}}
+                        <a href="{{ .Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek ></a>
+                    {{ else }}
+                        <a href="" class="secondary-button">Záznamy přednášek již brzy!</a>
+                    {{ end }}
                 </div>
                 <div class="bento-board-item" style="background-color: var(--secondary);">
                     <h2 class="bento-title">Zpětná vazba!</h2>

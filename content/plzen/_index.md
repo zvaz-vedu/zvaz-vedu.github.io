@@ -22,12 +22,14 @@ abstractUrl: "/plzen/info/abstrakty"
 team: [honza, maty, eda, tomáš, poupič, lucka, david]
 partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-cesta-do-vesmiru, radovanek-cz, kooperativa, sit-port]
 registration: false
-registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vR5GopaMtuaD_HImMIxKfjxqWza3v01gVBHCMT2T4GoGAilnGnBVzS9pbBFd_0aXCVyAeR6k_yigAz2/pub?gid=334846388&single=true&output=csv"
+linkToLecturesYoutube: false
 maxParticipants: "300"
 newParticipants: "300"
 newSpeakers: "10"
 program: true
 zastita: false
+infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"
+
 
 importantInfo: true
 importantInfoHeader: "Co tě čeká?"

@@ -1,5 +1,5 @@
 ---
-title: Zvaž vědu Plzeň 2024
+title: Zvaž vědu! Plzeň 2024
 date: 2024-11-15
 layout: report
 

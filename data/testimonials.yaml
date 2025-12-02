@@ -36,6 +36,18 @@ participants:
     img: true
 
 orgs:
+  - key: ceska-televize
+    name: "Česká televize"
+    text: "Západočeský projekt Zvaž vědu! inspiruje studenty z celého Česka. Středoškoláci v něm vysvětlují vrstevníkům, proč má věda smysl a jak se do ní mohou sami zapojit. Akce se ze západu Čech postupně rozšířila i do Prahy a Brna. Aktivitu studentů podpořil také jediný český astronaut ve výcviku Aleš Svoboda."
+    link: "https://www.ceskatelevize.cz/porady/15334114383-udalosti-v-regionech-jih-a-zapad/225411000181202/cast/1155094/"
+    date: 2025-12-02
+
+  - key: cesky-rozhlas
+    name: "Český rozhlas"
+    text: "Projekt Zvaž vědu!, který vznikl na Gymnáziu J. Š. Baara v Domažlicích, během dvou let výrazně ovlivnil, jak středoškoláci vnímají přírodní a technické obory. Jeho tvůrci Jan Herzig a Lucie Kaiserová ukazují, že věda může být atraktivní součástí studentského života a ne jen povinnou školní položkou."
+    link: "https://plzen.rozhlas.cz/domazlicky-projekt-zvaz-vedu-inspiruje-studenty-z-celeho-ceska-9578113"
+    date: 2025-11-25
+    
   - key: vlada-cr
     name: "Vláda ČR"
     text: "V pátek 15. listopadu proběhl na Fakultě aplikovaných věd Západočeské univerzity v Plzni druhý ročník unikátní akce Zvaž vědu! Středoškoláci středoškolákům představili ty nejzajímavější oblasti výzkumu, které hýbou současným světem. Na FAV ZČU dorazilo více než 300 středoškoláků ze 17 různých škol napříč celým Plzeňským krajem, od Plas přes Plzeň až po Domažlice."

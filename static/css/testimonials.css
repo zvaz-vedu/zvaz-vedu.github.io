@@ -199,6 +199,7 @@
 
 .org-logo {
   max-height: 48px;
+  max-width: 200px;
   width: auto;
   filter: grayscale(0%) brightness(0%);
   transition: var(--transition);
