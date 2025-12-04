@@ -4,6 +4,10 @@
   locations:
   - Plzeň
   - Praha
+  years:
+  - 2023
+  - 2024
+  - 2025
   lectures:
   - title: 'Tajemství hvězd: Nebezpečí i naděje pro budoucnost lidstva'
     youtube: https://www.youtube.com/watch?v=UTJvGERkmi8
@@ -29,6 +33,9 @@
   photo: "/media/imgs/team/maty.webp"
   locations:
   - Plzeň
+  years:
+  - 2023
+  - 2024
   lectures:
   - title: 'Brigáda ve výzkumném centru NTC: Grafen jako materiál budoucnosti'
     youtube: https://www.youtube.com/watch?v=T0K4nrybX1w
