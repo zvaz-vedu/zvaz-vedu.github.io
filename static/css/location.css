@@ -461,17 +461,7 @@ h3::after {
 .program-table td {
     border-bottom: var(--tertiary) 2px solid;
 }
-.two-rooms tr td {
-    border-right: var(--tertiary) 2px solid;
-}
-
-tr td:nth-of-type(1) {
-    text-wrap: nowrap;
-}
-
-#prezence {
-    color: var(--accent);
-    font-weight: 600;
+.two-rooms tr td {z    font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
