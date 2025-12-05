@@ -38,11 +38,11 @@ plnoc:
   type: podporovatel
   city: Plzeň
   link: 'https://www.plnoc.cz/'
-stemhub:
-  name: STEM_Hub
-  type: podporovatel
-  city: Praha
-  link: 'https://www.stemhub.cz/'
+#stemhub:
+#  name: STEM_Hub
+#  type: podporovatel
+#  city: Praha
+#  link: 'https://www.stemhub.cz/'
 nextgenz:
   name: NextGenZ
   type: podporovatel
@@ -53,11 +53,11 @@ edufestival:
   type: podporovatel
   city: Praha
   link: 'https://edufestival.cz/'
-galakticka-vyzva:
-  name: Galaktická Vědomostní Výzva
-  type: podporovatel
-  city: Praha
-  link: 'https://www.galaktickavyzva.cz/'
+#galakticka-vyzva:
+#  name: Galaktická Vědomostní Výzva
+#  type: podporovatel
+#  city: Praha
+#  link: 'https://www.galaktickavyzva.cz/'
 plzensky-kraj-cz:
   name: Plzeňský kraj
   type: sponzor
@@ -72,7 +72,7 @@ techfair-cz:
   name: TECHFAIR.cz
   type: podporovatel
   city: Plzeň
-  link: https://textfair.cz
+  link: https://techfair.cz
 ceskobudoucnosti-cz:
   name: \#ČESKObudoucnosti
   type: podporovatel

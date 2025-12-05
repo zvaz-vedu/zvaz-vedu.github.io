@@ -4,7 +4,7 @@ layout: home
 
 events: "6"
 speakers: "45+"
-participants: "1000+"
+participants: "1400+"
 ambasadors: "40+"
 organizers: "30+"
 
