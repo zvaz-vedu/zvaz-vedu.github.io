@@ -129,8 +129,6 @@ tr td:nth-of-type(1) {
     text-wrap: nowrap;
 }
 
-#prezence {
-
 #youtube .layout-content {
     background-color: var(--secondary30);
     flex-direction: row;
@@ -152,10 +150,12 @@ tr td:nth-of-type(1) {
 /* MEDIA */
 
 @media (max-width:600px) {
+    
     #content .layout-content {
         flex-direction: column-reverse;
         gap: 4rem;
         padding-block: 0;
+        display: flex;
     }
     .text-body {
         width: 100%;
@@ -165,14 +165,14 @@ tr td:nth-of-type(1) {
         height: fit-content !important;
     }
     .img-body {
-        flex-direction: row;
+        flex-direction: column; 
         width: 100%;
-        height: fit-content !important;
     }
     .img-body img {
-        width: 250px;
+        width: 100%;
+        max-height: initial; /* Zrušte omezení max-height, pokud není nutné */
         padding-right: 0;
-        padding-bottom: .5rem;
+        padding-bottom: .5rem; 
     }
     .img-body::-webkit-scrollbar {
         width: 100%;
@@ -190,5 +190,4 @@ tr td:nth-of-type(1) {
     #content .layout-content, #program .layout-content {
         padding-inline: 0;
     }
-
 }
