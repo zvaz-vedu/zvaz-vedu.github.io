@@ -32,6 +32,15 @@ Akce se uskutečnila za podpory vzdělávací kanceláře ESERO, Fakulty aplikov
 
 Kompletní fotogalerie z akce je dostupná [ZDE](https://drive.google.com/drive/folders/1AwwLBv9zmk5AfbKNvDtb15_nNjGqeyP4?usp=drive_link). Autorem všech fotografií je **Karel Horák**.
 
+<div class="button-container">
+    <a class='secondary-button' href='/pdf/TZ Zvaž vědu! Plzeň 2025 - ex post.pdf' style='margin-top: 1rem;
+    background-color: var(--text2);
+    color: white;'>Stáhnout jako PDF</a>
+    <a class='secondary-button' href='/docx/TZ Zvaž vědu! Plzeň 2025 - ex post.docx' style='margin-top: 1rem;
+    background-color: var(--text2);
+    color: white;'>Stáhnout jako DOCX</a>
+</div>
+
 {{< program/divider >}}
 
 {{< program/plzen25 >}}
