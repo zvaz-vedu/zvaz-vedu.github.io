@@ -443,3 +443,75 @@ section .layout-content {
     color: var(--text);
     line-height: 1.5;
 }
+
+/* --- Generální Partner Specific Styles --- */
+
+.supporter-item.general {
+    /* 1. Background color */
+    background-color: var(--secondary);
+    
+    /* 2. Centering Logic */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* This ensures the card itself is centered within the grid column */
+    margin: 0 auto; 
+    
+    /* This ensures it takes up space but stops at 500px */
+    width: 100%;
+    max-width: 500px;
+    
+    /* 3. Appearance */
+    padding: 3rem; /* Extra padding for importance */
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.supporter-item.general:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image handling */
+.supporter-item.general img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.supporter-item.general:hover img {
+    filter: grayscale(100%) brightness(100%);
+    opacity: 1;
+}
+
+/* Typography - Larger than standard sponsors */
+.supporter-item.general h3 {
+    font-size: 2rem; 
+    font-weight: 700;
+    color: var(--text2);
+    margin-top: 0.5rem;
+    line-height: 1.2;
+}
+
+.supporter-item.general p {
+    font-size: 1.1rem;
+    color: var(--text-lighter);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .supporter-item.general {
+        padding: 2rem;
+        max-width: 100%; /* Fill screen on mobile */
+    }
+    .supporter-item.general h3 {
+        font-size: 1.6rem;
+    }
+}

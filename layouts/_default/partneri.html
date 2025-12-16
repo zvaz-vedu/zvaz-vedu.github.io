@@ -34,15 +34,49 @@
     <div class="layout-content" style="padding:0">
         {{- $supporters := slice -}}
         {{- $sponsors := slice -}}
+        {{- $generals := slice -}}
         
         {{- range $key, $value := .Site.Data.partners -}}
             {{- if eq $value.type "sponzor" -}}
                 {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
             {{- else if eq $value.type "podporovatel" -}}
                 {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
+            {{- else if eq $value.type "generalni-partner" -}}
+                {{- $generals = $generals | append (dict "key" $key "data" $value) -}}}
             {{- end -}}
         {{- end -}}
 
+        {{- if gt (len $generals) 0 -}}
+        <section class="layout-container section-sponsors">
+            <div class="layout-content supporter-section">
+                <h2><span>Generální partner</span></h2>
+                <!--<div class="infobox-container">
+                    <div class="infobox-icon">
+                        💡
+                    </div>
+                    <p class="infobox-text">
+                        Sponzoři jsou společnosti, které nás podporují finančně, zatímco partneři nám pomáhají jinak, například poskytnutím vybavení, prostoru nebo služeb. Bez financí by totiž Zvaž vědu! existovat nemohlo.
+                    </p>
+                </div>-->
+                <div class="supporters-grid">
+                    {{- range $generals -}}
+                        <div class="supporter-item general">
+                            <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
+                                <div class="supporter-img-wrapper">
+                                    <img class="monochrom" src="/media/imgs/partners/monochrom/{{ .key }}-monochrom.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="color hidden" src="/media/imgs/partners/{{ .key }}.webp" alt="Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                </div>
+                                <div class="supporter-info">
+                                    <h3 class="supporter-name">{{ .data.name }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    {{- end -}}
+                </div>
+            </div>
+        </section>
+        {{- end -}}
+        
         {{- if gt (len $sponsors) 0 -}}
         <section class="layout-container section-sponsors">
             <div class="layout-content supporter-section">
