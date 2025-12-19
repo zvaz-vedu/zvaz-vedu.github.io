@@ -42,7 +42,7 @@
             {{- else if eq $value.type "podporovatel" -}}
                 {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
             {{- else if eq $value.type "generalni-partner" -}}
-                {{- $generals = $generals | append (dict "key" $key "data" $value) -}}}
+                {{- $generals = $generals | append (dict "key" $key "data" $value) -}}
             {{- end -}}
         {{- end -}}
 
