@@ -18,8 +18,8 @@
                 {{with .Params.joinUs}}<a href="{{.}}" class="primary-button">Zapoj se</a>{{end}}
             </div>
             <div class="header-graphics">
-                <img class="header-graphics-photo" src="{{.Params.headerPhoto}}">
-                <img class="header-graphics-logo" src="/media/imgs/locations/kocka2bila.webp">
+                <img class="header-graphics-photo" src="{{.Params.headerPhoto}}" alt="{{.Params.headerTitle}}">
+                <img class="header-graphics-logo" src="/media/imgs/locations/kocka2bila.webp" alt="Zvaž vědu! logo">
             </div>
         </div>
     </header>
@@ -51,7 +51,7 @@
                     {{ if .Params.linkToLecturesYouTube}}
                         <a href="{{ .Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek ></a>
                     {{ else }}
-                        <a href="" class="secondary-button">Záznamy přednášek již brzy!</a>
+                        <a href="#" class="secondary-button">Záznamy přednášek již brzy!</a>
                     {{ end }}
                 </div>
                 <div class="bento-board-item" style="background-color: var(--secondary);">
@@ -87,13 +87,13 @@
         </section>
         
         {{if .Params.infoVid}}
-            <section class="layout-container" id="info-vid">
+            <div class="layout-container" id="info-vid">
                 <div class="layout-content">
                     <div class="video-wrapper">
-                        <iframe src="{{.Params.infoVid}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="{{.Params.infoVid}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
-            </section>
+            </div>
         {{end}}
 
         <section class="layout-container" id="program">
@@ -185,7 +185,7 @@
                             {{ $name := .File.BaseFileName }}
                             {{ $dir := printf "/media/imgs/gallery/%s" $name }}  <!-- aby to nezobrazovalo to v složce info -->
                             {{ $img := printf "%s/main.webp" $dir }}
-                            <img src="{{ $img }}">
+                            <img src="{{ $img }}" alt="{{ .Title }}">
                             <div class="history-item-body">
                                 <strong>{{ .Title }}</strong>
                                 <em>{{ .Date.Format "2. 1. 2006" }}</em>
@@ -205,10 +205,10 @@
                     <div class="team-member">
                         <a href="/kontakt/#{{.}}" class="team-member-link">
                             <div class="team-member-photo-container">
-                                <img class="team-member-photo" src="/media/imgs/team/{{.}}.webp">
+                                {{$teamName := split . "-"}}
+                                {{$teamName = index $teamName 0}}
+                                <img class="team-member-photo" src="/media/imgs/team/{{.}}.webp" alt="{{$teamName}}">
                             </div>
-                            {{$teamName := split . "-"}}
-                            {{$teamName = index $teamName 0}}
                             <p class="team-member-name">{{$teamName}}</p>
                         </a>
                     </div>
