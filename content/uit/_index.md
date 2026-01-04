@@ -33,14 +33,12 @@ infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"
 ---
 <div class="program-table-container">
     <table class="program-table two-rooms">
-        <thead class="primary-head">
-            <tr>
+        <thead>
+            <tr class="primary-head">
                 <th></th> <th colspan="2">Velký sál</th>
                 <th colspan="2">Malý sál</th>
             </tr>
-        </thead>
-        <thead class="secondary-head">
-            <tr>
+            <tr class="secondary-head">
                 <th>Čas</th>
                 <th>Přednášející</th>
                 <th>Téma</th>
