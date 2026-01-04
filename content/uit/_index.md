@@ -7,7 +7,7 @@ headerText: "28. listopadu 2025 na FAV ZČU"
 headerPhoto: "/media/imgs/locations/plzen-header.webp"
 
 <!-- joinUs: http --> 
-pastActions: true
+pastActions: false
 
 events: "3"
 participants: "650+"
@@ -16,7 +16,7 @@ speakers: "31"
 liveAction: true
 eventTime: 2025-11-28T09:00:00
 
-abstracts: true
+abstracts: false
 abstractUrl: "/plzen/info/abstrakty"
 
 team: [honza, maty, eda, tomáš, poupič, lucka, david]
@@ -33,12 +33,14 @@ infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"
 ---
 <div class="program-table-container">
     <table class="program-table two-rooms">
-        <thead>
-            <tr class="primary-head">
+        <thead class="primary-head">
+            <tr>
                 <th></th> <th colspan="2">Velký sál</th>
                 <th colspan="2">Malý sál</th>
             </tr>
-            <tr class="secondary-head">
+        </thead>
+        <thead class="secondary-head">
+            <tr>
                 <th>Čas</th>
                 <th>Přednášející</th>
                 <th>Téma</th>
