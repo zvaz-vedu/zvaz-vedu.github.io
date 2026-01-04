@@ -489,6 +489,9 @@ h3::after {
     gap: 2rem;
     color: var(--text2);
 }
+.link-button-item h3 {
+    font-size: 2.5rem;
+}
 .link-button .secondary-button {
     background-color: var(--tertiary);
 }
@@ -713,6 +716,7 @@ h3::after {
     .link-button-item-content img {
         width: 100%;
     }
+    .link-button h3,
     .link-button h4{
         font-size: 1.777rem; 
     }  
