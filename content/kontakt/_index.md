@@ -12,34 +12,34 @@ position="ředitel, zakladatel"
 school="Gymnázium J. Š. Baara, Domažlice"
 mail="janherzig@zvazvedu.cz" >}}
 
+{{< member
+name="Eduard Plic"
+team="plzen"
+alias="eda"
+photo="eda.webp"
+position="zástupce ředitele, spoluzakladatel"
+school="Fakulta aplikovaných věd, ZČU"
+mail="eduardplic@zvazvedu.cz" >}}
+
+
+### Plzeň & Praha & Brno
+
 
 {{< member
 name="Matyáš Matta"
 team="plzen"
 alias="maty"
 photo="maty.webp"
-position="zástupce ředitele, zakladatel"
+position="koordinátor webu, zakladatel"
 school="Fakulta jaderná a fyzikálně inženýrská, ČVUT"
 mail="matyasmatta@zvazvedu.cz" >}}
-
-
-### Plzeň & Praha
-
-{{< member
-name="Eduard Plic"
-team="plzen"
-alias="eda"
-photo="eda.webp"
-position="koordinátor administrativy"
-school="Fakulta aplikovaných věd, ZČU"
-mail="eduardplic@zvazvedu.cz" >}}
 
 {{< member
 name="Tomáš Rajchman"
 team="plzen"
 photo="tomáš.webp"
 alias="tomáš"
-position="koordinátor pro ICT"
+position="koordinátor IT, spoluzakladatel"
 school="Fakulta aplikovaných věd, ZČU"
 mail="tomasrajchman@zvazvedu.cz" >}}
 
@@ -53,13 +53,36 @@ school="Gymnázium J. Š. Baara, Domažlice"
 mail="kaiserova@zvazvedu.cz" >}}
 
 {{< member
-name="David Němec"
+name="Jakub Anderle"
 team="plzen"
-photo="david.webp"
-alias="david"
-position="koordinátor vize projektu"
-school="Matematicko-fyzikální fakulta, UK"
-mail="davidnemec@zvazvedu.cz" >}}
+photo="jakub.webp"
+alias="jakub"
+position="koordinátor HR"
+school="Sportovní gymnázium Plzeň"
+mail="anderle@zvazvedu.cz" >}}
+
+{{< member
+name="Petr Geršl"
+team="brno"
+photo="petr.webp"
+alias="patr"
+position="koordinátor účetnictví"
+school="Ekonomická fakulta JU"
+mail="pgersl@cmgp.cz"
+web="pgersl.xyz"
+ig="https://www.instagram.com/pgersl.webp/"
+linkedin="https://www.linkedin.com/in/petr-geršl-9324491a6" >}}
+
+
+{{< member
+name="Boris Brovkin"
+team="brno"
+photo="boris.webp"
+alias="boris"
+position="koordinátor grafiky"
+school=""
+mail="brovkin@zvazvedu.cz" >}}
+
 
 {{< member
 name="Jan Poupa"
@@ -67,23 +90,18 @@ team="plzen"
 photo="poupič.webp"
 alias="poupič"
 position="koordinátor grafiky"
-school="Fakulta designu a umění Ladislava Sutnara"
+school="Fakulta designu a umění Ladislava Sutnara, ZČU"
 mail="janpoupa@zvazvedu.cz" >}}
 
 
-### Brno
-
 {{< member
-name="Petr Geršl"
-team="brno"
-photo="petr.webp"
-alias="patr"
-position="organizátor pro Brno, web administrátor"
-school="Cyrilometodějské gymnázium, Brno"
-mail="pgersl@cmgp.cz"
-web="pgersl.xyz"
-ig="https://www.instagram.com/pgersl.webp/"
-linkedin="https://www.linkedin.com/in/petr-geršl-9324491a6" >}}
+name="David Němec"
+team="plzen"
+photo="david.webp"
+alias="david"
+position="koordinátor vize projektu, spoluzakladatel"
+school="Matematicko-fyzikální fakulta, UK"
+mail="davidnemec@zvazvedu.cz" >}}
 
 {{< member
 name="Matěj Šicner"
@@ -100,23 +118,5 @@ team="brno"
 photo="oliver.webp"
 alias="oliver"
 position="organizátor pro Brno"
-school="Cyrilometodějské gymnázium, Brno"
+school=""
 mail="oklimes@cmgp.cz" >}}
-
-{{< member
-name="Anna Černá"
-team="brno"
-photo="anička.webp"
-alias="anička"
-position="organizátorka pro Brno"
-school="Klvaňovo gymnázium, Kyjov"
-mail="anna1458black@gmail.com" >}}
-
-{{< member
-name="Monika Dlouhá"
-team="brno"
-photo="monča.webp"
-alias="monča"
-position="organizátorka pro Brno"
-school="Gymnázium Matyáše Lercha, Brno"
-mail="xdlouha@gml.cz" >}}
