@@ -22,7 +22,7 @@ abstractUrl: "/plzen/info/abstrakty"
 team: [honza, maty, eda, tomáš, poupič, lucka, david]
 partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-cesta-do-vesmiru, radovanek-cz, kooperativa, sit-port]
 registration: false
-linkToLecturesYoutube: false
+linkToLecturesYoutube: true
 maxParticipants: "300"
 newParticipants: "300"
 newSpeakers: "10"
