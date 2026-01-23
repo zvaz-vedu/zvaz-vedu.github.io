@@ -29,6 +29,8 @@ newSpeakers: "10"
 program: true
 zastita: false
 infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"
+linkToLecturesYouTube: https://youtube.com/playlist?list=PL1NMrPWjk08Qv816Ed6booeo9dypuWkWL&si=26pYVn6Khg8bBFsH
+
 
 ---
 <div class="program-table-container">

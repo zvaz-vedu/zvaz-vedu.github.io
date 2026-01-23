@@ -470,7 +470,9 @@
   photo: "/media/imgs/speakers/julieberitova.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Česká cesta do vesmíru: Od beztížných kadetů po družice'
+    youtube: https://youtu.be/Kx4MXfK5Vf0?si=MmtIu_O7fMEavSVM
   contact:
     instagram: https://www.instagram.com/julie_beritova/
     linkedin: https://www.linkedin.com/in/julie-beritová-4b332035b/
