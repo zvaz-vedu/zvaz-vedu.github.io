@@ -472,7 +472,7 @@
   - Plzeň
   lectures:
   - title: 'Česká cesta do vesmíru: Od beztížných kadetů po družice'
-    youtube: https://youtu.be/Kx4MXfK5Vf0?si=MmtIu_O7fMEavSVM
+    youtube: https://youtu.be/jUvfzBMHgP8?si=dmGnUXrwmovT9A8b
   contact:
     instagram: https://www.instagram.com/julie_beritova/
     linkedin: https://www.linkedin.com/in/julie-beritová-4b332035b/
@@ -503,7 +503,9 @@
   photo: "/media/imgs/speakers/danielpojhan.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Středoškolák informatikem aneb letem světem od AI až po letectví'
+    youtube: https://youtu.be/jUvfzBMHgP8?si=dmGnUXrwmovT9A8b
   contact:
     instagram: https://www.instagram.com/dan_pojhan/
     linkedin: https://www.linkedin.com/in/daniel-p-266198247/
