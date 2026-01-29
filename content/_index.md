@@ -12,6 +12,12 @@ partners: [senat-cz, plzensky--kraj-cz, podporatalentu-cz, fav-zcu-cz, hvezdarna
 ---
 <div class="carousel-card">
     <i class="fa-solid fa-calendar"></i>
+    <h4>DALŠÍ ROČNÍK V BRNĚ!</h4>
+    <p>Zvaž vědu! se po roce vrací do Brna. 10 přednášek, skvělé stánky i exkurze - to všechno již ve čtvrtek 5. března. Neváhej a registruj se co nejdříve, letos to bude opravdu velké!</p>
+    <a href="/brno" class="secondary-button">Více informací &gt;</a>
+</div>
+<div class="carousel-card">
+    <i class="fa-solid fa-calendar"></i>
     <h4>Zvaž vědu! v Plzni je za námi</h4>
     <p>28. listopadu se konalo plzeňské Zvaž vědu! Akce se rozhodně povedla. Přečtěte si o ní víc!</p>
     <a href="/plzen/plzen25" class="secondary-button">Tisková zpráva &gt;</a>
