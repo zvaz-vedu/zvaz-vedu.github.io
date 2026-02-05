@@ -17,6 +17,12 @@ partners: [senat-cz, plzensky--kraj-cz, podporatalentu-cz, fav-zcu-cz, hvezdarna
     <a href="/brno" class="secondary-button">Více informací &gt;</a>
 </div>
 <div class="carousel-card">
+    <i class="fa-solid fa-address-book"></i>
+    <h4>Newsletter Zvaž vědu!</h4>
+    <p>Přihlaste se k odběru newsletteru Zvaž vědu! a mějte přehled o všech akcích!</p>
+    <a href="https://docs.google.com/forms/d/1mBMQr6pY6wV7ZxINbUuixhpgtS-YDakWKMqqDELzhMk/viewform?ts=69835a6f&edit_requested=true" class="secondary-button">Registrace &gt;</a>
+</div>
+<div class="carousel-card">
     <i class="fa-solid fa-calendar"></i>
     <h4>Zvaž vědu! v Plzni je za námi</h4>
     <p>28. listopadu se konalo plzeňské Zvaž vědu! Akce se rozhodně povedla. Přečtěte si o ní víc!</p>
