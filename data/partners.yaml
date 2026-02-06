@@ -20,7 +20,7 @@ podporatalentu-cz:
   link: 'https://www.podporatalentu.cz'
 radovanek-cz:
   name: Radovánek
-  type: sponzor
+  type: podporovatel
   city: Plzeň
   link: 'https://www.radovanek.cz'
 senat-cz:
@@ -90,6 +90,6 @@ kooperativa:
   link: https://www.koop.cz/
 sit-port:
   name: SIT port
-  type: sponzor
+  type: podporovatel
   city: Plzeň
   link: https://sitport.cz
