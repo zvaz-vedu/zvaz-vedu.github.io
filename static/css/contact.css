@@ -127,3 +127,25 @@
         flex-direction: column;
     }
 }
+
+/* Make the container a Flexbox */
+.header-text {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 0.5rem;            /* Space between the stacked items */
+    align-items: flex-start; /* Align to the left */
+}
+
+/* Prevent the text (date/location) from splitting in half */
+.header-meta-item {
+    white-space: nowrap; 
+}
+
+/* On screens larger than 768px (Tablets/Desktop), put them side-by-side */
+@media (min-width: 768px) {
+    .header-text {
+        flex-direction: row; /* Switch to horizontal */
+        align-items: center; /* Center them vertically relative to each other */
+        gap: 1.5rem;         /* Space between the items side-by-side */
+    }
+}
