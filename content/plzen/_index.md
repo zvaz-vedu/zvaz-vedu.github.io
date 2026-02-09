@@ -3,7 +3,6 @@ title: Zvaž vědu! Plzeň
 layout: location
 
 headerTitle: "v Plzni"
-headerText: "28. listopadu 2025 na FAV ZČU"
 location: FAV ZČU
 date: 2025-11-28
 headerPhoto: "/media/imgs/locations/plzen-header.webp"
