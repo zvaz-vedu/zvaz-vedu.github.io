@@ -33,7 +33,6 @@ h3::after {
 }
 .text-body p {
     margin-bottom: 1.1rem;
-    font-size: 1.2rem;
 }
 .gallery-container {
     display: flex;
