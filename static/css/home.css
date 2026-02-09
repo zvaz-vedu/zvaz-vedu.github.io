@@ -86,12 +86,11 @@
 }
 #what p {
     color: var(--black-zv);
+    text-align: justify;
 }
 #what h3 {
     display: flex;
-    align-items: center;
     text-wrap: nowrap;
-    padding-bottom: 1rem;
 }
 #what img {
     width: 55px;
@@ -102,24 +101,18 @@
     margin-inline: auto;
 }
 .what-section {
+    display: flex;          
+    flex-direction: column; 
     width: min(100%, 300px);
+    gap: 1.5rem;            
 }
 .what-section > i {
     display: block;
     width: fit-content;
-    padding-bottom: 1.5rem;
     margin-inline: auto;
     font-size: 40px;
 }
-.what-section .secondary-button {
-    margin-top: 1rem;
-    background-color: var(--black-zv);
-    color: var(--accent);
-}
-.what-section .secondary-button:hover {
-    background-color: var(--tertiary);
-    color: var(--black-zv);
-}
+
 
 /* STATS */
 
@@ -129,13 +122,6 @@
 
 #stats .layout-content {
     padding: 0;
-}
-#stats .secondary-button {
-    background-color: var(--tertiary);
-}
-
-#stats .secondary-button:hover {
-    background-color: var(--background);
 }
 
 .bento-board {
@@ -274,26 +260,7 @@
     transform: rotate(180deg);
 }
 .grid-board .secondary-button {
-    background-color: var(--tertiary);
     margin: auto 0 0 auto;
-    font-weight: normal;
-}
-.grid-board .secondary-button:hover {
-    background-color: var(--background);
-}
-.grid-full {
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-}
-.grid-full p {
-    display: block;
-    width: fit-content;
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-.grid-full .secondary-button {
-    margin: 0;
 }
 
 /* CTA */
@@ -586,22 +553,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1.5rem;
+
 }
 
 .carousel-card i {
     font-size: 40px;
-    padding-bottom: 1.5rem;
 }
 
 .carousel-card h4 {
     font-size: 1.5rem; /* Větší nadpis karty */
     font-weight: 500;
-    margin-bottom: 1rem;
     color: var(--black-zv);
-}
-
-.carousel-card .secondary-button {
-    margin-top: 1rem;
 }
 
 .carousel-button {

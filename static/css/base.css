@@ -250,12 +250,11 @@ footer .layout-content {
 .secondary-button {
     padding: 1ch 1rem;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-family: ZV-Display;
     color: var(--secondary);
     background-color: var(--black-zv);
     text-decoration: none;
     text-transform: uppercase;
-    font-family: ZV-Display;
     display: block;
     width: fit-content;
     text-wrap: nowrap;
@@ -383,10 +382,6 @@ header img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-}
-
-.link-button .secondary-button {
-  background-color: var(--tertiary);
 }
 
 /* MEDIA */
