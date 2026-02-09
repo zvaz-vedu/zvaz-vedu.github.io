@@ -11,11 +11,18 @@
 
 /* Removed !important */
 #speakers-container {
-    display: flex; /* Ensure it's a flex container */
-    flex-direction: column; 
-    gap: 3rem;
+    display: grid;
+    gap: 2rem; /* Adjust space between columns/rows */
+    grid-template-columns: 1fr; /* Default: 1 column (Mobile) */
 }
 
+/* When the screen is wider than 768px (Tablet/Desktop) */
+@media (min-width: 768px) {
+    #speakers-container {
+        grid-template-columns: 1fr 1fr; /* Split into 2 equal columns */
+        align-items: start; /* Prevents shorter cards from stretching to match taller ones */
+    }
+}
 /* --- Speaker Card Layout Fixes --- */
 
 .speaker {
