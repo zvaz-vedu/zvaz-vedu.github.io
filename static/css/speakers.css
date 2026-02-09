@@ -4,22 +4,6 @@
     margin-block: 2rem;
     color: var(--accent);
 }
-header .primary-button {
-    background-color: var(--accent);
-    color: var(--background); /* Use background for text color to ensure contrast */
-    font-size: 2.25em; 
-}
-header .primary-button:hover {
-    /* Set an explicit hover color for consistency, using 'var(--background)' for light schemes */
-    color: var(--background); 
-}
-
-@media (prefers-color-scheme: dark) {
-    /* In dark mode, text color on hover should switch to the main text color */
-    header .primary-button:hover {
-        color: var(--text);
-    }
-}
 
 #map svg {
     max-width: 100%;
@@ -60,6 +44,7 @@ header .primary-button:hover {
     flex-direction: column; 
     flex-grow: 1; 
     font-size: 1.2em;
+    gap: 0.7rem
 }
 
 /* --- Speaker Name and Details --- */
@@ -69,7 +54,6 @@ header .primary-button:hover {
     display: block;
     width: fit-content;
     text-wrap: nowrap;
-    margin-bottom: 1.2rem;
     z-index: 1;
     font-size: 1.875rem; 
 }
@@ -87,13 +71,10 @@ header .primary-button:hover {
 }
 
 .speaker-location {
-    margin-bottom: 1rem;
     font-style: italic;
 }
 .speaker-lectures {
     list-style-position: outside;
-    margin-left: 1rem;
-    padding-left: 0; /* Add padding-left to ensure bullet points are visible */
 }
 .speaker-lectures a {
     color: var(--text);
@@ -103,40 +84,26 @@ header .primary-button:hover {
 }
 
 .speaker-contacts {
-    margin-top: 1.2rem;
     display: flex; /* Make contacts a flex container for better spacing */
-    gap: .7rem;
 }
 .speaker-contacts a {
     color: var(--text);
     font-size: 1.875rem; 
-    /* margin-right: .7rem; Removed, using flex gap instead */
 }
 .speaker-contacts a:hover {
     color: var(--accent);
 }
-
 .speaker-bio {
-    margin-top: 1.2rem;
+    gap: 1.5rem;
+    display: grid;
 }
-.speaker-bio .secondary-button {
-    background-color: var(--accent);
+.speaker-bio .primary-button {
     font-size: 1.3rem;
-    /* Changed color to var(--background) for better contrast on accent color */
-    color: var(--background); 
-    font-family: ZV-Regular, sans-serif;
-    border: none; /* Ensure it looks like a button */
-    padding: .5rem 1rem;
-    cursor: pointer;
-}
-.speaker-bio .secondary-button i {
-    margin-left: .5rem;
-    font-size: 1rem; 
+    border: none
 }
 .speaker-bio-text {
     /* Keep display: none as JS manages visibility */
     display: none; 
-    margin-top: 1.2rem;
     transition: var(--transition);
     font-weight: 400;
 }
@@ -274,9 +241,8 @@ header .primary-button:hover {
     .speaker strong:nth-of-type(2), .speaker-lectures {
         font-size: 1rem; 
     }
-    .speaker .secondary-button {
+    .speaker .primary-button {
         font-size: 1rem; 
-        padding: .4rem .6rem;
     }
     .speaker-bio-text {
         font-size: 1rem; 

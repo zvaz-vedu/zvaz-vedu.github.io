@@ -136,15 +136,7 @@ tr td:nth-of-type(1) {
     gap: 2rem;
     font-size: 2rem;
 }
-#youtube .secondary-button {
-    background-color: var(--primary);
-    color: var(--black-zv);
-}
 
-#youtube .secondary-button:hover {
-    background-color: var(--tertiary);
-    color: var(--text);
-}
 
 /* MEDIA */
 

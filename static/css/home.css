@@ -259,9 +259,7 @@
 .grid-board-item.active .reveal-button-icon {
     transform: rotate(180deg);
 }
-.grid-board .secondary-button {
-    margin: auto 0 0 auto;
-}
+
 
 /* CTA */
 
@@ -452,11 +450,6 @@
         justify-content: center;
         gap: 10px;
         flex-wrap: wrap;
-    }
-
-    .grid-board-item h4 .secondary-button,
-    .grid-board-item h4 .reveal-button {
-        margin: 0;
     }
 }
 

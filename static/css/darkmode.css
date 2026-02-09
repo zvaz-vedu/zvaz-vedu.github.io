@@ -8,7 +8,4 @@
     #location-brno:checked, #location-praha:checked, #location-plzeň:checked {
         box-shadow: inset 1em 1em var(--accent60);
     }
-    .primary-button {
-        color: var(--background);
-    }
 }
