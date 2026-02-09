@@ -15,7 +15,6 @@ liveAction: true
 eventTime: 2025-06-09T09:00:00
 pastActions: true
 location: Senát PČR
-date: 2025-06-09
 
 team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
 partners: [senat-cz, hvezdarna-cz, eserocz-cz]
