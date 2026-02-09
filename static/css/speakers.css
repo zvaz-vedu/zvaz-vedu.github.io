@@ -74,7 +74,7 @@
     font-style: italic;
 }
 .speaker-lectures {
-    list-style-position: outside;
+    list-style-position: inside;
 }
 .speaker-lectures a {
     color: var(--text);
@@ -85,6 +85,7 @@
 
 .speaker-contacts {
     display: flex; /* Make contacts a flex container for better spacing */
+    gap: 0.5rem;
 }
 .speaker-contacts a {
     color: var(--text);
