@@ -246,7 +246,7 @@ footer .layout-content {
     }
 }
 
-/* vždy černé tlačítko se žlutým textem + při přejetí bílý text*/
+/* vždy černé tlačítko se žlutým textem + při přejetí se invertuje*/
 .secondary-button {
     padding: 1ch 1rem;
     font-size: 1.6rem;
@@ -261,9 +261,12 @@ footer .layout-content {
     transition: var(--transition);
     border: none;
     cursor: pointer;
+    border: 3px solid var(--black-zv);
 }
 .secondary-button:hover {
-    color: var(--white-zv);
+    background-color: var(--secondary); 
+    color: var(--black-zv);            
+    border-color: var(--black-zv);      
 }
 
 .quote-title {
