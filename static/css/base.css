@@ -215,6 +215,9 @@ footer .layout-content {
 
 /* BASE ELEMENTS */
 
+/* tlačítko měnící barvu na základě white/dark mode*/
+/* WHITE MODE: žluté tlačítko s černým textem + při přejetí černé tlačítko s bílím textem*/
+/* DARK MODE: žluté tlačítko s černým textem + při přejetí žluté tlačítko s bílím textem */
 .primary-button {
     padding: 0.3em 0.7em;
     background-color: var(--primary);
@@ -243,12 +246,16 @@ footer .layout-content {
     }
 }
 
+/* vždy černé tlačítko se žlutým textem + při přejetí bílý text*/
 .secondary-button {
     padding: 1ch 1rem;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--text0);
+    color: var(--secondary);
+    background-color: var(--black-zv);
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: ZV-Display;
     display: block;
     width: fit-content;
     text-wrap: nowrap;
@@ -257,8 +264,7 @@ footer .layout-content {
     cursor: pointer;
 }
 .secondary-button:hover {
-    box-shadow: var(--shadow);
-    color: var(--text);
+    color: var(--white-zv);
 }
 
 .quote-title {

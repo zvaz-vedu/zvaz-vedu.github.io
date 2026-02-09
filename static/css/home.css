@@ -602,13 +602,6 @@
 
 .carousel-card .secondary-button {
     margin-top: 1rem;
-    background-color: var(--black-zv);
-    color: var(--accent);
-}
-
-.carousel-card .secondary-button:hover {
-    background-color: var(--background); /* Jiná barva pro hover */
-    color: var(--text);
 }
 
 .carousel-button {
