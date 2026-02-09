@@ -1,12 +1,15 @@
 ---
 title: Zvaž vědu! Plzeň 2024
 date: 2024-11-15
+location: FAV ZČU
 layout: report
 
 headerTitle: "Druhé Zvaž vědu! v Plzni"
 headerText: "Ohlédnutí za Zvaž vědu! Plzeň 2024"
 
 yt: "https://www.youtube.com/playlist?list=PL1NMrPWjk08TqugSEkfgSzry_AjJ-T_cN"
+partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz,  radovanek-cz]
+
 ---
 
 V pátek 15. listopadu proběhl na Fakultě aplikovaných věd Západočeské univerzity v Plzni druhý ročník unikátní akce Zvaž vědu! Středoškoláci středoškolákům představili ty nejzajímavější oblasti výzkumu, které hýbou současným světem.

@@ -306,12 +306,20 @@ footer .layout-content {
     color: var(--black-zv);
 }
 .partner-body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    /* Create as many columns as fit, but no column smaller than 150px */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-items: center; /* Centers items inside their grid cells */
+    width: 100%;
+}
+
+/* Ensure images don't overflow their grid cells */
+.partner-body a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .partner-body img {
@@ -329,6 +337,24 @@ footer .layout-content {
     margin: 3rem 0;
     color: var(--text);
     font-family: ZV-Bold;
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 0.5rem;            /* Space between the stacked items */
+    align-items: flex-start; /* Align to the left */
+}
+
+/* Prevent the text (date/location) from splitting in half */
+.header-meta-item {
+    white-space: nowrap; 
+}
+
+/* On screens larger than 768px (Tablets/Desktop), put them side-by-side */
+@media (min-width: 768px) {
+    .header-text {
+        flex-direction: row; /* Switch to horizontal */
+        align-items: center; /* Center them vertically relative to each other */
+        gap: 1.5rem;         /* Space between the items side-by-side */
+    }
 }
 
 header .layout-content {
