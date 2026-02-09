@@ -208,7 +208,7 @@ section .layout-content {
 .supporter-item.sponsor h3 {
 	font-size: 1.5rem;
 	font-weight: normal;
-	color: var(--text2);
+	color: var(--black-zv);
 }
 .supporter-item.sponsor p {
 	font-size: 1rem;
@@ -251,7 +251,7 @@ section .layout-content {
 	margin-top: 0.5rem;
 	font-size: 1.2rem;
 	font-weight: 500;
-	color: var(--text2);
+	color: var(--black-zv);
 }
 .hidden {
 	display: none;
@@ -495,7 +495,7 @@ section .layout-content {
 .supporter-item.general h3 {
     font-size: 2rem; 
     font-weight: 700;
-    color: var(--text2);
+    color: var(--black-zv);
     margin-top: 0.5rem;
     line-height: 1.2;
 }

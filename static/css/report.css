@@ -33,7 +33,6 @@ h3::after {
 }
 .text-body p {
     margin-bottom: 1.1rem;
-    font-size: 1.2rem;
 }
 .gallery-container {
     display: flex;
@@ -98,7 +97,7 @@ h3::after {
     text-align: center;
     font-weight: bold;
     background-color: var(--primary);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .program-table td{
     padding: .5rem;
@@ -107,7 +106,7 @@ h3::after {
 }
 .program-table th {
     padding: .5rem;
-    color: var(--text2);
+    color: var(--black-zv);
     border: var(--tertiary) 2px solid;
 
 }
@@ -139,7 +138,7 @@ tr td:nth-of-type(1) {
 }
 #youtube .secondary-button {
     background-color: var(--primary);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 #youtube .secondary-button:hover {

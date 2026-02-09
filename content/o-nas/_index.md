@@ -32,5 +32,5 @@ color="primary" >}}
 
 {{< team >}}
 
-<div class="layout-content link-button"><div class="link-button-item"><h4>Odborný text o fungování organizace?</h4><a href="/pdf/zprava.pdf" class="secondary-button">Dvouletá zpráva o činnosti organizace →</a></div></div>
+<div class="link-button-item"><h4>Odborný text o fungování organizace?</h4><a href="/pdf/zprava.pdf" class="secondary-button">Dvouletá zpráva o činnosti organizace →</a></div>
 

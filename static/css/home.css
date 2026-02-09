@@ -82,10 +82,10 @@
     justify-content: space-between;
     gap: 2rem;
     background-color: var(--primary);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 #what p {
-    color: var(--text2);
+    color: var(--black-zv);
 }
 #what h3 {
     display: flex;
@@ -113,12 +113,12 @@
 }
 .what-section .secondary-button {
     margin-top: 1rem;
-    background-color: var(--text2);
+    background-color: var(--black-zv);
     color: var(--accent);
 }
 .what-section .secondary-button:hover {
     background-color: var(--tertiary);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 /* STATS */
@@ -157,14 +157,14 @@
 }
 
 .bento-text {
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 .bento-title {
     font-size: 3rem;
     font-family: 'ZV-Display';
     text-transform: uppercase;
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .bento-row1col1 {
     background-color: var(--accent);
@@ -211,7 +211,7 @@
     gap: 1rem;
     width: 100%;
     background-color: var(--accent);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .grid-board-item-content {
     display: none;
@@ -226,7 +226,7 @@
     transition: var(--transition);
 }
 .grid-board-item-content p {
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .grid-board-item-content-body {
     display: flex;
@@ -260,7 +260,7 @@
 .reveal-button {
     font-size: 1rem;
     line-height: 1rem;
-    color: var(--text2);
+    color: var(--black-zv);
     background-color: var(--primary);
     border: none;
     padding: .5rem;
@@ -514,14 +514,14 @@
     align-items: center; /* Centrovaný nadpis a karusel */
     gap: 2rem;
     background-color: var(--tertiary);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 #aktualne h2 {
     font-size: 3rem;
     font-family: 'ZV-Display';
     text-transform: uppercase;
-    color: var(--text2);
+    color: var(--black-zv);
     text-align: center;
     width: 100%;
     position: relative; /* Pro umístění tečky */
@@ -551,7 +551,7 @@
     }
 }
 #aktualne p {
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 .carousel-container {
@@ -597,12 +597,12 @@
     font-size: 1.5rem; /* Větší nadpis karty */
     font-weight: 500;
     margin-bottom: 1rem;
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 .carousel-card .secondary-button {
     margin-top: 1rem;
-    background-color: var(--text2);
+    background-color: var(--black-zv);
     color: var(--accent);
 }
 

@@ -12,7 +12,20 @@
         <div class="layout-content">
             <div class="header-body">
                 <h1>Zvaž vědu!<br><span>{{.Params.headerTitle}}</span></h1>
-                <p class="header-text">{{.Params.headerText}}</p>
+                <p class="header-text">
+                    {{ if .Params.location }}
+                        <span style="margin-right: 1.5rem;">
+                            <i class="fa-solid fa-location-dot"></i> {{ .Params.location }}
+                        </span>
+                    {{ end }}
+                            
+                    {{ if .Params.date }}
+                        <span>
+                            <i class="fa-regular fa-calendar"></i> 
+                            {{ .Params.date.Format "2. 1. 2006" }}
+                        </span>
+                    {{ end }}
+                </p>
                 {{with .Params.registration}}<a href="{{.}}" class="primary-button">Registrace</a>{{end}}
                 <!--{{with .Params.registration}}<a href="{{.}}" class="primary-button">Registruj se jako náhradník</a>{{end}}-->
                 {{with .Params.joinUs}}<a href="{{.}}" class="primary-button">Zapoj se</a>{{end}}
