@@ -7,6 +7,7 @@ headerTitle: "Historicky první Zvaž vědu!"
 headerText: "Ohlédnutí za Zvaž vědu! Plzeň 2023"
 
 yt: "https://www.youtube.com/playlist?list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti"
+partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, radovanek-cz]
 ---
 
 V pátek 8. prosince proběhla na Fakultě aplikovaných věd Západočeské univerzity v Plzni s nevídaným úspěchem naše první velká akce, přednáškový den Zvaž vědu! 2023. Pojďte si s námi připomenout, co všechno jsme společně v tento úžasný den zažili. 

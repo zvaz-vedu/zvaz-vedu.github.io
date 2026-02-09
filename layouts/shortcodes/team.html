@@ -1,114 +1,29 @@
 <div class="quote-title">
     <span class="quote-title-highlight highlight-primary">Jsme tým.</span>
 </div>
+<div class="layout-content team-section">
+    <div class="text-body">
+        <h3>Za Zvaž vědu! stojí...</h3>
+        <p>Zvaž vědu! organizuje tým mladých nadšenců. Potkali jsme se už na střední, ale tím to minimálně pro některé z nás určitě nekončí. Začali jsme v Plzni a na soutěžích se potkali s týmem v Brně a dali se do užší spolupráce. Zorganizovat Zvaž vědu by ale nebylo možné bez našich partnerů, kteří nás podpořili silou svých sítí kontaktů, finančně nebo skvělými prostory.</p>
+    </div>
+</div>
+
+
 <section class="layout-container">
     <div class="team-body">
-        <div class="team-member">
-            <a href="/kontakt/#maty" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/maty.webp">
+        {{ range .Site.Data.team }}
+            {{ range .members }}
+            <div class="team-member">
+                <a href="/kontakt/#{{ .alias }}" class="team-member-link">
+                    <div class="team-member-photo-container">
+                        <img class="team-member-photo" 
+                             src="{{ $.Site.BaseURL }}media/imgs/team/{{ .photo }}" 
+                             alt="{{ .name }}">
+                    </div>
+                    <p class="team-member-name">{{ .alias | title }}</p>
+                </a>
             </div>
-            <p class="team-member-name">Maty</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#honza" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/honza.webp">
-            </div>
-            <p class="team-member-name">Honza</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#eda" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/eda.webp">
-            </div>
-            <p class="team-member-name">Eda</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#david" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/david.webp">
-            </div>
-            <p class="team-member-name">David</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#tomáš" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/tomáš.webp">
-            </div>
-            <p class="team-member-name">Tomáš</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#lucka" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka.webp">
-            </div>
-            <p class="team-member-name">Lucka</p></a>
-        </div>
-        <!--<div class="team-member">
-            <a href="/kontakt/#lucka-vu" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/lucka-vu.webp">
-            </div>
-            <p class="team-member-name">Lucka</p></a>
-        </div>-->
-        <!--<div class="team-member">
-            <a href="/kontakt/#štěpán" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/štěpán.webp">
-            </div>
-            <p class="team-member-name">Štěpán</p></a>
-        </div>-->
-        <div class="team-member">
-            <a href="/kontakt/#matěj" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/matěj.webp">
-            </div>
-            <p class="team-member-name">Matěj</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#petr" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/petr.webp">
-            </div>
-            <p class="team-member-name">Petr</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#oliver" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/oliver.webp">
-            </div>
-            <p class="team-member-name">Oliver</p></a>
-        </div>
-        <!--<div class="team-member">
-            <a href="/kontakt/#anička" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/anička.webp">
-            </div>
-            <p class="team-member-name">Anička</p></a>
-        </div>
-        <div class="team-member">
-            <a href="/kontakt/#monča" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/monča.webp">
-            </div>
-            <p class="team-member-name">Monča</p></a>
-        </div>-->
-        <div class="team-member">
-            <a href="/kontakt/#poupič" class="team-member-link"><div class="team-member-photo-container">
-                <img class="team-member-photo" src="{{ .Site.BaseURL }}media/imgs/team/poupič.webp">
-            </div>
-            <p class="team-member-name">Poupič</p></a>
-        </div>
-    </div>  
-    <div class="layout-content team-section">
-        <div class="text-body">
-            <h3>Za Zvaž vědu! stojí...</h3>
-            <p>Zvaž vědu! organizuje tým mladých nadšenců. Potkali jsme se už na střední, ale tím to minimálně pro některé z nás určitě nekončí. Začali jsme v Plzni a na soutěžích se potkali s týmem v Brně a dali se do užší spolupráce. Zorganizovat Zvaž vědu by ale nebylo možné bez našich partnerů, kteří nás podpořili silou svých sítí kontaktů, finančně nebo skvělými prostory.</p>
-        </div>
-        <div class="partner-body">
-            {{- $supporters := slice -}}
-            {{- $sponsors := slice -}}
-            
-            {{- range $key, $value := .Site.Data.partners -}}
-                {{- if eq $value.type "sponzor" -}}
-                    {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
-                {{- else if eq $value.type "generalni-partner" -}}
-                    {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
-                {{- else if eq $value.type "podporovatel" -}}
-                    {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
-                {{- end -}}
-            {{- end -}}
-            {{- range $sponsors -}}
-                    <img class="partner-logo-img" style="max-width: 15em;"src="/media/imgs/partners/{{ .key }}.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-            {{- end -}}
-        </div>
+            {{ end }}
+        {{ end }}
     </div>
 </section>

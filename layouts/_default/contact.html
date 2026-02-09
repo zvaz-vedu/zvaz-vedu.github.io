@@ -16,15 +16,71 @@
     </header>
     <section class="layout-container" id="contact">
         <div class="layout-content">
-            {{.Content}}
+
+            {{/* Loop through Sections (VEDENÍ, ORGANIZÁTOŘI) */}}
+            {{ range .Site.Data.team }}
+                
+                {{/* Section Header */}}
+                <h3 id="{{ .section | lower }}">{{ .section }}</h3>
+
+                {{/* Members Loop */}}
+                {{ range .members }}
+                <div class="team-member team-{{ .team }}" id="{{ .alias }}">
+                    <div class="team-member-photo">
+                        <img src="{{ $.Site.BaseURL }}media/imgs/team/{{ .photo }}">
+                    </div>
+                    
+                    <div class="team-member-info">
+                        <strong>{{ .name }}</strong>
+                        <p>{{ .position }}</p>
+                        <p style="margin-bottom:.5rem">{{ .school }}</p>
+
+                        {{/* Email */}}
+                        {{ if .mail }}
+                        <p>
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:{{ .mail }}">{{ .mail }}</a>
+                        </p>
+                        {{ end }}
+
+                        {{/* Website (Optional) */}}
+                        {{ if .web }}
+                        <p>
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                            <a href="https://{{ .web }}/">{{ .web }}</a>
+                        </p>
+                        {{ end }}
+
+                        <div class="team-member-socials">
+                            {{/* Instagram (Optional) */}}
+                            {{ if .ig }}
+                            <a href="{{ .ig }}">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            {{ end }}
+                            
+                            {{/* LinkedIn (Optional) */}}
+                            {{ if .linkedin }}
+                            <a href="{{ .linkedin }}">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+
+            {{ end }}
         </div>
     </section>
+
     <section class="layout-container" id="join-us">
         <div class="layout-content">
             <h4>Chceš přinést Zvaž vědu! i do svého města?</h4>
             <a href="/zapojte-se/pridej-se-k-nam" class="secondary-button">Přidej se k nám &rarr;</a>
         </div>
     </section>
+
     <section class="layout-container" id="actions">
         <div class="layout-content">
             <a href="https://discord.gg/XggNwnz5n8" target="_blank" id="actions-discord">
