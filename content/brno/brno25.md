@@ -4,8 +4,8 @@ date: 2025-03-06
 layout: report
 
 headerTitle: "Zvaž vědu! podruhé v Brně"
-headerText: "Ohlédnutí za Zvaž vědu! Brno 2025"
-headerImg: "/media/imgs/base/mark-blk.webp"
+location: Hvězdárna a planetárium Brno
+headerImg: "/media/imgs/base/schrody-plysak.png"
 
 yt: "https://www.youtube.com/playlist?list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo"
 ---

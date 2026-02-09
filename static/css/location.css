@@ -31,12 +31,7 @@ header h1 span::after {
     background-color: var(--primary);
     transform: rotate(-3deg);
 }
-.header-text {
-    font-size: 2rem;
-    margin: 3rem 0;
-    color: var(--text);
-    font-family: ZV-Bold;
-}
+
 header .primary-button {
     font-size: 1.8rem;
 }

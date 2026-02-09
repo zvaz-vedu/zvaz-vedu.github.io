@@ -14,13 +14,13 @@
                 <h1>Zvaž vědu!<br><span>{{.Params.headerTitle}}</span></h1>
                 <p class="header-text">
                     {{ if .Params.location }}
-                        <span style="margin-right: 1.5rem;">
-                            <i class="fa-solid fa-location-dot"></i> {{ .Params.location }}
+                        <span class="header-meta-item">
+                            <i class="fa-solid fa-location-dot"></i> {{ .Params.location }}&nbsp;
                         </span>
                     {{ end }}
                             
                     {{ if .Params.eventTime }}
-                        <span>
+                        <span class="header-meta-item">
                             <i class="fa-regular fa-calendar"></i> 
                             {{ (time .Params.eventTime).Format "2. 1. 2006" }}
                         </span>
@@ -181,7 +181,6 @@
                     <p>Nikdy není příliš brzy na to začít. Přijď na Zvaž vědu! a inspiruj se do vlastních začátků!</p>
                     <a href="{{.}}" class="primary-button">Registruj se</a> <!--změnte pak jen na Registrace-->
                 </div>  
-                <img img class="mark-img" src="" alt="logo">
             </div>
         </section>
     {{end}}
