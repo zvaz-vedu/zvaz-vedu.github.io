@@ -238,7 +238,7 @@ footer .layout-content {
 
 @media (prefers-color-scheme: dark) {
     .primary-button {
-        color: var(--text2);
+        color: var(--black-zv);
     }
     .primary-button:hover {
         background-color: var(--primary);

@@ -101,22 +101,6 @@
     margin-bottom: 20px;
 }
 
-/* Tlačítko pro Bio: Černé pozadí, bílý text (invertováno) */
-.toggle-bio-button.primary-button {
-    background-color: var(--black-zv); /* Černé pozadí */
-    color: var(--primary); /* Bílý text */
-    border-color: var(--black-zv);
-    
-    font-size: 1.5em; /* Zachování velikosti nastavené pro kartu */
-    /* Dědí padding, font, atd. z .primary-button */
-}
-
-.toggle-bio-button.primary-button:hover {
-    background-color: var(--primary); /* Primary pozadí na hover */
-    color: var(--black-zv); /* Černý text na hover */
-    box-shadow: var(--shadow);
-}
-
 /* Styl pro ikony sociálních sítí: Černé ikony */
 .speaker-contact-links {
     display: flex;
