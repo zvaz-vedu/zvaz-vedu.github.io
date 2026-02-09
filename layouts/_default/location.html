@@ -22,7 +22,7 @@
                     {{ if .Params.eventTime }}
                         <span>
                             <i class="fa-regular fa-calendar"></i> 
-                            {{ .Params.date.Format "2. 1. 2006" }}
+                            {{ (time .Params.eventTime).Format "2. 1. 2006" }}
                         </span>
                     {{ end }}
                 </p>

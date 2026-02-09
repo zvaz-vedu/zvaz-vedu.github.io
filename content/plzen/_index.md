@@ -4,7 +4,6 @@ layout: location
 
 headerTitle: "v Plzni"
 location: FAV ZČU
-date: 2025-11-28
 headerPhoto: "/media/imgs/locations/plzen-header.webp"
 
 <!-- joinUs: http --> 
