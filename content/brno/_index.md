@@ -3,7 +3,7 @@ title: Zvaž vědu! Brno
 layout: location
 
 headerTitle: "v Brně"
-location: Hvězdárna a planetárium Brno
+location: Hvězdárna a planetárium Brnoddd
 date: 2026-03-05
 headerPhoto: "/media/imgs/locations/brno-header.webp"
 

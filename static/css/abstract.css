@@ -17,7 +17,7 @@
 }
 
 .lecture-title {
-    color: var(--text2);
+    color: var(--black-zv);
     font-family: 'ZV-Display', 'ZV-Bold', 'Inter', sans-serif;
     font-size: 2.2em;
     margin-top: 0;
@@ -30,11 +30,11 @@
     /* Udrženo 1.2 dle požadavku */
     line-height: 1.2;
     margin-bottom: 1em;
-    color: var(--text2);
+    color: var(--black-zv);
 }
 
 .lecture-card p {
-    color: var(--text2)
+    color: var(--black-zv)
 }
 
 /* --- SPEAKER SIDEBAR A BIOGRAFIE --- */
@@ -69,7 +69,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--secondary);
-    color: var(--text22);
+    color: var(--black-zv2);
     font-size: 3em;
     line-height: 150px;
     text-align: center;
@@ -81,7 +81,7 @@
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 10px;
-    color: var(--text2);
+    color: var(--black-zv);
     font-family: 'ZV-Bold', 'Inter', sans-serif;
 }
 
@@ -103,9 +103,9 @@
 
 /* Tlačítko pro Bio: Černé pozadí, bílý text (invertováno) */
 .toggle-bio-button.primary-button {
-    background-color: var(--text2); /* Černé pozadí */
+    background-color: var(--black-zv); /* Černé pozadí */
     color: var(--primary); /* Bílý text */
-    border-color: var(--text2);
+    border-color: var(--black-zv);
     
     font-size: 1.5em; /* Zachování velikosti nastavené pro kartu */
     /* Dědí padding, font, atd. z .primary-button */
@@ -113,7 +113,7 @@
 
 .toggle-bio-button.primary-button:hover {
     background-color: var(--primary); /* Primary pozadí na hover */
-    color: var(--text2); /* Černý text na hover */
+    color: var(--black-zv); /* Černý text na hover */
     box-shadow: var(--shadow);
 }
 
@@ -125,7 +125,7 @@
 }
 
 .speaker-contact-links a {
-    color: var(--text2); /* Černé ikony */
+    color: var(--black-zv); /* Černé ikony */
     font-size: 1.5em;
     transition: color 0.2s ease-in-out;
 }
@@ -137,7 +137,7 @@
 /* Skrytí/Zobrazení Biem */
 .speaker-bio {
     font-size: 0.95em;
-    color: var(--text2);
+    color: var(--black-zv);
     text-align: left;
     
     max-height: 0;

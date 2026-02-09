@@ -63,7 +63,7 @@
 .testimonial-card {
   padding: var(--inspacer);
   transition: var(--transition);
-  color: var(--text2);
+  color: var(--black-zv);
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
@@ -103,7 +103,7 @@
   font-style: italic;
   line-height: 1.6rem;
   margin: 0 0 1rem 0;
-  color: var(--text2);
+  color: var(--black-zv);
   flex: 1 1 auto;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -128,7 +128,7 @@
   place-items: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--text2);
+  color: var(--black-zv);
 }
 
 .author-img { object-fit: cover; }
@@ -148,7 +148,7 @@
   margin: 0;
   font-size: 0.95rem;
   opacity: 0.9;
-  color: var(--text2);
+  color: var(--black-zv);
 }
 
 /* --- Orgs --- */
@@ -176,7 +176,7 @@
   margin: 0;
   font-style: italic;
   line-height: 1.5rem;
-  color: var(--text2);
+  color: var(--black-zv);
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -233,7 +233,7 @@
 .testimonial-card blockquote,
 .testimonial-card p,
 .testimonial-card time {
-  color: var(--text2);
+  color: var(--black-zv);
   font-size: 1rem;
 }
 

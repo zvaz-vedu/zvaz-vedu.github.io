@@ -212,7 +212,7 @@ h3::after {
     justify-content: center;
     gap: 1rem;
     padding: 3rem;
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .bento-board-item:nth-of-type(1) {
     background-color: var(--primary);
@@ -230,7 +230,7 @@ h3::after {
 .bento-text {
     text-align: center;
     font-family: ZV-Bold;
-    color: var(--text2);
+    color: var(--black-zv);
     font-size: 2rem;
 }
 
@@ -438,7 +438,7 @@ h3::after {
     text-align: center;
     font-weight: bold;
     background-color: var(--primary);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .program-table td{
     padding: .5rem;
@@ -447,7 +447,7 @@ h3::after {
 }
 .program-table th {
     padding: .5rem;
-    color: var(--text2);
+    color: var(--black-zv);
     border: var(--tertiary) 2px solid;
 
 }
@@ -487,7 +487,7 @@ h3::after {
     background-color: var(--secondary);
     flex-direction: row;
     gap: 2rem;
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .link-button .secondary-button {
     background-color: var(--tertiary);

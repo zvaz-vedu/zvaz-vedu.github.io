@@ -218,7 +218,7 @@ footer .layout-content {
 .primary-button {
     padding: .3em 0.7em;
     background-color: var(--primary);
-    color: var(--text2);
+    color: var(--black-zv);
     text-decoration: none;
     transition: var(--transition);
     display: block;
@@ -288,7 +288,7 @@ footer .layout-content {
     gap: 1rem;
     background-color: var(--primary);
     padding: var(--inspacer);
-    color: var(--text2);
+    color: var(--black-zv);
 }
 .partner-body {
     display: flex;
@@ -360,7 +360,7 @@ header img {
   background-color: var(--secondary);
   flex-direction: row;
   gap: 2rem;
-  color: var(--text2);
+  color: var(--black-zv);
 }
 
 .link-button {
