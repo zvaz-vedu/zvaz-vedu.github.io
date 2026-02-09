@@ -81,7 +81,8 @@
     font-style: italic;
 }
 .speaker-lectures {
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 1.5rem;
 }
 .speaker-lectures a {
     color: var(--text);
