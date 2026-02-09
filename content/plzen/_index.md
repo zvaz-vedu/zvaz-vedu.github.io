@@ -24,7 +24,7 @@ partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-ce
 registration: false
 maxParticipants: "300"
 newParticipants: "300"
-newSpeakers: "10"
+newPresentations: "10"
 program: false
 zastita: false
 infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"

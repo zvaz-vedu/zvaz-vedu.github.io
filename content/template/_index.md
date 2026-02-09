@@ -18,7 +18,7 @@ partners: [fav-zcu-cz]
 
 registration: .
 newParticipants: "120"
-newSpeakers: "10"
+newPresentations: "10"
 
 abstracts: true
 abstractHeader: "Chceš se dozvědět o přednáškách víc?"
