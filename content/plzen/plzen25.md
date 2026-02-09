@@ -1,7 +1,9 @@
 ---
 title: Zvaž vědu! Plzeň 2025
 date: 2025-11-28
+location: FAV ZČU
 layout: report
+partners: [eserocz-cz, plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, ceska-cesta-do-vesmiru, radovanek-cz, kooperativa, sit-port]
 
 headerTitle: " Věda je cool. Stovky středoškoláků zaplnily plzeňskou univerzitu."
 headerText: "Ohlédnutí za Zvaž vědu! Plzeň 2025"

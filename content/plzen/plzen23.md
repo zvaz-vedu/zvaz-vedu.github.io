@@ -1,6 +1,7 @@
 ---
 title: Zvaž vědu! Plzeň 2023
 date: 2023-12-08
+location: FAV ZČU
 layout: report
 
 headerTitle: "Historicky první Zvaž vědu!"
