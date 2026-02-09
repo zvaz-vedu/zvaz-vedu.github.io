@@ -52,8 +52,10 @@
     {{if .Params.yt}}
     <section class="layout-container" id="youtube">
         <div class="layout-content">
-            <span>Nestihli jste to? Nevadí!</span>
-            <a href="{{.Params.yt}}" class="secondary-button">Podívej se na přednášky na YouTube ></a>
+            <div class="link-button-item">
+                <h4>Nestihli jste to? Nevadí!</h4>
+                <a href={{.Params.yt}} class="secondary-button">Podívej se na přednášky na YouTube &rarr;</a>
+            </div>
         </div>
     </section>
     {{end}}
