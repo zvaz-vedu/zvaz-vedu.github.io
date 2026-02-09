@@ -325,6 +325,12 @@ footer .layout-content {
 }
 
 /* HEADER */
+.header-text {
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text);
+    font-family: ZV-Bold;
+}
 
 header .layout-content {
     flex-direction: row;
@@ -337,12 +343,6 @@ header .layout-content {
 }
 header img {
     width: 200px;
-}
-.header-text {
-    font-size: 1.8rem;
-    line-height: normal;
-    margin-top: 2rem;
-    color: var(--primary );
 }
 
 .team-member-link {
