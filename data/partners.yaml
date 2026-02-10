@@ -38,11 +38,11 @@ plnoc:
   type: podporovatel
   city: Plzeň
   link: 'https://www.plnoc.cz/'
-#stemhub:
-#  name: STEM_Hub
-#  type: podporovatel
-#  city: Praha
-#  link: 'https://www.stemhub.cz/'
+stemhub:
+  name: STEM_Hub
+  type: podporovatel
+  city: Praha
+  link: 'https://www.stemhub.cz/'
 nextgenz:
   name: NextGenZ
   type: podporovatel
@@ -90,6 +90,6 @@ kooperativa:
   link: https://www.koop.cz/
 sit-port:
   name: SIT port
-  type: sponzor
+  type: podporovatel
   city: Plzeň
   link: https://sitport.cz
