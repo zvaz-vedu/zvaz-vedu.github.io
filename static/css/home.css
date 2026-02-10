@@ -343,9 +343,6 @@
 }
 
 @media (max-width:800px) {
-    #what h3 {
-        display: none;
-    }
     .what-section > img {
         display: block;
     }
