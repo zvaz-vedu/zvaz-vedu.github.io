@@ -31,7 +31,7 @@ Akce se stala velmi <b>úspěšným navázáním</b> na ty předchozí pořádan
 
 Veškeré přednášky z proběhlé akce budou brzy uveřejněny na <a href="https://www.youtube.com/@zvazvedu">YouTube</a>. Další akce Zvaž vědu! pak bude následovat <b>na podzim v Plzni</b>, kde původně vznikla v roce 2023 a stále zde probíhá ve vůbec <b>největším rozsahu</b>. Na ni naváže i další konání v Brně spolu s menšími akcemi v dalších regionech. Středoškoláci zkrátka <b>mají co říct</b> nejen svým vrstevníkům a i díky podobným aktivitám se věda mezi studenty dostává z pozice nudného outsidera mezi ty vůbec <b>nejzajímavější oblasti</b>, kterým se dá už na střední věnovat.
 
-autor textu: Jan Herzig, autor fotografií: Karel Horák
+<i class="fa-solid fa-user"></i>&nbsp;&nbsp;autor textu: **Jan Herzig**, autor fotografií: **Karel Horák**
 
 {{< program/divider >}}
 

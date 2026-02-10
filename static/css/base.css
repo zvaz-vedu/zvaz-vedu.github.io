@@ -395,15 +395,15 @@ header img {
 
 .link-button-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Keep it row for desktop */
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap; /* Key fix: allows items to wrap if space runs out */
+  
   padding: var(--inspacer);
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
   background-color: var(--secondary);
-  flex-direction: row;
-  gap: 2rem;
   color: var(--black-zv);
 }
 
