@@ -30,7 +30,23 @@
             <div class="carousel-container">
                 <div class="carousel-viewport">
                     <div class="carousel-track" id="aktualne-track">
-                        {{.Content}}
+                        {{ range first 5 (sort (where .Site.Data.cards "type" "update") "date" "desc") }}
+                            <div class="carousel-card">
+                                <i class="{{ .icon }}"></i>
+                                <h4>{{ .title }}</h4>
+                                <p>{{ .description }}</p>
+                                <a href="{{ .link.url }}" class="secondary-button">
+                                    {{ .link.text }} &gt;
+                                </a>
+                            </div>
+                        {{ end }}
+                        <div class="carousel-card" style="background-color: var(--tertiary);">
+                            <i style="font-size: 50px;" class="fa fa-history"></i>
+                            <h3>Historie</h3>
+                            <a href="/historie" class="secondary-button">
+                                Zobrazit celou historii? &gt;
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Navigační tlačítka -->

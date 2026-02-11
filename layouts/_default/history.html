@@ -1,0 +1,114 @@
+{{ define "styles" }}
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/history.css">
+{{ end }}
+
+{{ define "main" }}
+    
+    <header class="layout-container">
+        <div class="layout-content" style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="header-body">
+                <h1>Historie karet a akcí</h1>
+                <p class="header-text">Podívejte se, co všechno už máme za sebou.</p>
+            </div>
+            <img class="mark-img" src="/media/imgs/base/mark-blk.webp" alt="Logo">
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <div class="history-wrapper">
+            
+            <div class="history-line-bg"></div>
+
+            {{ $sorted := sort .Site.Data.cards "date" "desc" }}
+            {{ $groups := slice }}
+            {{ $currentLabel := "" }}
+            {{ $currentItems := slice }}
+            {{ $czMonths := slice "leden" "únor" "březen" "duben" "květen" "červen" "červenec" "srpen" "září" "říjen" "listopad" "prosinec" }}
+
+            {{ range $sorted }}
+                {{ $t := time .date }}
+                {{ $monthIndex := sub (int $t.Month) 1 }}
+                {{ $monthName := index $czMonths $monthIndex }}
+                {{ $thisLabel := printf "%s %d" $monthName $t.Year }}
+
+                {{ if ne $thisLabel $currentLabel }}
+                    {{ if ne $currentLabel "" }}
+                        {{ $groups = $groups | append (dict "label" $currentLabel "items" $currentItems) }}
+                    {{ end }}
+                    {{ $currentLabel = $thisLabel }}
+                    {{ $currentItems = slice . }}
+                {{ else }}
+                    {{ $currentItems = $currentItems | append . }}
+                {{ end }}
+            {{ end }}
+            
+            {{ if ne $currentLabel "" }}
+                {{ $groups = $groups | append (dict "label" $currentLabel "items" $currentItems) }}
+            {{ end }}
+
+
+            {{ range $groups }}
+            <div class="history-month-group">
+                
+                <div class="history-date-label">
+                    {{ .label }}
+                </div>
+
+                <div class="history-marker-col">
+                    <div class="history-dot"></div>
+                </div>
+
+                <div class="history-cards-container">
+                    {{ range .items }}
+                    
+                    {{ $isEvent := eq .type "event" }}
+                    
+                    {{ $pageData := "" }}
+                    {{ if $isEvent }}
+                        {{ $pageData = site.GetPage .link.url }}
+                    {{ end }}
+
+                    <div class="carousel-card {{ if $isEvent }}is-event{{ end }}">
+                        <div style="flex: 1; display: flex; flex-direction: column;">
+                            <i class="{{ .icon }}"></i>
+                            <h4>{{ .title }}</h4>
+                            
+                            {{ if $pageData }}
+                            <div class="card-meta">
+                                {{ if $pageData.Date }}
+                                <span>
+                                    <i class="fa-solid fa-calendar-day"></i> 
+                                    {{ $pageData.Date.Format "2. 1." }}
+                                </span>
+                                {{ end }}
+
+                                {{ if $pageData.Params.location }}
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i> 
+                                    {{ $pageData.Params.location }}
+                                </span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+
+                            <p>{{ .description }}</p>
+                        </div>
+
+                        <a href="{{ .link.url }}" class="secondary-button">
+                            {{ .link.text }} &gt;
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+
+            </div>
+            {{ end }}
+
+        </div>
+
+        <div style="text-align: center; margin-bottom: 4rem;">
+             <a href="#" style="color: var(--black-zv); font-weight: bold; font-size: large;">Zpět nahoru</a>
+        </div>
+    </div>
+{{ end }}

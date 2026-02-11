@@ -1,0 +1,207 @@
+/* --- HEADER --- */
+.header-body { flex: 1; }
+.header-body h1 {
+    font-family: ZV-Display, sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: var(--black-zv);
+}
+.header-body h1 span { color: var(--secondary); }
+.mark-img { height: 150px; width: auto; object-fit: contain; }
+
+@media (max-width: 768px) {
+    .layout-content { flex-direction: column-reverse; gap: 2rem; text-align: center; }
+    .header-body h1 { font-size: 3rem; }
+    .mark-img { height: 100px; margin: 0 auto; }
+}
+
+/* --- TIMELINE WRAPPER --- */
+.history-wrapper {
+    max-width: 1200px;
+    margin: 4rem auto;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+/* --- GEOMETRY --- */
+.history-line-bg {
+    position: absolute;
+    top: 25px; 
+    bottom: 0;
+    width: 4px;
+    background-color: var(--black-zv);
+    left: 198px; 
+    z-index: 0;
+    border-radius: 4px;
+}
+
+.history-month-group {
+    display: grid;
+    grid-template-columns: 160px 40px 1fr;
+    gap: 0 20px;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+/* DATE LABEL */
+.history-date-label {
+    text-align: right;
+    font-family: ZV-Regular, sans-serif;
+    font-size: 2rem;
+    padding-top: 2px;
+    line-height: 1.2;
+    text-transform: lowercase; 
+}
+
+/* DOT COLUMN */
+.history-marker-col {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.history-dot {
+    width: 24px;
+    height: 24px;
+    background-color: var(--secondary);
+    border: 4px solid var(--black-zv);
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 5px; 
+    flex-shrink: 0;
+}
+
+/* CARDS CONTAINER */
+.history-cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+
+.history-cards-container .carousel-card {
+    margin: 0;
+    flex: 0 0 350px; 
+    width: 350px;
+    height: 350px; 
+    
+    /* 1. Internal Padding & Layout */
+    padding: 2.5rem; /* Fixed distance from elements to borders */
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    
+    /* 2. Global Gap between the content block and the button */
+    gap: 1.5rem; 
+    
+    background-color: var(--secondary);
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+
+/* THE CONTENT WRAPPER (Icon, Title, Meta, Text) */
+.history-cards-container .carousel-card > div:first-child {
+    display: flex;
+    flex-direction: column;
+    
+    /* 3. Gap between every internal element */
+    gap: 1rem; 
+    
+    /* 4. Anchor Logic: This div grows to push the button to the bottom */
+    flex: 1; 
+    overflow: hidden;
+}
+
+/* EVENT CARD STYLING */
+.history-cards-container .carousel-card.is-event {
+    background-color: var(--tertiary) !important;
+    border: 3px solid var(--black-zv);
+}
+
+.history-cards-container .carousel-card.is-event h4 {
+    font-size: 2.2rem; /* Adjusted to fit 350px box better */
+    line-height: 1.1;
+}
+
+/* METADATA (Stacked & Left Aligned) */
+.card-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    color: var(--black-zv);
+    font-family: ZV-Regular, sans-serif;
+    font-weight: 600;
+}
+
+.card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-meta span i {
+    width: 20px;
+    text-align: center;
+    padding-right: 40px;
+}
+
+/* DESCRIPTION TEXT */
+.carousel-card p {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    margin: 0;
+    /* Allows text to scroll if it exceeds the 350px box */
+    overflow-y: auto; 
+    padding-right: 5px;
+}
+
+/* ANCHORED BUTTON */
+.carousel-card .secondary-button {
+    align-self: center; /* Centers button horizontally */
+    flex-shrink: 0;    /* Prevents button from squishing */
+    width: fit-content;
+}
+
+/* Reset all internal margins to let the 'gap' do the work */
+.carousel-card i, .carousel-card h4, .carousel-card p, .card-meta {
+    margin: 0 !important;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 650px) {
+    .history-line-bg { left: 18px; }
+    
+    .history-month-group {
+        grid-template-columns: 40px 1fr;
+        gap: 1rem;
+    }
+
+    .history-date-label {
+        grid-column: 2; 
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+    }
+
+    .history-marker-col {
+        grid-column: 1;
+        grid-row: 1 / span 2; 
+    }
+
+    .history-cards-container {
+        grid-column: 2;
+    }
+    
+    .history-cards-container .carousel-card {
+        width: 80%;
+        flex: 0.7 0.9 80%;
+        height: auto;
+        min-height: 200px;
+    }
+}

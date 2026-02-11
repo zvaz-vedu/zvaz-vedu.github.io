@@ -1,0 +1,4 @@
+---
+title: Historie
+layout: history
+---

@@ -1,0 +1,120 @@
+- date: 2026-03-05
+  type: event
+  title: Zvaž vědu! Brno 2026
+  link:
+    url: "/brno/"
+    text: O akci
+
+- date: 2026-02-11
+  type: update
+  icon: "fa-solid fa-calendar"
+  title: "DALŠÍ ROČNÍK V BRNĚ!"
+  description: "Zvaž vědu! se po roce vrací do Brna. 10 přednášek, skvělé stánky i exkurze - to všechno již ve čtvrtek 5. března. Neváhej a registruj se co nejdříve, letos to bude opravdu velké!"
+  link:
+    url: "/brno"
+    text: "Více informací"
+
+- date: 2026-02-11
+  type: update
+  icon: "fa-solid fa-address-book"
+  title: "Newsletter Zvaž vědu!"
+  description: "Přihlaste se k odběru newsletteru Zvaž vědu! a mějte přehled o všech akcích!"
+  link:
+    url: "https://docs.google.com/forms/d/1mBMQr6pY6wV7ZxINbUuixhpgtS-YDakWKMqqDELzhMk/viewform?ts=69835a6f&edit_requested=true"
+    text: "Registrace"
+
+- date: 2025-12-10
+  type: update
+  icon: "fa-solid fa-book"
+  title: "Abstrakty pořád online"
+  description: "Zajímá vás o čem byly letošní přednášky na Zvaž vědu!? Přečtěte si abstrakty k nim na našich stránkách a brzy se můžete těšit i na videa!"
+  link:
+    url: "/plzen/info/abstrakty"
+    text: "Abstrakty Plzeň 2025"
+
+- date: 2025-12-05
+  type: update
+  icon: "fa-solid fa-video"
+  title: "Intro shortfilm zveřejněn!"
+  description: "Letošní Zvaž vědu! vůbec poprvé zahájilo audiovizuální dílo Anežky Střelbové na téma život. Pusťte si jej také!"
+  link:
+    url: "/plzen"
+    text: "Video"
+
+- date: 2025-11-28
+  type: update
+  icon: "fa-solid fa-calendar"
+  title: "Zvaž vědu! v Plzni je za námi"
+  description: "28. listopadu se konalo plzeňské Zvaž vědu! Akce se rozhodně povedla. Přečtěte si o ní víc!"
+  link:
+    url: "/plzen/plzen25"
+    text: "Tisková zpráva"
+
+- date: 2025-11-25
+  type: update
+  icon: "fa-solid fa-user-plus"
+  title: "Kapacita naplněna!"
+  description: "Děkujeme za velký zájem o akci Zvaž vědu! Plzeň 2025 a těšíme se 28. listopadu!"
+  link:
+    url: "https://forms.gle/WnCTzhKzkAdcBK2j9"
+    text: "Přihlásit se jako náhradník"
+
+- date: 2025-11-20
+  type: update
+  icon: "fa-solid fa-book"
+  title: "Abstrakty zveřejněny"
+  description: "Přečti si, na jaké přednášky se na letošním plzeňském Zvaž vědu! můžeš těšit. Na viděnou 28. listopadu!"
+  link:
+    url: "/plzen/info/abstrakty"
+    text: "Abstrakty Plzeň 2025"
+
+- date: 2025-11-10
+  type: update
+  icon: "fa fa-picture-o"
+  title: "Česká cesta do vesmíru"
+  description: "Na Fakultě aplikovaných věd ZČU je až do 28. listopadu k nahlédnutí výstava o projektu České cesty do vesmíru."
+  link:
+    url: "https://info.zcu.cz/Na-FAV-dorazila-Ceska-cesta-do-vesmiru--Vystava-mapuje-minulost-i-budoucnost-ceske-kosmonautiky/clanek.jsp?id=8718"
+    text: "Více informací"
+
+- date: 2025-11-28
+  type: event
+  title: Zvaž vědu! Plzeň 2025
+  link:
+    url: "/plzen/plzen25"
+    text: O akci
+
+- date: 2025-06-09
+  type: event
+  title: Zvaž vědu! Praha 2025
+  link:
+    url: "/praha/praha25"
+    text: O akci
+
+- date: 2025-03-06
+  type: event
+  title: Zvaž vědu! Brno 2025
+  link:
+    url: "/brno/brno25"
+    text: O akci
+
+- date: 2024-11-15
+  type: event
+  title: Zvaž vědu! Plzeň 2024
+  link:
+    url: "/plzen/plzen24"
+    text: O akci
+
+- date: 2024-10-29
+  type: event
+  title: Zvaž vědu! Brno 2024
+  link:
+    url: "/brno/brno24"
+    text: O akci
+
+- date: 2023-12-08
+  type: event
+  title: Zvaž vědu! Plzeň 2023
+  link:
+    url: "/plzen/plzen23"
+    text: O akci

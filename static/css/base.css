@@ -248,25 +248,29 @@ footer .layout-content {
 
 /* vždy černé tlačítko se žlutým textem + při přejetí se invertuje*/
 .secondary-button {
+    /* Keep your layout styles */
     padding: 1ch 1rem;
     font-size: 1.6rem;
     font-family: ZV-Display;
-    color: var(--secondary);
-    background-color: var(--black-zv);
     text-decoration: none;
     text-transform: uppercase;
     display: block;
     width: fit-content;
     text-wrap: nowrap;
     transition: var(--transition);
-    border: none;
     cursor: pointer;
-    border: 3px solid var(--black-zv);
+    border: 3px solid var(--black-zv); /* Ensure border is also black */
+
+    /* chytrý kód pro kopírování barvy pozadí, těch specifických odstínů*/
+    background-color: var(--black-zv); 
+    color: #ffffff; 
+    mix-blend-mode: multiply;
 }
 .secondary-button:hover {
-    background-color: var(--secondary); 
-    color: var(--black-zv);            
-    border-color: var(--black-zv);      
+    background-color: transparent; 
+    color: var(--black-zv); 
+    mix-blend-mode: normal;
+    border-color: var(--black-zv); 
 }
 
 .quote-title {
