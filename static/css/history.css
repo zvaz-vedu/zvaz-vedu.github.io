@@ -6,7 +6,7 @@
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1rem;
-    color: var(--black-zv);
+    color: var(--text);
 }
 .header-body h1 span { color: var(--secondary); }
 .mark-img { height: 150px; width: auto; object-fit: contain; }
@@ -159,6 +159,7 @@
     /* Allows text to scroll if it exceeds the 350px box */
     overflow-y: auto; 
     padding-right: 5px;
+    color: var(--black-zv)
 }
 
 /* ANCHORED BUTTON */
@@ -171,6 +172,7 @@
 /* Reset all internal margins to let the 'gap' do the work */
 .carousel-card i, .carousel-card h4, .carousel-card p, .card-meta {
     margin: 0 !important;
+    color: var(--black-zv)
 }
 
 /* --- MOBILE --- */

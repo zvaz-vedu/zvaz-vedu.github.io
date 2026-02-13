@@ -1,6 +1,6 @@
 ---
 title: Zvaž vědu Brno 2025
-date: 2025-03-06
+date: 2025-03-05
 layout: report
 
 headerTitle: "Zvaž vědu! podruhé v Brně"
