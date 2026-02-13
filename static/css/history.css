@@ -119,7 +119,6 @@
 /* EVENT CARD STYLING */
 .history-cards-container .carousel-card.is-event {
     background-color: var(--tertiary) !important;
-    border: 3px solid var(--black-zv);
 }
 
 .history-cards-container .carousel-card.is-event h4 {
