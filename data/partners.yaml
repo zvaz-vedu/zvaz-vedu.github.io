@@ -53,6 +53,21 @@ edufestival:
   type: podporovatel
   city: Praha
   link: 'https://edufestival.cz/'
+univerzita-karlova:
+  name: Kalova Univerzita
+  type: podporovatel
+  city: FameLab
+  link: 'https://www.cuni.cz/'
+british-embassy-prague:
+  name: Britské velvyslanectví v Praze
+  type: podporovatel
+  city: Famelab
+  link: 'https://www.gov.uk/world/organisations/british-embassy-prague.cs'
+cheltenham-festivals:
+  name: Cheltenham Festivals
+  type: podporovatel
+  city: FameLab
+  link: 'https://www.cheltenhamfestivals.org/'
 #galakticka-vyzva:
 #  name: Galaktická Vědomostní Výzva
 #  type: podporovatel

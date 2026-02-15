@@ -4,7 +4,7 @@ layout: famelab
 
 headerPhoto: "/media/imgs/locations/famelab-header.jpg"
 subtitle: "Tvůj první krok do světa vědecké komunikace. Přihlas se do 8. března."
-partners: []
+partners: [univerzita-karlova, british-embassy-prague, cheltenham-festivals]
 ctaText: "Chci soutěžit"
 ctaUrl: "https://portal.famelab.cuni.cz/Portal"
 
