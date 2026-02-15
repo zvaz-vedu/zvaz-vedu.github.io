@@ -68,6 +68,11 @@ cheltenham-festivals:
   type: podporovatel
   city: FameLab
   link: 'https://www.cheltenhamfestivals.org/'
+zvaz-vedu:
+  name: Zvaž vědu!
+  type: podporovatel
+  city: FameLab
+  link: 'https://www.zvazvedu.cz'
 #galakticka-vyzva:
 #  name: Galaktická Vědomostní Výzva
 #  type: podporovatel
