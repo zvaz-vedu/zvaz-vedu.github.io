@@ -1,0 +1,122 @@
+{{define "styles"}}
+    <link rel="stylesheet" href="/css/famelab.css">
+{{end}}
+
+{{define "scripts"}}{{end}}
+
+{{define "main"}}
+    <header class="layout-container famelab-header">
+        <div class="layout-content">
+            <div class="header-body">
+                <h1>FameLab</h1>
+                <p class="header-subtitle">{{ .Params.subtitle }}</p>
+                {{with .Params.ctaUrl}}
+                    <a href="{{.}}" class="primary-button cta-pulse">{{ $.Params.ctaText }}</a>
+                {{end}}
+            </div>
+            <div class="header-graphics">
+                <img class="header-graphics-photo" src="{{.Params.headerPhoto}}" alt="FameLab">
+            </div>
+        </div>
+    </header>
+
+    <section class="layout-container famelab-highlight">
+        <div class="layout-content">
+            <p class="highlight-text">Ve spolupráci s <strong>Univerzitou Karlovou</strong> spouštíme první ročník <strong>FameLab Academy</strong> v Česku!</p>
+        </div>
+    </section>
+
+    <section class="layout-container" id="about">
+        <div class="layout-content">
+            <div class="about-content">
+                <div class="about-col">
+                    <h2>Co je FameLab?</h2>
+                    <p>FameLab je něco jako vědecká superstar. Celosvětová soutěž s 20letou tradicí (z toho 15 let i v Česku), ve které vědci soutěží v tom, kdo si dokáže připravit nejzajímavější 3minutový stand up o důležitém výzkumném tématu.</p>
+                </div>
+                <div class="about-col">
+                    <h2>Jak se přihlásit?</h2>
+                    <p>Pro přihlášení stačí nahrát 3minutové stand up video, kde srozumitelnou, zábavnou, avšak stále vědecky korektní formou představíte nějaké zajímavé vědecké téma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="layout-container famelab-timeline">
+        <div class="layout-content">
+            <h2>Co tě čeká?</h2>
+            <div class="timeline-steps">
+                <div class="timeline-step">
+                    <div class="timeline-icon"><i class="fa-solid fa-video"></i></div>
+                    <h4>Nahraj video</h4>
+                    <p>3minutový stand up o zajímavém vědeckém tématu</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="timeline-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h4>Top 10</h4>
+                    <p>Odborná porota vybere 10 nejlepších videí</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h4>Mentoring</h4>
+                    <p>Program od bývalých účastníků + profesionální MasterClass</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="timeline-icon"><i class="fa-solid fa-star"></i></div>
+                    <h4>Finále 13. 4.</h4>
+                    <p>Finálové kolo v prostorách PřF UK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{if .Params.infoVid}}
+        <section class="layout-container" id="info-vid">
+            <div class="layout-content">
+                <div class="video-wrapper">
+                    <iframe src="{{.Params.infoVid}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    {{end}}
+
+    {{with .Params.ctaUrl}}
+        <section class="layout-container famelab-cta">
+            <div class="layout-content">
+                <div class="cta-inner">
+                    <h2>Na co čekáš?</h2>
+                    <p>Ukaž světu, že věda může být zábavná. Přihlas se do FameLab Academy!</p>
+                    <a href="{{.}}" class="primary-button">{{ $.Params.ctaText }}</a>
+                </div>
+            </div>
+        </section>
+    {{end}}
+
+    {{if .Params.team}}
+    <section class="layout-container" id="team">
+        <div class="layout-content">
+            <h2>Za {{.Title}} stojí...</h2>
+            <div class="team-body">
+                {{range .Params.team}}
+                    <div class="team-member">
+                        <a href="/kontakt/#{{.}}" class="team-member-link">
+                            <div class="team-member-photo-container">
+                                {{$teamName := split . "-"}}
+                                {{$teamName = index $teamName 0}}
+                                <img class="team-member-photo" src="/media/imgs/team/{{.}}.webp" alt="{{$teamName}}">
+                            </div>
+                            <p class="team-member-name">{{$teamName}}</p>
+                        </a>
+                    </div>
+                {{end}}
+            </div>
+        </div>
+    </section>
+    {{end}}
+
+    {{if .Params.partners}}
+        {{partial "partners.html" .}}
+    {{end}}
+{{end}}
