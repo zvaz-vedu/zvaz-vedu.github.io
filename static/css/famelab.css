@@ -160,7 +160,7 @@ h2::after {
 .timeline-steps {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 0;
     width: 100%;
@@ -204,7 +204,14 @@ h2::after {
     height: 3px;
     background-color: var(--primary);
     flex-shrink: 0;
-    margin-bottom: 3.5rem;
+    margin-top: 33px;
+}
+
+.timeline-date {
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    opacity: 0.7;
 }
 
 /* VIDEO */
