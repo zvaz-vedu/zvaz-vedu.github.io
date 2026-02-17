@@ -11,24 +11,36 @@
     width: min(100%, 550px);
 }
 
-.famelab-header h1 {
+.famelab-header h1.famelab-title {
     font-size: 7rem;
     line-height: 7rem;
     position: relative;
     z-index: 1;
     letter-spacing: 2px;
+    margin-bottom: 0;
 }
-.famelab-header h1::after {
+.famelab-header h1.famelab-title::after {
     position: absolute;
     display: block;
-    width: 61%;
+    width: 62%;
     left: 0;
     height: 20px;
     content: "";
     z-index: -1;
     bottom: 10px;
     background-color: var(--primary);
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
+}
+.header-academy {
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 3.2rem;
+    font-weight: normal;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    width: fit-content;
 }
 
 .header-subtitle {
@@ -370,13 +382,17 @@ h2::after {
     .famelab-header .header-body {
         width: 100%;
     }
-    .famelab-header h1 {
+    .famelab-header h1.famelab-title {
         font-size: 5rem;
         line-height: 5rem;
     }
-    .famelab-header h1::after {
+    .famelab-header h1.famelab-title::after {
         height: 14px;
-        bottom: 0;
+        bottom: 5px;
+    }
+    .header-academy {
+        font-size: 1.6rem;
+        letter-spacing: 0.4em;
     }
     .header-subtitle {
         font-size: 1.5rem;

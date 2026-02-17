@@ -1,5 +1,5 @@
 ---
-title: FameLab
+title: FameLab Academy
 layout: famelab
 
 headerPhoto: "/media/imgs/locations/famelab-header.jpg"
