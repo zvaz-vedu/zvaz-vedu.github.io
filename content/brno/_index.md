@@ -21,6 +21,8 @@ maxParticipants: "200"
 newPresentations: "10"
 
 
-program: false
+program: true
 zastita: false
 ---
+
+{{< program/brno26 >}}
