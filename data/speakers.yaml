@@ -94,10 +94,11 @@
   contact:
     instagram: https://www.instagram.com/dlouhamoni/
     email: xdlouha@gml.cz
-  bio: Monika je studentka Gymnázia Matyáše Lercha v Brně. Zajímá se především o biologii,
-    chemii a vesmír. Účastnila se projektů Expedice Mars a Talentové akademie, pracuje
-    na SOČce, dělá DofE a díky letu Zero-G se stala ambasadorkou České cesty do vesmíru.
-    Ve svém volném čase hraje na saxofon, ráda čte a plave.
+  bio: Monika je studentkou Gymnázia Matyáše Lercha v Brně. Zajímá se především o biologii, chemii a vesmír.
+    V laboratoři se věnuje proteinovému inženýrství a s prací z tohoto oboru se účastní SOČ a jiných soutěží.
+    Účastnila se projektu Talentové akademie, dělá DofE a díky letu Zero-G se stala ambasadorkou České cesty do vesmíru.
+    Kromě toho se podílí na organizaci projektu Expedice Mars a CASSINI Space Campu. Ve svém volném čase hraje na saxofon,
+    ráda čte, kreslí a plave.
 - name: Lukáš Hrdý
   photo: "/media/imgs/speakers/lukas-hrdy.webp"
   locations:
@@ -575,6 +576,7 @@
     stáží, letních škol v Česku i v zahraničí a soutěže SOČ, v níž se umístil na 3.
     místě celostátního kola. Dosud také aktivně působí ve spolku Czech Rocket Society,
     kde nyní zasedá ve správní radě.
+
 - name: Ondřej Vaněk
   photo: "/media/imgs/speakers/ondrejvanek.webp"
   locations:
@@ -590,8 +592,58 @@
     a vybraných skupin hmyzu) se podílí na organizaci a odborném programu několika
     biologických soustředění pro další studenty se stejným nadšením pro obor – a sám
     při tom získává další inspiraci.
+
 - name: Karolína Stinglová
   photo: "/media/imgs/speakers/karolina-stinglova.webp"
   locations: 
   - Plzeň
   bio: Kája je rodačka z Karlovarského kraje, studuje zdravotnické lyceum na SZŠ a VOŠZ Plzeň a má ráda kvalitní divadlo. Jednou by se chtěla uchýlit v oboru medicíny, kde bude šťastná, ať už jako lékařský či nelékařský pracovník. Chtěla by být pacientům záchytným bodem i nadějí toho, že vše bude v pořádku. Anebo, pokud jim už nijak pomoct nepůjde, být alespoň někým, kdo jim zajistí důstojné odcházení. Vědět je super věc a ačkoliv se to tak zprvu zdát nemusí, na akademické půdě se najde nespočet lidí, kteří jsou ochotni již středoškolským studentům chuť k poznání vědy přikrmit. Stačí mít pouze svou vlastní iniciativu, jít si za svým a nevzdávat to, když nastanou těžké časy. Častokrát se mohou podařit skvělé věci, které mohou jednou někomu zachránit život.
+
+- name: Jan Švec
+  photo: "/media/imgs/speakers/jan-svec.webp"
+  locations: 
+  - Brno
+  bio: Jan Švec je student biomedicínského inženýrství a bioinformatiky na VUT a výzkumník na ústavu CEITEC, kde pracuje na projektu Faradayův skalpel. S vědou začal už ve 2. ročníku na gymnáziu tř. Kpt. Jaroše a dvakrát soutěžil v SOČ. Když zrovna není v laboratoři, najdete ho na boulderu, hrát na kytaru nebo se učit nové taneční kroky.
+
+- name: Terezie Růžičková
+  photo: "/media/imgs/speakers/terezie-ruzickova.webp"
+  locations: 
+  - Brno
+  bio: Terka je studentkou Gymnázia Matyáše Lercha v Brně. Její studijní kroky směřují přírodovědným směrem — konkrétně na lékařskou fakultu. Se svojí SOČkou v Dětské nemocnici se zúčastnila mnoha studentských soutěží — Bystré hlavy, Studentská přírodovědecká konference v Olomouci a různých vědecko-popularizačních akcí — BrNOC, Nadace Unipetrol. Kromě vědy obecně ráda sportuje, hraje na klavír, čte a účastní se DofE. Vede také tým malých florbalistů a dělá lektorku v přírodovědeckém kroužku Bioskop.
+
+- name: Nela Bartoníčková
+  photo: "/media/imgs/speakers/nela-bartonickova.webp"
+  locations: 
+  - Brno
+  bio: Nelča je studentkou Gymnázia Matyáše Lercha v Brně. Už odmala ji zajímá příroda a jak všechno v ní vůbec funguje. Díky různým olympiádám a soutěžím se snaží svým otázkám přijít na kloub. Také se pravidelně účastní seminářů, přednášek a letních škol s přírodovědnými a lékařskými tématy, je finalistkou Expedice Mars 2024, držitelkou stříbrné úrovně DOFE a členkou studentského spolku Letka GML. Mimo to má ráda i jazyky a ve svém volném čase ráda čte, tančí, chodí na procházky či dobrovolničí.
+
+- name: Šimon Kratochvíl
+  photo: "/media/imgs/speakers/simon-kratochvil.webp"
+  locations: 
+  - Brno
+  bio: Šimon je studentem gymnázia v Brně-Řečkovicích, na Masarykově univerzitě se přes dva roky věnuje výzkumu využití strojového učení ve fyzice, se kterým se zúčastnil celostátního kola SOČ. Ve svém volném čase se podílí na vývoji videohry, jeskyňaří, běhá nebo hraje na klavír.
+
+
+- name: Alex Faivre
+  photo: "/media/imgs/speakers/alex-faivre.webp"
+  locations: 
+  - Brno
+  bio: Alex je studentem sexty Gymnázia J. A. Komenského v Uherském Brodě. Zabývá se především astronomií, fyzikou a programováním. V ústředním kole Astronomické olympiády několikrát zvítězil napříč kategoriemi a už třikrát se tak nominoval na mezinárodní olympiádu. Na IOAA Jr 2024 se stal absolutním celosvětovým vítězem a na IOAA 2025 nejmladším zlatým medailistou. Je součástí týmu LASAR, kde analyzuje data z pozorování cubesatu LASARsat. Ve svém volném čase se věnuje hře na klavír a amatérské astrofotografii.
+
+- name: Tomáš Pazourek
+  photo: "/media/imgs/speakers/tomas-pazourek.webp"
+  locations: 
+  - Brno
+  bio: Tomáš je student brněnského gymnázia a vítěz celostátního kola Středoškolské odborné činnosti v oboru matematika. Nejvíc ho baví čistá matematika, praktické aplikace bere spíš jako příjemný bonus. SOČ mu přinesla nejen zkušenost s výzkumem, ale hlavně schopnost srozumitelně a poutavě předávat složité myšlenky. Baví ho se zlepšovat, vidět posun a předávat znalosti ostatním.
+
+- name: Ondřej Přibyl
+  photo: "/media/imgs/speakers/ondrej-pribyl.webp"
+  locations: 
+  - Brno
+  bio: Ondra, student EKO GYMNÁZIA, věří, že věda má sílu měnit svět k lepšímu. Od výzkumu na institutu RECETOX MUNI, přes přednášení ve Stockholmu až po založení studentské firmy na doučování – všude hledá cesty, jak své nápady měnit v realitu. Jako lektor probouzí v ostatních zájem o vědu. Jeho cílem je dokázat, že i malý studentský nápad může reálně pomoci naší přírodě. Volný čas věnuje volejbalu a rybaření, které ho učí trpělivosti a respektu k vodě.
+
+- name: Eduard Plic
+  photo: "/media/imgs/speakers/eduard-plic.webp"
+  locations: 
+  - Brno
+  bio: Eda je studentem Fakulty aplikovaných věd ZČU. Zajímá se o matematiku, fyziku, astronomii a programování. V roce 2024 se stal nejúspěšnějším autorem práce SOČ v oboru fyzika, což mu zajistilo postup na mezinárodní olympiádu EUCYS. Zároveň také získal bronzovou medaily na Mezinárodní olypiádě v astronomii a astrofyzice. Ve volném čase rád hraje na trubku a věnuje se fotografování.
