@@ -5,6 +5,15 @@
     url: "/brno/"
     text: O akci
 
+- date: 2026-02-24
+  type: update
+  icon: "fa-solid fa-microphone"
+  title: "FameLab Academy – přihlašování končí!"
+  description: "Přihlašování do prvního ročníku FameLab Academy v Česku končí 8. března! Nahraj své 3minutové video a zabojuj o postup do finále."
+  link:
+    url: "/famelab"
+    text: "Přihlásit se"
+
 - date: 2026-02-11
   type: update
   icon: "fa-solid fa-calendar"

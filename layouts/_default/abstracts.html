@@ -8,7 +8,15 @@
 {{end}}
 
 {{define "main"}}
-    {{partial "header.html" .}}
+    <header class="layout-container">
+        <div class="layout-content">
+            <div class="header-body">
+                <h1>{{.Params.headerTitle}}</h1>
+                <p class="header-text">{{.Params.headerText}}</p>
+            </div>
+            <img class="mark-img" src="/media/imgs/locations/kocka4bila.webp" alt="Zvaž vědu! kočka">
+        </div>
+    </header>
     <div class="layout-container" id="content">
         <div class="layout-content" style="padding:0">
             {{/* Zde se vloží obsah markdown souboru včetně shortcodů */}}
