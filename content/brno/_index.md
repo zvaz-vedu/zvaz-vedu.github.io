@@ -5,6 +5,7 @@ layout: location
 headerTitle: "v Brně"
 headerText: "5. března 2026 v Hvězdárně a planetáriu Brno"
 headerPhoto: "/media/imgs/locations/brno-header.webp"
+location: Hvězdárna a planetárium Brno
 
 events: "2"
 participants: "150+"
