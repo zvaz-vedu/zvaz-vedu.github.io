@@ -19,7 +19,7 @@ partners: [hvezdarna-cz, eserocz-cz]
 registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vSZuHNFMTSsSXBVy1vWX3wpe5PbyB1PZJbSiqvXFCOcTXs-zfU-r7R7j8ROT8aCOGFRDOpjqul1yrDb/pub?gid=1552632910&single=true&output=csv"
 registration: "https://docs.google.com/forms/d/e/1FAIpQLSfP9e_ubjFQ7kx8YaAtQCG13bLOGXJX893knQql4uYigPN-rA/viewform?usp=dialog"
 maxParticipants: "200"
-newSpeakers: "8"
+newPresentations: "10"
 
 abstracts: true
 abstractUrl: "/brno/info/abstrakty"
