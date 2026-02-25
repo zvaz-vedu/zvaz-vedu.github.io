@@ -5,6 +5,15 @@
     url: "/brno/"
     text: O akci
 
+- date: 2026-02-25
+  type: update
+  icon: "fa-solid fa-book-open"
+  title: "Abstrakty Brno 2026 zveřejněny!"
+  description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! Brno 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
+  link:
+    url: "/brno/info/abstrakty"
+    text: "Přečíst abstrakty"
+
 - date: 2026-02-24
   type: update
   icon: "fa-solid fa-microphone"
