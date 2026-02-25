@@ -7,7 +7,7 @@ links:
   - url: "/feedback"
     icon: "fa-solid fa-comments"
     text: "Zpětná vazba"
-  - url: "/plzen/info/abstrakty"
+  - url: "/brno/info/abstrakty"
     icon: "fa-solid fa-book"
     text: "Abstrakty přednášek"
   - url: "https://www.instagram.com/zvaz.vedu/"
