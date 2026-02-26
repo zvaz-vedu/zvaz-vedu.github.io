@@ -41,3 +41,7 @@ abstract="Naše řeky čelí rostoucímu tlaku lidských aktivit a neviditelné 
 name="Se slunečními skvrnami a umělou inteligencí až do Indie"
 speaker="Eduard Plic"
 abstract="Sluneční skvrny jsou klíčovým indikátorem aktivity naší nejbližší hvězdy. Od prvních pozorování Galilea Galileiho primitivním dalekohledem až po současná družicová data se metody jejich studia drasticky změnily, přesto si jeden historický postup stále drží svou nenahraditelnou roli – a právě ten jsem ve své práci využil. Přednáška vás provede mou SOČkou zaměřenou na klasifikaci slunečních skvrn pomocí umělé inteligence. Dozvíte se také, jak jsem se k tomuto výzkumu dostal, jak se k podobnému projektu můžete dostat i vy a kam až vás taková práce může zavést.">}}
+{{< lecture 
+name="Co ví tvůj elektroměr a proč by tě to mělo zajímat"
+speaker="Jan Sebastian Soběslavský"
+abstract="Elektroměr většina lidí vnímá jen jako přístroj, který měří spotřebu elektřiny. Ve skutečnosti ale může obsahovat detailní data o fungování domácnosti a stává se důležitou součástí moderní energetiky. V přednášce ukážu, co všechno lze z elektroměru zjistit a jak mohou tato data pomoci lépe porozumět vlastní spotřebě i širšímu fungování energetické sítě. Představím vlastní projekt, ve kterém jsem díky dnes dostupným technologiím postavil systém pro sledování domácnosti a jednoduché řízení vybraných spotřebičů. Ukážu také, že podobné projekty jsou dnes díky dostupným technologiím výrazně jednodušší než dřív a blíž, než se může zdát.">}}
