@@ -113,3 +113,8 @@ sit-port:
   type: podporovatel
   city: Plzeň
   link: https://sitport.cz
+vut:
+  name: Vysoké učení technické v Brně
+  type: podporovatel
+  city: Brno
+  link: https://www.vut.cz/
