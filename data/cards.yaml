@@ -5,6 +5,15 @@
     url: "/brno/"
     text: O akci
 
+- date: 2026-02-28
+  type: update
+  icon: "fa-solid fa-magnifying-glass"
+  title: "Exkurze Zvaž vědu! Brno"
+  description: "Po skončení přednášek tě čekají exkluzivní exkurze po vědeckých pracovištích v Brně. Počet míst je omezený, tak neváhej a přihlas se včas."
+  link:
+    url: "https://docs.google.com/forms/d/1k5w0dU5uuEMPEZNfOgZc_oDJ8ZJX13y48VeRFhBPKuk/"
+    text: "Přihlásit se na exkurzi"
+
 - date: 2026-02-25
   type: update
   icon: "fa-solid fa-book-open"
