@@ -63,11 +63,13 @@ british-embassy-prague:
   type: podporovatel
   city: Famelab
   link: 'https://www.gov.uk/world/organisations/british-embassy-prague.cs'
+  showOnPartnersPage: false
 cheltenham-festivals:
   name: Cheltenham Festivals
   type: podporovatel
   city: FameLab
   link: 'https://www.cheltenhamfestivals.org/'
+  showOnPartnersPage: false
 #galakticka-vyzva:
 #  name: Galaktická Vědomostní Výzva
 #  type: podporovatel
@@ -88,11 +90,13 @@ techfair-cz:
   type: podporovatel
   city: Plzeň
   link: https://techfair.cz
+  showOnPartnersPage: false
 ceskobudoucnosti-cz:
   name: \#ČESKObudoucnosti
   type: podporovatel
   city: Praha
   link: https://ceskobudoucnosti.cz
+  showOnPartnersPage: false
 ceska-cesta-do-vesmiru:
   name: Česká cesta do vesmíru
   type: podporovatel

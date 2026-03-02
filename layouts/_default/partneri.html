@@ -37,12 +37,14 @@
         {{- $generals := slice -}}
         
         {{- range $key, $value := .Site.Data.partners -}}
-            {{- if eq $value.type "sponzor" -}}
-                {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
-            {{- else if eq $value.type "podporovatel" -}}
-                {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
-            {{- else if eq $value.type "generalni-partner" -}}
-                {{- $generals = $generals | append (dict "key" $key "data" $value) -}}
+            {{- if ne (default true $value.showOnPartnersPage) false -}}
+                {{- if eq $value.type "sponzor" -}}
+                    {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
+                {{- else if eq $value.type "podporovatel" -}}
+                    {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
+                {{- else if eq $value.type "generalni-partner" -}}
+                    {{- $generals = $generals | append (dict "key" $key "data" $value) -}}
+                {{- end -}}
             {{- end -}}
         {{- end -}}
 

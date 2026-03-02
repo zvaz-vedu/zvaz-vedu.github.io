@@ -18,6 +18,10 @@ color: var(--primary);
 }
 / SECTIONS */
 
+.header-text {
+	line-height: 1.3;
+}
+
 #content>.layout-content {
 	flex-direction: column;
 }
