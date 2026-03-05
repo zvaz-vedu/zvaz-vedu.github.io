@@ -94,6 +94,7 @@
     <h1>{{ .Params.title }}</h1>
     {{ end }}
 
+    <!--  ŠPATNÝ LIVE PROGRAM, ALE JINAK JE TO FUNKČÍ - HOTFIX COMMENT PŘI ZV! BRNO
     {{/* --- LIVE EVENT SECTION (JavaScript) --- */}}
     {{ if .Params.live }}
     <div id="live-event-container" style="display: none;">
@@ -107,6 +108,7 @@
             <div id="live-desc" class="event-details"></div>
         </div>
     </div>
+
 
     {{/* Dump the YAML data into a hidden variable for JS to read */}}
     <script>
@@ -156,6 +158,7 @@
     </script>
     {{ end }}
     {{/* --- END LIVE EVENT SECTION --- */}}
+    -->
 
     <div class="tile-container">
         {{/* Loop through each link defined in the markdown front matter */}}
