@@ -341,32 +341,30 @@ function extractNamesFromCSVRows(rows) {
   const header = rows[0].map(h => h.trim().replace(/^"|"$/g, ''));
   console.log("Hlavička CSV:", header);
 
-  // TADY JE TA ZMĚNA: Vždy bereme první sloupec (index 0) bez ohledu na název
-  const nameCol = 0;
+  // TADY JE TA ZMĚNA: Nastavili jsme index na 1, což odpovídá druhému sloupci
+  const nameCol = 1;
 
   console.log("Beru data ze sloupce s indexem:", nameCol);
 
   const names = [];
 
-  // Procházíme od druhého řádku (index 1), protože první je hlavička
   for (let i = 1; i < rows.length; i++) {
     // Pro jistotu přeskočíme prázdné nebo poškozené řádky
     if (!rows[i]) continue;
 
+    // Pokud by náhodou nějaký řádek druhý sloupec vůbec neměl, kód nespadne
     const name = (rows[i][nameCol] || '').replace(/^"|"$/g, '').trim();
 
-    // Logování řádků (můžeš smazat, pokud to nechceš vidět v konzoli)
-    console.log(`Řádek ${i}: jméno="${name}"`);
+    console.log(`Řádek ${i}: hodnota="${name}"`);
 
     if (name) {
       names.push(name);
     }
   }
 
-  console.log("✅ Načtená jména z prvního sloupce:", names);
+  console.log("✅ Načtená data z druhého sloupce:", names);
   return names;
 }
-
     function sampleArray(arr, n) {
       const copy = arr.slice();
       const result = [];
