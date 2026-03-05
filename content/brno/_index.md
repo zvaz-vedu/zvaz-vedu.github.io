@@ -11,6 +11,7 @@ events: "2"
 participants: "150+"
 
 liveAction: true
+nowAction: true
 pastActions: true
 
 eventTime: 2026-03-05T09:00:00

@@ -60,11 +60,12 @@
             <div class="layout-content bento-board">
                 {{if not .Params.registration}}
                 <div class="bento-board-item" style="background-color: var(--accent);">
-                    <h2 class="bento-title">Je to za námi!</h2>
                     {{ if .Params.linkToLecturesYouTube}}
-                        <a href="{{ .Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek ></a>
+                        <h2 class="bento-title">Je to za námi!</h2>
+                            <a href="{{ .Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek ></a>
                     {{ else }}
-                        <a href="#" class="secondary-button">Záznamy přednášek již brzy!</a>
+                        <h2 class="bento-title">Přednášky běží</h2>
+                            <a href="#" class="secondary-button">Záznamy brzy!</a>
                     {{ end }}
                 </div>
                 <div class="bento-board-item" style="background-color: var(--secondary);">
