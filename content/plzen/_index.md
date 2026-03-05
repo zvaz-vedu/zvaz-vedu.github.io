@@ -13,7 +13,7 @@ events: "3"
 participants: "650+"
 speakers: "31"
 
-liveAction: false
+liveAction: true
 eventTime: 2025-11-28T09:00:00
 
 abstracts: true

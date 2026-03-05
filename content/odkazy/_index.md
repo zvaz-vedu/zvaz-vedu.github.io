@@ -1,6 +1,6 @@
 ---
 title: "Odkazy"
-live: False
+live: True
 layout: "linktree" # Optional: specifies which layout to use
 # Add all your link data below
 links:
