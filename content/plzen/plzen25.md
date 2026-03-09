@@ -5,10 +5,10 @@ location: FAV ZČU
 layout: report
 partners: [eserocz-cz, plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, ceska-cesta-do-vesmiru, radovanek-cz, kooperativa, sit-port]
 
-headerTitle: " Věda je cool. Stovky středoškoláků zaplnily plzeňskou univerzitu."
+headerTitle: "Věda je cool. Stovky středoškoláků zaplnily plzeňskou univerzitu."
 headerText: "Ohlédnutí za Zvaž vědu! Plzeň 2025"
 
-yt: false
+yt: https://www.youtube.com/watch?v=BSpUVUn2tzE&list=PL1NMrPWjk08Qv816Ed6booeo9dypuWkWL
 ---
 Změnit společenské stigma a zažité pořádky. Ukázat, že věda má smysl. Vybudovat **novou generaci vědců**. Tak by se daly vystihnout cíle akce Zvaž vědu\!, která se v pátek již potřetí uskutečnila na Fakultě aplikovaných věd Západočeské univerzity v Plzni. **Na 400 účastníků** z řad středoškolských studentů z více než 40 škol z celého Česka se o tom přišlo přesvědčit na vlastní oči. Za organizací i programem úspěšné akce přitom od počátku stojí rovněž **sami středoškoláci**.
 

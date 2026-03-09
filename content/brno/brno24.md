@@ -1,5 +1,5 @@
 ---
-title: Zvaž vědu Brno 2024
+title: Zvaž vědu! Brno 2024
 date: 2024-10-29
 layout: report
 

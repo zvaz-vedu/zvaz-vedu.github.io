@@ -1,5 +1,5 @@
 ---
-title: Zvaž vědu Brno 2025
+title: Zvaž vědu! Brno 2025
 date: 2025-03-05
 layout: report
 
