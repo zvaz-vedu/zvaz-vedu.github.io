@@ -7,6 +7,15 @@
 
 - date: 2026-02-28
   type: update
+  icon: "fa-solid fa-calendar"
+  title: "Okno do vesmíru #3"
+  description: "Přednáškový cyklus o astronomii a kosmonautice se vrací! Ve čtvrtek 19. března od 15:00 v Semlerově rezidenci v Plzni vystoupí RNDr. Václav Pavlík, Ph.D. z Astronomického ústavu AV ČR s přednáškou o dynamice hvězdokup."
+  link:
+    url: "https://forms.gle/JrgLKuqKjsT9t5697"
+    text: "Přihlásit se na akci"
+
+- date: 2026-02-28
+  type: update
   icon: "fa-solid fa-magnifying-glass"
   title: "Exkurze Zvaž vědu! Brno"
   description: "Po skončení přednášek tě čekají exkluzivní exkurze po vědeckých pracovištích v Brně. Počet míst je omezený, tak neváhej a přihlas se včas."
