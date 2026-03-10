@@ -18,6 +18,8 @@ eventTime: 2026-03-05T09:00:00
 team: [honza, eda, lucka, petr, matěj, oliver, tomáš]
 partners: [hvezdarna-cz, eserocz-cz, kooperativa]
 registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vSZuHNFMTSsSXBVy1vWX3wpe5PbyB1PZJbSiqvXFCOcTXs-zfU-r7R7j8ROT8aCOGFRDOpjqul1yrDb/pub?gid=1552632910&single=true&output=csv"
+infoVid: "https://www.youtube.com/embed/_MzUUon-Srw?si=u8bo7KhAHK1ace_s"
+
 
 maxParticipants: "200"
 newPresentations: "10"
