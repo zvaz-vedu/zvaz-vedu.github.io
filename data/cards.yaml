@@ -5,7 +5,7 @@
     url: "/brno/"
     text: O akci
 
-- date: 2026-02-28
+- date: 2026-03-16
   type: update
   icon: "fa-solid fa-calendar"
   title: "Okno do vesmíru #3"
@@ -14,7 +14,7 @@
     url: "https://forms.gle/JrgLKuqKjsT9t5697"
     text: "Přihlásit se na akci"
 
-- date: 2026-02-28
+- date: 2026-03-05
   type: update
   icon: "fa-solid fa-magnifying-glass"
   title: "Exkurze Zvaž vědu! Brno"

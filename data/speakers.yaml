@@ -297,7 +297,6 @@
   photo: "/media/imgs/speakers/matej-sicner.webp"
   locations:
   - Plzeň
-  - Brno
   lectures:
   - title: AstroPi
     youtube: https://www.youtube.com/watch?v=Smb-Vig1Dv8&list=PL1NMrPWjk08Rn13vSeaHO_CmUaAQz60Ti&index=6
@@ -616,6 +615,10 @@
   locations: 
   - Brno
   bio: Nelča je studentkou Gymnázia Matyáše Lercha v Brně. Už odmala ji zajímá příroda a jak všechno v ní vůbec funguje. Díky různým olympiádám a soutěžím se snaží svým otázkám přijít na kloub. Také se pravidelně účastní seminářů, přednášek a letních škol s přírodovědnými a lékařskými tématy, je finalistkou Expedice Mars 2024, držitelkou stříbrné úrovně DOFE a členkou studentského spolku Letka GML. Mimo to má ráda i jazyky a ve svém volném čase ráda čte, tančí, chodí na procházky či dobrovolničí.
+  contact:
+    instagram: https://www.instagram.com/nela.bartonickova?igsh=N2FhNnk2bTdtd3Qw
+    linkedin: https://www.linkedin.com/in/nela-barton%C3%AD%C4%8Dkov%C3%A1-1bb854359
+    email: nbartonickova.nb@gmail.com
 
 - name: Šimon Kratochvíl
   photo: "/media/imgs/speakers/simon-kratochvil.webp"
