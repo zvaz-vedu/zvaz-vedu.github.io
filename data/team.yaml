@@ -121,3 +121,10 @@
       position: "organizátor pro Plzeň"
       school: "Fakulta biomedicínského inženýrství, ČVUT"
       mail: "sos@zvazvedu.cz"
+
+    - name: "Karel Horák"
+      alias: "karel"
+      team: "plzen"
+      photo: "horak.webp"
+      position: "hlavní fotograf"
+      mail: "horak  @zvazvedu.cz"
