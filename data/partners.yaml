@@ -15,12 +15,12 @@ hvezdarna-cz:
   link: 'https://www.hvezdarna.cz'
 podporatalentu-cz:
   name: GoHigher - podpora talentů
-  type: sponzor
+  type: podporovatel
   city: Plzeň
   link: 'https://www.podporatalentu.cz'
 radovanek-cz:
   name: Radovánek
-  type: sponzor
+  type: podorovatel
   city: Plzeň
   link: 'https://www.radovanek.cz'
 senat-cz:
@@ -43,16 +43,6 @@ stemhub:
   type: podporovatel
   city: Praha
   link: 'https://www.stemhub.cz/'
-nextgenz:
-  name: NextGenZ
-  type: podporovatel
-  city: Praha
-  link: 'https://nextgenz.cz/'
-edufestival:
-  name: EduFestival
-  type: podporovatel
-  city: Praha
-  link: 'https://edufestival.cz/'
 univerzita-karlova:
   name: Univerzita Kalova
   type: podporovatel
