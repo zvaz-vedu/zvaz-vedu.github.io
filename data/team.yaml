@@ -56,6 +56,14 @@
       mail: "anderle@zvazvedu.cz"
       ig: "https://www.instagram.com/dzejkob_anderle/"
       linkedin: "https://www.linkedin.com/in/jakub-anderle-ab03983a7/"
+    
+    - name: "Michal Šos"
+      alias: "michal"
+      team: "plzen"
+      photo: "sos.webp"
+      position: "koordinátor partnerů"
+      school: "Fakulta biomedicínského inženýrství, ČVUT"
+      mail: "sos@zvazvedu.cz"
 
     - name: "Petr Geršl"
       alias: "petr"
@@ -113,14 +121,6 @@
       mail: "klimes@zvazvedu.cz"
       ig: "https://www.instagram.com/oliverklimes/"
       linkedin: "https://cz.linkedin.com/in/oliver-klime%C5%A1-893a21235"
-
-    - name: "Michal Šos"
-      alias: "michal"
-      team: "plzen"
-      photo: "sos.webp"
-      position: "organizátor pro Plzeň"
-      school: "Fakulta biomedicínského inženýrství, ČVUT"
-      mail: "sos@zvazvedu.cz"
 
     - name: "Karel Horák"
       alias: "karel"
