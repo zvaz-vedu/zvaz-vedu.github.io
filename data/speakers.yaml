@@ -57,6 +57,8 @@
   lectures:
   - title: 'Otevřená věda: Nastartuj svoji vědeckou kariéru už na střední!'
     youtube: https://www.youtube.com/watch?v=lFz-R1Uz7C0
+  - title: 'Půda jako klimatická banka'
+    youtube: https://youtu.be/IfqFcjJxgoY?si=X600dEQO2XkyeLpX
   contact:
     instagram: https://www.instagram.com/terezajelin?igsh=ZThubXcxbWtnZXEx&utm_source=qr
     linkedin: https://www.linkedin.com/in/tereza-jel%C3%ADnkov%C3%A1-18936b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
@@ -493,7 +495,9 @@
   photo: "/media/imgs/speakers/matejdittrich.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Je opravdu kulatá? Vyvrácení teorie ploché Země'
+    youtube: https://youtu.be/9uziAGpqgEA?si=M06vIeoi5L6-2rHQ
   contact:
     instagram: https://www.instagram.com/dittrich.matej
     facebook: https://www.facebook.com/profile.php?id=100085663737612
@@ -528,7 +532,9 @@
   photo: "/media/imgs/speakers/michalforgo.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Kvantová revoluce: Jak kvantové technologie změní svět'
+    youtube: https://youtu.be/BSpUVUn2tzE?si=fSLQY2rhmIa-JDsy
   contact:
     linkedin: https://www.linkedin.com/in/michal-forgo/
     instagram: https://www.instagram.com/michal_forgo/
@@ -541,7 +547,9 @@
   photo: "/media/imgs/speakers/michalfiser.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Jak zkoumat svět kolem sebe: Fyzika očima studentů'
+    youtube: https://youtu.be/onSNlAjqyhE?si=wh77Pa-zBkNNSmyg
   contact:
     instagram: https://www.instagram.com/m1chaleek_/
   bio: Michal je studentem maturitního ročníku na VOŠ a SPŠE v Plzni, obor Technické
@@ -553,7 +561,9 @@
   photo: "/media/imgs/speakers/danieljedlicka.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Jak zkoumat svět kolem sebe: Fyzika očima studentů'
+    youtube: https://youtu.be/onSNlAjqyhE?si=wh77Pa-zBkNNSmyg
   contact:
     instagram: https://www.instagram.com/jedanicek/
   bio: Daniel je studentem 3. ročník na VOŠ a SPŠE Plzeň v oboru Technické lyceum.
@@ -565,7 +575,9 @@
   photo: "/media/imgs/speakers/jakubkutscherauer.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Chemická laboratoř z pohodlí gauče: simulace vlastností a interakcí molekul'
+    youtube: https://youtu.be/jGQ_bT_UowE?si=cn8GZ_foVm0LSG3v
   contact:
     linkedin: https://www.linkedin.com/in/jakub-kutscherauer-04a66a280/
     instagram: https://www.instagram.com/jakub_kutsch/
@@ -580,7 +592,9 @@
   photo: "/media/imgs/speakers/ondrejvanek.webp"
   locations:
   - Plzeň
-  lectures: []
+  lectures:
+  - title: 'Jde to i bez nich? Aneb pavouk ve službách člověka'
+    youtube: https://youtu.be/y65OZ6wTzY8?si=lvRl-zZjIqZFbwHN
   contact: {}
   bio: Ondřej Vaněk je ještě čerstvým studentem Přírodovědecké fakulty UK. Od základní
     školy se úspěšně věnuje přírodovědným soutěžím teoretického i prakticky výzkumného
@@ -626,7 +640,6 @@
   - Brno
   bio: Šimon je studentem gymnázia v Brně-Řečkovicích, na Masarykově univerzitě se přes dva roky věnuje výzkumu využití strojového učení ve fyzice, se kterým se zúčastnil celostátního kola SOČ. Ve svém volném čase se podílí na vývoji videohry, jeskyňaří, běhá nebo hraje na klavír.
 
-
 - name: Alex Faivre
   photo: "/media/imgs/speakers/alex-faivre.webp"
   locations: 
@@ -644,6 +657,11 @@
   locations: 
   - Brno
   bio: Ondra, student EKO GYMNÁZIA, věří, že věda má sílu měnit svět k lepšímu. Od výzkumu na institutu RECETOX MUNI, přes přednášení ve Stockholmu až po založení studentské firmy na doučování – všude hledá cesty, jak své nápady měnit v realitu. Jako lektor probouzí v ostatních zájem o vědu. Jeho cílem je dokázat, že i malý studentský nápad může reálně pomoci naší přírodě. Volný čas věnuje volejbalu a rybaření, které ho učí trpělivosti a respektu k vodě.
+  contact:
+    instagram: https://www.instagram.com/ondra.pribyl_?igsh=MTZwd2t5cTZlanB2cg==
+    linkedin: https://www.linkedin.com/in/ond%C5%99ej-p%C5%99ibyl-a2326a381
+    facebook: https://www.facebook.com/share/1FSks9B8bV/
+    email: pribylondra8@gmail.com 
 
 - name: Jan Sebastian Soběslavský
   photo: "/media/imgs/speakers/jan-sebastian-sobeslavsky.webp"
