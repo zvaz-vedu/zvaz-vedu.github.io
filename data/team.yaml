@@ -95,6 +95,16 @@
       ig: "https://www.instagram.com/jan_poupa/"
       linkedin: "https://il.linkedin.com/in/janpoupa"
 
+    - name: Pavel Linka
+      alias: "pavel"
+      team: "plzen"
+      photo: "pavel.webp"
+      position: "programový koordinátor pro oblast life sciences"
+      mail: "linka@zvazvedu.cz"
+      school: "Vysoká škola chemicko-technologická, Praha"
+      linkedin: "https://www.linkedin.com/in/pavel-jan-linka-855685328/?originalSubdomain=cz"
+      ig: "https://www.instagram.com/pavellinka/"
+
     - name: "David Němec"
       alias: "david"
       team: "plzen"
