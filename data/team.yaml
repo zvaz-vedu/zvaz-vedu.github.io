@@ -138,3 +138,9 @@
       photo: "horak.webp"
       position: "hlavní fotograf"
       mail: "horak@zvazvedu.cz"
+
+    - name: Anežka Střelbová
+      alias: anezka
+      team: plzen
+      phoro: strelbova.webp
+      position: "hlavní videomaker a poradce pro kreativní tvorbu"
