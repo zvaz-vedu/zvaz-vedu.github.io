@@ -138,6 +138,8 @@
       photo: "horak.webp"
       position: "hlavní fotograf"
       mail: "horak@zvazvedu.cz"
+      web: https://www.photohorak.cz/
+      ig: https://www.instagram.com/photo_horak/
 
     - name: Anežka Střelbová
       alias: anezka
