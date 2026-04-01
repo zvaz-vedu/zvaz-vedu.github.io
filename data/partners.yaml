@@ -39,12 +39,12 @@ plnoc:
   city: Plzeň
   link: 'https://www.plnoc.cz/'
 stemhub:
-  name: STEM_Hub
+  name: STEM Hub
   type: podporovatel
   city: Praha
   link: 'https://www.stemhub.cz/'
 univerzita-karlova:
-  name: Univerzita Kalova
+  name: Univerzita Karlova
   type: podporovatel
   city: FameLab
   link: 'https://www.cuni.cz/'
