@@ -122,6 +122,7 @@ nav .layout-content {
     font-size: 1.8em;
     font-weight: normal;
     transition: var(--transition);
+    
 }
 .nav-link:hover {
     color: var(--primary);
