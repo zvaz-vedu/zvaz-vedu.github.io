@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: pip install pillow
 
-      - name: Generate monochrome images
+      - name: Generate monochrome images and cleanup
         run: |
           python - <<'EOF'
           from pathlib import Path
@@ -31,6 +31,7 @@ jobs:
           def process_folder(folder, output_folder):
               Path(output_folder).mkdir(parents=True, exist_ok=True)
               for img_path in Path(folder).glob('*.*'):
+                  # Process and save the monochrome image
                   with Image.open(img_path) as im:
                       im = im.convert("RGBA")
                       pixels = im.load()
@@ -42,6 +43,11 @@ jobs:
                       new_name = img_path.stem + '-monochrom' + img_path.suffix
                       im.save(Path(output_folder) / new_name)
 
+                  # Delete the original file if it is NOT a .webp
+                  if img_path.suffix.lower() != '.webp':
+                      img_path.unlink()
+                      print(f"Deleted original non-webp file: {img_path}")
+
           process_folder('media/orgs', 'media/orgs/monochrom')
           process_folder('media/partners', 'media/partners/monochrom')
           EOF
@@ -50,6 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add media/orgs/monochrom media/partners/monochrom
-          git commit -m "Add monochrome images" || echo "No changes to commit"
+          # Stage both the new monochrome files AND the deleted original files
+          git add media/orgs media/partners
+          git commit -m "Add monochrome images and remove non-webp originals" || echo "No changes to commit"
           git push
