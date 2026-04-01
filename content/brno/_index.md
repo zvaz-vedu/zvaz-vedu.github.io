@@ -27,8 +27,6 @@ newPresentations: "10"
 abstracts: true
 abstractUrl: "/brno/info/abstrakty"
 
-program: true
+program: false
 zastita: false
 ---
-
-{{< program/brno26 >}}
