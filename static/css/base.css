@@ -246,9 +246,9 @@ footer .layout-content {
     }
 }
 
-/* vždy černé tlačítko se žlutým textem + při přejetí se invertuje*/
+/* Obyčejné a spolehlivé prohození barev */
 .secondary-button {
-    /* Keep your layout styles */
+    /* Tvůj původní layout */
     padding: 1ch 1rem;
     font-size: 1.6rem;
     font-family: ZV-Display;
@@ -259,19 +259,20 @@ footer .layout-content {
     text-wrap: nowrap;
     transition: var(--transition);
     cursor: pointer;
-    border: 3px solid var(--black-zv); /* Ensure border is also black */
+    
+    /* Výchozí stav: černé tlačítko, žlutý text a rámeček */
+    border: 3px solid var(--black-zv);
+    background-color: var(--black-zv);
+    color: var(--primary);
+}
 
-    /* chytrý kód pro kopírování barvy pozadí, těch specifických odstínů*/
-    background-color: var(--black-zv); 
-    color: #ffffff; 
-    mix-blend-mode: multiply;
-}
 .secondary-button:hover {
-    background-color: transparent; 
-    color: var(--black-zv); 
-    mix-blend-mode: normal;
-    border-color: var(--black-zv); 
+    /* Hover stav: žluté tlačítko, černý text (rámeček zůstává černý) */
+    background-color: var(--black-zv); 
+    color: var(--white-zv);
+    border-color: var(--black-zv);
 }
+
 
 .quote-title {
     width: 100%;

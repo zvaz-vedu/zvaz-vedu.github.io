@@ -34,7 +34,7 @@
     --height-spacer: 2rem 0;
     --width-spacer: 2rem;
     --shadow: 0 0 1rem #00000024;
-    --transition: all .1s ease-in-out;
+    --transition: all .12xs ease-in-out;
     --cat: "/media/imgs/home/kocka.webp";
 }
 
