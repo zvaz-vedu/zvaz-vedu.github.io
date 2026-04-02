@@ -21,53 +21,50 @@ document.getElementById('speakers-container').addEventListener('click', event =>
 
 // --- JS Block 2: Search and Location Filtering ---
 const speakerSearch = document.getElementById('speaker-search');
-const locationFilters = document.querySelectorAll('.speaker-filters-container input');
+const locationFilters = document.querySelectorAll('.speaker-filters-container input[type="checkbox"]');
 
 function applySpeakerFilters() {
-    const searchValue = speakerSearch.value.toLowerCase();
+    const searchValue = speakerSearch ? speakerSearch.value.toLowerCase() : '';
     
+    // Zjistíme, které filtry jsou momentálně zaškrtnuté
     const activeFilters = Array.from(locationFilters)
         .filter(f => f.checked)
         .map(f => {
-            // 1. Force lowercase to match Hugo's ($loc | lower)
             let id = f.id.toLowerCase(); 
-            // 2. Ensure "location-" prefix exists, but don't add it twice
             return id.startsWith('location-') ? id : `location-${id}`;
         });
 
     const speakers = document.querySelectorAll('.speaker');
     const mapRegions = document.querySelectorAll('.map-region'); 
 
+    // 1. Filtrace řečníků
     speakers.forEach(speaker => {
-        // Search Logic
         const speakerName = speaker.querySelector('.speaker-name')?.textContent.toLowerCase() || '';
         const matchesSearch = speakerName.includes(searchValue);
         
-        // Location Logic
-        // We check if the speaker has ANY of the active filter classes
         const matchesLocation =
             activeFilters.length === 0 ||
             activeFilters.some(filterClass => speaker.classList.contains(filterClass));
 
-        // Toggle Display
         speaker.style.display = (matchesSearch && matchesLocation) ? 'flex' : 'none';
     });
 
-    // Map Region Logic
+    // 2. Obarvování mapy přes inline styly (jak jsi chtěl)
     if (mapRegions) {
         mapRegions.forEach(region => {
             if (activeFilters.length === 0) {
-                region.style.fill = 'var(--accent)';
+                // Výchozí stav (nic není zaškrtnuto)
+                region.style.fill = 'var(--black-zv)'; // Zde dej barvu, když nic nesvítí
             } else {
-                // Ensure region checking also respects the standardized class names
                 const hasMatch = activeFilters.some(filterClass => region.classList.contains(filterClass));
-                region.style.fill = hasMatch ? 'var(--accent)' : 'var(--accent20)';
+                // Zde se tahají tvé proměnné
+                region.style.fill = hasMatch ? 'var(--accent)' : 'var(--black-zv)';
             }
         });
     }
 }
 
-// Attach event listeners
+// Navěšení posluchačů událostí
 if (speakerSearch) {
     speakerSearch.addEventListener('input', applySpeakerFilters);
 }
@@ -75,3 +72,8 @@ if (speakerSearch) {
 locationFilters.forEach(filter => {
     filter.addEventListener('change', applySpeakerFilters);
 });
+
+// ZAVOLÁME IHNED PO NAČTENÍ, ABY MAPA REAGOVALA NA DEFAULTNĚ ZAŠKRTNUTÁ TLAČÍTKA
+applySpeakerFilters();
+
+// psalo gemi-ni tak sorry za chyby, ale to co bylo předtím tak psalo určitě taky

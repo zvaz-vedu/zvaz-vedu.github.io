@@ -119,33 +119,109 @@
 
 /* --- Filters and Search --- */
 
+#speaker-search {
+    font-family: ZV-Display, sans-serif; /* Sjednocení fontu s tlačítky */
+    font-size: 1.3rem; /* Trochu menší než 1.8 u tlačítek, aby to nebylo obří, ale můžeš upravit */
+    text-transform: uppercase;
+    color: var(--text);
+    padding: 0.3em 0.7em;
+    width: 220px;
+    border: 2px solid var(--text); 
+    background-color: var(--background);
+    transition: var(--transition);
+}
+
+#speaker-search:focus {
+    outline: none; 
+    border-color: var(--primary); /* Při kliknutí zežloutne okraj */
+}
+
+
+/* --- Filters and Search --- */
+
+.speaker-search-container {
+    display: flex;
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+#speaker-search {
+    font-family: ZV-Display, sans-serif;
+    font-size: 1.5em; 
+    text-transform: uppercase;
+    color: var(--text);
+    padding: 0.3em 0.7em;
+    width: 100%;
+    box-sizing: border-box; 
+    border: 2px solid var(--text); 
+    background-color: transparent;
+    transition: var(--transition);
+}
+
+#speaker-search:focus {
+    outline: none; 
+    border-color: var(--primary);
+}
+
 #speaker-filters {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; 
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
 }
-#speaker-search {
-    font-size: 1.25rem;
-    color: var(--text);
-    padding: .5rem .8rem;
-    width: 190px;
-    /* Added border and background color for focus clarity */
-    border: 1px solid var(--text); 
-    background-color: var(--background);
-}
-#speaker-search:focus {
-    /* Restored a border style to indicate focus */
-    outline: 2px solid var(--accent); 
-    border-color: var(--accent);
-}
+
+
 .speaker-filters-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Tlačítka se poskládají pod sebe, až dojde místo */
+    gap: 1rem; /* Flex gap je mnohem čistší než okraje (marginy) u tlačítek */
     align-items: center;
     justify-content: flex-end;
 }
+
+/* 1. Skrytí původních checkboxů (!important pojistí, že se opravdu schovají) */
+.speaker-filters-container input[type="checkbox"] {
+    display: none !important;
+}
+
+/* 1. ZÁKLADNÍ TVAR A NEAKTIVNÍ STAV (Vypnuto) */
+.speaker-filters-container label {
+    display: block; 
+    margin: 0; 
+    padding: 0.3em 0.7em;
+    font-size: 1.5em; 
+    font-family: ZV-Display, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+    
+    /* Vzhled neaktivního */
+    background-color: transparent;
+    color: var(--text);
+    border: 2px solid var(--text); /* Použil jsem --text místo --black-zv, ať se to neztratí v dark modu! */
+}
+
+/* 2. AKTIVNÍ STAV (Zapnuto) */
+.speaker-filters-container input[type="checkbox"]:checked + label {
+    background-color: var(--primary);
+    color: var(--black-zv);
+    border-color: var(--primary);
+}
+
+/* 3. JEDNOTNÝ HOVER (Pro neaktivní i aktivní stav vždy stejný!) */
+.speaker-filters-container label:hover,
+.speaker-filters-container input[type="checkbox"]:checked + label:hover {
+    background-color: var(--text);
+    color: var(--background);
+    border-color: var(--text);
+}
+
+/*psalo gemi-ni tak sorry za chyby, ale to co bylo předtím tak psalo určitě taky */
+
 /* Grouped Checkbox Styles */
 #location-brno, 
 #location-praha, 
