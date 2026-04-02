@@ -19,13 +19,7 @@
                             class="partner-logo-img"
                             data-partner-name="{{ $key }}"
                             src="/media/imgs/partners/monochrom/{{ $key }}-monochrom.webp"
-                            alt="{{ $partnerData.name }}"
-                            style="
-                            {{ if (eq $key "senat-cz") }}width: 280px;
-                            {{ else if (eq $key "podporatalentu-cz") }}width: 180px;
-                            {{ else if (eq $key "kudyznudy-cz") }}width: 150px;
-                            {{ else }}width: 130px;{{ end }}
-                            ">
+                            alt="{{ $partnerData.name }}" >
                     </a>
                 {{ else }}
                     {{/* Optional: Log a warning to your console if a key is missing in the YAML */}}
