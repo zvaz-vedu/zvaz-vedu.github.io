@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         const mainLogoSrc = darkMode
-            ? '/media/imgs/base/logo_transparent.webp'
-            : '/media/imgs/base/logo_dark.webp';
+            ? '/media/imgs/base/logo_zv-white.webp'
+            : '/media/imgs/base/logo_zv-black.webp';
 
         const markSrc = darkMode
             ? '/media/imgs/base/zv_kocka_45deg_zv-white.webp'
