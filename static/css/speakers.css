@@ -212,12 +212,14 @@
     border-color: var(--primary);
 }
 
-/* 3. JEDNOTNÝ HOVER (Pro neaktivní i aktivní stav vždy stejný!) */
-.speaker-filters-container label:hover,
-.speaker-filters-container input[type="checkbox"]:checked + label:hover {
-    background-color: var(--text);
-    color: var(--background);
-    border-color: var(--text);
+/* 3. JEDNOTNÝ HOVER (Only applied on devices with a real mouse) */
+@media (hover: hover) {
+    .speaker-filters-container label:hover,
+    .speaker-filters-container input[type="checkbox"]:checked + label:hover {
+        background-color: var(--text);
+        color: var(--background);
+        border-color: var(--text);
+    }
 }
 
 /*psalo gemi-ni tak sorry za chyby, ale to co bylo předtím tak psalo určitě taky */
@@ -334,9 +336,6 @@
     }
 }
 @media (max-width: 480px) {
-    #content .layout-content {
-        padding-inline: 0;
-    }
     #speaker-filters {
         flex-direction: column-reverse;
         align-items: flex-start;
