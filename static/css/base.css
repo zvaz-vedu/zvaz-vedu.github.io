@@ -332,8 +332,7 @@ footer .layout-content {
     width: 100%;
 }
 .partner-body img {
-    max-width: 90%;
-    max-height: 80px;
+    max-width: min(15vw, 85%);
     transition: var(--transition);
     filter: brightness(0);
 }
@@ -439,6 +438,11 @@ header img {
         justify-content: flex-end;
         gap: 0.5rem;
         max-width: 100%;
+    }
+    .partner-body img {
+        max-width: 85%;
+        transition: var(--transition);
+        filter: brightness(0);
     }
 }
 
