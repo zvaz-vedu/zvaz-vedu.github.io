@@ -332,7 +332,8 @@ footer .layout-content {
     width: 100%;
 }
 .partner-body img {
-    width: 100%;
+    max-width: 90%;
+    max-height: 80px;
     transition: var(--transition);
     filter: brightness(0);
 }
