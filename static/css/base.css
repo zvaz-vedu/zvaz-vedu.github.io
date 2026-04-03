@@ -339,6 +339,11 @@ footer .layout-content {
 .partner-body img:hover {
     filter: brightness(100);
 }
+@media (max-width:900px) {
+    .partner-body img {
+        max-width: 55%;
+    }
+}
 
 /* HEADER */
 .header-text {
@@ -438,11 +443,6 @@ header img {
         justify-content: flex-end;
         gap: 0.5rem;
         max-width: 100%;
-    }
-    .partner-body img {
-        max-width: 85%;
-        transition: var(--transition);
-        filter: brightness(0);
     }
 }
 
