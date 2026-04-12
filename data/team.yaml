@@ -10,25 +10,27 @@
       ig: "https://www.instagram.com/jan.herzig/"
       linkedin: "https://cz.linkedin.com/in/jan-herzig-372a46316"
 
-    - name: "Eduard Plic"
-      alias: "eda"
-      team: "plzen"
-      photo: "eda.webp"
-      position: "zástupce ředitele, spoluzakladatel"
-      school: "Fakulta aplikovaných věd, ZČU"
-      mail: "plic@zvazvedu.cz"
-      ig: "https://www.instagram.com/plice_13/"
-
-- section: "ORGANIZÁTOŘI"
-  members:
     - name: "Matyáš Matta"
       alias: "maty"
       team: "plzen"
       photo: "maty.webp"
-      position: "koordinátor webu, zakladatel"
+      position: "zástupce ředitele, zakladatel"
       school: "Fakulta jaderná a fyzikálně inženýrská, ČVUT"
       mail: "matta@zvazvedu.cz"
       linkedin: "https://cz.linkedin.com/in/matyasmatta/en"
+
+- section: "ORGANIZÁTOŘI"
+  members:
+    
+    - name: "Eduard Plic"
+      alias: "eda"
+      team: "plzen"
+      photo: "eda.webp"
+      position: "koordinátor administrativy, spoluzakladatel"
+      school: "Fakulta aplikovaných věd, ZČU"
+      mail: "plic@zvazvedu.cz"
+      ig: "https://www.instagram.com/plice_13/"
+
 
     - name: "Tomáš Rajchman"
       alias: "tomáš"
