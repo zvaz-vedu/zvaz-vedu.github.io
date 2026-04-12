@@ -17,19 +17,17 @@ pastActions: false
 eventTime: 2026-05-22
 team: [honza, eda, lucka, petr, matěj, oliver, tomáš]
 partners: [hvezdarna-cz, eserocz-cz, kooperativa]
-registration: true
-registrationSheet: "https://docs.google.com/spreadsheets/d/2PACX-1vSZuHNFMTSsSXBVy1vWX3wpe5PbyB1PZJbSiqvXFCOcTXs-zfU-r7R7j8ROT8aCOGFRDOpjqul1yrDb/pub?gid=1552632910&single=true&output=csv"
-infoVid: "https://www.youtube.com/embed/_MzUUon-Srw?si=u8bo7KhAHK1ace_s"
+registration: "https://docs.google.com/forms/d/e/1FAIpQLSe3WYqGB_e-FdJJuaYs2jkZB--LXBf0ajO4ZL1AD53QzFbMuA/viewform?usp=dialog"
+registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcpKuxnNwZbuyZLzKFEXvYLrjlUWQOBuawcrhuylLuVIRfxf454e3EmpBl5qXWyGqUDkigq9eqPGt4/pubhtml?gid=1097034692&single=true"
+infoVid: false
 
 
 maxParticipants: "200"
 newPresentations: "10"
 
-abstracts: true
+abstracts: false
 abstractUrl: "/ceske-budejovice/info/abstrakty"
 
 program: false
 zastita: false
 ---
-
-{{< program/brno26 >}}
