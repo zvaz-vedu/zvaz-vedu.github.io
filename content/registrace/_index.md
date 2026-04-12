@@ -2,10 +2,10 @@
 title: "Registrace"
 layout: "linktree"
 links:
-  - url: "/feedback"
+  - url: "https://docs.google.com/forms/d/e/1FAIpQLScrNsm04h3igBQ_hrvq02jljuGeYothqQd_5qLwDzPyPL5LSg/viewform?usp=dialog"
     icon: "fa-solid fa-flask-vial"
     text: "Zvaž vědu! Praha"
-  - url: "/brno/info/abstrakty"
+  - url: "https://docs.google.com/forms/d/e/1FAIpQLSe3WYqGB_e-FdJJuaYs2jkZB--LXBf0ajO4ZL1AD53QzFbMuA/viewform?usp=dialog"
     icon: "fa-solid fa-flask-vial"
     text: "Zvaž vědu! České Budějovice"
 ---
