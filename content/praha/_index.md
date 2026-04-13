@@ -16,7 +16,7 @@ eventTime: 2026-06-08T09:00:00
 pastActions: true
 location: Senát PČR
 
-team: [honza, maty, eda, tomáš, štěpán, lucka, lucka-vu, david]
+team: [honza, maty, eda, tomáš, lucka, jakub, michal, david]
 partners: [senat-cz, eserocz-cz]
 
 registration: "https://docs.google.com/forms/d/e/1FAIpQLScrNsm04h3igBQ_hrvq02jljuGeYothqQd_5qLwDzPyPL5LSg/viewform?usp=publish-editor"
