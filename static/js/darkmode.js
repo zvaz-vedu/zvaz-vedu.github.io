@@ -97,23 +97,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
 
-         document.querySelectorAll('.partner-logo-img').forEach(function(img) {
-             const baseName = img.dataset.partnerName;
-
-             if (!baseName) {
-                 console.warn("Partner image missing data-partner-name attribute:", img);
-                 return;
-             }
-
-             const newSrc = darkMode
-                 ? `/media/imgs/partners//monochrom/${baseName}-monochrom.webp`
-                 : `/media/imgs/partners/${baseName}.webp`;
-
-             const currentRelativeSrc = new URL(img.src).pathname;
-             if (currentRelativeSrc !== newSrc) {
-                  img.src = newSrc;
-             }
-         });
     }
 
      updateSrcs();
