@@ -34,5 +34,6 @@ importantInfoHeader: "Na co se můžete těšit..."
 importantInfoText: "Zvaž vědu! přichází do Prahy! Unikátní projekt středoškoláků pro středoškoláky představující současnou vědu a příležitosti v moderním světě s ní spojené se po realizaci úspěšných akcí v Plzni a Brně rozšiřuje i do hlavního města.|Akce se uskuteční již v pondělí 8. června od 9 do 14 hodin v prostorách Senátu Parlamentu ČR. Náplní programu bude 10 přednášek o těch nejaktuálnějších tématech, které hýbou současným světem přírodních a technických věd. Kosmický výzkum, umělá inteligence, moderní medicína, hledání života ve vesmíru… To jsou jen některé z oblastí, na které se můžete těšit.|Jako přednášející se představí inspirativní středoškoláci z celého Česka, kteří už před maturitou stihli ve vědeckém výzkumu nasbírat nemalé zkušenosti. Vítězí na mezinárodních soutěžích, představují své projekty na celosvětových veletrzích, pracují ve špičkových ústavech nebo vysílají vlastní družice do vesmíru.|A na závěr to nejlepší, každý představí svoji cestu a příležitosti, které mu během ní pomohly tak, aby ses do vědy mohl/a ponořit i ty.|Budoucnost čeká, tak neváhej a přijď se inspirovat, poznej další nadšence a jednou tak možná i změň celý tento svět. Bude to velká show, těšíme se na tebe! "
 importantInfoImage: "/media/imgs/base/mark-blk.webp"
 infoVid:  false
-program: false
+program: true
 ---
+{{< program/praha26 >}}
