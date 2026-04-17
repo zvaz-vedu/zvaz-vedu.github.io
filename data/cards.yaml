@@ -5,6 +5,22 @@
     url: "/brno/"
     text: O akci
 
+- date: 2026-05-22
+  type: event
+  title: Zvaž vědu! České Budějovice 2026
+  link:
+    url: "/ceske-budejovice/"
+    text: O akci
+
+- date: 2026-04-16
+  type: update
+  icon: "fa-solid fa-user-plus"
+  title: Registrace do Budějovic otevřeny!
+  description: "Historicky první Zvaž vědu! v jižních Čechách má otevřené přihlášky! Přijď se inspirovat řečníky se svého regionu v rámci spolupráce s Jihočeskou univerzitou."
+  link:
+    url: "/registrace-cb/"
+    text: O akci
+
 - date: 2026-03-16
   type: update
   icon: "fa-solid fa-calendar"
