@@ -1,100 +1,5 @@
-{{/* This part is for your custom CSS */}}
 {{ define "styles" }}
     <link rel="stylesheet" href="/css/linktree.css">
-    <style>
-        /* --- Content Wrapper Styles --- */
-        .content-wrapper {
-            max-width: 680px; /* Constrains the width */
-            margin: 2rem auto; /* Centers the container horizontally */
-            padding: 0 1rem; /* Prevents text from touching the screen edges on mobile */
-            line-height: 1.6;
-        }
-
-        /* --- Live Event Card Styles --- */
-        #live-event-container {
-            margin-bottom: 2rem;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        .current-event-card {
-            background: #ffffff;
-            border-left: 5px solid #e74c3c; /* Red accent for "Live" */
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 0.75rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.5rem;
-        }
-
-        .live-indicator {
-            background-color: #e74c3c;
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        /* Pulsing dot animation */
-        .live-dot {
-            width: 8px;
-            height: 8px;
-            background-color: white;
-            border-radius: 50%;
-            display: inline-block;
-            animation: pulse-dot 1.5s infinite;
-        }
-
-        .event-time {
-            font-family: monospace;
-            font-size: 0.9rem;
-            color: #666;
-            font-weight: 600;
-        }
-
-        .event-details {
-            font-size: 1.2rem;
-            line-height: 1.4;
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        /* Styling for the <small> tags coming from YAML */
-        .event-details small {
-            display: block;
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-            font-weight: normal;
-            color: #555;
-            font-style: italic;
-        }
-
-        @keyframes pulse-dot {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.8); }
-            100% { opacity: 1; transform: scale(1); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 {{ end }}
 
 {{ define "main" }}
@@ -103,7 +8,6 @@
     {{ end }}
 
     <div class="tile-container">
-        {{/* Loop through each link defined in the markdown front matter */}}
         {{ range .Params.links }}
             <a href="{{ .url }}" class="tile">
                 <i class="{{ .icon }}"></i>
@@ -112,7 +16,10 @@
         {{ end }}
     </div>
     
+    {{ if .Content }}
     <div class="content-wrapper">
-        {{.Content}}
+        <h2>Aktuální informace</h2>
+        {{ .Content }}
     </div>
+    {{ end }}
 {{ end }}
