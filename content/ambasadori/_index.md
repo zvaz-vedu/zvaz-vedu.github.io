@@ -9,5 +9,8 @@ links:
   - url: "https://canva.link/ambasadori-setkani-prezentace"
     icon: "fa-solid fa-chalkboard"
     text: "Prezentace ze setkání (Canva link)"
+  - url: "https://canva.link/ambasadori-obecna-prezentace"
+    icon: "fa-solid fa-chalkboard"
+    text: "Obecná prezentace pro komunikování ZV"
 ---
 Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! České Budějovice, potřebujeme naplnit kapacitu 200 míst! Prosíme, pokud se nacházíte ve spádovém regionu pro Zvaž vědu! České Budějovice, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-cb a zvazvedu.cz/ceske-budejovice. ~ Matyáš
