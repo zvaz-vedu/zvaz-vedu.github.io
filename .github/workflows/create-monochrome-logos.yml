@@ -40,7 +40,7 @@ jobs:
           from pathlib import Path
           from PIL import Image
 
-          def process_folder(folder, output_folder):
+          def process_orgs(folder, output_folder):
               folder_path = Path(folder)
               if not folder_path.exists():
                   print(f"Folder {folder} does not exist, skipping")
@@ -51,18 +51,17 @@ jobs:
 
               for ext in ('*.png', '*.jpg', '*.jpeg', '*.webp'):
                   for img_path in folder_path.glob(ext):
-                      
                       # 1. Calculate target path first
                       new_name = img_path.stem + '-monochrom' + img_path.suffix
                       output_path = Path(output_folder) / new_name
 
                       # 2. Check if it already exists
                       if output_path.exists():
-                          print(f"Skipping {img_path.name} (Monochrome version already exists)")
+                          print(f"Skipping {img_path.name} in Orgs (Monochrome version already exists)")
                           continue
 
                       # 3. Process only if missing
-                      print(f"Processing {img_path} -> {new_name}")
+                      print(f"Processing Org {img_path} -> {new_name}")
                       try:
                           with Image.open(img_path) as im:
                               im = im.convert("RGBA")
@@ -71,7 +70,6 @@ jobs:
                                   for x in range(im.width):
                                       r, g, b, a = pixels[x, y]
                                       if a != 0:
-                                          # Specific hack for 'galakticka'
                                           if (r + g + b > 750) and ('galakticka' in str(img_path)): 
                                               pixels[x, y] = (255, 255, 255, 0)
                                               print(f"Eda se omlouvá s {img_path} :(")
@@ -86,10 +84,78 @@ jobs:
 
               return created_any
 
+          def process_partners(folder, white_folder, black_folder):
+              folder_path = Path(folder)
+              if not folder_path.exists():
+                  print(f"Folder {folder} does not exist, skipping")
+                  return False
+
+              Path(white_folder).mkdir(parents=True, exist_ok=True)
+              Path(black_folder).mkdir(parents=True, exist_ok=True)
+              created_any = False
+
+              for ext in ('*.png', '*.jpg', '*.jpeg', '*.webp'):
+                  for img_path in folder_path.glob(ext):
+                      white_path = Path(white_folder) / img_path.name
+                      black_path = Path(black_folder) / img_path.name
+
+                      needs_white = not white_path.exists()
+                      needs_black = not black_path.exists()
+
+                      if not needs_white and not needs_black:
+                          print(f"Skipping {img_path.name} in Partners (Both white and black versions already exist)")
+                          continue
+
+                      print(f"Processing Partner {img_path}")
+                      try:
+                          with Image.open(img_path) as im:
+                              im = im.convert("RGBA")
+                              
+                              # Generate White Version
+                              if needs_white:
+                                  im_white = im.copy()
+                                  pixels_w = im_white.load()
+                                  for y in range(im_white.height):
+                                      for x in range(im_white.width):
+                                          r, g, b, a = pixels_w[x, y]
+                                          if a != 0:
+                                              if (r + g + b > 750) and ('galakticka' in str(img_path)): 
+                                                  pixels_w[x, y] = (255, 255, 255, 0)
+                                              else:
+                                                  pixels_w[x, y] = (255, 255, 255, a)
+                                  im_white.save(white_path)
+                                  print(f"Saved {white_path.name} to /white/")
+                                  created_any = True
+
+                              # Generate Black Version
+                              if needs_black:
+                                  im_black = im.copy()
+                                  pixels_b = im_black.load()
+                                  for y in range(im_black.height):
+                                      for x in range(im_black.width):
+                                          r, g, b, a = pixels_b[x, y]
+                                          if a != 0:
+                                              if (r + g + b > 750) and ('galakticka' in str(img_path)): 
+                                                  pixels_b[x, y] = (0, 0, 0, 0)
+                                              else:
+                                                  pixels_b[x, y] = (0, 0, 0, a)
+                                  im_black.save(black_path)
+                                  print(f"Saved {black_path.name} to /black/")
+                                  created_any = True
+                                  
+                      except Exception as e:
+                          print(f"Error processing {img_path}: {e}")
+
+              return created_any
+
           any_created = False
-          if process_folder('static/media/imgs/orgs', 'static/media/imgs/orgs/monochrom'):
+          
+          print("--- Processing Orgs ---")
+          if process_orgs('static/media/imgs/orgs', 'static/media/imgs/orgs/monochrom'):
               any_created = True
-          if process_folder('static/media/imgs/partners', 'static/media/imgs/partners/monochrom'):
+              
+          print("--- Processing Partners ---")
+          if process_partners('static/media/imgs/partners', 'static/media/imgs/partners/white', 'static/media/imgs/partners/black'):
               any_created = True
 
           if not any_created:
@@ -101,5 +167,5 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add static/media/imgs/orgs/monochrom static/media/imgs/partners/monochrom
-          git diff --cached --quiet || (git commit -m "Add new monochrome images" && git push)
+          git add static/media/imgs/orgs/monochrom static/media/imgs/partners/white static/media/imgs/partners/black
+          git diff --cached --quiet || (git commit -m "Add new monochrome/black/white images" && git push)
