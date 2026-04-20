@@ -2,6 +2,14 @@
 {{ define "styles" }}
     <link rel="stylesheet" href="/css/linktree.css">
     <style>
+        /* --- Content Wrapper Styles --- */
+        .content-wrapper {
+            max-width: 680px; /* Constrains the width */
+            margin: 2rem auto; /* Centers the container horizontally */
+            padding: 0 1rem; /* Prevents text from touching the screen edges on mobile */
+            line-height: 1.6;
+        }
+
         /* --- Live Event Card Styles --- */
         #live-event-container {
             margin-bottom: 2rem;
@@ -94,72 +102,6 @@
     <h1>{{ .Params.title }}</h1>
     {{ end }}
 
-    <!--  ŠPATNÝ LIVE PROGRAM, ALE JINAK JE TO FUNKČÍ - HOTFIX COMMENT PŘI ZV! BRNO
-    {{/* --- LIVE EVENT SECTION (JavaScript) --- */}}
-    {{ if .Params.live }}
-    <div id="live-event-container" style="display: none;">
-        <div class="current-event-card">
-            <div class="card-header">
-                <div class="live-indicator">
-                    <span class="live-dot"></span> LIVE
-                </div>
-                <span id="live-time" class="event-time"></span>
-            </div>
-            <div id="live-desc" class="event-details"></div>
-        </div>
-    </div>
-
-
-    {{/* Dump the YAML data into a hidden variable for JS to read */}}
-    <script>
-        const scheduleData = {{ .Site.Data.program.schedule | jsonify | safeJS }};
-
-        function updateLiveEvent() {
-            const now = new Date();
-            // Convert current time to simple minutes for easy math
-            const currentMinutes = (now.getHours() * 60) + now.getMinutes();
-
-            const container = document.getElementById('live-event-container');
-            const timeLabel = document.getElementById('live-time');
-            const descLabel = document.getElementById('live-desc');
-            
-            let activeEvent = null;
-
-            scheduleData.forEach(item => {
-                // Parse start time (e.g. "09:00")
-                const [startH, startM] = item.start.split(':').map(Number);
-                const startTotal = (startH * 60) + startM;
-
-                // Parse end time
-                const [endH, endM] = item.end.split(':').map(Number);
-                const endTotal = (endH * 60) + endM;
-
-                // Check if now is between start and end
-                if (currentMinutes >= startTotal && currentMinutes < endTotal) {
-                    activeEvent = item;
-                }
-            });
-
-            if (activeEvent) {
-                container.style.display = 'block';
-                timeLabel.innerText = activeEvent.time_label;
-                // Using innerHTML to render the <br> and <small> tags from YAML
-                descLabel.innerHTML = activeEvent.event;
-            } else {
-                container.style.display = 'none';
-            }
-        }
-
-        // Run on load and check every 30 seconds
-        document.addEventListener("DOMContentLoaded", function() {
-            updateLiveEvent();
-            setInterval(updateLiveEvent, 30000); 
-        });
-    </script>
-    {{ end }}
-    {{/* --- END LIVE EVENT SECTION --- */}}
-    -->
-
     <div class="tile-container">
         {{/* Loop through each link defined in the markdown front matter */}}
         {{ range .Params.links }}
@@ -168,5 +110,9 @@
                 <p>{{ .text }}</p>
             </a>
         {{ end }}
+    </div>
+    
+    <div class="content-wrapper">
+        {{.Content}}
     </div>
 {{ end }}

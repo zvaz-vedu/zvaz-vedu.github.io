@@ -10,3 +10,4 @@ links:
     icon: "fa-solid fa-book"
     text: "Přihláška do programu"
 ---
+Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! České Budějovice, potřebujeme naplnit kapacitu 200 míst! Prosíme, pokud se nacházíte ve spádovém regionu pro Zvaž vědu! České Budějovice, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-cb a zvazvedu.cz/ceske-budejovice. ~ Matyáš
