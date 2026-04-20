@@ -8,14 +8,20 @@
             const supporterItems = document.querySelectorAll('.supporter-item');
 
             supporterItems.forEach(item => {
-                item.addEventListener('mouseenter', () => {
-                    item.querySelector('.monochrom').classList.add('hidden');
-                    item.querySelector('.color').classList.remove('hidden');
-                });
-                item.addEventListener('mouseleave', () => {
-                    item.querySelector('.monochrom').classList.remove('hidden');
-                    item.querySelector('.color').classList.add('hidden');
-                });
+                const imgBlack = item.querySelector('.img-black');
+                const imgWhite = item.querySelector('.img-white');
+
+                // Only apply hover effect if the item actually has the images (skips ghost-cards)
+                if (imgBlack && imgWhite) {
+                    item.addEventListener('mouseenter', () => {
+                        imgBlack.classList.add('hidden');
+                        imgWhite.classList.remove('hidden');
+                    });
+                    item.addEventListener('mouseleave', () => {
+                        imgBlack.classList.remove('hidden');
+                        imgWhite.classList.add('hidden');
+                    });
+                }
             });
         });
     </script>
@@ -52,20 +58,13 @@
         <section class="layout-container section-sponsors">
             <div class="layout-content supporter-section">
                 <h2><span>Generální partner</span></h2>
-                <!--<div class="infobox-container">
-                    <div class="infobox-icon">
-                        💡
-                    </div>
-                    <p class="infobox-text">
-                        Sponzoři jsou společnosti, které nás podporují finančně, zatímco partneři nám pomáhají jinak, například poskytnutím vybavení, prostoru nebo služeb. Bez financí by totiž Zvaž vědu! existovat nemohlo.
-                    </p>
-                </div>-->
                 <div class="supporters-grid">
                     {{- range $generals -}}
                         <div class="supporter-item general">
                             <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
                                 <div class="supporter-img-wrapper">
-                                    <img class="monochrom" src="/media/imgs/partners/monochrom/{{ .key }}-monochrom.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="img-black" src="/media/imgs/partners/black/{{ .key }}.webp" alt="Black Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="img-white hidden" src="/media/imgs/partners/white/{{ .key }}.webp" alt="White Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
                                 </div>
                                 <div class="supporter-info">
                                     <h3 class="supporter-name">{{ .data.name }}</h3>
@@ -82,24 +81,16 @@
         <section class="layout-container section-sponsors">
             <div class="layout-content supporter-section">
                 <h2><span>Hlavní partneři</span></h2>
-                <!--<div class="infobox-container">
-                    <div class="infobox-icon">
-                        💡
-                    </div>
-                    <p class="infobox-text">
-                        Sponzoři jsou společnosti, které nás podporují finančně, zatímco partneři nám pomáhají jinak, například poskytnutím vybavení, prostoru nebo služeb. Bez financí by totiž Zvaž vědu! existovat nemohlo.
-                    </p>
-                </div>-->
                 <div class="supporters-grid">
                     {{- range $sponsors -}}
                         <div class="supporter-item sponsor">
                             <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
                                 <div class="supporter-img-wrapper">
-                                    <img class="monochrom" src="/media/imgs/partners/monochrom/{{ .key }}-monochrom.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="img-black" src="/media/imgs/partners/black/{{ .key }}.webp" alt="Black Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="img-white hidden" src="/media/imgs/partners/white/{{ .key }}.webp" alt="White Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
                                 </div>
                                 <div class="supporter-info">
                                     <h3 class="supporter-name">{{ .data.name }}</h3>
-                                    <!--<p class="supporter-city">{{ .data.city }}</p>-->
                                 </div>
                             </a>
                         </div>
@@ -122,11 +113,11 @@
                         <div class="supporter-item partner">
                             <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
                                 <div class="supporter-img-wrapper">
-                                    <img class="monochrom" src="/media/imgs/partners/monochrom/{{ .key }}-monochrom.webp" alt="Monochrom Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="img-black" src="/media/imgs/partners/black/{{ .key }}.webp" alt="Black Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+                                    <img class="img-white hidden" src="/media/imgs/partners/white/{{ .key }}.webp" alt="White Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
                                 </div>
                                 <div class="supporter-info">
                                     <h3 class="supporter-name">{{ .data.name }}</h3>
-                                    <!--<p class="supporter-city">{{ .data.city }}</p>-->
                                 </div>
                             </a>
                         </div>
