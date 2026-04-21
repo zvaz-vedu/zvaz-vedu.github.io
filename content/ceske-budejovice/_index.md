@@ -2,7 +2,7 @@
 title: Zvaž vědu! České Budějovice
 layout: location
 
-headerTitle: "v Budějovicích"
+headerTitle: "v Budějicích"
 headerText: "22. května v Aule Jihočeské univezity"
 headerPhoto: "/media/imgs/locations/brno-header.webp"
 location: Aula Jihočeské univerzity
