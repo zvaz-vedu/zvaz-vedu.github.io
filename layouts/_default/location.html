@@ -1,6 +1,7 @@
 {{define "styles"}}
     <link rel="stylesheet" href="/css/location.css">
-    <link rel="stylesheet" href="/css/location-live.css">
+    <link rel="stylesheet" href="/css/offers.css">
+    <link rel="stylesheet" href="/css/budejovice.css">
 {{end}}
 
 {{define "scripts"}}
@@ -22,7 +23,7 @@
                     {{ if .Params.eventTime }}
                         <span class="header-meta-item">
                             <i class="fa-regular fa-calendar"></i> 
-                            {{ (time .Params.eventTime).Format "2. 1. 2006" }}
+                            {{ (time .Params.eventTime).Format "2. 1. 2006 od 3h" }}
                         </span>
                     {{ end }}
                 </p>
@@ -173,7 +174,9 @@
             </section>
         {{end}}
     {{end}}
-
+    {{if .Params.budejovice}}
+            {{.Content}}
+    {{end}}
     {{with .Params.registration}}
         <section class="layout-container" id="cta">
             <div class="layout-content">

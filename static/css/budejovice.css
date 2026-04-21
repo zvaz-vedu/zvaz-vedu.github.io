@@ -1,0 +1,62 @@
+.img-body {
+    display: block;
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.img-body img {
+    display: block;
+    width: min(450px, 100%);
+    height: auto;
+    z-index: 1;
+}
+.img-body::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 12px;
+    left: -12px;
+}
+.row-reverse .img-body::after {
+    left: 12px;
+}
+
+.text-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: calc(100% - 450px - 4rem);
+}
+
+.quote-title-highlight::after {
+    opacity: 70%;
+}
+
+.highlight-primary::after {
+    background: var(--primary);
+}
+.highlight-secondary::after {
+    background: var(--secondary);
+}
+.highlight-accent::after {
+    background: var(--accent);
+}
+
+@media (max-width: 900px) {
+    section .layout-content {
+        /* Use 'column' if you want Image on top, Text on bottom. 
+           Keep 'column-reverse' if you want Text on top, Image on bottom. */
+        flex-direction: column-reverse !important; 
+        gap: 2rem
+    }
+    
+    /* This resets the calculated desktop width so it fits the mobile screen */
+    .text-body {
+        width: 100%;
+    }
+}
