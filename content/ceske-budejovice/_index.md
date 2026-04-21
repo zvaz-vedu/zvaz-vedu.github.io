@@ -127,7 +127,7 @@ budejovice: true
                     <div class="offer-expanded-inner">
                         <p>Připravená pro každého účastníka bude alespoň jedna bageta.</p>
                         <div class="offer-photo-spot">
-                            <img src="/media/imgs/gallery/plzen23/DSC_0297.webp" alt="SOČ">
+                            <img src="/media/imgs/senat/senat-jidlo.webp" alt="SOČ">
                         </div>
                     </div>
                 </div>

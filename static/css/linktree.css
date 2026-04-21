@@ -107,7 +107,7 @@
 /* Fix for icon/text color on hover */
 .tile:hover i,
 .tile:hover p {
-    color: var(--background);
+    color: var(--white-zv);
 }
 
 /* Icon & Text Styling */
@@ -124,6 +124,7 @@
     line-height: 1.4;
     overflow-wrap: break-word;
     transition: var(--transition);
+    color: var(--black-zv)
 }
 
 /* --- Responsive Adjustments --- */
