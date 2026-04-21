@@ -35,7 +35,7 @@ budejovice: true
 <section class="layout-container">
     <div class="layout-content ">
         <div class="img-body highlight-primary">
-            <img src="/media/imgs/about/about1.webp">
+            <img src="/media/imgs/gallery/plzen25/main.webp">
         </div>
         <div class="text-body">
             <h3 style="font-size: 2.2rem" >O projektu a akci</h3>
