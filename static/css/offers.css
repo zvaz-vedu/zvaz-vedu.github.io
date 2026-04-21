@@ -2,7 +2,10 @@
 .offers-container {
     padding: var(--inspacer, 0);
     margin-bottom: 4rem;
-    width: 62%;
+    
+    /* THE FIX */
+    width: min(100%, 1100px); /* 100% on mobile, caps out at 1100px on desktop */
+    margin: 0 auto; /* This forces the container to stay perfectly centered */
 }
 
 .offers-container h2 {
