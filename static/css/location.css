@@ -536,6 +536,7 @@ h3::after {
     padding: var(--inspacer);
     background-color: var(--primary);
     gap: 3rem;
+    max-width: 500px;
 }
 #zastita img {
     max-width: 200px;
