@@ -45,6 +45,22 @@ budejovice: true
         </div>  
     </div>
 </section>
+<section class="layout-container">
+    <div class="layout-content ">
+        <div class="text-body" style="padding-right:2em">
+            <h3 style="font-size: 2.2rem" >Vezmi s sebou i kamarády!</h3>
+                <p>Zvaž vědu! není jenom o vědě, ale zejména o lidech, o těch, co ho organizují, o těch, co ho propagují, ale zejména o těch, co dorazí. Ať už si k nám přivedeš známé tváře nebo si tam naopak nové kamarády uděláš, Zvaž vědu! je skvělá příležitost poznat něco nového ve společnosti bezvadných lidí.</p>
+                <p>A když už jsme i těch kamarádů, rozhodně jim o akci řekni a přemluv je, ať na akci přijdou s Tebou! My Ti k tomu nabídneme tyhle bezvadné letáčky, které si můžeš vytisknout a rozlepit třeba po třídě, nebo třeba na nějakou pěknou nástěnku ve škole. Kdybys chtěl být Zvaž vědu! pevnou součástí, dveře k ambasadorství jsou Ti vždy otevřeny...</p>
+                <div style="display: flex; gap: 1em; padding-top: 1.2em">
+                    <a href="/pdf/ZV ČB 2026 letáček.pdf" class="primary-button"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Letáček k akci</a>
+                    <a href="/pdf/ZV ČB 2026 přehled informací.pdf "class="primary-button"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Přehled informací o akci</a>
+                </div>
+        </div>  
+        <div class="img-body highlight-primary">
+            <img src="/media/imgs/gallery/plzen25/ZVP_083651.webp">
+        </div>
+    </div>
+</section>
 <section class="layout-container" id="what-to-expect">
     <div class="offers-container">
         <h2>Na co se na Zvaž vědu! můžeš těšit?</h2>
