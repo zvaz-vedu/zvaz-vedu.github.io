@@ -48,7 +48,7 @@ budejovice: true
 <section class="layout-container">
     <div class="layout-content ">
         <div class="text-body" style="padding-right:2em">
-            <h3 style="font-size: 2.2rem" >Vezmi s sebou i kamarády!</h3>
+            <h3 style="font-size: 2.2rem" >Kamarády s sebou!</h3>
                 <p>Zvaž vědu! není jenom o vědě, ale zejména o lidech, o těch, co ho organizují, o těch, co ho propagují, ale zejména o těch, co dorazí. Ať už si k nám přivedeš známé tváře nebo si tam naopak nové kamarády uděláš, Zvaž vědu! je skvělá příležitost poznat něco nového ve společnosti bezvadných lidí.</p>
                 <p>A když už jsme i těch kamarádů, rozhodně jim o akci řekni a přemluv je, ať na akci přijdou s Tebou! My Ti k tomu nabídneme tyhle bezvadné letáčky, které si můžeš vytisknout a rozlepit třeba po třídě, nebo třeba na nějakou pěknou nástěnku ve škole. Kdybys chtěl být Zvaž vědu! pevnou součástí, dveře k ambasadorství jsou Ti vždy otevřeny...</p>
                 <div style="display: flex; gap: 1em; padding-top: 1.2em">
