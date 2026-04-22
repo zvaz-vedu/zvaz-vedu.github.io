@@ -35,5 +35,6 @@ importantInfoText: "Zvaž vědu! přichází do Prahy! Unikátní projekt střed
 importantInfoImage: "/media/imgs/base/mark-blk.webp"
 infoVid:  false
 program: true
+zastita: true
 ---
 {{< program/praha26 >}}

@@ -14,12 +14,9 @@
 
                 {{/* 3. Check if the data exists to prevent errors */}}
                 {{ if $partnerData }}
-                    <a href="{{ $partnerData.link }}" target="_blank" title="{{ $partnerData.name }}">
-                        <img
-                            class="partner-logo-img"
-                            data-partner-name="{{ $key }}"
-                            src="/media/imgs/partners/monochrom/{{ $key }}-monochrom.webp"
-                            alt="{{ $partnerData.name }}" >
+                    <a href="{{ $partnerData.link }}" target="_blank" title="{{ $partnerData.name }}" class="partner-link">
+                        <img class="partner-logo-img" src="/media/imgs/partners/black/{{ $key }}.webp" alt="{{ $partnerData.name }}">
+                        <img class="partner-logo-img" src="/media/imgs/partners/white/{{ $key }}.webp" alt="{{ $partnerData.name }}">
                     </a>
                 {{ else }}
                     {{/* Optional: Log a warning to your console if a key is missing in the YAML */}}

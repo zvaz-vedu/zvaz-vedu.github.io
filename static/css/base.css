@@ -316,29 +316,39 @@ footer .layout-content {
 }
 .partner-body {
     display: grid;
-    /* Create as many columns as fit, but no column smaller than 150px */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
     align-items: center;
-    justify-items: center; /* Centers items inside their grid cells */
+    justify-items: center;
     width: 100%;
 }
 
-/* Ensure images don't overflow their grid cells */
 .partner-body a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.partner-body img {
+
+.partner-logo-img {
     max-width: min(15vw, 85%);
     transition: var(--transition);
-    filter: brightness(0);
 }
-.partner-body img:hover {
-    filter: brightness(100);
+
+/* 1. Hide the white version (2nd image) by default */
+.partner-logo-img:nth-of-type(2) {
+    display: none;
 }
+
+/* 2. On hover of the link, swap visibility */
+.partner-body a:hover .partner-logo-img:nth-of-type(1) {
+    display: none; /* Hide black */
+}
+
+.partner-body a:hover .partner-logo-img:nth-of-type(2) {
+    display: block; /* Show white */
+}
+
 @media (max-width:900px) {
     .partner-body img {
         max-width: 55%;
