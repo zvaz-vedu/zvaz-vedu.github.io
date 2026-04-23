@@ -350,7 +350,8 @@ section .layout-content {
     justify-content: center;
     margin: 0 auto; 
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    max-height: 300px;
     padding: 3rem; 
     text-align: center;
     box-shadow: var(--shadow);
@@ -373,6 +374,12 @@ section .layout-content {
 .supporter-item.general p {
     font-size: 1.1rem;
     color: var(--text-lighter);
+}
+
+/* Target .supporter-wrapper ONLY inside .supporter-item.general */
+.supporter-item.general .supporter-img-wrapper {
+    /* Your specific styles here */
+    aspect-ratio: auto;
 }
 
 /* --- RESPONSIVE ADJUSTMENTS --- */

@@ -331,10 +331,12 @@ footer .layout-content {
 }
 
 .partner-logo-img {
-    max-width: min(15vw, 85%);
+    height: 150px; 
+    width: auto; 
+    object-fit: contain; 
+    max-width: min(25vw, 85%);
     transition: var(--transition);
 }
-
 /* 1. Hide the white version (2nd image) by default */
 .partner-logo-img:nth-of-type(2) {
     display: none;
@@ -349,12 +351,13 @@ footer .layout-content {
     display: block; /* Show white */
 }
 
-@media (max-width:900px) {
-    .partner-body img {
-        max-width: 55%;
+@media (max-width: 900px) {
+    .partner-logo-img {
+        /* Slightly smaller height for mobile screens */
+        height: 40px;
+        max-width: 80%;
     }
 }
-
 /* HEADER */
 .header-text {
     font-size: 2rem;
