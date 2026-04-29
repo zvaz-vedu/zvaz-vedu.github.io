@@ -12,6 +12,21 @@
     url: "/ceske-budejovice/"
     text: O akci
 
+- date: 2026-05-26
+  type: event
+  title: Víkend řečníků
+  link:
+    url: "/o-nas/recnici/"
+    text: Řečníci
+
+- date: 2026-05-26
+  type: event
+  title: Školení ambasadorů
+  link:
+    url: "/ambasadori"
+    text: Ambasadoři
+
+
 - date: 2026-04-16
   type: update
   icon: "fa-solid fa-user-plus"
@@ -19,6 +34,15 @@
   description: "Historicky první Zvaž vědu! v jižních Čechách má otevřené přihlášky! Přijď se inspirovat řečníky se svého regionu v rámci spolupráce s Jihočeskou univerzitou."
   link:
     url: "/registrace-cb/"
+    text: Registrace
+
+- date: 2026-04-22
+  type: update
+  icon: "fa-solid fa-user-plus"
+  title: Registrace do Prahy otevřeny!
+  description: "Již druhý ročník akce Zvaž vědu! v hlavním městě, v Senátu Parlamentu České republiky, se bude konat 8. června a přihlášky jsou otevřené."
+  link:
+    url: "/registrace-praha/"
     text: Registrace
 
 - date: 2026-03-16

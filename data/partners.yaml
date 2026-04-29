@@ -107,3 +107,8 @@ vut:
   type: podporovatel
   city: Brno
   link: https://www.vut.cz/
+nadace-orlen-unipetrol:
+  name: Nadace Orlen Unipetrol 
+  type: podporovatel
+  city: Praha
+  link: https://www.nadaceorlenunipetrol.cz/
