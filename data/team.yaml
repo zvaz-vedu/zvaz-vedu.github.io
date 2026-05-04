@@ -132,6 +132,14 @@
       mail: "klimes@zvazvedu.cz"
       ig: "https://www.instagram.com/oliverklimes/"
       linkedin: "https://cz.linkedin.com/in/oliver-klime%C5%A1-893a21235"
+  
+    - name: "Jan Morávek"
+      alias: "honza-m"
+      team: "plzen"
+      photo: "honza-m.webp"
+      position: "organizátor pro České Budějovice"
+      school: "VAKANTIS střední škola s.r.o."
+      mail: "moravek@zvazvedu.cz"
 
     - name: "Karel Horák"
       alias: "karel"
