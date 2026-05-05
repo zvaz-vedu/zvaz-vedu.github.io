@@ -14,7 +14,7 @@ speakers: "10"
 liveAction: true
 eventTime: 2026-06-08T09:00:00
 pastActions: true
-location: Senát PČR
+location: Senát Parlamentu ČR
 
 team: [honza, maty, eda, tomáš, lucka, jakub, michal, david]
 partners: [senat-cz, eserocz-cz]
