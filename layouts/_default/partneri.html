@@ -36,65 +36,68 @@
         <img class="mark-img" src="/media/imgs/base/mark.webp" alt="">
     </div>
 </header>
+
 <div class="layout-container" id="content">
     <div class="layout-content" style="padding:0">
-        {{- $supporters := slice -}}
-        {{- $sponsors := slice -}}
         {{- $generals := slice -}}
+        {{- $hlavni := slice -}}
+        {{- $partners := slice -}}
+        {{- $supporters := slice -}}
         
-        {{- range $key, $value := .Site.Data.partners -}}
-            {{- if ne (default true $value.showOnPartnersPage) false -}}
-                {{- if eq $value.type "sponzor" -}}
-                    {{- $sponsors = $sponsors | append (dict "key" $key "data" $value) -}}
-                {{- else if eq $value.type "podporovatel" -}}
-                    {{- $supporters = $supporters | append (dict "key" $key "data" $value) -}}
-                {{- else if eq $value.type "generalni-partner" -}}
-                    {{- $generals = $generals | append (dict "key" $key "data" $value) -}}
+        {{/* We range directly over the list to preserve YAML order */}}
+        {{- range .Site.Data.partners -}}
+            {{- if ne (default true .showOnPartnersPage) false -}}
+                {{- if eq .type "generalni-partner" -}}
+                    {{- $generals = $generals | append . -}}
+                {{- else if eq .type "hlavni-partner" -}}
+                    {{- $hlavni = $hlavni | append . -}}
+                {{- else if eq .type "partner" -}}
+                    {{- $partners = $partners | append . -}}
+                {{- else if eq .type "podporovatel" -}}
+                    {{- $supporters = $supporters | append . -}}
                 {{- end -}}
             {{- end -}}
         {{- end -}}
 
+        {{/* 1. Generální partner */}}
         {{- if gt (len $generals) 0 -}}
         <section class="layout-container section-sponsors">
             <div class="layout-content supporter-section">
                 <h2><span>Generální partner</span></h2>
                 <div class="supporters-grid">
                     {{- range $generals -}}
-                        <div class="supporter-item general">
-                            <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
-                                <div class="supporter-img-wrapper">
-                                    <img class="img-black" src="/media/imgs/partners/black/{{ .key }}.webp" alt="Black Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-                                    <img class="img-white hidden" src="/media/imgs/partners/white/{{ .key }}.webp" alt="White Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-                                </div>
-                                <div class="supporter-info">
-                                    <h3 class="supporter-name">{{ .data.name }}</h3>
-                                </div>
-                            </a>
-                        </div>
+                        {{ partial "supporter-card.html" (dict "context" . "class" "general") }}
                     {{- end -}}
                 </div>
             </div>
         </section>
         {{- end -}}
         
-        {{- if gt (len $sponsors) 0 -}}
+        {{/* 2. Hlavní partneři */}}
+        {{- if gt (len $hlavni) 0 -}}
         <section class="layout-container section-sponsors">
             <div class="layout-content supporter-section">
                 <h2><span>Hlavní partneři</span></h2>
                 <div class="supporters-grid">
-                    {{- range $sponsors -}}
-                        <div class="supporter-item sponsor">
-                            <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
-                                <div class="supporter-img-wrapper">
-                                    <img class="img-black" src="/media/imgs/partners/black/{{ .key }}.webp" alt="Black Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-                                    <img class="img-white hidden" src="/media/imgs/partners/white/{{ .key }}.webp" alt="White Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-                                </div>
-                                <div class="supporter-info">
-                                    <h3 class="supporter-name">{{ .data.name }}</h3>
-                                </div>
-                            </a>
-                        </div>
+                    {{- range $hlavni -}}
+                        {{ partial "supporter-card.html" (dict "context" . "class" "sponsor") }}
                     {{- end -}}
+                </div>
+            </div>
+        </section>
+        {{- end -}}
+
+        {{/* 3. Partneři (Uses same CSS logic as Hlavní) */}}
+        {{- if gt (len $partners) 0 -}}
+        <section class="layout-container section-sponsors">
+            <div class="layout-content supporter-section">
+                <h2><span>Partneři</span></h2>
+                <div class="supporters-grid">
+                    {{- range $partners -}}
+                        {{/* Using "sponsor" class to match Hlavní partneři CSS */}}
+                        {{ partial "supporter-card.html" (dict "context" . "class" "sponsor") }}
+                    {{- end -}}
+                    {{/* Ghost card for Hlavní Partneři */}}
                     <a href="mailto:organziatori@zvazvedu.cz" class="supporter-item ghost-card" style="text-decoration: none; color: inherit">
                         <div class="plus-btn">&plus;</div>
                         <p class="ghost-card-text">Chcete tu také být?</p>
@@ -104,23 +107,14 @@
         </section>
         {{- end -}}
         
+        {{/* 4. Podporovatelé */}}
         {{- if gt (len $supporters) 0 -}}
         <section class="layout-container section-partners">
             <div class="layout-content supporter-section">
                 <h2><span>Podporovatelé</span></h2>
                 <div class="supporters-grid">
                     {{- range $supporters -}}
-                        <div class="supporter-item partner">
-                            <a href="{{.data.link}}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
-                                <div class="supporter-img-wrapper">
-                                    <img class="img-black" src="/media/imgs/partners/black/{{ .key }}.webp" alt="Black Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-                                    <img class="img-white hidden" src="/media/imgs/partners/white/{{ .key }}.webp" alt="White Logo {{ .data.name }}" loading="lazy" onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
-                                </div>
-                                <div class="supporter-info">
-                                    <h3 class="supporter-name">{{ .data.name }}</h3>
-                                </div>
-                            </a>
-                        </div>
+                        {{ partial "supporter-card.html" (dict "context" . "class" "partner") }}
                     {{- end -}}
                     <a href="mailto:organziatori@zvazvedu.cz" class="supporter-item ghost-card" style="text-decoration: none; color: inherit">
                         <div class="plus-btn">&plus;</div>

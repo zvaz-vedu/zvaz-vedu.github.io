@@ -1,114 +1,143 @@
-eserocz-cz:
+- id: eserocz-cz
   name: ESERO Česká republika
   type: generalni-partner
   city: 'Praha, Brno'
   link: 'https://www.eserocz.cz'
-fav-zcu-cz:
-  name: Fakulta aplikovaných věd ZČU
-  type: sponzor
-  city: Plzeň
-  link: 'https://fav.zcu.cz'
-hvezdarna-cz:
-  name: Hvězdárna a planetárium Brno
-  type: sponzor
-  city: 'Praha, Brno'
-  link: 'https://www.hvezdarna.cz'
-podporatalentu-cz:
-  name: GoHigher - podpora talentů
-  type: podporovatel
-  city: Plzeň
-  link: 'https://www.podporatalentu.cz'
-radovanek-cz:
-  name: Radovánek
-  type: podporovatel
-  city: Plzeň
-  link: 'https://www.radovanek.cz'
-senat-cz:
+
+- id: senat-cz
   name: Senát Parlamentu ČR
-  type: sponzor
+  type: hlavni-partner
   city: Praha
   link: 'https://www.senat.cz'
-famelab:
+
+- id: hvezdarna-cz
+  name: Hvězdárna a planetárium Brno
+  type: hlavni-partner
+  city: 'Praha, Brno'
+  link: 'https://www.hvezdarna.cz'
+
+- id: fav-zcu-cz
+  name: Fakulta aplikovaných věd ZČU
+  type: hlavni-partner
+  city: Plzeň
+  link: 'https://fav.zcu.cz'
+
+- id: kooperativa
+  name: Pojišťovna Kooperativa
+  type: hlavni-partner
+  city: Plzeň
+  link: https://www.koop.cz/
+
+- id: nf-iocb-tech
+  name: Nadační fond IOCB Tech 
+  type: partner 
+  city: Praha 
+  link: https://nf-iocbtech.cz/
+
+- id: radovanek-cz
+  name: Radovánek
+  type: partner
+  city: Plzeň
+  link: 'https://www.radovanek.cz'
+
+- id: plzensky-kraj-cz
+  name: Plzeňský kraj
+  type: partner
+  city: Plzeň
+  link: https://plzensky-kraj.cz
+
+- id: podporatalentu-cz
+  name: GoHigher - podpora talentů
+  type: partner
+  city: Plzeň
+  link: 'https://www.podporatalentu.cz'
+
+- id: prf-jcu
+  name: Přírodovědecká fakulta JČU
+  type: partner 
+  city: České Budějovice
+  link: https://www.prf.jcu.cz/cz/
+
+- id: nadace-orlen-unipetrol
+  name: Nadace Orlen Unipetrol 
+  type: podporovatel
+  city: Praha
+  link: https://www.nadaceorlenunipetrol.cz/
+
+- id: ceska-cesta-do-vesmiru
+  name: Česká cesta do vesmíru
+  type: podporovatel
+  city: 'Praha, Plzeň'
+  link: https://ceskacestadovesmiru.cz/
+
+- id: famelab
   name: FameLab - Talking Science
   type: podporovatel
   city: Praha
   link: 'https://famelab.cuni.cz/FL-1.html'
-plnoc:
-  name: Plzeňská přednášková noc
+
+- id: ceska-astronomicka-spolecnost
+  name: Česká astronomická společnost
   type: podporovatel
   city: Plzeň
-  link: 'https://www.plnoc.cz/'
-stemhub:
-  name: STEM Hub
-  type: podporovatel
-  city: Praha
-  link: 'https://www.stemhub.cz/'
-univerzita-karlova:
+  link: https://astro.cz
+
+- id: univerzita-karlova
   name: Univerzita Karlova
   type: podporovatel
   city: FameLab
   link: 'https://www.cuni.cz/'
-british-embassy-prague:
+
+- id: vut
+  name: Vysoké učení technické v Brně
+  type: podporovatel
+  city: Brno
+  link: https://www.vut.cz/
+
+- id: stemhub
+  name: STEM Hub
+  type: podporovatel
+  city: Praha
+  link: 'https://www.stemhub.cz/'
+
+- id: plnoc
+  name: Plzeňská přednášková noc
+  type: podporovatel
+  city: Plzeň
+  link: 'https://www.plnoc.cz/'
+
+# Skrytí partneři (showOnPartnersPage: false)
+- id: british-embassy-prague
   name: Britské velvyslanectví v Praze
   type: podporovatel
   city: Famelab
   link: 'https://www.gov.uk/world/organisations/british-embassy-prague.cs'
   showOnPartnersPage: false
-cheltenham-festivals:
+
+- id: cheltenham-festivals
   name: Cheltenham Festivals
   type: podporovatel
   city: FameLab
   link: 'https://www.cheltenhamfestivals.org/'
   showOnPartnersPage: false
-#galakticka-vyzva:
-#  name: Galaktická Vědomostní Výzva
-#  type: podporovatel
-#  city: Praha
-#  link: 'https://www.galaktickavyzva.cz/'
-plzensky-kraj-cz:
-  name: Plzeňský kraj
-  type: sponzor
-  city: Plzeň
-  link: https://plzensky-kraj.cz
-ceska-astronomicka-spolecnost:
-  name: Česká astronomická společnost
-  type: podporovatel
-  city: Plzeň
-  link: https://astro.cz
-techfair-cz:
+
+- id: techfair-cz
   name: TECHFAIR.cz
   type: podporovatel
   city: Plzeň
   link: https://techfair.cz
   showOnPartnersPage: false
-ceskobudoucnosti-cz:
-  name: \#ČESKObudoucnosti
+
+- id: ceskobudoucnosti-cz
+  name: "#ČESKObudoucnosti"
   type: podporovatel
   city: Praha
   link: https://ceskobudoucnosti.cz
   showOnPartnersPage: false
-ceska-cesta-do-vesmiru:
-  name: Česká cesta do vesmíru
-  type: podporovatel
-  city: 'Praha, Plzeň'
-  link: https://ceskacestadovesmiru.cz/
-kooperativa:
-  name: Pojišťovna Kooperativa
-  type: sponzor
-  city: Plzeň
-  link: https://www.koop.cz/
-sit-port:
+
+- id: sit-port
   name: SIT port
   type: podporovatel
   city: Plzeň
   link: https://sitport.cz
-vut:
-  name: Vysoké učení technické v Brně
-  type: podporovatel
-  city: Brno
-  link: https://www.vut.cz/
-nadace-orlen-unipetrol:
-  name: Nadace Orlen Unipetrol 
-  type: podporovatel
-  city: Praha
-  link: https://www.nadaceorlenunipetrol.cz/
+  showOnPartnersPage: false

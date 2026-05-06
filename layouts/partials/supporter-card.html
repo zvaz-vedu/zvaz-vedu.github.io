@@ -1,0 +1,20 @@
+<div class="supporter-item {{ .class }}">
+    <a href="{{ .context.link }}" style="text-decoration: none; color: inherit" target="_blank" rel="noopener noreferrer">
+        <div class="supporter-img-wrapper">
+            <img class="img-black" 
+                 src="/media/imgs/partners/black/{{ .context.id }}.webp" 
+                 alt="Black Logo {{ .context.name }}" 
+                 loading="lazy" 
+                 onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+            
+            <img class="img-white hidden" 
+                 src="/media/imgs/partners/white/{{ .context.id }}.webp" 
+                 alt="White Logo {{ .context.name }}" 
+                 loading="lazy" 
+                 onerror="this.src='https://placehold.co/200x200/cccccc/333333?text=Logo'">
+        </div>
+        <div class="supporter-info">
+            <h3 class="supporter-name">{{ .context.name }}</h3>
+        </div>
+    </a>
+</div>
