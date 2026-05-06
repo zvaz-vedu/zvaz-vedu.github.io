@@ -16,7 +16,7 @@ pastActions: false
 
 eventTime: 2026-05-22T09:00:00
 team: [maty, honza, eda, lucka, tomáš]
-partners: [eserocz-cz, kooperativa]
+partners: [eserocz-cz, prf-jcu]
 registration: "https://docs.google.com/forms/d/e/1FAIpQLSe3WYqGB_e-FdJJuaYs2jkZB--LXBf0ajO4ZL1AD53QzFbMuA/viewform?usp=dialog"
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcpKuxnNwZbuyZLzKFEXvYLrjlUWQOBuawcrhuylLuVIRfxf454e3EmpBl5qXWyGqUDkigq9eqPGt4/pubhtml?gid=1097034692&single=true"
 infoVid: false
