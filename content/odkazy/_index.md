@@ -4,12 +4,15 @@ live: True
 layout: "linktree" # Optional: specifies which layout to use
 # Add all your link data below
 links:
-  - url: "/feedback"
-    icon: "fa-solid fa-comments"
-    text: "Zpětná vazba"
-  - url: "/brno/info/abstrakty"
-    icon: "fa-solid fa-book"
-    text: "Abstrakty přednášek"
+#  - url: "/feedback"
+#    icon: "fa-solid fa-comments"
+#    text: "Zpětná vazba"
+#  - url: "/brno/info/abstrakty"
+#    icon: "fa-solid fa-book"
+#    text: "Abstrakty přednášek"
+  - url: "/newsletter"
+    icon: "fa-solid fa-envelope"
+    text: "Newsletter"
   - url: "https://www.instagram.com/zvaz.vedu/"
     icon: "fa-brands fa-instagram"
     text: "Instagram"
