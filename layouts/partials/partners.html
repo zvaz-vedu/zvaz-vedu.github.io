@@ -1,27 +1,54 @@
+{{/* 1. Extrakce města z titulku */}}
+{{ $currentCity := trim (replace .Title "Zvaž vědu!" "") " " }}
+{{ $allPartners := $.Site.Data.partners }}
+
+{{/* 2. Příprava kolekcí pro zobrazení */}}
+{{ $partnersList := slice }}
+{{ $supportersList := slice }}
+
+{{ range $allPartners }}
+    {{ $isLocationMatch := in .city $currentCity }}
+    {{ $isVisible := (ne .showOnPartnersPage false) }}
+
+    {{ if and $isLocationMatch $isVisible }}
+        {{ if or (eq .type "generalni-partner") (eq .type "hlavni-partner") (eq .type "partner") }}
+            {{ $partnersList = $partnersList | append . }}
+        {{ else if eq .type "podporovatel" }}
+            {{ $supportersList = $supportersList | append . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<!-- SEKCE PARTNEŘI -->
+{{ if gt (len $partnersList) 0 }}
 <div class="layout-container" id="partners">
     <div class="layout-content">
         <strong style="font-size: 1.777rem;">Partneři</strong>
         <div class="partner-body">
-            {{/* Procházíme ID partnerů definované v Markdownu (Front Matter) */}}
-            {{ range .Params.partners }}
-                
-                {{ $targetID := . }}
-
-                {{/* Hledáme v seznamu partnerů ten, jehož 'id' odpovídá našemu klíči */}}
-                {{/* 'where' vrací pole, takže musíme vzít první prvek pomocí 'index ... 0' */}}
-                {{ $partnerData := index (where $.Site.Data.partners "id" "==" $targetID) 0 }}
-
-                {{ if $partnerData }}
-                    <a href="{{ $partnerData.link }}" target="_blank" title="{{ $partnerData.name }}" class="partner-link">
-                        {{/* Používáme $partnerData.id pro název souboru loga */}}
-                        <img class="partner-logo-img" src="/media/imgs/partners/black/{{ $partnerData.id }}.webp" alt="{{ $partnerData.name }}">
-                        <img class="partner-logo-img" src="/media/imgs/partners/white/{{ $partnerData.id }}.webp" alt="{{ $partnerData.name }}">
-                    </a>
-                {{ else }}
-                    {{ warnf "Partner ID '%s' nalezen v parametrech stránky, ale chybí v data/partners.yaml" $targetID }}
-                {{ end }}
-
+            {{ range $partnersList }}
+                <a href="{{ .link }}" target="_blank" title="{{ .name }}" class="partner-link">
+                    <img class="partner-logo-img" src="/media/imgs/partners/black/{{ .id }}.webp" alt="{{ .name }}">
+                    <img class="partner-logo-img" src="/media/imgs/partners/white/{{ .id }}.webp" alt="{{ .name }}">
+                </a>
             {{ end }}
         </div>
     </div>
 </div>
+{{ end }}
+
+<!-- SEKCE PODPOROVATELÉ -->
+{{ if gt (len $supportersList) 0 }}
+<div class="layout-container" id="supporters">
+    <div class="layout-content">
+        <strong style="font-size: 1.777rem;">Podporovatelé</strong>
+        <div class="partner-body">
+            {{ range $supportersList }}
+                <a href="{{ .link }}" target="_blank" title="{{ .name }}" class="partner-link">
+                    <img class="supporter-logo-img" src="/media/imgs/partners/black/{{ .id }}.webp" alt="{{ .name }}">
+                    <img class="supporter-logo-img" src="/media/imgs/partners/white/{{ .id }}.webp" alt="{{ .name }}">
+                </a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,7 +1,7 @@
 - id: eserocz-cz
   name: ESERO Česká republika
   type: generalni-partner
-  city: 'Praha, Brno'
+  city: 'Praha, Brno, České Budějovice, Plzeň'
   link: 'https://www.eserocz.cz'
 
 - id: senat-cz
@@ -25,7 +25,7 @@
 - id: kooperativa
   name: Pojišťovna Kooperativa
   type: hlavni-partner
-  city: Plzeň
+  city: Plzeň, Brno, České Budějovice
   link: https://www.koop.cz/
 
 - id: nf-iocb-tech
@@ -73,7 +73,7 @@
 - id: famelab
   name: FameLab - Talking Science
   type: podporovatel
-  city: Praha
+  city:
   link: 'https://famelab.cuni.cz/FL-1.html'
 
 - id: ceska-astronomicka-spolecnost
@@ -97,7 +97,7 @@
 - id: stemhub
   name: STEM Hub
   type: podporovatel
-  city: Praha
+  city:
   link: 'https://www.stemhub.cz/'
 
 - id: plnoc
