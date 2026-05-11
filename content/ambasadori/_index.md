@@ -13,4 +13,4 @@ links:
     icon: "fa-solid fa-chalkboard"
     text: "Obecná prezentace pro komunikování ZV"
 ---
-Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! České Budějovice, potřebujeme naplnit kapacitu 200 míst! Prosíme, pokud se nacházíte ve spádovém regionu pro Zvaž vědu! České Budějovice, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-cb a zvazvedu.cz/ceske-budejovice. ~ Matyáš
+Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! Praha, potřebujeme naplnit kapacitu 250 míst! Prosíme, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-praha a zvazvedu.cz/praha. ~ Matyáš
