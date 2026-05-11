@@ -36,5 +36,10 @@ importantInfoImage: "/media/imgs/base/mark-blk.webp"
 infoVid:  false
 program: true
 zastita: true
+
+additionalInfo: true
+additionalInfoImages:
+- /media/imgs/gallery/praha25/Zvaž Vědu! 0905.webp
+- /media/imgs/gallery/praha25/Zvaž Vědu! 1305.webp
 ---
 {{< program/praha26 >}}
