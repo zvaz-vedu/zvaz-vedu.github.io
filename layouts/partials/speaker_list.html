@@ -4,22 +4,24 @@
         {{ $speakerName := lower $speaker.name }}
         {{ $speakerId := $speakerName | urlize }}
         
+        {{/* 1. DEFINICE PROMĚNNÉ MUSÍ BÝT TADY (vně if bloku) */}}
         {{ $locationClasses := "" }}
+        
         {{ if $speaker.locations }}
             {{ range $loc := $speaker.locations }}
-                {{ $locationClasses = printf "%s location-%s" $locationClasses ($loc | lower) }}
+                {{/* Převedeme na malá písmena a nahradíme mezery pomlčkou */}}
+                {{ $cleanLoc := $loc | lower | replaceRE " " "-" }}
+                {{ $locationClasses = printf "%s location-%s" $locationClasses $cleanLoc }}
             {{ end }}
         {{ end }}
 
-        {{/* 2. Start Speaker Card - Main Flex Row */}}
+        {{/* 2. Teď už proměnná bude existovat pro každý div */}}
         <div class="speaker {{ trim $locationClasses " " }}" id="{{ $speakerId }}">
             
-            {{/* COLUMN 1: Speaker Header (Photo and Name) */}}
             <div class="speaker-header">
                 <img class="speaker-photo" src="{{ $speaker.photo }}" alt="{{ $speaker.name }}">
             </div>
             
-            {{/* COLUMN 2: Speaker Body (Lectures, Contacts, Bio) */}}
             <div class="speaker-body"> 
                 <strong class="speaker-name">{{ $speaker.name }}</strong>
 
