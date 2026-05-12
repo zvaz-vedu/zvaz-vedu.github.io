@@ -1,9 +1,9 @@
 ---
 title: Abstrakty a medailonky
-layout: single
+layout: abstracts
 
-headerTitle: "Abstrakty a medailonky"
-headerText: "Přečti abstrakty, zhlédni medailonky a vyber si ty pravé přednášky pro Zvaž vědu! České Budějovice 2026."
+headerTitle: "O čem budou přednášky?"
+headerText: "Přečti abstrakty a vyber si ty pravé přednášky pro Zvaž vědu! České Budějovice 2026."
 #úvodní fotky se berou v lecture.html jako name.webp
 ---
 {{< lecture
