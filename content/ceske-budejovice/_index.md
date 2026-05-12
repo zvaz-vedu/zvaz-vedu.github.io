@@ -25,7 +25,7 @@ infoVid: false
 maxParticipants: "200"
 newPresentations: "10"
 
-abstracts: false
+abstracts: true
 abstractUrl: "/ceske-budejovice/info/abstrakty"
 zastita: false
 

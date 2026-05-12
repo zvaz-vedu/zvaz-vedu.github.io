@@ -13,7 +13,7 @@
 - id: hvezdarna-cz
   name: Hvězdárna a planetárium Brno
   type: hlavni-partner
-  city: 'Praha, Brno'
+  city: 'Brno'
   link: 'https://www.hvezdarna.cz'
 
 - id: fav-zcu-cz
@@ -61,13 +61,13 @@
 - id: nadace-orlen-unipetrol
   name: Nadace Orlen Unipetrol 
   type: podporovatel
-  city: Praha
+  city: 
   link: https://www.nadaceorlenunipetrol.cz/
 
 - id: ceska-cesta-do-vesmiru
   name: Česká cesta do vesmíru
   type: podporovatel
-  city: 'Praha, Plzeň'
+  city: 'Plzeň'
   link: https://ceskacestadovesmiru.cz/
 
 - id: famelab
