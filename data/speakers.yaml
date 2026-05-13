@@ -676,41 +676,50 @@
   locations:
    - České Budějovice
   bio: Barča je studentkou Přírodovědecké fakulty Masarykovy Univerzity. Zajímá se o biologii, chemii i vše mezi tím. Se svou prací se zúčastnila konference FEBS3+ Meeting, SOČ i dalších soutěží a akcí, včetně olympiád a popularizačních přednášek. Je také držitelkou stříbrného ocenění DofE. Věnuje se organizaci chemického semináře KSICHT a mimo vědeckou sféru píše YA fantasy knihy. Ve volném čase ráda čte a chodí na procházky do přírody.
-
+  contact:
+    instagram: https://www.instagram.com/barbora_skyvova/
+    linkedin: https://www.linkedin.com/in/barbora-sk%C3%BDvov%C3%A1-a86895301/
 
 - name: Markéta Zmátlová
   photo: "/media/imgs/speakers/marketa-zmatlova.webp"
   locations:
   - České Budějovice
   bio: Markéta je studentkou Gymnázia v Třebíči. V roce 2024 se začala věnovat výzkumu, který se zabývá čistírenskými kaly jako potenciálním hnojivem. S touto prací získala 1. místo v SOČ a ocenění NF Jaroslava Heyrovského. Mimo vědu ji baví horolezení, hraje na housle a dělá táborovou vedoucí. Ráda fotí, a to i experimentálně s vlastnoručně vyrobeným foťákem z krabičky od sirek, přičemž si filmy sama vyvolává.
-
+  contact:
+    instagram: https://www.instagram.com/zmatlova.m/
 
 - name: Erik Sedláček
   photo: "/media/imgs/speakers/erik-sedlacek.webp"
   locations:
   - České Budějovice
   bio: Erik je studentem Gymnázia Česká v Českých Budějovicích a zajímá se o biochemii a neurovědy. Absolvuje odbornou stáž na Ústavu organické chemie a biochemie AV ČR, kde zpracovává svou SOČ. Vedle vědy se aktivně podílí na organizaci kulturních akcí – působí jako vedoucí produkce Budějovického Majálesu a je absolventem Young Creators Akademie v rámci projektu Evropského hlavního města kultury ČB 2028.
-
+  contact:
+    instagram: https://www.instagram.com/los3rikos/
 
 - name: Ludmila Kozlová
   photo: "/media/imgs/speakers/ludmila-kozlova.webp"
   locations:
   - České Budějovice
   bio: Lidu studuje na ČAGu v Českých Budějovicích a věnuje se ochraně životního prostředí. Tvoří výukové materiály zaměřené na ekopsychologii a roli jednotlivce ve společenské změně. Za své aktivity, včetně iniciování Studentského otevřeného dopisu proti popírání vědy, získala Cenu Josefa Vavrouška. Několik let se závodně věnovala atletice a je mistryní ČR v chůzi. Baví ji také hudba, žurnalistika a cizí jazyky.
-
+  contact:
+    instagram: https://www.instagram.com/lidu.27/
 
 - name: Jakub Holeček
   photo: "/media/imgs/speakers/jakub-holecek.webp"
   locations:
   - České Budějovice
   bio: Kuba se zajímá o buněčnou biologii a pomocí mikroskopie se snaží ukázat, že realita uvnitř buněk je mnohem zajímavější než schémata v učebnicích. Mimo laboratoř se věnuje výuce první pomoci, pro kterou vytvořil vlastní příručku. Když zrovna nikoho neučí zachraňovat životy, tráví čas aktivně sportem – od tenisu až po windsurfing. Rád propojuje vědecké poznatky s praktickým pochopením světa kolem nás.
-
+  contact:
+    instagram: https://www.instagram.com/_jakub_holecek_/
 
 - name: Jáchym Buben
   photo: "/media/imgs/speakers/jachym-buben.webp"
   locations:
   - České Budějovice
   bio: Jáchym studuje Gymnázium Jana Nerudy v Praze a zajímá se o fyzikální simulace částic a plazmatu. Od roku 2022 spolupracuje s Ústavem fyziky plazmatu AV ČR na modelu SPICE, za což získal několik ocenění. Zároveň je členem výzkumného týmu na ÚTEF ČVUT, kde se věnuje simulacím částicových detektorů. Mimo svět rovnic a simulací se věnuje triatlonu a jakémukoliv kolektivnímu sportu, který může podniknout s dobrou partou.
+  contact:
+    instagram: https://www.instagram.com/jachymbuben/
+    linkedin: https://www.linkedin.com/in/jáchym-buben-636680353?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 - name: Jan Toman
   photo: "/media/imgs/speakers/jan-toman.webp"
@@ -723,9 +732,14 @@
   locations:
   - České Budějovice
   bio: Jára a Jenda studují Masarykovo gymnázium v Plzni a jsou to zapálení kutilové se zájmem o motory, 3D tisk a mechanismy. Se svým mechanickým ovladačem na bagry vyhráli národní kolo Samsung Solve for Tomorrow a postoupili do celoevropského finále. Pravidelně se umísťují na předních příčkách vědeckých konferencí. Baví je dotahovat technické nápady do konce, i kdyby mělo jít o montování bramborového děla.
+  contact:
+    instagram: https://www.instagram.com/jara_kudrna/
 
 - name: Štěpán Latislav
   photo: "/media/imgs/speakers/stepan-latislav.webp"
   locations:
   - České Budějovice
   bio: Štěpán studuje na SPŠ SE v Českých Budějovicích a působí jako vývojář. Zaměřuje se na nízkoúrovňové programování, webové aplikace a kyberbezpečnost, ve které úspěšně soutěží v rámci CTF turnajů. V dlouhodobé spolupráci s Přírodovědeckou fakultou Jihočeské univerzity vyvíjí letové algoritmy pro autonomní drony. Jeho cílem je řešit komplexní technologické problémy elegantním a efektivním kódem.
+  contact:
+    instagram: https://www.instagram.com/stepa.l02./
+    linkedin: https://www.linkedin.com/in/stepan-latislav/
