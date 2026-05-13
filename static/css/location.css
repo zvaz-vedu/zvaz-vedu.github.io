@@ -429,7 +429,7 @@ h3::after {
     color: var(--black-zv);
 }
 .program-table td{
-    padding: .5rem;
+    padding: .4rem;
     border: var(--tertiary) 2px solid;
 
 }
@@ -446,10 +446,15 @@ h3::after {
     background-color: var(--primary);
     text-align: left;
 }
+
+.program-table-container {
+    font-size: 17px;
+}
 .program-table td {
     border-bottom: var(--tertiary) 2px solid;
 }
-.two-rooms tr td {z    font-weight: 600;
+.two-rooms tr td {
+    font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }

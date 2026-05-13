@@ -28,8 +28,10 @@ newPresentations: "10"
 abstracts: true
 abstractUrl: "/ceske-budejovice/info/abstrakty"
 zastita: false
+program: true
 
 additionalInfo: true 
 letacekLink: /pdf/ZV ČB 2026 letáček.pdf
 prehledInformaciLink: /pdf/ZV ČB 2026 přehled informací.pdf
 ---
+{{< program/budejovice26 >}}
