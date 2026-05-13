@@ -28,6 +28,16 @@
 
 - date: 2026-05-13
   type: update
+  icon: "fa-solid fa-hourglass-half"
+  title: "Program Budějovice 2026 zveřejněn!"
+  description: "Chceš vědět, v kolik hodin začne jaká přednáška? Už nemusíš čekat, program je zveřejněn!"
+  link:
+    url: "/ceske-budejovice/"
+    text: "Chci to vidět!"
+
+
+- date: 2026-05-13
+  type: update
   icon: "fa-solid fa-book-open"
   title: "Abstrakty Budějovice 2026 zveřejněny!"
   description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! České Budějovice 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
