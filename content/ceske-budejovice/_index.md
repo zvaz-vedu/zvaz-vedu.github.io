@@ -8,7 +8,7 @@ headerPhoto: "/media/imgs/locations/brno-header.webp"
 location: Aula Jihočeské univerzity
 
 events: "2"
-participants: "200+"
+participants: "220"
 
 liveAction: true
 nowAction: true
@@ -22,7 +22,7 @@ registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcpKuxnNwZb
 infoVid: false
 
 
-maxParticipants: "200"
+maxParticipants: "220"
 newPresentations: "10"
 
 abstracts: true

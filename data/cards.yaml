@@ -26,6 +26,23 @@
     url: "/ambasadori"
     text: Ambasadoři
 
+- date: 2026-05-13
+  type: update
+  icon: "fa-solid fa-book-open"
+  title: "Abstrakty Budějovice 2026 zveřejněny!"
+  description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! České Budějovice 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
+  link:
+    url: "/ceske-budejovice/info/abstrakty"
+    text: "Přečíst abstrakty"
+
+- date: 2026-05-13
+  type: update
+  icon: "fa-solid fa-user-plus"
+  title: Zvýšení kapacity do Budějovic!
+  description: "Neboť se kapacita zaplnila velmi rychle, po diskusi s univerzitou jsme navýšili kapacitu akce na 220 účastníků, zbývají tedy poslední desítky míst, tak nepromarni šanci!"
+  link:
+    url: "/registrace-cb/"
+    text: Registrace
 
 - date: 2026-04-16
   type: update
