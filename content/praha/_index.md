@@ -18,7 +18,7 @@ location: Senát Parlamentu ČR
 
 team: [honza, maty, eda, tomáš, lucka, jakub, michal, david]
 
-registration: "https://docs.google.com/forms/d/e/1FAIpQLScrNsm04h3igBQ_hrvq02jljuGeYothqQd_5qLwDzPyPL5LSg/viewform?usp=publish-editor"
+registration: "https://forms.gle/PbfwpSe5mmgXwJvC7"
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQOQdFgAmFgz7wgg7e-27jPlIFPoPsdfxjsFHkVixJUB4bP4tQ4r32sE8FZii_fEbtJOPohskrXEo1t/pubhtml?gid=1729122906&single=true"
 
 newParticipants: "250"
