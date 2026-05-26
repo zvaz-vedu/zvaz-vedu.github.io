@@ -31,6 +31,7 @@
     vědy. Hlavní náplní jeho práce je nyní projekt Zvaž vědu!, u jehož zrodu v roce
     2023 stál a který nyní vede. Volný čas tráví nejraději cestováním, procházkami
     a jízdou na kole, prázdniny si nejvíce užije na chalupě s přáteli.
+
 - name: Matyáš Matta
   photo: "/media/imgs/team/maty.webp"
   locations:
@@ -50,6 +51,7 @@
   bio: Matyáš je studentem maturitního ročníku Masarykova gymnázia v Plzni. Mezi jeho
     zájmy patří fyzika, informatika ale i spousty dalších. Věnuje se popularizaci
     vědy a techniky a spolupracuje s FAV a NTC Západočeské univerzity v Plzni.
+    
 - name: Tereza Jelínková
   photo: "/media/imgs/speakers/tereza-jelinkova.webp"
   locations:
@@ -67,6 +69,7 @@
     AV ČR a nyní pracuje na středoškolské odborné činnosti (SOČ) na Jihočeské univerzitě.
     Zúčastnila se odborných kurzů a letních škol. Je součástí organizačního týmu STEM_HUB
     a v rámci Expedice Mars absolvovala přípravnou simulaci i misi v Hydronautu.
+
 - name: Richard Nikel
   photo: "/media/imgs/speakers/richard-nikel.webp"
   locations:
@@ -86,6 +89,7 @@
     dráhu vlastní satelit. V týmu se věnuje PR a inženýrské větvi. Svoje nadšení do
     vesmíru se snaží předat i prostřednictvím popularizačních videí na YouTube kanále
     Vědecký Ferin. Po střední míří do oboru v oblasti astronomie nebo kosmických technologií.
+
 - name: Monika Dlouhá
   photo: "/media/imgs/speakers/monika-dlouha.webp"
   locations:
@@ -101,6 +105,7 @@
     Účastnila se projektu Talentové akademie, dělá DofE a díky letu Zero-G se stala ambasadorkou České cesty do vesmíru.
     Kromě toho se podílí na organizaci projektu Expedice Mars a CASSINI Space Campu. Ve svém volném čase hraje na saxofon,
     ráda čte, kreslí a plave.
+
 - name: Lukáš Hrdý
   photo: "/media/imgs/speakers/lukas-hrdy.webp"
   locations:
@@ -120,6 +125,7 @@
     tajů astronomie a fyziky a na svém YouTube kanálu Kosmické okénko symbolicky otevírá
     okénko do vesmíru pro každého. Jeho cílem je posouvat hranice poznání a sdílet
     je s ostatními.
+
 - name: Ondra Pham
   photo: "/media/imgs/speakers/ondra-pham.webp"
   locations:
@@ -137,6 +143,7 @@
     Lego robotiky pro děti. Jeho snem je nejen pomoct světu, ale také inspirovat další
     generaci, aby se nebála tvořit, přemýšlet a měnit svět kolem sebe. Volný čas věnuje
     karate, které ho učí trpělivosti a vytrvalosti.
+
 - name: Kristýna Mičková
   photo: "/media/imgs/speakers/kristyna-mickova.webp"
   locations:
@@ -154,6 +161,7 @@
     Zúčastnila se celostátního kola soutěže ve Středoškolské odborné činnosti, kde
     se umístila na 11. místě. Svůj zájem o pedagogiku nadále prohlubuje ve svých projektech
     jako je například podcast ± Škola nebo web pro učitele matematiky ,,matematikamoderne.cz.
+
 - name: Pavel Jan Linka
   photo: "/media/imgs/speakers/pavel-linka.webp"
   locations:
@@ -172,6 +180,7 @@
     instagram: https://www.instagram.com/pavellinka/
     linkedin: https://cz.linkedin.com/in/pavel-jan-linka-855685328
   bio: Pavel je čerstvým studentem Vysoké školy chemicko-technologické v Praze a se Zvaž vědu! je již od počátku. Od střední školy se zajímá o nejrůznější vědecká témata z oblasti biochemie a molekulární biologie. Během studia na gymnáziu se zúčastnil chemické a biologické olympiády, aktivit ve spolku Talnet a na svém studijním pobytu v Německu soutěže Jugend forscht. Dnes pracuje na Ústavu organické chemie a biochemie AV ČR. Mimo vědu hraje v symfonickém orchestru na trubku a věnuje se cyklistice.
+
 - name: Štěpánka Keprtová
   photo: "/media/imgs/speakers/stepanka-keprtova.webp"
   locations:
@@ -188,6 +197,7 @@
     který je znám jako rakovina? Nicméně se ale neštítí ani terénní biologie, kterou
     si zakusila ve švýcarských Alpách na International Wildlife Research Week. Ani
     popularizace vědy jí není cizí, podílí se na projektech LASAR a CZECHOPES.
+    
 - name: Simon Klinga
   photo: "/media/imgs/speakers/simon-klinga.webp"
   locations:
@@ -207,6 +217,7 @@
     Jeho cesta začala Expedicí Mars, pokračovala výhrou mezinárodní soutěže Conrad
     Challenge a vysláním satelitu do vesmíru. Umístil se v TOP2 v soutěži Středoškolák
     roku 2024 a Forbes ho zahrnul do 30 pod 30 pro rok 2024.
+
 - name: Anna Černá
   photo: "/media/imgs/speakers/anna-cerna.webp"
   locations:
@@ -220,6 +231,7 @@
     linkedin: ''
     facebook: ''
   bio: ''
+
 - name: Eduard Plic
   photo: "/media/imgs/team/eda.webp"
   locations:
@@ -235,6 +247,7 @@
     v oboru fyzika, což mu zajistilo postup na mezinárodní olympiádu EUCYS. Zároveň
     také získal bronzovou medaili na Mezinárodní olypiádě v astronomii a astrofyzice.
     Ve volném čase rád hraje na trubku a věnuje se fotografování.
+
 - name: Tomáš Datinský
   photo: "/media/imgs/speakers/tomas-datinsky.webp"
   locations:
@@ -248,6 +261,7 @@
     linkedin: ''
     facebook: ''
   bio: ''
+
 - name: Michal Křipač
   photo: "/media/imgs/speakers/michal-kripac.webp"
   locations:
@@ -265,6 +279,7 @@
     tím související webová technologie Lemon. Vedle informatiky se věnuje také experimentální
     elektronické hudbě a vyrábění vlastních nástrojů kolem brněnského kolektivu Bastl
     Instruments.
+
 - name: Sebastian Matoušek
   photo: "/media/imgs/speakers/sebastian-matousek.webp"
   locations:
@@ -278,6 +293,7 @@
     linkedin: https://www.linkedin.com/in/sebastian-matou%C5%A1ek-825ba128a/
     facebook: ''
   bio: ''
+
 - name: Evelína Voleská
   photo: "/media/imgs/speakers/evelina-voleska.webp"
   locations:
@@ -295,6 +311,7 @@
     a České hlavičky, a dokonce se jí podařilo vycestovat na letní školu do Oxfordu.
     Své aktivity v akademickém prostředí vyvažuje dobrovolnickou činností a zajímá
     se také o divadelní tvorbu.
+
 - name: Matěj Šicner
   photo: "/media/imgs/speakers/matej-sicner.webp"
   locations:
@@ -314,24 +331,7 @@
     kole EXPO Science AMAVET. Je členem týmu LASAR, který vypustil družici do vesmíru.
     Absolvoval semestrální studium a stáž ve Vídni a popularizuje vědu – pořádá AstroPi
     hackathony, Zvaž vědu! Brno a vede vědecký kroužek na škole.
-- name: Nikolas Pippal
-  photo: "/media/imgs/speakers/nikolas-pippal.webp"
-  locations:
-  - Plzeň
-  lectures:
-  - title: Síla a moc aplikované matematiky
-    youtube: https://www.youtube.com/watch?v=ioyomuRd9TE
-  contact:
-    instagram: https://www.instagram.com/nik_pippal/
-    website: ''
-    linkedin: https://www.linkedin.com/in/nikolas-pippal-b2816b307/
-    facebook: ''
-  bio: Nik je studentem Gymnázia Olomouc-Hejčín. Jako mladý vědec se zaměřuje na propojení
-    výzkumu s praktickými řešeními pro každodenní život. Vyvinul nástroj pro detekci
-    mozkových nádorů a software pro snižování přehřívání měst. Za své projekty získal
-    ocenění na mezinárodních soutěžích ISEF a EUCYS a díky letu Zero-G se stal ambasadorem
-    České cesty do vesmíru. Kromě vědy se aktivně věnuje roli hokejového rozhodčího
-    a rád tráví čas na kole, kde nachází inspiraci.
+
 - name: Tereza Przeczková
   photo: "/media/imgs/speakers/tereza-przeczkova.webp"
   locations:
@@ -349,6 +349,7 @@
     Českých hlaviček. Je také aktivní dobrovolnicí, působí jako vedoucí v programu
     DofE a zabývá se prevencí syndromu vyhoření v organizaci Nevyhasni. Mimo to se
     závodně věnuje olympijskému vzpírání.
+
 - name: Boris Brovkin
   photo: "/media/imgs/team/boris.webp"
   locations:
@@ -363,6 +364,7 @@
     stránek, grafiky, stavebnictví a vesmíru. S týmem LASAR se podílel na vypuštění
     vlastního satelitu na oběžnou dráhu. Kromě techniky je i vášnivý sportovec ---
     10 let závodně plaval a třetím rokem pravidelně posiluje. Rád se také věnuje dobrovolnictví.
+
 - name: Anna Krebsová
   photo: "/media/imgs/speakers/anna-krebsova.webp"
   locations:
@@ -384,6 +386,7 @@
     středoškolský rok na gymnáziu v Německu, letos se zařadila mezi TOP25 nejaktivnějších
     středoškoláků roku a v nadcházejícím studiu by se ráda věnovala letectví. Popularizuje
     aerospace a soutěže ESA, které i sama absolvuje.
+
 - name: Pavel Chaloupka
   photo: "/media/imgs/speakers/pavel-chaloupka.webp"
   locations:
@@ -403,6 +406,7 @@
     se galvanickým pokovováním 3D tisku. Účastní se chemické olympiády a rád propojuje
     teorii s praxí. Ve volném čase tvoří, experimentuje a plánuje budoucnost v oblasti
     výzkumu a chemického inženýrství.
+
 - name: Metoděj Svoboda
   photo: "/media/imgs/speakers/metodej-svoboda.webp"
   locations:
@@ -420,6 +424,7 @@
     Díky letu Zero-G je oficiálním ambasadorem České cesty do vesmíru. Mimo vědu se
     angažuje ve studentských spolcích jako ProStředoškoláky nebo Student Cyber Games.
     Spolu s bráchou přednáší na konferencích, akademiích atd.
+
 - name: Filip Vyskočil
   photo: "/media/imgs/speakers/filip-vyskocil.webp"
   locations:
@@ -433,6 +438,7 @@
     přírodovědných soutěží. V rámci Biologické olympiády se mu podařilo zúčastnit
     se mezinárodní soutěže EOES. Mezi jeho další záliby patří hra na klavír, focení
     a orientační běh.
+
 - name: Petr Ivan
   photo: "/media/imgs/speakers/petr-ivan.webp"
   locations:
@@ -476,6 +482,7 @@
   bio: Tomáš je studentem prvního ročníku na Katedře kybernetiky FAV ZČU. Mezi jeho
     zájmy patří fyzika, matematika, robotika ale i spousty dalších. Věnuje se také
     popularizaci vědy a techniky. Miluje koně.
+
 - name: Julie Beritová
   photo: "/media/imgs/speakers/julieberitova.webp"
   locations:
@@ -493,6 +500,7 @@
     a hraje v muzikále. Účastní se astrokurzu v Planetum, biologických nebo logických
     olympiád a miluje sport. Ve svém volném čase dělá pravidelně freediving, jezdí
     na koních, zpívá a hraje na klavír.
+
 - name: Matěj Dittrich
   photo: "/media/imgs/speakers/matejdittrich.webp"
   locations:
@@ -511,6 +519,7 @@
     Středoškolské odborné činnosti (SOČ), v níž se zabýval vyvrácením ploché Země.
     Ve volném čase se věnuje sportům – především jízdě na divoké vodě – nebo hraje
     divadlo.
+
 - name: Daniel Pojhan
   photo: "/media/imgs/speakers/danielpojhan.webp"
   locations:
@@ -530,6 +539,7 @@
     tréninku řídících letového provozu pomocí AI. Aktuálně se zaměřuje především na
     informatiku/kybernetiku v letectví, zejména pak konstruováním dronů nebo vývojem
     softwaru v oblasti řízení letového provozu.
+
 - name: Michal Forgó
   photo: "/media/imgs/speakers/michalforgo.webp"
   locations:
@@ -545,6 +555,7 @@
     učení pro detekci pneumonie. V plzeňském SIT Portu pak pracuje s některými z nejpokročilejších
     robotů. Vedle odborného zaměření se aktivně věnuje také adrenalinovým a bojovým
     sportům.
+
 - name: Michal Fišer
   photo: "/media/imgs/speakers/michalfiser.webp"
   locations:
@@ -559,6 +570,7 @@
     reprezentoval Českou republiku na International Young Physicists' Tournament, kde
     jeho tým získal bronzovou medaili. Ve volném čase sportuje, hraje v divadle a učí
     se na klavír.
+
 - name: Daniel Jedlička
   photo: "/media/imgs/speakers/danieljedlicka.webp"
   locations:
@@ -573,6 +585,7 @@
     Ve volném čase se zajímá o historii, filosofii a hraje na kytaru. V roce 2025
     reprezentoval Českou republiku na International Young Physicists' Tournament ve
     Švédském Lundu, odkud si přivezl bronzovou medaili.
+    
 - name: Jakub Kutscherauer
   photo: "/media/imgs/speakers/jakubkutscherauer.webp"
   locations:
@@ -743,3 +756,69 @@
   contact:
     instagram: https://www.instagram.com/stepa.l02/
     linkedin: https://www.linkedin.com/in/stepan-latislav/
+
+- name: Nikolas Pippal
+  photo: "/media/imgs/speakers/nikolas-pippal.webp"
+  locations:
+  - Plzeň
+  lectures:
+  - title: Síla a moc aplikované matematiky
+    youtube: https://www.youtube.com/watch?v=ioyomuRd9TE
+  contact:
+    instagram: https://www.instagram.com/nik_pippal/
+    website: ''
+    linkedin: https://www.linkedin.com/in/nikolas-pippal-b2816b307/
+    facebook: ''
+  bio: Nik se zaměřuje na propojování výzkumu s praktickými řešeními, která mohou mít dopad na každodenní život. Ve svých projektech propojuje matematiku s medicínou či environmentalistikou a hledá způsoby, jak vědu převádět do praxe. Za své projekty získal ocenění na prestižních mezinárodních soutěžích ISEF, EUCYS a CASTIC. Díky letu Zero-G se stal ambasadorem České cesty do vesmíru a dnes je zakladatelem a CEO SATALISu, společnosti řešící přehřívání měst.
+
+- name: Adéla Podholová
+  photo: "/media/imgs/speakers/adela-podholova.webp"
+  locations:
+  - Praha
+  bio: Áďa je studentka Gymnázia Doctrina v Liberci. Je nadšená do přírodních věd a baví ji bádat v laboratoři a šťourat se do všeho, do čeho se šťourat lze. Nejraději má biologii a biochemii, ale nepohrdne ani astronomií či fyzikou. Vědu ji baví nejen dělat, ale i popularizovat a “vykládat o ní všem, koho to zajímá”. Má velice ráda rovněž historii a literaturu. Od 4 let tančí balet a od 7 let hraje divadlo. Volného času moc nemá, ale když už ho má, tráví ho sledováním Star Wars.
+
+- name: Lucie Ovčačíková
+  photo: "/media/imgs/speakers/lucie-ovcacikova.webp"
+  locations:
+  - Praha
+  bio: Lucka je absolventkou šestileté anglické sekce Gymnázia Olomouc-Hejčín. Ve škole ji nejvíce fascinuje chemie a biologie, kterým se věnuje i ve svém výzkumu zaměřeném na cyklizaci peptidů. S projektem uspěla v soutěžích SOČ a Konference mladých přírodovědců a letos reprezentovala Českou republiku na mezinárodním finále Regeneron ISEF. Po prázdninách se ponoří do studia všeobecného lékařství na Masarykově univerzitě. Ve volném čase ráda tráví čas s kamarády a sportuje.
+
+- name: Jonathan Skrla
+  photo: "/media/imgs/speakers/jonathan-skrla.webp"
+  locations:
+  - Praha
+
+- name: Daniel Biskup
+  photo: "/media/imgs/speakers/daniel-biskup.webp"
+  locations:
+  - Praha
+  bio: Dana odmalička zajímá vesmír. Prošel výběrovým řízením Zero-G, díky kterému zažil stav beztíže a dostal se do komunity velmi inspirativních lidí. Zažil v rámci české výpravy start rakety SLS na misi Artemis II a to ho pouze utvrdilo v jeho životním snu - stát se astronautem. O vesmíru přednáší na školách, veřejných akcích a v tomto oboru se dál vzdělává, třeba i formou stáží na Akademii věd ČR. Aktivně běhá, leze, plave, cestuje a miluje adrenalinové výzvy.
+
+- name: Jonáš Neruda
+  photo: "/media/imgs/speakers/jonas-neruda.webp"
+  locations:
+  - Praha
+  bio: Jonáš je studentem Gymnázia Josefa Jungmanna v Litoměřicích a od dětství ho fascinuje vesmír. V roce 2025 zažil stav beztíže v rámci projektu Zero-G a stal se ambasadorem České cesty do vesmíru. Na jaře 2026 měl možnost sledovat start mise Artemis II přímo z mysu Canaveral na Floridě. Svůj kosmický zájem se snaží všemožně propagovat nejen mezi svými vrstevníky, protože věří, že vesmír baví.
+
+- name: Daniel Jokl
+  photo: "/media/imgs/speakers/daniel-jokl.webp"
+  locations:
+  - Praha
+  bio: Dan je absolventem Masarykova gymnázia v Plzni. Již řadu let se intenzivně zajímá o medicínu, neurovědu a biomedicínský výzkum. Je pravidelným účastníkem neurovědeckých a chirurgických kongresů a během studia absolvoval stáže v institucích, jako jsou Neurochirurgická klinika ÚVN, Poliklinika na Národní, NTC, RNB či IKEM, kde měl možnost poznat moderní medicínu i klinický výzkum z bezprostřední blízkosti. Součástí jeho studijní cesty byl také roční stipendijní pobyt na gymnáziu v Německu, který mu umožnil získat mezinárodní zkušenosti a rozšířit si pohled na vzdělávání i vědu. Ve volném čase se věnuje anatomické kresbě a několika sportům. 
+
+- name: Kristýna Říhová
+  photo: "/media/imgs/speakers/kristyna-rihova.webp"
+  locations:
+  - Praha
+
+- name: Matěj Dvořák
+  photo: "/media/imgs/speakers/matej-dvorak.webp"
+  locations:
+  - Praha
+  bio: Matěj je student fyziky na univerzitě ETH Zürich. Zkušenosti z praxe v CERNu ho utvrdily v tom, že se chce věnovat vědě a studovat fungování vesmíru. Ve studiu ho finančně podporuje nadace Kellner Family Foundation. Má rád hory, lezení, snowboarding a cestování. V létě ho můžete potkat jako vedoucího dětských táborů.
+
+- name: Leonard Walletzký
+  photo: "/media/imgs/speakers/leonard-walletzky.webp"
+  locations:
+  - Praha
+  bio: Leonard je studentem Harvardovy univerzity, kde studuje neurovědy a divadlo. Velmi ho baví říkat tuto kombinaci a zmást tak všechny v okolí dvou kilometrů. Od svých 16 let se věnuje výzkumu autismu, se kterým stále pokračuje. S ním se zúčastnil soutěží, jako jsou SOČ, České hlavičky a Regeneron ISEF v USA. Mimo akademické prostředí se věnuje divadlu a tanci – na Harvardu choreografoval 2 muzikály a příští rok bude režírovat muzikál Ride the Cyclone.
