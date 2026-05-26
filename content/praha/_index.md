@@ -25,7 +25,7 @@ newParticipants: "250"
 newPresentations: "10"
 linkToLecturesYouTube: https://www.youtube.com/playlist?list=PL1NMrPWjk08QP6uhihPKJG3X3rgfydf6l
 
-abstracts: false
+abstracts: true
 abstractUrl: "/praha/info/abstrakty26"
 
 importantInfo: false
