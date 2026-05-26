@@ -31,13 +31,13 @@
 - id: nf-iocb-tech
   name: Nadační fond IOCB Tech 
   type: partner 
-  city: Praha 
+  city: Praha
   link: https://nf-iocbtech.cz/
 
 - id: radovanek-cz
   name: Radovánek
-  type: partner
-  city: Plzeň
+  type: podporovatel
+  city: 'Plzeň, Praha'
   link: 'https://www.radovanek.cz'
 
 - id: plzensky-kraj-cz
@@ -61,7 +61,7 @@
 - id: nadace-orlen-unipetrol
   name: Nadace Orlen Unipetrol 
   type: podporovatel
-  city: 
+  city: 'Praha'
   link: https://www.nadaceorlenunipetrol.cz/
 
 - id: ceska-cesta-do-vesmiru
@@ -85,25 +85,25 @@
 - id: univerzita-karlova
   name: Univerzita Karlova
   type: podporovatel
-  city: FameLab
+  city: 'FameLab, Praha'
   link: 'https://www.cuni.cz/'
 
 - id: vut
   name: Vysoké učení technické v Brně
   type: podporovatel
-  city: Brno
+  city: 'Brno'
   link: https://www.vut.cz/
 
 - id: stemhub
   name: STEM Hub
   type: podporovatel
-  city:
+  city: 
   link: 'https://www.stemhub.cz/'
 
 - id: plnoc
   name: Plzeňská přednášková noc
   type: podporovatel
-  city: Plzeň
+  city: 'Plzeň'
   link: 'https://www.plnoc.cz/'
 
 # Skrytí partneři (showOnPartnersPage: false)

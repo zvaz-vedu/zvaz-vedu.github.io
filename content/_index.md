@@ -2,9 +2,9 @@
 title: Zvaž vědu!
 layout: home
 
-events: "7"
-speakers: "60+"
-participants: "1600+"
+events: "8"
+speakers: "70+"
+participants: "1800+"
 ambasadors: "40+"
 organizers: "30+"
 
