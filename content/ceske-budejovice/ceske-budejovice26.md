@@ -6,6 +6,8 @@ layout: report
 
 headerTitle: "První Zvaž vědu! v Českých Budějovicích"
 headerText: "Ohlédnutí za Zvaž vědu! České Budějovice 2026"
+headerImg: "/media/imgs/gallery/ceske-budejovice26/ZV_Bude%cc%8cjovice_090407.jpg"
+
 ---
 **Věda** má lidstvu co nabídnout a už **středoškoláci** se jí mohou věnovat. To si kladl za cíl ukázat **projekt Zvaž vědu\!**, jehož osmý počin se uskutečnil právě v nově zrekonstruované **Aule Jihočeské univerzity v Českých Budějovicích** dne **22\. května 2026**. Více než **200 studentů** z **30 různých škol** z Jihočeského kraje ale i mimo něj se v rámci akce sešlo na jednom místě s cílem dozvědět se něco nového o současné vědě a příležitostech pro středoškoláky. Za celou realizace akce přitom stojí rovněž **sami studenti**.
 
