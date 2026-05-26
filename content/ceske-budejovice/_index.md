@@ -4,7 +4,7 @@ layout: location
 
 headerTitle: "v Budějicích"
 headerText: "22. května v Aule Jihočeské univezity"
-headerPhoto: "/media/imgs/locations/brno-header.webp"
+headerPhoto: "/media/imgs/gallery/ceske-budejovice26/ZV_Bude%cc%8cjovice_091834.jpg"
 location: Aula Jihočeské univerzity
 
 events: "2"
@@ -12,7 +12,7 @@ participants: "220"
 
 liveAction: true
 nowAction: true
-pastActions: false
+pastActions: true
 
 eventTime: 2026-05-22T09:00:00
 team: [maty, honza, eda, lucka, tomáš, honza-m]
