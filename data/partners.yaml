@@ -106,6 +106,12 @@
   city: 'Plzeň'
   link: 'https://www.plnoc.cz/'
 
+- id: nf-zarovky
+  name: Nadační fond Žárovky
+  type: podporovatel
+  city: 
+  link: 'https://www.zarovky.org/'
+
 # Skrytí partneři (showOnPartnersPage: false)
 - id: british-embassy-prague
   name: Britské velvyslanectví v Praze
