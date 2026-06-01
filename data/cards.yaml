@@ -28,6 +28,15 @@
 
 - date: 2026-06-01
   type: update
+  icon: "fa-solid fa-hourglass-half"
+  title: "Program Praha 2026 zveřejněn!"
+  description: "Chceš vědět, v kolik hodin začne jaká přednáška? Už nemusíš čekat, program je zveřejněn!"
+  link:
+    url: "/praha/"
+    text: "Chci to vidět!"
+
+- date: 2026-06-01
+  type: update
   icon: "fa-solid fa-user-plus"
   title: "Přijímáme náhradníky do Prahy!"
   description: "Letošní Zvaž vědu! Praha se zaplnilo doopravdy velmi rychle, i nadále však přijímáme náhradníky, tak neváhej a přihlas se!"
