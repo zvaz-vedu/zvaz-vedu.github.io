@@ -7,6 +7,8 @@ headerText: "Přečti abstrakty a vyber si ty pravé přednášky pro Zvaž věd
 #úvodní fotky se berou v lecture.html jako name.webp
 ---
 
+<h1 style="padding-bottom: 20px">Přednášky</h1>
+
 {{< lecture
 name="Proč se léčiva zaseknou aneb role mucinů ve střevním hlenu"
 speaker="Adéla Podholová"
@@ -56,3 +58,30 @@ abstract="Co čeká lidstvo při návratu k Měsíci? Artemis II navazuje na ér
 name="Elektromagnetické spektrum: Univerzální klíč k pochopení vesmíru"
 speaker="Jan Herzig"
 abstract="Každý z nás někdy na obloze viděl duhu. Ve vědě má tento půvabný jev zcela unikátní význam. Jde totiž o elektromagnetické spektrum - jedinečný nástroj, na kterém se zakládá nejeden vědecký obor a pro astrofyziku to platí dvojnásob. Díky němu můžeme zjišťovat složení stovky světelných let vzdálených hvězd, pátrat po exoplanetách a stopách života na nich nebo odhalovat, jak vypadalo formování úplně prvních galaxií. Právě na exoplanety a jejich vývoj jsem zaměřil svůj výzkum, ve kterém jsem využíval dat z těch nejdokonalejších astronomických přístrojů na světě. To mi otevřelo cestu do SOČky a ta následně až na Taiwan International Science Fair. Přijďte zjistit, kam až může sahat síla jediného vědeckého konceptu a jak se už na střední nebát světové vědy!">}}
+
+<h1 style="padding-bottom: 20px; padding-top: 40px">Workshopy</h1>
+
+{{< lecture
+name="Behind The Scenes: Jak funguje věda?"
+speaker="Pavel Jan Linka"
+abstract="Grant, RNDr., abstrakt, hypotéza, open access…? Jestli vám z těchto pojmů spojených s vědou jde hlava kolem, nezoufejte! V tomto workshopu si společně objasníme, na čem věda stojí a jak to za její oponou funguje. Půjdeme od samotného začátku, jaký je rozdíl mezi aplikovanou a tzv. základní vědou. Řekneme si, kam se musí člověk ve vzdělání dostat, aby mohl pracovat jako plnohodnotná/ý vědkyně/vědec. Dozvíte se, z čeho se platí věda a vědci. Objasním, co je to vědecká hypotéza a zkusíte si nějakou formulovat. Mimo to si sami poskládáte strukturu vědeckého článku k vymyšlenému objevu. Na závěr bych nastínil, co je to open access publikování a proč je to pro vědu důležité." >}}
+
+{{< lecture
+name="Ať to zní dobře: Ono je jedno, co tam bude..."
+speaker="Metoděj Svoboda, Antonín Svoboda"
+abstract="Turbo speedrun workshop pro nadchnutí prezentačními kompetencemi. Sice se za půl hodiny nenaučíme kompletně překopat způsob, jakým mluvíme, ale rozhodně stojí za ZVÁŽení se naučit to dobře odprezentovat, když děláš VĚDU. Projedeme způsob, jak na mluvení nahlédnout bez přesvědčení, že učit se to musí znamenat: „nejsem autentický/á“. Přijď tu autenticitu podpořit!" >}}
+
+{{< lecture
+name="Chci být vědkyní: A co dál?"
+speaker="Pavla Hubálková, Tereza Jelínková"
+abstract="Jaké je to být vědkyní? Je to pro mě? Jak začít? Co můžu dělat už na střední? Na tyto a další otázky budeme hledat odpovědi s Pavlou Hubálkovou a Terezou Jelínkovou. Pavla původně chtěla být neurovědkyní, ale nakonec se z ní stala vědecká novinářka a autorka knihy Neviditelné ženy ve vědě. V ní pomocí rozhovorů s českými vědkyněmi a mezikapitol plných dat dokazuje, že věda je pestrá a inspirativní a vědkyní nebo vědcem se může stát kdokoliv, kdo bude chtít. Středoškolačka Terka je členkou vedoucího týmu STEM HUB a již má zkušenosti ze tří výzkumných stáží – nabídne vám tak praktické tipy „jak se stát vědkyní“." >}}
+
+{{< lecture
+name="SkOČ do SOČ!"
+speaker="Matěj Šicner, Anna Černá, Tomáš Pazourek"
+abstract="Proniknout do světa vědy už na střední – přesně to může nabídnout účast ve Středoškolské odborné činnosti. Ať už vás zajímají odmocniny z jedné, kvantové počítače, výroba proteinů, ekonomika či historie, své místo mezi 18 obory najde každý výzkum. Jak však svoji vášeň pro vědu přetvořit v několik desítek stránek dlouhou práci založenou na ročním vědeckém výzkumu? Jak takovou práci obhájit? A co všechno mi to může přinést? Přijďte to zjistit s několika ostřílenými SOČkaři, kteří vám odhalí, jak se do této nelehké soutěže pustit a zodpoví všechny otázky, které vás kolem ní mohou zajímat!" >}}
+
+{{< lecture
+name="Kosmické technologie v praxi: Materiály ve vesmíru"
+speaker="Matyáš Matta, Ondřej Heigl"
+abstract="Zajímalo vás někdy, jaké technologie se aplikují v těch nejmodernějších raketách? V tomto workshopu se dozvíte něco více o materiálech, které se ve vesmírném průmyslu využívají. Prakticky si vyzkoušíte jejich vlastnosti, od pevnosti až po tepelnou vodivost, a určíte, který materiál je pro stavbu kosmických lodí ideální. Workshop doplní prezentace, která představí současný stav technologie materiálů v raketách Evropské vesmírné agentury (ESA)." >}}
