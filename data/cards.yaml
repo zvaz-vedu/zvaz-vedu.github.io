@@ -26,6 +26,24 @@
     url: "/ambasadori"
     text: Ambasadoři
 
+- date: 2026-06-01
+  type: update
+  icon: "fa-solid fa-user-plus"
+  title: "Přijímáme náhradníky do Prahy!"
+  description: "Letošní Zvaž vědu! Praha se zaplnilo doopravdy velmi rychle, i nadále však přijímáme náhradníky, tak neváhej a přihlas se!"
+  link:
+    url: "/registrace-praha/"
+    text: Registrace
+
+- date: 2026-05-23
+  type: update
+  icon: "fa-solid fa-hourglass-half"
+  title: "Zvaž vědu! České Budějovice za námi!"
+  description: "Moc děkujeme za přízeň, akce Zvaž vědu! České Budějovice 2026 je za námi. Přečtěte si, jak to celé probíhalo a co se dělo!"
+  link:
+    url: "/ceske-budejovice/ceske-budejovice26"
+    text: "Tisková zpráva"
+
 - date: 2026-05-13
   type: update
   icon: "fa-solid fa-hourglass-half"
