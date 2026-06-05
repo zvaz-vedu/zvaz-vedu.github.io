@@ -28,11 +28,11 @@
   city: Plzeň, Brno, České Budějovice
   link: https://www.koop.cz/
 
-- id: nf-iocb-tech
-  name: Nadační fond IOCB Tech 
+- id: iocb-foundation
+  name: IOCB Foundation
   type: partner 
   city: Praha
-  link: https://nf-iocbtech.cz/
+  link: https://iocbfoundation.cz/en/
 
 - id: radovanek-cz
   name: Radovánek
