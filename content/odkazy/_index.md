@@ -4,6 +4,12 @@ live: True
 layout: "linktree" # Optional: specifies which layout to use
 # Add all your link data below
 links:
+  - url: "/slido-jednaci"
+    icon: "fa-solid fa-question"
+    text: "Slido Jednací sál"
+  - url: "/slido-frydlant"
+    icon: "fa-solid fa-question"
+    text: "Slido Frýdlantský salonek"
   - url: "/feedback"
     icon: "fa-solid fa-comments"
     text: "Zpětná vazba"
