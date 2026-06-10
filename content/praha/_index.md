@@ -18,12 +18,13 @@ location: Senát Parlamentu ČR
 
 team: [honza, maty, eda, tomáš, lucka, jakub, michal, david, boris]
 
-registration: "https://forms.gle/PbfwpSe5mmgXwJvC7"
+registration: false
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQOQdFgAmFgz7wgg7e-27jPlIFPoPsdfxjsFHkVixJUB4bP4tQ4r32sE8FZii_fEbtJOPohskrXEo1t/pubhtml?gid=1729122906&single=true"
 
 newParticipants: "250"
 newPresentations: "10"
-linkToLecturesYouTube: https://www.youtube.com/playlist?list=PL1NMrPWjk08QP6uhihPKJG3X3rgfydf6l
+linkToLecturesYouTube: https://www.youtube.com/@zvazvedu
+
 
 abstracts: true
 abstractUrl: "/praha/info/abstrakty26"
