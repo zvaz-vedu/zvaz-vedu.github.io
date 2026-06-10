@@ -4,7 +4,7 @@ layout: location
 
 headerTitle: "v Budějicích"
 headerText: "22. května v Aule Jihočeské univezity"
-headerPhoto: "/media/imgs/gallery/ceske-budejovice26/ZV_Bude%cc%8cjovice_091834.jpg"
+headerPhoto: "/media/imgs/gallery/ceske-budejovice26/ZV_Bude%cc%8cjovice_091834.webp"
 location: Aula Jihočeské univerzity
 
 events: "2"

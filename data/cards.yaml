@@ -26,6 +26,25 @@
     url: "/ambasadori"
     text: Ambasadoři
 
+
+- date: 2026-06-10
+  type: update
+  icon: "fa-solid fa-meteor"
+  title: "Příležitost pro astronomy!"
+  description: "Zajímá tě vesmír? Chceš se dozvědět, jak dnes vypadá reálná věda v této oblasti a třeba se do ní přímo sám zapojit? Máš jedinečnou šanci s unikátni letní školou AV ČR!"
+  link:
+    url: "https://www.vesmirprolidstvo.cz/cs/aktuality/Letni-skola-Astronomem-na-tri-dny/"
+    text: "Chci vědět víc!"
+
+- date: 2026-06-10
+  type: update
+  icon: "fa-solid fa-hourglass-half"
+  title: "Praha je za námi!"
+  description: "Byl jsi na akci? Líbila se ti? Prosíme vyplň formulář zpětné vazby, pomůže nám to zlepšit se pro příští ročníky!"
+  link:
+    url: "/feedback/"
+    text: "Zpětná vazba!"
+
 - date: 2026-06-01
   type: update
   icon: "fa-solid fa-hourglass-half"
