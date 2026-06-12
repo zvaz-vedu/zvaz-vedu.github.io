@@ -37,4 +37,4 @@ Zvaž vědu\! nabízí **unikátní platformu**, kde se mohou úspěšní mladí
 Průběžně rozšiřovanou **fotogalerii z akce dostupnou ke stažení** v plné kvalitě naleznete [**ZDE**](https://drive.google.com/drive/folders/1aemCnzNRJlKoz5hwEPkzUkWwFJEYK2VU?usp=sharing). Autorem všech fotografií je **Karel Horák**.
 
 {{< program/divider >}}
-{{< program/praha25 >}}
+{{< program/praha26 >}}
