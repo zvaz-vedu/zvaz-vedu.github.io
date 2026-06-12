@@ -33,6 +33,14 @@
     url: "/ambasadori"
     text: Ambasadoři
 
+- date: 2026-06-12
+  type: update
+  icon: "fa-solid fa-meteor"
+  title: "introfilm zveřejněn!"
+  description: "Právě jsme zveřejnili introfilm akce Zvaž vědu! Praha 2026, který vytvořila talentovaná Anežka Střelová. Pusťte si jej a nalaďte se na akci!"
+  link:
+    url: "https://www.youtube.com/watch?v=TD9PU5G6Moc"
+    text: "Chci si ho pustit!"
 
 - date: 2026-06-10
   type: update
