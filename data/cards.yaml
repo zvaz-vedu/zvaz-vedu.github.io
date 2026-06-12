@@ -12,6 +12,13 @@
     url: "/ceske-budejovice/"
     text: O akci
 
+- date: 2026-06-08
+  type: event
+  title: Zvaž vědu! Praha 2026
+  link:
+    url: "/praha/"
+    text: O akci
+
 - date: 2026-04-26
   type: event
   title: Víkend řečníků
