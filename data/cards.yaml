@@ -33,6 +33,15 @@
     url: "/ambasadori"
     text: Ambasadoři
 
+- date: 2026-06-22
+  type: update
+  icon: "fa fa-trophy"
+  title: "Náš ředitel je STŘEDOŠKOLÁK ROKU 2026"
+  description: "Ředitel organizace Zvaž vědu! Jan Herzig získal prestižní ocenění Středoškolák roku 2026, které se uděluje nejvýznamnějším středoškolským osobnostem v České republice."
+  link:
+    url: https://www.instagram.com/p/DZ13xNVAq9l/?img_index=1
+    text: Instagram!
+
 - date: 2026-06-12
   type: update
   icon: "fa-solid fa-meteor"
