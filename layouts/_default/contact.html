@@ -32,12 +32,11 @@
                     
                     <div class="team-member-info">
                         <strong>{{ .name }}</strong>
-                        <p>{{ .position }}</p>
-                        <p style="margin-bottom:.5rem">{{ .school }}</p>
+                        <p style="margin-bottom:.5rem" >{{ .position }}</p>
 
                         {{/* Email */}}
                         {{ if .mail }}
-                        <p>
+                        <p style="margin-bottom:.5rem">
                             <i class="fa-regular fa-envelope" aria-hidden="true"></i>
                             <a href="mailto:{{ .mail }}">{{ .mail }}</a>
                         </p>
