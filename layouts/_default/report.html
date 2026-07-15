@@ -16,12 +16,18 @@
                 <div class="img-body">
                     {{$name := .File.BaseFileName}}
                     {{$dir := printf "static/media/imgs/gallery/%s" $name}}
-                    {{range readDir $dir}}
-                        {{if not (eq .Name ".DS_Store")}}
-                            <a href="/media/imgs/gallery/{{$name}}/{{.Name}}" class="glightbox" data-gallery="gallery1">
-                                <img src="/media/imgs/gallery/{{$name}}/{{.Name}}">
-                            </a>
+                    
+                    {{/* Ochrana: Hugo zkontroluje, zda složka reálně existuje */}}
+                    {{if fileExists $dir}}
+                        {{range readDir $dir}}
+                            {{if not (eq .Name ".DS_Store")}}
+                                <a href="/media/imgs/gallery/{{$name}}/{{.Name}}" class="glightbox" data-gallery="gallery1">
+                                    <img src="/media/imgs/gallery/{{$name}}/{{.Name}}">
+                                </a>
+                            {{end}}
                         {{end}}
+                    {{else}}
+                        <p style="font-style: italic; opacity: 0.7;">Fotografie připravujeme...</p>
                     {{end}}
                 </div>
                 <script>

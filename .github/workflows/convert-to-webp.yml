@@ -7,6 +7,7 @@ on:
     paths:
       - 'static/**.jpg' # Adjust paths to your image directories
       - 'static/**.png'
+      - 'static/**.JPG'
       - 'static/**.jpeg'
       - 'content/**.jpg'
       - 'content/**.png'
@@ -15,7 +16,7 @@ on:
 jobs:
   convert-images:
     runs-on: ubuntu-latest
-    permissions: # <--- ADD THIS BLOCK HERE
+    permissions:
       contents: write # Grants write access to the repository contents
     steps:
       - name: Checkout repository
@@ -28,16 +29,31 @@ jobs:
         run: |
           find . -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | while IFS= read -r -d $'\0' file; do
             webp_file="${file%.*}.webp"
+            
+            # Convert if WebP doesn't exist OR if original is newer
             if [ ! -f "$webp_file" ] || [ "$file" -nt "$webp_file" ]; then
               echo "Converting $file to $webp_file"
-              cwebp "$file" -o "$webp_file" -q 80 # -q for quality, adjust as needed
+              
+              # Execute conversion; if successful, delete the source file
+              if cwebp "$file" -o "$webp_file" -q 80; then
+                echo "Conversion successful. Removing original: $file"
+                rm "$file"
+              else
+                echo "Warning: Failed to convert $file. Keeping original."
+              fi
+            else
+              # If the WebP is already up to date, just clean up the lingering original
+              echo "WebP is already up to date. Removing original: $file"
+              rm "$file"
             fi
           done
 
-      - name: Commit and Push WebP images
+      - name: Commit and Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # git add . will stage both the new .webp files and the deletions of the old files
           git add .
-          git diff --staged --quiet || git commit -m "Auto: Convert images to WebP"
+          git diff --staged --quiet || git commit -m "Auto: Convert images to WebP and remove originals"
           git push

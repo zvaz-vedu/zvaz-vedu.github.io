@@ -4,7 +4,7 @@ layout: location
 
 headerTitle: "v Budějicích"
 headerText: "22. května v Aule Jihočeské univezity"
-headerPhoto: "/media/imgs/locations/brno-header.webp"
+headerPhoto: "/media/imgs/gallery/ceske-budejovice26/ZV_Bude%cc%8cjovice_091834.webp"
 location: Aula Jihočeské univerzity
 
 events: "2"
@@ -12,12 +12,12 @@ participants: "220"
 
 liveAction: true
 nowAction: true
-pastActions: false
+pastActions: true
 
 eventTime: 2026-05-22T09:00:00
 team: [maty, honza, eda, lucka, tomáš, honza-m]
 partners: [eserocz-cz, prf-jcu]
-registration: "https://docs.google.com/forms/d/e/1FAIpQLSe3WYqGB_e-FdJJuaYs2jkZB--LXBf0ajO4ZL1AD53QzFbMuA/viewform?usp=dialog"
+registration: false
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcpKuxnNwZbuyZLzKFEXvYLrjlUWQOBuawcrhuylLuVIRfxf454e3EmpBl5qXWyGqUDkigq9eqPGt4/pubhtml?gid=1097034692&single=true"
 infoVid: false
 

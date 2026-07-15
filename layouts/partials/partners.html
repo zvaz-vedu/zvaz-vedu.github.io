@@ -7,13 +7,18 @@
 {{ $supportersList := slice }}
 
 {{ range $allPartners }}
-    {{ $isLocationMatch := in .city $currentCity }}
+    {{/* Prevedeme .city na string pomoci 'print', abychom zabranili chybam u prazdnych poli (nil) */}}
+    {{ $isLocationMatch := in (print .city) $currentCity }}
     {{ $isVisible := (ne .showOnPartnersPage false) }}
 
     {{ if and $isLocationMatch $isVisible }}
-        {{ if or (eq .type "generalni-partner") (eq .type "hlavni-partner") (eq .type "partner") }}
+        
+        {{/* Očistíme .type od neviditelných mezer a sjednotíme na malá písmena */}}
+        {{ $type := lower (trim .type " ") }}
+        
+        {{ if or (eq $type "generalni-partner") (eq $type "hlavni-partner") (eq $type "partner") }}
             {{ $partnersList = $partnersList | append . }}
-        {{ else if eq .type "podporovatel" }}
+        {{ else if eq $type "podporovatel" }}
             {{ $supportersList = $supportersList | append . }}
         {{ end }}
     {{ end }}
