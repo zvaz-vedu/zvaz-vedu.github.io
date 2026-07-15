@@ -1,5 +1,5 @@
 ---
-title: "Ohlasy"
+title: "Média"
 layout: testimonials
 ---
 <!-- header jsem ODSTRANIL protože byl ošklivý!! 
