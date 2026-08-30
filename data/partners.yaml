@@ -112,6 +112,18 @@
   city: 
   link: 'https://www.zarovky.org/'
 
+- id: linet
+  name: Linet
+  type: partner
+  city: 
+  link: 'https://www.linet.cz/'
+
+- id: gk
+  name: GK Software Czech Republic
+  type: partner
+  city: 
+  link: 'www.gk-software.com/us/portals/careers-czech-republic-cz'
+
 # Skrytí partneři (showOnPartnersPage: false)
 - id: british-embassy-prague
   name: Britské velvyslanectví v Praze
