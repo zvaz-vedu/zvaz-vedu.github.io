@@ -1,3 +1,12 @@
+- date: 2026-09-17
+  type: update
+  icon: "fa-solid fa-calendar"
+  title: "Okno do vesmíru #4"
+  description: "Přednáškový cyklus o astronomii a kosmonautice se vrací! Ve čtvrtek 17. září od 15:00 v Semlerově rezidenci v Plzni vystoupí Mgr. Petr Brož, Ph.D. z Geofyzikálního ústavu AV ČR s přednáškou o výzkumu sopečné činnosti napříč Sluneční soustavou."
+  link:
+    url: "https://forms.gle/marEFMtsEg9cTD4c7"
+    text: "Přihlásit se na akci"
+
 - date: 2026-03-05
   type: event
   title: Zvaž vědu! Brno 2026
