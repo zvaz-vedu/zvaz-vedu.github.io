@@ -149,3 +149,12 @@
       position: "zakladatel"
       mail: "matta@zvazvedu.cz"
       linkedin: "https://cz.linkedin.com/in/matyasmatta/en"
+
+    - name: "Adéla Podholová"
+      alias: "áďa"
+      team: "liberec"
+      photo: "áďa.webp"
+      position: "koordinátor řečníků"
+      mail: "podholova@zvazvedu.cz"
+      linkedin: "https://cz.linkedin.com/in/ad%C3%A9la-podholov%C3%A1-38292435b"
+      ig: "https://www.instagram.com/adel.pod/"
