@@ -12,8 +12,8 @@ header .layout-content {
 }
 
 header h1 {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: clamp(3.2rem, 7.5vw, 6.2rem);
 }
 header h1 span {
     position: relative;
@@ -614,21 +614,7 @@ h3::after {
 
 /* MEDIA */
 
-@media (max-width:1150px) {
-    .header-graphics-photo {
-        right: 0;
-        top: -120px;
-    }
-    .header-graphics-logo {
-        display: none;
-    }
-    .header-graphics-circle {
-        right: 120px;
-        top: -170px;
-    }
-}
-
-@media (max-width:880px) {
+@media (max-width:1250px) {
     .header-graphics {
         display: none;
     }

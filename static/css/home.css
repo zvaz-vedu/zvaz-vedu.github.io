@@ -13,8 +13,8 @@
     width: min(100%, 400px);
 }
 #hero-call {
-    font-size: 10rem;
-    line-height: 10rem;
+    font-size: clamp(4rem, 9vw, 10rem);
+    line-height: clamp(4.2rem, 9.5vw, 10rem);
     padding-bottom: 5rem;
 }
 #hero-call span {
@@ -328,7 +328,7 @@
     }
 }
 
-@media (max-width:960px) {
+@media (max-width:1150px) {
     #hero-graphics {
         display: none;
     }
@@ -365,10 +365,6 @@
 }
 
 @media (max-width:550px) {
-    #hero-call {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
     #hero-call span::after {
         bottom: 0;
     }
@@ -616,7 +612,7 @@
     }
 
     .carousel-card {
-        padding: 1.5rem;
+        padding: 1.5rem 3.5rem;
     }
 
     .carousel-card h4 {

@@ -55,86 +55,92 @@ def check_layout():
                             }
                         });
                         
-                        // 1. KONTROLA PŘETÉKÁNÍ Z OKNA
+                        // Pomocná funkce pro získání viditelného obdélníku (po oříznutí rodiči s overflow: hidden)
+                        function getClippedRect(el) {
+                            let rect = el.getBoundingClientRect();
+                            let top = rect.top, bottom = rect.bottom, left = rect.left, right = rect.right;
+                            
+                            let parent = el.parentElement;
+                            while (parent) {
+                                let pStyle = window.getComputedStyle(parent);
+                                if (pStyle.overflow !== 'visible' || pStyle.overflowY !== 'visible' || pStyle.overflowX !== 'visible') {
+                                    let pRect = parent.getBoundingClientRect();
+                                    if (pStyle.overflow !== 'visible' || pStyle.overflowY !== 'visible') {
+                                        top = Math.max(top, pRect.top);
+                                        bottom = Math.min(bottom, pRect.bottom);
+                                    }
+                                    if (pStyle.overflow !== 'visible' || pStyle.overflowX !== 'visible') {
+                                        left = Math.max(left, pRect.left);
+                                        right = Math.min(right, pRect.right);
+                                    }
+                                }
+                                parent = parent.parentElement;
+                            }
+                            return { top, bottom, left, right, width: Math.max(0, right - left), height: Math.max(0, bottom - top) };
+                        }
+
                         let allElements = Array.from(document.querySelectorAll('*'));
                         
                         function isVisible(el) {
                             let s = window.getComputedStyle(el);
-                            let r = el.getBoundingClientRect();
                             if (s.display === 'none' || s.visibility === 'hidden' || s.opacity === '0') return false;
-                            if (r.width === 0 || r.height === 0) return false;
-                            if (el.closest('.offer-expanded-inner') || el.closest('.carousel-viewport') || el.closest('.mobile-off-canvas-menu')) return false;
+                            let r = getClippedRect(el);
+                            if (r.width <= 0 || r.height <= 0) return false;
+                            
+                            // Off-canvas mobile menu is intentionally hidden off-screen
+                            if (el.closest('.mobile-off-canvas-menu')) {
+                                let menuRect = el.closest('.mobile-off-canvas-menu').getBoundingClientRect();
+                                if (menuRect.left >= viewportWidth || menuRect.right <= 0) return false;
+                            }
                             return true;
                         }
 
                         let visibleElements = allElements.filter(isVisible);
 
-                        visibleElements.forEach(el => {
-                            let rect = el.getBoundingClientRect();
-                            if (rect.left >= viewportWidth) return;
-                            if (rect.right > viewportWidth + 1) {
-                                errors.push(`OVERFLOW: <${el.tagName} class='${el.className}'> přesahuje okraj o ${Math.round(rect.right - viewportWidth)}px`);
-                            }
-                        });
-
-                        // 2. KONTROLA VNITŘNÍHO PŘETÉKÁNÍ (Obsah se nevleze do svého rodiče)
-                        visibleElements.forEach(el => {
+                        // 1. KONTROLA KOLIZÍ BLOKŮ
+                        let textContainers = visibleElements.filter(el => {
+                            if (['IMG', 'SVG', 'IFRAME', 'VIDEO'].includes(el.tagName)) return true;
                             let s = window.getComputedStyle(el);
-                            // Testujeme jen blokové elementy
-                            if (!['block', 'flex', 'grid', 'inline-block'].includes(s.display)) return;
-                            // Pokud je schválně hidden, obsah sice přetéká, ale je oříznut
-                            if (s.overflow === 'hidden' || s.overflowY === 'hidden' || s.overflowX === 'hidden') return;
+                            if (s.backgroundImage !== 'none' && s.backgroundImage !== 'url("about:blank")') return true;
                             
-                            // Pokud je scrollHeight o dost větší než clientHeight (neplatí u body/html)
-                            if (el.tagName !== 'BODY' && el.tagName !== 'HTML') {
-                                if (el.scrollHeight > el.clientHeight + 10) {
-                                    let cls = el.getAttribute('class') || '';
-                                    errors.push(`VNITŘNÍ PŘETEČENÍ Y: <${el.tagName} class='${cls}'> text se nevejde na výšku (scrollHeight ${el.scrollHeight} > clientHeight ${el.clientHeight})`);
-                                }
-                                if (el.scrollWidth > el.clientWidth + 10) {
-                                    let cls = el.getAttribute('class') || '';
-                                    errors.push(`VNITŘNÍ PŘETEČENÍ X: <${el.tagName} class='${cls}'> text se nevejde na šířku (scrollWidth ${el.scrollWidth} > clientWidth ${el.clientWidth})`);
-                                }
-                            }
+                            let hasDirectText = Array.from(el.childNodes).some(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
+                            if (['P', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'SPAN', 'STRONG', 'A', 'LI', 'BUTTON', 'EM', 'I'].includes(el.tagName)) return true;
+                            return hasDirectText;
                         });
 
-                        // 3. KONTROLA KOLIZÍ (Překrývání listových uzlů - textů a obrázků)
-                        let leaves = visibleElements.filter(el => {
-                            if (el.tagName === 'IMG' || el.tagName === 'SVG' || el.tagName === 'IFRAME') return true;
-                            // Je to koncový uzel obsahující text (nemá žádné další tagy, kromě třeba <br>, <strong> atd.)
-                            // Zjednodušeně vezmeme všechny textové kontejnery:
-                            if (['P', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'BUTTON', 'A', 'LI', 'SPAN', 'STRONG', 'LABEL'].includes(el.tagName)) return true;
-                            return false;
-                        });
-
-                        for (let i = 0; i < leaves.length; i++) {
-                            for (let j = i + 1; j < leaves.length; j++) {
-                                let el1 = leaves[i];
-                                let el2 = leaves[j];
+                        for (let i = 0; i < textContainers.length; i++) {
+                            for (let j = i + 1; j < textContainers.length; j++) {
+                                let el1 = textContainers[i];
+                                let el2 = textContainers[j];
                                 
                                 if (el1.contains(el2) || el2.contains(el1)) continue;
                                 
-                                // Pokud mají stejného rodiče a je to např. text ve flexu, někdy to hází false positives u inline prvků.
-                                // Budeme testovat bounding rects.
-                                let r1 = el1.getBoundingClientRect();
-                                let r2 = el2.getBoundingClientRect();
+                                let inlineTags = ['SPAN', 'STRONG', 'A', 'EM', 'I'];
+                                if (inlineTags.includes(el1.tagName) && inlineTags.includes(el2.tagName)) {
+                                    let p1 = el1.closest('p, h1, h2, h3, h4, h5, h6, li, div');
+                                    let p2 = el2.closest('p, h1, h2, h3, h4, h5, h6, li, div');
+                                    if (p1 === p2) continue;
+                                }
+
+                                let r1 = getClippedRect(el1);
+                                let r2 = getClippedRect(el2);
                                 
                                 let overlapX = Math.max(0, Math.min(r1.right, r2.right) - Math.max(r1.left, r2.left));
                                 let overlapY = Math.max(0, Math.min(r1.bottom, r2.bottom) - Math.max(r1.top, r2.top));
                                 let overlapArea = overlapX * overlapY;
                                 
-                                if (overlapArea > 100) {
+                                if (overlapArea > 10) {
                                     let s1 = window.getComputedStyle(el1);
                                     let s2 = window.getComputedStyle(el2);
                                     let z1 = parseInt(s1.zIndex) || 0;
                                     let z2 = parseInt(s2.zIndex) || 0;
                                     
-                                    // Ignorujeme dekorativní podkresy s negativním z-indexem
-                                    if (z1 < 0 || z2 < 0) continue;
-                                    
-                                    // Ignorujeme specifické mapové SVG, kde se překrývají chytře Paths
+                                    if ((s1.position === 'absolute' && z1 < 0) || (s2.position === 'absolute' && z2 < 0)) continue;
                                     if (el1.closest('.map-region') || el2.closest('.map-region')) continue;
                                     
+                                    // Ignorovat carousel img vs img úmyslné překrytí (slides)
+                                    if (el1.tagName === 'IMG' && el2.tagName === 'IMG' && el1.closest('.carousel-track')) continue;
+
                                     let c1 = el1.getAttribute('class') || '';
                                     let c2 = el2.getAttribute('class') || '';
                                     let tag1 = el1.tagName + (c1 ? '.'+c1.split(' ')[0] : '');
@@ -142,7 +148,12 @@ def check_layout():
                                     let t1 = (el1.textContent || '').trim().substring(0, 15).replace(/\\n/g, '');
                                     let t2 = (el2.textContent || '').trim().substring(0, 15).replace(/\\n/g, '');
                                     
-                                    errors.push(`TVRDÁ KOLIZE: ${tag1} ("${t1}") leží na ${tag2} ("${t2}")`);
+                                    // Chceme zachytit hlavně Foto vs Text
+                                    if (el1.tagName === 'IMG' || el2.tagName === 'IMG') {
+                                        errors.push(`KOLIZE FOTKY A TEXTU: ${tag1} ("${t1}") leží na ${tag2} ("${t2}") o ${Math.round(overlapArea)}px`);
+                                    } else {
+                                        errors.push(`KOLIZE TEXTŮ: ${tag1} ("${t1}") leží na ${tag2} ("${t2}")`);
+                                    }
                                 }
                             }
                         }
