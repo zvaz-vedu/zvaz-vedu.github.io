@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const mobileMenu = document.querySelector('.mobile-off-canvas-menu');
     const overlay = document.querySelector('.mobile-menu-overlay');
     const body = document.body;
-    const menuLinks = document.querySelectorAll('.mobile-off-canvas-menu .mobile-menu-link'); // Select links inside the menu
+    const menuLinks = document.querySelectorAll('.mobile-off-canvas-menu a'); // Select all links inside the menu
 
     // Check if the elements exist before adding event listeners
     if (hamburgerButton && mobileMenu && overlay && body) {

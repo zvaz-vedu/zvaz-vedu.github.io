@@ -51,8 +51,8 @@
                                 <h2 class="bento-title">{{index $.Params $box.var}}</h2>
                                 <p class="bento-text">{{$box.text}}</p>
                             {{else if eq $box.type "countdown"}}
-                                <div id="countdown-display" class="info-block">Načítám čas…</div>
-                                <script>const eventTimeStr = "{{$.Params.eventTime}}";</script>
+                                <div id="countdown-display" class="info-block" data-event-time="{{$.Params.eventTime}}">Načítám čas…</div>
+                                <script>window.eventTimeStr = "{{$.Params.eventTime}}";</script>
                                 <p class="bento-text">{{$box.text}}</p>
                             {{else if eq $box.type "registration"}}
                                 <div id="registration-info" class="info-block" data-sheet-url="{{ $.Params.registrationSheet }}" data-max-participants="{{ $.Params.maxParticipants }}">
@@ -118,11 +118,11 @@
                     {{end}}
                     {{if .Params.registration}}
                     <div class="bento-board-item" style="background-color: var(--accent)">
-                        <div id="countdown-display" class="info-block">
+                        <div id="countdown-display" class="info-block" data-event-time="{{.Params.eventTime}}">
                             Načítám čas…
                         </div>
                         <script>
-                            const eventTimeStr = "{{.Params.eventTime}}";
+                            window.eventTimeStr = "{{.Params.eventTime}}";
                         </script>
                         <p class="bento-text">zbývá do začátku</p>
                     </div>
@@ -191,27 +191,23 @@
                             {{end}}
                         </div>
                         <script>
-                            window.addEventListener("DOMContentLoaded", () => {
-                                function syncHeights() {
-                                    const textBody = document.querySelector(".cta-body");
-                                    const galleryContainer = document.querySelector(".gallery-container");
-                                    const desiredHeight = textBody.offsetHeight
-                                    if (textBody && galleryContainer) {
-                                        galleryContainer.style.height = `${desiredHeight}px`;
-                                    }
+                            function syncLocationGalleryHeights() {
+                                const textBody = document.querySelector(".cta-body");
+                                const galleryContainer = document.querySelector(".gallery-container");
+                                if (textBody && galleryContainer) {
+                                    galleryContainer.style.height = `${textBody.offsetHeight}px`;
                                 }
-                                
-                                syncHeights();
-                                
-                                window.addEventListener("resize", syncHeights);
-                                window.addEventListener("scroll", syncHeights);
-                            });
+                            }
+                            syncLocationGalleryHeights();
+                            window.addEventListener("resize", syncLocationGalleryHeights);
+                            window.addEventListener("scroll", syncLocationGalleryHeights);
 
-                            // Your GLightbox code is perfect
-                            const lightbox = GLightbox({
-                                touchNavigation: true,
-                                loop: true,
-                            });
+                            if (typeof GLightbox !== 'undefined') {
+                                GLightbox({
+                                    touchNavigation: true,
+                                    loop: true,
+                                });
+                            }
                         </script>
                     </div>
                 </div>

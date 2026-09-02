@@ -1,5 +1,5 @@
-// Content for /js/sheets-progress-bar.js
-document.addEventListener('DOMContentLoaded', function() {
+// Content for /js/counters.js
+function initCounters() {
     // --- Configuration ---
     const registrationInfoDiv = document.getElementById('registration-info');
     const sheetUrl = registrationInfoDiv ? registrationInfoDiv.dataset.sheetUrl : null;
@@ -13,58 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const progressBarCountText = progressBarTrack ? progressBarTrack.querySelector('.progress-bar-count-text') : null;
     const bentoRegistrationText = document.getElementById('bento-registration-text');
 
-    // --- Validation ---
-    if (!registrationInfoDiv || !progressBarTrack || !progressBarFill || !progressBarCountText || !bentoRegistrationText) {
-        console.error("Required progress bar HTML elements not found (#registration-info, .progress-bar-track-pill, .progress-bar-fill-pill, .progress-bar-count-text, or #bento-registration-text).");
-        if(registrationInfoDiv) registrationInfoDiv.textContent = 'Error loading progress bar.';
-        return;
-    }
-
-    if (!sheetUrl || sheetUrl.trim() === '') {
-        console.error("Google Sheet URL not provided or is empty in data-sheet-url attribute on #registration-info.");
-        progressBarCountText.textContent = `Error: URL missing.`;
-        if(progressBarFill) progressBarFill.style.backgroundColor = 'red';
-        if(progressBarTrack) {
-            progressBarTrack.style.backgroundColor = 'transparent';
-            progressBarTrack.style.boxShadow = 'none';
-            progressBarTrack.style.overflow = 'visible';
-            progressBarTrack.style.height = 'auto';
-            progressBarTrack.style.padding = '0';
-            progressBarTrack.style.borderRadius = '0';
-        }
-        progressBarCountText.style.color = 'red';
-        progressBarCountText.style.position = 'static';
-        progressBarCountText.style.textAlign = 'center';
-        progressBarCountText.style.width = '100%';
-        progressBarCountText.style.transform = 'none';
-        bentoRegistrationText.textContent = `Chyba načítání`;
-        return;
-    }
-
-    // FIXED: Properly check for NaN instead of using typeof
-    if (isNaN(targetCount) || targetCount <= 0) {
-        console.error("Invalid targetCount specified. Must be a positive number.");
-        progressBarCountText.textContent = `Error: Invalid target.`;
-        if(progressBarFill) progressBarFill.style.backgroundColor = 'red';
-        if(progressBarTrack) {
-            progressBarTrack.style.backgroundColor = 'transparent';
-            progressBarTrack.style.boxShadow = 'none';
-            progressBarTrack.style.overflow = 'visible';
-            progressBarTrack.style.height = 'auto';
-            progressBarTrack.style.padding = '0';
-            progressBarTrack.style.borderRadius = '0';
-        }
-        progressBarCountText.style.color = 'red';
-        progressBarCountText.style.position = 'static';
-        progressBarCountText.style.textAlign = 'center';
-        progressBarCountText.style.width = '100%';
-        progressBarCountText.style.transform = 'none';
-        bentoRegistrationText.textContent = `Chyba cílové hodnoty`;
-        return;
+    // --- Countdown Cleanup ---
+    if (window.__countdownInterval) {
+        clearInterval(window.__countdownInterval);
+        window.__countdownInterval = null;
     }
 
     // --- Helper Functions ---
-
     function getCsvExportUrl(url) {
         try {
             const urlObj = new URL(url);
@@ -106,10 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const csvText = await response.text();
-            
             const firstLine = csvText.split(/\r\n|\n|\r/)[0];
             const a1ValueRaw = firstLine ? firstLine.split(',')[0] : "0";
-            
             const participantCount = parseInt(a1ValueRaw.replace(/(^"|"$)/g, '').trim(), 10);
 
             if (isNaN(participantCount)) {
@@ -120,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (percentage > 100) percentage = 100;
             if (percentage < 0) percentage = 0;
 
-            // --- Update HTML and Animate Bar ---
             textElement.textContent = `${participantCount}/${target}`;
 
             requestAnimationFrame(() => {
@@ -172,36 +124,57 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // --- Main Execution ---
-    const csvUrl = getCsvExportUrl(sheetUrl);
-
-    if (csvUrl) {
-        fetchLineCountAndAnimateBar(csvUrl, targetCount, progressBarFill, progressBarCountText, bentoRegistrationText);
-    } else {
-        progressBarCountText.textContent = `Neplatná URL`;
-        if (progressBarFill) {
+    if (registrationInfoDiv && progressBarTrack && progressBarFill && progressBarCountText && bentoRegistrationText) {
+        if (!sheetUrl || sheetUrl.trim() === '') {
+            console.error("Google Sheet URL not provided or is empty in data-sheet-url attribute on #registration-info.");
+            progressBarCountText.textContent = `Error: URL missing.`;
             progressBarFill.style.backgroundColor = 'red';
-            progressBarFill.style.width = '100%';
-        }
-        progressBarCountText.style.color = 'white';
-        progressBarCountText.style.position = 'static';
-        progressBarCountText.style.textAlign = 'center';
-        progressBarCountText.style.width = '100%';
-        progressBarCountText.style.transform = 'none';
-
-        if (progressBarTrack) {
             progressBarTrack.style.backgroundColor = 'transparent';
             progressBarTrack.style.boxShadow = 'none';
             progressBarTrack.style.overflow = 'visible';
             progressBarTrack.style.height = 'auto';
             progressBarTrack.style.padding = '0';
             progressBarTrack.style.borderRadius = '0';
+            progressBarCountText.style.color = 'red';
+            progressBarCountText.style.position = 'static';
+            progressBarCountText.style.textAlign = 'center';
+            progressBarCountText.style.width = '100%';
+            progressBarCountText.style.transform = 'none';
+            bentoRegistrationText.textContent = `Chyba načítání`;
+        } else if (isNaN(targetCount) || targetCount <= 0) {
+            console.error("Invalid targetCount specified. Must be a positive number.");
+            progressBarCountText.textContent = `Error: Invalid target.`;
+            progressBarFill.style.backgroundColor = 'red';
+            progressBarTrack.style.backgroundColor = 'transparent';
+            progressBarTrack.style.boxShadow = 'none';
+            progressBarTrack.style.overflow = 'visible';
+            progressBarTrack.style.height = 'auto';
+            progressBarTrack.style.padding = '0';
+            progressBarTrack.style.borderRadius = '0';
+            progressBarCountText.style.color = 'red';
+            progressBarCountText.style.position = 'static';
+            progressBarCountText.style.textAlign = 'center';
+            progressBarCountText.style.width = '100%';
+            progressBarCountText.style.transform = 'none';
+            bentoRegistrationText.textContent = `Chyba cílové hodnoty`;
+        } else {
+            const csvUrl = getCsvExportUrl(sheetUrl);
+            if (csvUrl) {
+                fetchLineCountAndAnimateBar(csvUrl, targetCount, progressBarFill, progressBarCountText, bentoRegistrationText);
+            }
         }
-        bentoRegistrationText.textContent = `Chyba URL`;
     }
 
-    if (typeof eventTimeStr !== 'undefined') {
-        const eventTime = new Date(eventTimeStr).getTime();
-        const countdownEl = document.getElementById("countdown-display");
+    // Countdown logic
+    const countdownEl = document.getElementById("countdown-display");
+    // Find eventTime either from global or from countdownEl attribute if set
+    let timeStr = typeof eventTimeStr !== 'undefined' ? eventTimeStr : null;
+    if (!timeStr && countdownEl && countdownEl.dataset.eventTime) {
+        timeStr = countdownEl.dataset.eventTime;
+    }
+
+    if (countdownEl && timeStr) {
+        const eventTime = new Date(timeStr).getTime();
         
         function updateCountdown() {
           const now = new Date().getTime();
@@ -238,6 +211,14 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }
         
-        setInterval(updateCountdown, 1000); 
+        updateCountdown();
+        window.__countdownInterval = setInterval(updateCountdown, 1000); 
     }
-});
+}
+
+window.initCounters = initCounters;
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initCounters);
+} else {
+    initCounters();
+}

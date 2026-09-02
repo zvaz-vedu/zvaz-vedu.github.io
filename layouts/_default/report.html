@@ -31,22 +31,23 @@
                     {{end}}
                 </div>
                 <script>
-                    window.addEventListener("DOMContentLoaded", () => {
-                        function syncHeights() {
-                            const textBody = document.querySelector(".text-body");
-                            const galleryContainer = document.querySelector(".gallery-container");
-                            if (textBody && galleryContainer) {
-                                galleryContainer.style.height = `${textBody.offsetHeight}px`;
-                            }
+                    function syncReportGalleryHeights() {
+                        const textBody = document.querySelector(".text-body");
+                        const galleryContainer = document.querySelector(".gallery-container");
+                        if (textBody && galleryContainer) {
+                            galleryContainer.style.height = `${textBody.offsetHeight}px`;
                         }
-                        syncHeights();
-                        window.addEventListener("resize", syncHeights);
-                        window.addEventListener("scroll", syncHeights);
-                    });
-                    const lightbox = GLightbox({
-                        touchNavigation: true,
-                        loop: true,
-                    });
+                    }
+                    syncReportGalleryHeights();
+                    window.addEventListener("resize", syncReportGalleryHeights);
+                    window.addEventListener("scroll", syncReportGalleryHeights);
+                    
+                    if (typeof GLightbox !== 'undefined') {
+                        GLightbox({
+                            touchNavigation: true,
+                            loop: true,
+                        });
+                    }
                 </script>
             </div>
             <div class="text-body">
