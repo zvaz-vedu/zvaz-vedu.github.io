@@ -37,7 +37,7 @@
     --height-spacer: 2rem 0;
     --width-spacer: 2rem;
     --shadow: 0 0 1rem #00000024;
-    --transition: all .12xs ease-in-out;
+    --transition: all 0.3s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,3 +47,7 @@
     }
 }
 
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}

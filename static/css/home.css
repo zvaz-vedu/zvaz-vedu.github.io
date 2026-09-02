@@ -128,7 +128,7 @@
 .bento-board {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -224,8 +224,8 @@
     max-width: 500px;
 }
 .grid-board-item-content img {
-    width: 50%;
-    min-width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 .grid-board-item.active .grid-board-item-content {
     display: flex;

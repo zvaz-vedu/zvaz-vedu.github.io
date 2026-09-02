@@ -383,8 +383,10 @@ h3::after {
     color: var(--secondary);
 }
 .history-item img {
-    width: 300px;
-    height: 225px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
 }
 .history-item-body {
@@ -517,8 +519,9 @@ h3::after {
     top: 9px;
     left: 9px;
     background: var(--accent);
+    transition: var(--transition);
 }
-.team-member-photo-container:hover::after {
+.team-member-link:hover .team-member-photo-container::after {
     top: 0px;
     left: 0px;
     transition: var(--transition);
@@ -611,7 +614,7 @@ h3::after {
 
 /* MEDIA */
 
-@media (max-width:1000px) {
+@media (max-width:1150px) {
     .header-graphics-photo {
         right: 0;
         top: -120px;

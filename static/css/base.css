@@ -355,22 +355,31 @@ footer .layout-content {
     max-width: min(25vw, 85%);
     transition: var(--transition);
 }
-/* 1. Hide the white version (2nd image) by default */
-.partner-logo-img:nth-of-type(2) {
-    display: none;
-}
-/* 1. Hide the white version (2nd image) by default */
-.supporter-logo-img:nth-of-type(2) {
-    display: none;
+.partner-body a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 2. On hover of the link, swap visibility */
-.partner-body a:hover .partner-logo-img:nth-of-type(1) {
-    display: none; /* Hide black */
+/* 1. Hide the white version (2nd image) by default */
+.partner-logo-img:nth-of-type(2), .supporter-logo-img:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
 
-.partner-body a:hover .partner-logo-img:nth-of-type(2) {
-    display: block; /* Show white */
+/* 2. On hover of the link, swap visibility smoothly */
+.partner-body a:hover .partner-logo-img:nth-of-type(1),
+.partner-body a:hover .supporter-logo-img:nth-of-type(1) {
+    opacity: 0;
+}
+
+.partner-body a:hover .partner-logo-img:nth-of-type(2),
+.partner-body a:hover .supporter-logo-img:nth-of-type(2) {
+    opacity: 1;
 }
 
 @media (max-width: 900px) {
@@ -467,12 +476,7 @@ header img {
 /* MEDIA */
 
 @media (max-width:760px) {
-    .nav-logo a:first-of-type {
-        display: none;
-    }
-    .nav-logo a:nth-of-type(2) {
-        display: block;
-    }
+    /* Removed nav-logo swapping */
     .footer-columns {
         flex-wrap: wrap;
     }
@@ -696,7 +700,7 @@ footer,
 }
 
 /* Additional styles for handling nav link wrapping before mobile breakpoint */
-@media (max-width: 950px) and (min-width: 701px) {
+@media (max-width: 1200px) and (min-width: 701px) {
     .nav-links {
         flex-wrap: wrap;
         justify-content: flex-end;

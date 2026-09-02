@@ -84,8 +84,9 @@
 
 .history-cards-container .carousel-card {
     margin: 0;
-    flex: 0 0 350px; 
-    width: 350px;
+    flex: 0 1 350px; 
+    width: 100%;
+    max-width: 350px;
     height: 350px; 
     
     /* 1. Internal Padding & Layout */

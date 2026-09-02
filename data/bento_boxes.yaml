@@ -1,0 +1,44 @@
+# Můžeš zde definovat jakékoliv bento boxy.
+# Každý box má unikátní kód, kterým se pak volá v nastavení města.
+
+events_count:
+  type: "stats"
+  var: "events"
+  text: "akce"
+  
+participants_count:
+  type: "stats"
+  var: "participants"
+  text: "účastníků"
+
+speakers_count:
+  type: "stats"
+  var: "speakers"
+  text: "přednášejících"
+
+live_countdown:
+  type: "countdown"
+  color: "accent"
+  text: "zbývá do začátku"
+
+live_registration:
+  type: "registration"
+  color: "secondary"
+  text: "účastníků"
+
+new_presentations:
+  type: "stats"
+  var: "newPresentations"
+  color: "tertiary"
+  text: "nových přednášek"
+
+past_youtube:
+  type: "youtube_link"
+  color: "accent"
+
+past_feedback:
+  type: "link"
+  title: "Zpětná vazba!"
+  linkUrl: "/feedback"
+  linkText: "Feedback >"
+  color: "secondary"

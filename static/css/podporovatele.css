@@ -116,6 +116,7 @@ section .layout-content {
     top: 6px;
     left: 6px;
     background: var(--primary);
+    transition: var(--transition);
 }
 .team-member-photo {
     width: 100px;

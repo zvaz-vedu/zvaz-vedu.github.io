@@ -48,13 +48,7 @@
 }
 
 @media (max-width: 900px) {
-    section .layout-content {
-        /* Use 'column' if you want Image on top, Text on bottom. 
-           Keep 'column-reverse' if you want Text on top, Image on bottom. */
-        flex-direction: column-reverse !important; 
-        gap: 2rem
-    }
-    
+    /* Removed global column-reverse on sections */
     /* This resets the calculated desktop width so it fits the mobile screen */
     .text-body {
         width: 100%;

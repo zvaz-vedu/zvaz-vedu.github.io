@@ -37,69 +37,110 @@
             </div>
         </div>
     </header>
-    {{if not .Params.liveAction}}
+    {{if .Params.bentoBoxes}}
         <section class="layout-container" id="accomplishments">
             <div class="layout-content bento-board">
-                <div class="bento-board-item">
-                    <h2 class="bento-title">{{.Params.events}}</h2>
-                    <p class="bento-text">akce</p>
-                </div>
-                <div class="bento-board-item">
-                    <h2 class="bento-title">{{.Params.participants}}</h2>
-                    <p class="bento-text">účastníků</p>
-                </div>
-                <div class="bento-board-item">
-                    <h2 class="bento-title">{{.Params.speakers}}</h2>
-                    <p class="bento-text">přednášejících</p>
-                </div>
+                {{range .Params.bentoBoxes}}
+                    {{$box := index site.Data.bento_boxes .}}
+                    {{if $box}}
+                        <div class="bento-board-item" {{with $box.color}}style="background-color: var(--{{.}});"{{end}}>
+                            {{if eq $box.type "stats"}}
+                                <h2 class="bento-title">{{index $.Params $box.var}}</h2>
+                                <p class="bento-text">{{$box.text}}</p>
+                            {{else if eq $box.type "countdown"}}
+                                <div id="countdown-display" class="info-block">Načítám čas…</div>
+                                <script>const eventTimeStr = "{{$.Params.eventTime}}";</script>
+                                <p class="bento-text">{{$box.text}}</p>
+                            {{else if eq $box.type "registration"}}
+                                <div id="registration-info" class="info-block" data-sheet-url="{{ $.Params.registrationSheet }}" data-max-participants="{{ $.Params.maxParticipants }}">
+                                    <div class="progress-bar-track-pill">
+                                       <div class="progress-bar-fill-pill"></div>
+                                       <span class="progress-bar-count-text">Chyba, pracujeme na tom!</span>
+                                   </div>
+                               </div>
+                               <p class="bento-text" id="bento-registration-text">{{$box.text}}</p>
+                            {{else if eq $box.type "youtube_link"}}
+                                <h2 class="bento-title">{{$box.title | default "Je to za námi!"}}</h2>
+                                {{ if $.Params.linkToLecturesYouTube }}
+                                    <a href="{{ $.Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek &gt;</a>
+                                {{ else }}
+                                    <a href="https://www.youtube.com/@zvazvedu" class="secondary-button">Záznamy již brzy</a>
+                                {{ end }}
+                            {{else if eq $box.type "link"}}
+                                <h2 class="bento-title">{{$box.title}}</h2>
+                                <a href="{{$box.linkUrl}}" class="secondary-button">{{$box.linkText}}</a>
+                            {{end}}
+                        </div>
+                    {{end}}
+                {{end}}
             </div>
         </section>
-    {{end}}
-
-    {{if .Params.liveAction}}
-        <section class="layout-container" id="accomplishments">
-            <div class="layout-content bento-board">
-                {{if not .Params.registration}}
-                <div class="bento-board-item" style="background-color: var(--accent);">
-                    {{ if .Params.linkToLecturesYouTube}}
-                        <h2 class="bento-title">Je to za námi!</h2>
-                            <a href="{{ .Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek ></a>
-                    {{ else }}
-                        <h2 class="bento-title">Je to za námi!</h2>
-                            <a href="https://www.youtube.com/@zvazvedu" class="secondary-button">Záznamy již brzy</a>
-                    {{ end }}
-                </div>
-                <div class="bento-board-item" style="background-color: var(--secondary);">
-                    <h2 class="bento-title">Zpětná vazba!</h2>
-                    <a href="/feedback" class="secondary-button">Feedback ></a>
-                </div>
-                {{end}}
-                {{if .Params.registration}}
-                <div class="bento-board-item" style="background-color: var(--accent)">
-                    <div id="countdown-display" class="info-block">
-                        Načítám čas…
+    {{else}}
+        {{if not .Params.liveAction}}
+            <section class="layout-container" id="accomplishments">
+                <div class="layout-content bento-board">
+                    <div class="bento-board-item">
+                        <h2 class="bento-title">{{.Params.events}}</h2>
+                        <p class="bento-text">akce</p>
                     </div>
-                    <script>
-                        const eventTimeStr = {{.Params.eventTime}};
-                    </script>
-                    <p class="bento-text">zbývá do začátku</p>
+                    <div class="bento-board-item">
+                        <h2 class="bento-title">{{.Params.participants}}</h2>
+                        <p class="bento-text">účastníků</p>
+                    </div>
+                    <div class="bento-board-item">
+                        <h2 class="bento-title">{{.Params.speakers}}</h2>
+                        <p class="bento-text">přednášejících</p>
+                    </div>
                 </div>
-                <div class="bento-board-item" style="background-color: var(--secondary)">
-                    <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}" data-max-participants="{{ .Params.participants }}">
-                        <div class="progress-bar-track-pill">
-                           <div class="progress-bar-fill-pill"></div>
-                           <span class="progress-bar-count-text">Chyba, pracujeme na tom!</span>
+            </section>
+        {{end}}
+
+        {{if .Params.liveAction}}
+            <section class="layout-container" id="accomplishments">
+                <div class="layout-content bento-board">
+                    {{if not .Params.registration}}
+                    <div class="bento-board-item" style="background-color: var(--accent);">
+                        {{ if .Params.linkToLecturesYouTube}}
+                            <h2 class="bento-title">Je to za námi!</h2>
+                                <a href="{{ .Params.linkToLecturesYouTube}}" class="secondary-button">Záznamy přednášek ></a>
+                        {{ else }}
+                            <h2 class="bento-title">Je to za námi!</h2>
+                                <a href="https://www.youtube.com/@zvazvedu" class="secondary-button">Záznamy již brzy</a>
+                        {{ end }}
+                    </div>
+                    <div class="bento-board-item" style="background-color: var(--secondary);">
+                        <h2 class="bento-title">Zpětná vazba!</h2>
+                        <a href="/feedback" class="secondary-button">Feedback ></a>
+                    </div>
+                    {{end}}
+                    {{if .Params.registration}}
+                    <div class="bento-board-item" style="background-color: var(--accent)">
+                        <div id="countdown-display" class="info-block">
+                            Načítám čas…
+                        </div>
+                        <script>
+                            const eventTimeStr = "{{.Params.eventTime}}";
+                        </script>
+                        <p class="bento-text">zbývá do začátku</p>
+                    </div>
+                    <div class="bento-board-item" style="background-color: var(--secondary)">
+                        <div id="registration-info" class="info-block" data-sheet-url="{{ .Params.registrationSheet }}" data-max-participants="{{ .Params.maxParticipants | default .Params.participants }}">
+                            <div class="progress-bar-track-pill">
+                               <div class="progress-bar-fill-pill"></div>
+                               <span class="progress-bar-count-text">Chyba, pracujeme na tom!</span>
+                           </div>
                        </div>
-                   </div>
-                    <p class="bento-text" id="bento-registration-text">účastníků</p>
+                        <p class="bento-text" id="bento-registration-text">účastníků</p>
+                    </div>
+                    {{end}}
+                    <div class="bento-board-item" style="background-color: var(--tertiary);">
+                        <h2 class="bento-title">{{.Params.newPresentations}}</h2>
+                        <p class="bento-text">nových přednášek</p>
+                    </div>
                 </div>
-                {{end}}
-                <div class="bento-board-item" style="background-color: var(--tertiary);">
-                    <h2 class="bento-title">{{.Params.newPresentations}}</h2>
-                    <p class="bento-text">nových přednášek</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        {{end}}
+    {{end}}
         
         {{if .Params.infoVid}}
             <div class="layout-container" id="info-vid">
@@ -173,7 +214,7 @@
                 </div>
             </section>
         {{end}}
-    {{end}}
+    <!-- Removing the extra end tag from old liveAction block -->
     {{if .Params.additionalInfo}}
         <!-- Set up the variables at the top for clean code. -->
         {{ $img1 := (index .Params.additionalInfoImages 0) | default "/media/imgs/gallery/plzen25/main.webp" }}
@@ -361,7 +402,7 @@
     {{end}}
     
     <!-- zobrazení ohlédnutí pokud je víc než 1 event -->
-    {{ if .Params.pastActions }}
+    {{ if or .Params.pastActions .Params.showHistory }}
         <section class="layout-container" id="history">
             <div class="layout-content">
                 <h2>Ohlédnutí</h2>

@@ -117,11 +117,11 @@ section .layout-content {
     top: 6px;
     left: 6px;
     background: var(--primary);
+    transition: top 0.3s ease, left 0.3s ease;
 }
-.team-member-photo-container:hover::after {
+.team-member-link:hover .team-member-photo-container::after {
     top: 0;
     left: 0;
-    transition: top 0.3s ease, left 0.3s ease;
 }
 .team-member-photo {
     width: 100px;
@@ -146,9 +146,7 @@ section .layout-content {
 /* MEDIA */
 
 @media (max-width:900px) {
-    section .layout-content {
-        flex-direction: column-reverse !important;
-    }
+    /* Removed global column-reverse on sections */
     /*  POZNÁMKA: tohle jsem měnil kvůli pořadí sekcí u abstraktů, ale nemám tušení, jestli to nebude vadit jinde
     section:first-of-type .layout-content {
         flex-direction: column !important;
