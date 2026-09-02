@@ -715,3 +715,19 @@ footer,
         padding-inline: 1rem;
     }
 }
+
+/* Swup Page Transitions */
+.transition-fade {
+    opacity: 1;
+    transition: opacity 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .transition-fade {
+        transition: none !important;
+    }
+}
