@@ -33,7 +33,10 @@
             <h1>{{ .Params.headerTitle }}</h1>
             <p class="header-text">{{ .Params.headerText }}</p>
         </div>
-        <img class="mark-img" src="/media/imgs/base/mark.webp" alt="">
+        <picture>
+            <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">
+            <img class="mark-img" src="/media/imgs/base/zv_kocka_45deg_zv-black.webp" alt="">
+        </picture>
     </div>
 </header>
 
