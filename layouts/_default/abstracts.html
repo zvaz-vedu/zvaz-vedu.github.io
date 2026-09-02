@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="/css/base.css">
 {{end}}
 {{define "scripts"}}
-    <script src="/js/darkmode.js"></script>
+
 {{end}}
 
 {{define "main"}}
@@ -14,7 +14,10 @@
                 <h1>{{.Params.headerTitle}}</h1>
                 <p class="header-text">{{.Params.headerText}}</p>
             </div>
-            <img class="mark-img" src=""> <!-- src obrázku upravuje darkmode.js-->
+            <picture>
+                <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">
+                <img class="mark-img" src="/media/imgs/base/zv_kocka_45deg_zv-black.webp" alt="">
+            </picture>
 
         </div>
     </header>

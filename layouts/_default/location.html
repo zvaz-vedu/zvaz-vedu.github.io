@@ -33,7 +33,10 @@
             </div>
             <div class="header-graphics">
                 <img class="header-graphics-photo" src="{{.Params.headerPhoto}}" alt="{{.Params.headerTitle}}">
-                <img class="header-graphics-logo" src=""> <!-- src obrázku upravuje darkmode.js-->
+                <picture>
+                    <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">
+                    <img class="header-graphics-logo" src="/media/imgs/base/zv_kocka_45deg_zv-black.webp" alt="">
+                </picture>
             </div>
         </div>
     </header>

@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/contact.css">
 {{end}}
 {{define "scripts"}}
-    <script src="/js/darkmode.js"></script>
+
 {{end}}
 {{define "main"}}
     <header class="layout-container">
@@ -11,7 +11,10 @@
                 <h1>Věda je naším motorem.</h1>
                 <p class="header-text">Dohromady jsme se dali na střední, ale tím to rozhodně nekončí</p>
             </div>
-            <img class="mark-img" src="/media/imgs/base/mark-blk.webp">
+            <picture>
+                <source srcset="/media/imgs/base/mark.webp" media="(prefers-color-scheme: dark)">
+                <img class="mark-img" src="/media/imgs/base/mark-blk.webp" alt="">
+            </picture>
         </div>
     </header>
     <section class="layout-container" id="contact">

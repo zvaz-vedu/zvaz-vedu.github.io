@@ -22,7 +22,10 @@
             <div id="hero-graphics">
                 <img id="hero-graphics-primary" src="/media/imgs/home/home1.webp">
                 <img id="hero-graphics-secondary" src="/media/imgs/home/home2.webp">
-                <img id="hero-graphics-icon" src=""> <!-- src obrázku upravuje darkmode.js-->
+                <picture>
+                    <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">
+                    <img id="hero-graphics-icon" src="/media/imgs/base/zv_kocka_45deg_zv-black.webp" alt="">
+                </picture>
             </div>
         </div>
     </div>
