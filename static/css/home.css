@@ -26,10 +26,10 @@
     display: block;
     width: 110%;
     right: -5%;
-    height: 25px;
+    height: 0.18em;
     content: "";
     z-index: -1;
-    bottom: 20px;
+    bottom: 0.14em;
     background-color: var(--primary);
     transform: rotate(-3deg);
 }
@@ -368,9 +368,6 @@
 }
 
 @media (max-width:550px) {
-    #hero-call span::after {
-        bottom: 0;
-    }
     #hero-text {
         font-size: 1.3rem;
         line-height: 1.5rem;

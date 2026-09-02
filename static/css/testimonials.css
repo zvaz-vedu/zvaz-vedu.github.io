@@ -30,8 +30,8 @@
   content: "";
   display: block;
   width: 110%;
-  height: 14px;
-  bottom: 2px;
+  height: 0.33em;
+  bottom: 0.05em;
   left: -5%;
   transform: rotate(-3deg);
   z-index: -1;
