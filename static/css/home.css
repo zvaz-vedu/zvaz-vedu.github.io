@@ -37,6 +37,8 @@
     font-size: 1.8rem;
     line-height: 2rem;
     padding-bottom: 5rem;
+    width: 0;
+    min-width: 100%;
 }
 #hero-row {
     display: flex;
@@ -333,7 +335,8 @@
         display: none;
     }
     #hero-body {
-        width: 100%;
+        width: fit-content;
+        max-width: 100%;
     }
     #hero-call {
         padding-bottom: 3rem;
