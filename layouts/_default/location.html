@@ -35,10 +35,11 @@
                 {{ $photo := .Params.headerPhoto }}
                 {{ $photoSm := replace $photo ".webp" "-sm.webp" }}
                 {{ $photoMd := replace $photo ".webp" "-md.webp" }}
+                {{ $photoHd := replace $photo ".webp" "-hd.webp" }}
                 <img class="header-graphics-photo"
                      src="{{ if fileExists (printf "static%s" $photoSm) }}{{ $photoSm }}{{ else }}{{ $photo }}{{ end }}"
                      {{ if fileExists (printf "static%s" $photoSm) }}
-                     srcset="{{ $photoSm }} 600w, {{ $photoMd }} 1200w, {{ $photo }} 1920w"
+                     srcset="{{ $photoSm }} 600w, {{ $photoMd }} 1200w, {{ $photoHd }} 1920w"
                      sizes="300px"
                      {{ end }}
                      alt="{{.Params.headerTitle}}">
@@ -192,9 +193,10 @@
                         <div class="img-body">
                             {{$dir := printf "static/media/imgs/gallery/plzen24/"}}
                             {{range readDir $dir}}
-                                {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-lg.webp"))}}
+                                {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-hd.webp")) (not (strings.Contains .Name "-lg.webp"))}}
                                     {{ $thumb := replace .Name ".webp" "-sm.webp" }}
-                                    <a href="/media/imgs/gallery/plzen24/{{.Name}}" class="glightbox" data-gallery="gallery1">
+                                    {{ $hd := replace .Name ".webp" "-hd.webp" }}
+                                    <a href="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $hd) }}{{ $hd }}{{ else }}{{ .Name }}{{ end }}" class="glightbox" data-gallery="gallery1" data-description="<a href='/media/imgs/gallery/plzen24/{{.Name}}' target='_blank'>Zobrazit původní velikost originálu</a>">
                                         <img src="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $thumb) }}{{ $thumb }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
                                     </a>
                                 {{end}}

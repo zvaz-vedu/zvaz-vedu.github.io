@@ -6,7 +6,9 @@ Allow: /
 User-agent: Googlebot-Image
 Disallow: /*-sm.webp
 Disallow: /*-md.webp
+Disallow: /*-hd.webp
 
 User-agent: Bingbot-Image
 Disallow: /*-sm.webp
 Disallow: /*-md.webp
+Disallow: /*-hd.webp

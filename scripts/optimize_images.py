@@ -38,6 +38,7 @@ DEFAULT_IGNORE_DIRS = {"base", "partners", "orgs", "favicon"}
 DEFAULT_SIZES = {
     "sm": 600,
     "md": 1200,
+    "hd": 1920,
 }
 
 # Přípony souborů k optimalizaci
@@ -46,7 +47,7 @@ TARGET_EXTENSIONS = {".webp", ".jpg", ".jpeg", ".png"}
 def should_skip_file(file_path: Path) -> bool:
     """Zkontroluje, zda soubor není již vygenerovanou variantou."""
     stem = file_path.stem
-    for suffix in ["-sm", "-md", "-lg", "-thumb"]:
+    for suffix in ["-sm", "-md", "-hd", "-lg", "-thumb"]:
         if stem.endswith(suffix):
             return True
     return False

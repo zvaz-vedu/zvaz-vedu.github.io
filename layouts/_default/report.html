@@ -20,9 +20,10 @@
                     {{/* Ochrana: Hugo zkontroluje, zda složka reálně existuje */}}
                     {{if fileExists $dir}}
                         {{range readDir $dir}}
-                            {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-lg.webp"))}}
+                            {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-hd.webp")) (not (strings.Contains .Name "-lg.webp"))}}
                                 {{ $thumb := replace .Name ".webp" "-sm.webp" }}
-                                <a href="/media/imgs/gallery/{{$name}}/{{.Name}}" class="glightbox" data-gallery="gallery1">
+                                {{ $hd := replace .Name ".webp" "-hd.webp" }}
+                                <a href="/media/imgs/gallery/{{$name}}/{{ if fileExists (printf "%s/%s" $dir $hd) }}{{ $hd }}{{ else }}{{ .Name }}{{ end }}" class="glightbox" data-gallery="gallery1" data-description="<a href='/media/imgs/gallery/{{$name}}/{{.Name}}' target='_blank'>Zobrazit původní velikost originálu</a>">
                                     <img src="/media/imgs/gallery/{{$name}}/{{ if fileExists (printf "%s/%s" $dir $thumb) }}{{ $thumb }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
                                 </a>
                             {{end}}
