@@ -50,7 +50,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about1.webp" alt="Velké akce">
+                        <img src="/media/imgs/about/about1-sm.webp" srcset="/media/imgs/about/about1-sm.webp 600w, /media/imgs/about/about1-md.webp 1200w, /media/imgs/about/about1-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Velké akce">
                     </div>
                     <p>Detailnější informace o tom, jak naše velké akce probíhají, kolik lidí se jich účastní a co všechno na nich můžete zažít. Prostor pro další text.</p>
                 </div>
@@ -71,7 +71,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about2.webp" alt="Přednášky">
+                        <img src="/media/imgs/about/about2-sm.webp" srcset="/media/imgs/about/about2-sm.webp 600w, /media/imgs/about/about2-md.webp 1200w, /media/imgs/about/about2-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Přednášky">
                     </div>
                     <p>Jak přesně probíhá rezervace přednášky, jaká témata pokrýváme a pro jaké věkové kategorie jsou nejvhodnější.</p>
                 </div>
@@ -92,7 +92,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about3.webp" alt="Workshopy pro školy">
+                        <img src="/media/imgs/about/about3-sm.webp" srcset="/media/imgs/about/about3-sm.webp 600w, /media/imgs/about/about3-md.webp 1200w, /media/imgs/about/about3-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Workshopy pro školy">
                     </div>
                     <p>Specifikace workshopů, délka trvání a vybavení, které na školy přivážíme k praktickým ukázkám.</p>
                 </div>
@@ -113,7 +113,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about1.webp" alt="Panelové diskuze">
+                        <img src="/media/imgs/about/about1-sm.webp" srcset="/media/imgs/about/about1-sm.webp 600w, /media/imgs/about/about1-md.webp 1200w, /media/imgs/about/about1-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Panelové diskuze">
                     </div>
                     <p>Mladý a neotřelý pohled na současná vědecká i celospolečenská témata prostřednictvím moderovaných diskuzí.</p>
                 </div>
@@ -134,7 +134,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about2.webp" alt="Stánky na akcích">
+                        <img src="/media/imgs/about/about2-sm.webp" srcset="/media/imgs/about/about2-sm.webp 600w, /media/imgs/about/about2-md.webp 1200w, /media/imgs/about/about2-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Stánky na akcích">
                     </div>
                     <p>Co přesně na našich stáncích najdete, jaké experimenty si mohou návštěvníci vyzkoušet a co k tomu potřebujeme od vás.</p>
                 </div>
@@ -155,7 +155,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about3.webp" alt="Ambasadorský program">
+                        <img src="/media/imgs/about/about3-sm.webp" srcset="/media/imgs/about/about3-sm.webp 600w, /media/imgs/about/about3-md.webp 1200w, /media/imgs/about/about3-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Ambasadorský program">
                     </div>
                     <p>Získej know-how, kontakty a pomoz nám šířit nadšení dál. Detaily o tom, jak se přihlásit a co to obnáší.</p>
                 </div>
@@ -176,7 +176,7 @@ color="primary" >}}
             <div class="offer-expanded-content">
                 <div class="offer-expanded-inner">
                     <div class="offer-photo-spot">
-                        <img src="/media/imgs/about/about1.webp" alt="Rozvoj talentů">
+                        <img src="/media/imgs/about/about1-sm.webp" srcset="/media/imgs/about/about1-sm.webp 600w, /media/imgs/about/about1-md.webp 1200w, /media/imgs/about/about1-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Rozvoj talentů">
                     </div>
                     <p>Pomůžeme ti vymaxovat komunikační skills a propojíme tě s desítkami dalších podobně naladěných lidí. Informace o mentoringu.</p>
                 </div>

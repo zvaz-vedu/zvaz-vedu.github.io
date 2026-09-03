@@ -36,7 +36,8 @@
                 <div class="individual-speaker-entry">
                     <div class="speaker-photo-wrapper">
                         <img 
-                            src="{{ $speakerData.photo }}" 
+                            src="{{ replace $speakerData.photo ".webp" "-sm.webp" }}" 
+                            srcset="{{ replace $speakerData.photo ".webp" "-sm.webp" }} 600w, {{ replace $speakerData.photo ".webp" "-md.webp" }} 1200w, {{ replace $speakerData.photo ".webp" "-hd.webp" }} 1920w" sizes="150px"
                             alt="Fotografie přednášejícího: {{ $speakerData.name }}" 
                             class="speaker-photo"
                         >

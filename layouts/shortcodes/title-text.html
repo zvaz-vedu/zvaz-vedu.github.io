@@ -4,7 +4,7 @@
 <section class="layout-container">
     <div class="layout-content {{with .Get "class"}}{{.}}{{end}}">
         <div class="img-body highlight-{{.Get "color"}}">
-            <img src="{{ .Site.BaseURL }}{{.Get "img"}}">
+            <img src="{{ replace (.Get "img") ".webp" "-sm.webp" }}" srcset="{{ replace (.Get "img") ".webp" "-sm.webp" }} 600w, {{ replace (.Get "img") ".webp" "-md.webp" }} 1200w, {{ replace (.Get "img") ".webp" "-hd.webp" }} 1920w" sizes="(max-width: 800px) 100vw, 50vw">
         </div>
         <div class="text-body">
             {{with .Get "title"}}<h3>{{.}}</h3>{{end}}

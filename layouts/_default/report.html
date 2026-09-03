@@ -22,8 +22,10 @@
                         {{range readDir $dir}}
                             {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-hd.webp")) (not (strings.Contains .Name "-lg.webp"))}}
                                 {{ $hd := replace .Name ".webp" "-hd.webp" }}
+                                {{ $sm := replace .Name ".webp" "-sm.webp" }}
+                                {{ $md := replace .Name ".webp" "-md.webp" }}
                                 <a href="/media/imgs/gallery/{{$name}}/{{.Name}}" class="glightbox" data-gallery="gallery1">
-                                    <img src="/media/imgs/gallery/{{$name}}/{{ if fileExists (printf "%s/%s" $dir $hd) }}{{ $hd }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
+                                    <img src="/media/imgs/gallery/{{$name}}/{{ $sm }}" srcset="/media/imgs/gallery/{{$name}}/{{ $sm }} 600w, /media/imgs/gallery/{{$name}}/{{ $md }} 1200w, /media/imgs/gallery/{{$name}}/{{ $hd }} 1920w" sizes="(max-width: 800px) 50vw, 30vw" loading="lazy">
                                 </a>
                             {{end}}
                         {{end}}

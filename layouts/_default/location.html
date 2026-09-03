@@ -36,13 +36,11 @@
                 {{ $photoSm := replace $photo ".webp" "-sm.webp" }}
                 {{ $photoMd := replace $photo ".webp" "-md.webp" }}
                 {{ $photoHd := replace $photo ".webp" "-hd.webp" }}
-                <img class="header-graphics-photo"
-                     src="{{ if fileExists (printf "static%s" $photoSm) }}{{ $photoSm | safeURL }}{{ else }}{{ $photo | safeURL }}{{ end }}"
-                     {{ if fileExists (printf "static%s" $photoSm) }}
-                     srcset="{{ $photoSm | safeURL }} 600w, {{ $photoMd | safeURL }} 1200w, {{ $photoHd | safeURL }} 1920w"
-                     sizes="300px"
-                     {{ end }}
-                     alt="{{.Params.headerTitle}}">
+                  <img class="header-graphics-photo"
+                       src="{{ $photoSm | safeURL }}"
+                       srcset="{{ $photoSm | safeURL }} 600w, {{ $photoMd | safeURL }} 1200w, {{ $photoHd | safeURL }} 1920w"
+                       sizes="300px"
+                       alt="{{.Params.headerTitle}}">
                 <picture>
                     <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">
                     <img class="header-graphics-logo" src="/media/imgs/base/zv_kocka_45deg_zv-black.webp" alt="">
@@ -195,8 +193,10 @@
                             {{range readDir $dir}}
                                 {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-hd.webp")) (not (strings.Contains .Name "-lg.webp"))}}
                                     {{ $hd := replace .Name ".webp" "-hd.webp" }}
+                                    {{ $sm := replace .Name ".webp" "-sm.webp" }}
+                                    {{ $md := replace .Name ".webp" "-md.webp" }}
                                     <a href="/media/imgs/gallery/plzen24/{{.Name}}" class="glightbox" data-gallery="gallery1">
-                                        <img src="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $hd) }}{{ $hd }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
+                                        <img src="/media/imgs/gallery/plzen24/{{ $sm }}" srcset="/media/imgs/gallery/plzen24/{{ $sm }} 600w, /media/imgs/gallery/plzen24/{{ $md }} 1200w, /media/imgs/gallery/plzen24/{{ $hd }} 1920w" sizes="(max-width: 800px) 50vw, 30vw" loading="lazy">
                                     </a>
                                 {{end}}
                             {{end}}
