@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Zabránit indexování zmenšených responzivních miniatur ve vyhledávačích obrázků (Google Images)
+# Indexovat se budou pouze originální plnohodnotné fotografie
+User-agent: Googlebot-Image
+Disallow: /*-sm.webp
+Disallow: /*-md.webp
+
+User-agent: Bingbot-Image
+Disallow: /*-sm.webp
+Disallow: /*-md.webp

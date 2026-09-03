@@ -32,7 +32,16 @@
                 {{with .Params.joinUs}}<a href="{{.}}" class="primary-button">Zapoj se</a>{{end}}
             </div>
             <div class="header-graphics">
-                <img class="header-graphics-photo" src="{{.Params.headerPhoto}}" alt="{{.Params.headerTitle}}">
+                {{ $photo := .Params.headerPhoto }}
+                {{ $photoSm := replace $photo ".webp" "-sm.webp" }}
+                {{ $photoMd := replace $photo ".webp" "-md.webp" }}
+                <img class="header-graphics-photo"
+                     src="{{ if fileExists (printf "static%s" $photoSm) }}{{ $photoSm }}{{ else }}{{ $photo }}{{ end }}"
+                     {{ if fileExists (printf "static%s" $photoSm) }}
+                     srcset="{{ $photoSm }} 600w, {{ $photoMd }} 1200w, {{ $photo }} 1920w"
+                     sizes="300px"
+                     {{ end }}
+                     alt="{{.Params.headerTitle}}">
                 <picture>
                     <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">
                     <img class="header-graphics-logo" src="/media/imgs/base/zv_kocka_45deg_zv-black.webp" alt="">
@@ -51,8 +60,8 @@
                                 <h2 class="bento-title">{{index $.Params $box.var}}</h2>
                                 <p class="bento-text">{{$box.text}}</p>
                             {{else if eq $box.type "countdown"}}
-                                <div id="countdown-display" class="info-block" data-event-time="{{$.Params.eventTime}}">Načítám čas…</div>
-                                <script>window.eventTimeStr = "{{$.Params.eventTime}}";</script>
+                                <div id="countdown-display" class="info-block">Načítám čas…</div>
+                                <script>const eventTimeStr = "{{$.Params.eventTime}}";</script>
                                 <p class="bento-text">{{$box.text}}</p>
                             {{else if eq $box.type "registration"}}
                                 <div id="registration-info" class="info-block" data-sheet-url="{{ $.Params.registrationSheet }}" data-max-participants="{{ $.Params.maxParticipants }}">
@@ -118,11 +127,11 @@
                     {{end}}
                     {{if .Params.registration}}
                     <div class="bento-board-item" style="background-color: var(--accent)">
-                        <div id="countdown-display" class="info-block" data-event-time="{{.Params.eventTime}}">
+                        <div id="countdown-display" class="info-block">
                             Načítám čas…
                         </div>
                         <script>
-                            window.eventTimeStr = "{{.Params.eventTime}}";
+                            const eventTimeStr = "{{.Params.eventTime}}";
                         </script>
                         <p class="bento-text">zbývá do začátku</p>
                     </div>
@@ -183,31 +192,36 @@
                         <div class="img-body">
                             {{$dir := printf "static/media/imgs/gallery/plzen24/"}}
                             {{range readDir $dir}}
-                                {{if not (eq .Name ".DS_Store")}}
+                                {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-lg.webp"))}}
+                                    {{ $thumb := replace .Name ".webp" "-sm.webp" }}
                                     <a href="/media/imgs/gallery/plzen24/{{.Name}}" class="glightbox" data-gallery="gallery1">
-                                        <img src="/media/imgs/gallery/plzen24/{{.Name}}">
+                                        <img src="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $thumb) }}{{ $thumb }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
                                     </a>
                                 {{end}}
                             {{end}}
                         </div>
                         <script>
-                            function syncLocationGalleryHeights() {
-                                const textBody = document.querySelector(".cta-body");
-                                const galleryContainer = document.querySelector(".gallery-container");
-                                if (textBody && galleryContainer) {
-                                    galleryContainer.style.height = `${textBody.offsetHeight}px`;
+                            window.addEventListener("DOMContentLoaded", () => {
+                                function syncHeights() {
+                                    const textBody = document.querySelector(".cta-body");
+                                    const galleryContainer = document.querySelector(".gallery-container");
+                                    const desiredHeight = textBody.offsetHeight
+                                    if (textBody && galleryContainer) {
+                                        galleryContainer.style.height = `${desiredHeight}px`;
+                                    }
                                 }
-                            }
-                            syncLocationGalleryHeights();
-                            window.addEventListener("resize", syncLocationGalleryHeights);
-                            window.addEventListener("scroll", syncLocationGalleryHeights);
+                                
+                                syncHeights();
+                                
+                                window.addEventListener("resize", syncHeights);
+                                window.addEventListener("scroll", syncHeights);
+                            });
 
-                            if (typeof GLightbox !== 'undefined') {
-                                GLightbox({
-                                    touchNavigation: true,
-                                    loop: true,
-                                });
-                            }
+                            // Your GLightbox code is perfect
+                            const lightbox = GLightbox({
+                                touchNavigation: true,
+                                loop: true,
+                            });
                         </script>
                     </div>
                 </div>

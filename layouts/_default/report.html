@@ -20,9 +20,10 @@
                     {{/* Ochrana: Hugo zkontroluje, zda složka reálně existuje */}}
                     {{if fileExists $dir}}
                         {{range readDir $dir}}
-                            {{if not (eq .Name ".DS_Store")}}
+                            {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-lg.webp"))}}
+                                {{ $thumb := replace .Name ".webp" "-sm.webp" }}
                                 <a href="/media/imgs/gallery/{{$name}}/{{.Name}}" class="glightbox" data-gallery="gallery1">
-                                    <img src="/media/imgs/gallery/{{$name}}/{{.Name}}">
+                                    <img src="/media/imgs/gallery/{{$name}}/{{ if fileExists (printf "%s/%s" $dir $thumb) }}{{ $thumb }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
                                 </a>
                             {{end}}
                         {{end}}
@@ -31,23 +32,22 @@
                     {{end}}
                 </div>
                 <script>
-                    function syncReportGalleryHeights() {
-                        const textBody = document.querySelector(".text-body");
-                        const galleryContainer = document.querySelector(".gallery-container");
-                        if (textBody && galleryContainer) {
-                            galleryContainer.style.height = `${textBody.offsetHeight}px`;
+                    window.addEventListener("DOMContentLoaded", () => {
+                        function syncHeights() {
+                            const textBody = document.querySelector(".text-body");
+                            const galleryContainer = document.querySelector(".gallery-container");
+                            if (textBody && galleryContainer) {
+                                galleryContainer.style.height = `${textBody.offsetHeight}px`;
+                            }
                         }
-                    }
-                    syncReportGalleryHeights();
-                    window.addEventListener("resize", syncReportGalleryHeights);
-                    window.addEventListener("scroll", syncReportGalleryHeights);
-                    
-                    if (typeof GLightbox !== 'undefined') {
-                        GLightbox({
-                            touchNavigation: true,
-                            loop: true,
-                        });
-                    }
+                        syncHeights();
+                        window.addEventListener("resize", syncHeights);
+                        window.addEventListener("scroll", syncHeights);
+                    });
+                    const lightbox = GLightbox({
+                        touchNavigation: true,
+                        loop: true,
+                    });
                 </script>
             </div>
             <div class="text-body">
