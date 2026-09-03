@@ -232,12 +232,12 @@
     {{if .Params.additionalInfo}}
         {{ $img1 := (index .Params.additionalInfoImages 0) | default "/media/imgs/gallery/plzen25/main.webp" }}
         {{ $img2 := (index .Params.additionalInfoImages 1) | default "/media/imgs/gallery/plzen25/ZVP_083651.webp" }}
-        {{ $img1Sm := replaceRE "\\.(webp|jpg|jpeg|png)$" "-sm.webp" $img1 | safeURL }}
-        {{ $img1Md := replaceRE "\\.(webp|jpg|jpeg|png)$" "-md.webp" $img1 | safeURL }}
-        {{ $img1Hd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-hd.webp" $img1 | safeURL }}
-        {{ $img2Sm := replaceRE "\\.(webp|jpg|jpeg|png)$" "-sm.webp" $img2 | safeURL }}
-        {{ $img2Md := replaceRE "\\.(webp|jpg|jpeg|png)$" "-md.webp" $img2 | safeURL }}
-        {{ $img2Hd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-hd.webp" $img2 | safeURL }}
+        {{ $img1Sm := replace $img1 ".webp" "-sm.webp" | safeURL }}
+        {{ $img1Md := replace $img1 ".webp" "-md.webp" | safeURL }}
+        {{ $img1Hd := replace $img1 ".webp" "-hd.webp" | safeURL }}
+        {{ $img2Sm := replace $img2 ".webp" "-sm.webp" | safeURL }}
+        {{ $img2Md := replace $img2 ".webp" "-md.webp" | safeURL }}
+        {{ $img2Hd := replace $img2 ".webp" "-hd.webp" | safeURL }}
 
         <section class="layout-container">
             <div class="layout-content ">
