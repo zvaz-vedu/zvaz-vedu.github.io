@@ -4,13 +4,10 @@
 {{- define "scripts" -}}
 
     <script>
-        function initSupporters() {
+        document.addEventListener('DOMContentLoaded', () => {
             const supporterItems = document.querySelectorAll('.supporter-item');
 
             supporterItems.forEach(item => {
-                if (item.dataset.hoverInitialized) return;
-                item.dataset.hoverInitialized = "true";
-
                 const imgBlack = item.querySelector('.img-black');
                 const imgWhite = item.querySelector('.img-white');
 
@@ -26,13 +23,7 @@
                     });
                 }
             });
-        }
-        window.initSupporters = initSupporters;
-        if (document.readyState === "loading") {
-            document.addEventListener('DOMContentLoaded', initSupporters);
-        } else {
-            initSupporters();
-        }
+        });
     </script>
 {{- end -}}
 {{- define "main" -}}

@@ -194,10 +194,9 @@
                             {{$dir := printf "static/media/imgs/gallery/plzen24/"}}
                             {{range readDir $dir}}
                                 {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-hd.webp")) (not (strings.Contains .Name "-lg.webp"))}}
-                                    {{ $thumb := replace .Name ".webp" "-sm.webp" }}
                                     {{ $hd := replace .Name ".webp" "-hd.webp" }}
-                                    <a href="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $hd) }}{{ $hd }}{{ else }}{{ .Name }}{{ end }}" class="glightbox" data-gallery="gallery1" data-description="<a href='/media/imgs/gallery/plzen24/{{.Name}}' target='_blank'>Zobrazit původní velikost originálu</a>">
-                                        <img src="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $thumb) }}{{ $thumb }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
+                                    <a href="/media/imgs/gallery/plzen24/{{.Name}}" class="glightbox" data-gallery="gallery1">
+                                        <img src="/media/imgs/gallery/plzen24/{{ if fileExists (printf "%s%s" $dir $hd) }}{{ $hd }}{{ else }}{{ .Name }}{{ end }}" loading="lazy">
                                     </a>
                                 {{end}}
                             {{end}}

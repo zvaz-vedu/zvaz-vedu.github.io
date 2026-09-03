@@ -16,17 +16,8 @@
 
         <script src="https://kit.fontawesome.com/9ab7bfa7fc.js" crossorigin="anonymous"></script>
 
-        <script src="/js/mobile-hamburger-menu.js" defer></script>
-        <script src="/js/carousel.js" defer></script>
-        <script src="/js/counters.js" defer></script>
-        <script src="/js/reveal-section.js" defer></script>
-        <script src="/js/speakers.js" defer></script>
-
-        <script src="/js/vendor/swup.umd.js" defer></script>
-        <script src="/js/vendor/swup-head-plugin.umd.js" defer></script>
-        <script src="/js/vendor/swup-preload-plugin.umd.js" defer></script>
-        <script src="/js/vendor/swup-scripts-plugin.umd.js" defer></script>
-        <script src="/js/swup-init.js" defer></script>
+        <script src="/js/mobile-hamburger-menu.js"></script>
+        <script src="/js/prefetch.js" defer></script>
         {{block "scripts" .}}{{end}}
 
         <title>{{.Title}}</title>
@@ -61,7 +52,7 @@
         </nav>
         {{ partial "mobile-top-bar.html" . }}
         {{ partial "mobile-off-canvas-menu.html" . }}
-        <main id="swup" class="transition-fade">
+        <main>
             {{block "main" .}}{{end}}
         </main>
         <footer> {{/* Changed class="layout-container" to just <footer> as it's a semantic element */}}
