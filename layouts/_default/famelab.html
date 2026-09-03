@@ -112,7 +112,7 @@
                             <div class="team-member-photo-container">
                                 {{$teamName := split . "-"}}
                                 {{$teamName = index $teamName 0}}
-                                <img class="team-member-photo" src="/media/imgs/team/{{.}}.webp" alt="{{$teamName}}">
+                                <img class="team-member-photo" src="/media/imgs/team/{{.}}-sm.webp" srcset="/media/imgs/team/{{.}}-sm.webp 600w, /media/imgs/team/{{.}}-md.webp 1200w, /media/imgs/team/{{.}}-hd.webp 1920w" sizes="150px" alt="{{$teamName}}">
                             </div>
                             <p class="team-member-name">{{$teamName}}</p>
                         </a>

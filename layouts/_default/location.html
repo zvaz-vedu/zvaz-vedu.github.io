@@ -230,15 +230,20 @@
         {{end}}
     <!-- Removing the extra end tag from old liveAction block -->
     {{if .Params.additionalInfo}}
-        <!-- Set up the variables at the top for clean code. -->
         {{ $img1 := (index .Params.additionalInfoImages 0) | default "/media/imgs/gallery/plzen25/main.webp" }}
         {{ $img2 := (index .Params.additionalInfoImages 1) | default "/media/imgs/gallery/plzen25/ZVP_083651.webp" }}
+        {{ $img1Sm := replace $img1 ".webp" "-sm.webp" | safeURL }}
+        {{ $img1Md := replace $img1 ".webp" "-md.webp" | safeURL }}
+        {{ $img1Hd := replace $img1 ".webp" "-hd.webp" | safeURL }}
+        {{ $img2Sm := replace $img2 ".webp" "-sm.webp" | safeURL }}
+        {{ $img2Md := replace $img2 ".webp" "-md.webp" | safeURL }}
+        {{ $img2Hd := replace $img2 ".webp" "-hd.webp" | safeURL }}
 
         <section class="layout-container">
             <div class="layout-content ">
                 <div class="img-body highlight-primary">
                     <!-- Inject the first image -->
-                    <img src="{{ $img1 }}" alt="O projektu">
+                    <img src="{{ $img1Sm }}" srcset="{{ $img1Sm }} 600w, {{ $img1Md }} 1200w, {{ $img1Hd }} 1920w" sizes="(max-width: 800px) 100vw, 50vw" alt="O projektu">
                 </div>
                 <div class="text-body">
                     <h3 style="font-size: 2.2rem" >O projektu a akci</h3>
@@ -266,7 +271,7 @@
                 </div>  
                 <div class="img-body highlight-primary">
                     <!-- Inject the second image -->
-                    <img src="{{ $img2 }}" alt="Kamarády s sebou">
+                    <img src="{{ $img2Sm }}" srcset="{{ $img2Sm }} 600w, {{ $img2Md }} 1200w, {{ $img2Hd }} 1920w" sizes="(max-width: 800px) 100vw, 50vw" alt="Kamarády s sebou">
                 </div>
             </div>
         </section>
@@ -289,7 +294,7 @@
                             <div class="offer-expanded-inner">
                                 <p>Ponoříme se do hlubin fyziky, biologie, medicíny i kosmonautiky. Nebude to nuda, slibujeme!</p>
                                 <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/brno26/ZVB_101649.webp" alt="Přednášky">
+                                    <img src="/media/imgs/gallery/brno26/ZVB_101649-sm.webp" srcset="/media/imgs/gallery/brno26/ZVB_101649-sm.webp 600w, /media/imgs/gallery/brno26/ZVB_101649-md.webp 1200w, /media/imgs/gallery/brno26/ZVB_101649-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Přednášky">
                                 </div>
                             </div>
                         </div>
@@ -310,7 +315,7 @@
                             <div class="offer-expanded-inner">
                                 <p>O přestávkách bude prostor pro diskuzi, sdílení nápadů a třeba i nalezení parťáků pro tvůj budoucí projekt.</p>
                                 <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/brno26/ZVB_095249.webp" alt="Networking">
+                                    <img src="/media/imgs/gallery/brno26/ZVB_095249-sm.webp" srcset="/media/imgs/gallery/brno26/ZVB_095249-sm.webp 600w, /media/imgs/gallery/brno26/ZVB_095249-md.webp 1200w, /media/imgs/gallery/brno26/ZVB_095249-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Networking">
                                 </div>
                             </div>
                         </div>
@@ -331,7 +336,7 @@
                             <div class="offer-expanded-inner">
                                 <p>Ukážeme ti, že dělat vědu na střední škole je reálné a že to stojí za to!</p>
                                 <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/praha25/Zvaz%cc%8c%20Ve%cc%8cdu!%201045.webp" alt="SOČ">
+                                    <img src="/media/imgs/gallery/praha25/Zvaz%cc%8c%20Ve%cc%8cdu!%201045-sm.webp" srcset="/media/imgs/gallery/praha25/Zvaz%cc%8c%20Ve%cc%8cdu!%201045-sm.webp 600w, /media/imgs/gallery/praha25/Zvaz%cc%8c%20Ve%cc%8cdu!%201045-md.webp 1200w, /media/imgs/gallery/praha25/Zvaz%cc%8c%20Ve%cc%8cdu!%201045-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="SOČ">
                                 </div>
                             </div>
                         </div>
@@ -352,7 +357,7 @@
                             <div class="offer-expanded-inner">
                                 <p>Připravená pro každého účastníka bude alespoň jedna bageta.</p>
                                 <div class="offer-photo-spot">
-                                    <img src="/media/imgs/senat/senat-jidlo.webp" alt="SOČ">
+                                    <img src="/media/imgs/senat/senat-jidlo-sm.webp" srcset="/media/imgs/senat/senat-jidlo-sm.webp 600w, /media/imgs/senat/senat-jidlo-md.webp 1200w, /media/imgs/senat/senat-jidlo-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Jídlo v senátu">
                                 </div>
                             </div>
                         </div>
@@ -373,7 +378,7 @@
                             <div class="offer-expanded-inner">
                                 <p>V prostorách budou k dispozici stánky s interaktivními ukázkami a informacemi o možnostech dalšího studia či spolupráce.</p>
                                 <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/plzen25/ZVP_084445.webp" alt="Stánky partnerů">
+                                    <img src="/media/imgs/gallery/plzen25/ZVP_084445-sm.webp" srcset="/media/imgs/gallery/plzen25/ZVP_084445-sm.webp 600w, /media/imgs/gallery/plzen25/ZVP_084445-md.webp 1200w, /media/imgs/gallery/plzen25/ZVP_084445-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Stánky partnerů">
                                 </div>
                             </div>
                         </div>
@@ -394,7 +399,7 @@
                             <div class="offer-expanded-inner">
                                 <p>Připravili jsme pro vás komentované prohlídky nejmodernějších laboratoří v místních výzkumných centrech.</p>
                                 <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/brno26/ZVB_084003.webp" alt="Exkurze">
+                                    <img src="/media/imgs/gallery/brno26/ZVB_084003-sm.webp" srcset="/media/imgs/gallery/brno26/ZVB_084003-sm.webp 600w, /media/imgs/gallery/brno26/ZVB_084003-md.webp 1200w, /media/imgs/gallery/brno26/ZVB_084003-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Exkurze">
                                 </div>
                             </div>
                         </div>
@@ -426,8 +431,10 @@
                         <a href="{{ .RelPermalink }}" class="history-item">
                             {{ $name := .File.BaseFileName }}
                             {{ $dir := printf "/media/imgs/gallery/%s" $name }}  <!-- aby to nezobrazovalo to v složce info -->
-                            {{ $img := printf "%s/main.webp" $dir }}
-                            <img src="{{ $img }}" alt="{{ .Title }}">
+                            {{ $imgSm := printf "%s/main-sm.webp" $dir }}
+                            {{ $imgMd := printf "%s/main-md.webp" $dir }}
+                            {{ $imgHd := printf "%s/main-hd.webp" $dir }}
+                            <img src="{{ $imgSm }}" srcset="{{ $imgSm }} 600w, {{ $imgMd }} 1200w, {{ $imgHd }} 1920w" sizes="(max-width: 800px) 100vw, 50vw" alt="{{ .Title }}">
                             <div class="history-item-body">
                                 <strong>{{ .Title }}</strong>
                                 <em>{{ .Date.Format "2. 1. 2006" }}</em>
@@ -449,7 +456,7 @@
                             <div class="team-member-photo-container">
                                 {{$teamName := split . "-"}}
                                 {{$teamName = index $teamName 0}}
-                                <img class="team-member-photo" src="/media/imgs/team/{{.}}.webp" alt="{{$teamName}}">
+                                <img class="team-member-photo" src="/media/imgs/team/{{.}}-sm.webp" srcset="/media/imgs/team/{{.}}-sm.webp 600w, /media/imgs/team/{{.}}-md.webp 1200w, /media/imgs/team/{{.}}-hd.webp 1920w" sizes="150px" alt="{{$teamName}}">
                             </div>
                             <p class="team-member-name">{{$teamName}}</p>
                         </a>
