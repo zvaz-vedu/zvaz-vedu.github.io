@@ -37,9 +37,9 @@
                 {{ $photoMd := replace $photo ".webp" "-md.webp" }}
                 {{ $photoHd := replace $photo ".webp" "-hd.webp" }}
                 <img class="header-graphics-photo"
-                     src="{{ if fileExists (printf "static%s" $photoSm) }}{{ $photoSm }}{{ else }}{{ $photo }}{{ end }}"
+                     src="{{ if fileExists (printf "static%s" $photoSm) }}{{ $photoSm | safeURL }}{{ else }}{{ $photo | safeURL }}{{ end }}"
                      {{ if fileExists (printf "static%s" $photoSm) }}
-                     srcset="{{ $photoSm }} 600w, {{ $photoMd }} 1200w, {{ $photoHd }} 1920w"
+                     srcset="{{ $photoSm | safeURL }} 600w, {{ $photoMd | safeURL }} 1200w, {{ $photoHd | safeURL }} 1920w"
                      sizes="300px"
                      {{ end }}
                      alt="{{.Params.headerTitle}}">
