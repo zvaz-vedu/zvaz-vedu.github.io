@@ -33,9 +33,9 @@
             </div>
             <div class="header-graphics">
                 {{ $photo := .Params.headerPhoto }}
-                {{ $photoSm := replace $photo ".webp" "-sm.webp" }}
-                {{ $photoMd := replace $photo ".webp" "-md.webp" }}
-                {{ $photoHd := replace $photo ".webp" "-hd.webp" }}
+                {{ $photoSm := replaceRE "\\.(webp|jpg|jpeg|png)$" "-sm.webp" $photo }}
+                {{ $photoMd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-md.webp" $photo }}
+                {{ $photoHd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-hd.webp" $photo }}
                   <img class="header-graphics-photo"
                        src="{{ $photoSm | safeURL }}"
                        srcset="{{ $photoSm | safeURL }} 600w, {{ $photoMd | safeURL }} 1200w, {{ $photoHd | safeURL }} 1920w"
@@ -192,9 +192,9 @@
                             {{$dir := printf "static/media/imgs/gallery/plzen24/"}}
                             {{range readDir $dir}}
                                 {{if and (not (eq .Name ".DS_Store")) (not .IsDir) (not (strings.Contains .Name "-sm.webp")) (not (strings.Contains .Name "-md.webp")) (not (strings.Contains .Name "-hd.webp")) (not (strings.Contains .Name "-lg.webp"))}}
-                                    {{ $hd := replace .Name ".webp" "-hd.webp" }}
-                                    {{ $sm := replace .Name ".webp" "-sm.webp" }}
-                                    {{ $md := replace .Name ".webp" "-md.webp" }}
+                                    {{ $hd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-hd.webp" .Name }}
+                                    {{ $sm := replaceRE "\\.(webp|jpg|jpeg|png)$" "-sm.webp" .Name }}
+                                    {{ $md := replaceRE "\\.(webp|jpg|jpeg|png)$" "-md.webp" .Name }}
                                     <a href="/media/imgs/gallery/plzen24/{{.Name}}" class="glightbox" data-gallery="gallery1">
                                         <img src="/media/imgs/gallery/plzen24/{{ $sm }}" srcset="/media/imgs/gallery/plzen24/{{ $sm }} 600w, /media/imgs/gallery/plzen24/{{ $md }} 1200w, /media/imgs/gallery/plzen24/{{ $hd }} 1920w" sizes="(max-width: 800px) 50vw, 30vw" loading="lazy">
                                     </a>

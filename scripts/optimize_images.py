@@ -97,15 +97,15 @@ def process_file_worker(args_tuple):
             created = 0
             msg_list = []
             for label, max_dim, out_path in variants_to_generate:
-                if orig_w <= max_dim and orig_h <= max_dim:
-                    continue
-
                 if dry_run:
                     msg_list.append(f"  [DRY-RUN] {file_path.name} -> {out_path.name} (max {max_dim}px)")
                     created += 1
                     continue
 
-                resized = resize_image(img, max_dim)
+                if orig_w <= max_dim and orig_h <= max_dim:
+                    resized = img.copy()
+                else:
+                    resized = resize_image(img, max_dim)
                 
                 if resized.mode in ("RGBA", "LA") or (resized.mode == "P" and "transparency" in resized.info):
                     save_img = resized.convert("RGBA")
