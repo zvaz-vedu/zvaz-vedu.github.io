@@ -4,7 +4,7 @@ layout: location
 
 headerTitle: "v Praze"
 headerText: "9. června 2025 v Senátu Parlamentu ČR!"
-headerPhoto: "/media/imgs/gallery/praha25/Zvaž Vědu! 0904.webp"
+headerPhoto: "/media/imgs/gallery/praha25/Zvaž_Vědu_0904.webp"
 photoSource: "https://commons.wikimedia.org/wiki/File:Vald%C5%A1tejnsk%C3%BD_pal%C3%A1c,_jednac%C3%AD_s%C3%A1l_sen%C3%A1tu_%C4%8Cesk%C3%A9_republiky_(5)).webp; Anna Tesař, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"    
 
 events: "2"
@@ -39,7 +39,7 @@ zastita: true
 
 additionalInfo: true
 additionalInfoImages:
-- /media/imgs/gallery/praha25/Zvaž Vědu! 0905.webp
-- /media/imgs/gallery/praha25/Zvaž Vědu! 1305.webp
+- /media/imgs/gallery/praha25/Zvaž_Vědu_0905.webp
+- /media/imgs/gallery/praha25/Zvaž_Vědu_1305.webp
 ---
 {{< program/praha26 >}}
