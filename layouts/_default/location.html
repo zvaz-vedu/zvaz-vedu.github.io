@@ -2,6 +2,13 @@
     <link rel="stylesheet" href="/css/location.css">
     <link rel="stylesheet" href="/css/offers.css">
     <link rel="stylesheet" href="/css/budejovice.css">
+    {{ if .Params.headerPhoto }}
+    {{ $photo := .Params.headerPhoto }}
+    {{ $photoSm := replaceRE "\\.(webp|jpg|jpeg|png)$" "-sm.webp" $photo }}
+    {{ $photoMd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-md.webp" $photo }}
+    {{ $photoHd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-hd.webp" $photo }}
+    <link rel="preload" as="image" href="{{ $photoSm | safeURL }}" imagesrcset="{{ $photoSm | safeURL }} 600w, {{ $photoMd | safeURL }} 1200w, {{ $photoHd | safeURL }} 1920w" imagesizes="300px">
+    {{ end }}
 {{end}}
 
 {{define "scripts"}}
@@ -40,6 +47,8 @@
                        src="{{ $photoSm | safeURL }}"
                        srcset="{{ $photoSm | safeURL }} 600w, {{ $photoMd | safeURL }} 1200w, {{ $photoHd | safeURL }} 1920w"
                        sizes="300px"
+                       fetchpriority="high"
+                       decoding="sync"
                        alt="{{.Params.headerTitle}}">
                 <picture>
                     <source srcset="/media/imgs/base/zv_kocka_45deg_zv-white.webp" media="(prefers-color-scheme: dark)">

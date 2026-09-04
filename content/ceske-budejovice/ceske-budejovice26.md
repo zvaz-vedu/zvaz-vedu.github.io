@@ -1,5 +1,5 @@
 ---
-title: Zvaž vědu! České Budějovice 2025
+title: Zvaž vědu! České Budějovice 2026
 date: 2026-05-22
 location: Aula Jihočeské univerzity
 layout: report
