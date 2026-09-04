@@ -1,26 +1,39 @@
-name: Convert Images to WebP
+name: Process Images (Sanitize, WebP, Resize)
 
 on:
   push:
     branches:
       - modernizace-2025 # Or your main content branch
     paths:
-      - 'static/**.jpg' # Adjust paths to your image directories
+      - 'static/**.jpg'
       - 'static/**.png'
       - 'static/**.JPG'
       - 'static/**.jpeg'
+      - 'static/**.webp'
       - 'content/**.jpg'
       - 'content/**.png'
+      - 'content/**.webp'
   workflow_dispatch:
 
 jobs:
-  convert-images:
+  process-images:
     runs-on: ubuntu-latest
     permissions:
       contents: write # Grants write access to the repository contents
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install Python dependencies
+        run: pip install Pillow
+
+      - name: Sanitize filenames (replace spaces, keep diacritics)
+        run: python scripts/sanitize_filenames.py
 
       - name: Install cwebp
         run: sudo apt-get update && sudo apt-get install -y webp
@@ -48,12 +61,15 @@ jobs:
             fi
           done
 
+      - name: Generate responsive WebP variants (-sm, -md, -hd)
+        run: python scripts/optimize_images.py
+
       - name: Commit and Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # git add . will stage both the new .webp files and the deletions of the old files
-          git add .
-          git diff --staged --quiet || git commit -m "Auto: Convert images to WebP and remove originals"
+          # Stage all modifications (renames, deletions, new files, updated content)
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto: Sanitize names, convert to WebP, and generate responsive variants"
           git push
