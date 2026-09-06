@@ -65,3 +65,14 @@ Byly opraveny následující vizuální vlastnosti pro vývojáře:
 - **Pořadí sekcí**: U měst platilo globální pravidlo obracení sloupců na mobilech (`column-reverse`), což bylo zrušeno. Fotografie týmu by měly být vždy správně uspořádány.
 - **Plynulost hover efektů**: Všechna CSS tlačítka a efekty využívají `--transition: all .2s ease-in-out;` v `root.css`. Loga partnerů, fotky týmů a tlačítka se nyní plynule prolínají nebo animují namísto bleskového blikání. (Dřívější chyba spočívala ve špatně pojmenované CSS jednotce u transition proměnné a v použití okamžitých vlastností display: none namísto opacity).
 - **Loga na mobilu**: Na mobilních zařízeních a tabletech se již logo v horním menu nevyměňuje za malý symbol. Plné textové logo zůstává vždy ukotveno.
+
+## 4. Rozcestník registrací (/registrace/)
+Stránka pro registrace `/registrace/` již nefunguje jako přesměrování (dříve s `layout: "port"`), ale zobrazuje rozcestník umožňující registraci na události ve více městech (např. Liberec, Praha, České Budějovice).
+Stránka má vlastní šablonu v `layouts/_default/registrace.html` a obsah tahá strukturovaně z front matter souboru `content/registrace/index.md`. 
+Pokud potřebujete přidat další město (odkaz), stačí v tomto souboru do sekce `options` přidat:
+```yaml
+  - title: "Registrace – Nové Město"
+    text: "Krátký popisek k akci."
+    url: "odkaz_na_gforms"
+```
+Stránka k tomu využívá grid karet `offers-grid`, takže je plně responsivní a ladí se vzhledem webu.

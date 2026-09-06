@@ -1,0 +1,35 @@
+{{define "styles"}}
+    <link rel="stylesheet" href="/css/single.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/offers.css">
+{{end}}
+
+{{define "scripts"}}
+{{end}}
+
+{{define "main"}}
+    <div class="layout-container" id="content">
+        <div class="layout-content" style="padding-top: 4rem; padding-bottom: 4rem; flex-direction: column; align-items: center;">
+            
+            <div class="offers-container" style="max-width: 900px; width: 100%; margin: 0 auto; padding: 0;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'ZV-Display', sans-serif; text-transform: uppercase;">
+                    {{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}
+                </h2>
+                
+                <div class="offers-grid">
+                    {{ range .Params.options }}
+                    <a href="{{ .url }}" class="offer-card" style="text-decoration: none;">
+                        <div class="offer-header">
+                            <span class="offer-number" style="font-size: 2rem;">📍</span>
+                        </div>
+                        <h3 style="font-family: 'ZV-Display', sans-serif; text-transform: uppercase; margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: normal;">{{ .title }}</h3>
+                        <p style="color: var(--black-zv); font-size: 1.2rem; line-height: 1.5; margin-bottom: 2rem;">{{ .text }}</p>
+                        <div class="secondary-button" style="margin-top: auto;">Registrovat se</div>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+{{end}}
