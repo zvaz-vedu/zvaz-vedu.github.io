@@ -1,5 +1,5 @@
 ---
 title: "Registrace"
 layout: "port"
-link: "https://forms.gle/PbfwpSe5mmgXwJvC7"
+link: "https://forms.gle/hgqAse6ir1YSEdUQ6"
 ---
