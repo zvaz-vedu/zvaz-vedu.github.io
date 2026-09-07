@@ -10,6 +10,5 @@ options:
 
   - title: "Okno do vesmíru #4"
     text: "Ve čtvrtek 17. září od 15:00 v Semlerově rezidenci v Plzni"
-    cityRef: "/plzen"
-    url: "https://forms.gle/PbfwpSe5mmgXwJvC7" # Odkaz na formulář můžete přepsat i natvrdo, jinak se vezme z /plzen (proměnná registration)
+    url: "https://docs.google.com/forms/d/e/1FAIpQLScGADh-ZHTyEhWvRgNaO-ctw5GFnkjcG7MbE2nrM6BHAWNAQQ/viewform?usp=send_form" 
 ---
