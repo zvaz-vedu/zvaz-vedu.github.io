@@ -19,28 +19,42 @@ Pokud chcete skrýt např. program, stačí smazat klíč `program: true`, a tak
 - `team` a `partners`: Pole týmů a partnerů, načítá data a obrázky ze statických složek.
 
 ### Systém Bento Boxů (horní dlaždice)
-Místo starého systému, který napevno zobrazoval různé dlaždice nahoře podle vlajky `liveAction`, si nyní můžete libovolně navolit, které boxy chcete vidět.
-
 Využijte parametr `bentoBoxes: [id_boxu, id_boxu, id_boxu]` v souboru `_index.md`.
 
 Předdefinované boxy se nacházejí v souboru `/data/bento_boxes.yaml`. Aktuálně jsou k dispozici např.:
 - `events_count`: Box čerpající z proměnné `events: "2"` ("Počet akcí")
-- `participants_count`: Box čerpající z `participants: "200"` ("Počet účastníků")
 - `speakers_count`: Box čerpající z `speakers: "10"` ("Přednášejících")
 - `live_countdown`: Box s živým odpočtem, vyžaduje definovanou proměnnou `eventTime` v daném městě.
-- `live_registration`: Box s ukazatelem kapacity, vyžaduje proměnnou `registrationSheet` a `maxParticipants`.
-- `new_presentations`: Zobrazí upozornění na nové přednášky, vyžaduje proměnnou `newPresentations: "10"`.
-- `past_youtube`: Box odkazující na záznamy na YouTube (pokud v daném městě specifikujete `linkToLecturesYouTube`, odkáže na něj, jinak vede na profil Zvaž vědu).
+- `past_youtube`: Box odkazující na záznamy na YouTube.
 - `past_feedback`: Box pro feedback po skončení akce.
+- `new_presentations`: Zobrazí upozornění na nové přednášky, vyžaduje proměnnou `newPresentations: "10"`.
+
+### ⚠️ DŮLEŽITÉ: Účastníci vs Kapacita (Rozdíl v proměnných)
+V systému existují dvě zdánlivě podobné proměnné pro účastníky, které ale dělají odlišné věci. **Nikdy nepoužívejte zastaralou proměnnou `newParticipants`!**
+
+1. **`participants`** (např. `participants: "650+"`)
+   - Udává **historický celkový počet** účastníků.
+   - Slouží čistě jako text (takže se k němu smí psát znaménko plus).
+   - Zobrazuje se v bento boxu `participants_count`.
+
+2. **`maxParticipants`** (např. `maxParticipants: "300"`)
+   - Udává tvrdou **kapacitu blížícího se ročníku**.
+   - Slouží jako matematická hodnota (číslo) pro výpočet procent.
+   - Zobrazuje se v bento boxu `live_registration` (progress bar s naplněností). Společně s ním je nutné mít vyplněné `registrationSheet` (URL na CSV export tabulky).
 
 Příklad použití v hlavičce města:
 ```yaml
 bentoBoxes:
-  - "past_youtube"
-  - "past_feedback"
-  - "new_presentations"
+  - "events_count"
+  - "participants_count"
+  - "speakers_count"
+  - "live_registration"
+
+events: "3"
+participants: "650+"
+maxParticipants: "300"
 ```
-Pokud `bentoBoxes` nedefinujete, město použije starý hardcodovaný systém. Doporučujeme u nových i starých měst přejít na `bentoBoxes`. (Staré boxy tam nechávám jako záchrannou síť, než si ty aktuální migrujete).
+Pokud `bentoBoxes` nedefinujete, místo použije starý hardcodovaný systém. Doporučujeme u nových i starých míst přejít na `bentoBoxes`. (Staré boxy tam nechávám jako záchrannou síť, než si ty aktuální migrujete).
 
 ## 2. Aktuální události (Karty)
 Aktuality na domovské stránce (karusel) a sekce Historie tahají data ze souboru `/data/cards.yaml`.
@@ -67,7 +81,7 @@ Byly opraveny následující vizuální vlastnosti pro vývojáře:
 - **Loga na mobilu**: Na mobilních zařízeních a tabletech se již logo v horním menu nevyměňuje za malý symbol. Plné textové logo zůstává vždy ukotveno.
 
 ## 4. Rozcestník registrací (/registrace/)
-Stránka pro registrace `/registrace/` již nefunguje jako přesměrování (dříve s `layout: "port"`), ale zobrazuje rozcestník umožňující registraci na události ve více městech (např. Liberec, Praha, České Budějovice).
+Stránka pro registrace `/registrace/` již nefunguje jako přesměrování (dříve s `layout: "port"`), ale zobrazuje rozcestník umožňující registraci na události ve více městech.
 Stránka má vlastní šablonu v `layouts/_default/registrace.html` a obsah tahá strukturovaně z front matter souboru `content/registrace/index.md`. 
 Pokud potřebujete přidat další město (odkaz), stačí v tomto souboru do sekce `options` přidat:
 ```yaml
@@ -75,4 +89,14 @@ Pokud potřebujete přidat další město (odkaz), stačí v tomto souboru do se
     text: "Krátký popisek k akci."
     url: "odkaz_na_gforms"
 ```
-Stránka k tomu využívá grid karet `offers-grid`, takže je plně responsivní a ladí se vzhledem webu.
+
+### Automatické napojení na město (ukazatel kapacity)
+Karty v rozcestníku umí automaticky zobrazit progres bar (ukazatel aktuálně registrovaných účastníků), pokud je propojíte s existujícím městem.
+K tomu slouží parametr `cityRef`. Pokud jej uvedete, rozcestník si automaticky "sáhne" do daného města (např. `/plzen`), přečte si z něj URL Google tabulky (`registrationSheet`), maximální kapacitu a registrační odkaz (pokud nevyplníte vlastní `url`).
+
+```yaml
+  - title: "Okno do vesmíru #4"
+    text: "Ve čtvrtek 17. září od 15:00 v Semlerově rezidenci v Plzni"
+    cityRef: "/plzen"
+```
+*Poznámka: Aby ukazatel kapacity fungoval, dané město (zde `/plzen/_index.md`) musí mít v hlavičce definované položky `registrationSheet` a `participants` (nebo `maxParticipants`).*

@@ -21,7 +21,7 @@ team: [honza, maty, eda, tomáš, lucka, jakub, michal, david, boris]
 registration: false
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQOQdFgAmFgz7wgg7e-27jPlIFPoPsdfxjsFHkVixJUB4bP4tQ4r32sE8FZii_fEbtJOPohskrXEo1t/pubhtml?gid=1729122906&single=true"
 
-newParticipants: "250"
+maxParticipants: "250"
 newPresentations: "10"
 linkToLecturesYouTube: https://www.youtube.com/@zvazvedu
 

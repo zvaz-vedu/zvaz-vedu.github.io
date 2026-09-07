@@ -17,7 +17,7 @@ team: [eda]
 partners: [fav-zcu-cz]
 
 registration: .
-newParticipants: "120"
+maxParticipants: "120"
 newPresentations: "10"
 
 abstracts: true

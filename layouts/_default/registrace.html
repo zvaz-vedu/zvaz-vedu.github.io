@@ -2,30 +2,105 @@
     <link rel="stylesheet" href="/css/single.css">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/offers.css">
+    <style>
+        /* Styl pro progress bar převzatý z location/bento stylů, protože možná chybí v tomto kontextu,
+           pokud není načtený location.css. Ale counters.js by to měl zvládnout, pokud tam přidáme správné třídy. */
+        .progress-bar-track-pill {
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 99px;
+            height: 24px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border: 2px solid var(--black-zv);
+        }
+        .progress-bar-fill-pill {
+            background-color: var(--black-zv);
+            height: 100%;
+            width: 0%;
+            transition: width 1s ease-in-out, background-color 0.5s ease;
+        }
+        .progress-bar-count-text {
+            position: absolute;
+            right: 10px;
+            font-size: 1rem;
+            color: var(--black-zv);
+            font-family: 'ZV-Regular', sans-serif;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .registration-full-pulse {
+            animation: pulse-full 2s infinite;
+        }
+        @keyframes pulse-full {
+            0% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(var(--accent-rgb), 0); }
+            100% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb), 0); }
+        }
+        /* Zajištění správné barvy bílého textu přes pill pokud je plný */
+        .progress-bar-count-text.white-text {
+            color: var(--white-zv);
+        }
+    </style>
 {{end}}
 
 {{define "scripts"}}
+    <script src="/js/counters.js"></script>
 {{end}}
 
 {{define "main"}}
     <div class="layout-container" id="content">
-        <div class="layout-content" style="padding-top: 4rem; padding-bottom: 4rem; flex-direction: column; align-items: center;">
+        <div class="layout-content" style="padding-top: 4rem; padding-bottom: 12rem; flex-direction: column; align-items: center;">
             
             <div class="offers-container" style="max-width: 900px; width: 100%; margin: 0 auto; padding: 0;">
-                <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'ZV-Display', sans-serif; text-transform: uppercase;">
+                <h2 style="text-align: center; margin-bottom: 4rem; font-family: 'ZV-Display', sans-serif; text-transform: uppercase;">
                     {{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}
                 </h2>
                 
                 <div class="offers-grid">
                     {{ range .Params.options }}
-                    <a href="{{ .url }}" class="offer-card" style="text-decoration: none;">
-                        <div class="offer-header">
-                            <span class="offer-number" style="font-size: 2rem;">📍</span>
-                        </div>
-                        <h3 style="font-family: 'ZV-Display', sans-serif; text-transform: uppercase; margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: normal;">{{ .title }}</h3>
-                        <p style="color: var(--black-zv); font-size: 1.2rem; line-height: 1.5; margin-bottom: 2rem;">{{ .text }}</p>
-                        <div class="secondary-button" style="margin-top: auto;">Registrovat se</div>
-                    </a>
+                        {{ $sheetUrl := "" }}
+                        {{ $maxParticipants := "" }}
+                        {{ $regUrl := .url }}
+                        {{ $cityText := .text }}
+                        {{ $cityTitle := .title }}
+                        
+                        {{ if .cityRef }}
+                            {{ $city := site.GetPage .cityRef }}
+                            {{ if $city }}
+                                {{ $sheetUrl = $city.Params.registrationSheet }}
+                                {{ $maxParticipants = default $city.Params.participants $city.Params.maxParticipants }}
+                                {{ if not $regUrl }}{{ $regUrl = $city.Params.registration }}{{ end }}
+                                {{ if not $cityTitle }}{{ $cityTitle = default $city.Title (printf "Registrace – %s" $city.Title) }}{{ end }}
+                            {{ end }}
+                        {{ end }}
+
+                        <a href="{{ $regUrl }}" class="offer-card" style="text-decoration: none;">
+                            <div class="offer-header">
+                                <span class="offer-number" style="font-size: 2.2rem;">📍</span>
+                            </div>
+                            <h3 style="font-family: 'ZV-Display', sans-serif; text-transform: uppercase; margin-bottom: 1rem; font-size: 2.2rem; font-weight: normal;">{{ $cityTitle }}</h3>
+                            <p style="color: var(--black-zv); font-size: 1.4rem; line-height: 1.5; margin-bottom: 2rem;">{{ $cityText }}</p>
+                            
+                            {{ if and $sheetUrl $maxParticipants }}
+                            <div style="margin-top: auto; margin-bottom: 1.5rem; width: 100%;">
+                                <div class="registration-info info-block" data-sheet-url="{{ $sheetUrl }}" data-max-participants="{{ $maxParticipants }}">
+                                    <div class="progress-bar-track-pill">
+                                        <div class="progress-bar-fill-pill"></div>
+                                        <span class="progress-bar-count-text">Načítám...</span>
+                                    </div>
+                                </div>
+                                <div class="bento-registration-text" style="font-size: 0.9rem; text-align: right; margin-top: 0.3rem; font-weight: 700; color: var(--black-zv);">účastníků</div>
+                            </div>
+                            <div class="secondary-button" style="margin-top: 0;">Registrovat se</div>
+                            {{ else }}
+                            <div class="secondary-button" style="margin-top: auto;">Registrovat se</div>
+                            {{ end }}
+                        </a>
                     {{ end }}
                 </div>
             </div>
