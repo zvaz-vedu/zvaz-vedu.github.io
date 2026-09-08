@@ -2,7 +2,7 @@
 title: FameLab Academy
 layout: famelab
 
-headerPhoto: "/media/imgs/locations/famelab-header.jpg"
+headerPhoto: "/media/imgs/locations/famelab-header.webp"
 subtitle: "Tvůj první krok do světa vědecké komunikace. Přihlas se do 8. března."
 partners: [univerzita-karlova, british-embassy-prague, cheltenham-festivals]
 ctaText: "Chci soutěžit"

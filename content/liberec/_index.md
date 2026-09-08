@@ -1,4 +1,4 @@
-﻿---
+---
 title: Zvaž vědu! Liberec
 layout: location
 
@@ -7,7 +7,7 @@ eventTime: 2026-10-23T09:00:00
 
 headerTitle: "v Liberci"
 headerText: "Zvaž vědu! se rozšiřuje do Liberce!"
-headerPhoto: "/media/imgs/gallery/plzen25/ZVP_132334.jpg"
+headerPhoto: "/media/imgs/gallery/plzen25/ZVP_132334.webp"
 
 bentoBoxes:
   - "live_registration"

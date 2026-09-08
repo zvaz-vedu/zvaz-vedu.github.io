@@ -5,7 +5,7 @@ layout: report
 
 headerTitle: "Zvaž vědu! podruhé v Brně"
 location: Hvězdárna a planetárium Brno
-headerImg: "/media/imgs/base/schrody-plysak.png"
+headerImg: "/media/imgs/base/schrody-plysak.webp"
 
 yt: "https://www.youtube.com/playlist?list=PL1NMrPWjk08R2GR8bAcDjt-a1cRGd1KMo"
 ---
