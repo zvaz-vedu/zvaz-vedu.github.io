@@ -124,6 +124,31 @@
   city: 
   link: 'www.gk-software.com/us/portals/careers-czech-republic-cz'
 
+- id: tul
+  name: Technická univerzita v Liberci
+  type: partner
+  city: 'Liberec'
+  link: 'https://www.tul.cz/'
+
+- id: liberecky-kraj
+  name: Liberecký kraj
+  type: partner
+  city: 'Liberec'
+  link: 'https://www.kraj-lbc.cz/'
+
+- id: nadace-jablotron
+  name: Nadace JABLOTRON
+  type: partner
+  city: 'Liberec'
+  link: 'https://www.jablotron.com/nadace'
+
+- id: nadace-preciosa
+  name: Nadace Preciosa
+  type: partner
+  city: 'Liberec'
+  link: 'https://www.nadacepreciosa.cz/'
+
+
 # Skrytí partneři (showOnPartnersPage: false)
 - id: british-embassy-prague
   name: Britské velvyslanectví v Praze

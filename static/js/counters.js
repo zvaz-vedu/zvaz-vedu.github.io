@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 if (participantCount >= target) {
-                    fillElement.style.backgroundColor = 'var(--tertiary)';
-                    fillElement.style.boxShadow = '0 0 15px var(--accent)';
+                    fillElement.style.backgroundColor = '#e63946'; // Red for full capacity
+                    fillElement.style.boxShadow = '0 0 15px rgba(230, 57, 70, 0.6)';
                     fillElement.classList.add('registration-full-pulse');
 
                     textElement.textContent = `Všech ${target} míst obsazeno!`;
@@ -137,6 +137,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     textElement.style.width = '100%';
 
                     if (bentoTextElement) bentoTextElement.textContent = `Děkujeme za velký zájem!`; 
+                } else if (percentage >= 85) {
+                    fillElement.style.backgroundColor = '#e63946'; // Red for 85%+ capacity
+                    fillElement.style.boxShadow = '0 0 10px rgba(230, 57, 70, 0.4)';
+                    fillElement.classList.remove('registration-full-pulse');
+                    
+                    textElement.style.fontWeight = 'bold';
+                    textElement.style.color = 'white';
+                    textElement.style.justifyContent = 'flex-end';
+                    textElement.style.left = 'auto';
+                    textElement.style.right = '15px';
+                    textElement.style.width = 'auto';
+
+                    if (bentoTextElement) bentoTextElement.textContent = `účastníků`;
                 } else {
                     fillElement.style.backgroundColor = '';
                     fillElement.style.boxShadow = '';

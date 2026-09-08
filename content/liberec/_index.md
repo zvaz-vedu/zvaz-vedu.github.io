@@ -2,29 +2,33 @@
 title: Zvaž vědu! Liberec
 layout: location
 
+location: Technická univerzita v Liberci
+eventTime: 2026-10-23T09:00:00
+
 headerTitle: "v Liberci"
 headerText: "Zvaž vědu! se rozšiřuje do Liberce!"
-headerPhoto: "/media/imgs/locations/plzen-header.webp"
+headerPhoto: "/media/imgs/gallery/plzen25/ZVP_132334.jpg"
 
 bentoBoxes:
-  - "events_count"
-  - "participants_count"
-  - "speakers_count"
   - "live_registration"
+  - "live_countdown"
+  - "speakers_count"
 
 events: "0"
 participants: "0+"
-speakers: "0"
+speakers: "10"
 
-maxParticipants: "100"
-registration: "https://forms.gle/..."
-registrationSheet: ""
+maxParticipants: "300"
+registration: "https://forms.gle/hgqAse6ir1YSEdUQ6"
+registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSIbGF9fO-s7cfWQQh4EGS5oWKeD7sQKTQZT6m0XRWYgTUzgkCoN09rVoqSLVhf6nDyfpZxDDIOabOH/pub?gid=678007510&single=true&output=csv"
 
-liveAction: true
+additionalInfo: true 
+letacekLink: /pdf/ZV_Liberec_letak.pdf
+
 showHistory: false
 
-team: [áďa]
-partners: []
+team: [áďa, honza, tomáš]
+partners: [eserocz-cz, liberecky-kraj, tul, nadace-jablotron, nadace-preciosa]
 
 importantInfo: false
 ---
