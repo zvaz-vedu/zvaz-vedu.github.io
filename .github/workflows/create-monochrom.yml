@@ -1,62 +1,64 @@
-name: Generate Monochrome Images
-
-on:
-  push:
-    paths:
-      - 'media/orgs/**'
-      - 'media/partners/**'
-  workflow_dispatch:
-
-jobs:
-  monochrome:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: pip install pillow
-
-      - name: Generate monochrome images and cleanup
-        run: |
-          python - <<'EOF'
-          from pathlib import Path
-          from PIL import Image
-
-          def process_folder(folder, output_folder):
-              Path(output_folder).mkdir(parents=True, exist_ok=True)
-              for img_path in Path(folder).glob('*.*'):
-                  # Process and save the monochrome image
-                  with Image.open(img_path) as im:
-                      im = im.convert("RGBA")
-                      pixels = im.load()
-                      for y in range(im.height):
-                          for x in range(im.width):
-                              r, g, b, a = pixels[x, y]
-                              if a != 0:
-                                  pixels[x, y] = (255, 255, 255, a)
-                      new_name = img_path.stem + '-monochrom' + img_path.suffix
-                      im.save(Path(output_folder) / new_name)
-
-                  # Delete the original file if it is NOT a .webp
-                  if img_path.suffix.lower() != '.webp':
-                      img_path.unlink()
-                      print(f"Deleted original non-webp file: {img_path}")
-
-          process_folder('media/orgs', 'media/orgs/monochrom')
-          process_folder('media/partners', 'media/partners/monochrom')
-          EOF
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          # Stage both the new monochrome files AND the deleted original files
-          git add media/orgs media/partners
-          git commit -m "Add monochrome images and remove non-webp originals" || echo "No changes to commit"
-          git push
+# nemyslím si že se na cokoliv používá
+#name: Generate Monochrome Images
+# 
+#on:
+#  push:
+#    paths:
+#      - 'media/orgs/**'
+#      - 'media/partners/**'
+#  workflow_dispatch:
+#
+#jobs:
+#  monochrome:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout repo
+#        uses: actions/checkout@v3
+#
+#      - name: Set up Python
+#        uses: actions/setup-python@v4
+#        with:
+#          python-version: '3.x'
+#
+#      - name: Install dependencies
+#        run: pip install pillow
+#
+#      - name: Generate monochrome images and cleanup
+#        run: |
+#          python - <<'EOF'
+#          from pathlib import Path
+#          from PIL import Image
+#
+#          def process_folder(folder, output_folder):
+#              Path(output_folder).mkdir(parents=True, exist_ok=True)
+#              for img_path in Path(folder).glob('*.*'):
+#                  # Process and save the monochrome image
+#                  with Image.open(img_path) as im:
+#                      im = im.convert("RGBA")
+#                      pixels = im.load()
+#                      for y in range(im.height):
+#                          for x in range(im.width):
+#                              r, g, b, a = pixels[x, y]
+#                              if a != 0:
+#                                  pixels[x, y] = (255, 255, 255, a)
+#                      new_name = img_path.stem + '-monochrom' + img_path.suffix
+#                      im.save(Path(output_folder) / new_name)
+#
+#                  # Delete the original file if it is NOT a .webp
+#                  if img_path.suffix.lower() != '.webp':
+#                      img_path.unlink()
+#                      print(f"Deleted original non-webp file: {img_path}")
+#
+#          process_folder('media/orgs', 'media/orgs/monochrom')
+#          process_folder('media/partners', 'media/partners/monochrom')
+#          EOF
+#
+#      - name: Commit changes
+#        run: |
+#          git config user.name "github-actions"
+#          git config user.email "github-actions@github.com"
+#          # Stage both the new monochrome files AND the deleted original files
+#          git add media/orgs media/partners
+#          git commit -m "Add monochrome images and remove non-webp originals" || echo "No changes to commit"
+#          git push
+#
