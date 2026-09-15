@@ -43,21 +43,17 @@ jobs:
           find . -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | while IFS= read -r -d $'\0' file; do
             webp_file="${file%.*}.webp"
             
-            # Convert if WebP doesn't exist OR if original is newer
-            if [ ! -f "$webp_file" ] || [ "$file" -nt "$webp_file" ]; then
-              echo "Converting $file to $webp_file"
-              
-              # Execute conversion; if successful, delete the source file
-              if cwebp "$file" -o "$webp_file" -q 80; then
-                echo "Conversion successful. Removing original: $file"
-                rm "$file"
-              else
-                echo "Warning: Failed to convert $file. Keeping original."
-              fi
-            else
-              # If the WebP is already up to date, just clean up the lingering original
-              echo "WebP is already up to date. Removing original: $file"
+            # We unconditionally convert any .jpg/.png found.
+            # Since this workflow deletes them after conversion, their presence
+            # guarantees they are newly added or modified by the user.
+            echo "Converting $file to $webp_file"
+            
+            # Execute conversion; if successful, delete the source file
+            if cwebp "$file" -o "$webp_file" -q 80; then
+              echo "Conversion successful. Removing original: $file"
               rm "$file"
+            else
+              echo "Warning: Failed to convert $file. Keeping original."
             fi
           done
 

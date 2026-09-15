@@ -1,21 +1,8 @@
-#!/usr/bin/env python3
-"""
-scripts/optimize_images.py
-
-Chytrý vícevláknový skript pro generování responzivních velikostí fotografií (-sm, -md).
-- Původní soubory zůstávají 100% zachovány v plné kvalitě (vhodné pro lightbox/stažení).
-- Vytváří zmenšené varianty:
-    * -sm.webp (max 600px - ideální pro 300px boxy, mobil a miniatury v galeriích)
-    * -md.webp (max 1200px - pro tablety a větší karty)
-- Automaticky narovnává EXIF orientaci (exif_transpose).
-- Je idempotentní: přeskočí soubory, které už mají aktuální varianty.
-- Bezpečný: ignoruje loga (base, partners, orgs) a malé ikony.
-- Paralelní zpracování: využívá všechna dostupná CPU jádra.
-"""
-
-import os
+﻿import os
 import sys
 import argparse
+import hashlib
+import json
 from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from PIL import Image, ImageOps
@@ -31,21 +18,25 @@ if sys.stderr and hasattr(sys.stderr, 'reconfigure'):
     except Exception:
         pass
 
-# Složky, které se standardně ignorují (loga a vektorová/malá grafika)
 DEFAULT_IGNORE_DIRS = {"base", "partners", "orgs", "favicon"}
-
-# Výchozí velikosti pro varianty (název -> max rozměr v pixelech)
-DEFAULT_SIZES = {
-    "sm": 600,
-    "md": 1200,
-    "hd": 1920,
-}
-
-# Přípony souborů k optimalizaci
+DEFAULT_SIZES = {"sm": 600, "md": 1200, "hd": 1920}
 TARGET_EXTENSIONS = {".webp", ".jpg", ".jpeg", ".png"}
+CACHE_FILE = Path(".image_cache.json")
+
+def load_cache():
+    if CACHE_FILE.exists():
+        try:
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except:
+            pass
+    return {}
+
+def save_cache(cache):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2)
 
 def should_skip_file(file_path: Path) -> bool:
-    """Zkontroluje, zda soubor není již vygenerovanou variantou."""
     stem = file_path.stem
     for suffix in ["-sm", "-md", "-hd", "-lg", "-thumb"]:
         if stem.endswith(suffix):
@@ -53,7 +44,6 @@ def should_skip_file(file_path: Path) -> bool:
     return False
 
 def resize_image(img: Image.Image, max_dim: int) -> Image.Image:
-    """Zmenší obrázek se zachováním poměru stran, pokud přesahuje max_dim."""
     width, height = img.size
     if width <= max_dim and height <= max_dim:
         return img.copy()
@@ -68,26 +58,43 @@ def resize_image(img: Image.Image, max_dim: int) -> Image.Image:
     return img.resize((new_width, new_height), resample=Image.Resampling.LANCZOS)
 
 def process_file_worker(args_tuple):
-    """Pracovní funkce pro ProcessPoolExecutor."""
-    file_path, sizes, quality, force, dry_run = args_tuple
-    file_path = Path(file_path)
+    file_path_str, sizes, quality, force, dry_run, cached_hash = args_tuple
+    file_path = Path(file_path_str)
 
     if should_skip_file(file_path):
-        return 0, 0, 0, None
+        return file_path_str, None, 0, 0, 0, None
 
-    src_mtime = file_path.stat().st_mtime
     src_size = file_path.stat().st_size
+
+    all_exist = True
+    for label in sizes:
+        out_path = file_path.with_name(f"{file_path.stem}-{label}.webp")
+        if not out_path.exists():
+            all_exist = False
+            break
+
+    current_hash = None
+    if not force and all_exist:
+        h = hashlib.md5()
+        with open(file_path, "rb") as f:
+            while chunk := f.read(8192):
+                h.update(chunk)
+        current_hash = h.hexdigest()
+        
+        if current_hash == cached_hash:
+            return file_path_str, current_hash, 0, 1, 0, None
+
+    if current_hash is None:
+        h = hashlib.md5()
+        with open(file_path, "rb") as f:
+            while chunk := f.read(8192):
+                h.update(chunk)
+        current_hash = h.hexdigest()
 
     variants_to_generate = []
     for label, max_dim in sizes.items():
         out_path = file_path.with_name(f"{file_path.stem}-{label}.webp")
-        if not force and out_path.exists():
-            if out_path.stat().st_mtime >= src_mtime:
-                continue
         variants_to_generate.append((label, max_dim, out_path))
-
-    if not variants_to_generate:
-        return 0, 1, 0, None
 
     try:
         with Image.open(file_path) as raw_img:
@@ -118,12 +125,11 @@ def process_file_worker(args_tuple):
                 msg_list.append(f"  [OK] {file_path.name} -> {out_path.name} [{save_img.width}x{save_img.height}, {out_size // 1024} KB, -{savings:.1f}%]")
                 created += 1
 
-            return created, 0, 0, "\n".join(msg_list)
+            return file_path_str, current_hash, created, 0, 0, "\n".join(msg_list)
     except Exception as e:
-        return 0, 0, 0, f"  [ERR] Chyba při zpracování {file_path}: {e}"
+        return file_path_str, None, 0, 0, 0, f"  [ERR] Chyba při zpracování {file_path}: {e}"
 
 def optimize_directory(base_dir: Path, sizes: dict, quality: int, force: bool, dry_run: bool, ignore_dirs: set, workers: int = None):
-    """Projde celou složku a paralelně optimalizuje všechny vhodné obrázky."""
     if workers is None:
         workers = os.cpu_count() or 4
 
@@ -136,7 +142,8 @@ def optimize_directory(base_dir: Path, sizes: dict, quality: int, force: bool, d
     else:
         print()
 
-    # Najdeme všechny soubory
+    cache = load_cache()
+
     files_to_process = []
     for root, dirs, files in os.walk(base_dir):
         dirs[:] = [d for d in dirs if d not in ignore_dirs]
@@ -148,7 +155,7 @@ def optimize_directory(base_dir: Path, sizes: dict, quality: int, force: bool, d
     total_files = len(files_to_process)
     print(f"Nalezeno {total_files} kandidátů ke kontrole. Spouštím optimalizaci...\n")
 
-    tasks = [(str(p), sizes, quality, force, dry_run) for p in files_to_process]
+    tasks = [(str(p), sizes, quality, force, dry_run, cache.get(str(p))) for p in files_to_process]
 
     total_created = 0
     total_skipped = 0
@@ -156,54 +163,32 @@ def optimize_directory(base_dir: Path, sizes: dict, quality: int, force: bool, d
     with ProcessPoolExecutor(max_workers=workers) as executor:
         futures = {executor.submit(process_file_worker, t): t[0] for t in tasks}
         for future in as_completed(futures):
-            created, skipped, _, msg = future.result()
+            file_path_str, new_hash, created, skipped, _, msg = future.result()
             total_created += created
             total_skipped += skipped
+            if new_hash and not dry_run:
+                cache[file_path_str] = new_hash
             if msg:
                 print(msg, flush=True)
+
+    if not dry_run:
+        save_cache(cache)
 
     print("\n" + "=" * 50)
     print("Dokončeno!")
     print(f"Celkem zkontrolováno souborů: {total_files}")
     print(f"Nově vygenerováno / aktualizováno variant: {total_created}")
-    print(f"Přeskočeno (již aktuální nebo malé): {total_skipped}")
+    print(f"Přeskočeno (již aktuální): {total_skipped}")
     print("=" * 50)
 
 def main():
     parser = argparse.ArgumentParser(description="Optimalizátor obrázků pro Zvaž vědu!")
-    parser.add_argument(
-        "--dir",
-        type=str,
-        default="static/media/imgs",
-        help="Cílová složka (výchozí: static/media/imgs)"
-    )
-    parser.add_argument(
-        "--quality",
-        type=int,
-        default=82,
-        help="WebP kvalita komprese (výchozí: 82)"
-    )
-    parser.add_argument(
-        "--workers",
-        type=int,
-        default=None,
-        help="Počet paralelních procesů (výchozí: počet jader CPU)"
-    )
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Vynutit přegenerování existujících variant"
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Pouze zobrazí, co by bylo vygenerováno, bez zápisu na disk"
-    )
-    parser.add_argument(
-        "--include-all-dirs",
-        action="store_true",
-        help="Zpracovat i složky s logy (base, partners, orgs)"
-    )
+    parser.add_argument("--dir", type=str, default="static/media/imgs", help="Cílová složka")
+    parser.add_argument("--quality", type=int, default=82, help="WebP kvalita")
+    parser.add_argument("--workers", type=int, default=None, help="Počet procesů")
+    parser.add_argument("--force", action="store_true", help="Vynutit přegenerování")
+    parser.add_argument("--dry-run", action="store_true", help="Pouze zobrazí")
+    parser.add_argument("--include-all-dirs", action="store_true", help="Včetně log")
 
     args = parser.parse_args()
 
