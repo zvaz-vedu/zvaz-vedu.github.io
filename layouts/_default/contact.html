@@ -5,7 +5,7 @@
 
 {{end}}
 {{define "main"}}
-    <header class="layout-container">
+    <header class="layout-container" id="contact-header">
         <div class="layout-content">
             <div class="header-body">
                 <h1>Věda je naším motorem.</h1>
@@ -20,56 +20,82 @@
     <section class="layout-container" id="contact">
         <div class="layout-content">
 
-            {{/* Loop through Sections (VEDENÍ, ORGANIZÁTOŘI) */}}
-            {{ range .Site.Data.team }}
+            {{ $teams := slice "Vedení" "Administrativní oddělení" "PR oddělení" "HR oddělení" "Technické oddělení" "Obchodní oddělení" "Regionální koordinátoři" "Zakladatelé" }}
+            
+            {{ range $teamName := $teams }}
                 
                 {{/* Section Header */}}
-                <h3 id="{{ .section | lower }}">{{ .section }}</h3>
+                <h3 id="{{ $teamName | urlize }}">{{ $teamName }}</h3>
 
                 {{/* Members Loop */}}
-                {{ range .members }}
-                <div class="team-member team-{{ .team }}" id="{{ .alias }}">
+                {{ range $member := site.Data.team }}
+                    {{ $memberTeams := default slice $member.team }}
+                    {{ if in $memberTeams $teamName }}
+                        {{ $posIndex := -1 }}
+                        {{ range $idx, $t := $memberTeams }}
+                            {{ if eq $t $teamName }}
+                                {{ $posIndex = $idx }}
+                            {{ end }}
+                        {{ end }}
+                        {{ $currentPosition := "" }}
+                        {{ if ge $posIndex 0 }}
+                            {{ $currentPosition = index (default slice $member.position) $posIndex }}
+                        {{ end }}
+                        
+                <div class="team-member team-{{ $teamName | urlize }}" id="{{ $member.alias }}">
                     <div class="team-member-photo">
-                        <img src="/media/imgs/team/{{ replace .photo ".webp" "-sm.webp" }}" srcset="/media/imgs/team/{{ replace .photo ".webp" "-sm.webp" }} 600w, /media/imgs/team/{{ replace .photo ".webp" "-md.webp" }} 1200w, /media/imgs/team/{{ replace .photo ".webp" "-hd.webp" }} 1920w" sizes="150px" alt="{{ .name }}">
+                        {{ if $member.photo }}
+                        <img src="/media/imgs/team/{{ replace $member.photo ".webp" "-sm.webp" }}" srcset="/media/imgs/team/{{ replace $member.photo ".webp" "-sm.webp" }} 600w, /media/imgs/team/{{ replace $member.photo ".webp" "-md.webp" }} 1200w, /media/imgs/team/{{ replace $member.photo ".webp" "-hd.webp" }} 1920w" sizes="150px" alt="{{ $member.name }}">
+                        {{ else }}
+                        <div style="width: 150px; height: 150px; background: #eee; border-radius: 50%;"></div>
+                        {{ end }}
                     </div>
                     
                     <div class="team-member-info">
-                        <strong>{{ .name }}</strong>
-                        <p style="margin-bottom:.5rem" >{{ .position }}</p>
+                        <strong>{{ $member.name }}</strong>
+                        <p style="margin-bottom:.5rem" >{{ $currentPosition }}</p>
 
                         {{/* Email */}}
-                        {{ if .mail }}
+                        {{ if $member.mail }}
                         <p style="margin-bottom:.5rem">
                             <i class="fa-regular fa-envelope" aria-hidden="true"></i>
-                            <a href="mailto:{{ .mail }}">{{ .mail }}</a>
+                            <a href="mailto:{{ $member.mail }}">{{ $member.mail }}</a>
                         </p>
                         {{ end }}
 
                         {{/* Website (Optional) */}}
-                        {{ if .web }}
+                        {{ if $member.web }}
                         <p>
                             <i class="fa-solid fa-globe" aria-hidden="true"></i>
-                            <a href="https://{{ .web }}/">{{ .web }}</a>
+                            <a href="https://{{ $member.web }}/">{{ $member.web }}</a>
                         </p>
                         {{ end }}
 
                         <div class="team-member-socials">
                             {{/* Instagram (Optional) */}}
-                            {{ if .ig }}
-                            <a href="{{ .ig }}">
+                            {{ if $member.ig }}
+                            <a href="{{ $member.ig }}">
                                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                             </a>
                             {{ end }}
                             
                             {{/* LinkedIn (Optional) */}}
-                            {{ if .linkedin }}
-                            <a href="{{ .linkedin }}">
+                            {{ if $member.linkedin }}
+                            <a href="{{ $member.linkedin }}">
                                 <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            {{ end }}
+                            
+                            {{/* Discord (Optional) */}}
+                            {{ if $member.discord }}
+                            <a href="{{ $member.discord }}">
+                                <i class="fa-brands fa-discord" aria-hidden="true"></i>
                             </a>
                             {{ end }}
                         </div>
                     </div>
                 </div>
+                {{ end }}
                 {{ end }}
 
             {{ end }}

@@ -5,19 +5,21 @@
 <section class="layout-container">
     <div class="team-body">
         {{ range .Site.Data.team }}
-            {{ range .members }}
             <div class="team-member">
                 <a href="/kontakt/#{{ .alias }}" class="team-member-link">
                     <div class="team-member-photo-container">
+                        {{ if .photo }}
                         <img class="team-member-photo" 
                              src="/media/imgs/team/{{ replace .photo ".webp" "-sm.webp" }}" 
                              srcset="/media/imgs/team/{{ replace .photo ".webp" "-sm.webp" }} 600w, /media/imgs/team/{{ replace .photo ".webp" "-md.webp" }} 1200w, /media/imgs/team/{{ replace .photo ".webp" "-hd.webp" }} 1920w" sizes="150px"
                              alt="{{ .name }}">
+                        {{ else }}
+                        <div class="team-member-photo" style="background:#eee; width:100%; height:100%; border-radius:50%;"></div>
+                        {{ end }}
                     </div>
                     <p class="team-member-name">{{ .alias | title }}</p>
                 </a>
             </div>
-            {{ end }}
         {{ end }}
     </div>
 </section>

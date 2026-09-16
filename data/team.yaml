@@ -1,160 +1,231 @@
-- section: "VEDENÍ"
-  members:
-    - name: "Jan Herzig"
-      alias: "honza"
-      team: "plzen"
-      photo: "honza.webp"
-      position: "ředitel, zakladatel"
-      mail: "herzig@zvazvedu.cz"
-      ig: "https://www.instagram.com/jan.herzig/"
-      linkedin: "https://cz.linkedin.com/in/jan-herzig-372a46316"
+- name: "Jan Herzig"
+  alias: "honza"
+  team:
+    - "Vedení"
+    - "Zakladatelé"
+  position:
+    - "ředitel organizace"
+    - "zakladatel"
+  photo: "honza.webp"
+  mail: "herzig@zvazvedu.cz"
+  ig: "https://www.instagram.com/jan.herzig/"
+  linkedin: "https://cz.linkedin.com/in/jan-herzig-372a46316"
 
-    - name: "Eduard Plic"
-      alias: "eda"
-      team: "plzen"
-      photo: "eda.webp"
-      position: "zástupce ředitele, spoluzakladatel"
-      mail: "plic@zvazvedu.cz"
-      ig: "https://www.instagram.com/plice_13/"
+- name: "Lucie Kaiserová"
+  alias: "lucka"
+  team:
+    - "Vedení"
+    - "PR oddělení"
+  position:
+    - "zástupkyně ředitele"
+    - "vedoucí"
+  photo: "lucka.webp"
+  mail: "kaiserova@zvazvedu.cz"
+  ig: "https://www.instagram.com/kaiserovalucie/"
 
-- section: "ORGANIZÁTOŘI"
-  members:
-    
-    - name: "Tomáš Rajchman"
-      alias: "tomáš"
-      team: "plzen"
-      photo: "tomáš.webp"
-      position: "koordinátor IT, spoluzakladatel"
-      mail: "rajchman@zvazvedu.cz"
+- name: "Eduard Plic"
+  alias: "eda"
+  team:
+    - "Administrativní oddělení"
+    - "Zakladatelé"
+  position:
+    - "vedoucí"
+    - "zakladatel"
+  photo: "eda.webp"
+  mail: "plic@zvazvedu.cz"
+  ig: "https://www.instagram.com/plice_13/"
 
-    - name: "Lucie Kaiserová"
-      alias: "lucka"
-      team: "plzen"
-      photo: "lucka.webp"
-      position: "koordinátor PR"
-      mail: "kaiserova@zvazvedu.cz"
-      ig: "https://www.instagram.com/kaiserovalucie/"
+- name: "Petr Geršl"
+  alias: "petr"
+  team:
+    - "Administrativní oddělení"
+  position:
+    - "právní koordinátor"
+  photo: "petr.webp"
+  mail: "gersl@zvazvedu.cz"
+  web: "pgersl.xyz"
+  ig: "https://www.instagram.com/pgersl.jpg/"
+  linkedin: "https://www.linkedin.com/in/petr-geršl-9324491a6"
 
-    - name: "Jakub Anderle"
-      alias: "jakub"
-      team: "plzen"
-      photo: "jakub.webp"
-      position: "koordinátor HR"
-      mail: "anderle@zvazvedu.cz"
-      ig: "https://www.instagram.com/dzejkob_anderle/"
-      linkedin: "https://www.linkedin.com/in/jakub-anderle-ab03983a7/"
-    
-    - name: "Michal Šos"
-      alias: "michal"
-      team: "plzen"
-      photo: "michal.webp"
-      position: "koordinátor partnerů"
-      mail: "sos@zvazvedu.cz"
-
-    - name: "Boris Brovkin"
-      alias: "boris"
-      team: "brno"
-      photo: "boris.webp"
-      position: "koordinátor grafiky"
-      mail: "brovkin@zvazvedu.cz"
-      ig: "https://www.instagram.com/_borisbrovkin/"
-
-    - name: "Petr Geršl"
-      alias: "petr"
-      team: "brno"
-      photo: "petr.webp"
-      position: "koordinátor administrativy"
-      mail: "gersl@zvazvedu.cz"
-      web: "pgersl.xyz"
-      ig: "https://www.instagram.com/pgersl.jpg/"
-      linkedin: "https://www.linkedin.com/in/petr-geršl-9324491a6"
-
-    - name: Slávek Tomášek
-      alias: slávek
-      team: plzen
-      photo: "tomasek.webp"
-      position: "koordinátor pro Vysočinu"
-      mail: "tomasek@zvazvedu.cz"
-
-    - name: Pavel Linka
-      alias: "pavel"
-      team: "plzen"
-      photo: "pavel.webp"
-      position: "programový koordinátor pro oblast life sciences"
-      mail: "linka@zvazvedu.cz"
-      linkedin: "https://www.linkedin.com/in/pavel-jan-linka-855685328/?originalSubdomain=cz"
-      ig: "https://www.instagram.com/pavellinka/"
-
-    - name: "David Němec"
-      alias: "david"
-      team: "plzen"
-      photo: "david.webp"
-      position: "koordinátor vize projektu, spoluzakladatel"
-      mail: "nemec@zvazvedu.cz"
-
-    - name: "Matěj Šicner"
-      alias: "matěj"
-      team: "brno"
-      photo: "matěj.webp"
-      position: "organizátor pro Brno"
-      mail: "sicner@zvazvedu.cz"
-      ig: "https://www.instagram.com/msicner/"
-
-    - name: "Oliver Klimeš"
-      alias: "oliver"
-      team: "brno"
-      photo: "oliver.webp"
-      position: "organizátor pro Brno"
-      mail: "klimes@zvazvedu.cz"
-      ig: "https://www.instagram.com/oliverklimes/"
-      linkedin: "https://cz.linkedin.com/in/oliver-klime%C5%A1-893a21235"
+- name: "Alexandra Lukešová"
+  alias: "saša"
+  team:
+    - "PR oddělení"
+  position:
+    - "koordinátor sociálních sítí"
+  photo: "saša.webp"
   
-    - name: "Jan Morávek"
-      alias: "honza-m"
-      team: "plzen"
-      photo: "honza-m.webp"
-      position: "organizátor pro České Budějovice"
-      mail: "moravek@zvazvedu.cz"
+- name: "Jakub Holeček"
+  alias: "jakub-holecek"
+  team:
+    - "PR oddělení"
+  position:
+    - "koordinátor mailové komunikace"
+  photo: "jakub-holecek.webp"
 
-    - name: "Bc. Karel Horák"
-      alias: "karel"
-      team: "plzen"
-      photo: "horak.webp"
-      position: "hlavní fotograf"
-      mail: "horak@zvazvedu.cz"
-      web: photohorak.cz/
-      ig: https://www.instagram.com/photo_horak/
+- name: "Anežka Střelbová"
+  alias: "anežka"
+  team:
+    - "PR oddělení"
+  position:
+    - "koordinátor videotvorby"
+  photo: "strelbova.webp"
+  mail: "strelbova@zvazvedu.cz"
+  ig: "https://www.instagram.com/strelbovaanezka/"
 
-    - name: Anežka Střelbová
-      alias: anežka
-      team: plzen
-      photo: "strelbova.webp"
-      position: "koordinátor videotvorby"
-      mail: "strelbova@zvazvedu.cz"
-      ig: https://www.instagram.com/strelbovaanezka/
+- name: "Bc. Karel Horák"
+  alias: "karel"
+  team:
+    - "PR oddělení"
+  position:
+    - "koordinátor fotografie"
+  photo: "horak.webp"
+  mail: "horak@zvazvedu.cz"
+  web: "photohorak.cz/"
+  ig: "https://www.instagram.com/photo_horak/"
 
-    - name: "Jan Poupa"
-      alias: "poupič"
-      team: "plzen"
-      photo: "poupič.webp"
-      position: "koordinátor grafiky"
-      mail: "poupa@zvazvedu.cz"
-      ig: "https://www.instagram.com/jan_poupa/"
-      linkedin: "https://il.linkedin.com/in/janpoupa"
+- name: "Boris Brovkin"
+  alias: "boris"
+  team:
+    - "PR oddělení"
+  position:
+    - "koordinátor grafiky"
+  photo: "boris.webp"
+  mail: "brovkin@zvazvedu.cz"
+  ig: "https://www.instagram.com/_borisbrovkin/"
 
-    - name: "Matyáš Matta"
-      alias: "maty"
-      team: "plzen"
-      photo: "maty.webp"
-      position: "zakladatel"
-      mail: "matta@zvazvedu.cz"
-      linkedin: "https://cz.linkedin.com/in/matyasmatta/en"
+- name: "Jan Poupa"
+  alias: "poupič"
+  team:
+    - "PR oddělení"
+  position:
+    - "koordinátor grafické identity"
+  photo: "poupič.webp"
+  mail: "poupa@zvazvedu.cz"
+  ig: "https://www.instagram.com/jan_poupa/"
+  linkedin: "https://il.linkedin.com/in/janpoupa"
 
-    - name: "Adéla Podholová"
-      alias: "áďa"
-      team: "liberec"
-      photo: "áďa.webp"
-      position: "koordinátor řečníků"
-      mail: "podholova@zvazvedu.cz"
-      linkedin: "https://cz.linkedin.com/in/ad%C3%A9la-podholov%C3%A1-38292435b"
-      ig: "https://www.instagram.com/adel.pod/"
+- name: "Jakub Anderle"
+  alias: "jakub"
+  team:
+    - "HR oddělení"
+  position:
+    - "vedoucí"
+  photo: "jakub.webp"
+  mail: "anderle@zvazvedu.cz"
+  ig: "https://www.instagram.com/dzejkob_anderle/"
+  linkedin: "https://www.linkedin.com/in/jakub-anderle-ab03983a7/"
+
+- name: "Michal Šos"
+  alias: "michal"
+  team:
+    - "Obchodní oddělení"
+  position:
+    - "vedoucí"
+  photo: "michal.webp"
+  mail: "sos@zvazvedu.cz"
+
+- name: "Adéla Podholová"
+  alias: "áďa"
+  team:
+    - "HR oddělení"
+    - "Obchodní oddělení"
+    - "Regionální koordinátoři"
+  position:
+    - "koordinátor řečníků"
+    - "koordinátor ubytování & stravování"
+    - "koordinátor pro Liberec"
+  photo: "áďa.webp"
+  mail: "podholova@zvazvedu.cz"
+  linkedin: "https://cz.linkedin.com/in/ad%C3%A9la-podholov%C3%A1-38292435b"
+  ig: "https://www.instagram.com/adel.pod/"
+
+- name: "Amálie Bártíková"
+  alias: "amča"
+  team:
+    - "HR oddělení"
+  position:
+    - "koordinátor ambasadorů"
+  photo: "amča.webp"
+  mail: "bartikova@zvazvedu.cz"
+  discord: "https://discordapp.com/users/1388574265544020159"
+
+- name: "Oliver Klimeš"
+  alias: "oliver"
+  team:
+    - "HR oddělení"
+  position:
+    - "koordinátor organizátorů"
+  photo: "oliver.webp"
+  mail: "klimes@zvazvedu.cz"
+  ig: "https://www.instagram.com/oliverklimes/"
+  linkedin: "https://cz.linkedin.com/in/oliver-klime%C5%A1-893a21235"
+
+- name: "Matěj Šicner"
+  alias: "matěj"
+  team:
+    - "HR oddělení"
+  position:
+    - "pomocný organizátor"
+  photo: "matěj.webp"
+  mail: "sicner@zvazvedu.cz"
+  ig: "https://www.instagram.com/msicner/"
+
+- name: "David Němec"
+  alias: "david"
+  team:
+    - "HR oddělení"
+    - "Zakladatelé"
+  position:
+    - "pomocný organizátor"
+    - "zakladatel"
+  photo: "david.webp"
+  mail: "nemec@zvazvedu.cz"
+
+- name: "Tomáš Rajchman"
+  alias: "tomáš"
+  team:
+    - "Technické oddělení"
+    - "Zakladatelé"
+  position:
+    - "vedoucí"
+    - "zakladatel"
+  photo: "tomáš.webp"
+  mail: "rajchman@zvazvedu.cz"
+
+- name: "Slávek Tomášek"
+  alias: "slávek"
+  team:
+    - "Regionální koordinátoři"
+  position:
+    - "koordinátor pro Vysočinu"
+  photo: "tomasek.webp"
+  mail: "tomasek@zvazvedu.cz"
+
+- name: "Matyáš Matta"
+  alias: "maty"
+  team:
+    - "Zakladatelé"
+  position:
+    - "zakladatel"
+  photo: "maty.webp"
+  mail: "matta@zvazvedu.cz"
+  linkedin: "https://cz.linkedin.com/in/matyasmatta/en"
+
+# - name: "Pavel Linka"
+#   alias: "pavel"
+#   team: []
+#   position:
+#     - "programový koordinátor pro oblast life sciences"
+#   photo: "pavel.webp"
+#   mail: "linka@zvazvedu.cz"
+#   linkedin: "https://www.linkedin.com/in/pavel-jan-linka-855685328/?originalSubdomain=cz"
+#   ig: "https://www.instagram.com/pavellinka/"
+
+# - name: "Jan Morávek"
+#   alias: "honza-m"
+#   team: []
+#   position:
+#     - "organizátor pro České Budějovice"
+#   photo: "honza-m.webp"
+#   mail: "moravek@zvazvedu.cz"

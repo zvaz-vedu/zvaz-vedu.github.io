@@ -1,3 +1,11 @@
+- date: 2026-09-15
+  type: update
+  icon: "fa-solid fa-graduation-cap"
+  title: "Soustředění vítězů SOČ"
+  description: "Tři desítky úspěšných řešitelů Středoškolské odborné činnosti se sjely do Brna. Čekal je týden plný vědy, prezentování a přípravy na mezinárodní soutěže."
+  link:
+    url: "/soustredeni-soc/"
+    text: "Přečíst si report"
 - date: 2026-09-17
   type: update
   icon: "fa-solid fa-calendar"
@@ -300,3 +308,4 @@
   link:
     url: "/plzen/plzen23"
     text: O akci
+

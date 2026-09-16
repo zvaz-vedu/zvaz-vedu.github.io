@@ -1,17 +1,37 @@
 /* CONTACT */
 
+#contact.layout-container {
+    padding-top: 0;
+}
+
 #contact .layout-content {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 3rem;
+    column-gap: 3rem;
+    row-gap: 1.5rem;
     flex-wrap: wrap;
+    padding-top: 0;
+}
+
+#contact-header.layout-container {
+    padding-bottom: 0;
+}
+
+#contact-header .layout-content {
+    padding-bottom: 0;
 }
 
 #contact h3 {
     width: 100%;
     text-align: center;
     color: var(--primary);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact h3:first-child {
+    margin-top: 2rem;
 }
 
 .team-member {
