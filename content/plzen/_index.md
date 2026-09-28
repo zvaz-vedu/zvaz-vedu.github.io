@@ -7,23 +7,34 @@ location: FAV ZČU
 headerPhoto: "/media/imgs/locations/plzen-header.webp"
 
 <!-- joinUs: http --> 
-pastActions: true
+showHistory: true
+
+bentoBoxes:
+  - "live_registration"
+  - "live_countdown"
+  - "new_presentations"
 
 events: "3"
 participants: "650+"
 speakers: "31"
 
 liveAction: true
-eventTime: 2025-11-28T09:00:00
+eventTime: 2026-11-26T09:00:00
 
-abstracts: true
+noticeBadge: "Novinka"
+noticeTitle: "Prodloužený program!"
+noticeText: "Páteční akce od 9 do 15 hodin tak jak ji znáte bude otevřená 400 studentům. Pro 150 zájemců však poprvé nabídneme speciální program až do soboty – těšit se můžete na prodloužené exkurze, networkingovou party, workshopy nebo panelovou diskusi s vědci."
+noticeHighlight: "Jakých bloků programu se chcete zúčastnit zvolíte v registračním formuláři. Pokud se přihlásíte včas, můžete dosáhnout i na ubytování zdarma!"
+
+abstracts: false
 abstractUrl: "/plzen/info/abstrakty"
 
-team: [honza, maty, eda, tomáš, poupič, lucka, david]
-partners: [plzensky-kraj-cz, podporatalentu-cz, fav-zcu-cz, eserocz-cz, ceska-cesta-do-vesmiru, radovanek-cz, kooperativa, sit-port, linet, gk]
-registration: false
-maxParticipants: "300"
-newPresentations: "10"
+team: [honza, eda, tomáš, áďa, lucka, jakub]
+partners: [plzensky-kraj-cz, fav-zcu-cz, eserocz-cz, radovanek-cz, kooperativa, linet, gk]
+registration: 'https://forms.gle/rPYMVUA6Qd1ipT5m7'
+registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7C0G7BG8YNdOSO1hSxtmjlaNuc2pd6GMRO4SLHrT0gEAqYOV9Xl8jF2J9zK1IZZWC4cliQRKzdVQs/pub?gid=1597922239&single=true&output=csv"
+maxParticipants: "400"
+newPresentations: "12"
 program: false
 zastita: false
 infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"

@@ -162,7 +162,33 @@
         {{end}}
     {{end}}
         
-        {{if .Params.infoVid}}
+    {{if .Params.noticeText}}
+        <section class="layout-container" id="program-notice">
+            <div class="layout-content">
+                <div class="program-notice-card">
+                    <div class="program-notice-header">
+                        {{with .Params.noticeBadge}}
+                            <span class="program-notice-badge">{{.}}</span>
+                        {{end}}
+                        {{with .Params.noticeTitle}}
+                            <h3 class="program-notice-title">{{.}}</h3>
+                        {{end}}
+                    </div>
+                    <div class="program-notice-body">
+                        {{.Params.noticeText | markdownify}}
+                    </div>
+                    {{with .Params.noticeHighlight}}
+                        <div class="program-notice-highlight">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>{{. | markdownify}}</span>
+                        </div>
+                    {{end}}
+                </div>
+            </div>
+        </section>
+    {{end}}
+
+    {{if .Params.infoVid}}
             <div class="layout-container" id="info-vid">
                 <div class="layout-content">
                     <div class="video-wrapper">

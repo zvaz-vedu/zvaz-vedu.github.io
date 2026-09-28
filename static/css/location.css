@@ -342,6 +342,126 @@ h3::after {
     }
 }
 
+/* PROGRAM NOTICE */
+
+#program-notice {
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+#program-notice .layout-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.program-notice-card {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--black-zv);
+    padding: 2.2rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    box-sizing: border-box;
+    border-left: 8px solid var(--black-zv);
+}
+
+.program-notice-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.program-notice-badge {
+    background: var(--black-zv);
+    color: var(--primary);
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 1.4rem;
+    padding: 0.35rem 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.program-notice-title {
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 2.6rem;
+    margin: 0;
+    color: var(--black-zv);
+    text-transform: uppercase;
+    line-height: 1.1;
+    width: auto;
+    text-wrap: wrap;
+}
+
+.program-notice-title::after {
+    display: none;
+}
+
+.program-notice-body,
+.program-notice-body p {
+    font-family: 'ZV-Regular', sans-serif;
+    font-size: 1.85rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--black-zv) !important;
+}
+
+.program-notice-highlight {
+    background: rgba(0, 0, 0, 0.08);
+    padding: 1.4rem 1.8rem;
+    border-radius: 4px;
+    font-family: 'ZV-Bold', sans-serif;
+    font-size: 1.65rem;
+    line-height: 1.5;
+    color: var(--black-zv) !important;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.program-notice-highlight i {
+    font-size: 1.9rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    #program-notice {
+        padding-bottom: 1.5rem;
+    }
+    #program-notice .layout-content {
+        padding-inline: 15px;
+    }
+    .program-notice-card {
+        padding: 1.6rem 1.5rem;
+        border-left-width: 6px;
+        gap: 1rem;
+    }
+    .program-notice-badge {
+        font-size: 1.2rem;
+        padding: 0.25rem 0.7rem;
+    }
+    .program-notice-title {
+        font-size: 2.2rem;
+    }
+    .program-notice-body,
+    .program-notice-body p {
+        font-size: 1.45rem;
+        line-height: 1.5;
+    }
+    .program-notice-highlight {
+        padding: 1rem 1.2rem;
+        font-size: 1.25rem;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    .program-notice-highlight i {
+        font-size: 1.4rem;
+        margin-top: 2px;
+    }
+}
+
 /* OHLEDNUTÍ */
 
 #history .layout-content {

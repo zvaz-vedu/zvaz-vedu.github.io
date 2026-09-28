@@ -79,7 +79,7 @@
         color: #000 !important;
         border-color: transparent;
         transform: translate(-3px, -3px);
-        box-shadow: 4px 4px 0 #ffffff;
+        box-shadow: 4px 4px 0 var(--white-zv);
     }
 }
 
@@ -298,6 +298,12 @@
     transform: rotate(180deg);
 }
 
+.reveal-placeholder {
+    visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+
 
 /* CTA */
 
@@ -484,6 +490,10 @@
         gap: 10px;
         flex-wrap: wrap;
     }
+
+    .reveal-placeholder {
+        display: none;
+    }
 }
 
 .grid-board-item h4 .button-group {
@@ -658,3 +668,27 @@
         font-size: 1.25rem;
     }
 }
+
+/* ===== GENERACE VESMÍR V OBSTÁLNÍČCÍCH ===== */
+
+.vesmir-box-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.vesmir-box-sub {
+    font-size: 1.3rem;
+    font-family: 'ZV-Regular', sans-serif;
+    text-transform: none;
+    color: var(--black-zv);
+    opacity: 0.85;
+}
+
+@media (max-width: 499px) {
+    .vesmir-box-header {
+        align-items: center;
+        text-align: center;
+    }
+}

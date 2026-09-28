@@ -1,3 +1,21 @@
+- date: 2026-09-28
+  type: update
+  icon: "fa-solid fa-user-plus"
+  title: "Registrace na Liberec v plném proudu"
+  description: "Historicky první Zvaž vědu! v Liberci se uskuteční v pátek 23. října na Technické univerzitě v Liberci a přihlášky jsou v plném proudu! Neváhej a zajisti si své místo co nejdříve."
+  link:
+    url: "/registrace/"
+    text: "Registrace"
+
+- date: 2026-09-28
+  type: update
+  icon: "fa-solid fa-rocket"
+  title: "Generace vesmír odstartovala"
+  description: "Jsme partnerem unikátního projektu, který změní vnímání vesmíru u mladé generace!"
+  link:
+    url: "https://www.generacevesmir.cz/"
+    text: "Přejít na web"
+
 - date: 2026-09-15
   type: update
   icon: "fa-solid fa-graduation-cap"
