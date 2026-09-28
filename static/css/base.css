@@ -108,12 +108,61 @@ nav .layout-content {
 .nav-logo a:nth-of-type(2) {
     display: none;
 }
-.nav-links, .nav-links div {
+.nav-links {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.nav-cities-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 1.2rem !important;
+}
+.nav-cities-row:has(> :nth-child(6)) {
+    display: grid !important;
+    grid-auto-flow: column !important;
+    grid-template-rows: auto auto !important;
+    column-gap: 1.1rem !important;
+    row-gap: 0.3rem !important;
+    align-items: center !important;
+}
+.nav-city-link {
+    text-decoration: none;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    color: var(--text);
+    text-transform: uppercase;
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 1.15rem;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.1;
+    display: inline-block;
+    width: fit-content !important;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: var(--transition);
+}
+.nav-city-link:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+.nav-main-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    border-left: 2px solid rgba(0, 0, 0, 0.15);
+    padding-left: 1.2rem;
+}
+@media (prefers-color-scheme: dark) {
+    .nav-main-links {
+        border-left-color: rgba(255, 255, 255, 0.2);
+    }
 }
 .nav-link {
     text-decoration: none;
@@ -554,7 +603,7 @@ footer,
 }
 
 /* --- Media Query for Mobile Screens --- */
-@media (max-width: 700px) { /* Changed from 500px to 800px */
+@media (max-width: 800px) {
 
     /* Hide the desktop navbar on mobile */
     .desktop-navbar {
@@ -701,16 +750,57 @@ footer,
     }
 }
 
-/* Additional styles for handling nav link wrapping before mobile breakpoint */
-@media (max-width: 1200px) and (min-width: 701px) {
+/* Responsive adjustments for desktop navbar down to mobile breakpoint (800px) */
+@media (max-width: 1150px) and (min-width: 801px) {
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 0.5rem;
-        line-height: 1.2;
+        gap: 1rem;
     }
-    
-    /* Reduce padding if needed to give more space */
+    .nav-cities-row {
+        gap: 0.85rem !important;
+    }
+    .nav-cities-row:has(> :nth-child(6)) {
+        column-gap: 0.85rem !important;
+        row-gap: 0.25rem !important;
+    }
+    .nav-city-link {
+        font-size: 1rem;
+    }
+    .nav-main-links {
+        gap: 0.9rem;
+        padding-left: 0.9rem;
+    }
+    .nav-link {
+        font-size: 1.55rem;
+    }
+    .nav-logo img {
+        height: 56px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 801px) {
+    .nav-links {
+        gap: 0.7rem;
+    }
+    .nav-cities-row {
+        gap: 0.65rem !important;
+    }
+    .nav-cities-row:has(> :nth-child(6)) {
+        column-gap: 0.65rem !important;
+        row-gap: 0.2rem !important;
+    }
+    .nav-city-link {
+        font-size: 0.88rem;
+    }
+    .nav-main-links {
+        gap: 0.65rem;
+        padding-left: 0.65rem;
+    }
+    .nav-link {
+        font-size: 1.35rem;
+    }
+    .nav-logo img {
+        height: 48px;
+    }
     nav .layout-content {
         padding-inline: 1rem;
     }
