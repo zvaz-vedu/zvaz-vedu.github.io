@@ -19,7 +19,7 @@ participants: "650+"
 speakers: "31"
 
 liveAction: true
-eventTime: 2026-11-26T09:00:00
+eventTime: 2026-11-27T09:00:00
 
 noticeBadge: "Novinka"
 noticeTitle: "Prodloužený program!"
