@@ -1,8 +1,8 @@
 - date: 2026-09-28
   type: update
   icon: "fa-solid fa-user-plus"
-  title: "Registrace na Liberec v plném proudu"
-  description: "Historicky první Zvaž vědu! v Liberci se uskuteční v pátek 23. října na Technické univerzitě v Liberci a přihlášky jsou v plném proudu! Neváhej a zajisti si své místo co nejdříve."
+  title: "Registrace na Liberec v plném proudu"
+  description: "Historicky první Zvaž vědu! v Liberci se uskuteční v pátek 23. října na Technické univerzitě v Liberci a přihlášky jsou v plném proudu! Neváhej a zajisti si své místo co nejdříve."
   link:
     url: "/registrace/"
     text: "Registrace"
@@ -11,7 +11,7 @@
   type: update
   icon: "fa-solid fa-rocket"
   title: "Generace vesmír odstartovala"
-  description: "Jsme partnerem unikátního projektu, který změní vnímání vesmíru u mladé generace!"
+  description: "Jsme partnerem unikátního projektu, který změní vnímání vesmíru u mladé generace!"
   link:
     url: "https://www.generacevesmir.cz/"
     text: "Přejít na web"
@@ -20,7 +20,7 @@
   type: update
   icon: "fa-solid fa-graduation-cap"
   title: "Soustředění vítězů SOČ"
-  description: "Tři desítky úspěšných řešitelů Středoškolské odborné činnosti se sjely do Brna. Čekal je týden plný vědy, prezentování a přípravy na mezinárodní soutěže."
+  description: "Tři desítky úspěšných řešitelů Středoškolské odborné činnosti se sjely do Brna. Čekal je týden plný vědy, prezentování a přípravy na mezinárodní soutěže."
   link:
     url: "/soustredeni-soc/"
     text: "Přečíst si report"
@@ -28,7 +28,7 @@
   type: update
   icon: "fa-solid fa-calendar"
   title: "Okno do vesmíru #4"
-  description: "Přednáškový cyklus o astronomii a kosmonautice se vrací! Ve čtvrtek 17. září od 15:00 v Semlerově rezidenci v Plzni vystoupí Mgr. Petr Brož, Ph.D. z Geofyzikálního ústavu AV ČR s přednáškou o výzkumu sopečné činnosti napříč Sluneční soustavou."
+  description: "Přednáškový cyklus o astronomii a kosmonautice se vrací! Ve čtvrtek 17. září od 15:00 v Semlerově rezidenci v Plzni vystoupí Mgr. Petr Brož, Ph.D. z Geofyzikálního ústavu AV ČR s přednáškou o výzkumu sopečné činnosti napříč Sluneční soustavou."
   link:
     url: "https://forms.gle/marEFMtsEg9cTD4c7"
     text: "Přihlásit se na akci"
@@ -38,21 +38,21 @@
   title: Zvaž vědu! Brno 2026
   link:
     url: "/brno/"
-    text: O akci
+    text: O akci
 
 - date: 2026-05-22
   type: event
   title: Zvaž vědu! České Budějovice 2026
   link:
     url: "/ceske-budejovice/"
-    text: O akci
+    text: O akci
 
 - date: 2026-06-08
   type: event
   title: Zvaž vědu! Praha 2026
   link:
     url: "/praha/"
-    text: O akci
+    text: O akci
 
 - date: 2026-04-26
   type: event
@@ -72,7 +72,7 @@
   type: update
   icon: "fa fa-trophy"
   title: "Náš ředitel je STŘEDOŠKOLÁK ROKU 2026"
-  description: "Ředitel organizace Zvaž vědu! Jan Herzig získal prestižní ocenění Středoškolák roku 2026, které se uděluje nejvýznamnějším středoškolským osobnostem v České republice."
+  description: "Ředitel organizace Zvaž vědu! Jan Herzig získal prestižní ocenění Středoškolák roku 2026, které se uděluje nejvýznamnějším středoškolským osobnostem v České republice."
   link:
     url: https://www.instagram.com/p/DZ13xNVAq9l/?img_index=1
     text: Instagram!
@@ -81,7 +81,7 @@
   type: update
   icon: "fa-solid fa-meteor"
   title: "introfilm zveřejněn!"
-  description: "Právě jsme zveřejnili introfilm akce Zvaž vědu! Praha 2026, který vytvořila talentovaná Anežka Střelová. Pusťte si jej a nalaďte se na akci!"
+  description: "Právě jsme zveřejnili introfilm akce Zvaž vědu! Praha 2026, který vytvořila talentovaná Anežka Střelová. Pusťte si jej a nalaďte se na akci!"
   link:
     url: "https://www.youtube.com/watch?v=TD9PU5G6Moc"
     text: "Chci si ho pustit!"
@@ -90,7 +90,7 @@
   type: update
   icon: "fa-solid fa-meteor"
   title: "Příležitost pro astronomy!"
-  description: "Zajímá tě vesmír? Chceš se dozvědět, jak dnes vypadá reálná věda v této oblasti a třeba se do ní přímo sám zapojit? Máš jedinečnou šanci s unikátni letní školou AV ČR!"
+  description: "Zajímá tě vesmír? Chceš se dozvědět, jak dnes vypadá reálná věda v této oblasti a třeba se do ní přímo sám zapojit? Máš jedinečnou šanci s unikátni letní školou AV ČR!"
   link:
     url: "https://www.vesmirprolidstvo.cz/cs/aktuality/Letni-skola-Astronomem-na-tri-dny/"
     text: "Chci vědět víc!"
@@ -108,7 +108,7 @@
   type: update
   icon: "fa-solid fa-hourglass-half"
   title: "Program Praha 2026 zveřejněn!"
-  description: "Chceš vědět, v kolik hodin začne jaká přednáška? Už nemusíš čekat, program je zveřejněn!"
+  description: "Chceš vědět, v kolik hodin začne jaká přednáška? Už nemusíš čekat, program je zveřejněn!"
   link:
     url: "/praha/"
     text: "Chci to vidět!"
@@ -117,7 +117,7 @@
   type: update
   icon: "fa-solid fa-user-plus"
   title: "Přijímáme náhradníky do Prahy!"
-  description: "Letošní Zvaž vědu! Praha se zaplnilo doopravdy velmi rychle, i nadále však přijímáme náhradníky, tak neváhej a přihlas se!"
+  description: "Letošní Zvaž vědu! Praha se zaplnilo doopravdy velmi rychle, i nadále však přijímáme náhradníky, tak neváhej a přihlas se!"
   link:
     url: "/registrace-praha/"
     text: Registrace
@@ -126,7 +126,7 @@
   type: update
   icon: "fa-solid fa-hourglass-half"
   title: "Zvaž vědu! České Budějovice za námi!"
-  description: "Moc děkujeme za přízeň, akce Zvaž vědu! České Budějovice 2026 je za námi. Přečtěte si, jak to celé probíhalo a co se dělo!"
+  description: "Moc děkujeme za přízeň, akce Zvaž vědu! České Budějovice 2026 je za námi. Přečtěte si, jak to celé probíhalo a co se dělo!"
   link:
     url: "/ceske-budejovice/ceske-budejovice26"
     text: "Tisková zpráva"
@@ -135,7 +135,7 @@
   type: update
   icon: "fa-solid fa-hourglass-half"
   title: "Program Budějovice 2026 zveřejněn!"
-  description: "Chceš vědět, v kolik hodin začne jaká přednáška? Už nemusíš čekat, program je zveřejněn!"
+  description: "Chceš vědět, v kolik hodin začne jaká přednáška? Už nemusíš čekat, program je zveřejněn!"
   link:
     url: "/ceske-budejovice/"
     text: "Chci to vidět!"
@@ -145,7 +145,7 @@
   type: update
   icon: "fa-solid fa-book-open"
   title: "Abstrakty Budějovice 2026 zveřejněny!"
-  description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! České Budějovice 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
+  description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! České Budějovice 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
   link:
     url: "/ceske-budejovice/info/abstrakty"
     text: "Přečíst abstrakty"
@@ -154,7 +154,7 @@
   type: update
   icon: "fa-solid fa-user-plus"
   title: Zvýšení kapacity do Budějovic!
-  description: "Neboť se kapacita zaplnila velmi rychle, po diskusi s univerzitou jsme navýšili kapacitu akce na 220 účastníků, zbývají tedy poslední desítky míst, tak nepromarni šanci!"
+  description: "Neboť se kapacita zaplnila velmi rychle, po diskusi s univerzitou jsme navýšili kapacitu akce na 220 účastníků, zbývají tedy poslední desítky míst, tak nepromarni šanci!"
   link:
     url: "/registrace-cb/"
     text: Registrace
@@ -163,7 +163,7 @@
   type: update
   icon: "fa-solid fa-user-plus"
   title: Registrace do Budějovic otevřeny!
-  description: "Historicky první Zvaž vědu! v jižních Čechách má otevřené přihlášky! Přijď se inspirovat řečníky se svého regionu v rámci spolupráce s Jihočeskou univerzitou."
+  description: "Historicky první Zvaž vědu! v jižních Čechách má otevřené přihlášky! Přijď se inspirovat řečníky se svého regionu v rámci spolupráce s Jihočeskou univerzitou."
   link:
     url: "/registrace-cb/"
     text: Registrace
@@ -172,7 +172,7 @@
   type: update
   icon: "fa-solid fa-user-plus"
   title: Registrace do Prahy otevřeny!
-  description: "Již druhý ročník akce Zvaž vědu! v hlavním městě, v Senátu Parlamentu České republiky, se bude konat 8. června a přihlášky jsou otevřené."
+  description: "Již druhý ročník akce Zvaž vědu! v hlavním městě, v Senátu Parlamentu České republiky, se bude konat 8. června a přihlášky jsou otevřené."
   link:
     url: "/registrace-praha/"
     text: Registrace
@@ -181,7 +181,7 @@
   type: update
   icon: "fa-solid fa-calendar"
   title: "Okno do vesmíru #3"
-  description: "Přednáškový cyklus o astronomii a kosmonautice se vrací! Ve čtvrtek 19. března od 15:00 v Semlerově rezidenci v Plzni vystoupí RNDr. Václav Pavlík, Ph.D. z Astronomického ústavu AV ČR s přednáškou o dynamice hvězdokup."
+  description: "Přednáškový cyklus o astronomii a kosmonautice se vrací! Ve čtvrtek 19. března od 15:00 v Semlerově rezidenci v Plzni vystoupí RNDr. Václav Pavlík, Ph.D. z Astronomického ústavu AV ČR s přednáškou o dynamice hvězdokup."
   link:
     url: "https://forms.gle/JrgLKuqKjsT9t5697"
     text: "Přihlásit se na akci"
@@ -190,7 +190,7 @@
   type: update
   icon: "fa-solid fa-magnifying-glass"
   title: "Exkurze Zvaž vědu! Brno"
-  description: "Po skončení přednášek tě čekají exkluzivní exkurze po vědeckých pracovištích v Brně. Počet míst je omezený, tak neváhej a přihlas se včas."
+  description: "Po skončení přednášek tě čekají exkluzivní exkurze po vědeckých pracovištích v Brně. Počet míst je omezený, tak neváhej a přihlas se včas."
   link:
     url: "https://docs.google.com/forms/d/1k5w0dU5uuEMPEZNfOgZc_oDJ8ZJX13y48VeRFhBPKuk/"
     text: "Přihlásit se na exkurzi"
@@ -199,7 +199,7 @@
   type: update
   icon: "fa-solid fa-book-open"
   title: "Abstrakty Brno 2026 zveřejněny!"
-  description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! Brno 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
+  description: "Chceš vědět, o čem budou přednášky na Zvaž vědu! Brno 2026? Abstrakty jsou venku — přečti si je a vyber si ty pravé!"
   link:
     url: "/brno/info/abstrakty"
     text: "Přečíst abstrakty"
@@ -208,7 +208,7 @@
   type: update
   icon: "fa-solid fa-microphone"
   title: "FameLab Academy – přihlašování končí!"
-  description: "Přihlašování do prvního ročníku FameLab Academy v Česku končí 8. března! Nahraj své 3minutové video a zabojuj o postup do finále."
+  description: "Přihlašování do prvního ročníku FameLab Academy v Česku končí 8. března! Nahraj své 3minutové video a zabojuj o postup do finále."
   link:
     url: "/famelab"
     text: "Přihlásit se"
@@ -216,8 +216,8 @@
 - date: 2026-02-11
   type: update
   icon: "fa-solid fa-calendar"
-  title: "DALŠÍ ROČNÍK V BRNĚ!"
-  description: "Zvaž vědu! se po roce vrací do Brna. 10 přednášek, skvělé stánky i exkurze - to všechno již ve čtvrtek 5. března. Neváhej a registruj se co nejdříve, letos to bude opravdu velké!"
+  title: "DALŠÍ ROČNÍK V BRNĚ!"
+  description: "Zvaž vědu! se po roce vrací do Brna. 10 přednášek, skvělé stánky i exkurze - to všechno již ve čtvrtek 5. března. Neváhej a registruj se co nejdříve, letos to bude opravdu velké!"
   link:
     url: "/brno"
     text: "Více informací"
@@ -226,7 +226,7 @@
   type: update
   icon: "fa-solid fa-address-book"
   title: "Newsletter Zvaž vědu!"
-  description: "Přihlaste se k odběru newsletteru Zvaž vědu! a mějte přehled o všech akcích!"
+  description: "Přihlaste se k odběru newsletteru Zvaž vědu! a mějte přehled o všech akcích!"
   link:
     url: "https://docs.google.com/forms/d/1mBMQr6pY6wV7ZxINbUuixhpgtS-YDakWKMqqDELzhMk/viewform?ts=69835a6f&edit_requested=true"
     text: "Registrace"
@@ -235,7 +235,7 @@
   type: update
   icon: "fa-solid fa-book"
   title: "Abstrakty pořád online"
-  description: "Zajímá vás o čem byly letošní přednášky na Zvaž vědu!? Přečtěte si abstrakty k nim na našich stránkách a brzy se můžete těšit i na videa!"
+  description: "Zajímá vás o čem byly letošní přednášky na Zvaž vědu!? Přečtěte si abstrakty k nim na našich stránkách a brzy se můžete těšit i na videa!"
   link:
     url: "/plzen/info/abstrakty"
     text: "Abstrakty Plzeň 2025"
@@ -252,8 +252,8 @@
 - date: 2025-11-28
   type: update
   icon: "fa-solid fa-calendar"
-  title: "Zvaž vědu! v Plzni je za námi"
-  description: "28. listopadu se konalo plzeňské Zvaž vědu! Akce se rozhodně povedla. Přečtěte si o ní víc!"
+  title: "Zvaž vědu! v Plzni je za námi"
+  description: "28. listopadu se konalo plzeňské Zvaž vědu! Akce se rozhodně povedla. Přečtěte si o ní víc!"
   link:
     url: "/plzen/plzen25"
     text: "Tisková zpráva"
@@ -262,7 +262,7 @@
   type: update
   icon: "fa-solid fa-user-plus"
   title: "Kapacita naplněna!"
-  description: "Děkujeme za velký zájem o akci Zvaž vědu! Plzeň 2025 a těšíme se 28. listopadu!"
+  description: "Děkujeme za velký zájem o akci Zvaž vědu! Plzeň 2025 a těšíme se 28. listopadu!"
   link:
     url: "https://forms.gle/WnCTzhKzkAdcBK2j9"
     text: "Přihlásit se jako náhradník"
@@ -280,7 +280,7 @@
   type: update
   icon: "fa fa-picture-o"
   title: "Česká cesta do vesmíru"
-  description: "Na Fakultě aplikovaných věd ZČU je až do 28. listopadu k nahlédnutí výstava o projektu České cesty do vesmíru."
+  description: "Na Fakultě aplikovaných věd ZČU je až do 28. listopadu k nahlédnutí výstava o projektu České cesty do vesmíru."
   link:
     url: "https://info.zcu.cz/Na-FAV-dorazila-Ceska-cesta-do-vesmiru--Vystava-mapuje-minulost-i-budoucnost-ceske-kosmonautiky/clanek.jsp?id=8718"
     text: "Více informací"
@@ -290,40 +290,40 @@
   title: Zvaž vědu! Plzeň 2025
   link:
     url: "/plzen/plzen25"
-    text: O akci
+    text: O akci
 
 - date: 2025-06-09
   type: event
   title: Zvaž vědu! Praha 2025
   link:
     url: "/praha/praha25"
-    text: O akci
+    text: O akci
 
 - date: 2025-03-06
   type: event
   title: Zvaž vědu! Brno 2025
   link:
     url: "/brno/brno25"
-    text: O akci
+    text: O akci
 
 - date: 2024-11-15
   type: event
   title: Zvaž vědu! Plzeň 2024
   link:
     url: "/plzen/plzen24"
-    text: O akci
+    text: O akci
 
 - date: 2024-10-29
   type: event
   title: Zvaž vědu! Brno 2024
   link:
     url: "/brno/brno24"
-    text: O akci
+    text: O akci
 
 - date: 2023-12-08
   type: event
   title: Zvaž vědu! Plzeň 2023
   link:
     url: "/plzen/plzen23"
-    text: O akci
+    text: O akci
 

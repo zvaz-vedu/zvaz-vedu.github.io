@@ -27,10 +27,29 @@
                         </span>
                     {{ end }}
                             
-                    {{ if .Params.eventTime }}
+                    {{ if or .Params.eventDateText .Params.eventTime }}
                         <span class="header-meta-item">
                             <i class="fa-regular fa-calendar"></i> 
-                            {{ (time .Params.eventTime).Format "2. 1. 2006 od 3h" }}
+                            {{ if .Params.eventDateText }}
+                                {{ .Params.eventDateText }}
+                            {{ else }}
+                                {{ $start := time .Params.eventTime }}
+                                {{ $end := false }}
+                                {{ with or .Params.eventEndTime .Params.eventEnd }}
+                                    {{ $end = time . }}
+                                {{ end }}
+                                {{ if and $end (ne ($start.Format "2. 1. 2006") ($end.Format "2. 1. 2006")) }}
+                                    {{ if and (eq $start.Year $end.Year) (eq $start.Month $end.Month) }}
+                                        {{ printf "%s-%s od %s" ($start.Format "2.") ($end.Format "2. 1. 2006") ($start.Format "3h") }}
+                                    {{ else if eq $start.Year $end.Year }}
+                                        {{ printf "%s - %s od %s" ($start.Format "2. 1.") ($end.Format "2. 1. 2006") ($start.Format "3h") }}
+                                    {{ else }}
+                                        {{ printf "%s - %s od %s" ($start.Format "2. 1. 2006") ($end.Format "2. 1. 2006") ($start.Format "3h") }}
+                                    {{ end }}
+                                {{ else }}
+                                    {{ $start.Format "2. 1. 2006 od 3h" }}
+                                {{ end }}
+                            {{ end }}
                         </span>
                     {{ end }}
                 </p>
@@ -175,12 +194,12 @@
                         {{end}}
                     </div>
                     <div class="program-notice-body">
-                        {{.Params.noticeText | markdownify}}
+                        {{ partial "vlna.html" (.Params.noticeText | markdownify) | safeHTML }}
                     </div>
                     {{with .Params.noticeHighlight}}
                         <div class="program-notice-highlight">
                             <i class="fa-solid fa-circle-info"></i>
-                            <span>{{. | markdownify}}</span>
+                            <span>{{ partial "vlna.html" (. | markdownify) | safeHTML }}</span>
                         </div>
                     {{end}}
                 </div>
@@ -202,7 +221,7 @@
             {{if .Params.program}}
             <div class="layout-content">
                 <h2>Program</h2>
-                {{.Content}}
+                {{ partial "vlna.html" .Content | safeHTML }}
             </div>
             {{end}}
             {{if .Params.abstracts}}
@@ -220,7 +239,7 @@
                 <div class="layout-content">
                     <div class="cta-body" >
                         <h2>{{.Params.importantInfoHeader}}</h2>
-                        <div class="important-info">{{.Params.importantInfoText | markdownify}}</div>
+                        <div class="important-info">{{ partial "vlna.html" (.Params.importantInfoText | markdownify) | safeHTML }}</div>
                     </div>  
                     <div class="gallery-container">
                         <div class="img-body">

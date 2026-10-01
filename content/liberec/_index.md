@@ -2,10 +2,10 @@
 title: Zvaž vědu! Liberec
 layout: location
 
-location: Technická univerzita v Liberci
+location: Technická univerzita v Liberci
 eventTime: 2026-10-23T09:00:00
 
-headerTitle: "v Liberci"
+headerTitle: "v Liberci"
 headerText: "Zvaž vědu! se rozšiřuje do Liberce!"
 headerPhoto: "/media/imgs/gallery/plzen25/ZVP_132334.webp"
 

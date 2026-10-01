@@ -2,7 +2,7 @@
 title: Zvaž vědu! Template
 layout: location
 
-headerTitle: "v Template"
+headerTitle: "v Template"
 headerText: "Zvaž vědu! Template 2025 se blíží!"
 headerPhoto: "/media/imgs/locations/plzen-header.webp"
 
@@ -21,9 +21,9 @@ maxParticipants: "120"
 newPresentations: "10"
 
 abstracts: true
-abstractHeader: "Chceš se dozvědět o přednáškách víc?"
+abstractHeader: "Chceš se dozvědět o přednáškách víc?"
 abstractUrl: "/praha/program/program"
-abstractButton: "Přečti si abstrakt a zhlédni medailonek"
+abstractButton: "Přečti si abstrakt a zhlédni medailonek"
 
 importantInfo: true
 importantInfoHeader: "Na co se můžete těšit..."

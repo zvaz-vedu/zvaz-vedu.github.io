@@ -5,7 +5,7 @@ layout: report
 
 partners: [hvezdarna-cz, eserocz-cz, kooperativa]
 headerTitle: "Akce Zvaž vědu! přivedla na brněnskou hvězdárnu stovky středoškoláků"
-location: Hvězdárna a planetárium Brno
+location: Hvězdárna a planetárium Brno
 headerImg: "static/media/imgs/gallery/brno26/ZVB_122521.jpg"
 
 yt: "https://www.youtube.com/@zvazvedu"

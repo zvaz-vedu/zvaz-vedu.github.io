@@ -13,4 +13,4 @@ links:
     icon: "fa-solid fa-chalkboard"
     text: "Obecná prezentace pro komunikování ZV"
 ---
-Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! Praha, potřebujeme naplnit kapacitu 250 míst! Prosíme, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-praha a zvazvedu.cz/praha. ~ Matyáš
+Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! Praha, potřebujeme naplnit kapacitu 250 míst! Prosíme, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-praha a zvazvedu.cz/praha. ~ Matyáš

@@ -28,7 +28,7 @@ schedule:
   - time_label: "12:10 — 12:40"
     start: "12:10"
     end: "12:40"
-    event: "Život ve vesmíru? Napříč prázdnotou vstříc zázraku přírody (Jan Herzig) <br> Experimentální rekonstrukce poranění žlučových cest s využitím decelularizované tkáně (Karolína Stinglová)"
+    event: "Život ve vesmíru? Napříč prázdnotou vstříc zázraku přírody (Jan Herzig) <br> Experimentální rekonstrukce poranění žlučových cest s využitím decelularizované tkáně (Karolína Stinglová)"
 
   - time_label: "12:50 — 13:20"
     start: "12:50"
@@ -38,7 +38,7 @@ schedule:
   - time_label: "13:30 — 14:00"
     start: "13:30"
     end: "14:00"
-    event: "Chemická laboratoř z pohodlí gauče: Simulace vlastností a interakcí molekul (Jakub Kutscherauer) <br> Jde to i bez nich? Aneb pavouk ve službách člověka (Ondřej Vaněk)"
+    event: "Chemická laboratoř z pohodlí gauče: Simulace vlastností a interakcí molekul (Jakub Kutscherauer) <br> Jde to i bez nich? Aneb pavouk ve službách člověka (Ondřej Vaněk)"
 
   - time_label: "14:00 — 14:10"
     start: "14:00"
@@ -48,7 +48,7 @@ schedule:
   - time_label: "14:10 — 14:20"
     start: "14:10"
     end: "14:20"
-    event: "Slosování o ceny (Organizační tým)"
+    event: "Slosování o ceny (Organizační tým)"
 
   - time_label: "14:20 — 15:00"
     start: "14:20"

@@ -11,7 +11,7 @@
   link: 'https://www.senat.cz'
 
 - id: hvezdarna-cz
-  name: Hvězdárna a planetárium Brno
+  name: Hvězdárna a planetárium Brno
   type: hlavni-partner
   city: 'Brno'
   link: 'https://www.hvezdarna.cz'
@@ -89,7 +89,7 @@
   link: 'https://www.cuni.cz/'
 
 - id: vut
-  name: Vysoké učení technické v Brně
+  name: Vysoké učení technické v Brně
   type: podporovatel
   city: 'Brno'
   link: https://www.vut.cz/
@@ -125,7 +125,7 @@
   link: 'www.gk-software.com/us'
 
 - id: tul
-  name: Technická univerzita v Liberci
+  name: Technická univerzita v Liberci
   type: partner
   city: 'Liberec'
   link: 'https://www.tul.cz/'
@@ -151,7 +151,7 @@
 
 # Skrytí partneři (showOnPartnersPage: false)
 - id: british-embassy-prague
-  name: Britské velvyslanectví v Praze
+  name: Britské velvyslanectví v Praze
   type: podporovatel
   city: Famelab
   link: 'https://www.gov.uk/world/organisations/british-embassy-prague.cs'

@@ -2,7 +2,7 @@
 title: Zvaž vědu! Plzeň
 layout: location
 
-headerTitle: "v Plzni"
+headerTitle: "v Plzni"
 location: FAV ZČU
 headerPhoto: "/media/imgs/locations/plzen-header.webp"
 
@@ -20,11 +20,12 @@ speakers: "31"
 
 liveAction: true
 eventTime: 2026-11-27T09:00:00
+eventEndTime: 2026-11-28
 
 noticeBadge: "Novinka"
 noticeTitle: "Prodloužený program!"
-noticeText: "Páteční akce od 9 do 15 hodin tak jak ji znáte bude otevřená 400 studentům. Pro 150 zájemců však poprvé nabídneme speciální program až do soboty – těšit se můžete na prodloužené exkurze, networkingovou party, workshopy nebo panelovou diskusi s vědci."
-noticeHighlight: "Jakých bloků programu se chcete zúčastnit zvolíte v registračním formuláři. Pokud se přihlásíte včas, můžete dosáhnout i na ubytování zdarma!"
+noticeText: "Páteční akce od 9 do 15 hodin tak jak ji znáte bude otevřená 400 studentům. Pro 150 zájemců však poprvé nabídneme speciální program až do soboty – těšit se můžete na prodloužené exkurze, networkingovou party, workshopy nebo panelovou diskusi s vědci."
+noticeHighlight: "Jakých bloků programu se chcete zúčastnit zvolíte v registračním formuláři. Pokud se přihlásíte včas, můžete dosáhnout i na ubytování zdarma!"
 
 abstracts: false
 abstractUrl: "/plzen/info/abstrakty"
@@ -37,6 +38,8 @@ maxParticipants: "400"
 newPresentations: "12"
 program: false
 zastita: false
-infoVid: "https://www.youtube.com/embed/Vys5OElvHPs"
+infoVid: false
+additionalInfo: true 
+
 linkToLecturesYouTube: "https://youtube.com/playlist?list=PL1NMrPWjk08Qv816Ed6booeo9dypuWkWL&si=26pYVn6Khg8bBFsH"
 ---

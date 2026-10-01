@@ -1,5 +1,5 @@
 # Můžeš zde definovat jakékoliv bento boxy.
-# Každý box má unikátní kód, kterým se pak volá v nastavení města.
+# Každý box má unikátní kód, kterým se pak volá v nastavení města.
 
 events_count:
   type: "stats"

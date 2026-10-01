@@ -1,0 +1,7 @@
+{{ $text := . }}
+{{ if $text }}
+    {{/* Dva průchody pro ošetření po sobě jdoucích předložek/spojek (např. "i v Praze") bez nutnosti lookbehind */}}
+    {{ $text = replaceRE `(?i)(^|[\s\x{00A0}(„"'\>–—\-])([ksvzouai])\s+` "$1$2\u00a0" $text }}
+    {{ $text = replaceRE `(?i)(^|[\s\x{00A0}(„"'\>–—\-])([ksvzouai])\s+` "$1$2\u00a0" $text }}
+{{ end }}
+{{ return $text }}
