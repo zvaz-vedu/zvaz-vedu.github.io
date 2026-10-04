@@ -691,4 +691,89 @@
         align-items: center;
         text-align: center;
     }
-}
+}
+
+/* ===== GENERACE VESMÍR PARTNERSKÝ BANNER ===== */
+
+#vesmir-partner {
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+#vesmir-partner .layout-content {
+    padding: 0;
+}
+
+.vesmir-partner-card {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--black-zv);
+    padding: 2.2rem 2.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    border-left: 8px solid var(--black-zv);
+    box-sizing: border-box;
+}
+
+.vesmir-partner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    max-width: 750px;
+}
+
+.vesmir-partner-card h3 {
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--black-zv);
+}
+
+.vesmir-partner-card p {
+    font-family: 'ZV-Regular', sans-serif;
+    font-size: 1.45rem;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--black-zv);
+}
+
+.vesmir-partner-card .secondary-button {
+    font-size: 1.6rem;
+    padding: 1.1rem 2.2rem;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+    .vesmir-partner-card {
+        padding: 2rem 1.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+        border-left-width: 6px;
+    }
+
+    .vesmir-partner-card h3 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .vesmir-partner-card p {
+        font-size: 1.35rem;
+    }
+
+    .vesmir-partner-card .secondary-button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+

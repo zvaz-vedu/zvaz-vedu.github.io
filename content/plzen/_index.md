@@ -36,10 +36,11 @@ registration: 'https://forms.gle/rPYMVUA6Qd1ipT5m7'
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7C0G7BG8YNdOSO1hSxtmjlaNuc2pd6GMRO4SLHrT0gEAqYOV9Xl8jF2J9zK1IZZWC4cliQRKzdVQs/pub?gid=1597922239&single=true&output=csv"
 maxParticipants: "400"
 newPresentations: "12"
-program: false
+program: true
 zastita: false
 infoVid: false
 additionalInfo: true 
 
 linkToLecturesYouTube: "https://youtube.com/playlist?list=PL1NMrPWjk08Qv816Ed6booeo9dypuWkWL&si=26pYVn6Khg8bBFsH"
 ---
+{{< program/plzen26 >}}
