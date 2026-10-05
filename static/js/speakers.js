@@ -19,9 +19,9 @@ document.getElementById('speakers-container').addEventListener('click', event =>
     label.textContent = isHidden ? 'Méně' : 'Více';
 });
 
-// --- JS Block 2: Search and Location Filtering ---
 const speakerSearch = document.getElementById('speaker-search');
 const locationFilters = document.querySelectorAll('.speaker-filters-container input[type="checkbox"]');
+const mapRegions = document.querySelectorAll('.map-region');
 
 function applySpeakerFilters() {
     const searchValue = speakerSearch ? speakerSearch.value.toLowerCase() : '';
@@ -35,7 +35,9 @@ function applySpeakerFilters() {
         });
 
     const speakers = document.querySelectorAll('.speaker');
-    const mapRegions = document.querySelectorAll('.map-region'); 
+
+    // Výchozí stav (žádný filtr nevybrán) nebo všechna města vybrána -> zobrazit všechny řečníky
+    const isAllOrNone = activeFilters.length === 0 || activeFilters.length === locationFilters.length;
 
     // 1. Filtrace řečníků
     speakers.forEach(speaker => {
@@ -43,21 +45,20 @@ function applySpeakerFilters() {
         const matchesSearch = speakerName.includes(searchValue);
         
         const matchesLocation =
-            activeFilters.length === 0 ||
+            isAllOrNone ||
             activeFilters.some(filterClass => speaker.classList.contains(filterClass));
 
         speaker.style.display = (matchesSearch && matchesLocation) ? 'flex' : 'none';
     });
 
-    // 2. Obarvování mapy přes inline styly (jak jsi chtěl)
+    // 2. Obarvování mapy
     if (mapRegions) {
         mapRegions.forEach(region => {
-            if (activeFilters.length === 0) {
-                // Výchozí stav (nic není zaškrtnuto)
-                region.style.fill = 'var(--black-zv)'; // Zde dej barvu, když nic nesvítí
+            if (isAllOrNone) {
+                // Výchozí stav nebo všechna města zaškrtnuta -> svítí všechny aktivní regiony
+                region.style.fill = 'var(--accent)';
             } else {
                 const hasMatch = activeFilters.some(filterClass => region.classList.contains(filterClass));
-                // Zde se tahají tvé proměnné
                 region.style.fill = hasMatch ? 'var(--accent)' : 'var(--black-zv)';
             }
         });
@@ -73,7 +74,23 @@ locationFilters.forEach(filter => {
     filter.addEventListener('change', applySpeakerFilters);
 });
 
-// ZAVOLÁME IHNED PO NAČTENÍ, ABY MAPA REAGOVALA NA DEFAULTNĚ ZAŠKRTNUTÁ TLAČÍTKA
-applySpeakerFilters();
+// Propojení klikání na mapu s filtry měst
+if (mapRegions) {
+    mapRegions.forEach(region => {
+        region.style.cursor = 'pointer';
+        region.addEventListener('click', () => {
+            const matchingFilter = Array.from(locationFilters).find(filter => {
+                let id = filter.id.toLowerCase();
+                let filterClass = id.startsWith('location-') ? id : `location-${id}`;
+                return region.classList.contains(filterClass);
+            });
+            if (matchingFilter) {
+                matchingFilter.checked = !matchingFilter.checked;
+                applySpeakerFilters();
+            }
+        });
+    });
+}
 
-// psalo gemi-ni tak sorry za chyby, ale to co bylo předtím tak psalo určitě taky
+// Spustit při načtení stránky
+applySpeakerFilters();

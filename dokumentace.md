@@ -14,9 +14,50 @@ Pokud chcete skrýt např. program, stačí smazat klíč `program: true`, a tak
 - `abstracts: true` a `abstractUrl: "/brno/info/abstrakty"`: Tlačítko odkazující na abstrakty.
 - `registration: "https://forms.gle/..."`: Pokud vyplníte URL, zapne se úplně dole registrační CTA sekce (tlačítko).
 - `importantInfo: true`: Zapne informační zónu se zajímavým textem a galerií. Vyžaduje `importantInfoHeader` a `importantInfoText`.
-- `additionalInfo: true`: Zapne "O projektu a akci", "Kamarády s sebou!" a blok 6 nabídek "Na co se můžeš těšit". (Vyžaduje definovat obrázky v `additionalInfoImages`).
+- `additionalInfo: true`: Zapne "O projektu a akci", "Kamarády s sebou!" a blok nabídek "Na co se můžeš těšit". Lze použít jako prosté `true` (zobrazí všech 6 výchozích boxů), nebo rozšířit do podrobné konfigurace pro přidání, odebrání a úpravu boxů (viz níže).
 - `showHistory: true`: (Dříve `pastActions`). Zobrazí na spodku stránky historii všech minulých ročníků v daném městě (Ohlédnutí). 
 - `team` a `partners`: Pole týmů a partnerů, načítá data a obrázky ze statických složek.
+
+### Systém informačních boxů nabídek (`additionalInfo`)
+Výchozí karty pro sekci „Na co se na Zvaž vědu! můžeš těšit?“ jsou vestavěny přímo v šabloně. K dispozici jsou výchozí boxy:
+- `prednasky`: „Zajímavé přednášky“
+- `networking`: „Networking“
+- `vyzkum`: „Inspirace pro vlastní výzkum“
+- `obcerstveni`: „Drobné občerstvení“
+- `stanky`: „Prezentace a stánky“
+- `exkurze`: „Odborné exkurze“
+
+Pokud zadáte pouze `additionalInfo: true`, zobrazí se všech 6 výchozích boxů s automatickým číslováním 01 až 06.
+
+Pokud chcete v daném městě vybrané boxy odebrat, upravit nebo přidat nové, zadáte `additionalInfo` jako objekt:
+```yaml
+additionalInfo:
+  enabled: true                 # Volitelné (výchozí true)
+  title: "Vlastní nadpis"       # Volitelné, přepíše výchozí "Na co se na Zvaž vědu! můžeš těšit?"
+  images:                       # Volitelné obrázky pro horní dvě sekce
+    - /media/imgs/gallery/...webp
+    - /media/imgs/gallery/...webp
+  remove:                       # Seznam ID boxů, které chcete skrýt
+    - exkurze
+    - obcerstveni
+  override:                     # Přepsání textů či fotky existujícího boxu
+    prednasky:
+      description: "Vlastní krátký popis pro toto město."
+      expanded_text: "Vlastní rozbalený text."
+      photo: "/media/imgs/..."
+  add:                          # Přidání nových vlastních boxů
+    - id: workshopy             # Volitelné ID (pro případné řazení v order)
+      title: "Workshopy"
+      icon: "fa-solid fa-laptop-code"
+      description: "Praktické workshopy s experty."
+      expanded_text: "Podrobnosti o náplni workshopů..."   # Volitelné (pokud chybí text i foto, tlačítko "Zobrazit více" se nezobrazí)
+      photo: "/media/imgs/gallery/..."                    # Volitelné
+  order:                        # Volitelné pořadí boxů. Pokud není zadáno, přidané boxy se zařadí na konec za výchozí.
+    - prednasky
+    - workshopy
+    - networking
+```
+Číslování boxů (01, 02, 03...) se vždy dopočítává automaticky podle konečného pořadí v gridu.
 
 ### Systém Bento Boxů (horní dlaždice)
 Využijte parametr `bentoBoxes: [id_boxu, id_boxu, id_boxu]` v souboru `_index.md`.

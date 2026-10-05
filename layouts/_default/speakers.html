@@ -255,19 +255,18 @@
                 <input type="text" placeholder="Vyhledej řečníka" id="speaker-search">
             </div>
             <div class="speaker-filters-container">
-                <input type="checkbox" id="location-brno" checked>
+                <input type="checkbox" id="location-brno">
                 <label for="location-brno">Brno</label>
                 
-                <input type="checkbox" id="location-plzeň" checked>
+                <input type="checkbox" id="location-plzeň">
                 <label for="location-plzeň">Plzeň</label>
                 
-                <input type="checkbox" id="location-praha" checked>
+                <input type="checkbox" id="location-praha">
                 <label for="location-praha">Praha</label>
 
-                <input type="checkbox" id="location-české-budějovice" checked>
+                <input type="checkbox" id="location-české-budějovice">
                 <label for="location-české-budějovice">České Budějovice</label>
             </div>
-        </div>
         </div>
         <div class="layout-content" id="speakers-content">
             {{ partial "speaker_list.html" . }}

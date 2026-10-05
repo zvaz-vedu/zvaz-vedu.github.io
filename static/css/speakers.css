@@ -9,6 +9,11 @@
     max-width: 100%;
 }
 
+.map-region {
+    cursor: pointer;
+    transition: fill 0.25s ease-in-out;
+}
+
 /* Removed !important */
 #speakers-container {
     display: grid;

@@ -283,9 +283,24 @@
             </section>
         {{end}}
     <!-- Removing the extra end tag from old liveAction block -->
-    {{if .Params.additionalInfo}}
-        {{ $img1 := (index .Params.additionalInfoImages 0) | default "/media/imgs/gallery/plzen25/main.webp" }}
-        {{ $img2 := (index .Params.additionalInfoImages 1) | default "/media/imgs/gallery/plzen25/ZVP_083651.webp" }}
+    {{ $addInfo := .Params.additionalInfo }}
+    {{ $showAddInfo := false }}
+    {{ if reflect.IsMap $addInfo }}
+        {{ $showAddInfo = true }}
+        {{ if isset $addInfo "enabled" }}
+            {{ $showAddInfo = $addInfo.enabled }}
+        {{ end }}
+    {{ else if $addInfo }}
+        {{ $showAddInfo = true }}
+    {{ end }}
+
+    {{ if $showAddInfo }}
+        {{ $images := .Params.additionalInfoImages }}
+        {{ if and (reflect.IsMap $addInfo) (isset $addInfo "images") }}
+            {{ $images = $addInfo.images }}
+        {{ end }}
+        {{ $img1 := (index $images 0) | default "/media/imgs/gallery/plzen25/main.webp" }}
+        {{ $img2 := (index $images 1) | default "/media/imgs/gallery/plzen25/ZVP_083651.webp" }}
         {{ $img1Sm := replace $img1 ".webp" "-sm.webp" | safeURL }}
         {{ $img1Md := replace $img1 ".webp" "-md.webp" | safeURL }}
         {{ $img1Hd := replace $img1 ".webp" "-hd.webp" | safeURL }}
@@ -329,135 +344,174 @@
                 </div>
             </div>
         </section>
+
+        {{ $infoMap := dict }}
+        {{ if reflect.IsMap $addInfo }}
+            {{ $infoMap = $addInfo }}
+        {{ end }}
+
+        {{/* Section heading */}}
+        {{ $sectionTitle := $infoMap.title | default "Na co se na Zvaž vědu! můžeš těšit?" }}
+
+        {{/* Default cards */}}
+        {{ $defaultOrder := slice "prednasky" "networking" "vyzkum" "obcerstveni" "stanky" "exkurze" }}
+        {{ $allOffers := dict
+            "prednasky" (dict
+                "title" "Zajímavé přednášky"
+                "icon" "fa-solid fa-flask"
+                "description" "Poslechneš si inspirativní příběhy a objevy přímo od středoškolských hvězd."
+                "expanded_text" "Ponoříme se do hlubin fyziky, biologie, medicíny i kosmonautiky. Nebude to nuda, slibujeme!"
+                "photo" "/media/imgs/gallery/brno26/ZVB_101649.webp"
+            )
+            "networking" (dict
+                "title" "Networking"
+                "icon" "fa-solid fa-users"
+                "description" "Poznáš komunitu stejně nadšených lidí a navážeš kontakty, které se ti budou hodit."
+                "expanded_text" "O přestávkách bude prostor pro diskuzi, sdílení nápadů a třeba i nalezení parťáků pro tvůj budoucí projekt."
+                "photo" "/media/imgs/gallery/brno26/ZVB_095249.webp"
+            )
+            "vyzkum" (dict
+                "title" "Inspirace pro vlastní výzkum"
+                "icon" "fa-solid fa-lightbulb"
+                "description" "Zjistíš, jak začít s vlastní vědeckou činností a jak se zapojit do soutěží typu SOČ."
+                "expanded_text" "Ukážeme ti, že dělat vědu na střední škole je reálné a že to stojí za to!"
+                "photo" "/media/imgs/gallery/praha25/Zvaž_Vědu_1045.webp"
+            )
+            "obcerstveni" (dict
+                "title" "Drobné občerstvení"
+                "icon" "fa-solid fa-bread-slice"
+                "description" "Jelikož akce je celé dopoledne, postaráme se o to, aby vám nevyhládlo."
+                "expanded_text" "Připravená pro každého účastníka bude alespoň jedna bageta."
+                "photo" "/media/imgs/senat/senat-jidlo.webp"
+            )
+            "stanky" (dict
+                "title" "Prezentace a stánky"
+                "icon" "fa-solid fa-store"
+                "description" "Prohlédněte si zajímavé expozice našich partnerů a univerzitních pracovišť."
+                "expanded_text" "V prostorách budou k dispozici stánky s interaktivními ukázkami a informacemi o možnostech dalšího studia či spolupráce."
+                "photo" "/media/imgs/gallery/plzen25/ZVP_084445.webp"
+            )
+            "exkurze" (dict
+                "title" "Odborné exkurze"
+                "icon" "fa-solid fa-route"
+                "description" "Nahlédněte pod pokličku špičkových laboratoří a vědeckých center v okolí."
+                "expanded_text" "Připravili jsme pro vás komentované prohlídky nejmodernějších laboratoří v místních výzkumných centrech."
+                "photo" "/media/imgs/gallery/brno26/ZVB_084003.webp"
+            )
+        }}
+        {{ if site.Data.offers }}
+            {{ $allOffers = site.Data.offers }}
+        {{ end }}
+
+        {{/* Determine removed keys */}}
+        {{ $removedKeys := slice }}
+        {{ with $infoMap.remove }}
+            {{ if reflect.IsSlice . }}
+                {{ $removedKeys = . }}
+            {{ else }}
+                {{ $removedKeys = slice . }}
+            {{ end }}
+        {{ end }}
+
+        {{/* Determine overrides */}}
+        {{ $overrides := dict }}
+        {{ with $infoMap.override }}
+            {{ if reflect.IsMap . }}
+                {{ $overrides = . }}
+            {{ end }}
+        {{ end }}
+
+        {{/* Build active default cards map */}}
+        {{ $cardsById := dict }}
+        {{ range $key := $defaultOrder }}
+            {{ if not (in $removedKeys $key) }}
+                {{ $cardData := index $allOffers $key }}
+                {{ if $cardData }}
+                    {{ $cardMap := dict "id" $key "title" $cardData.title "icon" $cardData.icon "description" $cardData.description "expanded_text" $cardData.expanded_text "photo" $cardData.photo "style" $cardData.style }}
+                    {{/* Apply overrides if present */}}
+                    {{ with index $overrides $key }}
+                        {{ range $fKey, $fVal := . }}
+                            {{ $cardMap = merge $cardMap (dict $fKey $fVal) }}
+                        {{ end }}
+                    {{ end }}
+                    {{ $cardsById = merge $cardsById (dict $key $cardMap) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+        {{/* Collect added cards */}}
+        {{ $addedCards := slice }}
+        {{ with $infoMap.add }}
+            {{ range $idx, $addCard := . }}
+                {{ $cardId := $addCard.id | default (printf "custom_%d" (add $idx 1)) }}
+                {{ $cardMap := merge (dict "id" $cardId) $addCard }}
+                {{ $addedCards = $addedCards | append $cardMap }}
+                {{ $cardsById = merge $cardsById (dict $cardId $cardMap) }}
+            {{ end }}
+        {{ end }}
+
+        {{/* Determine final cards slice in order */}}
+        {{ $finalCards := slice }}
+        {{ with $infoMap.order }}
+            {{ range $oKey := . }}
+                {{ with index $cardsById $oKey }}
+                    {{ $finalCards = $finalCards | append . }}
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            {{ range $key := $defaultOrder }}
+                {{ with index $cardsById $key }}
+                    {{ $finalCards = $finalCards | append . }}
+                {{ end }}
+            {{ end }}
+            {{ range $addCard := $addedCards }}
+                {{ $finalCards = $finalCards | append $addCard }}
+            {{ end }}
+        {{ end }}
+
         <section class="layout-container" id="what-to-expect">
             <div class="offers-container">
-                <h2>Na co se na Zvaž vědu! můžeš těšit?</h2>
+                <h2>{{ $sectionTitle }}</h2>
                 <div class="offers-grid">
-                    <div class="offer-card">
-                        <div class="offer-header">
-                            <span class="offer-number">01</span>
-                            <i class="fa-solid fa-flask offer-icon"></i> </div>
-                        <h3>Zajímavé přednášky</h3>
-                        <p>Poslechneš si inspirativní příběhy a objevy přímo od středoškolských hvězd.</p>
-                        <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
-                            <span class="text-more">Zobrazit více</span>
-                            <span class="text-less">Zobrazit méně</span>
-                            <i class="fa-solid fa-chevron-down chevron"></i>
-                        </button>
-                        <div class="offer-expanded-content">
-                            <div class="offer-expanded-inner">
-                                <p>Ponoříme se do hlubin fyziky, biologie, medicíny i kosmonautiky. Nebude to nuda, slibujeme!</p>
-                                <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/brno26/ZVB_101649-sm.webp" srcset="/media/imgs/gallery/brno26/ZVB_101649-sm.webp 600w, /media/imgs/gallery/brno26/ZVB_101649-md.webp 1200w, /media/imgs/gallery/brno26/ZVB_101649-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Přednášky">
-                                </div>
+                    {{ range $index, $card := $finalCards }}
+                        {{ $num := printf "%02d" (add $index 1) }}
+                        {{ $hasExpanded := or $card.expanded_text $card.photo }}
+                        <div class="offer-card"{{ with $card.style }} style="{{ . | safeCSS }}"{{ end }}>
+                            <div class="offer-header">
+                                <span class="offer-number">{{ $num }}</span>
+                                {{ with $card.icon }}
+                                    <i class="{{ . }} offer-icon"></i>
+                                {{ end }}
                             </div>
-                        </div>
-                    </div>
-                    <div class="offer-card">
-                        <div class="offer-header">
-                            <span class="offer-number">02</span>
-                            <i class="fa-solid fa-users offer-icon"></i>
-                        </div>
-                        <h3>Networking</h3>
-                        <p>Poznáš komunitu stejně nadšených lidí a navážeš kontakty, které se ti budou hodit.</p>
-                        <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
-                            <span class="text-more">Zobrazit více</span>
-                            <span class="text-less">Zobrazit méně</span>
-                            <i class="fa-solid fa-chevron-down chevron"></i>
-                        </button>
-                        <div class="offer-expanded-content">
-                            <div class="offer-expanded-inner">
-                                <p>O přestávkách bude prostor pro diskuzi, sdílení nápadů a třeba i nalezení parťáků pro tvůj budoucí projekt.</p>
-                                <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/brno26/ZVB_095249-sm.webp" srcset="/media/imgs/gallery/brno26/ZVB_095249-sm.webp 600w, /media/imgs/gallery/brno26/ZVB_095249-md.webp 1200w, /media/imgs/gallery/brno26/ZVB_095249-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Networking">
+                            <h3>{{ $card.title }}</h3>
+                            {{ with $card.description }}
+                                <p>{{ . }}</p>
+                            {{ end }}
+                            {{ if $hasExpanded }}
+                                <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
+                                    <span class="text-more">Zobrazit více</span>
+                                    <span class="text-less">Zobrazit méně</span>
+                                    <i class="fa-solid fa-chevron-down chevron"></i>
+                                </button>
+                                <div class="offer-expanded-content">
+                                    <div class="offer-expanded-inner">
+                                        {{ with $card.expanded_text }}
+                                            <p>{{ . }}</p>
+                                        {{ end }}
+                                        {{ with $card.photo }}
+                                            {{ $photoBase := replaceRE "-(sm|md|hd|lg)\\.(webp|jpg|jpeg|png)$" ".$2" . }}
+                                            {{ $photoSm := replaceRE "\\.(webp|jpg|jpeg|png)$" "-sm.webp" $photoBase | safeURL }}
+                                            {{ $photoMd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-md.webp" $photoBase | safeURL }}
+                                            {{ $photoHd := replaceRE "\\.(webp|jpg|jpeg|png)$" "-hd.webp" $photoBase | safeURL }}
+                                            <div class="offer-photo-spot">
+                                                <img src="{{ $photoSm }}" srcset="{{ $photoSm }} 600w, {{ $photoMd }} 1200w, {{ $photoHd }} 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="{{ $card.title }}">
+                                            </div>
+                                        {{ end }}
+                                    </div>
                                 </div>
-                            </div>
+                            {{ end }}
                         </div>
-                    </div>
-                    <div class="offer-card" style="background-color: var(--accent);">
-                        <div class="offer-header">
-                            <span class="offer-number">03</span>
-                            <i class="fa-solid fa-lightbulb offer-icon"></i>
-                        </div>
-                        <h3>Inspirace pro vlastní výzkum</h3>
-                        <p>Zjistíš, jak začít s vlastní vědeckou činností a jak se zapojit do soutěží typu SOČ.</p>
-                        <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
-                            <span class="text-more">Zobrazit více</span>
-                            <span class="text-less">Zobrazit méně</span>
-                            <i class="fa-solid fa-chevron-down chevron"></i>
-                        </button>
-                        <div class="offer-expanded-content">
-                            <div class="offer-expanded-inner">
-                                <p>Ukážeme ti, že dělat vědu na střední škole je reálné a že to stojí za to!</p>
-                                <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/praha25/Zvaž_Vědu_1045-sm.webp" srcset="/media/imgs/gallery/praha25/Zvaž_Vědu_1045-sm.webp 600w, /media/imgs/gallery/praha25/Zvaž_Vědu_1045-md.webp 1200w, /media/imgs/gallery/praha25/Zvaž_Vědu_1045-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="SOČ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer-card" style="background-color: var(--accent);">
-                        <div class="offer-header">
-                            <span class="offer-number">04</span>
-                            <i style="font-size:23px" class="fa-solid fa-bread-slice"></i>
-                        </div>
-                        <h3>Drobné občerstvení</h3>
-                        <p>Jelikož akce je celé dopoledne, postaráme se o to, aby vám nevyhládlo.</p>
-                        <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
-                            <span class="text-more">Zobrazit více</span>
-                            <span class="text-less">Zobrazit méně</span>
-                            <i class="fa-solid fa-chevron-down chevron"></i>
-                        </button>
-                        <div class="offer-expanded-content">
-                            <div class="offer-expanded-inner">
-                                <p>Připravená pro každého účastníka bude alespoň jedna bageta.</p>
-                                <div class="offer-photo-spot">
-                                    <img src="/media/imgs/senat/senat-jidlo-sm.webp" srcset="/media/imgs/senat/senat-jidlo-sm.webp 600w, /media/imgs/senat/senat-jidlo-md.webp 1200w, /media/imgs/senat/senat-jidlo-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Jídlo v senátu">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer-card" style="background-color: var(--accent);">
-                        <div class="offer-header">
-                            <span class="offer-number">05</span>
-                            <i style="font-size:23px" class="fa-solid fa-store"></i>
-                        </div>
-                        <h3>Prezentace a stánky</h3>
-                        <p>Prohlédněte si zajímavé expozice našich partnerů a univerzitních pracovišť.</p>
-                        <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
-                            <span class="text-more">Zobrazit více</span>
-                            <span class="text-less">Zobrazit méně</span>
-                            <i class="fa-solid fa-chevron-down chevron"></i>
-                        </button>
-                        <div class="offer-expanded-content">
-                            <div class="offer-expanded-inner">
-                                <p>V prostorách budou k dispozici stánky s interaktivními ukázkami a informacemi o možnostech dalšího studia či spolupráce.</p>
-                                <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/plzen25/ZVP_084445-sm.webp" srcset="/media/imgs/gallery/plzen25/ZVP_084445-sm.webp 600w, /media/imgs/gallery/plzen25/ZVP_084445-md.webp 1200w, /media/imgs/gallery/plzen25/ZVP_084445-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Stánky partnerů">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer-card" style="background-color: var(--accent);">
-                        <div class="offer-header">
-                            <span class="offer-number">06</span>
-                            <i style="font-size:23px" class="fa-solid fa-route"></i>
-                        </div>
-                        <h3>Odborné exkurze</h3>
-                        <p>Nahlédněte pod pokličku špičkových laboratoří a vědeckých center v okolí.</p>
-                        <button class="secondary-button" onclick="this.closest('.offer-card').classList.toggle('is-expanded')">
-                            <span class="text-more">Zobrazit více</span>
-                            <span class="text-less">Zobrazit méně</span>
-                            <i class="fa-solid fa-chevron-down chevron"></i>
-                        </button>
-                        <div class="offer-expanded-content">
-                            <div class="offer-expanded-inner">
-                                <p>Připravili jsme pro vás komentované prohlídky nejmodernějších laboratoří v místních výzkumných centrech.</p>
-                                <div class="offer-photo-spot">
-                                    <img src="/media/imgs/gallery/brno26/ZVB_084003-sm.webp" srcset="/media/imgs/gallery/brno26/ZVB_084003-sm.webp 600w, /media/imgs/gallery/brno26/ZVB_084003-md.webp 1200w, /media/imgs/gallery/brno26/ZVB_084003-hd.webp 1920w" sizes="(max-width: 800px) 100vw, 30vw" alt="Exkurze">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{ end }}
                 </div>
             </div>
         </section>
