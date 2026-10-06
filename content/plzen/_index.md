@@ -38,7 +38,7 @@ maxParticipants: "400"
 newPresentations: "12"
 program: true
 infoVid: false
-zastita: false
+letacekLink: "/pdf/plzen26_letak.pdf"
 additionalInfo:
   override:
     obcerstveni:

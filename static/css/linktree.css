@@ -16,9 +16,33 @@
     font-size: 2em;
 }
 
-/* Ensure paragraph text inside is also black */
 .content-wrapper p {
     color: #000;
+    line-height: 1.55;
+    margin: 0 0 1.2rem 0;
+    font-size: 1.2rem;
+}
+
+.content-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+.content-wrapper strong,
+.content-wrapper b {
+    font-family: 'ZV-Bold', sans-serif;
+    font-weight: normal;
+}
+
+.content-wrapper a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+}
+
+.content-wrapper a:hover {
+    opacity: 0.75;
 }
 
 /* --- Live Event Card Styles --- */

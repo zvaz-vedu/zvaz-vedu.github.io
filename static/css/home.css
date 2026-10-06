@@ -743,12 +743,35 @@
     color: var(--black-zv);
 }
 
-.vesmir-partner-card .secondary-button {
-    font-size: 1.6rem;
-    padding: 1.1rem 2.2rem;
-    white-space: nowrap;
-    text-wrap: nowrap;
+.vesmir-partner-btn {
+    background-color: var(--black-zv);
+    padding: 0.9rem 1.6rem 0.9rem 1.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+    text-decoration: none;
     flex-shrink: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    border: none;
+    box-sizing: border-box;
+}
+
+.vesmir-partner-btn:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+}
+
+.vesmir-partner-btn img {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+.vesmir-partner-btn .btn-arrow {
+    color: var(--primary);
+    font-family: 'ZV-Display', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
 }
 
 @media (max-width: 800px) {
@@ -769,7 +792,7 @@
         font-size: 1.35rem;
     }
 
-    .vesmir-partner-card .secondary-button {
+    .vesmir-partner-btn {
         width: 100%;
         text-align: center;
         justify-content: center;

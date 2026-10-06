@@ -13,4 +13,6 @@ links:
     icon: "fa-solid fa-chalkboard"
     text: "Obecná prezentace pro komunikování ZV"
 ---
-Aktuálně potřebujeme významnou pomoc s propagací akce Zvaž vědu! Praha, potřebujeme naplnit kapacitu 250 míst! Prosíme, propagujte akci kdekoliv můžete, připomínám odkazy zvazvedu.cz/registrace-praha a zvazvedu.cz/praha. ~ Matyáš
+Aktuálně nejvíce hoří **Liberec (23. října)**, kde potřebujeme akutně pomoct s naplněním kapacity! Prosíme, sdílejte informace, šiřte letáčky po školách a zvěte spolužáky, ať máme na univerzitě plno. Hned v závěsu nás pak čeká **velká Plzeň (27.–28. listopadu)** s rekordní kapacitou a letošní novinkou v podobě prodlouženého dvoudenního programu, na kterou můžete začít lákat už teď.
+
+Připomínám odkazy na web i registrace: [zvazvedu.cz/liberec](/liberec) a [zvazvedu.cz/plzen](/plzen). Moc děkujeme za veškerou pomoc!  
