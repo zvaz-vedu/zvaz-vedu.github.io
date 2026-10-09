@@ -31,4 +31,7 @@ team: [áďa, honza, tomáš, michal]
 partners: [eserocz-cz, liberecky-kraj, tul, nadace-jablotron, nadace-preciosa]
 
 importantInfo: false
+program: true
 ---
+{{< program/liberec26 >}}
+
