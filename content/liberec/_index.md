@@ -32,6 +32,9 @@ partners: [eserocz-cz, liberecky-kraj, tul, nadace-jablotron, nadace-preciosa]
 
 importantInfo: false
 program: true
+
+abstracts: true
+abstractUrl: "/liberec/info/abstrakty"
 ---
 {{< program/liberec26 >}}
 

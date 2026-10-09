@@ -488,6 +488,7 @@
   photo: "/media/imgs/speakers/julieberitova.webp"
   locations:
   - Plzeň
+  - Liberec
   lectures:
   - title: 'Česká cesta do vesmíru: Od beztížných kadetů po družice'
     youtube: https://youtu.be/jUvfzBMHgP8?si=dmGnUXrwmovT9A8b
@@ -801,7 +802,8 @@
   photo: "/media/imgs/speakers/adela-podholova.webp"
   locations:
   - Praha
-  bio: Áďa je studentka Gymnázia Doctrina v Liberci. Je nadšená do přírodních věd a baví ji bádat v laboratoři a šťourat se do všeho, do čeho se šťourat lze. Nejraději má biologii a biochemii, ale nepohrdne ani astronomií či fyzikou. Vědu ji baví nejen dělat, ale i popularizovat a “vykládat o ní všem, koho to zajímá”. Má velice ráda rovněž historii a literaturu. Od 4 let tančí balet a od 7 let hraje divadlo. Volného času moc nemá, ale když už ho má, tráví ho sledováním Star Wars.
+  - Liberec
+  bio: Áďa je studentka septimy Gymnázia Doctrina v Liberci. Je nadšená do přírodních věd, baví ji bádat v laboratoři a šťourat se do všeho, do čeho se šťourat lze. Nejraději má biologii a biochemii, ale nepohrdne ani astronomií či fyzikou. Vědu ji baví nejen dělat, ale i ve velké míře popularizovat a “vykládat o ní všem, koho to zajímá”. Se svým biochemickým projektem reprezentovala Česko na mezinárodní soutěži Regeneron ISEF 2026. Ve volném čase ráda kouká na Star Wars.
 
 - name: Lucie Ovčačíková
   photo: "/media/imgs/speakers/lucie-ovcacikova.webp"
@@ -818,6 +820,7 @@
   photo: "/media/imgs/speakers/daniel-biskup.webp"
   locations:
   - Praha
+  - Liberec
   bio: Dana odmalička zajímá vesmír. Prošel výběrovým řízením Zero-G, díky kterému zažil stav beztíže a dostal se do komunity velmi inspirativních lidí. Zažil v rámci české výpravy start rakety SLS na misi Artemis II a to ho pouze utvrdilo v jeho životním snu - stát se astronautem. O vesmíru přednáší na školách, veřejných akcích a v tomto oboru se dál vzdělává, třeba i formou stáží na Akademii věd ČR. Aktivně běhá, leze, plave, cestuje a miluje adrenalinové výzvy.
 
 - name: Jonáš Neruda
@@ -848,3 +851,59 @@
   locations:
   - Praha
   bio: Leonard je studentem Harvardovy univerzity, kde studuje neurovědy a divadlo. Velmi ho baví říkat tuto kombinaci a zmást tak všechny v okolí dvou kilometrů. Od svých 16 let se věnuje výzkumu autismu, se kterým stále pokračuje. S ním se zúčastnil soutěží, jako jsou SOČ, České hlavičky a Regeneron ISEF v USA. Mimo akademické prostředí se věnuje divadlu a tanci – na Harvardu choreografoval 2 muzikály a příští rok bude režírovat muzikál Ride the Cyclone.
+
+- name: Vojtěch Mikeš
+  photo: "/media/imgs/speakers/vojtech-mikes.webp"
+  locations:
+  - Liberec
+  bio: Vojta je studentem prvního ročníku fyziky na MFF UK a věnuje se převážně numerické astrofyzice. V minulém roce se ve spolupráci s FZU AV ČR podílel na simulacích RPS algoritmů a v nynějším roce ve spolupráci s Universita di Genoa pracuje na numerickém přístupu k řešení perturbačních rovnic neutronových hvězd. Zároveň soutěžil v SOČ na celostátní úrovni a baví jej soutěže v astrofyzice.
+
+- name: Jakub Novák
+  photo: "/media/imgs/speakers/jakub-novak.webp"
+  locations:
+  - Liberec
+  bio: Jakub je bakalářským studentem na ČVUT FEL. Fascinuje ho cokoliv, co jezdí nebo létá rychle, ať už jde o Formuli 1, letadla nebo rakety. Jeho životním cílem je pomoci s návratem lidstva na Měsíc. K tomu směřuje přes stavbu amatérských raket, se kterými v týmu Space Carrots nedávno vyhrál národní finále soutěží ESA CanSat i CRC26. Mimo to založil vlastní startup, vyvíjel antény pro projekt LASAR a popularizuje vědu v rámci Expedice Mars. Když zrovna nic nestaví, leze po horách a plní sidequesty.
+
+- name: Michal Ditrych
+  photo: "/media/imgs/speakers/michal-ditrych.webp"
+  locations:
+  - Liberec
+  bio: Michala od malička fascinovalo, jak funguje svět kolem nás. Na Gymnáziu Jiřího Ortena se jeho zvědavost proměnila ve vášeň pro biologii a chemii, která ho dovedla až na stáž do Národního ústavu pro výzkum rakoviny, kde zpracoval svou SOČ. Dnes studuje na Farmaceutické fakultě Univerzity Karlovy a nejvíc ho zajímá molekulární biologie a účinky různých látek. Když zrovna nezkoumá, co se děje na buněčné úrovni, rád zamíří do posilovny, pátrá po dalších vědeckých zajímavostech nebo si pustí jeho oblíbený seriál.
+
+- name: Johana Cupáková
+  photo: "/media/imgs/speakers/johana-cupakova.webp"
+  locations:
+  - Liberec
+  bio: Johana chodí do čtvrtého ročníku Krkonošského gymnázia. Zajímá ji především psychologie, ale baví ji také statistika, práce s daty a poznávání toho, jak lidé přemýšlejí a učí se. Se svou prací o prožívání chyb v matematice zvítězila v celostátním kole SOČ. Když se zrovna nevěnuje škole, ráda běhá a čte. V budoucnu by se chtěla tomuto směru věnovat i při vysokoškolském studiu.
+
+- name: Jiří Hroch
+  photo: "/media/imgs/speakers/jiri-hroch.webp"
+  locations:
+  - Liberec
+  bio: Jiří Hroch je studentem Gymnázia Mánesova v Sokolově, který propadl nadšení pro biologii. Fascinuje ho vše, co se týče interakcí živého světa s neživým. Jeho nejoblíbenějším tématem však zůstává biologie v postindustriálním prostředí. Každoročně se účastní soutěží Biologická a Ekologická olympiáda a se svou prací o karlovarských lomech soutěžil v SOČ. Účastní se i různých přednáškových akcí (setkání přátel přírody Karlovarska) a věnuje se i focení a mapování ohrožených druhů, které jsou kolem nás.
+
+- name: Hana Partelová
+  photo: "/media/imgs/speakers/hana-partelova.webp"
+  locations:
+  - Liberec
+  bio: Hanka je studentkou španělského gymnázia. Nejvíc ji baví hledat odpovědi na otázky, které na první pohled nemají jednoduché řešení. Zajímá se o obecnou relativitu, astrofyziku, kvantové technologie a kosmonautiku. Ve Slovenské akademii věd zkoumá kauzální strukturu sféricky symetrického časoprostoru. Zároveň pracuje ve firmě Spacemanic jako AIT inženýrka na vývoji a integraci družic. Ve volném čase ráda hraje na housle, jezdí na koni a střílí z luku.
+
+- name: Dan Biskup
+  photo: "/media/imgs/speakers/daniel-biskup.webp"
+  locations:
+  - Praha
+  - Liberec
+  bio: Dana odmalička zajímá vesmír. Prošel výběrovým řízením Zero-G, díky kterému zažil stav beztíže a dostal se do komunity velmi inspirativních lidí. Zažil v rámci české výpravy start rakety SLS na misi Artemis II a to ho pouze utvrdilo v jeho životním snu - stát se astronautem. O vesmíru přednáší na školách, veřejných akcích a v tomto oboru se dál vzdělává, třeba i formou stáží na Akademii věd ČR. Aktivně běhá, leze, plave, cestuje a miluje adrenalinové výzvy.
+
+- name: Václav Šustr
+  photo: "/media/imgs/speakers/vaclav-sustr.webp"
+  locations:
+  - Liberec
+  bio: Václav Šustr studuje mikroelektroniku na FEKT VUT v Brně. Baví ho elektronika, fyzika a stavění vlastních měřicích přístrojů. Za svůj SiPM gama spektrometr získal 2. místo v celostátním kole SOČ. Ve volných chvílích se věnuje běhání a astrofotografii.
+
+- name: Anna Šťastná
+  photo: "/media/imgs/speakers/anna-stastna.webp"
+  locations:
+  - Liberec
+  bio: Anna je studentkou 4. ročníku Gymnázia Mimoň a život na venkově v ní od dětství probudil hluboký zájem o přírodu, sport a myslivost. Své vědecké ambice začala rozvíjet na stáži v Botanickém ústavu AV ČR a zúročila je ve vlastním výzkumu pšenice ozimé v rámci SOČ. Věnovala se také dlouhodobému seberozvoji a absolvovala všechny úrovně Mezinárodní ceny vévody z Edinburghu (DofE).
+
