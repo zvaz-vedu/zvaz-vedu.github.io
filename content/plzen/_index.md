@@ -31,7 +31,7 @@ abstracts: false
 abstractUrl: "/plzen/info/abstrakty"
 
 team: [honza, eda, tomáš, áďa, lucka, jakub]
-partners: [plzensky-kraj-cz, fav-zcu-cz, eserocz-cz, radovanek-cz, kooperativa, linet, gk]
+partners: [plzensky-kraj-cz, fav-zcu-cz, eserocz-cz, radovanek-cz, kooperativa, linet, gk, sit-port]
 registration: 'https://forms.gle/rPYMVUA6Qd1ipT5m7'
 registrationSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7C0G7BG8YNdOSO1hSxtmjlaNuc2pd6GMRO4SLHrT0gEAqYOV9Xl8jF2J9zK1IZZWC4cliQRKzdVQs/pub?gid=1597922239&single=true&output=csv"
 maxParticipants: "400"
